@@ -2,15 +2,18 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,500,600);
 @import url(https://fonts.googleapis.com/css?family=Volkhov:400italic);
-
-
-
-
 body {
-  line-height: 1.5;
-  font-family: $primary-font;
-  -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    font-family: $primary-font;
+    -webkit-font-smoothing: antialiased;
+    width: 1300px;
+    margin: auto;
+}
 
+@media screen and (max-width: 1300px) {
+    body {
+        width: auto;
+    }
 }
 
 h1,
@@ -19,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $primary-font;
+    font-family: $primary-font;
 }
 
 h1,
@@ -28,43 +31,39 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 h1 {
-  font-size: 40px;
-
-  @include tablet {
-    font-size: 34px;
-  }
-
-  @include mobile {
-    font-size: 28px;
-  }
-
-  @include mobile-xs {
-    font-size: 26px;
-  }
+    font-size: 40px;
+    @include tablet {
+        font-size: 34px;
+    }
+    @include mobile {
+        font-size: 28px;
+    }
+    @include mobile-xs {
+        font-size: 26px;
+    }
 }
 
 h2 {
-  font-size: 28px;
-
-  @include mobile {
-    font-size: 22px;
-  }
+    font-size: 28px;
+    @include mobile {
+        font-size: 22px;
+    }
 }
 
 h3 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 h4 {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 p {
-  color: #7B7B7B;
-  font-size: 15px;
-  font-family: $primary-font;
+    color: #7B7B7B;
+    font-size: 15px;
+    font-family: $primary-font;
 }
