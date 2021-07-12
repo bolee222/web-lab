@@ -1,11 +1,11 @@
 ---
-title: "Latest News"
+title: "Our Project"
 description: "this is meta description"
 draft: false
 bg_image: "images/feature-bg.jpg"
 menu:
   main:
-    name: "News"
-    identifier: "news"
-    weight: 6
+    parent: "Projects"
+    name: "Project Archieve"
+    weight: 1
 ---

@@ -7,5 +7,5 @@ draft: false
 menu:
   main:
     name: "Contact"
-    weight: 6
+    weight: 8
 ---
