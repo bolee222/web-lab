@@ -5,6 +5,7 @@ draft: false
 bg_image: "images/feature-bg.jpg"
 menu:
   main:
-    name: "Projet"
-    weight: 3
+    parent: "Projects"
+    name: "Project Archieve"
+    weight: 1
 ---

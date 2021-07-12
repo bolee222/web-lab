@@ -11,15 +11,15 @@ type: "post"
 ---
 
 
-Pour écrire un horodatage [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) dans la langue courante, vous pouvez utiliser le shortcode `date_i18n` :
+To write out an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) timestamp in the current language, you can use the `date_i18n` shortcode:
 
-L'écriture de
+Writing
 
 ```
 {{%/* date_i18n "2020-10-20" */%}}
 ```
 
-donne
+will result in
 
 ```
 {{% date_i18n "2020-10-20" %}}

@@ -1,7 +1,7 @@
 ---
 menu:
   main:
-    name: "Accueil"
+    name: "Home"
     weight: 1
 
 ############################### Banner ##############################
@@ -9,7 +9,7 @@ banner:
   enable: true
   bg_image: "images/slider-bg.jpg"
   bg_overlay: true
-  title: "이보경 랩"
+  title: "A Digital Marketing <br/> & Design Agency"
   content: "We love the Web and the work we do.We work closely with our clients to deliver  the best possible solutions for their needs"
   button:
     enable: true
@@ -54,12 +54,12 @@ service:
 cta:
   enable: true
   bg_image: "images/call-to-action-bg.jpg"
-  title: "We design delightful digital experiences."
+  title: "Are you interested in joining our lab?"
   content: "Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
   button:
     enable: true
-    label: "Tell Us Your Story"
-    link: "contact"
+    label: "FAQ"
+    link: "about/faq/"
 
 ############################# Funfacts ###############################
 funfacts:

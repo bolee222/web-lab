@@ -1,7 +1,7 @@
 ################################# Basic configuration #########################
 # Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 baseURL = "/"
-title = "Airspace | Creative Agency Hugo Template"
+title = "Bokyung Lee Lab"
 theme = "airspace-hugo"
 # Number of posts per page in list view
 paginate = "4"

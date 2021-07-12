@@ -5,7 +5,7 @@ draft: false
 bg_image: "images/feature-bg.jpg"
 menu:
   main:
-    name: "Blog"
-    identifier: "blog"
-    weight: 4
+    name: "News"
+    identifier: "news"
+    weight: 6
 ---

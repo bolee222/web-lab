@@ -6,7 +6,8 @@ layout: "about"
 draft: false
 menu:
   main:
-    name: "À propos"
+    parent: "About Lab"
+    name: "About"
     weight: 2
 
 
