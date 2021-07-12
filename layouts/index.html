@@ -8,7 +8,7 @@
             <div class="col-md-12">
                 <div class="block">
                     {{ with .title }}
-                    <h1>{{ . | markdownify }}</h1>
+                    <div class="slider-title">{{ . | markdownify }}</div>
                     {{ end }} {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }} {{ with .button }} {{ if .enable }}
                     <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp">{{ .label }}</a
           >
@@ -35,7 +35,11 @@
             "display" "block") }}{{ end }}
           </div>
           {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block")
-          }}{{ end }}
+          }}{{ end }} {{ with .button }} {{ if .enable }}
+          <a href="{{ .link | relLangURL }}" class="btn btn-view-works"
+            >{{ .label }}</a
+          >
+          {{ end }}{{ end }}
         </div>
       </div>
       <div class="col-md-5 col-sm-12">
