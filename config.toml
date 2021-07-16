@@ -194,12 +194,6 @@ hasChildren = true
 name = "People"
 weight = 3
 
-[[languages.en.menu.main]]
-hasChildren = true
-name = "Projects"
-weight = 4
-
-
 # Footer menu
 [[languages.en.menu.footer]]
 name = "About"
