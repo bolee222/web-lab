@@ -56,9 +56,9 @@ sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
 phone = "0124857985320"
 email = "demo@email.com"
 location = """
-**Themefisher**  
-North Main Street  
-Brooklyn, New South Wales  
+**Themefisher**
+North Main Street
+Brooklyn, New South Wales
 Australia
 """
 # Whether to display text descriptors (like "E-mail: ", "Phone: ") before the address block elements
@@ -69,7 +69,7 @@ enable = true
 use_netlify = true
 # Form action
 ## Fill in your Form ID URL for Formspree.io, e.g. `https://formspree.io/f/{form_id}`
-## Ignored if `use_netlify = true` (custom [success page](https://docs.netlify.com/forms/setup/#success-messages) is already included) 
+## Ignored if `use_netlify = true` (custom [success page](https://docs.netlify.com/forms/setup/#success-messages) is already included)
 action = "#"
 # Image on custom success page `/message_sent.html`
 success_image = "images/paper-plane.svg"
@@ -225,50 +225,50 @@ name = "Contact"
 URL = "contact"
 weight = 6
 
-
-################################# Korean translation ##########################
-[languages.kr]
-languageName = "Korean"
-languageCode = "kr-kr"
-contentDir = "content/korean"
-weight = 2
-copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). Tous droits réservés."
-
-# Main menu
-# NOTE: Leaf entries linking to content should be defined in the content file's respective front matter.
-[[languages.kr.menu.main]]
-hasChildren = true
-weight = 5
-name = "Plus"
-
-# Footer menu
-[[languages.kr.menu.footer]]
-name = "À propos"
-URL = "about"
-weight = 1
-
-[[languages.kr.menu.footer]]
-name = "Projet"
-URL = "project"
-weight = 2
-
-[[languages.kr.menu.footer]]
-name = "Service"
-URL = "service"
-weight = 3
-
-[[languages.kr.menu.footer]]
-name = "Tarification"
-URL = "pricing"
-weight = 4
-
-[[languages.kr.menu.footer]]
-name = "Questions fréquentes"
-URL = "faq"
-weight = 5
-
-[[languages.kr.menu.footer]]
-name = "Contact"
-URL = "contact"
-weight = 6
-
+#
+# ################################# Korean translation ##########################
+# [languages.kr]
+# languageName = "Korean"
+# languageCode = "kr-kr"
+# contentDir = "content/korean"
+# weight = 2
+# copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). Tous droits réservés."
+#
+# # Main menu
+# # NOTE: Leaf entries linking to content should be defined in the content file's respective front matter.
+# [[languages.kr.menu.main]]
+# hasChildren = true
+# weight = 5
+# name = "Plus"
+#
+# # Footer menu
+# [[languages.kr.menu.footer]]
+# name = "À propos"
+# URL = "about"
+# weight = 1
+#
+# [[languages.kr.menu.footer]]
+# name = "Projet"
+# URL = "project"
+# weight = 2
+#
+# [[languages.kr.menu.footer]]
+# name = "Service"
+# URL = "service"
+# weight = 3
+#
+# [[languages.kr.menu.footer]]
+# name = "Tarification"
+# URL = "pricing"
+# weight = 4
+#
+# [[languages.kr.menu.footer]]
+# name = "Questions fréquentes"
+# URL = "faq"
+# weight = 5
+#
+# [[languages.kr.menu.footer]]
+# name = "Contact"
+# URL = "contact"
+# weight = 6
+# --->

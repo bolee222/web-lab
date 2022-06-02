@@ -1,2 +1,26 @@
 // Put custom SCSS rules in this file
 // Documentation: https://sass-lang.com/documentation
+
+.slider-title {
+    font-family: $hightlight-font;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.home-title{
+    font-weight: 900;
+    font-family: 'Roboto';
+    font-size: 26px;
+    margin-bottom: 20px;
+
+}
+
+.home-slider-more{
+    font-weight: 600;
+    font-family: 'Lato';
+    font-size: 16px;
+    text-decoration-line: underline;
+}

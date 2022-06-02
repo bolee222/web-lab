@@ -7,9 +7,9 @@ menu:
 ############################### Banner ##############################
 banner:
   enable: true
-  bg_image: 
+  bg_image:
   bg_overlay: false
-  title: "CONVERGENCE <br/> DESIGN LAB"
+  title: "Convergence Design Lab"
   content: "We love the Web and the work we do.We work closely with our clients to deliver  the best possible solutions for their needs"
   button:
     enable: false
@@ -37,16 +37,10 @@ portfolio:
   bg_image: "images/feature-bg.jpg"
   title: "WE BELIEVE IN GREAT IDEAS"
   content: " Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-
-  Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-
-  Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
   "
   button:
     enable: true
-    label: "View Works"
+    label: "View all our works"
     link: "project"
 
 
