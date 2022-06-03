@@ -24,18 +24,29 @@
 }
 
 .portfolio-list-title {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
+    color: black;
+    padding-top: 5px;
+}
+
+.portfolio-list-title a {
+    color: black;
+}
+
+.portfolio-list-title a:hover {
+    text-decoration: underline;
+    color: $primary-color !important;
 }
 
 .portfolio-list-meta {
     font-size: 15px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .portfolio-card {
-    padding-right: 10px !important;
+    padding-right: 15px !important;
 }
 
 .portfolio {
@@ -45,6 +56,13 @@
         img {
             width: 100%;
             height: auto;
+            filter: grayscale(20%) opacity(80%);
+            border: 1px solid $darkGray;
+        }
+        img:hover {
+            width: 100%;
+            height: auto;
+            filter: opacity(100%);
         }
         &:hover {
             .portfolio-hover {

@@ -1,6 +1,7 @@
 ---
 title: "How To Wear Bright Shoes"
 date: 2018-09-24T11:07:10+06:00
+dateStr: 2022-04-02
 author: [ "Mark Dinn", "John Doe" ]
 image : "images/blog/blog-post-2.jpg"
 bg_image: "images/feature-bg.jpg"

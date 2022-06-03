@@ -225,50 +225,49 @@ name = "Contact"
 URL = "contact"
 weight = 6
 
-#
-# ################################# Korean translation ##########################
-# [languages.kr]
-# languageName = "Korean"
-# languageCode = "kr-kr"
-# contentDir = "content/korean"
-# weight = 2
-# copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). Tous droits réservés."
-#
-# # Main menu
-# # NOTE: Leaf entries linking to content should be defined in the content file's respective front matter.
-# [[languages.kr.menu.main]]
-# hasChildren = true
-# weight = 5
-# name = "Plus"
-#
-# # Footer menu
-# [[languages.kr.menu.footer]]
-# name = "À propos"
-# URL = "about"
-# weight = 1
-#
-# [[languages.kr.menu.footer]]
-# name = "Projet"
-# URL = "project"
-# weight = 2
-#
-# [[languages.kr.menu.footer]]
-# name = "Service"
-# URL = "service"
-# weight = 3
-#
-# [[languages.kr.menu.footer]]
-# name = "Tarification"
-# URL = "pricing"
-# weight = 4
-#
-# [[languages.kr.menu.footer]]
-# name = "Questions fréquentes"
-# URL = "faq"
-# weight = 5
-#
-# [[languages.kr.menu.footer]]
-# name = "Contact"
-# URL = "contact"
-# weight = 6
-# --->
+
+################################# Korean translation ##########################
+[languages.kr]
+languageName = "Korean"
+languageCode = "kr-kr"
+contentDir = "content/korean"
+weight = 2
+copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). Tous droits réservés."
+
+# Main menu
+# NOTE: Leaf entries linking to content should be defined in the content file's respective front matter.
+[[languages.kr.menu.main]]
+hasChildren = true
+weight = 5
+name = "Plus"
+
+# Footer menu
+[[languages.kr.menu.footer]]
+name = "À propos"
+URL = "about"
+weight = 1
+
+[[languages.kr.menu.footer]]
+name = "Projet"
+URL = "project"
+weight = 2
+
+[[languages.kr.menu.footer]]
+name = "Service"
+URL = "service"
+weight = 3
+
+[[languages.kr.menu.footer]]
+name = "Tarification"
+URL = "pricing"
+weight = 4
+
+[[languages.kr.menu.footer]]
+name = "Questions fréquentes"
+URL = "faq"
+weight = 5
+
+[[languages.kr.menu.footer]]
+name = "Contact"
+URL = "contact"
+weight = 6

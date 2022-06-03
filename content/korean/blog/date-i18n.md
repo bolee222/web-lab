@@ -1,6 +1,7 @@
 ---
 title: "Pretty-print dates"
 date: 2021-04-01T00:00:00+01:00
+dateStr: "2018-09-04"
 author: John Doe
 image : "images/blog/blog-post-1.jpg"
 bg_image: "images/feature-bg.jpg"

@@ -35,8 +35,7 @@
           </div>
           {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block")
           }}{{ end }} {{ with .button }} {{ if .enable }}
-          <a href="{{ .link | relLangURL }}" class="home-slider-more"
-            >{{ .label }}</a>
+          <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main">{{ .label }}</a>
           {{ end }}{{ end }}
         </div>
       </div>
@@ -67,10 +66,10 @@
         <div class="col-md-4 portfolio-item portfolio-card shuffle-item">
             <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" />
             <div class="portfolio-list-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
-            <div class="portfolio-list-meta">{{ .Params.description }}</div>
+            <div class="portfolio-list-meta">{{ .Params.dateStr }}</div>
         </div>
         {{ end }}{{ with .Params.portfolio }}{{ with .content }}{{ end }} {{ with .button }} {{ if .enable }}
-        <a href="{{ .link | relLangURL }}" class="home-slider-more"
+        <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main"
           >{{ .label }}</a>{{ end }}{{ end }}
     </div>
 </section>
@@ -96,8 +95,7 @@
             <div class="portfolio-list-meta">{{ .Params.description }}</div>
         </div>
         {{ end }}{{ with .Params.portfolio }}{{ with .content }}{{ end }} {{ with .button }} {{ if .enable }}
-        <a href="{{ .link | relLangURL }}" class="home-slider-more"
-          >{{ .label }}</a>{{ end }}{{ end }}
+        <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main">{{ .label }}</a>{{ end }}{{ end }}
     </div>
 </section>
 {{ end }}
