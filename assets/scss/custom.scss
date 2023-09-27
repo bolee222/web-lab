@@ -1,13 +1,76 @@
 // Put custom SCSS rules in this file
 // Documentation: https://sass-lang.com/documentation
 
-.slider-title {
-    font-family: $hightlight-font;
-    font-size: 55px;
-    font-weight: 800;
-    line-height: 1.2;
+.slider-affiliation {
+    font-family: $poppins-font;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    color: black;
+}
+
+.slider-affiliation:hover{
+    text-decoration: underline;
+}
+
+.slider-department {
+    font-family: $poppins-font;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.1;
     margin-bottom: 20px;
     color: black;
+}
+
+.slider-department:hover{
+    text-decoration: underline;
+}
+
+.slider-title {
+    font-family: $poppins-font;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 1.0;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.slider-title-W500 {
+    font-family: $poppins-font;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 1.0;
+    letter-spacing: .0rem;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.slider-title-W300 {
+    font-family: $poppins-font;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 1.0;
+    letter-spacing: .0rem;
+    margin-bottom: 50px;
+    color: black;
+}
+.slider-vision {
+    font-family: $herr-font;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 1.0;
+    margin-bottom: 5px;
+    color: black;
+}
+
+
+.circle-main {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: red;
+    opacity: 0.1;
 }
 
 .home-title{
@@ -22,3 +85,5 @@
     font-weight: 700 !important;
     font-size: 12px !important;
 }
+
+

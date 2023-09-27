@@ -10,8 +10,10 @@ banner:
   enable: true
   bg_image:
   bg_overlay: false
-  title: "Convergence Design Lab"
-  content: "We love the Web and the work we do.We work closely with our clients to deliver  the best possible solutions for their needs"
+  affiliation: "Yonsei University"
+  department: Department of Innovation
+  title: "Convergence"
+  content: "Let's envision our new reality together!"
   button:
     enable: false
     label: "Discover Our Project"
@@ -21,9 +23,12 @@ banner:
 about:
   enable: true
   title: "About Lab"
-  description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id."
-  image: #"images/wrapper-img.png"
+  description: "Digital technologies and media have been deeply embedded in our daily lives, and **blur the boundary between our physical lives of atoms and digital ones of bits**. Consequently, ‘how to converge these two worlds in a more seamless and innovative way’ has become a hot topic in various industries, such as smart environments, robots, education, art, media, or games. 
+
+  
+  Our lab envisions this new reality through various designary and multi-disciplinary approaches. Through iterative user-centered processes, we design new products, interactions, services, and systems that could bring new experiences to various convergence domains (e.g., embodied art, smart home, immersive environments, metaverse contents, design toolkits, spatial marketing, digital human, augmented experience,
+digital architecture, etc.)."
+  image: "images/wrapper-img.png"
 
   button:
     enable: true

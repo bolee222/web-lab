@@ -1,5 +1,9 @@
 {{ define "main" }}
 
+
+
+
+
 <!-- banner -->
 {{ with .Params.banner }} {{ if .enable }}
 <section class="slider {{ if .bg_overlay }}overly{{ end }}" style="background-image: url('{{ .bg_image | relURL }}');">
@@ -7,11 +11,25 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
+
+                    <hr align="left" style="margin-bottom: 80px; width:80%; height:3px; border:none; background-color:black;">
+                    
+                    {{ with .affiliation }}
+                    <div class="slider-affiliation">{{ . | markdownify }}</div>
+                    {{ end }} 
+                    {{ with .department }}
+                    <div class="slider-department">{{ . | markdownify }}</div>
+                    {{ end }} 
                     {{ with .title }}
                     <div class="slider-title">{{ . | markdownify }}</div>
-                    {{ end }} {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }} {{ with .button }} {{ if .enable }}
+                    {{ end }} 
+                    <div class="slider-title-W500">Design</div>
+                    <div class="slider-title-W300">Lab</div>
+                    {{ with .content }}<div class="slider-vision">{{ . | markdownify  }}</div>{{ end }} {{ with .button }} {{ if .enable }}
                     <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp">{{ .label }}</a>
           {{ end }} {{ end }}
+          
+                    <hr align="left" style="margin-top: 80px; width:80%; height:3px; border:none; background-color:black;">
         </div>
       </div>
     </div>

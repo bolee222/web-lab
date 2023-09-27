@@ -37,7 +37,7 @@ ordered = false
 
 ################################# Default parameters ##########################
 [params]
-logo = "images/logo.png"
+logo = "images/logo/logo.png"
 logo_width = "150px"
 # OpenGraph / Twitter Card metadata
 description = "This is meta description"

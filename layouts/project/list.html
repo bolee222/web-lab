@@ -26,7 +26,12 @@
                         </div>
                     </div>
                     <div class="row shuffle-wrapper">
-                        {{ range .Data.Pages -}} {{ $cats := .Params.category -}} {{ if not (reflect.IsSlice $cats) }}{{ $cats = slice ($cats) }}{{ end -}} {{ $cats = apply $cats "urlize" "." | jsonify -}}
+                        {{ range .Data.Pages -}} 
+                        {{ $cats := .Params.category -}} 
+                        {{ if not (reflect.IsSlice $cats) }}
+                        {{ $cats = slice ($cats) }}
+                        {{ end -}} 
+                        {{ $cats = apply $cats "urlize" "." | jsonify -}}
                         <div class="col-md-4 portfolio-item portfolio-card shuffle-item" data-groups="{{ $cats }}">
                             {{ if isset .Params "image" -}}
                             <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" />

@@ -246,9 +246,12 @@ input[type="tel"] {
         padding: 30px 0px;
     }
     p {
-        font-style: italic;
-        color: #666;
-        font-family: $secondary-font;
+        //font-style: italic;
+        color: black;
+        font-family: $primary-font;
+        font-size: 18px;
+        line-height: 1.5 !important;
+        font-weight: 300;
     }
 }
 
