@@ -149,6 +149,7 @@ link = "plugins/slick/slick.css"
 attributes = ""
 
 # JS Plugins
+
 [[params.plugins.js]]
 link = "plugins/jquery/jquery.min.js"
 attributes = ""
@@ -172,6 +173,8 @@ attributes = ""
 [[params.plugins.js]]
 link = "plugins/google-map/gmap.js"
 attributes = "defer"
+
+custom_js = ["assets/js/bg-script.js"]
 
 
 ################################# English translation #########################
