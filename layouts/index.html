@@ -11,8 +11,7 @@
                 <div class="block">
 
                     {{ partial "cardbg.html" .}}
-                  
-
+          
                     <hr align="left" style="margin-bottom: 80px; width:80%; height:3px; border:none; background-color:black;">
                     
                     {{ with .affiliation }}
@@ -30,7 +29,7 @@
                     <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp">{{ .label }}</a>
           {{ end }} {{ end }}
           
-                    <hr align="left" style="margin-top: 80px; width:80%; height:3px; border:none; background-color:black;">
+                    <hr align="left" style="margin-top: 100px; width:80%; height:3px; border:none; background-color:black;">
         </div>
       </div>
     </div>
@@ -39,7 +38,82 @@
 {{ end }} {{ end }}
 <!-- /banner -->
 
-<!-- about -->
+
+<!-- /about -->
+{{ with .Params.about }} {{ if .enable }}
+<section class="about section">
+  <div class="container ">
+      <!-- about -->
+      <canvas class="orb-canvas"></canvas>
+      <!-- Overlay -->
+      <div class="overlay">
+        <div class="row">
+          <div class="col-md-7 col-sm-12">
+            <div class="block">
+              <div class="section-title">
+                {{ with .title }}
+                <div class="home-title">{{ . | markdownify }}</div>
+                {{ end }} {{ with .description }}{{ . | $.Page.RenderString (dict
+                "display" "block") }}{{ end }}
+              </div>
+              {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block")
+              }}{{ end }} {{ with .button }} {{ if .enable }}
+              <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main">{{ .label }}</a>
+              {{ end }}{{ end }}
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <div class="block">
+              <img src="{{ .image | relURL }}" class="img-responsive" alt="Img" />
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+  </div>
+</section>
+{{ end }} {{ end }}
+<!-- /about -->
+
+
+<!-- News -->
+<section class="about section">
+  <div class="container ">
+      <canvas class="orb-canvas"></canvas>
+      <!-- Overlay -->
+      <div class="overlay">
+        <section class="about section">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                  <div class="block">
+                    <div class="section-title">
+                        <div class="home-title">Recent News</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            {{ range first 6 (where .Site.RegularPages "Section" "==" "blog") }}{{ $cats := .Params.category -}} {{ if not (reflect.IsSlice $cats) }}{{ $cats = slice ($cats) }}{{ end -}} {{ $cats = apply $cats "urlize" "." | jsonify -}}
+            <div class="col-md-4 portfolio-item portfolio-card shuffle-item">
+                <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" />
+                <div class="portfolio-list-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+                <div class="portfolio-list-meta">{{ .Params.dateStr }}</div>
+            </div>
+            {{ end }}{{ with .Params.portfolio }}{{ with .content }}{{ end }} {{ with .button }} {{ if .enable }}
+            <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main"
+              >{{ .label }}</a>{{ end }}{{ end }}
+      </section>
+      {{ end }}
+        
+        </div>
+      </div>
+  </div>
+</section>
+<!-- /News -->
+
+
+
+<!-- /about -->
 {{ with .Params.about }} {{ if .enable }}
 <section class="about section white-box">
   <div class="container ">
