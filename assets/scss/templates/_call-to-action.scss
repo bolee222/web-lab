@@ -8,13 +8,18 @@
   }
 
   h2 {
-    color: $light;
+    color: black;
+    font-family: $poppins-font;
+    font-size: 30px;
+    font-weight: 600;
     margin: 0px;
     padding: 30px 0px;
   }
 
   p {
-    color: $light;
+    color: $black;
+    font-size: 18px;
+    font-weight: 400;
   }
 
   .btn-main {
