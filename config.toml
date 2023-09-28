@@ -53,13 +53,14 @@ sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
 ################################# Contact page ################################
 [params.contact]
 # Address block
-phone = "0124857985320"
-email = "demo@email.com"
+phone = "(+82) 032-749-3460"
+email = "**bo.lee@yonsei.ac.kr**"
 location = """
-**Themefisher**
-North Main Street
-Brooklyn, New South Wales
-Australia
+**Veritas B #424**  
+Yonsei University, 85 Songdogwahak-ro  
+Yeonsu-gu, Incheon  
+Republic of Korea
+21983
 """
 # Whether to display text descriptors (like "E-mail: ", "Phone: ") before the address block elements
 address_descriptors = false

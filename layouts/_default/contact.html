@@ -6,38 +6,7 @@
   <div class="container">
     {{ with site.Params.contact.form }}{{ if .enable }}
     <div class="row">
-      <form method="POST" {{ if .use_netlify }}name="{{ printf "contact_%s" $.Language.Lang }}" action="{{ "/message_sent" | relLangURL }}" netlify netlify-honeypot="nhp"{{ else }}name="contact" action="{{ .action | safeURL }}"{{ end }}>
-        <div class="col-md-6 col-sm-12">
-          <div class="block">
-            <div class="form-group">
-              <label for="name" hidden>{{ i18n "contact_form_name" }}</label>
-              <input id="name" name="name" type="text" class="form-control" placeholder="{{ i18n "contact_form_name" }}" required>
-            </div>
-            <div class="form-group">
-              <label for="email" hidden>{{ i18n "contact_form_email" }}</label>
-              <input id="email" name="email" type="email" autocomplete="email" class="form-control" placeholder="{{ i18n "contact_form_email" }}" required>
-            </div>
-            <div class="form-group">
-              <label for="subject" hidden>{{ i18n "contact_form_subject" }}</label>
-              <input id="subject" name="subject" type="text" class="form-control" placeholder="{{ i18n "contact_form_subject" }}" required>
-            </div>
-            {{ if .use_netlify }}
-            <div class="form-group-h">
-              <input name="nhp" type="text" class="form-control" placeholder="Are you made of flesh and bone?">
-            </div>
-            {{ end -}}
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="block">
-            <div class="form-group-2">
-              <label for="message" hidden>{{ i18n "contact_form_message" }}</label>
-              <textarea id="message" name="message" class="form-control" rows="4" placeholder="{{ i18n "contact_form_message" }}" required></textarea>
-            </div>
-            <button class="btn btn-default" type="submit">{{ i18n "submit" }}</button>
-          </div>
-        </div>
-      </form>
+
     </div>
     {{ end }}{{ end }}
     <div class="contact-box row">
@@ -47,7 +16,9 @@
           <h2>{{ i18n "address_title" }}</h2>
           <ul class="address-block">
             {{ if isset . "location" }}<li><i class="ion-ios-location-outline"></i>{{ if .address_descriptors }}{{ i18n "location" | printf "%s: " }}{{ end }}<div>{{ .location | markdownify }}</div></li>{{ end }}
-            {{ if isset . "email" }}<li><i class="ion-ios-email-outline"></i>{{ if .address_descriptors }}{{ i18n "email" | printf "%s: " }}{{ end }}{{ partial "cloak_email" .email }}</li>{{ end }}
+
+            {{ if isset . "email" }}<li><i class="ion-ios-email-outline"></i>{{ if .address_descriptors }}{{ i18n "email" | printf "%s: " }}{{ end }}{{ .email | markdownify }}</li>{{ end }}
+
             {{ if isset . "phone" }}<li><i class="ion-ios-telephone-outline"></i>{{ if .address_descriptors }}{{ i18n "phone" | printf "%s: " }}{{ end }}{{ .phone }}</li>{{ end }}
           </ul>
           <ul class="social-icons">
@@ -61,9 +32,7 @@
       {{ if site.Params.gmap.enable }}
       <div class="col-md-6 col-sm-12">
         <div class="block">
-          <div class="google-map">
-            <div class="map" id="map" data-latitude="{{ site.Params.gmap.map_latitude }}" data-longitude="{{ site.Params.gmap.map_longitude }}" data-marker="{{ site.Params.gmap.map_marker | relURL }}" data-marker-name="{{ site.Title }}"></div>
-          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25362.642505453692!2d126.672618!3d37.38202!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b77170b609651%3A0xa8fd0c97d13a9b66!2sYonsei%20University%2C%20International%20Campus!5e0!3m2!1sen!2skr!4v1695905774483!5m2!1sen!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
       {{ end }}
