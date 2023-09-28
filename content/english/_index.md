@@ -22,7 +22,7 @@ banner:
 ############################# About #################################
 about:
   enable: true
-  title: "About Lab"
+  title: "About Our Lab"
   description: "Digital technologies and media have been deeply embedded in our daily lives, and **blur the boundary between our physical lives of atoms and digital ones of bits**. Consequently, ‘how to converge these two worlds in a more seamless and innovative way’ has become a hot topic in various industries, such as smart environments, robots, education, art, media, or games. 
 
   

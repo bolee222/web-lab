@@ -3,7 +3,7 @@ title: "Alumni"
 description: "this is meta description"
 bg_image: "images/headerbg/09.png"
 layout: "alumni"
-draft: true
+draft: false
 menu:
   main:
     parent: "People"

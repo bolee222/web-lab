@@ -72,8 +72,9 @@ input[type="tel"] {
     font-weight: 500;
     letter-spacing: 1px;
     padding: 10px 15px;
-    margin-top: 20px;
+    margin-top: 30px;
     text-transform: capitalize;
+    width: fit-content;
     
     @include transition (all, 0.2s, ease);
     &.btn-icon {
@@ -84,7 +85,7 @@ input[type="tel"] {
         }
     }
     &:hover {
-        background: $primary-color; /*darken($primary-color, 20%);*/
+        background: black; /*darken($primary-color, 20%);*/
         color: $light;
     }
 }
@@ -217,6 +218,22 @@ input[type="tel"] {
 
 .section {
     padding: 50px 0;
+    @include tablet {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.section-last {
+    padding: 0px 0;
+    @include tablet {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.section-card {
+    padding: 50px 0 150px 0;
     @include tablet {
         padding-top: 20px;
         padding-bottom: 20px;

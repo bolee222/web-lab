@@ -1,7 +1,7 @@
 ---
 title: "About Our Company"
 description: "this is meta description"
-bg_image: "images/headerbg/09.jpg"
+bg_image: "images/headerbg/09.png"
 layout: "about"
 draft: false
 menu:

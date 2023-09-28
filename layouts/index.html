@@ -12,7 +12,7 @@
 
                     {{ partial "cardbg.html" .}}
           
-                    <hr align="left" style="margin-bottom: 80px; width:80%; height:3px; border:none; background-color:black;">
+                    <hr align="left" style="margin-bottom: 80px; width:100%; height:5px; border:none; background-color:black;">
                     
                     {{ with .affiliation }}
                     <div class="slider-affiliation">{{ . | markdownify }}</div>
@@ -29,7 +29,7 @@
                     <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp">{{ .label }}</a>
           {{ end }} {{ end }}
           
-                    <hr align="left" style="margin-top: 100px; width:80%; height:3px; border:none; background-color:black;">
+                    <hr align="left" style="margin-top: 100px; width:100%; height:5px; border:none; background-color:black;">
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@
 
 <!-- /about -->
 {{ with .Params.about }} {{ if .enable }}
-<section class="about section">
+<section class="about section-card">
   <div class="container ">
       <!-- about -->
       <canvas class="orb-canvas"></canvas>
@@ -110,41 +110,16 @@
 {{ end }} {{ end }}
 -->
 
-<!-- News -->
-<section class="white-box about section">
-    <div class="container">
-      <hr align="left" style="margin-top: 10px; margin-bottom: 50px; width:100%; height:3px; border:none; background-color:black;">
-        <div class="row">
-            <div class="col-md-7 col-sm-12">
-              <div class="block">
-                <div class="section-title">
-                    <div class="home-title">Recent News</div>
-                </div>
-                </div>
-            </div>
-        </div>
-        {{ range first 6 (where .Site.RegularPages "Section" "==" "blog") }}{{ $cats := .Params.category -}} {{ if not (reflect.IsSlice $cats) }}{{ $cats = slice ($cats) }}{{ end -}} {{ $cats = apply $cats "urlize" "." | jsonify -}}
-        <div class="col-md-4 portfolio-item portfolio-card shuffle-item">
-            <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" />
-            <div class="portfolio-list-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
-            <div class="portfolio-list-meta">{{ .Params.dateStr }}</div>
-        </div>
-        {{ end }}{{ with .Params.portfolio }}{{ with .content }}{{ end }} {{ with .button }} {{ if .enable }}
-        <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main"
-          >{{ .label }}</a>{{ end }}{{ end }}
-    </div>
-</section>
-{{ end }}
-<!-- /news -->
 
 <!-- portfolio -->
 <section class="about section white-box">
     <div class="container">
+      <hr align="left" style="margin-top: 60px; margin-bottom: 70px; width:100%; height:2px; border:none; background-color:black;">
         <div class="row">
             <div class="col-md-7 col-sm-12">
               <div class="block">
                 <div class="section-title">
-                    <div class="home-title">Our Works</div>
+                    <div class="home-title">RECENT PROJECTS</div>
                 </div>
                 </div>
             </div>
@@ -152,7 +127,7 @@
         {{ range first 6 (where .Site.RegularPages "Section" "==" "project") }}{{ $cats := .Params.category -}} {{ if not (reflect.IsSlice $cats) }}{{ $cats = slice ($cats) }}{{ end -}} {{ $cats = apply $cats "urlize" "." | jsonify -}}
         <div class="col-md-4 portfolio-item portfolio-card shuffle-item">
             <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" />
-            <div class="portfolio-list-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+            <div class="portfolio-list-title"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></div>
             <div class="portfolio-list-meta">{{ .Params.description }}</div>
         </div>
         {{ end }}{{ with .Params.portfolio }}{{ with .content }}{{ end }} {{ with .button }} {{ if .enable }}
@@ -162,7 +137,60 @@
 {{ end }}
 <!-- /portfolio -->
 
+<!-- NEWS
+<section class="white-box about section">
+  <div class="container">
+    <hr align="left" style="margin-top: 10px; margin-bottom: 50px; width:100%; height:3px; border:none; background-color:black;">
+      <div class="row">
+          <div class="col-md-7 col-sm-12">
+            <div class="block">
+              <div class="section-title">
+                  <div class="home-title">Recent News</div>
+              </div>
+              </div>
+          </div>
+      </div>
+      {{ range first 6 (where .Site.RegularPages "Section" "==" "blog") }}{{ $cats := .Params.category -}} {{ if not (reflect.IsSlice $cats) }}{{ $cats = slice ($cats) }}{{ end -}} {{ $cats = apply $cats "urlize" "." | jsonify -}}
+      <div class="col-md-4 portfolio-item portfolio-card shuffle-item">
+          <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" />
+          <div class="news-list-title"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></div>
+          <div class="portfolio-list-meta">{{ .Params.dateStr | markdownify }}</div>
+      </div>
+      {{ end }}{{ with .Params.portfolio }}{{ with .content }}{{ end }} {{ with .button }} {{ if .enable }}
+      <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main"
+        >{{ .label | markdownify }}</a>{{ end }}{{ end }}
+  </div>
+</section>
+{{ end }}
+-->
 
+<!-- News2 -->
+<section class="white-box about section-last">
+  <div class="container">
+    <hr align="left" style="margin-top: 10px; margin-bottom: 80px; width:100%; height:3px; border:none; background-color:black;">
+      <div class="row">
+          <div class="col-md-7 col-sm-12">
+            <div class="block">
+              <div class="section-title">
+                  <div class="home-title">RECENT NEWS</div>
+              </div>
+              </div>
+          </div>
+      </div>
+      {{ range first 6 (where .Site.RegularPages "Section" "==" "blog") }}{{ $cats := .Params.category -}} {{ if not (reflect.IsSlice $cats) }}{{ $cats = slice ($cats) }}{{ end -}} {{ $cats = apply $cats "urlize" "." | jsonify -}}
+      <div class="col-md-12 portfolio-item portfolio-card shuffle-item">
+        <div class="col-sm-2 news-textList-date ">{{ .Params.dateStr | markdownify }}</div>
+        <div class="col-sm-4 news-textList-title"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></div>
+      </div>
+      {{ end }}{{ with .Params.portfolio }}{{ with .content }}{{ end }} {{ with .button }} {{ if .enable }}
+      <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main"
+        >{{ .label | markdownify }}</a>{{ end }}{{ end }}
+
+      <hr align="left" style="margin-top: 80px; margin-bottom: 0; width:100%; height:3px; border:none;background-color:black;">
+  </div>
+</section>
+{{ end }}
+<!-- /news2 -->
 
 
 
