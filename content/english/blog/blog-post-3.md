@@ -6,7 +6,7 @@ author: Mark Dinn
 image : "images/blog/blog-post-3.jpg"
 bg_image: "images/feature-bg.jpg"
 categories: ["Legacy Support"]
-tags: ["Android","Retro"]
+tags: ["Android"]
 description: "this is meta description"
 draft: false
 type: "post"

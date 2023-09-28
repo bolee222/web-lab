@@ -31,13 +31,16 @@
 
   .post-title {
     margin-top: 25px;
-    text-transform: uppercase;
+    font-family: $poppins-font;
+    font-size: 25px;
+    color: black;
+    //text-transform: uppercase;
 
     a {
-      color: $primary-color;
 
       &:hover {
         color: $primary-color;
+        text-decoration: underline;
       }
     }
   }
@@ -49,10 +52,12 @@
     ul {
       li {
         display: inline-block;
-        color: #909090;
+        color: gray;
         margin-right: 20px;
-        font-size: 12px;
+        font-size: 15px;
         letter-spacing: .5px;
+        
+
 
         a {
           color: #909090;
@@ -74,6 +79,7 @@
 
     p {
       line-height: 26px;
+      color: black;
     }
 
     ul {
@@ -99,8 +105,17 @@
 
     .btn-main {
       padding: 10px 20px;
-      margin: 15px 0;
-      font-size: 12px;
+      margin: 5px 0;
+      font-size: 14px;
+      color: black;
+      background-color: #e7e6e6;
+      font-family: $primary-font;
+
+      &:hover{
+        color: white;
+        background-color: black;
+      }
+   
     }
   }
 }
@@ -142,4 +157,12 @@
   >li:last-child>a {
     border-radius: 0;
   }
+}
+
+.recent-news{
+  padding: 0 !important;
+}
+
+.recent-news-right{
+  padding-right: 10px !important;
 }

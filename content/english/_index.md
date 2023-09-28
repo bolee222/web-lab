@@ -23,8 +23,8 @@ banner:
 about:
   enable: true
   title: "About Our Lab"
-  description: "Digital technologies and media have been deeply embedded in our daily lives, and **blur the boundary between our physical lives of atoms and digital ones of bits**. Consequently, ‘how to converge these two worlds in a more seamless and innovative way’ has become a hot topic in various industries, such as smart environments, robots, education, art, media, or games. 
-
+  description: "Digital technologies and media have been deeply embedded in our daily lives, and **blur the boundary between our physical lives of atoms and digital ones of bits**. Consequently, ‘how to converge these two worlds in a more seamless and innovative way’ has become a hot topic in various industries, such as smart environments, robots, education, art, media, or games.  
+  
   
   Our lab envisions this new reality through various designary and multi-disciplinary approaches. Through iterative user-centered processes, we design new products, interactions, services, and systems that could bring new experiences to various convergence domains (e.g., embodied art, smart home, immersive environments, metaverse contents, design toolkits, spatial marketing, digital human, augmented experience,
 digital architecture, etc.)."

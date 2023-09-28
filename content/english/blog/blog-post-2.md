@@ -6,7 +6,7 @@ author: [ "Mark Dinn", "John Doe" ]
 image : "images/blog/blog-post-2.jpg"
 bg_image: "images/feature-bg.jpg"
 categories: ["Artificial Intelligence"]
-tags: ["Advice","Retro"]
+tags: ["Retro"]
 description: "this is meta description"
 draft: false
 type: "post"

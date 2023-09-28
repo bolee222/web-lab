@@ -6,7 +6,7 @@ author: Mark Dinn
 image : "images/blog/blog-post-5.jpg"
 bg_image: "images/feature-bg.jpg"
 categories: ["Artificial Intelligence"]
-tags: ["Advice","AI"]
+tags: ["AI"]
 description: "this is meta description"
 draft: false
 type: "post"
