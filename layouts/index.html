@@ -180,7 +180,8 @@
       {{ range first 6 (where .Site.RegularPages "Section" "==" "blog") }}{{ $cats := .Params.category -}} {{ if not (reflect.IsSlice $cats) }}{{ $cats = slice ($cats) }}{{ end -}} {{ $cats = apply $cats "urlize" "." | jsonify -}}
       <div class="col-md-12 portfolio-card shuffle-item">
         <div class="col-sm-2 news-textList-date ">{{ .Params.dateStr | markdownify }}</div>
-        <div class="col-sm-4 news-textList-title"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></div>
+        <div class="col-sm-1" style="text-align: right"><i class="{{ .Params.icon}}"></i></div>
+        <div class="col-sm-8 news-textList-title"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></div>
       </div>
       {{ end }}{{ with .Params.portfolio }}{{ with .content }}{{ end }} {{ with .button }} {{ if .enable }}
       <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main"

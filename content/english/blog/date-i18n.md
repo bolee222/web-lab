@@ -10,6 +10,7 @@ categories: ["Technical Assistance"]
 tags: ["How to", "Technology"]
 draft: false
 type: "post"
+icon: "ion-social-pinterest-outline" 
 ---
 
 

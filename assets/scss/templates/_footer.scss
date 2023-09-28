@@ -11,8 +11,9 @@
   a {
     color: #595959;
   }
+  
   .footer-menu {
-    padding-bottom: 25px;
+    padding-bottom: 10px;
     ul {
       margin: 0px;
       padding: 0px;
@@ -21,7 +22,7 @@
         padding: 0px 20px;
         a {
           display: inline-block;
-          color: #494949;
+          color: black;
           &:hover {
             color: #000;
           }
@@ -30,7 +31,7 @@
     }
   }
   .copyright {
-    margin-top:15px;
+    margin-top:10px;
     font-family: $primary-font;
     font-size: 15px;
     color: black;
