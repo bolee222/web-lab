@@ -62,7 +62,10 @@ input[type="tel"] {
 
 // Button Style
 .btn-main {
-    background: $lightGray;
+    background: transparent;
+    border-radius: 0;
+    border-width: 1px;
+    border-style: dotted;
     color: $mediumGray;
     display: inline-block;
     font-size: 12px;
@@ -71,7 +74,7 @@ input[type="tel"] {
     padding: 10px 15px;
     margin-top: 20px;
     text-transform: capitalize;
-    border-radius: 0;
+    
     @include transition (all, 0.2s, ease);
     &.btn-icon {
         i {

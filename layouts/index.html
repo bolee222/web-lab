@@ -58,7 +58,7 @@
               </div>
               {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block")
               }}{{ end }} {{ with .button }} {{ if .enable }}
-              <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main">{{ .label }}</a>
+              <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main">{{ .label | markdownify }}</a>
               {{ end }}{{ end }}
             </div>
           </div>
@@ -77,43 +77,10 @@
 <!-- /about -->
 
 
-<!-- News -->
-<section class="about section">
-  <div class="container ">
-      <canvas class="orb-canvas"></canvas>
-      <!-- Overlay -->
-      <div class="overlay">
-        <section class="about section">
-            <div class="row">
-                <div class="col-md-7 col-sm-12">
-                  <div class="block">
-                    <div class="section-title">
-                        <div class="home-title">Recent News</div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            {{ range first 6 (where .Site.RegularPages "Section" "==" "blog") }}{{ $cats := .Params.category -}} {{ if not (reflect.IsSlice $cats) }}{{ $cats = slice ($cats) }}{{ end -}} {{ $cats = apply $cats "urlize" "." | jsonify -}}
-            <div class="col-md-4 portfolio-item portfolio-card shuffle-item">
-                <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" />
-                <div class="portfolio-list-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
-                <div class="portfolio-list-meta">{{ .Params.dateStr }}</div>
-            </div>
-            {{ end }}{{ with .Params.portfolio }}{{ with .content }}{{ end }} {{ with .button }} {{ if .enable }}
-            <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main"
-              >{{ .label }}</a>{{ end }}{{ end }}
-      </section>
-      {{ end }}
-        
-        </div>
-      </div>
-  </div>
-</section>
-<!-- /News -->
 
 
 
-<!-- /about -->
+<!-- 
 {{ with .Params.about }} {{ if .enable }}
 <section class="about section white-box">
   <div class="container ">
@@ -141,7 +108,7 @@
   </div>
 </section>
 {{ end }} {{ end }}
-<!-- /about -->
+-->
 
 <!-- News -->
 <section class="white-box about section">
@@ -188,7 +155,7 @@
             <div class="portfolio-list-meta">{{ .Params.description }}</div>
         </div>
         {{ end }}{{ with .Params.portfolio }}{{ with .content }}{{ end }} {{ with .button }} {{ if .enable }}
-        <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main">{{ .label }}</a>{{ end }}{{ end }}
+        <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main">{{ .label | markdownify }}</a>{{ end }}{{ end }}
     </div>
 </section>
 {{ end }}

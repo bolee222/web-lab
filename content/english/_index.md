@@ -32,7 +32,7 @@ digital architecture, etc.)."
 
   button:
     enable: true
-    label: "learn more about our lab"
+    label: "&rarr; learn more about our lab"
     link: "about/about"
 
 
@@ -59,7 +59,7 @@ service:
 ############################ FA@ ###########################
 cta:
   enable: true
-  bg_image: "images/call-to-action-bg.jpg"
+  bg_image: "images/headerbg/office.jpg"
   title: "Are you interested in joining our lab?"
   content: "Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
   button:
