@@ -198,23 +198,23 @@ weight = 3
 
 # Footer menu
 [[languages.en.menu.footer]]
-name = "About"
-URL = "about"
+name = "Home"
+URL = ""
 weight = 1
+
+[[languages.en.menu.footer]]
+name = "Lab"
+URL = "about/about"
+weight = 2
+
+[[languages.en.menu.footer]]
+name = "Professor"
+URL = "people/professor"
+weight = 3
 
 [[languages.en.menu.footer]]
 name = "Project"
 URL = "project"
-weight = 2
-
-[[languages.en.menu.footer]]
-name = "Service"
-URL = "service"
-weight = 3
-
-[[languages.en.menu.footer]]
-name = "Pricing"
-URL = "pricing"
 weight = 4
 
 [[languages.en.menu.footer]]
