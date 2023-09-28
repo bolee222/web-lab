@@ -61,6 +61,7 @@ Yonsei University, 85 Songdogwahak-ro
 Yeonsu-gu, Incheon  
 Republic of Korea
 21983
+[_Directions_](https://uic.yonsei.ac.kr/main/about.asp?mid=m01_06_02)
 """
 # Whether to display text descriptors (like "E-mail: ", "Phone: ") before the address block elements
 address_descriptors = false
@@ -126,9 +127,6 @@ link = "#"
 icon = "ion-social-twitter-outline" #ionicon pack v2 : https://ionicons.com/v2/
 link = "#"
 
-[[params.social]]
-icon = "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
 
 
 ################################# Plugins #####################################
