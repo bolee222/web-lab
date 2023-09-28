@@ -101,18 +101,34 @@
 
 .student-name{
     font-family: $poppins-font;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 3px;
 }
 
 .student-type{
     font-family: $primary-color;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 10px;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
+.student-des{
+    margin-top: 20px;
+    font-family: $primary-color;
+    font-size: 15px;
+    font-weight: 400;
+}
 
+img.rounded {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 60%;
+    width: 60%;
+  }
+  
 
 
 

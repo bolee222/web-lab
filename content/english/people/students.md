@@ -1,6 +1,6 @@
 ---
 title: "Researchers"
-description: "this is meta description"
+description: "Students who are actively exploring our new future in Convergence Design Lab."
 bg_image: "images/headerbg/09.png"
 layout: "researchers"
 draft: false
@@ -15,7 +15,7 @@ pricing:
   enable: true
   pricing_table:
     # pricing table loop
-    - name: "Izzaty"
+    - name: "Nur Izzatty"
       type: master student
       image : "images/bokyung/bokyungLee.jpg"
       price: "$99"
@@ -30,7 +30,7 @@ pricing:
         - 24/7 Tech Support
 
     # pricing table loop
-    - name: "Premium"
+    - name: "Hung Pei-Tzu"
       type: master student
       image : "images/bokyung/bokyungLee.jpg"
       content: "Suitable for small businesses with up to 5 employees"

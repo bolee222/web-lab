@@ -1,3 +1,4 @@
+
 {{ define "main" }}
 
 {{ partial "page-title.html" . }}
@@ -12,7 +13,6 @@
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="pricing-item text-center">
           <div class="price-title">
-            {{ with .image }}<img src="{{ . | relURL }}" class="rounded">{{ end }}
             {{ with .name }}<div class="student-name">{{ . | markdownify }}</div>{{ end }}
             {{ with .type }}<div class="student-type">{{ . | markdownify }}</div>{{ end }}
             {{ with .content }}<div class="student-des">{{ . | markdownify }}</div>{{ end }}
