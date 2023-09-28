@@ -28,7 +28,7 @@
     font-family: $poppins-font;
     font-weight: 600;
     color: black;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 .portfolio-list-title a {
@@ -54,13 +54,13 @@
 .portfolio {
     &-item {
         position: relative;
-        padding: 0;
+        padding: 10px;
         img {
             width: 100%;
             height: auto;
             filter: grayscale(50%) opacity(80%);
             //border: 1px solid $darkGray;
-            padding: 10px;
+            //padding: 10px;
         }
         img:hover {
             width: 100%;
@@ -144,9 +144,9 @@
 .news-textList-title {
     font-size: 16px;
     font-family: $poppins-font;
-    font-weight: 600;
+    font-weight: 500;
     color: black;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 
 .news-textList-date {
@@ -154,5 +154,5 @@
     font-family: $poppins-font;
     font-weight: 300;
     color: black;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }

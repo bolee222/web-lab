@@ -167,7 +167,7 @@
 <!-- News2 -->
 <section class="white-box about section-last">
   <div class="container">
-    <hr align="left" style="margin-top: 10px; margin-bottom: 80px; width:100%; height:3px; border:none; background-color:black;">
+    <hr align="left" style="margin-top: 30px; margin-bottom: 80px; width:100%; height:2px; border:none; background-color:black;">
       <div class="row">
           <div class="col-md-7 col-sm-12">
             <div class="block">
@@ -178,7 +178,7 @@
           </div>
       </div>
       {{ range first 6 (where .Site.RegularPages "Section" "==" "blog") }}{{ $cats := .Params.category -}} {{ if not (reflect.IsSlice $cats) }}{{ $cats = slice ($cats) }}{{ end -}} {{ $cats = apply $cats "urlize" "." | jsonify -}}
-      <div class="col-md-12 portfolio-item portfolio-card shuffle-item">
+      <div class="col-md-12 portfolio-card shuffle-item">
         <div class="col-sm-2 news-textList-date ">{{ .Params.dateStr | markdownify }}</div>
         <div class="col-sm-4 news-textList-title"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></div>
       </div>
@@ -186,7 +186,7 @@
       <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main"
         >{{ .label | markdownify }}</a>{{ end }}{{ end }}
 
-      <hr align="left" style="margin-top: 80px; margin-bottom: 0; width:100%; height:3px; border:none;background-color:black;">
+      <hr align="left" style="margin-top: 80px; margin-bottom: 0; width:100%; height:2px; border:none;background-color:black;">
   </div>
 </section>
 {{ end }}
