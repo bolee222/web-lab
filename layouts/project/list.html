@@ -34,8 +34,9 @@
                         {{ $cats = apply $cats "urlize" "." | jsonify -}}
                         <div class="col-md-4 portfolio-item portfolio-card shuffle-item" data-groups="{{ $cats }}">
                             {{ if isset .Params "image" -}}
-                            <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" />
-                            <div class="portfolio-list-title">{{ .Title }}</div>
+                            <a href="{{ .Permalink }}"><img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" /></a>
+                            <div class="portfolio-list-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></div>
+
                             <div class="portfolio-list-meta">{{ .Params.description }}</div>
                             {{- end }}
                             <div class="portfolio-hover">

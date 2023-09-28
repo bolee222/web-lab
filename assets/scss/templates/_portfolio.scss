@@ -24,7 +24,8 @@
 }
 
 .portfolio-list-title {
-    font-size: 17px;
+    font-size: 19px;
+    font-family: $poppins-font;
     font-weight: 600;
     color: black;
     padding-top: 5px;
@@ -36,6 +37,7 @@
 
 .portfolio-list-title a:hover {
     text-decoration: underline;
+    background-color:$yellow-highlight;
     color: $primary-color !important;
 }
 
@@ -46,7 +48,7 @@
 }
 
 .portfolio-card {
-    padding-right: 15px !important;
+    padding: 0px;
 }
 
 .portfolio {
@@ -56,23 +58,25 @@
         img {
             width: 100%;
             height: auto;
-            filter: grayscale(20%) opacity(80%);
-            border: 1px solid $darkGray;
+            filter: grayscale(50%) opacity(80%);
+            //border: 1px solid $darkGray;
+            padding: 5px;
         }
         img:hover {
             width: 100%;
             height: auto;
-            filter: opacity(100%);
+            filter: drop-shadow(8px 8px 10px gray) opacity(100%);
         }
-        &:hover {
-            .portfolio-hover {
-                visibility: visible;
-                opacity: 1;
-            }
-            .portfolio-content {
-                transform: translateY(-50%);
-            }
-        }
+
+        //&:hover {
+        //    .portfolio-hover {
+        //        visibility: visible;
+        //        opacity: 1;
+        //    }
+        //    .portfolio-content {
+        //        transform: translateY(-50%);
+        //    }
+        //}
     }
     &-hover {
         position: absolute;
