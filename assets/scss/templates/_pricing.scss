@@ -4,9 +4,10 @@
 
 .pricing-table {
   .pricing-item {
-    padding: 40px 20px;
+    padding: 0px 20px 30px 20px;
     background: $light;
     box-shadow: 0 8px 15px 0 rgba(5, 57, 106, .06);
+    margin-bottom: 20px;
 
     a.btn-main {
       text-transform: uppercase;

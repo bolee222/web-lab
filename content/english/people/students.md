@@ -1,8 +1,8 @@
 ---
-title: "Our Pricing"
+title: "Researchers"
 description: "this is meta description"
-bg_image: "images/feature-bg.jpg"
-layout: "pricing"
+bg_image: "images/headerbg/09.png"
+layout: "researchers"
 draft: false
 menu:
   main:
@@ -15,7 +15,9 @@ pricing:
   enable: true
   pricing_table:
     # pricing table loop
-    - name: "Basic"
+    - name: "Izzaty"
+      type: master student
+      image : "images/bokyung/bokyungLee.jpg"
       price: "$99"
       content: "Perfect for single freelancers who work by themselves"
       link: "#"
@@ -29,7 +31,8 @@ pricing:
 
     # pricing table loop
     - name: "Premium"
-      price: "$199"
+      type: master student
+      image : "images/bokyung/bokyungLee.jpg"
       content: "Suitable for small businesses with up to 5 employees"
       link: "#"
       services:
@@ -41,9 +44,24 @@ pricing:
         - 24/7 Tech Support
 
     # pricing table loop
-    - name: "Advance"
-      price: "$299"
-      content: "Suitable for large businesses with unlimited employees"
+    - name: "Premium"
+      type: master student
+      image : "images/bokyung/bokyungLee.jpg"
+      content: "Suitable for small businesses with up to 5 employees"
+      link: "#"
+      services:
+        - Unlimited agents
+        - 10 PSD Design
+        - HTML5 Markup
+        - Basic SEO
+        - Email Marketing
+        - 24/7 Tech Support
+
+    # pricing table loop
+    - name: "Premium"
+      type: master student
+      image : "images/bokyung/bokyungLee.jpg"
+      content: "Suitable for small businesses with up to 5 employees"
       link: "#"
       services:
         - Unlimited agents
