@@ -1,8 +1,8 @@
 .footer {
   background: #F5F5F5;
-  min-height: 205px;
+  //min-height: 205px;
   text-align: center;
-  padding-top: 67px;
+  padding-top: 20px;
   p {
     font-size: 13px;
     line-height: 25px;
@@ -11,7 +11,7 @@
   a {
     color: #595959;
   }
-  
+
   .footer-menu {
     padding-bottom: 10px;
     ul {
@@ -30,6 +30,7 @@
       }
     }
   }
+
   .copyright {
     margin-top:10px;
     font-family: $primary-font;

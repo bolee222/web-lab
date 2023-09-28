@@ -187,7 +187,8 @@
       <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main"
         >{{ .label | markdownify }}</a>{{ end }}{{ end }}
 
-      <hr align="left" style="margin-top: 80px; margin-bottom: 0; width:100%; height:2px; border:none;background-color:black;">
+        <hr align="left" style="margin-top: 80px; margin-bottom: 0; width:100%; height:0px; border:none;background-color:black;">
+
   </div>
 </section>
 {{ end }}
@@ -199,8 +200,32 @@
 {{ if .Params.service.enable }} {{ partial "service.html" . }} {{ end }}
 <!-- /service -->
 
+
+
+
 <!-- call to action -->
-{{ if .Params.cta.enable }} {{ partial "cta.html" . }} {{ end }}
+{{ if .Params.cta.enable }}
+<section class="about section-card">
+  <div class="container cta-custom">
+      <!-- about -->
+      <canvas class="orb-canvas"></canvas>
+      <!-- Overlay -->
+      <div class="overlay">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <h2>Are you interested in joining our lab?</h2>
+              <p>Read more about what we do and our philosophy of design. <br> Judge for yourself The work and results we've achieved for other clients, and meet our highly experienced Team who just love to design.</p>
+              <a class="home-slider-more btn-main" href={{ absURL "/about/faq/" }}>→ Check Frequently Asked Questions</a>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+  </div>
+</section>
+{{ end }}
 <!-- /call to action -->
 
 
