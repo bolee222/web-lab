@@ -1,7 +1,7 @@
 ---
 title: "Service"
 description: "this is meta description"
-bg_image: "images/feature-bg.jpg"
+bg_image: "images/headerbg/09.png"
 layout: "service"
 draft: false
 menu:
