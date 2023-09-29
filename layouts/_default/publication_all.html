@@ -1,0 +1,22 @@
+<section class="section pb-0 padding0 margin-bottom-0" id="project">
+    <div class="container cv-section-padding margin-bottom-0 padding-side-0">
+            <div class="row margin-bottom-0">
+                <div class="col-lg-9 margin-bottom-0 padding-publication_title ">
+                    <div class="cv-text-bold margin-bottom-0"><a href="{{ .Params.link_PDF | absURL }}" target="_blank"> {{ .Title  | markdownify }}</a></div>
+                    <div class="cv-text-authors margin-bottom-0">{{ .Params.Author  | markdownify }}</div>
+                    <div class="cv-text-authors margin-bottom-0"><em>{{ .Params.Journal  | markdownify }}</em></div>
+                        <ul class="btn-link-group list-inline margin-bottom-0">
+                          {{ range .Params.Links }}
+                          <li class="list-inline-item link-text-publications">
+                            <a href="{{ .link | absURL }}" target="_blank">{{ .label }}</a>
+                        </li>
+                        {{ end }}
+                        </ul>
+                </div>
+                <div class="col-lg-3 margin-bottom-0 ">
+                  <div class="cv-text-bold">{{ .Params.homeYearTag}}</div>
+                </div>                  
+                  
+            </div>
+        </div>
+</section>

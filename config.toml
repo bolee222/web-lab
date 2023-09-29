@@ -4,7 +4,7 @@ baseURL = "/"
 title = "Bokyung Lee Lab"
 theme = "airspace-hugo"
 # Number of posts per page in list view
-paginate = "4"
+paginate = "100"
 # Post excerpt length
 summaryLength = "30"
 # Disabled languages

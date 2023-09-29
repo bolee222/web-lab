@@ -1,0 +1,25 @@
+<section class="publication pb-0 padding0 margin-bottom-0" id="project">
+    <div class="publication container cv-section-padding margin-bottom-0 padding-side-0">
+            {{if or (eq .Params.Type "Journal_sci") (eq .Params.Type "Conference_sci") }}
+            <div class="row margin-bottom-0" style="padding-left: 30px;">
+                <div class="col-lg-10 col-md-11 margin-bottom-0 padding-publication_title ">
+                    <div class="cv-text-bold margin-bottom-0"><a href="{{ .Params.link_PDF | absURL }}" target="_blank"> {{ .Title  | markdownify }}</a></div>
+                    <div class="cv-text margin-bottom-0">{{ .Params.Author  | markdownify }}</div>
+                    <div class="cv-text-pubs margin-bottom-0 pub-link-a"><em>{{ .Params.Journal  | markdownify }}</em></div>
+                        <ul class="btn-link-group list-inline margin-bottom-0 pub-link-a">
+                          {{ range .Params.Links }}
+                          <li class="list-inline-item link-text-publications pub-link-a">
+                            <a href="{{ .link | absURL }}" target="_blank">{{ .label }}</a>
+                        </li>
+                        {{ end }}
+                        </ul>
+                </div>
+                <div class="col-lg-2 margin-bottom-0 padding-side-0">
+                  <div class="cv-text-bold">{{ .Params.publicationDate}}</div>
+                </div>
+              {{end}}
+                  
+                  
+            </div>
+        </div>
+</section>

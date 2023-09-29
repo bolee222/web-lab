@@ -347,3 +347,143 @@ img.rounded {
     }
 
   }
+
+  //publication
+  .publication-type-title {
+    font-family: $primary-font;
+    font-weight: 800;
+    font-size: 23px !important;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .padding-publication_title {
+    padding-right: 20px !important;
+    //padding-left: 0px;
+}
+
+.cv-text {
+  font-size: 15px;
+  font-weight: 300;
+  color: black;
+  font-family: $primary-font;
+  line-height: 1.4;
+  margin-bottom: 1px;
+}
+
+.cv-text ins{
+  text-decoration-thickness: 1px;
+}
+
+.cv-text-authors {
+  font-size: 15px !important;
+  font-weight: 300 !important;
+  color: black!important;
+  font-family: $primary-font;
+  line-height: 1.2;    
+}
+
+.cv-text-authors strong{
+  font-weight: 500;
+  color: black !important;
+  font-family: $primary-font;
+  line-height: 1.3; 
+}
+
+.cv-text-authors em{
+  font-weight: 300;
+}
+
+.cv-text-authors em strong{
+  font-weight: 300 !important;;
+}
+
+.cv-text-authors ins{
+  font-weight: 300;
+  text-decoration-thickness: 1px;
+}
+
+.cv-text-period {
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  font-family: $primary-font;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.padding-left-30 {
+  padding-left: 30px;
+}
+
+.cv-text-bold {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  font-family: $primary-font;
+  line-height: 1.3;
+}
+
+.cv-text-bold a:hover{
+  text-decoration: underline;
+}
+
+.cv-text-bold em{
+  font-weight: 300 !important;
+  font-size: 15px;
+}
+
+.cv-text-pubs{
+  font-size: 15px;
+  font-weight: 300;
+  color: black;
+  font-family: $primary-font;
+  line-height: 1.4;
+  margin-bottom: 1px;
+}
+
+.cv-text-pubs em strong {
+  font-weight: 500;
+}
+
+.link-text-publications {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: black;
+  font-family: $primary-font;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  text-decoration: underline !important;
+
+  a{
+    color: $primary-color;
+  }
+}
+
+a:link-text-publications {
+  font-weight: 600 !important;
+  color: black;
+  text-decoration: underline !important;
+}
+
+.publication{
+  font-family: $primary-font;
+
+  .section{
+    padding: 0px !important;
+  }
+}
+
+.pub-link-a {
+  ul{
+    li{
+      a{
+        text-decoration: underline;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
