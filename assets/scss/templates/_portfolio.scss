@@ -93,14 +93,14 @@
         img {
             width: 100%;
             height: auto;
-            filter: grayscale(50%) opacity(80%);
+            //filter: grayscale(50%) opacity(80%);
             //border: 1px solid $darkGray;
             //padding: 10px;
         }
         img:hover {
             width: 100%;
             height: auto;
-            filter: drop-shadow(8px 8px 10px gray) opacity(100%);
+            filter: drop-shadow(8px 8px  10px gray) opacity(100%);
         }
 
         //&:hover {
@@ -129,6 +129,7 @@
         left: 0;
         right: 0;
         top: 50%;
+        height: 100px;
         transform: translateY(-40%);
         text-align: center;
         padding: 20px;
@@ -235,4 +236,9 @@
 .btn-link-group{
     align-content: left !important;
     justify-content: left !important;
+}
+
+.work-card{
+    padding: 0px;
+    height: 500px;
 }
