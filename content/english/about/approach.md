@@ -1,5 +1,5 @@
 ---
-title: "Service"
+title: "Research Approach"
 description: "this is meta description"
 bg_image: "images/headerbg/09.png"
 layout: "service"
@@ -7,8 +7,8 @@ draft: false
 menu:
   main:
     parent: "About Lab"
-    name: "Service"
-    weight: 1
+    name: "Research Approach"
+    weight: 2
 
 ########################### about service #############################
 about:

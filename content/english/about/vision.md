@@ -1,5 +1,5 @@
 ---
-title: "About Our Company"
+title: "Our Research Vision"
 description: "this is meta description"
 bg_image: "images/headerbg/09.png"
 layout: "about"
@@ -7,8 +7,8 @@ draft: false
 menu:
   main:
     parent: "About Lab"
-    name: "About"
-    weight: 2
+    name: "Research Vision"
+    weight: 1
 
 
 ################################## About #####################################

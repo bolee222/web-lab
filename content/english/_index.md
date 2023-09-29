@@ -25,7 +25,7 @@ about:
   title: "About Our Lab"
   description: "Digital technologies and media have been deeply embedded in our daily lives, and **blur the boundary between our physical lives of atoms and digital ones of bits**. Consequently, ‘how to converge these two worlds in a more seamless and innovative way’ has become a hot topic in various industries, such as smart environments, robots, education, art, media, or games.  
   
-  
+
   Our lab envisions this new reality through various designary and multi-disciplinary approaches. Through iterative user-centered processes, we design new products, interactions, services, and systems that could bring new experiences to various convergence domains (e.g., embodied art, smart home, immersive environments, metaverse contents, design toolkits, spatial marketing, digital human, augmented experience,
 digital architecture, etc.)."
   image: "images/logo/Lab-Identity.png"
@@ -59,12 +59,12 @@ service:
 ############################ FA@ ###########################
 cta:
   enable: true
-  #bg_image: "images/headerbg/office_.jpg"
+  bg_image: "images/headerbg/office-original.jpg"
   title: "Are you interested in **joining** our lab?"
   content: "Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
   button:
     enable: true
-    label: "&rarr; FAQ"
+    label: "&rarr; Frequently Asked Questions"
     link: "about/faq/"
 
 ############################# Funfacts ###############################
