@@ -73,6 +73,15 @@
     padding-right: 20px;
 }
 
+.project-teaser-image{
+    width: 100%;
+    aspect-ratio: 2560 / 945;
+    margin-top: 20px !important;
+    //height: 400px;
+    padding: 0px 15px;
+  }
+  
+
 .portfolio-card {
     padding: 0px;
 }
@@ -185,10 +194,45 @@
 
 
 .project-page-title{
-    font-size: 35px;
+    font-size: 30px;
     font-family: $primary-font;
     font-weight: 600;
     line-height: 1.2;
     color: black;
-    margin-bottom: 7px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    
+}
+
+.project-link-btn {
+    font-size: 13px;
+    font-family: $primary-font;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    background: transparent;
+    padding: 5px 15px;
+    margin-right: 0px;
+    border-radius: 0px;
+    border: 1px solid;
+    position: relative;
+    z-index: 1;
+    transition: .2s ease;
+    margin-bottom: 10px;
+    &:hover,
+    &:active,
+    &:focus {
+        outline: 0;
+        box-shadow: none !important;
+    }
+}
+
+.project-link-btn:hover{
+    background: $primary-color;
+    color: white;
+}
+
+.btn-link-group{
+    align-content: left !important;
+    justify-content: left !important;
 }

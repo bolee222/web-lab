@@ -9,10 +9,26 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block">
+          {{ with .Params.teaser }}
+            <img src="{{ . | absURL }}" alt="" class="img-fluid mb-4 project-teaser-image" /> {{ end }}
           <div class="project-page-title">{{ .Title  | markdownify }}</div>
-          <p>{{ .Params.description  | markdownify }}</p>
-        </div>
+
+          <!--Link Buttons-->
+          {{ if .Params.Links }}
+          <ul class="btn-link-group list-inline">
+            {{ range .Params.Links }}
+            <li class="list-inline-item">
+              <a href="{{ .link | absURL }}" target="_blank"><button class="project-link-btn">{{ .label }}</button></a>
+                </li>
+                {{ end }}
+          </ul>
+          {{ end }}
+        </div>    
+        <hr align="left" style="margin-top: 40px; margin-bottom: 70px; width:100%; height:1px; border:none; background-color:black;">
       </div>
+
+      
+
 
       <div class="col-md-8">
         {{ with .Params.image }}
