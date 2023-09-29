@@ -33,7 +33,7 @@ digital architecture, etc.)."
   button:
     enable: true
     label: "&rarr; learn more about our lab"
-    link: "about/about"
+    link: "about/vision/"
 
 
 

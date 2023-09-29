@@ -1,6 +1,6 @@
 ---
 title: "Research Approach"
-description: "this is meta description"
+description: "Our lab takes various designery approaches to envision our future. "
 bg_image: "images/headerbg/09.png"
 layout: "service"
 draft: false
