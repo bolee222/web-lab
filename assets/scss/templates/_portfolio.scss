@@ -50,6 +50,26 @@
     }
 }
 
+.btn-journal-name-home {
+    background: rgb(43, 43, 43);
+    color: white;
+    font-family: $primary-font;
+    font-weight: 600;
+    font-size: 15px !important;
+    text-align: center;
+    margin-top: 15px;
+    padding: 3px 6px;
+    margin-bottom: 0px !important;
+
+    border: 0px;
+    &:active,
+    &:hover,
+    &.focus,
+    &.active {
+        background: #4F088D !important;
+        color: white !important;
+    }
+}
 
 .btn-journal-name-purple {
     background: rgb(40, 40, 40);
@@ -70,6 +90,15 @@
         background: #4F088D !important;
         color: white !important;
     }
+}
+
+.portfolio-list-title-home {
+    font-size: 17px;
+    font-family: $primary-font;
+    font-weight: 600;
+    color: black;
+    line-height: 1.3;
+    padding-top: 10px;
 }
 
 .portfolio-list-title {

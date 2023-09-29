@@ -37,6 +37,8 @@
                                 {{ if isset .Params "image" -}}
                                 <!-- 이미지 삽입 -->
                                 <a href="{{ .Permalink }}"><img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" /></a>
+
+                                 <!-- 저널 네임 삽입 -->
                                 <button type="button" class="btn-journal-name-purple">{{ .Params.conference }}</button>
     
                                 <!-- 타이틀 삽입 -->

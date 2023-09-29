@@ -129,9 +129,13 @@
         {{ end }}{{ end }} 
         {{ range first 6 (where .Site.RegularPages "Section" "==" "project") }}{{ $cats := .Params.category -}} {{ if not (reflect.IsSlice $cats) }}{{ $cats = slice ($cats) }}{{ end -}} {{ $cats = apply $cats "urlize" "." | jsonify -}}
         <div class="col-md-4 portfolio-item portfolio-card shuffle-item">
-            <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" />
-            <div class="portfolio-list-title"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></div>
-            <div class="portfolio-list-meta">{{ .Params.description }}</div>
+             <!-- 이미지 삽입 -->
+             <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" />
+             <!-- 저널 네임 삽입 -->
+             <button type="button" class="btn-journal-name-home">{{ .Params.conference }}</button>
+             <!-- 타이틀 삽입 -->
+             <div class="portfolio-list-title-home"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></div>
+            <div class="portfolio-list-meta">{{ .Params.metacontent }}</div>
         </div>
         {{ end }}{{ with .Params.portfolio }}{{ with .content }}{{ end }} {{ with .button }} {{ if .enable }}
         <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main">{{ .label | markdownify }}</a>{{ end }}{{ end }}
