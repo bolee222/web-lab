@@ -31,7 +31,8 @@
 
   .post-title {
     margin-top: 25px;
-    font-family: $poppins-font;
+    font-family: $primary-font;
+    font-weight: 600;
     font-size: 25px;
     color: black;
     //text-transform: uppercase;
@@ -105,11 +106,20 @@
 
     .btn-main {
       padding: 10px 20px;
-      margin: 5px 0;
+      margin: 2px 0;
       font-size: 14px;
       color: black;
-      background-color: #e7e6e6;
+      background-color: transparent;
       font-family: $primary-font;
+      font-weight: 500;
+      width: fit-content;
+      letter-spacing: 1px;
+
+      border-radius: 0;
+      border-width: 1px !important;
+      border-style: dotted;
+      border-color: black;
+
 
       &:hover{
         color: white;

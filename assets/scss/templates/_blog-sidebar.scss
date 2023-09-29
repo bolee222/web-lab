@@ -9,9 +9,10 @@
     margin-top: 0px;
     margin-bottom: 15px;
     font-size: 16px;
+    font-family: $poppins-font;
     color: #333;
-    font-weight: 500;
-    border-bottom: 1px solid $border-color;
+    font-weight: 600;
+    border-bottom: 1px solid black;
   }
 
   // Latest Posts
@@ -46,12 +47,13 @@
   &.widget-category {
     ul {
       li {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        //padding-top: 10px;
+        //padding-bottom: 10px;
+        font-family: $primary-font;
 
         a {
-          color: #837f7e;
-          padding: 10px;
+          color: black;
+          //padding: 10px;
           padding-left: 20px;
           padding-right: 20px;
           @include transition-multi (padding 0.3s ease, border 0.3s ease);
@@ -62,6 +64,7 @@
 
           &:hover {
             color: $primary-color;
+            text-decoration: underline;
             padding-left: 25px;
           }
 
@@ -95,11 +98,11 @@
         margin-right: 5px;
 
         a {
-          color: #837f7e;
+          color: black;
           display: inline-block;
           padding: 8px 15px;
-          border: 1px solid #dedede;
-          border-radius: 30px;
+          border: 1px solid #4f4e4e;
+          border-radius: 2px;
           font-size: 14px;
           @include transition-multi (background-color 0.3s ease, border 0.3s ease, color 0.1s ease);
 

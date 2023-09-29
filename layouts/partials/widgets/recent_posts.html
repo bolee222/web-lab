@@ -10,7 +10,7 @@
         </a>
       </div>
       <div class="col-md-8 recent-news-right">
-        <h4 class="media-heading"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+        <h4 class="media-heading"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h4>
         <p>{{ .Summary | truncate 50 }}</p>
       </div>
 

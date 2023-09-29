@@ -12,6 +12,7 @@
         {{ $paginator := .Paginate .Data.Pages -}}
         {{ range $paginator.Pages -}}
         <div class="post">
+          <hr align="left" style="margin-top: 0px; margin-bottom: 10px; width:100%; height:1px; background-color:black;">
           <div class="post-media post-thumb">
             {{ if isset .Params "image" -}}
             <a href="{{ .RelPermalink }}">
@@ -19,7 +20,7 @@
             </a>
             {{- end }}
           </div>
-          <h3 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <h3 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title | markdownify}}</a></h3>
           <div class="post-meta">
             <ul>
               <li><i class="ion-calendar"></i> {{ partial "date_i18n.html" (dict "date" .PublishDate "lang" .Page.Language.Lang) }}</li>
