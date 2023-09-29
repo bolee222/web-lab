@@ -32,7 +32,7 @@
                         {{ $cats = slice ($cats) }}
                         {{ end -}} 
                         {{ $cats = apply $cats "urlize" "." | jsonify -}}
-                        <div class="col-md-4 work-card shuffle-item">
+                        <div class="col-md-4 work-card shuffle-item" data-groups="{{ $cats }}">
                             <div class="col-md-12 portfolio-item portfolio-card shuffle-item" data-groups="{{ $cats }}">
                                 {{ if isset .Params "image" -}}
                                 <!-- 이미지 삽입 -->
