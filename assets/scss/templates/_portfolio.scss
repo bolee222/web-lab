@@ -23,11 +23,33 @@
     }
 }
 
+.btn-journal-name-purple {
+    background: rgb(30, 30, 30);
+    color: white;
+    font-family: $primary-font;
+    font-weight: 600;
+    font-size: 14px !important;
+    text-align: center;
+    margin-top: 10px;
+    padding: 3px 5px;
+    margin-bottom: 0px !important;
+
+    border: 0px;
+    &:active,
+    &:hover,
+    &.focus,
+    &.active {
+        background: #4F088D !important;
+        color: white !important;
+    }
+}
+
 .portfolio-list-title {
     font-size: 19px;
-    font-family: $poppins-font;
+    font-family: $primary-font;
     font-weight: 600;
     color: black;
+    line-height: 1.3;
     padding-top: 10px;
 }
 
@@ -41,10 +63,14 @@
 }
 
 .portfolio-list-meta {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     font-family: $primary-font;
     margin-bottom: 10px;
+    line-height: 1.2 !important;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-right: 20px;
 }
 
 .portfolio-card {
@@ -153,6 +179,16 @@
     font-size: 16px;
     font-family: $poppins-font;
     font-weight: 300;
+    color: black;
+    margin-bottom: 7px;
+}
+
+
+.project-page-title{
+    font-size: 35px;
+    font-family: $primary-font;
+    font-weight: 600;
+    line-height: 1.2;
     color: black;
     margin-bottom: 7px;
 }

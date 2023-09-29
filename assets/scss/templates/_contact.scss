@@ -66,6 +66,8 @@
   }
   a {
     text-justify: left !important;
+    text-decoration: underline;
+    color: $primary-color;
   }
 }
 
@@ -118,6 +120,8 @@
       color: #5C5C5C;
       display: block;
     }
+
+    
 
   }
 }

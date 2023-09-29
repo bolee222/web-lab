@@ -1,7 +1,7 @@
 ---
-title: "Drop Us A Note"
-description: "this is meta description"
-bg_image: "images/feature-bg.jpg"
+title: "Contact"
+description: "Official office hour: 8am - 5pm"
+bg_image: "images/headerbg/09.png"
 layout: "contact"
 draft: false
 menu:

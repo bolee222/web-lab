@@ -1,18 +1,16 @@
 ---
 title: "Pretty-print dates"
 date: 2021-04-01T00:00:00+01:00
-dateStr: 2022-04-02
 dateStr: "2018-09-04"
 author: John Doe
 image : "images/blog/blog-post-1.jpg"
 bg_image: "images/feature-bg.jpg"
 categories: ["Technical Assistance"]
-tags: ["Technology"]
+tags: ["How to", "Technology"]
 draft: false
 type: "post"
 icon: "ion-social-pinterest-outline" 
 ---
-
 
 To write out an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) timestamp in the current language, you can use the `date_i18n` shortcode:
 

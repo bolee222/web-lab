@@ -63,6 +63,14 @@ Republic of Korea
 21983
 [_Directions_](https://uic.yonsei.ac.kr/main/about.asp?mid=m01_06_02)
 """
+
+location_kor = """
+**진리관 B #424호**  
+연세대학교 국제캠퍼스  
+인천광역시 연수구 송도과학로 85  
+[_오시는 길_](https://uic.yonsei.ac.kr/main/about.asp?mid=m01_06_02)
+"""
+
 # Whether to display text descriptors (like "E-mail: ", "Phone: ") before the address block elements
 address_descriptors = false
 [params.contact.form]
@@ -234,38 +242,43 @@ languageName = "Korean"
 languageCode = "kr-kr"
 contentDir = "content/korean"
 weight = 2
-copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). Tous droits réservés."
+copyright = "Copyright &copy; Bokyung Lee. All Rights Reserved."
 
 # Main menu
 # NOTE: Leaf entries linking to content should be defined in the content file's respective front matter.
 [[languages.kr.menu.main]]
 hasChildren = true
-weight = 5
-name = "Plus"
+name = "About Lab"
+weight = 2
+
+[[languages.kr.menu.main]]
+hasChildren = true
+name = "People"
+weight = 3
 
 # Footer menu
 [[languages.kr.menu.footer]]
-name = "À propos"
-URL = "about"
+name = "Home"
+URL = ""
 weight = 1
 
 [[languages.kr.menu.footer]]
-name = "Projet"
-URL = "project"
+name = "Lab"
+URL = "about/about"
 weight = 2
 
 [[languages.kr.menu.footer]]
-name = "Service"
-URL = "service"
+name = "Professor"
+URL = "people/professor"
 weight = 3
 
 [[languages.kr.menu.footer]]
-name = "Tarification"
-URL = "pricing"
+name = "Project"
+URL = "project"
 weight = 4
 
 [[languages.kr.menu.footer]]
-name = "Questions fréquentes"
+name = "FAQ"
 URL = "faq"
 weight = 5
 

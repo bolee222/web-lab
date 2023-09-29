@@ -10,6 +10,7 @@ tags: ["Advice","AI"]
 description: "this is meta description"
 draft: false
 type: "post"
+icon: "ion-social-pinterest-outline" 
 ---
 
 
