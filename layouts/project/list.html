@@ -32,24 +32,26 @@
                         {{ $cats = slice ($cats) }}
                         {{ end -}} 
                         {{ $cats = apply $cats "urlize" "." | jsonify -}}
-                        <div class="col-md-4 portfolio-item portfolio-card shuffle-item" data-groups="{{ $cats }}">
-                            {{ if isset .Params "image" -}}
-                            <!-- 이미지 삽입 -->
-                            <a href="{{ .Permalink }}"><img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" /></a>
-                            <button type="button" class="btn-journal-name-purple">{{ .Params.conference }}</button>
+                        <div class="col-md-4 work-card shuffle-item" data-groups="{{ $cats }}">
+                            <div class="col-md-12 portfolio-item portfolio-card shuffle-item" data-groups="{{ $cats }}">
+                                {{ if isset .Params "image" -}}
+                                <!-- 이미지 삽입 -->
+                                <a href="{{ .Permalink }}"><img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" /></a>
+                                <button type="button" class="btn-journal-name-purple">{{ .Params.conference }}</button>
 
-                            <!-- 타이틀 삽입 -->
-                            <div class="portfolio-list-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></div>
+                                <!-- 타이틀 삽입 -->
+                                <div class="portfolio-list-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></div>
 
-                            <div class="portfolio-list-meta">{{ .Params.metacontent }}</div>
-                            {{- end }}
-                            <div class="portfolio-hover">
-                                <div class="portfolio-content">
-                                    {{ with .Params.image -}}
-                                    <a href="{{ . | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i
-                  ></a> {{- end }}
-                                    <a class="h3" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                                    <p>{{ .Params.description }}</p>
+                                <div class="portfolio-list-meta">{{ .Params.metacontent }}</div>
+                                {{- end }}
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-content">
+                                        {{ with .Params.image -}}
+                                        <a href="{{ . | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i
+                    ></a> {{- end }}
+                                        <a class="h3" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                                        <p>{{ .Params.description }}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

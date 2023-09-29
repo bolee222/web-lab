@@ -84,7 +84,7 @@
         img {
             width: 100%;
             height: auto;
-            filter: grayscale(50%) opacity(80%);
+            //filter: grayscale(50%) opacity(80%);
             //border: 1px solid $darkGray;
             //padding: 10px;
         }
@@ -191,4 +191,9 @@
     line-height: 1.2;
     color: black;
     margin-bottom: 7px;
+}
+
+.work-card{
+    padding: 0px;
+    height: 500px;
 }
