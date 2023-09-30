@@ -212,7 +212,7 @@ weight = 1
 
 [[languages.en.menu.footer]]
 name = "Lab"
-URL = "about/about"
+URL = "about/vision"
 weight = 2
 
 [[languages.en.menu.footer]]
@@ -264,7 +264,7 @@ weight = 1
 
 [[languages.kr.menu.footer]]
 name = "Lab"
-URL = "about/about"
+URL = "about/vision"
 weight = 2
 
 [[languages.kr.menu.footer]]

@@ -1,10 +1,10 @@
 ---
-title: "Our Project"
-description: "this is meta description"
+title: "Projects"
+description: 
 draft: false
-bg_image: "images/feature-bg.jpg"
+bg_image: "images/headerbg/09.png"
 menu:
   main:
-    name: "Project Archieve"
-    weight: 1
+    name: "Project"
+    weight: 3
 ---

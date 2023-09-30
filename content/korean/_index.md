@@ -58,7 +58,7 @@ service:
 ############################ call to action ###########################
 cta:
   enable: true
-  bg_image: "images/headerbg/office-original.jpg"
+  bg_image: 
   title: "Are you interested in **joining** our lab?"
   content: "Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
   button:
