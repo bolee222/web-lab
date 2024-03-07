@@ -19,7 +19,7 @@ pricing:
       type: master student
       image : "images/students/Ruby-Hung.jpg"
       price: "$99"
-      content: "TBD"
+      content: "Ruby has a considerable interest in building AR/VR/XR exhibitions, mainly focusing on augmented docent systems. She is currently exploring the possibilities of AR interaction techniques to deliver insightful knowledge to visitors in galleries or museums."
       link: "#"
       services:
         - Unlimited agents
@@ -33,7 +33,7 @@ pricing:
     - name: "Nur Izzatty (Izza)"
       type: master student
       image : "images/students/default.jpg"
-      content: "TBD"
+      content: "Izzatthy's interest is in exploring new application scenarios for digital humans. She is currently researching the role of augmented humans in travelling platforms, especially focusing on photo-taking journeys."
       link: "#"
       services:
         - Unlimited agents
@@ -45,9 +45,9 @@ pricing:
 
     # Student table loop
     - name: "Vu, Taho Phuong"
-      type: research assistant (09.2023-02.2024)
+      type: master student
       image : "images/students/Phuong.jpg"
-      content: "Participating in the Virual Museum Interaction Project"
+      content: "Phuong is interested in AR/VR interactions for future museums. She is currently exploring the integration of generative AI with the art appreciation journey and custom souvenir making."
       link: "#"
       services:
         - Unlimited agents
