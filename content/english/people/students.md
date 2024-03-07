@@ -1,6 +1,6 @@
 ---
 title: "Researchers"
-description: "Students who are actively exploring our new future in Convergence Design Lab."
+description: "Here are our awesome students who are actively envisioning our next future in Convergence Design Lab."
 bg_image: "images/headerbg/09.png"
 layout: "researchers"
 draft: false
@@ -18,7 +18,7 @@ pricing:
     - name: "Hung Pei-Tzu (Ruby)"
       type: master student
       image : "images/students/Ruby-Hung.jpg"
-      price: "$99"
+      email: "rubypazhung@yonsei.ac.kr"
       content: "Ruby has a considerable interest in building AR/VR/XR exhibitions, mainly focusing on augmented docent systems. She is currently exploring the possibilities of AR interaction techniques to deliver insightful knowledge to visitors in galleries or museums."
       link: "#"
       services:
@@ -32,6 +32,7 @@ pricing:
     # Student table loop
     - name: "Nur Izzatty (Izza)"
       type: master student
+      email: "izzattyjamal28@gmail.com"
       image : "images/students/default.jpg"
       content: "Izzatthy's interest is in exploring new application scenarios for digital humans. She is currently researching the role of augmented humans in travelling platforms, especially focusing on photo-taking journeys."
       link: "#"
@@ -46,6 +47,7 @@ pricing:
     # Student table loop
     - name: "Vu, Taho Phuong"
       type: master student
+      email: "phuongvu@yonsei.ac.kr"
       image : "images/students/Phuong.jpg"
       content: "Phuong is interested in AR/VR interactions for future museums. She is currently exploring the integration of generative AI with the art appreciation journey and custom souvenir making."
       link: "#"
@@ -60,8 +62,9 @@ pricing:
     # Student table loop
     - name: "Nuddrinn Sanphanit (Niki)"
       type: master student
+      email: "nayarida@hotmail.com"
       image : "images/students/default.jpg"
-      content: "Currently working on [      ]"
+      content: "Niki is interested in innovating digital, online shopping mall experiences. She is currently exploring potential synergies she can generate by integrating scent visualization, a parametric toolkit, and online shopping platforms."
       link: "#"
       services:
         - Unlimited agents
