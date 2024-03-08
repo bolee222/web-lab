@@ -258,7 +258,7 @@
     line-height: 1.2;
     color: black;
     margin-bottom: 40px;
-    margin-top: 20px;
+    margin-top: 40px;
     
 }
 
@@ -298,4 +298,25 @@
 .work-card{
     padding: 0px;
     height: 550px;
+}
+
+.project-subtitle{
+    font-weight: 800;
+    color: black;
+    font-size: 20px !important;
+    margin-bottom: 10px;
+}
+
+.project-single-meta{
+    font-weight: 400;
+    color: black;
+    font-size: 16px !important;
+    padding-right: 70px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.project-single-meta strong{
+    font-weight: 800;
 }

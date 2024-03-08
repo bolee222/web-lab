@@ -10,7 +10,7 @@
       <div class="col-md-12">
         <div class="block">
           {{ with .Params.teaser }}
-            <img src="{{ . | absURL }}" alt="" class="img-fluid mb-4 project-teaser-image" /> {{ end }}
+            <img src="{{ . | absURL }}" style="padding: 0px" alt="" class="img-fluid mb-4 project-teaser-image" /> {{ end }}
           <div class="project-page-title">{{ .Title  | markdownify }}</div>
 
           <!--Link Buttons-->
@@ -31,18 +31,14 @@
 
 
       <div class="col-md-8">
-        {{ with .Params.image }}
-        <img class="img-responsive w-100" src="{{ . | relURL }}" alt="">
-        {{ end }}
+        <div class="project-subtitle">Summary</div>
+        <div class="project-single-meta">{{ .Params.summary | markdownify }}</div>
       </div>
       <div class="col-md-4">
         <div class="project-details">
-          <h4>Project Details</h4>
-          <ul>
-            {{ range .Params.information }}
-            <li><span>{{ .label }} :</span> <strong>{{ .info | markdownify }}</strong></li>
-            {{ end }}
-          </ul>
+          <div class="project-subtitle">Researcher</div>
+          <div class="project-single-meta">{{ .Params.researcher | markdownify }}</div>
+
         </div>
       </div>
     </div>

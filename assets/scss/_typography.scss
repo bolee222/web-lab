@@ -59,7 +59,9 @@ h1 {
 
 h2 {
     font-family: $hightlight-font;
-    font-size: 28px;
+    font-weight: 600;
+    color: black;
+    font-size: 26px;
     @include mobile {
         font-size: 22px;
     }
