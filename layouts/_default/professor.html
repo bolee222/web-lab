@@ -8,30 +8,23 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <div class="about-img">
+        <div class="image-cropper about-img">
           <img class="img-responsive" src="{{ .image | relURL }}">
         </div>
       </div>
       <div class="col-md-8">
-        {{ with .title }}<h2 class="mt-40">{{ . | markdownify }}</h2>{{ end }}
-        {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
+        {{ with .name }}<div class="professor-name">{{ . | markdownify }}</div>{{ end }}
+        {{ with .title }}<div class="professor-title">{{ . | markdownify }}</div>{{ end }}
+        {{ with .emailAcademic }}<div class="professor-email">{{ . | markdownify }}</div>{{ end }}
+        {{ with .emailGoogle }}<div class="professor-email">{{ . | markdownify }}</div>{{ end }}
+        {{ with .personalSite }}<div class="professor-website">{{ . | markdownify }}</div>{{ end }}
+        {{ with .content }}<div class="professor-context">{{ . | markdownify }}</div>{{ end }}
         {{ with .button }}
         {{ if .enable }}
         <a href="{{ .link | relURL }}" class="btn btn-small mt-20">{{ .label }}</a>
         {{ end }}
         {{ end }}
       </div>
-    </div>
-    <div class="row counter-box text-center mt-50">
-      {{ range .funfacts }}
-      <div class="col-md-2">
-        <div class="counter-item">
-          {{ with .icon }}<i class="{{ . }}"></i>{{ end }}
-          {{ with .count }}<h4 class="count" data-count="{{ . }}">0</h4>{{ end }}
-          {{ with .name }}<span>{{ . }}</span>{{ end }}
-        </div>
-      </div>
-      {{ end }}
     </div>
   </div>
 </section>

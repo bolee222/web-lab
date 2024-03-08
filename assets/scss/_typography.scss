@@ -74,8 +74,14 @@ h4 {
 }
 
 p {
-    color: #7B7B7B;
-    font-size: 15px;
+    color: black;
+    font-size: 16px;
     font-family: $primary-font;
     margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+p strong {
+    font-weight: 600;
+    background-color: #d4c4fe7c;
 }

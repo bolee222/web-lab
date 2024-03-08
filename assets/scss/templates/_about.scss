@@ -32,4 +32,12 @@
   .section-title {
     margin-bottom: 0px;
   }
+
+  .image-cropper {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+  }
 }

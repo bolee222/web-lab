@@ -1,0 +1,88 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ with .Params.vision_1 }}
+{{ if .enable }}
+<section class="service-about">
+  <div class="container">
+    {{ with .quote }}<div class="vision-quote">{{ . | markdownify }}</div>{{ end }}
+    {{ with .teaser -}}
+      <div class="vision-teaser">
+        <img class="img-responsive" src="{{ . | relURL }}">
+      </div>
+    {{- end }}
+    
+    <div class="row">
+      <div class="col-md-6">
+        {{ with .title }}<div class="vision-title">{{ . | markdownify }}</div>{{ end }}
+        {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+        {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
+      </div>
+      {{ with .image -}}
+      <div class="col-md-6">
+        <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ with .Params.vision_2 }}
+{{ if .enable }}
+<section class="service-about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        {{ with .title }}<div class="vision-title">{{ . | markdownify }}</div>{{ end }}
+        {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+        {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
+      </div>
+      {{ with .image -}}
+      <div class="col-md-6">
+        <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ with .Params.featured_service }}
+{{ if .enable }}
+<section class="service-arrow">
+  <div class="container-fluid">
+    <div class="row">
+      {{ range .service_item }}
+      <div class="col-md-4 bg-primary bg-{{ .color }} no-float fill">
+        <div class="block">
+          <i class="{{ .icon }}"></i>
+          {{ with .name }}<div class="vision-domain-title">{{ . | markdownify }}</div>{{ end }}
+          {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Service -->
+{{ if .Params.service.enable }}
+{{ partial "service.html" . }}
+{{ end }}
+<!-- /service -->
+
+<!-- Call to action -->
+{{ if .Params.cta.enable }}
+{{ partial "cta.html" . }}
+{{ end }}
+<!-- /Call to action -->
+
+{{ end }}

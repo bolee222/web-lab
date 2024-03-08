@@ -1,5 +1,5 @@
 ---
-title: "Researchers"
+title: "Students"
 description: "Here are our awesome students who are actively envisioning our next future in Convergence Design Lab."
 bg_image: "images/headerbg/09.png"
 layout: "researchers"
@@ -7,7 +7,7 @@ draft: false
 menu:
   main:
     parent: "People"
-    name: "researchers"
+    name: "students"
     weight: 2
 
 ################################ pricing ################################
@@ -19,7 +19,7 @@ pricing:
       type: master student
       image : "images/students/Ruby-Hung.jpg"
       email: "rubypazhung@yonsei.ac.kr"
-      content: "Ruby has a considerable interest in building AR/VR/XR exhibitions, mainly focusing on augmented docent systems. She is currently exploring the possibilities of AR interaction techniques to deliver insightful knowledge to visitors in galleries or museums."
+      content: "Ruby has a considerable interest in **designing AR/VR/XR exhibitions**, mainly focusing on **augmented docent systems**. She explores new AR interactions to deliver insightful knowledge to visitors in galleries or museums."
       link: "#"
       services:
         - Unlimited agents
@@ -34,7 +34,7 @@ pricing:
       type: master student
       email: "izzattyjamal28@gmail.com"
       image : "images/students/default.jpg"
-      content: "Izzatthy's interest is in exploring new application scenarios for digital humans. She is currently researching the role of augmented humans in travelling platforms, especially focusing on photo-taking journeys."
+      content: "Izzatthy's interest is in exploring **new applications of digital humans**. She is currently researching the role of augmented humans in travelling platforms, especially focusing on photo-taking journeys."
       link: "#"
       services:
         - Unlimited agents
@@ -49,7 +49,22 @@ pricing:
       type: master student
       email: "phuongvu@yonsei.ac.kr"
       image : "images/students/Phuong.jpg"
-      content: "Phuong is interested in AR/VR interactions for future museums. She is currently exploring the integration of generative AI with the art appreciation journey and custom souvenir making."
+      content: "Phuong is interested in AR/VR interactions for future museums. She is currently exploring the integration of **generative AI with the art appreciation journey and custom souvenir making**."
+      link: "#"
+      services:
+        - Unlimited agents
+        - 10 PSD Design
+        - HTML5 Markup
+        - Basic SEO
+        - Email Marketing
+        - 24/7 Tech Support
+    
+    # Student table loop
+    - name: "Melissa Aime Luna Marroquin"
+      type: master student
+      email: "melissa_luna00@naver.com"
+      image : "images/students/Luna.jpg"
+      content: "TBD."
       link: "#"
       services:
         - Unlimited agents

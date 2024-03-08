@@ -1,6 +1,6 @@
 ---
 title: "Professor"
-description: 
+description: "The Leading professor of the Convergence Desing Lab"
 subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, repudiandae."
 lastmod: 2021-04-01T00:00:00
 bg_image: "images/headerbg/09.png"
@@ -15,50 +15,23 @@ menu:
 ################################# Professor #####################################
 professor:
   enable : true
+  name: Bokyung Lee
   image : "images/bokyung/bokyungLee.jpg"
-  title : "We strive to be the best and <br> make awesome work."
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius enim, accusantium repellat ex autem numquam iure officiis facere vitae itaque.
+  title : "HCI/UX Design Researcher"
+  emailAcademic: "bo.lee@yonsei.ac.kr"
+  emailGoogle: "bokyung.lee.lydia@gmail.com"
+  personalSite: "https://boleehci.com"
+
+  content : "Hi. I am an **Interaction Design / HCI** researcher. I am an Assistant Professor at Yonsei University, Underwood International Colleage, Humanities, Arts, and Social Sciences (HASS) Division. Under HASS, I am leading a **Convergence Design Lab** and envisions the future of our new reality in this Digial-Physical convergence era. Previously, I worked as a Senior Designer at Samsung Research HQ, Korea; and before that, I worked as a Senior Research Scientist at Autodesk Research, Toronto. I received my PhD in Industrial Design (Human-Computer Interaction + Design) from ID KAIST, where I was working on embodied design tools for everyday designers.
 
 
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam qui vel cupiditate exercitationem, ea fuga est
-  velit nulla culpa modi quis iste tempora non, suscipit repellendus labore voluptatem dicta amet? Lorem ipsum
-  dolor sit amet, consectetur adipisicing elit. Provident, neque!"
-
+  My research lies at the intersection of **Human-Computer Interaction** and **Interactive System Designs**. My vision is to design comfortable and novel experiences for an immersive, interactive, and simulated virtual world at a shared, with a multi-disciplinary approach. I envision the potential **interactions for future technologies (VR/AR/AI)** with a goal of enhancing our convergnece experiences. During my Ph.D., I explored embodied interactions for VR/AR digital design tools. I enjoy creating and applying new user-centered design methods, as well as prototyping interactive systems."
   button:
     enable : true
-    label : "Download Company Profile"
-    link : "#"
+    label : "Download CV"
+    link : "https://github.com/bolee222/Bokyung-Lee-CV/blob/main/Bokyung_Lee_CV.pdf"
+    
 
-  funfacts:
-  # funfacts loop
-  - icon : "ion-ios-flask-outline" #ionicon pack v2 : https://ionicons.com/v2/
-    name : "Completed Projects"
-    count : "349"
-
-  # funfacts loop
-  - icon : "ion-ios-flame-outline" #ionicon pack v2 : https://ionicons.com/v2/
-    name : "Lines Of Code"
-    count : "35000"
-
-  # funfacts loop
-  - icon : "ion-ios-pint-outline" #ionicon pack v2 : https://ionicons.com/v2/
-    name : "Satisfied Customer"
-    count : "70"
-
-  # funfacts loop
-  - icon : "ion-ios-wineglass-outline" #ionicon pack v2 : https://ionicons.com/v2/
-    name : "Awards Winner"
-    count : "10"
-
-  # funfacts loop
-  - icon : "ion-ios-chatboxes-outline" #ionicon pack v2 : https://ionicons.com/v2/
-    name : "Satisfied Customer"
-    count : "75"
-
-  # funfacts loop
-  - icon : "ion-ios-body-outline" #ionicon pack v2 : https://ionicons.com/v2/
-    name : "Awards Winner"
-    count : "20"
 
 ---
 
