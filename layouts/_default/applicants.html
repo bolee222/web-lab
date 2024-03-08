@@ -5,7 +5,7 @@
 {{ with .Params.position_phd }}
 {{ if .enable }}
 <section class="service-about">
-  <div class="container">
+  <div class="container container_wider">
     {{ with .quote }}<div class="vision-quote">{{ . | markdownify }}</div>{{ end }}
 
     <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 50%; margin-bottom: 30px;">
@@ -30,7 +30,7 @@
 {{ with .Params.position_master }}
 {{ if .enable }}
 <section class="service-about">
-  <div class="container">
+  <div class="container ">
     <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 50%; margin-bottom: 30px;">
     <div class="row">
       <div class="col-md-6">
@@ -61,11 +61,14 @@
         {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
         {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
       </div>
-      {{ with .image -}}
+
       <div class="col-md-6">
-        <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
+        <div style="height:50px; width:100%; clear:both;"></div>
+
+        {{ with .track_A }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
+        {{ with .track_B }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
       </div>
-      {{- end }}
+
     </div>
     <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 50%; margin-bottom: 30px;">
   </div>

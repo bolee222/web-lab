@@ -34,9 +34,11 @@ position_interns:
   enable: true
   title: "Undergraduate Intern"
   content:
-    "My research vision is to bring embodied interactions in designing future products, systems, contents, tools, and services in a systematic and human-centric way. Advanced technologies including AR, VR, artificial intelligence, and computer vision, open up new opportunities to capture and employ knowledge that has been implicitly embedded in our daily actions, behaviours, poses, and movements; and I aim to bring this knowledge into digital content/systems to create more enjoyable experiences."
+    "The goal of our lab's internship program is **to provide students with the oppportunity to gain experience in design research project and its procedures.** To do so, after finalizing the project topic, students will (i) learn how to plan experiments for design research, (ii) conduct experiments, and (iii) discuss how the findings/results could inform future designs. Later, the outputs can be published in the form of an academic paper achievement or design awards."
   image: "images/vision/vision-main_2.png"
-  keywords: "**Keywords**: robot interactions, intelligent products, embodied interactions, fabrication, living lab, smart home, smart city, smart building"
+  track_A: "**TRACK A:**  If students already have clear interests in particular fields: <br> → We will plan a new design research project together regarding a particular topic (to answer the research question that the student wants to explore."
+  track_B: "**TRACK B:**  If students don't have any preferences or interests: <br> → The student will be assigned one of the small projects that the currently ongoing in the lab."
+
   
 
 ########################## featured service ############################
@@ -62,53 +64,6 @@ featured_service:
       color: "primary-darker"
       content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim impedit repudiandae omnis est temporibus."
 
-############################# Service ###############################
-service:
-  enable: true
-  title: "Our Services"
-  description:
-    "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, <br> there live the
-    blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
-  service_item:
-    # service item loop
-    - icon: ion-coffee #ionicon pack v2 : https://ionicons.com/v2/
-      name: Branding
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
-
-    # service item loop
-    - icon: ion-compass #ionicon pack v2 : https://ionicons.com/v2/
-      name: Web Design
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
-
-    # service item loop
-    - icon: ion-image #ionicon pack v2 : https://ionicons.com/v2/
-      name: App Design
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
-
-    # service item loop
-    - icon: ion-bug #ionicon pack v2 : https://ionicons.com/v2/
-      name: Start Up
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
-
-    # service item loop
-    - icon: ion-headphone #ionicon pack v2 : https://ionicons.com/v2/
-      name: Logo Design
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
-
-    # service item loop
-    - icon: ion-leaf #ionicon pack v2 : https://ionicons.com/v2/
-      name: Development
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
-
-    # service item loop
-    - icon: ion-planet #ionicon pack v2 : https://ionicons.com/v2/
-      name: Brand Identity
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
-
-    # service item loop
-    - icon: ion-earth #ionicon pack v2 : https://ionicons.com/v2/
-      name: Brand Identity
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
 
 ############################# call to action #################################
 cta:

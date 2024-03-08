@@ -383,6 +383,7 @@ img.rounded {
 
 .cv-text ins{
   text-decoration-thickness: 1px;
+  font-weight: 400;
 }
 
 .cv-text-authors {
@@ -409,7 +410,7 @@ img.rounded {
 }
 
 .cv-text-authors ins{
-  font-weight: 300;
+  font-weight: 400;
   text-decoration-thickness: 1px;
 }
 
@@ -568,7 +569,8 @@ a:link-text-publications {
 }
 
 .vision-minifig{
-  width: 80%
+  width: 90%;
+  float: right;
 }
 
 .vision-domain-title{
@@ -576,3 +578,14 @@ a:link-text-publications {
   font-weight: 600;
 }
 
+
+.applicants_track{
+  padding-left: 50px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.applicants_track strong{
+  color:rgb(97, 13, 161);
+  background-color: #d4c4fe7c !important;
+}
