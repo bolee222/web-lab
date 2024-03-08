@@ -1,6 +1,6 @@
 ---
 title: "Potential Applicants"
-description: "Are you interested in our lab? "
+description:
 bg_image: "images/headerbg/09.png"
 layout: "applicants"
 draft: false
@@ -12,19 +12,27 @@ menu:
 
 
 ########################### Vision 1 #############################
-vision_1:
+position_phd:
   enable: true
   teaser: "images/vision/statement.png"
-  quote: "We aim to blur the boundary between the digital-world and the real-world, suggesting a new way of looking at user experience and design."
-  title: "Bring **Physical Experience** into **Digital** World!"
+  quote: "Are you interested in our lab? Please take a look at the information provided below to find out what opportunities are currently available."
+  title: "Ph.D. Students"
   content:
     "My research vision is to bring embodied interactions in designing future products, systems, contents, tools, and services in a systematic and human-centric way. Advanced technologies including AR, VR, artificial intelligence, and computer vision, open up new opportunities to capture and employ knowledge that has been implicitly embedded in our daily actions, behaviours, poses, and movements; and I aim to bring this knowledge into digital content/systems to create more enjoyable experiences."
   image: "images/vision/vision-main_1.png"
   keywords: "**Keywords**:  AR/VR/XR interactions, augmented interactions, data visualization, situated platforms, digital twin, metaverse, virtual humans"
 
-vision_2:
+position_master:
   enable: true
-  title: "Bring **Digital Intelligence** into **Physical** World!"
+  title: "Master Students"
+  content:
+    "My research vision is to bring embodied interactions in designing future products, systems, contents, tools, and services in a systematic and human-centric way. Advanced technologies including AR, VR, artificial intelligence, and computer vision, open up new opportunities to capture and employ knowledge that has been implicitly embedded in our daily actions, behaviours, poses, and movements; and I aim to bring this knowledge into digital content/systems to create more enjoyable experiences."
+  image: "images/vision/vision-main_2.png"
+  keywords: "**Keywords**: robot interactions, intelligent products, embodied interactions, fabrication, living lab, smart home, smart city, smart building"
+
+position_interns:
+  enable: true
+  title: "Undergraduate Intern"
   content:
     "My research vision is to bring embodied interactions in designing future products, systems, contents, tools, and services in a systematic and human-centric way. Advanced technologies including AR, VR, artificial intelligence, and computer vision, open up new opportunities to capture and employ knowledge that has been implicitly embedded in our daily actions, behaviours, poses, and movements; and I aim to bring this knowledge into digital content/systems to create more enjoyable experiences."
   image: "images/vision/vision-main_2.png"
