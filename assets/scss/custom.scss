@@ -574,33 +574,3 @@ a:link-text-publications {
   font-weight: 600;
 }
 
-.vision-fill {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.vision-fill img {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%
-}
-
-.image_wrapper {
-  position: relative;
-}
-
-.overlay {
-  position: absolute; 
-  background: rgba(57, 57, 57, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-vision-img {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-}
