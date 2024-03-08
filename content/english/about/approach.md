@@ -1,5 +1,5 @@
 ---
-title: "Template"
+title: "Research Approach"
 description: "A **high-level vision** that our lab seek to pursue & our **key research areas**."
 bg_image: "images/headerbg/09.png"
 layout: "about"
@@ -7,8 +7,8 @@ draft: false
 menu:
   main:
     parent: "About Lab"
-    name: "Research Template"
-    weight: 3
+    name: "Research Approach"
+    weight: 2
 
 
 ################################## About #####################################

@@ -1,21 +1,21 @@
 ---
-title: "Research Vision"
-description: 
+title: "Potential Applicants"
+description: "Are you interested in our lab? "
 bg_image: "images/headerbg/09.png"
-layout: "vision"
+layout: "applicants"
 draft: false
 menu:
   main:
     parent: "About Lab"
-    name: "Research Vision"
-    weight: 1
+    name: "Applicants"
+    weight: 3
 
 
 ########################### Vision 1 #############################
 vision_1:
   enable: true
   teaser: "images/vision/statement.png"
-  quote: "We aim to blur the boundary between the digital-world and the real-world, <br> suggesting a new way of looking at user experience and design."
+  quote: "We aim to blur the boundary between the digital-world and the real-world, suggesting a new way of looking at user experience and design."
   title: "Bring **Physical Experience** into **Digital** World!"
   content:
     "My research vision is to bring embodied interactions in designing future products, systems, contents, tools, and services in a systematic and human-centric way. Advanced technologies including AR, VR, artificial intelligence, and computer vision, open up new opportunities to capture and employ knowledge that has been implicitly embedded in our daily actions, behaviours, poses, and movements; and I aim to bring this knowledge into digital content/systems to create more enjoyable experiences."

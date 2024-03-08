@@ -1,8 +1,8 @@
 ---
 title: "Frequently Asked Questions"
-description: "this is meta description"
-subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, repudiandae."
-lastmod: 2021-04-01T00:00:00
+description: "Here you can find the answers from frequently asked questions by students."
+subtitle: "If you cannot find what you need, feel free to send us an e-mail with your inquiry. We will reach out to you as soon as possible."
+lastmod: 2024-01-01T00:00:00
 bg_image: "images/headerbg/09.png"
 layout: "faq"
 draft: false
@@ -10,7 +10,7 @@ menu:
   main:
     parent: "About Lab"
     name: "FAQ"
-    weight: 3
+    weight: 5
 ---
 
 ### Welcome to Airspace!

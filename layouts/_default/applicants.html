@@ -6,15 +6,6 @@
 {{ if .enable }}
 <section class="service-about">
   <div class="container">
-    
-    {{ with .teaser -}}
-      <div class="vision-teaser">
-        <img class="img-responsive" src="{{ . | relURL }}">
-      </div>
-    {{- end }}
-    {{ with .quote }}<div class="vision-quote">{{ . | markdownify }}</div>{{ end }}
-
-    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 50%; margin-bottom: 30px;">
     <div class="row">
       <div class="col-md-6">
         {{ with .title }}<div class="vision-title">{{ . | markdownify }}</div>{{ end }}
@@ -26,9 +17,7 @@
         <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
       </div>
       {{- end }}
-      
     </div>
-    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 50%; margin-bottom: 30px;">
   </div>
 </section>
 {{ end }}
@@ -51,7 +40,6 @@
       </div>
       {{- end }}
     </div>
-    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 50%; margin-bottom: 80px;">
   </div>
 </section>
 {{ end }}
