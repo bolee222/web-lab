@@ -22,7 +22,7 @@ pricing:
       content: "Ruby has a considerable interest in **designing AR/VR/XR exhibitions**, mainly focusing on **augmented docent systems**. She explores new AR interactions to deliver insightful knowledge to visitors in galleries or museums."
       link: "#"
       services:
-        - Unlimited agents
+        - Unlimited agents 
         - 10 PSD Design
         - HTML5 Markup
         - Basic SEO
@@ -33,8 +33,8 @@ pricing:
     - name: "Nur Izzatty (Izza)"
       type: master student
       email: "izzattyjamal28@gmail.com"
-      image : "images/students/default.jpg"
-      content: "Izzatthy's interest is in exploring **new applications of digital humans**. She is currently researching the role of augmented humans in travelling platforms, especially focusing on photo-taking journeys."
+      image : "images/students/Izzatty.jpg"
+      content: "Izzatty is interested in **digital products** and is currently exploring new application scenarios for digital humans. She is researching the role of **augmented humans in traveling platforms**, focusing on photo-taking journeys."
       link: "#"
       services:
         - Unlimited agents
