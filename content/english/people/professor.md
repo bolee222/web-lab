@@ -16,7 +16,7 @@ menu:
 professor:
   enable : true
   name: Bokyung Lee
-  image : "images/bokyung/bokyungLee.jpg"
+  image : "images/bokyung/bokyungLee-prof.jpg"
   title : "HCI/UX Design Researcher"
   emailAcademic: "bo.lee@yonsei.ac.kr"
   emailGoogle: "bokyung.lee.lydia@gmail.com"
