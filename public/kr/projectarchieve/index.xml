@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ProjectArchieves on Bokyung Lee Lab</title>
+    <link>//localhost:1313/kr/projectarchieve/</link>
+    <description>Recent content in ProjectArchieves on Bokyung Lee Lab</description>
+    <generator>Hugo</generator>
+    <language>kr-kr</language>
+    <copyright>Copyright &amp;copy; Bokyung Lee. All Rights Reserved.</copyright>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="//localhost:1313/kr/projectarchieve/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

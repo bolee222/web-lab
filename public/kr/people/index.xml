@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>People on Bokyung Lee Lab</title>
+    <link>//localhost:1313/kr/people/</link>
+    <description>Recent content in People on Bokyung Lee Lab</description>
+    <generator>Hugo</generator>
+    <language>kr-kr</language>
+    <copyright>Copyright &amp;copy; Bokyung Lee. All Rights Reserved.</copyright>
+    <lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/kr/people/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Professor</title>
+      <link>//localhost:1313/kr/people/professor/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/kr/people/professor/</guid>
+      <description>Welcome to Airspace! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ullam sint quas pariatur ipsam nemo repellendus suscipit quod accusantium numquam tempora assumenda sequi, velit voluptatem soluta voluptatibus nesciunt ducimus iure.</description>
+    </item>
+    <item>
+      <title>Alumni</title>
+      <link>//localhost:1313/kr/people/alumni/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/kr/people/alumni/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Researchers</title>
+      <link>//localhost:1313/kr/people/students/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/kr/people/students/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -26,7 +26,7 @@ description: "This is meta description"
 # links
 links:
   - label : "Paper"
-    link : "https://www.dropbox.com/scl/fi/yd2o7jucueky9tcf8ja09/2021-dis.pdf?rlkey=6ckiahlencbvyuiyu67ipyq9r&dl=0"
+    link : "https://www.dropbox.com/scl/fi/4obshvjhyx60xxl4qiq5a/2019-CHI-SmartManikin.pdf?rlkey=mmve0oxs18iwkxp488p7y7hi0&dl=0"
   - label : "Source URL"
     link : "https://dl.acm.org/doi/10.1145/3290605.3300814"
   - label : "Presentation"

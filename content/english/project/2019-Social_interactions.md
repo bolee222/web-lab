@@ -26,11 +26,11 @@ description: "This is meta description"
 # links
 links:
   - label : "Paper"
-    link : "https://www.dropbox.com/scl/fi/yd2o7jucueky9tcf8ja09/2021-dis.pdf?rlkey=6ckiahlencbvyuiyu67ipyq9r&dl=0"
+    link : "https://www.dropbox.com/scl/fi/1qce38zly09twb477yndy/2019-CSCW.pdf?rlkey=m8cdh3fx1jlg1xhe9cai346i5&dl=0"
   - label : "Source URL"
     link : "https://dl.acm.org/doi/10.1145/3461778.3462030"
   - label : "Presentation"
-    link : "/projects/2021-Occsim/"
+    link : "/project/2021-Occsim/"
 
 
 ---

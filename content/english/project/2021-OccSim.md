@@ -36,7 +36,7 @@ description: "This is meta description"
 # links
 links:
   - label : "Paper"
-    link : "https://www.dropbox.com/scl/fi/yd2o7jucueky9tcf8ja09/2021-dis.pdf?rlkey=6ckiahlencbvyuiyu67ipyq9r&dl=0"
+    link : "https://www.dropbox.com/scl/fi/x28scvns9t01pnv3c3wtr/2021-dis.pdf?rlkey=75fo076uu1luwtd9lyfwpkzs9&dl=0"
   - label : "Source URL"
     link : "https://dl.acm.org/doi/10.1145/3461778.3462030"
   - label : "Presentation"
@@ -47,58 +47,8 @@ links:
 
 
 
-
-
-
-# Heading 1
-
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
-
 <hr>
 
-##### Emphasis
-
-Emphasis, aka italics, with _asterisks_ or _underscores_.
-
-Strong emphasis, aka bold, with **asterisks** or **underscores**.
-
-Combined emphasis with **asterisks and _underscores_**.
-
-Strikethrough uses two tildes. ~~Scratch this.~~
-
-<hr>
-
-##### Link
-
-[I'm an inline-style link](https://www.google.com)
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-URLs and URLs in angle brackets will automatically get turned into links.
-http://www.example.com or <http://www.example.com> and sometimes
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.themefisher.com
-[1]: https://gethugothemes.com
-[link text itself]: https://www.getjekyllthemes.com
 
 <hr>
 

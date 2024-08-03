@@ -19,14 +19,14 @@ doi: https://dl.acm.org/doi/10.1145/3450623.3464638
 
 # PAGE PARAMETER
 draft: false
-link_PDF: "https://www.dropbox.com/scl/fi/flq79edn6jqdyyxo41i0b/2021-Siggraph.pdf?rlkey=gnqsxo2qnqqozfndwn367z97u&dl=0"
+link_PDF: "https://www.dropbox.com/scl/fi/62e8hifikau9mcrr39qwx/2021-Siggraph.pdf?rlkey=ju2qt6kwnmah6azdep9ttcnge&dl=0"
 
 # links
 links:
   - label : "PDF"
-    link : "https://www.dropbox.com/scl/fi/flq79edn6jqdyyxo41i0b/2021-Siggraph.pdf?rlkey=gnqsxo2qnqqozfndwn367z97u&dl=0"
+    link : "https://www.dropbox.com/scl/fi/62e8hifikau9mcrr39qwx/2021-Siggraph.pdf?rlkey=ju2qt6kwnmah6azdep9ttcnge&dl=0"
   - label : "Project Page"
-    link : "/projects/"
+    link : "/project/2021-occsim/"
   - label : "Source URL"
     link : "https://dl.acm.org/doi/10.1145/3450623.3464638"
 ---

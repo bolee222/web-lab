@@ -14,7 +14,7 @@ homeYearTag:
 
 # PAGE PARAMETER
 draft: false
-link_PDF: "https://www.dropbox.com/scl/fi/ka85q13gtecpn5bhwgz0a/2019-CSCW-demo.pdf?rlkey=29xndzqc9g56edwr272ya9lam&dl=0"
+link_PDF: "https://www.dropbox.com/scl/fi/il3nf52892shl6yxqit0w/2019-CSCW-demo.pdf?rlkey=oz7m323rtdifiad7ild6er4h9&dl=0"
 
 exactPeriod: 09 November 2019
 cite_acm: "Bokyung Lee, Michael Lee, Pan Zhang, Alexander Tessier, Daniel Saakes, and Azam Khan. 2019. Skeletonographer: Skeleton-based Digital Ethnography Tool. In Conference Companion Publication of the 2019 on Computer Supported Cooperative Work and Social Computing (CSCW '19). Association for Computing Machinery, New York, NY, USA, 14–17."
@@ -23,9 +23,9 @@ doi: https://dl.acm.org/doi/10.1145/3311957.3359510
 # links
 links:
   - label : "PDF"
-    link : "https://www.dropbox.com/scl/fi/ka85q13gtecpn5bhwgz0a/2019-CSCW-demo.pdf?rlkey=29xndzqc9g56edwr272ya9lam&dl=0"
+    link : "https://www.dropbox.com/scl/fi/il3nf52892shl6yxqit0w/2019-CSCW-demo.pdf?rlkey=oz7m323rtdifiad7ild6er4h9&dl=0"
   - label : "Project Page"
-    link : "/projects/"
+    link : "/project/2019-skeletonographer/"
   - label : "Source URL"
     link : "https://dl.acm.org/doi/10.1145/3311957.3359510"
 ---

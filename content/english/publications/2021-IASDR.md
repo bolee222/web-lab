@@ -14,7 +14,7 @@ homeYearTag: 2021
 
 # PAGE PARAMETER
 draft: false
-link_PDF: "https://www.dropbox.com/scl/fi/xebqb9fj3pq37icb7n30n/2021-IASDR.pdf?rlkey=g1s9j524psk1z8a5pehjli1tl&dl=0"
+link_PDF: "https://www.dropbox.com/scl/fi/n437u9hfi2ln29xmeyxic/2021-IASDR.pdf?rlkey=2h51ueubkgf4i74rqz6x54jx1&dl=0"
 
 exactPeriod: 06 November 2022
 cite_acm: "Lee, B., Saakes, D. (2022). Understanding the Roles of Intelligent Product-Customization Systems Through Expert Interviews. In: Bruyns, G., Wei, H. (eds) [ ] With Design: Reinventing Design Modes. IASDR 2021. Springer, Singapore."
@@ -24,9 +24,9 @@ doi: https://doi.org/10.1007/978-981-19-4472-7_76
 # links
 links:
   - label : "PDF"
-    link : "https://www.dropbox.com/scl/fi/xebqb9fj3pq37icb7n30n/2021-IASDR.pdf?rlkey=g1s9j524psk1z8a5pehjli1tl&dl=0"
+    link : "https://www.dropbox.com/scl/fi/n437u9hfi2ln29xmeyxic/2021-IASDR.pdf?rlkey=2h51ueubkgf4i74rqz6x54jx1&dl=0"
   - label : "Project Page"
-    link : "/projects/"
+    link : "/project/"
   - label : "Source URL"
     link : "https://link.springer.com/chapter/10.1007/978-981-19-4472-7_76"
 ---

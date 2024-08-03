@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publication on Bokyung Lee Lab</title>
+    <link>//localhost:1313/publications/</link>
+    <description>Recent content in Publication on Bokyung Lee Lab</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright &amp;copy; Bokyung Lee. All Rights Reserved.</copyright>
+    <lastBuildDate>Sun, 14 Jan 2024 15:40:24 +0600</lastBuildDate>
+    <atom:link href="//localhost:1313/publications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Everyday Objects in VR Shape Exploration Tools for Novice Artists - A way to Support Geometry Shaping Process for Non-professionals</title>
+      <link>//localhost:1313/publications/2024-objectcreativity/</link>
+      <pubDate>Sun, 14 Jan 2024 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2024-objectcreativity/</guid>
+      <description>Background. Advanced technologies like Virtual Reality (VR) or Augmented Reality (AR) opened up new possibilities for non-professionals to create 3D shapes, forms, or artworks without professional training. Still, most existing works focus on supporting 3D modeling tasks; and understanding how to support the early stage of design (ideation and creative expression) is still lacking.</description>
+    </item>
+    <item>
+      <title>Generative Design for COVID-19 and Future Pathogens Using Stochastic Multi-agent Simulation</title>
+      <link>//localhost:1313/publications/2023-sustainable/</link>
+      <pubDate>Tue, 14 Mar 2023 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2023-sustainable/</guid>
+      <description>We propose a generative design workflow that integrates a stochastic multi-agent simulation with the intent of helping building designers reduce the risk posed by COVID-19 and future pathogens. Our custom simulation randomly generates activities and movements of individual occupants, tracking the amount of virus transmitted through air and surfaces from contagious to susceptible agents.</description>
+    </item>
+    <item>
+      <title>Understanding the Roles of Intelligent Product-Customization Systems through Expert Interviews</title>
+      <link>//localhost:1313/publications/2021-iasdr/</link>
+      <pubDate>Sun, 14 Nov 2021 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2021-iasdr/</guid>
+      <description>The COVID-19 pandemic changed our lives, forcing us to reconsider our built environment, architectural designs, and even behaviours. Multiple stakeholders, including designers, building facility managers, and policy makers, are making decisions to reduce SARS-CoV-2 virus transmission and make our environment safer; however, systems to effectively and interactively evaluate virus transmission in physical spaces are lacking.</description>
+    </item>
+    <item>
+      <title>Simulation and Visualization of Virus Transmission for Architectural Design Analysis</title>
+      <link>//localhost:1313/publications/2021-siggraph/</link>
+      <pubDate>Sat, 14 Aug 2021 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2021-siggraph/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Designing a Multi-Agent Occupant Simulation System to Support Facility Planning and Analysis for COVID-19</title>
+      <link>//localhost:1313/publications/2021-dis/</link>
+      <pubDate>Mon, 14 Jun 2021 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2021-dis/</guid>
+      <description>The COVID-19 pandemic changed our lives, forcing us to reconsider our built environment, architectural designs, and even behaviours. Multiple stakeholders, including designers, building facility managers, and policy makers, are making decisions to reduce SARS-CoV-2 virus transmission and make our environment safer; however, systems to effectively and interactively evaluate virus transmission in physical spaces are lacking.</description>
+    </item>
+    <item>
+      <title>Evaluating Color and Material of Home Appliances in Virtual Homes during the Early Stage of Design</title>
+      <link>//localhost:1313/publications/2021-aic/</link>
+      <pubDate>Thu, 14 Jan 2021 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2021-aic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PoseScape: Pose-based Analysis System for Long-term Observation Studies</title>
+      <link>//localhost:1313/publications/2020-nordichi/</link>
+      <pubDate>Sat, 14 Nov 2020 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2020-nordichi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Socio-Spatial Comfort: Using Vision-based Analysis to Inform User-Centred Human-Building Interactions</title>
+      <link>//localhost:1313/publications/2020-cscw/</link>
+      <pubDate>Wed, 14 Oct 2020 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2020-cscw/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Embodied Design Toolkits for Consumers and Creators</title>
+      <link>//localhost:1313/publications/2020-phd/</link>
+      <pubDate>Fri, 14 Feb 2020 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2020-phd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>An Empirical Study of How Socio-Spatial Formations are influenced by Interior Elements and Displays in an Office Context</title>
+      <link>//localhost:1313/publications/2019-cscw/</link>
+      <pubDate>Mon, 14 Oct 2019 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2019-cscw/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Skeletonographer: Skeleton-based Digital Ethnography Tool</title>
+      <link>//localhost:1313/publications/2019-cscw-demo/</link>
+      <pubDate>Mon, 14 Oct 2019 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2019-cscw-demo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Occupancy Visualization towards Activity Recognition</title>
+      <link>//localhost:1313/publications/2019-dfsh/</link>
+      <pubDate>Sat, 14 Sep 2019 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2019-dfsh/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Semantic Human Activity Annotation Tool Using Skeletonized Surveillance Videos</title>
+      <link>//localhost:1313/publications/2019-ubicomp/</link>
+      <pubDate>Sat, 14 Sep 2019 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2019-ubicomp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SmartManikin: Virtual Humans with Agency for Design Tools</title>
+      <link>//localhost:1313/publications/2019-chi-manikin/</link>
+      <pubDate>Tue, 14 May 2019 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2019-chi-manikin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The Effect of Interruption Timings on Autonomous Height-Adjustable Desks that Responds to Task Changes.</title>
+      <link>//localhost:1313/publications/2019-chi-sindy/</link>
+      <pubDate>Tue, 14 May 2019 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2019-chi-sindy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interactive and Situated Guidelines to Help Users Design a Personal Desk that Fits Their Bodies</title>
+      <link>//localhost:1313/publications/2018-dis/</link>
+      <pubDate>Thu, 14 Jun 2018 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2018-dis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Consumer to Creator: How Households Buy Furniture to Inform Design and Fabrication Interfaces.</title>
+      <link>//localhost:1313/publications/2017-chi/</link>
+      <pubDate>Sun, 14 May 2017 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2017-chi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ori-mandu: Korean Dumpling into Whatever Shape You Want</title>
+      <link>//localhost:1313/publications/2017-chi-mandu/</link>
+      <pubDate>Sun, 14 May 2017 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2017-chi-mandu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ori-mandu: Korean Dumpling into Whatever Shape You Want</title>
+      <link>//localhost:1313/publications/2017-dis-mandu/</link>
+      <pubDate>Sun, 14 May 2017 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2017-dis-mandu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Two Mental Models of Non-Professional Design Process for Future Fabrication Interface.</title>
+      <link>//localhost:1313/publications/2017-hcik/</link>
+      <pubDate>Sat, 14 Jan 2017 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2017-hcik/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Posing and Acting as Input for Personalizing Furniture</title>
+      <link>//localhost:1313/publications/2016-nordichi-bodymeter/</link>
+      <pubDate>Tue, 15 Nov 2016 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2016-nordichi-bodymeter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Collaboration in the Living Room or How Couples Design Together</title>
+      <link>//localhost:1313/publications/2016-nordichi-poster/</link>
+      <pubDate>Mon, 14 Nov 2016 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2016-nordichi-poster/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gesture-based Trafficator to Improve Driver to Traffic Communication.</title>
+      <link>//localhost:1313/publications/2016-hcik/</link>
+      <pubDate>Fri, 14 Oct 2016 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2016-hcik/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sketching in Virtual Reality for Rapid and Situated Idea Generation.</title>
+      <link>//localhost:1313/publications/2015-ksds/</link>
+      <pubDate>Wed, 14 Oct 2015 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2015-ksds/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TagRadar: Locating Objects Using a Smart Phone Accessory</title>
+      <link>//localhost:1313/publications/2015-ubicomp/</link>
+      <pubDate>Mon, 14 Sep 2015 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2015-ubicomp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Online User Reviews as a Design Resource.</title>
+      <link>//localhost:1313/publications/2015-iasdr/</link>
+      <pubDate>Sun, 14 Jun 2015 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2015-iasdr/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

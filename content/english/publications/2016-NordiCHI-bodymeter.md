@@ -14,7 +14,7 @@ homeYearTag: 2016
 
 # PAGE PARAMETER
 draft: false
-link_PDF: "https://www.dropbox.com/scl/fi/jc9trkqd3j8c19lo1xxpw/2016-NordiCHI.pdf?rlkey=kj3f6rh9xlmxkdpu6rz7q2rcq&dl=0"
+link_PDF: "https://www.dropbox.com/scl/fi/7caseczgv96ragkf2s8jx/2016-NordiCHI.pdf?rlkey=60fvjs8wffpzju1a6v2wnkmnh&dl=0"
 
 exactPeriod: 23 October 2016
 cite_acm: "Bokyung Lee, Minjoo Cho, Joonhee Min, and Daniel Saakes. 2016. Posing and Acting as Input for Personalizing Furniture. In Proceedings of the 9th Nordic Conference on Human-Computer Interaction (NordiCHI '16). Association for Computing Machinery, New York, NY, USA, Article 44, 1–10."
@@ -23,9 +23,9 @@ doi: https://dl.acm.org/doi/10.1145/2971485.2971487
 # links
 links:
   - label : "PDF"
-    link : "https://www.dropbox.com/scl/fi/jc9trkqd3j8c19lo1xxpw/2016-NordiCHI.pdf?rlkey=kj3f6rh9xlmxkdpu6rz7q2rcq&dl=0"
+    link : "https://www.dropbox.com/scl/fi/7caseczgv96ragkf2s8jx/2016-NordiCHI.pdf?rlkey=60fvjs8wffpzju1a6v2wnkmnh&dl=0"
   - label : "Project Page"
-    link : "/projects/"
+    link : "/project/2016-bodymeter"
   - label : "Source URL"
     link : "https://dl.acm.org/doi/10.1145/2971485.2971487"
 ---

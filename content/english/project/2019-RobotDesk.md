@@ -26,7 +26,7 @@ description: "This is meta description"
 # links
 links:
   - label : "Paper"
-    link : "https://www.dropbox.com/scl/fi/yd2o7jucueky9tcf8ja09/2021-dis.pdf?rlkey=6ckiahlencbvyuiyu67ipyq9r&dl=0"
+    link : "https://www.dropbox.com/scl/fi/z0z7hqm84pq1kng9ltv3u/2019-CHI-Sindy.pdf?rlkey=l78zkflv8bziyij3ad6j31ozo&dl=0"
   - label : "Source URL"
     link : "https://dl.acm.org/doi/10.1145/3290605.3300814"
   - label : "Presentation"

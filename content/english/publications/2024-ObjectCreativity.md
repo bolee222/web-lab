@@ -20,14 +20,14 @@ doi: https://doi.org/10.21326/ksdt.2024.29.1.007
 
 # PAGE PARAMETER
 draft: false
-link_PDF: "https://www.dropbox.com/scl/fi/2emgg06ytqptcwc5x180l/2024_Everyday-Objects.pdf?rlkey=32nj895y2q343r0zo3zqabvqs&dl=0"
+link_PDF: "https://www.dropbox.com/s/4q04sm1gfiuo7tg/2024-Everyday%20Objects.pdf?dl=0"
 
 # links
 links:
   - label : "PDF"
-    link : "https://www.dropbox.com/scl/fi/2emgg06ytqptcwc5x180l/2024_Everyday-Objects.pdf?rlkey=32nj895y2q343r0zo3zqabvqs&dl=0"
+    link : "https://www.dropbox.com/s/4q04sm1gfiuo7tg/2024-Everyday%20Objects.pdf?dl=0"
   - label : "Project Page"
-    link : "/projects/2023-occsim/"
+    link : "/project/2024-everydayobject/"
   - label : "Source URL"
     link : "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003051994"
 ---

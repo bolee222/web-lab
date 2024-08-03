@@ -20,14 +20,14 @@ doi: https://doi.org/10.1016/j.scs.2023.104661
 
 # PAGE PARAMETER
 draft: false
-link_PDF: "https://www.dropbox.com/scl/fi/fddvnga6l8upa8hdatfcx/2023-sustainable.pdf?rlkey=2oa8d7tatl2eb459ov9tl8ihq&dl=0"
+link_PDF: "https://www.dropbox.com/scl/fi/2tq6hetgjm5ug38mb6m42/2023-sustainable.pdf?rlkey=jrthv3tamf05si5wxjul53w6v&dl=0"
 
 # links
 links:
   - label : "PDF"
-    link : "https://www.dropbox.com/scl/fi/fddvnga6l8upa8hdatfcx/2023-sustainable.pdf?rlkey=2oa8d7tatl2eb459ov9tl8ihq&dl=0"
+    link : "https://www.dropbox.com/scl/fi/2tq6hetgjm5ug38mb6m42/2023-sustainable.pdf?rlkey=jrthv3tamf05si5wxjul53w6v&dl=0"
   - label : "Project Page"
-    link : "/projects/2023-occsim/"
+    link : "/project/2023-occsim/"
   - label : "Source URL"
     link : "https://www.sciencedirect.com/science/article/abs/pii/S221067072300272X"
 ---
