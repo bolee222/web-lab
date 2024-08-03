@@ -44,11 +44,4 @@ links:
 
 
 ---
-
-
-
-<hr>
-
-
-<hr>
-
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/571810629?h=eae1903e28" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
