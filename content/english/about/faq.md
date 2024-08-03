@@ -1,6 +1,6 @@
 ---
 title: "Frequently Asked Questions"
-description: "Here you can find the answers from frequently asked questions by students."
+description: "Frequently asked questions from the students."
 subtitle: "If you cannot find what you need, feel free to send us an e-mail with your inquiry. We will reach out to you as soon as possible."
 lastmod: 2024-01-01T00:00:00
 bg_image: "images/headerbg/09.png"
