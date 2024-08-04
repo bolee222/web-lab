@@ -59,7 +59,7 @@ h1 {
 
 h2 {
     font-family: $hightlight-font;
-    font-weight: 600;
+    font-weight: 700;
     color: black;
     font-size: 26px;
     @include mobile {
@@ -67,20 +67,30 @@ h2 {
     }
 }
 
+h2 strong{
+    background-color: #eaeaea90;
+    font-weight: 700;
+    color: #510dc5;
+}
+
 h3 {
     font-size: 20px;
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;  
+    margin-top: 20px;
 }
+
+
 
 p {
     color: black;
     font-size: 16px;
     font-family: $primary-font;
     margin-bottom: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 p strong {

@@ -20,7 +20,7 @@ position_phd:
   content:
     "My research vision is to bring embodied interactions in designing future products, systems, contents, tools, and services in a systematic and human-centric way. Advanced technologies including AR, VR, artificial intelligence, and computer vision, open up new opportunities to capture and employ knowledge that has been implicitly embedded in our daily actions, behaviours, poses, and movements; and I aim to bring this knowledge into digital content/systems to create more enjoyable experiences."
   image: "images/vision/vision-main_1.png"
-  keywords: "**Keywords**:  AR/VR/XR interactions, augmented interactions, data visualization, situated platforms, digital twin, metaverse, virtual humans"
+  FAQ: "**For more information**: [FAQ > 'Join our lab as a Ph.D. Student'](./about/faq/)."
 
 position_master:
   enable: true
@@ -28,7 +28,7 @@ position_master:
   content:
     "My research vision is to bring embodied interactions in designing future products, systems, contents, tools, and services in a systematic and human-centric way. Advanced technologies including AR, VR, artificial intelligence, and computer vision, open up new opportunities to capture and employ knowledge that has been implicitly embedded in our daily actions, behaviours, poses, and movements; and I aim to bring this knowledge into digital content/systems to create more enjoyable experiences."
   image: "images/vision/vision-main_2.png"
-  keywords: "**Keywords**: robot interactions, intelligent products, embodied interactions, fabrication, living lab, smart home, smart city, smart building"
+  FAQ: "**For more information**: [FAQ > 'Join our lab as a Master's Student'](./about/faq/)."
 
 position_interns:
   enable: true
@@ -36,6 +36,8 @@ position_interns:
   content:
     "The goal of our lab's internship program is **to provide students with the oppportunity to gain experience in design research project and its procedures.** To do so, after finalizing the project topic, students will (i) learn how to plan experiments for design research, (ii) conduct experiments, and (iii) discuss how the findings/results could inform future designs. Later, the outputs can be published in the form of an academic paper achievement or design awards."
   image: "images/vision/vision-main_2.png"
+  FAQ: "**For more information**: [FAQ > 'Join our lab as an Undergraduate Intern'](./about/faq/)."
+
   track_A: "**TRACK A:**  If students already have clear interests in particular fields: <br> → We will plan a new design research project together regarding a particular topic (to answer the research question that the student wants to explore."
   track_B: "**TRACK B:**  If students don't have any preferences or interests: <br> → The student will be assigned one of the small projects that the currently ongoing in the lab."
 

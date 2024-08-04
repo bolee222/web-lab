@@ -13,7 +13,7 @@
       <div class="col-md-6">
         {{ with .title }}<div class="vision-title">{{ . | markdownify }}</div>{{ end }}
         {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-        {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
+        {{ with .FAQ }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
       </div>
       {{ with .image -}}
       <div class="col-md-6">
@@ -59,7 +59,7 @@
       <div class="col-md-6">
         {{ with .title }}<div class="vision-title">{{ . | markdownify }}</div>{{ end }}
         {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-        {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
+        {{ with .FAQ }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
       </div>
 
       <div class="col-md-6">

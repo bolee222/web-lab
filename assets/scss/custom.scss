@@ -551,6 +551,7 @@ a:link-text-publications {
   font-weight:700;
   color: black;
   font-size: 26px;
+  margin-bottom: 20px;
 }
 
 .vision-title strong{
@@ -566,6 +567,11 @@ a:link-text-publications {
   font-size: 18px;
   margin-bottom: 30px;
   font-style: italic;
+}
+
+.vision-keyword a{
+  background-color: #f3f3f3;
+  font-size: 15px;
 }
 
 .vision-minifig{
