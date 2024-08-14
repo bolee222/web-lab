@@ -1,9 +1,9 @@
 ---
 title: "Alumni"
-description: "this is meta description"
+description: "Students who worked in our lab."
 bg_image: "images/headerbg/09.png"
 layout: "alumni"
-draft: true
+draft: false
 menu:
   main:
     parent: "People"
@@ -16,11 +16,11 @@ pricing:
   enable: true
   pricing_table:
     # pricing table loop
-    - name: "Nur Izzatty"
-      type: master program
+    - name: "HeeJi Kim"
+      type: individual undergraduate researcher
       image : "images/bokyung/bokyungLee.jpg"
-      period: "2022-2023"
-      content: "Perfect for single freelancers who work by themselves"
+      period: "2024.01-2024.06"
+      content: "Heeji conducted individual research to investigate potential interaction strategies for work companion robots at home. Her project is published in Archives of Design Research."
       link: "#"
       services:
         - Unlimited agents
@@ -30,47 +30,7 @@ pricing:
         - Email Marketing
         - 24/7 Tech Support
 
-    # pricing table loop
-    - name: "Hung Pei-Tzu"
-      type: master student
-      image : "images/bokyung/bokyungLee.jpg"
-      content: "Suitable for small businesses with up to 5 employees"
-      link: "#"
-      services:
-        - Unlimited agents
-        - 10 PSD Design
-        - HTML5 Markup
-        - Basic SEO
-        - Email Marketing
-        - 24/7 Tech Support
-
-    # pricing table loop
-    - name: "Premium"
-      type: master student
-      image : "images/bokyung/bokyungLee.jpg"
-      content: "Suitable for small businesses with up to 5 employees"
-      link: "#"
-      services:
-        - Unlimited agents
-        - 10 PSD Design
-        - HTML5 Markup
-        - Basic SEO
-        - Email Marketing
-        - 24/7 Tech Support
-
-    # pricing table loop
-    - name: "Premium"
-      type: master student
-      image : "images/bokyung/bokyungLee.jpg"
-      content: "Suitable for small businesses with up to 5 employees"
-      link: "#"
-      services:
-        - Unlimited agents
-        - 10 PSD Design
-        - HTML5 Markup
-        - Basic SEO
-        - Email Marketing
-        - 24/7 Tech Support
+    
 
 ############################# call to action #################################
 cta:

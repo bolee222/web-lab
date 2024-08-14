@@ -877,6 +877,18 @@
                 href="//localhost:1313/message_sent/"
                 />
   </url><url>
+    <loc>//localhost:1313/people/alumni/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/people/alumni/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/people/alumni/"
+                />
+  </url><url>
     <loc>//localhost:1313/author/</loc>
     <xhtml:link
                 rel="alternate"

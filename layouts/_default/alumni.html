@@ -15,6 +15,7 @@
           <div class="price-title">
             {{ with .name }}<div class="student-name">{{ . | markdownify }}</div>{{ end }}
             {{ with .type }}<div class="student-type">{{ . | markdownify }}</div>{{ end }}
+            {{ with .period }}<div class="student-period">{{ . }}</div>{{ end }}
             {{ with .content }}<div class="student-des">{{ . | markdownify }}</div>{{ end }}
           </div>
         

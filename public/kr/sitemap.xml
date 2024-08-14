@@ -875,6 +875,16 @@
                 />
   </url><url>
     <loc>//localhost:1313/kr/people/alumni/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/people/alumni/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/people/alumni/"
+                />
   </url><url>
     <loc>//localhost:1313/kr/author/</loc>
     <xhtml:link

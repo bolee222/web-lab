@@ -16,6 +16,7 @@
             {{ with .name }}<div class="student-name">{{ . | markdownify }}</div>{{ end }}
             {{ with .type }}<div class="student-type">{{ . | markdownify }}</div>{{ end }}
             {{ with .email }}<div class="student-email">{{ . }}</div>{{ end }}
+            {{ with .period }}<div class="student-period">{{ . }}</div>{{ end }}
             {{ with .content }}<div class="student-des">{{ . | markdownify }}</div>{{ end }}
           </div>
         
