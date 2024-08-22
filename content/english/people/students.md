@@ -63,7 +63,7 @@ pricing:
     - name: "Woojae Kang"
       type: Post-graduate Research Scientist
       email: 
-      image : "images/students/default.jpg"
+      image : "images/students/Woojae.jpg"
       period: 2024 Fall - current
       content: "Woojae finished his undergraduate studies at KAIST and earned a master's degree at the Royal College of Art in England. Woojae is currently interested in designing and analyzing interactive products and platforms through the lens of a designer and scientist."
       link: "#"
@@ -81,7 +81,7 @@ pricing:
     - name: "Shin Shun Mya Aye (Kathryn)"
       type: undergraduate intern
       email: ssmasensan@gmail.com
-      image : "images/students/default.jpg"
+      image : "images/students/Kathryn.jpg"
       period: 2024 Summer - current
       content: "Kathryn is exploring visual and interaction design elements in pop-up stores in terms of brand recognition and visual pleasure."
       link: "#"
