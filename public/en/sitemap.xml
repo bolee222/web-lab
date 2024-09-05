@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2024-01-25T00:00:00+00:00</lastmod>
+    <lastmod>2024-08-31T15:40:24+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="kr-kr"
@@ -13,6 +13,47 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="//localhost:1313/"
+                />
+  </url><url>
+    <loc>//localhost:1313/publications/2024-roby/</loc>
+    <lastmod>2024-08-31T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/interaction/</loc>
+    <lastmod>2024-08-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/project/2024-roby/</loc>
+    <lastmod>2024-08-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/productivity/</loc>
+    <lastmod>2024-08-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/project/</loc>
+    <lastmod>2024-08-31T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/"
+                />
+  </url><url>
+    <loc>//localhost:1313/tags/robot/</loc>
+    <lastmod>2024-08-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2024-08-31T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/tags/"
                 />
   </url><url>
     <loc>//localhost:1313/tags/design/</loc>
@@ -33,32 +74,6 @@
   </url><url>
     <loc>//localhost:1313/project/2024-everydayobject/</loc>
     <lastmod>2024-01-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/project/</loc>
-    <lastmod>2024-01-25T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/project/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/project/"
-                />
-  </url><url>
-    <loc>//localhost:1313/tags/</loc>
-    <lastmod>2024-01-25T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/tags/"
-                />
   </url><url>
     <loc>//localhost:1313/tags/vr/</loc>
     <lastmod>2024-01-25T00:00:00+00:00</lastmod>

@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright &amp;copy; Bokyung Lee. All Rights Reserved.</copyright>
-    <lastBuildDate>Sun, 14 Jan 2024 15:40:24 +0600</lastBuildDate>
+    <lastBuildDate>Sat, 31 Aug 2024 15:40:24 +0600</lastBuildDate>
     <atom:link href="//localhost:1313/publications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Investigating Work Companion Robot Interactions to Enhance Work-from-Home Productivity and Experience</title>
+      <link>//localhost:1313/publications/2024-roby/</link>
+      <pubDate>Sat, 31 Aug 2024 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2024-roby/</guid>
+      <description>Working from home (WFH) provides flexibility but often at the expense of productivity. In traditional office settings, the presence of colleagues has an impact on productivity, and the absence of social monitoring is a key factor affecting WFH workers’ concentration.</description>
+    </item>
     <item>
       <title>Everyday Objects in VR Shape Exploration Tools for Novice Artists - A way to Support Geometry Shaping Process for Non-professionals</title>
       <link>//localhost:1313/publications/2024-objectcreativity/</link>
