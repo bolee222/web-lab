@@ -25,7 +25,10 @@
                     {{ end }} 
                     <div class="slider-title-W500">Design</div>
                     <div class="slider-title-W300">Lab</div>
-                    {{ with .content }}<div class="slider-vision">{{ . | markdownify  }}</div>{{ end }} {{ with .button }} {{ if .enable }}
+                    {{ with .content1 }}<div class="slider-vision">{{ . | markdownify  }}</div>{{ end }} 
+                    {{ with .content2 }}<div class="slider-vision">{{ . | markdownify  }}</div>{{ end }} 
+                    {{ with .button }} {{ if .enable }}
+                    
                     <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp">{{ .label }}</a>
           {{ end }} {{ end }}
           
