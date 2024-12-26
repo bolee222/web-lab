@@ -15,16 +15,18 @@
 }
 
 .slider-department {
-    font-family: $poppins-font;
+    font-family: $serif-font;
     font-size: 22px;
     font-weight: 400;
     line-height: 1.1;
-    margin-bottom: 20px;
-    color: black;
+    margin-left:48px;
+    margin-bottom: 30px;
+    color: #5f5f5f;
 }
 
 .slider-department:hover{
     text-decoration: underline;
+    color: #d4c4fe7c;
 }
 
 .slider-title {
@@ -58,7 +60,7 @@
 .slider-vision {
     font-family: $poppins-font;
     font-size: 23px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.2;
     margin-bottom: 5px;
     color: black;
@@ -510,10 +512,12 @@ a:link-text-publications {
 
 .lab-intro p{
   color: black;
-  font-size: 17px;
+  font-size: 18px;
   font-family: $primary-font;
   margin-bottom: 30px;
   margin-top: 10px;
+  margin-right:50px;
+  //text-align: justify;
 }
 
 .lab-intro p strong {
@@ -523,7 +527,7 @@ a:link-text-publications {
 
 .lab-intro p u {
   font-weight: 600;
-  color: #4804a4;
+  color: #1b003e;
   background-color: #f4f4f4;
 }
 

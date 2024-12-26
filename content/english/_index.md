@@ -9,9 +9,10 @@ menu:
 banner:
   enable: true
   bg_image:
-  bg_overlay: false
+  bg_overlay: false 
+  yonseiLogo1: "images/logo/yonsei_logo1.png"
   affiliation: "Yonsei University"
-  department: Department of Innovation
+  department: "[> Department of Innovation ](https://www.uicinnovation.yonsei.ac.kr/)"
   title: "Convergence"
   content1: "**Human-Computer Interaction (HCI) & UX Research**"
   content2: "within the Paradigm of New Digital Convergence"
@@ -24,10 +25,10 @@ banner:
 about:
   enable: true
   title: "About Our Lab"
-  description: "Welcome to <b>**Convergence Design Lab** — a creative hub dedicated to shaping the future of <u>Digital-Physical Convergence (XR)</u> and <u>Artifical Intelligence (AI)</u>! </b> As cutting-edge technologies such as XR, VR, AR, and AI become integral to our daily lives, our mission is to explore how can we merge these digital intelligency into our everyday lives more seamlessly and innovatively.  
+  description: "Welcome to <b>**Convergence Design Lab**—a creative hub dedicated to shaping the future of <u>Digital-Physical Convergence (XR)</u> and <u>Artifical Intelligence (AI)</u></b>!  As cutting-edge technologies such as XR, VR, AR, and AI become integral to our daily lives, our mission is to explore how can we merge these digital intelligency into our everyday lives more _seamlessly_ and _innovatively_.  
 
   
-  Our lab bring together interdisciplinary perspectives, grounded in core expertise in <b>Human-Computer Interaction (HCI)</b> and <b>Interactive System Design</b>. Our research recently focuses on **planning and designing novel XR/AI interactions, systems, and applications** in various domains across a wide range of domains — including eeducation, museums, art and culture, work productivity, creativity support, and smart homes, novel metaverse platforms, digital twins, spatial marketing, and more.
+  Our lab bring together interdisciplinary perspectives, grounded in core expertise in <u><b>Human-Computer Interaction (HCI)</b></u> and <u><b>Interactive System Design</b></u>. Our research recently focuses on **planning and designing novel XR/AI interactions, systems, and applications** across a wide range of domains — including _education_, _museums_, _art & culture_, _work productivity_, _creativity support_, _smart homes_, _novel metaverse platforms_, _digital twins_, _spatial marketing_, and more.
   "
 
 
