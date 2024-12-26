@@ -13,7 +13,7 @@ banner:
   affiliation: "Yonsei University"
   department: Department of Innovation
   title: "Convergence"
-  content1: "Human-Computer Interaction (HCI) & UX Research"
+  content1: "**Human-Computer Interaction (HCI) & UX Research**"
   content2: "within the Paradigm of New Digital Convergence"
   button:
     enable: false
@@ -24,10 +24,13 @@ banner:
 about:
   enable: true
   title: "About Our Lab"
-  description: "Digital technologies and media have been deeply embedded in our daily lives, and **blur the boundary between our physical lives of atoms and digital ones of bits**. Consequently, ‘how to converge these two worlds in a more seamless and innovative way’ has become a hot topic in various industries, including IT services, smart products, smart homes, art, media, education, or games.  
-  
+  description: "Welcome to <b>**Convergence Design Lab** — a creative hub dedicated to shaping the future of <u>Digital-Physical Convergence (XR)</u> and <u>Artifical Intelligence (AI)</u>! </b> As cutting-edge technologies such as XR, VR, AR, and AI become integral to our daily lives, our mission is to explore how can we merge these digital intelligency into our everyday lives more seamlessly and innovatively.  
 
-  Our lab **envisions this new reality through various designary and multi-disciplinary approaches**. Through iterative user-centered processes, we design new products, interactions, services, and systems that could bring new experiences to various convergence domains (e.g., embodied art, smart home, immersive environments, metaverse contents, design toolkits, spatial marketing, digital human, augmented experience, digital architecture, etc.)."
+  
+  Our lab bring together interdisciplinary perspectives, grounded in core expertise in <b>Human-Computer Interaction (HCI)</b> and <b>Interactive System Design</b>. Our research recently focuses on **planning and designing novel XR/AI interactions, systems, and applications** in various domains across a wide range of domains — including eeducation, museums, art and culture, work productivity, creativity support, and smart homes, novel metaverse platforms, digital twins, spatial marketing, and more.
+  "
+
+
   image: "images/logo/Lab-Identity.png"
 
   button:

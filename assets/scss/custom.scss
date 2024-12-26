@@ -57,9 +57,9 @@
 }
 .slider-vision {
     font-family: $poppins-font;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 400;
-    line-height: 1.0;
+    line-height: 1.2;
     margin-bottom: 5px;
     color: black;
 }
@@ -506,6 +506,26 @@ a:link-text-publications {
   }
 }
 
+
+
+.lab-intro p{
+  color: black;
+  font-size: 17px;
+  font-family: $primary-font;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.lab-intro p strong {
+  font-weight: 600;
+  background-color: #d4c4fe7c;
+}
+
+.lab-intro p u {
+  font-weight: 600;
+  color: #4804a4;
+  background-color: #f4f4f4;
+}
 
 .professor-name{
   font-weight:800;

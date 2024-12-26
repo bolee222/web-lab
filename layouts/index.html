@@ -56,8 +56,8 @@
               <div class="section-title">
                 {{ with .title }}
                 <div class="home-title">{{ . | markdownify }}</div>
-                {{ end }} {{ with .description }}{{ . | $.Page.RenderString (dict
-                "display" "block") }}{{ end }}
+                {{ end }} {{ with .description }}<div class="lab-intro">{{ . | $.Page.RenderString (dict
+                "display" "block") }}</div>{{ end }}
               </div>
               {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block")
               }}{{ end }} {{ with .button }} {{ if .enable }}
