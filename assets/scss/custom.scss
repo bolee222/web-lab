@@ -634,33 +634,44 @@ a:link-text-publications {
 .vision-content{
   font-size: 17px;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .vision-content p{
-  font-size: 16px;
-  margin-bottom: 5px;
-  padding-right:40px;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  padding-right:100px;
 }
 
 .vision-content li{
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 5px;
-  padding-right:40px;
-}
-
-.vision-content li b{
-  font-size: 16px;
-  margin-bottom: 5px;
-  padding-right:40px;
-  text-decoration: underline;
+  padding-right:100px;
 }
 
 .vision-content b{
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 5px;
   text-decoration: underline;
-  text-decoration-color: #f5f54c6a;
-  text-decoration-thickness: 5px;
+  text-decoration-color: #e7e7e7;
+  text-decoration-thickness: 4px;
+}
+
+.vision-content p strong{
+  //font-size: 16px;
+  margin-bottom: 5px;
+  background-color: #ffffff !important;
+}
+
+.vision-content li strong{
+  color:rgb(50, 50, 50);
+  background-color: #d6d6d67c !important;
+}
+
+
+.vision-content b:hover{
+  background-color: #c2c2c240;
 }
 
 
@@ -673,6 +684,7 @@ a:link-text-publications {
 .vision-keyword a{
   background-color: #f3f3f3;
   font-size: 15px;
+  
 }
 
 .vision-keyword b{
@@ -690,16 +702,50 @@ a:link-text-publications {
   font-weight: 600;
 }
 
+.tracks {
+  padding-left: 20px;  
+  padding-right: 100px;
+}
 
 .applicants_track{
-  padding-left: 50px;
   font-size: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.applicants_track p b{
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-decoration: underline;
+  text-decoration-color: #e7e7e7;
+  text-decoration-thickness: 4px;
+}
+
+.applicants_track p{
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 10px !important;
+  margin-top:0px !important;
 }
 
 .applicants_track strong{
   color:rgb(97, 13, 161);
   background-color: #d4c4fe7c !important;
+}
+
+.apply_description{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.apply_description li{
+  margin-bottom: 5px;
+  text-align: justify;
+  padding-right:100px;
+}
+
+.apply_description strong{
+  color:rgb(50, 50, 50);
+  background-color: #d6d6d67c !important;
 }
 
 
