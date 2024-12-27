@@ -1,53 +1,110 @@
-console.clear();
-const randomX = random(-400, 400);
-const randomY = random(-200, 200);
-const randomDelay = random(0, 50);
-const randomTime = random(6, 12);
-const randomTime2 = random(5, 6);
-const randomAngle = random(-30, 150);
-
-const blurs = gsap.utils.toArray(".blur");
-blurs.forEach((blur) => {
-  gsap.set(blur, {
-    x: randomX(-1),
-    y: randomX(1),
-    rotation: randomAngle(-1)
-  });
-
-  moveX(blur, 1);
-  moveY(blur, -1);
-  rotate(blur, 1);
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 50,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 1,
+        "opacity_min": 0.7,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 10,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 5,
+        "size_min": 0.5,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 100,
+      "color": "#ffffff",
+      "opacity": 1,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 3,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab" //grab, bubble, repulse
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push" //push, remove, bubble, repulse
+      },
+      "resize": true,
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 2
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
 });
-
-function rotate(target, direction) {
-  gsap.to(target, randomTime2(), {
-    rotation: randomAngle(direction),
-    // delay: randomDelay(),
-    ease: Sine.easeInOut,
-    onComplete: rotate,
-    onCompleteParams: [target, direction * -1]
-  });
-}
-
-function moveX(target, direction) {
-  gsap.to(target, randomTime(), {
-    x: randomX(direction),
-    ease: Sine.easeInOut,
-    onComplete: moveX,
-    onCompleteParams: [target, direction * -1]
-  });
-}
-
-function moveY(target, direction) {
-  gsap.to(target, randomTime(), {
-    y: randomY(direction),
-    ease: Sine.easeInOut,
-    onComplete: moveY,
-    onCompleteParams: [target, direction * -1]
-  });
-}
-
-function random(min, max) {
-  const delta = max - min;
-  return (direction = 1) => (min + delta * Math.random()) * direction;
-}
