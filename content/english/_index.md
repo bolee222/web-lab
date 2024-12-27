@@ -12,7 +12,7 @@ banner:
   bg_overlay: false 
   yonseiLogo1: "images/logo/yonsei_logo1.png"
   affiliation: "Yonsei University"
-  department: "[> Department of Innovation ](https://www.uicinnovation.yonsei.ac.kr/)"
+  department: "[Department of Innovation ](https://www.uicinnovation.yonsei.ac.kr/)"
   title: "Convergence"
   content1: "**Human-Computer Interaction (HCI) & UX Research**"
   content2: "within the Paradigm of New Digital Convergence"
@@ -31,7 +31,7 @@ about:
   Our lab bring together interdisciplinary perspectives, grounded in core expertise in <u><b>Human-Computer Interaction (HCI)</b></u> and <u><b>Interactive System Design</b></u>. Our research recently focuses on **planning and designing novel XR/AI interactions, systems, and applications** across a wide range of domains — including _education_, _museums_, _art & culture_, _work productivity_, _creativity support_, _smart homes_, _novel metaverse platforms_, _digital twins_, _spatial marketing_, and more.  
 
 
-  We employ diverse research approaches, including <b>user-centered explorations, research-through-design (RtD), and system development with rigorous evaluations</b>. Feel free to contact us if interested in similar research areas and approaches.
+  We employ diverse research approaches, including <b>User-Centered Design (UCD), Research-through-Design (RtD), and System Development with rigorous Evaluations</b>. Feel free to contact us if interested in similar research areas and approaches.
 
   "
 
@@ -62,7 +62,7 @@ portfolio:
   "
   button:
     enable: true
-    label: "&rarr; View all our works"
+    label: "&rarr; View All Projects"
     link: "project"
 
 

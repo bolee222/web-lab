@@ -6,8 +6,8 @@
 <!-- banner -->
 {{ with .Params.banner }} {{ if .enable }}
 <section class="slider {{ if .bg_overlay }}overly{{ end }}" style="background-image: url('{{ .bg_image | relURL }}');">
-    <div class="container ">
-      <div class="container ">
+    <div class="container">
+      <div class="ro ">
         <div class="circle-container" id="circle-container-1">
           <div id="circle1" class="circle"></div>
         </div>
@@ -27,17 +27,18 @@
                     <hr align="left" style="margin-bottom: 60px; width:100%; height:5px; border:none; background-color:black;">
                     
                     <div class="block">
-                      <img src="{{ .yonseiLogo1 | relURL }}" class="img-responsive" alt="Img" width="25%" style = "margin-bottom: 0px"/>
+                      <img src="{{ .yonseiLogo1 | relURL }}" class="img-responsive yonsei-logo" alt="Img" style = "margin-bottom: 20px"/>
                     </div>
 
                     <!--
                     {{ with .affiliation }}
                     <div class="slider-affiliation">{{ . | markdownify }}</div>
                     {{ end }} 
-                    -->
+                   
                     {{ with .department }}
                     <div class="slider-department">{{ . | markdownify }}</div>
                     {{ end }} 
+                    -->
                     {{ with .title }}
                     <div class="slider-title">{{ . | markdownify }}</div>
                     {{ end }} 

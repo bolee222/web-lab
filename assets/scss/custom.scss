@@ -19,7 +19,7 @@
     font-size: 22px;
     font-weight: 400;
     line-height: 1.1;
-    margin-left:48px;
+    
     margin-bottom: 30px;
     color: #5f5f5f;
 }
@@ -31,16 +31,22 @@
 
 .slider-title {
     font-family: $poppins-font;
-    font-size: 75px;
+    font-size: 7vw;
     font-weight: 700;
     line-height: 1.0;
     margin-bottom: 5px;
     color: black;
 }
 
+@media only screen and (max-width: 800px) {
+  .slider-title {
+    font-size: 10vw !important;
+  }
+}
+
 .slider-title-W500 {
     font-family: $poppins-font;
-    font-size: 70px;
+    font-size: 6vw;
     font-weight: 600;
     line-height: 1.0;
     letter-spacing: .0rem;
@@ -48,15 +54,28 @@
     color: black;
 }
 
+@media only screen and (max-width: 800px) {
+  .slider-title-W500 {
+    font-size: 10vw !important;
+  }
+}
+
 .slider-title-W300 {
     font-family: $poppins-font;
-    font-size: 70px;
+    font-size: 6vw;
     font-weight: 400;
     line-height: 1.0;
     letter-spacing: .0rem;
     margin-bottom: 50px;
     color: black;
 }
+
+@media only screen and (max-width: 800px) {
+  .slider-title-W300 {
+    font-size: 10vw !important;
+  }
+}
+
 .slider-vision {
     font-family: $poppins-font;
     font-size: 23px;
@@ -79,7 +98,7 @@
     font-weight: 700;
     font-family: $poppins-font;
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: black;
 }
 
@@ -330,6 +349,7 @@ img.rounded {
     .overlay__btn:first-child {
       margin-bottom: 1rem;
     }
+
   }
   // GRADIENT FINISH
 
@@ -529,7 +549,7 @@ a:link-text-publications {
 .lab-intro p u {
   font-weight: 600;
   color: #1b003e;
-  background-color: #fcf8de;
+  background-color: #e7faff; //#fffdd8;
 }
 
 .btn-learnMore{
@@ -638,4 +658,26 @@ a:link-text-publications {
   background-color: #d4c4fe7c !important;
 }
 
+
+.yonsei-logo{
+  width: 30% !important;
+}
+
+@media only screen and (max-width: 800px) {
+  .yonsei-logo {
+  width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .yonsei-logo {
+  width: 70% !important;
+  }
+  }
+
+@media only screen and (max-width: 300px) {
+  .yonsei-logo {
+  width: 100% !important;
+  }
+}
 
