@@ -513,6 +513,7 @@ a:link-text-publications {
 .lab-intro p{
   color: black;
   font-size: 18px;
+  font-weight:400;
   font-family: $primary-font;
   margin-bottom: 30px;
   margin-top: 10px;
@@ -528,7 +529,16 @@ a:link-text-publications {
 .lab-intro p u {
   font-weight: 600;
   color: #1b003e;
-  background-color: #f4f4f4;
+  background-color: #fcf8de;
+}
+
+.btn-learnMore{
+  font-weight: 500;
+  font-size: 15px !important;
+  border-style: none!important;
+  padding: 7px;
+  margin-right: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .professor-name{

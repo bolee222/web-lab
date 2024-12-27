@@ -28,7 +28,11 @@ about:
   description: "Welcome to <b>**Convergence Design Lab**—a creative hub dedicated to shaping the future of <u>Digital-Physical Convergence (XR)</u> and <u>Artifical Intelligence (AI)</u></b>!  As cutting-edge technologies such as XR, VR, AR, and AI become integral to our daily lives, our mission is to explore how can we merge these digital intelligency into our everyday lives more _seamlessly_ and _innovatively_.  
 
   
-  Our lab bring together interdisciplinary perspectives, grounded in core expertise in <u><b>Human-Computer Interaction (HCI)</b></u> and <u><b>Interactive System Design</b></u>. Our research recently focuses on **planning and designing novel XR/AI interactions, systems, and applications** across a wide range of domains — including _education_, _museums_, _art & culture_, _work productivity_, _creativity support_, _smart homes_, _novel metaverse platforms_, _digital twins_, _spatial marketing_, and more.
+  Our lab bring together interdisciplinary perspectives, grounded in core expertise in <u><b>Human-Computer Interaction (HCI)</b></u> and <u><b>Interactive System Design</b></u>. Our research recently focuses on **planning and designing novel XR/AI interactions, systems, and applications** across a wide range of domains — including _education_, _museums_, _art & culture_, _work productivity_, _creativity support_, _smart homes_, _novel metaverse platforms_, _digital twins_, _spatial marketing_, and more.  
+
+
+  We employ diverse research approaches, including <b>user-centered explorations, research-through-design (RtD), and system development with rigorous evaluations</b>. Feel free to contact us if interested in similar research areas and approaches.
+
   "
 
 
@@ -36,10 +40,18 @@ about:
 
   button:
     enable: true
-    label: "&rarr; learn more about our lab"
+    label: "&rarr; **Research Areas**"
     link: "about/vision/"
 
+  button2:
+    enable: true
+    label: "&rarr; **Research Methods**"
+    link: "about/approach/"
 
+  button3:
+    enable: true
+    label: "&rarr; join us"
+    link: "about/approach/"
 
 ######################### Portfolio ###############################
 portfolio:
