@@ -599,10 +599,17 @@ a:link-text-publications {
 }
 
 
+.vision-sub{
+  width: 90%;
+  font-weight: 400;
+  font-size: 23px;
+  margin-bottom: 0px;
+}
+
 .vision-quote{
   width: 90%;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 70px;
 }
 
@@ -616,24 +623,61 @@ a:link-text-publications {
   margin-bottom: 20px;
 }
 
+.vision-title b{
+  background-color: #d4c4fe7c !important;
+}
+
 .vision-title strong{
   background-color: #d4c4fe7c !important;
 }
 
 .vision-content{
-  font-size: 15px;
+  font-size: 17px;
   margin-bottom: 20px;
 }
+
+.vision-content p{
+  font-size: 16px;
+  margin-bottom: 5px;
+  padding-right:40px;
+}
+
+.vision-content li{
+  font-size: 16px;
+  margin-bottom: 5px;
+  padding-right:40px;
+}
+
+.vision-content li b{
+  font-size: 16px;
+  margin-bottom: 5px;
+  padding-right:40px;
+  text-decoration: underline;
+}
+
+.vision-content b{
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-decoration: underline;
+  text-decoration-color: #f5f54c6a;
+  text-decoration-thickness: 5px;
+}
+
 
 .vision-keyword{
   font-size: 18px;
   margin-bottom: 30px;
-  font-style: italic;
+  //font-style: italic;
 }
 
 .vision-keyword a{
   background-color: #f3f3f3;
   font-size: 15px;
+}
+
+.vision-keyword b{
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .vision-minifig{

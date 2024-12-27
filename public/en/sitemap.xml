@@ -940,6 +940,8 @@
                 href="//localhost:1313/author/john-doe/"
                 />
   </url><url>
+    <loc>//localhost:1313/about/applicants/</loc>
+  </url><url>
     <loc>//localhost:1313/author/mark-dinn/</loc>
     <xhtml:link
                 rel="alternate"
@@ -951,8 +953,6 @@
                 hreflang="en-US"
                 href="//localhost:1313/author/mark-dinn/"
                 />
-  </url><url>
-    <loc>//localhost:1313/about/applicants/</loc>
   </url><url>
     <loc>//localhost:1313/about/approach/</loc>
     <xhtml:link

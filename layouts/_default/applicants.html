@@ -6,20 +6,30 @@
 {{ if .enable }}
 <section class="service-about">
   <div class="container container_wider">
-    {{ with .quote }}<div class="vision-quote">{{ . | markdownify }}</div>{{ end }}
+    {{ with .quote }}<div class="vision-sub">{{ . | markdownify }}</div>{{ end }}
+    {{ with .description }}<div class="vision-quote">{{ . | markdownify }}</div>{{ end }}
 
-    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 50%; margin-bottom: 30px;">
+    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 100%; margin-bottom: 30px;">
     <div class="row">
       <div class="col-md-6">
         {{ with .title }}<div class="vision-title">{{ . | markdownify }}</div>{{ end }}
         {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
         {{ with .FAQ }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
       </div>
-      {{ with .image -}}
+
       <div class="col-md-6">
-        <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
+        <div style="height:50px; width:100%; clear:both;"></div>
+
+        {{ with .apply }}<div class="vision-content">{{ . | markdownify }}</div>{{ end }}
+        {{ with .submit_1 }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
+        {{ with .submit_2 }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
+        {{ with .submit_3 }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
       </div>
-      {{- end }}
+      
+      <div class="col-md-6">
+        {{ with .support }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+      </div>
+      
     </div>
   </div>
 </section>
@@ -31,7 +41,7 @@
 {{ if .enable }}
 <section class="service-about">
   <div class="container ">
-    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 50%; margin-bottom: 30px;">
+    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 100%; margin-bottom: 30px;">
     <div class="row">
       <div class="col-md-6">
         {{ with .title }}<div class="vision-title">{{ . | markdownify }}</div>{{ end }}
@@ -54,7 +64,7 @@
 {{ if .enable }}
 <section class="service-about">
   <div class="container">
-    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 50%; margin-bottom: 30px;">
+    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 100%; margin-bottom: 30px;">
     <div class="row">
       <div class="col-md-6">
         {{ with .title }}<div class="vision-title">{{ . | markdownify }}</div>{{ end }}
@@ -70,13 +80,35 @@
       </div>
 
     </div>
-    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 50%; margin-bottom: 30px;">
+    
   </div>
   
 </section>
 {{ end }}
 {{ end }}
 
+
+{{ with .Params.offer }}
+{{ if .enable }}
+<section class="service-about">
+  <div class="container ">
+    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 100%; margin-bottom: 30px;">
+    <div class="row">
+      <div class="col-md-6">
+        {{ with .title }}<div class="vision-title">{{ . | markdownify }}</div>{{ end }}
+        {{ with .support }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+      </div>
+      {{ with .image -}}
+      <div class="col-md-6">
+        <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
+      </div>
+      {{- end }}
+    </div>
+    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 100%; margin-bottom: 30px;">
+  </div>
+</section>
+{{ end }}
+{{ end }}
 
 
 <!-- Service -->
