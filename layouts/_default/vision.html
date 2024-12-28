@@ -2,6 +2,8 @@
 
 {{ partial "page-title.html" . }}
 
+
+
 {{ with .Params.vision_1 }}
 {{ if .enable }}
 <section class="service-about">
@@ -13,11 +15,33 @@
       </div>
     {{- end }}
     {{ with .quote }}<div class="vision-quote">{{ . | markdownify }}</div>{{ end }}
+{{ end }}
+{{ end }}
 
-    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 50%; margin-bottom: 30px;">
+
+{{ with .Params.projects}}
+<section class="service-about">
+  <div class="container_wider">
+    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 100%; margin-bottom: 30px;">
+    <div class="row">
+      <div class="col-md-8">
+        {{ with .title }}<div class="area-title">{{ . | markdownify }}</div>{{ end }}
+        {{ with .list }}<div class="vision-content">{{ . | markdownify }}</div>{{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.vision_1 }}
+{{ if .enable }}    
+    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 100%; margin-bottom: 30px;">
     <div class="row">
       <div class="col-md-6">
-        {{ with .title }}<div class="vision-title">{{ . | markdownify }}</div>{{ end }}
+        {{ with .topic }}<div class="area-title">{{ . | markdownify }}</div>{{ end }}
+        {{ with .direction }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
+        {{ with .title }}<div class="direction-title">{{ . | markdownify }}</div>{{ end }}
+    
         {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
         {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
       </div>
@@ -28,7 +52,7 @@
       {{- end }}
       
     </div>
-    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 50%; margin-bottom: 30px;">
+    <hr align="left" style="border: 0.5px rgb(65, 65, 65); border-style: dashed; width: 50%; margin-bottom: 30px;">
   </div>
 </section>
 {{ end }}
@@ -41,7 +65,9 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        {{ with .title }}<div class="vision-title">{{ . | markdownify }}</div>{{ end }}
+        {{ with .direction }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
+        {{ with .title }}<div class="direction-title">{{ . | markdownify }}</div>{{ end }}
+
         {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
         {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
       </div>

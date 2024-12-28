@@ -1,5 +1,5 @@
 ---
-title: "Research Vision"
+title: "Research Areas"
 description: 
 bg_image: "images/headerbg/09.png"
 layout: "vision"
@@ -7,31 +7,52 @@ draft: false
 menu:
   main:
     parent: "About Lab"
-    name: "Research Vision"
+    name: "Research Areas"
     weight: 1
+
+########################### ONGOING PROJECTS #############################
+projects: 
+  title: "<b>On-going Projects</b>"
+  list: "
+    1. FXR 
+
+    2. Human-centered AI Music Generation Algorithm for Artwork Appreciation  
+    
+    3. Third item  
+    
+    4. Fourth item  
+    
+    5. Human-centered AI Music Generation Algorithm for Artwork Appreciation  
+    
+    6. XR Museum  
+  "
 
 
 ########################### Vision 1 #############################
 vision_1:
   enable: true
-  teaser: "images/vision/statement.png"
+  teaser: "images/vision/statement_.png"
+  topic: "<b> Research Areas</b>"
   quote: "We aim to blur the boundary between the digital-world and the real-world, <br> suggesting a new way of looking at user experience and design."
-  title: "Bring **Physical Experience** into **Digital** World!"
+  title: " (1) Bring <b>Physical Experience</b> into <b>Digital</b> World!"
+  direction: "<b>Direction 1. </b>"
   content:
     "My research vision is to bring embodied interactions in designing future products, systems, contents, tools, and services in a systematic and human-centric way. Advanced technologies including AR, VR, artificial intelligence, and computer vision, open up new opportunities to capture and employ knowledge that has been implicitly embedded in our daily actions, behaviours, poses, and movements; and I aim to bring this knowledge into digital content/systems to create more enjoyable experiences."
   image: "images/vision/vision-main_1.png"
   keywords: "**Keywords**:  AR/VR/XR interactions, augmented interactions, data visualization, situated platforms, digital twin, metaverse, virtual humans"
 
+########################### Vision 1 #############################
 vision_2:
   enable: true
-  title: "Bring **Digital Intelligence** into **Physical** World!"
+  title: "(2) Bring **Digital Intelligence** into **Physical** World!"
+  direction: "<b>Direction 2</b>"
   content:
     "My research vision is to bring embodied interactions in designing future products, systems, contents, tools, and services in a systematic and human-centric way. Advanced technologies including AR, VR, artificial intelligence, and computer vision, open up new opportunities to capture and employ knowledge that has been implicitly embedded in our daily actions, behaviours, poses, and movements; and I aim to bring this knowledge into digital content/systems to create more enjoyable experiences."
   image: "images/vision/vision-main_2.png"
   keywords: "**Keywords**: robot interactions, intelligent products, embodied interactions, fabrication, living lab, smart home, smart city, smart building"
   
 
-########################## featured service ############################
+########################## DOMAIN OF INTERESTS ############################
 featured_service:
   enable: true
   service_item:
