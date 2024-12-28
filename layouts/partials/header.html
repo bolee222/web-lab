@@ -39,7 +39,7 @@
 
               <!-- Language List -->
               {{ if site.IsMultiLingual -}}
-              <li>
+              <li class="btn_lan">
                 <select id="select-language" onchange="location = this.value;">
                   {{ $siteLanguages := site.Languages -}}
                   {{ $pageLang := .Page.Lang -}}

@@ -7,11 +7,14 @@
         <div class="block">
           {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
           {{ with .content }}<p>{{ . | markdownify }}</p>{{ end }}
-          {{ with .button }}
-          {{ if .enable }}
+          
+          {{ with .button }}{{ if .enable }}
           <a class="btn btn-main btn-solid-border" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
-          {{ end }}
-          {{ end }}
+          {{ end }}{{ end }}
+
+          {{ with .button }}{{ if .enable }}
+          <a class="btn btn-main btn-solid-border" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
+          {{ end }}{{ end }}
         </div>
       </div>
     </div>

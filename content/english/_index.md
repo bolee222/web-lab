@@ -80,7 +80,19 @@ cta:
   content: "Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
   button:
     enable: true
-    label: "&rarr; Frequently Asked Questions"
+    label: "&rarr; Our Research <b>Areas</b>"
+    link: "about/vision/"
+  button_approach:
+    enable: true
+    label: "&rarr; Our Research Methods"
+    link: "about/vision/"
+  button_joinUs:
+    enable: true
+    label: "&rarr; Join Us"
+    link: "about/applicants/"
+  button_FAQ:
+    enable: true
+    label: "&rarr; FAQ"
     link: "about/faq/"
 
 ############################# Funfacts ###############################
