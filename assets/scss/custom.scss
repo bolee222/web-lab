@@ -210,7 +210,7 @@ img.rounded {
     padding: 6rem 6rem;
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.575);
+    background: rgba(255, 255, 255, 0.741);
     box-shadow: 0 0.75rem 4rem 0 rgba(0, 0, 0, 0.1);
     border-radius: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.125);
@@ -559,7 +559,8 @@ a:link-text-publications {
 .btn-learnMore{
   font-weight: 500;
   font-size: 16px !important;
-  border-style: dashed!important;
+  //border-style: dashe
+  border-width: 0px important;
   padding: 10px 15px;
   margin-right: 15px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);

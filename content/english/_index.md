@@ -58,8 +58,7 @@ portfolio:
   enable: true
   bg_image: "images/feature-bg.jpg"
   title: "We believe in great ideas"
-  content: " Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-  "
+  content: "Here you can explore our six most recent published projects. Click the <View All Projects> button to discover all the other projects we’ve completed."
   button:
     enable: true
     label: "&rarr; View All Projects"

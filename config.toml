@@ -211,13 +211,13 @@ URL = ""
 weight = 1
 
 [[languages.en.menu.footer]]
-name = "Lab"
+name = "Research Area"
 URL = "about/vision"
 weight = 2
 
 [[languages.en.menu.footer]]
-name = "Professor"
-URL = "people/professor"
+name = "Join Us"
+URL = "about/applicants"
 weight = 3
 
 [[languages.en.menu.footer]]
@@ -226,14 +226,24 @@ URL = "project"
 weight = 4
 
 [[languages.en.menu.footer]]
+name = "Publication"
+URL = "publication"
+weight = 5
+
+[[languages.en.menu.footer]]
+name = "Professor"
+URL = "people/professor"
+weight = 6
+
+[[languages.en.menu.footer]]
 name = "FAQ"
 URL = "faq"
-weight = 5
+weight = 7
 
 [[languages.en.menu.footer]]
 name = "Contact"
 URL = "contact"
-weight = 6
+weight = 8
 
 
 ################################# Korean translation ##########################
