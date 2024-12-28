@@ -250,6 +250,14 @@
     margin-bottom: 7px;
 }
 
+@media (max-width: 1000px) {
+    .news-icon {
+        display:none;
+    }
+}
+
+
+
 
 .project-page-title{
     font-size: 30px;

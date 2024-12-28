@@ -105,10 +105,14 @@
 .home-title-sub1{
   font-weight: 400;
   font-family: $primary-font;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: -10px;
   margin-bottom: 30px;
   color: black;
+  
+  b{
+    font-weight: 600;
+  }
 }
 
 .home-slider-more{
@@ -554,6 +558,12 @@ a:link-text-publications {
 
 .faq-bg{
   background: #ffffff6a !important;
+  b {
+    color:rgb(97, 13, 161);
+  }
+  p{
+    padding: 0 30px;
+  }
 }
 
 .btn-learnMore{

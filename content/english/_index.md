@@ -58,7 +58,7 @@ portfolio:
   enable: true
   bg_image: "images/feature-bg.jpg"
   title: "We believe in great ideas"
-  content: "Here you can explore our six most recent published projects. Click the <View All Projects> button to discover all the other projects we’ve completed."
+  content: "Here you can see our <b>6 most recent <u>published projects</u></b>. Click the <b>'View All Projects'</b> button to discover all the other projects we’ve completed. To view unpublished ongoing projects, please feel free to contact us. "
   button:
     enable: true
     label: "&rarr; View All Projects"
