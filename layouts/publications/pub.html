@@ -5,78 +5,74 @@
     <div class="row row-fix">
     </div>
 
-    <!--SCI Journals / Top Rank Conferences-->
-    <div class="publication-type-title"><strong> International Journals / Top-rank Conferences </strong></div>
-    <div class="row">
-      {{ $paginator := .Paginate .Data.Pages }}
-      {{ range $paginator.Pages.ByDate.Reverse }}
-      <div class="container">
-        <div class="col-md-12 col-sm-6 mb-3">
-          {{ .Render "publication_sci" }}
-        </div>
-      </div>
-      {{ end }}
-      <div class="col-12 mt-5">
-        {{ template "_internal/pagination.html" . }}
-      </div>
+       <!-- Tabs for Filtering -->
+<ul class="nav nav-tabs" id="publicationTabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-type="all" href="#">All Publications</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-type="top-ranked" href="#">Top-Ranked</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-type="international" href="#">International</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-type="domestic" href="#">Domestic</a>
+  </li>
+</ul>
+
+<!-- Publication List -->
+<div class="row" id="publication-list">
+  {{ $paginator := .Paginate .RegularPages.ByDate.Reverse }}
+  {{ range $paginator.Pages }}
+  <div class="container publication-item" 
+       data-type="{{ .Params.type }}">
+    <div class="col-md-12 col-sm-6 mb-3">
+      {{ .Render "publication_all_acm" }}
     </div>
-
-    <!--International Conferences-->
-    <div class="container publication-type-title"><strong> International Conferences </strong></div>
-    <div class="container row">
-      {{ $paginator := .Paginate .Data.Pages }}
-      {{ range $paginator.Pages.ByDate.Reverse }}
-      <div class="container">
-        <div class="col-md-12 col-sm-6 mb-3">
-          {{ .Render "publication_int" }}
-        </div>
-      </div>
-        
-      {{ end }}
-      <div class="col-12 mt-5">
-        {{ template "_internal/pagination.html" . }}
-      </div>
-    </div>
-
-    <!--Domestic Journals-->
-    <div class="container publication-type-title"><strong> Domestic Journals </strong></div>
-    <div class="row">
-      {{ $paginator := .Paginate .Data.Pages }}
-      {{ range $paginator.Pages.ByDate.Reverse }}
-      <div class="container">
-        <div class="col-md-12 col-sm-6 mb-3">
-          {{ .Render "publication_journal_dom" }}
-        </div>
-      </div>
-        
-      {{ end }}
-      <div class="col-12 mt-5">
-        {{ template "_internal/pagination.html" . }}
-      </div>
-    </div>
-
-    <!--Domestic Conferences-->
-    <div class="container publication-type-title"><strong> Domestic Conferences </strong></div>
-    <div class="row">
-      {{ $paginator := .Paginate .Data.Pages }}
-      {{ range $paginator.Pages.ByDate.Reverse }}
-      <div class="container">
-        <div class="col-md-12 col-sm-6 mb-3">
-          {{ .Render "publication_domestic" }}
-        </div>
-      </div>
-        
-      {{ end }}
-      <div class="col-12 mt-5">
-        {{ template "_internal/pagination.html" . }}
-      </div>
-    </div>
-
-
-    <hr align="left" style="margin-top: 80px; margin-bottom: 80px; width:100%; height:0px; border:none;background-color:black;">
-
-
   </div>
-</section>
+  {{ end }}
+  
+  <div class="col-12 mt-5">
+    {{ template "_internal/pagination.html" . }}
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const tabs = document.querySelectorAll("#publicationTabs .nav-link");
+  const publications = document.querySelectorAll(".publication-item");
+
+  const categoryMapping = {
+    "top-ranked": ["Conference_sci", "Journal_sci"],
+    "international": ["Conference_sci", "Journal_sci", "Conference_int", "Journal_int"],
+    "domestic": ["Conference_dom", "Journal_dom"]
+  };
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", function(event) {
+      event.preventDefault();
+      const selectedType = this.getAttribute("data-type");
+
+      // Update active tab styling
+      tabs.forEach(tab => tab.classList.remove("active"));
+      this.classList.add("active");
+
+      // Show or hide publications based on selected tab
+      publications.forEach(pub => {
+        const pubType = pub.getAttribute("data-type");
+
+        if (selectedType === "all" || 
+            (categoryMapping[selectedType] && categoryMapping[selectedType].includes(pubType)) ||
+            pubType === selectedType) {
+          pub.style.display = "block";
+        } else {
+          pub.style.display = "none";
+        }
+      });
+    });
+  });
+});
+</script>
 
 {{ end }}

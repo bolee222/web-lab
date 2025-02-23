@@ -485,6 +485,35 @@ input[type="tel"] {
     }
 }
 
+
+.nav-tabs {
+    //border-color: $border-color;
+    border-bottom: none !important;
+    margin-bottom: 40px; /* Adjust this value as needed */
+}
+
+/* Set default tab text color to black */
+.nav-tabs .nav-link {
+    color: black !important;
+    font-weight: 400; /* Optional: Makes text slightly bold */
+    padding: 10px 15px ; /* Adjust padding if needed */
+    border: none !important;
+}
+
+.nav-tabs .nav-link.active {
+  color: rgb(111, 0, 111) !important; /* Replace with your site's primary color */
+  font-weight: 700;
+  border: none !important; /* Ensures no bottom border */
+  border-bottom: rgb(111, 0, 111) !important;;
+  text-decoration: underline;
+  background-color: #ffffffa9;
+}
+
+/* Optional: Add hover effect */
+.nav-tabs .nav-link:hover {
+  color: rgb(111, 0, 111) !important;; /* A slightly darker shade of primary color */
+}
+
 .commonAccordion {
     .panel {
         border-radius: 0;
