@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright &amp;copy; Bokyung Lee. All Rights Reserved.</copyright>
-    <lastBuildDate>Sat, 31 Aug 2024 15:40:24 +0600</lastBuildDate>
+    <lastBuildDate>Tue, 31 Dec 2024 15:40:24 +0600</lastBuildDate>
     <atom:link href="//localhost:1313/publications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploring the Next Phase of Situated and Interactive Docents for XR Exhibitions: From the Perspective of Knowledge Delivery</title>
+      <link>//localhost:1313/publications/2024-xrdocent/</link>
+      <pubDate>Tue, 31 Dec 2024 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2024-xrdocent/</guid>
+      <description>Working from home (WFH) provides flexibility but often at the expense of productivity. In traditional office settings, the presence of colleagues has an impact on productivity, and the absence of social monitoring is a key factor affecting WFH workers’ concentration.</description>
+    </item>
+    <item>
+      <title>User-Centered Investigation of Generative AI and XR Interactions in 3D Product Design Tools</title>
+      <link>//localhost:1313/publications/2025-novicedesign/</link>
+      <pubDate>Tue, 31 Dec 2024 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2025-novicedesign/</guid>
+      <description>Advanced technologies empower novices to create 3D products independently, yet existing tools focus on simplifying object creation, overlooking support for reflecting on users’ needs and desires. This paper envisions generative Artificial Intelligence (AI) and eXtended Reality (XR) as means to better novices in adopting dual roles as designers and users while personalizing 3D products.</description>
+    </item>
     <item>
       <title>Investigating Work Companion Robot Interactions to Enhance Work-from-Home Productivity and Experience</title>
       <link>//localhost:1313/publications/2024-roby/</link>

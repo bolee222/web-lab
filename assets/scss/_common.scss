@@ -489,6 +489,7 @@ input[type="tel"] {
 .nav-tabs {
     //border-color: $border-color;
     border-bottom: none !important;
+    
     margin-bottom: 40px; /* Adjust this value as needed */
 }
 
@@ -496,6 +497,7 @@ input[type="tel"] {
 .nav-tabs .nav-link {
     color: black !important;
     font-weight: 400; /* Optional: Makes text slightly bold */
+    font-size: 16px;
     padding: 10px 15px ; /* Adjust padding if needed */
     border: none !important;
 }
@@ -506,7 +508,7 @@ input[type="tel"] {
   border: none !important; /* Ensures no bottom border */
   border-bottom: rgb(111, 0, 111) !important;;
   text-decoration: underline;
-  background-color: #ffffffa9;
+  background-color: #ffffff78;
 }
 
 /* Optional: Add hover effect */
