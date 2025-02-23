@@ -7,21 +7,21 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright &amp;copy; Bokyung Lee. All Rights Reserved.</copyright>
-    <lastBuildDate>Mon, 23 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/tags/exhibition/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Exploring the Next Phase of Situated and Interactive Docents for XR Exhibitions: From the Perspective of Knowledge Delivery</title>
-      <link>//localhost:1313/projects/2024-xrdocent/</link>
-      <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/2024-xrdocent/</guid>
-      <description>A well-designed docent significantly impacts visitors’ comprehension of the knowledge provided in museums. This study investigates the potential of eXtended Reality (XR) interactions to enhance knowledge delivery within exhibitions. Analyzing 737 exhibit commentary descriptions from 10 real-world exhibitions, we first provided a foundational knowledge taxonomy that outlines various types of information frequently conveyed along with physical exhibits. Subsequently, interviews with expert curators based on our taxonomy framework revealed their past challenges with communication for each type of knowledge and their desires. Our findings elucidate several implications for designing XR interactions to deliver curated knowledge more effectively. Unlike other works of knowledge-delivery supports in XR museums that focused on immersive representations and virtual human guides, our findings suggested new perspectives on incorporating the current understanding of situated visualization, spatio-temporal interaction, participatory embodiment, and the feedback loop into XR exhibition contexts, thus enriching the informative learning experience for museum visitors.</description>
+      <title>User-Centered Investigation of Generative AI and XR Interactions in 3D Product Design Tools</title>
+      <link>//localhost:1313/project/2025-novicedesign/</link>
+      <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/2025-novicedesign/</guid>
+      <description>Advanced technologies empower novices to create 3D products independently, yet existing tools focus on simplifying object creation, overlooking support for reflecting on users’ needs and desires. This paper envisions generative Artificial Intelligence (AI) and eXtended Reality (XR) as means to better novices in adopting dual roles as designers and users while personalizing 3D products. A generative design study with 24 participants in their homes examined how novices think and act while designing personal products. Observations and interviews reveal that participants actively leverage their bodies, everyday objects, and context-based language, uncovering new opportunities for AI and XR in 3D design tools.</description>
     </item>
     <item>
-      <title>User-Centered Investigation of Generative AI and XR Interactions in 3D Product Design Tools</title>
-      <link>//localhost:1313/projects/2025-xrdocent/</link>
+      <title>Exploring the Next Phase of Situated and Interactive Docents for XR Exhibitions: From the Perspective of Knowledge Delivery</title>
+      <link>//localhost:1313/project/2024-xrdocent/</link>
       <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/2025-xrdocent/</guid>
-      <description>Advanced technologies empower novices to create 3D products independently, yet existing tools focus on simplifying object creation, overlooking support for reflecting on users’ needs and desires. This paper envisions generative Artificial Intelligence (AI) and eXtended Reality (XR) as means to better novices in adopting dual roles as designers and users while personalizing 3D products. A generative design study with 24 participants in their homes examined how novices think and act while designing personal products. Observations and interviews reveal that participants actively leverage their bodies, everyday objects, and context-based language, uncovering new opportunities for AI and XR in 3D design tools.</description>
+      <guid>//localhost:1313/project/2024-xrdocent/</guid>
+      <description>A well-designed docent significantly impacts visitors’ comprehension of the knowledge provided in museums. This study investigates the potential of eXtended Reality (XR) interactions to enhance knowledge delivery within exhibitions. Analyzing 737 exhibit commentary descriptions from 10 real-world exhibitions, we first provided a foundational knowledge taxonomy that outlines various types of information frequently conveyed along with physical exhibits. Subsequently, interviews with expert curators based on our taxonomy framework revealed their past challenges with communication for each type of knowledge and their desires. Our findings elucidate several implications for designing XR interactions to deliver curated knowledge more effectively. Unlike other works of knowledge-delivery supports in XR museums that focused on immersive representations and virtual human guides, our findings suggested new perspectives on incorporating the current understanding of situated visualization, spatio-temporal interaction, participatory embodiment, and the feedback loop into XR exhibition contexts, thus enriching the informative learning experience for museum visitors.</description>
     </item>
   </channel>
 </rss>

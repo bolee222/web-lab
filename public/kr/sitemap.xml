@@ -56,9 +56,29 @@
   </url><url>
     <loc>//localhost:1313/kr/project/2023-occsim/</loc>
     <lastmod>2023-06-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2023-occsim/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2023-occsim/"
+                />
   </url><url>
     <loc>//localhost:1313/kr/project/</loc>
     <lastmod>2023-06-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/"
+                />
   </url><url>
     <loc>//localhost:1313/kr/tags/</loc>
     <lastmod>2023-06-01T00:00:00+00:00</lastmod>
@@ -127,6 +147,16 @@
   </url><url>
     <loc>//localhost:1313/kr/project/2021-occsim/</loc>
     <lastmod>2021-05-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2021-occsim/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2021-occsim/"
+                />
   </url><url>
     <loc>//localhost:1313/kr/about/</loc>
     <lastmod>2021-04-01T00:00:00+00:00</lastmod>
@@ -305,6 +335,16 @@
   </url><url>
     <loc>//localhost:1313/kr/project/2019-social_interactions/</loc>
     <lastmod>2020-11-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2019-social_interactions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2019-social_interactions/"
+                />
   </url><url>
     <loc>//localhost:1313/kr/publications/2020-cscw/</loc>
     <lastmod>2020-10-14T15:40:24+06:00</lastmod>
@@ -334,9 +374,29 @@
   </url><url>
     <loc>//localhost:1313/kr/project/2020-socio_spatial_comfort/</loc>
     <lastmod>2020-01-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2020-socio_spatial_comfort/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2020-socio_spatial_comfort/"
+                />
   </url><url>
     <loc>//localhost:1313/kr/project/2019-skeletonographer/</loc>
     <lastmod>2019-11-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2019-skeletonographer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2019-skeletonographer/"
+                />
   </url><url>
     <loc>//localhost:1313/kr/publications/2019-cscw/</loc>
     <lastmod>2019-10-14T15:40:24+06:00</lastmod>
@@ -418,9 +478,29 @@
   </url><url>
     <loc>//localhost:1313/kr/project/2019-smartmanikin/</loc>
     <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2019-smartmanikin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2019-smartmanikin/"
+                />
   </url><url>
     <loc>//localhost:1313/kr/project/2019-robotdesk/</loc>
     <lastmod>2019-05-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2019-robotdesk/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2019-robotdesk/"
+                />
   </url><url>
     <loc>//localhost:1313/kr/tags/advice/</loc>
     <lastmod>2018-09-24T11:07:10+06:00</lastmod>
@@ -615,9 +695,29 @@
   </url><url>
     <loc>//localhost:1313/kr/project/2018-body2desk/</loc>
     <lastmod>2018-06-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2018-body2desk/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2018-body2desk/"
+                />
   </url><url>
     <loc>//localhost:1313/kr/project/2016-bodymeter/</loc>
     <lastmod>2018-06-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2016-bodymeter/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2016-bodymeter/"
+                />
   </url><url>
     <loc>//localhost:1313/kr/publications/2017-chi/</loc>
     <lastmod>2017-05-14T15:40:24+06:00</lastmod>
@@ -660,6 +760,16 @@
   </url><url>
     <loc>//localhost:1313/kr/project/2017-consumer2creator/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2017-consumer2creator/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2017-consumer2creator/"
+                />
   </url><url>
     <loc>//localhost:1313/kr/publications/2017-hcik/</loc>
     <lastmod>2017-01-14T15:40:24+06:00</lastmod>

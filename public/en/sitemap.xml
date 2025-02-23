@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2024-12-31T15:40:24+06:00</lastmod>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="kr-kr"
@@ -15,35 +15,36 @@
                 href="//localhost:1313/"
                 />
   </url><url>
-    <loc>//localhost:1313/publications/2024-xrdocent/</loc>
-    <lastmod>2024-12-31T15:40:24+06:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/publications/2025-novicedesign/</loc>
-    <lastmod>2024-12-31T15:40:24+06:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/tags/augmented-reality-ar/</loc>
-    <lastmod>2024-12-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/exhibition/</loc>
-    <lastmod>2024-12-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/projects/2024-xrdocent/</loc>
-    <lastmod>2024-12-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/extended-reality-xr/</loc>
-    <lastmod>2024-12-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/interactive-visualization/</loc>
-    <lastmod>2024-12-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/projects/</loc>
-    <lastmod>2024-12-23T00:00:00+00:00</lastmod>
+    <loc>//localhost:1313/project/</loc>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/"
+                />
   </url><url>
     <loc>//localhost:1313/tags/situated-communication/</loc>
-    <lastmod>2024-12-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/</loc>
-    <lastmod>2024-12-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="kr-kr"
@@ -55,10 +56,19 @@
                 href="//localhost:1313/tags/"
                 />
   </url><url>
-    <loc>//localhost:1313/projects/2025-xrdocent/</loc>
-    <lastmod>2024-12-23T00:00:00+00:00</lastmod>
+    <loc>//localhost:1313/project/2025-novicedesign/</loc>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/virtual-museum/</loc>
+    <lastmod>2025-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/publications/2024-xrdocent/</loc>
+    <lastmod>2024-12-31T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/publications/2025-novicedesign/</loc>
+    <lastmod>2024-12-31T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/project/2024-xrdocent/</loc>
     <lastmod>2024-12-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/publications/2024-roby/</loc>
@@ -67,7 +77,7 @@
     <loc>//localhost:1313/tags/interaction/</loc>
     <lastmod>2024-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/projects/2024-roby/</loc>
+    <loc>//localhost:1313/project/2024-roby/</loc>
     <lastmod>2024-08-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/productivity/</loc>
@@ -92,7 +102,7 @@
     <loc>//localhost:1313/tags/design-tools/</loc>
     <lastmod>2024-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/projects/2024-everydayobject/</loc>
+    <loc>//localhost:1313/project/2024-everydayobject/</loc>
     <lastmod>2024-01-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/vr/</loc>
@@ -153,8 +163,18 @@
                 href="//localhost:1313/tags/bibibib/"
                 />
   </url><url>
-    <loc>//localhost:1313/projects/2023-occsim/</loc>
+    <loc>//localhost:1313/project/2023-occsim/</loc>
     <lastmod>2023-06-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2023-occsim/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2023-occsim/"
+                />
   </url><url>
     <loc>//localhost:1313/publications/2023-sustainable/</loc>
     <lastmod>2023-03-14T15:40:24+06:00</lastmod>
@@ -208,8 +228,18 @@
                 href="//localhost:1313/publications/2021-dis/"
                 />
   </url><url>
-    <loc>//localhost:1313/projects/2021-occsim/</loc>
+    <loc>//localhost:1313/project/2021-occsim/</loc>
     <lastmod>2021-05-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2021-occsim/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2021-occsim/"
+                />
   </url><url>
     <loc>//localhost:1313/people/</loc>
     <lastmod>2021-04-01T00:00:00+00:00</lastmod>
@@ -354,8 +384,18 @@
                 href="//localhost:1313/publications/2020-nordichi/"
                 />
   </url><url>
-    <loc>//localhost:1313/projects/2019-social_interactions/</loc>
+    <loc>//localhost:1313/project/2019-social_interactions/</loc>
     <lastmod>2020-11-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2019-social_interactions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2019-social_interactions/"
+                />
   </url><url>
     <loc>//localhost:1313/publications/2020-cscw/</loc>
     <lastmod>2020-10-14T15:40:24+06:00</lastmod>
@@ -383,11 +423,31 @@
                 href="//localhost:1313/publications/2020-phd/"
                 />
   </url><url>
-    <loc>//localhost:1313/projects/2020-socio_spatial_comfort/</loc>
+    <loc>//localhost:1313/project/2020-socio_spatial_comfort/</loc>
     <lastmod>2020-01-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2020-socio_spatial_comfort/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2020-socio_spatial_comfort/"
+                />
   </url><url>
-    <loc>//localhost:1313/projects/2019-skeletonographer/</loc>
+    <loc>//localhost:1313/project/2019-skeletonographer/</loc>
     <lastmod>2019-11-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2019-skeletonographer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2019-skeletonographer/"
+                />
   </url><url>
     <loc>//localhost:1313/publications/2019-cscw/</loc>
     <lastmod>2019-10-14T15:40:24+06:00</lastmod>
@@ -467,11 +527,31 @@
                 href="//localhost:1313/publications/2019-chi-sindy/"
                 />
   </url><url>
-    <loc>//localhost:1313/projects/2019-smartmanikin/</loc>
+    <loc>//localhost:1313/project/2019-smartmanikin/</loc>
     <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2019-smartmanikin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2019-smartmanikin/"
+                />
   </url><url>
-    <loc>//localhost:1313/projects/2019-robotdesk/</loc>
+    <loc>//localhost:1313/project/2019-robotdesk/</loc>
     <lastmod>2019-05-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2019-robotdesk/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2019-robotdesk/"
+                />
   </url><url>
     <loc>//localhost:1313/tags/advice/</loc>
     <lastmod>2018-09-24T11:07:10+06:00</lastmod>
@@ -658,11 +738,31 @@
                 href="//localhost:1313/publications/2018-dis/"
                 />
   </url><url>
-    <loc>//localhost:1313/projects/2018-body2desk/</loc>
+    <loc>//localhost:1313/project/2018-body2desk/</loc>
     <lastmod>2018-06-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2018-body2desk/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2018-body2desk/"
+                />
   </url><url>
-    <loc>//localhost:1313/projects/2016-bodymeter/</loc>
+    <loc>//localhost:1313/project/2016-bodymeter/</loc>
     <lastmod>2018-06-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2016-bodymeter/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2016-bodymeter/"
+                />
   </url><url>
     <loc>//localhost:1313/publications/2017-chi/</loc>
     <lastmod>2017-05-14T15:40:24+06:00</lastmod>
@@ -703,10 +803,20 @@
                 href="//localhost:1313/publications/2017-dis-mandu/"
                 />
   </url><url>
-    <loc>//localhost:1313/projects/2017-consumer2creator/</loc>
+    <loc>//localhost:1313/project/2017-consumer2creator/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/project/2017-consumer2creator/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="//localhost:1313/project/2017-consumer2creator/"
+                />
   </url><url>
-    <loc>//localhost:1313/projects/2017-orimandu/</loc>
+    <loc>//localhost:1313/project/2017-orimandu/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/publications/2017-hcik/</loc>

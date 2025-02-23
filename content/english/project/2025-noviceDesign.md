@@ -1,6 +1,6 @@
 ---
 title: "User-Centered Investigation of Generative AI and XR Interactions in 3D Product Design Tools"
-date: 2024-12-23
+date: 2025-01-23
 draft: false
 
 # Project thumb
@@ -11,6 +11,7 @@ metacontent: "This paper envisions generative Artificial Intelligence (AI) and e
 
 # Meta-Data
 conference: "Ergonomics in Design / 2025"
+conference_full: Ergonomics in Design
 con_date: "Undecided"
 keywords: "generative AI, XR"
 researcher: "Bokyung Lee, Gyeol Han, Jundong Park, Daniel Saakes"
@@ -24,7 +25,6 @@ links:
     link : "https://www.dropbox.com/scl/fi/ul2xh7pbzoy7zo9weulx9/2024-XR-docent.pdf?rlkey=gvawi814v8gejw71die1mziv9&st=xljqfzor&dl=0"
   - label : "Source URL"
     link : "https://doi.org/10.1080/10447318.2024.2437127"
-
 
 information:
   - label : "Client"
