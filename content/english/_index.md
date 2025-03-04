@@ -21,6 +21,25 @@ banner:
     label: "&rarr; Discover Our Project"
     link: "project"
 
+############################# Ongoing Projects #################################
+ongoing:
+  enable: true
+  title: "Current Active Projects"
+  description: "
+  - *-* At many points in your Design Thinking project, you will be interviewing your users. 
+  
+  - *-* ongoing project 1
+  "
+
+  image: "images/logo/ongoing-buffer.png"
+
+  keyword: "
+  - XR Museum
+  - AI Education
+  "
+
+
+
 ############################# About #################################
 about:
   enable: true
