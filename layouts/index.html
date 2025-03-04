@@ -60,14 +60,14 @@
 
 <!-- /ongoing -->
 {{ with .Params.ongoing }} {{ if .enable }}
-<section class="about section-card">
+<section class="about section-card-ongoing">
   <div class="container ">
-      <!-- about -->
+      <!-- ongoing -->
       <canvas class="orb-canvas"></canvas>
       <!-- Overlay -->
-      <div class="overlay">
+      <div class="overlay-ongoing">
         <div class="row">
-          <div class="col-md-7 col-sm-12">
+          <div class="col-md-10 col-sm-12">
             <div class="block">
               <div class="section-title">
                 {{ with .title }}
@@ -87,7 +87,7 @@
               {{ end }}{{ end }}
             </div>
           </div>
-          <div class="col-md-5 col-sm-12">
+          <div class="col-md-2 col-sm-12">
             <div class="block">
               <img src="{{ .image | relURL }}" class="img-responsive" alt="Img" style = "margin-top: 50px" />
             </div>
