@@ -34,7 +34,7 @@ pricing:
 
     # Student table loop
     - name: "Vu, Taho Phuong"
-      type: master student
+      type: Ph.D student
       email: "phuongvu@yonsei.ac.kr"
       period: 2024 Spring - current
       image : "images/students/Phuong.jpg"
@@ -69,17 +69,27 @@ pricing:
       link: "#"
 
     # Student table loop
-    - name: "Nayoon Kim"
-      type: undergraduate intern
+    - name: "Chanbin Park"
+      type: Undergraduate Researcher / UC Berkeley
       email: 
       image : "images/students/default.jpg"
-      period: 2024 Summer - current
-      content: "Nayoon is investiating the potential of incorporating full-body motion graphics and interactions in electronic music industry. She investigates the impact of state-of-the-art technology in communication, particularly between the performer and the audeince."
+      period: 2025 Winter - current
+      content: "Chanbin is investiating context-driven embodied text-editing tool. He develops a motion-enhanced text editing tool to shape more natural and context-aware writing peirnece."
       link: "#"
 
     # Student table loop
+    - name: "Nirvika Gupta"
+      type: Undergraduate Researcher / IIT
+      email: 
+      image : "images/students/default.jpg"
+      period: 2025 Winter - current
+      content: "Nirvika is investiating a new system that integrates facial recognition-based XR system in class. She designs EmoViz for teachers to enhance more engaging class experiences."
+      link: "#"
+
+
+    # Student table loop
     - name: "Shin Shun Mya Aye (Kathryn)"
-      type: undergraduate intern
+      type: undergraduate Researcher
       email: ssmasensan@gmail.com
       image : "images/students/Kathryn.jpg"
       period: 2024 Summer - current

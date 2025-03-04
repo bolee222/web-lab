@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright &amp;copy; Bokyung Lee. All Rights Reserved.</copyright>
-    <lastBuildDate>Thu, 23 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/tags/augmented-reality-ar/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Designatomy: Technology-Driven Rapid Ideation Pedagogy for Tech-Novice Design Students</title>
+      <link>//localhost:1313/project/2025-designatomy/</link>
+      <pubDate>Fri, 24 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/2025-designatomy/</guid>
+      <description>Advanced technologies empower novices to create 3D products independently, yet existing tools focus on simplifying object creation, overlooking support for reflecting on users’ needs and desires. This paper envisions generative Artificial Intelligence (AI) and eXtended Reality (XR) as means to better novices in adopting dual roles as designers and users while personalizing 3D products. A generative design study with 24 participants in their homes examined how novices think and act while designing personal products. Observations and interviews reveal that participants actively leverage their bodies, everyday objects, and context-based language, uncovering new opportunities for AI and XR in 3D design tools.</description>
+    </item>
     <item>
       <title>User-Centered Investigation of Generative AI and XR Interactions in 3D Product Design Tools</title>
       <link>//localhost:1313/project/2025-novicedesign/</link>

@@ -15,20 +15,24 @@ menu:
 pricing:
   enable: true
   pricing_table:
-    # pricing table loop
+    # Student
     - name: "HeeJi Kim"
       type: individual undergraduate researcher
       image : "images/bokyung/bokyungLee.jpg"
       period: "2024.01-2024.06"
       content: "Heeji conducted individual research to investigate potential interaction strategies for work companion robots at home. Her project is published in Archives of Design Research."
       link: "#"
-      services:
-        - Unlimited agents
-        - 10 PSD Design
-        - HTML5 Markup
-        - Basic SEO
-        - Email Marketing
-        - 24/7 Tech Support
+
+
+    # Student table loop
+    - name: "Nayoon Kim"
+      type: undergraduate intern
+      email: 
+      image : "images/students/default.jpg"
+      period: 2024 Summer - current
+      content: "Nayoon explored the potential of incorporating full-body motion graphics and interactions in electronic music industry. She investigates the impact of state-of-the-art technology in communication, particularly between the performer and the audeince."
+      link: "#"
+
 
     
 
