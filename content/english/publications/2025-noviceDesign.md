@@ -14,7 +14,7 @@ homeYearTag: 2025
 
 
 exactPeriod: 2025.01.23
-cite_acm: "Bokyung Lee, Gyeol Han, Jundong Park, and Daniel Saakes. (2024). **User-Centered Investigation of Generative AI and XR Interactions in 3D Product Design Tools**. _Ergonomics in Design_, (TBD). "
+cite_acm: "Bokyung Lee, Gyeol Han, Jundong Park, and Daniel Saakes. (2025). **User-Centered Investigation of Generative AI and XR Interactions in 3D Product Design Tools**. _Ergonomics in Design_, (TBD). "
 doi: 
 
 
