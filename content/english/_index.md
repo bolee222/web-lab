@@ -15,7 +15,8 @@ banner:
   department: "[Department of Innovation ](https://www.uicinnovation.yonsei.ac.kr/)"
   title: "Convergence"
   content1: "**Human-Computer Interaction (HCI) & UX Research**"
-  content2: "within the Paradigm of New Digital Convergence"
+  content2: "within the Paradigm of New **Digital Convergence**"
+  content3: "How can we design **digital intelligence more seamlessly to our physcial world** that we are living in? If you are interested in **designing new AI & XR services** for our better lives, join our lab to shape the future!"
   button:
     enable: false
     label: "&rarr; Discover Our Project"
