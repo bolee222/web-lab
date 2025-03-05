@@ -8,13 +8,13 @@ Journal: "**Ergonomics in Design**, 2025 (To be published)"
 type: "Journal_int"
 
 # DATE INFO
-date: 2024-12-31T15:40:24+06:00
+date: 2025-01-31T15:40:24+06:00
 publicationDate: 2025.x
 homeYearTag: 2025
 
 
-exactPeriod: 2024.12.23
-cite_acm: "Bokyung Lee, Gyeol Han, Jundong Park, and Daniel Saakes. (2024). **User-Centered Investigation of Generative AI and XR Interactions in 3D Product Design Tools**. _Ergonomics in Design_, 1–20. "
+exactPeriod: 2025.01.23
+cite_acm: "Bokyung Lee, Gyeol Han, Jundong Park, and Daniel Saakes. (2024). **User-Centered Investigation of Generative AI and XR Interactions in 3D Product Design Tools**. _Ergonomics in Design_, (TBD). "
 doi: 
 
 
