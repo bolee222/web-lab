@@ -45,6 +45,7 @@
                     {{ with .content1 }}<div class="slider-vision">{{ . | markdownify  }}</div>{{ end }} 
                     {{ with .content2 }}<div class="slider-vision">{{ . | markdownify  }}</div>{{ end }} 
                     {{ with .content3 }}<div class="slider-vision-content3">{{ . | markdownify  }}</div>{{ end }} 
+                    {{ with .content4 }}<div class="slider-vision-content4">{{ . | markdownify  }}</div>{{ end }} 
                     {{ with .button }} {{ if .enable }}
                     <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp">{{ .label }}</a>
           {{ end }} {{ end }}
@@ -57,33 +58,7 @@
 {{ end }} {{ end }}
 <!-- /banner -->
 
-<!-- /ongoing -->
-{{ with .Params.ongoing }} {{ if .enable }}
-<section class="about section-card-ongoing">
-  <div class="container ">
-      <!-- ongoing -->
-      <canvas class="orb-canvas"></canvas>
-      <!-- Overlay -->
-      <div class="overlay-ongoing">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <div class="block">
-              <div class="section-title">
-                {{ with .title }}
-                <div class="home-title-ongoing">{{ . | markdownify }}</div>
-                {{ end }} {{ with .description }}<div class="lab-intro">{{ . | $.Page.RenderString (dict
-                "display" "block") }}</div>{{ end }}
-              </div>
-            </div>
-          </div>
-        </div>
 
-        </div>
-      </div>
-  </div>
-</section>
-{{ end }} {{ end }}
-<!-- / ongoing -->
 
 <!-- /about -->
 {{ with .Params.about }} {{ if .enable }}
@@ -129,7 +104,33 @@
 <!-- /about -->
 
 
+<!-- /ongoing -->
+{{ with .Params.ongoing }} {{ if .enable }}
+<section class="about section-card-ongoing">
+  <div class="container ">
+      <!-- ongoing -->
+      <canvas class="orb-canvas"></canvas>
+      <!-- Overlay -->
+      <div class="overlay-ongoing">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="block">
+              <div class="section-title">
+                {{ with .title }}
+                <div class="home-title-ongoing">{{ . | markdownify }}</div>
+                {{ end }} {{ with .description }}<div class="lab-intro">{{ . | $.Page.RenderString (dict
+                "display" "block") }}</div>{{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
 
+        </div>
+      </div>
+  </div>
+</section>
+{{ end }} {{ end }}
+<!-- / ongoing -->
 
 
 <!-- 

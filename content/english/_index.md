@@ -16,7 +16,8 @@ banner:
   title: "Convergence"
   content1: "**Human-Computer Interaction (HCI) & UX Research**"
   content2: "within the Paradigm of New **Digital Convergence**"
-  content3: "How can we design **digital intelligence more seamlessly to our physcial world** that we are living in? If you are interested in **designing new AI & XR services** for our better lives, join our lab to shape the future!"
+  content3: "How can we design <b>digital intelligence more seamlessly to our physcial world</b> that we are living in? If you are interested in **designing new AI & XR services** for our better lives, join our lab to shape the future!"    
+  content4: "Convergence Design Lab은 <b>디지털 인텔리전스와 물리적 환경의 경계를 허무는 사용자 경험(UX)</b>을 탐구하는 연구실입니다.  본 연구실은 인간-컴퓨터 상호작용(HCI)과 인터랙션 시스템 디자인 관점을 바탕으로, 교육, 문화 예술, 창의력 지원 도구, 스마트홈 등  다양한 분야에서 <b>XR·AI 기술의 가능성과 가치를 탐색하고, 이를 바탕으로 혁신적인 UX 및 시스템 디자인 솔루션을 제안</b>합니다."
   button:
     enable: false
     label: "&rarr; Discover Our Project"
