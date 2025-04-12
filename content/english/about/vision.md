@@ -14,17 +14,16 @@ menu:
 projects: 
   title: "<b>On-going Projects</b>"
   list: "
-    1. FXR 
+    1. Development of **Creator-enhanced Interactions for Convergence Museums** with **XR & AI** Technology (NRF)
 
-    2. Human-centered AI Music Generation Algorithm for Artwork Appreciation  
+    2. **Human-centered AI Music Generation** Algorithm for Artwork Appreciation  
     
-    3. Third item  
+    3. **Interactions for Embodied Knowledge Sharing Platform** through Agent-based Digital Humans (NRF)
     
-    4. Fourth item  
+    4. **Spatial Sensory Interactions with Gen AI in XR** for enhanced Learning and Touring (Yonsei)
     
-    5. Human-centered AI Music Generation Algorithm for Artwork Appreciation  
+    5. Posture-based Searching Interface 
     
-    6. XR Museum  
   "
 
 

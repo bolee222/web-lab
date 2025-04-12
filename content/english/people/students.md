@@ -87,14 +87,7 @@ pricing:
       link: "#"
 
 
-    # Student table loop
-    - name: "Shin Shun Mya Aye (Kathryn)"
-      type: undergraduate Researcher
-      email: ssmasensan@gmail.com
-      image : "images/students/Kathryn.jpg"
-      period: 2024 Summer - current
-      content: "Kathryn is exploring visual and interaction design elements in pop-up stores in terms of brand recognition and visual pleasure."
-      link: "#"
+    
 
 
 
