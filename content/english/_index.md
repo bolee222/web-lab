@@ -37,6 +37,8 @@ ongoing:
   -  *-*  **Spatial Sensory Interactions with Gen AI in XR** for enhanced Learning and Touring (Yonsei)
 
   -  *-*  **Restrictive Embodied Interacitons** in Physical-Digital Logging (NRF)
+
+  -  *-*  **New Interfaces for Sustainable LLM AI **
   "
 
   image: "images/logo/ongoing-buffer.png"
