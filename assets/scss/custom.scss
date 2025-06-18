@@ -447,8 +447,15 @@ img.rounded {
 
   .padding-publication_title {
     padding-right: 20px !important;
-    //padding-left: 0px;
+    padding-left: 0px !important;
+
+    .col-lg-9 {
+      padding-left: 0 !important; /* Remove padding-left */
+    }
+    
+    
 }
+
 
 .publication-text {
   font-size: 15px !important;
@@ -909,3 +916,5 @@ a:link-text-publications {
   font-family: $primary-font !important;
   font-size: 12px;
 }
+
+

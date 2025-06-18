@@ -14,8 +14,8 @@ homeYearTag: 2025
 
 
 exactPeriod: 202.12.23
-cite_acm: "Bokyung Lee, (2025). **Designatomy: Technology-Driven Rapid Ideation Pedagogy for Tech-Novice Design Students**. _International Journal of Design Education_, (TBD). "
-doi: 
+cite_acm: "Bokyung Lee, (2025). **Designatomy: Technology-Driven Rapid Ideation Pedagogy for Tech-Novice Design Students**. _International Journal of Design Education_, 19(2): 73-97. "
+doi: https://doi.org/10.18848/2325-128X/CGP/v19i02/73-97
 
 
 # PAGE PARAMETER
