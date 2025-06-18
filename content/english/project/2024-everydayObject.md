@@ -11,7 +11,7 @@ teaser: "/projects/2024-everydayObjects/_[opt]top.jpg"
 metacontent: "ShapeloreVR is proposed, which utilizes everyday objects and basic primitives in a VR design playground so that non-experts can quickly interact with, merge, modify, and generate desired 3D shapes while brainstorming."
 
 # Meta-Data
-conference: "한국디자인포럼 2024"
+conference: "KDF 2024"
 con_date: "January 25"
 keywords: "generative design / human-centered architecture / AI-driven"
 researcher: "<b><u>Bokyung Lee</u></b>, Hyungkyung Lee."
