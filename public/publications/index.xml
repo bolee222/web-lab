@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright &amp;copy; Bokyung Lee. All Rights Reserved.</copyright>
-    <lastBuildDate>Sat, 15 Feb 2025 15:40:24 +0600</lastBuildDate>
+    <lastBuildDate>Tue, 10 Jun 2025 15:40:24 +0600</lastBuildDate>
     <atom:link href="//localhost:1313/publications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PONIFY: Pose-driven Painting Sonification to Enhance Augmented Artwork Perception through Sense of Dynamics</title>
+      <link>//localhost:1313/publications/2025-ponify/</link>
+      <pubDate>Tue, 10 Jun 2025 15:40:24 +0600</pubDate>
+      <guid>//localhost:1313/publications/2025-ponify/</guid>
+      <description>Integrating auditory elements that complement the visual features of the paintings can enhance artwork appreciation. Image sonification has advanced this paradigm by automatically generating matching sounds. However, existing techniques rely on basic features such as color without integrating complex contextual information.</description>
+    </item>
     <item>
       <title>Designatomy: Technology-Driven Rapid Ideation Pedagogy for Tech-Novice Design Students</title>
       <link>//localhost:1313/publications/2025-designatomy/</link>
@@ -28,13 +35,6 @@
       <link>//localhost:1313/publications/2024-xrdocent/</link>
       <pubDate>Tue, 31 Dec 2024 15:40:24 +0600</pubDate>
       <guid>//localhost:1313/publications/2024-xrdocent/</guid>
-      <description>Working from home (WFH) provides flexibility but often at the expense of productivity. In traditional office settings, the presence of colleagues has an impact on productivity, and the absence of social monitoring is a key factor affecting WFH workers’ concentration.</description>
-    </item>
-    <item>
-      <title>Exploring the Next Phase of Situated and Interactive Docents for XR Exhibitions: From the Perspective of Knowledge Delivery</title>
-      <link>//localhost:1313/publications/2025-ponify/</link>
-      <pubDate>Tue, 31 Dec 2024 15:40:24 +0600</pubDate>
-      <guid>//localhost:1313/publications/2025-ponify/</guid>
       <description>Working from home (WFH) provides flexibility but often at the expense of productivity. In traditional office settings, the presence of colleagues has an impact on productivity, and the absence of social monitoring is a key factor affecting WFH workers’ concentration.</description>
     </item>
     <item>
