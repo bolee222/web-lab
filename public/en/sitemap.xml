@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/english/</loc>
+    <lastmod>2025-02-15T15:40:24+06:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/</loc>
     <lastmod>2025-02-15T15:40:24+06:00</lastmod>
     <xhtml:link
@@ -11,20 +14,20 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="//localhost:1313/"
                 />
   </url><url>
-    <loc>//localhost:1313/publications/2025-designatomy/</loc>
+    <loc>//localhost:1313/english/publications/2025-designatomy/</loc>
     <lastmod>2025-02-15T15:40:24+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/publications/2025-novicedesign/</loc>
+    <loc>//localhost:1313/english/publications/2025-novicedesign/</loc>
     <lastmod>2025-01-31T15:40:24+06:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/augmented-reality-ar/</loc>
     <lastmod>2025-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/project/2025-designatomy/</loc>
+    <loc>//localhost:1313/english/project/2025-designatomy/</loc>
     <lastmod>2025-01-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/exhibition/</loc>
@@ -36,18 +39,8 @@
     <loc>//localhost:1313/tags/interactive-visualization/</loc>
     <lastmod>2025-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/project/</loc>
+    <loc>//localhost:1313/english/project/</loc>
     <lastmod>2025-01-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/project/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/project/"
-                />
   </url><url>
     <loc>//localhost:1313/tags/situated-communication/</loc>
     <lastmod>2025-01-24T00:00:00+00:00</lastmod>
@@ -61,29 +54,32 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="//localhost:1313/tags/"
                 />
   </url><url>
     <loc>//localhost:1313/tags/virtual-museum/</loc>
     <lastmod>2025-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/project/2025-novicedesign/</loc>
+    <loc>//localhost:1313/english/project/2025-novicedesign/</loc>
     <lastmod>2025-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/publications/2024-xrdocent/</loc>
+    <loc>//localhost:1313/english/publications/2024-xrdocent/</loc>
     <lastmod>2024-12-31T15:40:24+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/project/2024-xrdocent/</loc>
+    <loc>//localhost:1313/english/publications/2025-ponify/</loc>
+    <lastmod>2024-12-31T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/project/2024-xrdocent/</loc>
     <lastmod>2024-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/publications/2024-roby/</loc>
+    <loc>//localhost:1313/english/publications/2024-roby/</loc>
     <lastmod>2024-08-31T15:40:24+06:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/interaction/</loc>
     <lastmod>2024-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/project/2024-roby/</loc>
+    <loc>//localhost:1313/english/project/2024-roby/</loc>
     <lastmod>2024-08-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/productivity/</loc>
@@ -101,47 +97,27 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="//localhost:1313/tags/design/"
                 />
   </url><url>
     <loc>//localhost:1313/tags/design-tools/</loc>
     <lastmod>2024-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/project/2024-everydayobject/</loc>
+    <loc>//localhost:1313/english/project/2024-everydayobject/</loc>
     <lastmod>2024-01-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/vr/</loc>
     <lastmod>2024-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/publications/2024-objectcreativity/</loc>
+    <loc>//localhost:1313/english/publications/2024-objectcreativity/</loc>
     <lastmod>2024-01-14T15:40:24+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/about/</loc>
+    <loc>//localhost:1313/english/about/faq/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/about/"
-                />
   </url><url>
-    <loc>//localhost:1313/about/faq/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/about/faq/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/about/faq/"
-                />
+    <loc>//localhost:1313/korean/</loc>
+    <lastmod>2023-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/bab/</loc>
     <lastmod>2023-06-01T00:00:00+00:00</lastmod>
@@ -152,7 +128,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="//localhost:1313/tags/bab/"
                 />
   </url><url>
@@ -165,126 +141,66 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="//localhost:1313/tags/bibibib/"
                 />
   </url><url>
-    <loc>//localhost:1313/project/2023-occsim/</loc>
+    <loc>//localhost:1313/english/project/2023-occsim/</loc>
     <lastmod>2023-06-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/project/2023-occsim/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/project/2023-occsim/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2023-sustainable/</loc>
+    <loc>//localhost:1313/korean/project/2023-occsim/</loc>
+    <lastmod>2023-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/korean/project/</loc>
+    <lastmod>2023-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/publications/2023-sustainable/</loc>
     <lastmod>2023-03-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2023-sustainable/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2023-sustainable/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2021-iasdr/</loc>
+    <loc>//localhost:1313/korean/publications/2023-sustainable/</loc>
+    <lastmod>2023-03-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/publications/2021-iasdr/</loc>
     <lastmod>2021-11-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2021-iasdr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2021-iasdr/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2021-siggraph/</loc>
+    <loc>//localhost:1313/korean/publications/2021-iasdr/</loc>
+    <lastmod>2021-11-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/publications/2021-siggraph/</loc>
     <lastmod>2021-08-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2021-siggraph/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2021-siggraph/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2021-dis/</loc>
+    <loc>//localhost:1313/korean/publications/2021-siggraph/</loc>
+    <lastmod>2021-08-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/publications/2021-dis/</loc>
     <lastmod>2021-06-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2021-dis/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2021-dis/"
-                />
   </url><url>
-    <loc>//localhost:1313/project/2021-occsim/</loc>
+    <loc>//localhost:1313/korean/publications/2021-dis/</loc>
+    <lastmod>2021-06-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/project/2021-occsim/</loc>
     <lastmod>2021-05-14T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/project/2021-occsim/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/project/2021-occsim/"
-                />
   </url><url>
-    <loc>//localhost:1313/people/</loc>
-    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/people/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/people/"
-                />
+    <loc>//localhost:1313/korean/project/2021-occsim/</loc>
+    <lastmod>2021-05-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/people/professor/</loc>
+    <loc>//localhost:1313/korean/publication/</loc>
     <lastmod>2021-04-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/people/professor/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/people/professor/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/</loc>
+    <loc>//localhost:1313/english/people/professor/</loc>
     <lastmod>2021-04-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/"
-                />
+  </url><url>
+    <loc>//localhost:1313/korean/people/professor/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/publications/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/korean/publications/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/korean/about/faq/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
     <lastmod>2021-04-01T00:00:00+01:00</lastmod>
@@ -295,7 +211,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="//localhost:1313/categories/"
                 />
   </url><url>
@@ -308,35 +224,21 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="//localhost:1313/tags/how-to/"
                 />
   </url><url>
-    <loc>//localhost:1313/blog/</loc>
+    <loc>//localhost:1313/english/blog/</loc>
     <lastmod>2021-04-01T00:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/blog/"
-                />
   </url><url>
-    <loc>//localhost:1313/blog/date-i18n/</loc>
+    <loc>//localhost:1313/korean/blog/</loc>
     <lastmod>2021-04-01T00:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/blog/date-i18n/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/blog/date-i18n/"
-                />
+  </url><url>
+    <loc>//localhost:1313/english/blog/date-i18n/</loc>
+    <lastmod>2021-04-01T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/korean/blog/date-i18n/</loc>
+    <lastmod>2021-04-01T00:00:00+01:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/technical-assistance/</loc>
     <lastmod>2021-04-01T00:00:00+01:00</lastmod>
@@ -347,7 +249,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="//localhost:1313/categories/technical-assistance/"
                 />
   </url><url>
@@ -360,204 +262,99 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="//localhost:1313/tags/technology/"
                 />
   </url><url>
-    <loc>//localhost:1313/publications/2021-aic/</loc>
+    <loc>//localhost:1313/english/publications/2021-aic/</loc>
     <lastmod>2021-01-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2021-aic/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2021-aic/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2020-nordichi/</loc>
+    <loc>//localhost:1313/korean/publications/2021-aic/</loc>
+    <lastmod>2021-01-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/publications/2020-nordichi/</loc>
     <lastmod>2020-11-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2020-nordichi/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2020-nordichi/"
-                />
   </url><url>
-    <loc>//localhost:1313/project/2019-social_interactions/</loc>
+    <loc>//localhost:1313/korean/publications/2020-nordichi/</loc>
+    <lastmod>2020-11-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/project/2019-social_interactions/</loc>
     <lastmod>2020-11-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/project/2019-social_interactions/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/project/2019-social_interactions/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2020-cscw/</loc>
+    <loc>//localhost:1313/korean/project/2019-social_interactions/</loc>
+    <lastmod>2020-11-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/publications/2020-cscw/</loc>
     <lastmod>2020-10-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2020-cscw/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2020-cscw/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2020-phd/</loc>
+    <loc>//localhost:1313/korean/publications/2020-cscw/</loc>
+    <lastmod>2020-10-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/publications/2020-phd/</loc>
     <lastmod>2020-02-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2020-phd/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2020-phd/"
-                />
   </url><url>
-    <loc>//localhost:1313/project/2020-socio_spatial_comfort/</loc>
+    <loc>//localhost:1313/korean/publications/2020-phd/</loc>
+    <lastmod>2020-02-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/project/2020-socio_spatial_comfort/</loc>
     <lastmod>2020-01-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/project/2020-socio_spatial_comfort/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/project/2020-socio_spatial_comfort/"
-                />
   </url><url>
-    <loc>//localhost:1313/project/2019-skeletonographer/</loc>
+    <loc>//localhost:1313/korean/project/2020-socio_spatial_comfort/</loc>
+    <lastmod>2020-01-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/project/2019-skeletonographer/</loc>
     <lastmod>2019-11-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/project/2019-skeletonographer/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/project/2019-skeletonographer/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2019-cscw/</loc>
+    <loc>//localhost:1313/korean/project/2019-skeletonographer/</loc>
+    <lastmod>2019-11-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/publications/2019-cscw/</loc>
     <lastmod>2019-10-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2019-cscw/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2019-cscw/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2019-cscw-demo/</loc>
+    <loc>//localhost:1313/korean/publications/2019-cscw/</loc>
     <lastmod>2019-10-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2019-cscw-demo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2019-cscw-demo/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2019-dfsh/</loc>
+    <loc>//localhost:1313/english/publications/2019-cscw-demo/</loc>
+    <lastmod>2019-10-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/korean/publications/2019-cscw-demo/</loc>
+    <lastmod>2019-10-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/publications/2019-dfsh/</loc>
     <lastmod>2019-09-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2019-dfsh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2019-dfsh/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2019-ubicomp/</loc>
+    <loc>//localhost:1313/korean/publications/2019-dfsh/</loc>
     <lastmod>2019-09-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2019-ubicomp/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2019-ubicomp/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2019-chi-manikin/</loc>
+    <loc>//localhost:1313/english/publications/2019-ubicomp/</loc>
+    <lastmod>2019-09-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/korean/publications/2019-ubicomp/</loc>
+    <lastmod>2019-09-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/publications/2019-chi-manikin/</loc>
     <lastmod>2019-05-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2019-chi-manikin/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2019-chi-manikin/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2019-chi-sindy/</loc>
+    <loc>//localhost:1313/korean/publications/2019-chi-manikin/</loc>
     <lastmod>2019-05-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2019-chi-sindy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2019-chi-sindy/"
-                />
   </url><url>
-    <loc>//localhost:1313/project/2019-smartmanikin/</loc>
+    <loc>//localhost:1313/english/publications/2019-chi-sindy/</loc>
+    <lastmod>2019-05-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/korean/publications/2019-chi-sindy/</loc>
+    <lastmod>2019-05-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/project/2019-smartmanikin/</loc>
     <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/project/2019-smartmanikin/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/project/2019-smartmanikin/"
-                />
   </url><url>
-    <loc>//localhost:1313/project/2019-robotdesk/</loc>
+    <loc>//localhost:1313/korean/project/2019-smartmanikin/</loc>
+    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/project/2019-robotdesk/</loc>
     <lastmod>2019-05-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/project/2019-robotdesk/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/project/2019-robotdesk/"
-                />
+  </url><url>
+    <loc>//localhost:1313/korean/project/2019-robotdesk/</loc>
+    <lastmod>2019-05-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/advice/</loc>
     <lastmod>2018-09-24T11:07:10+06:00</lastmod>
@@ -568,7 +365,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="//localhost:1313/tags/advice/"
                 />
   </url><url>
@@ -581,7 +378,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="//localhost:1313/tags/ai/"
                 />
   </url><url>
@@ -594,7 +391,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="//localhost:1313/tags/android/"
                 />
   </url><url>
@@ -607,12 +404,25 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="//localhost:1313/categories/artificial-intelligence/"
                 />
   </url><url>
     <loc>//localhost:1313/tags/babo/</loc>
     <lastmod>2018-09-24T11:07:10+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/company/</loc>
+    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/tags/company/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/tags/company/"
+                />
   </url><url>
     <loc>//localhost:1313/categories/company-news/</loc>
     <lastmod>2018-09-24T11:07:10+06:00</lastmod>
@@ -623,87 +433,45 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="//localhost:1313/categories/company-news/"
                 />
   </url><url>
-    <loc>//localhost:1313/blog/blog-post-1/</loc>
+    <loc>//localhost:1313/english/blog/blog-post-1/</loc>
     <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/blog/blog-post-1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/blog/blog-post-1/"
-                />
   </url><url>
-    <loc>//localhost:1313/blog/blog-post-2/</loc>
+    <loc>//localhost:1313/english/blog/blog-post-2/</loc>
     <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/blog/blog-post-2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/blog/blog-post-2/"
-                />
   </url><url>
-    <loc>//localhost:1313/blog/blog-post-3/</loc>
+    <loc>//localhost:1313/english/blog/blog-post-3/</loc>
     <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/blog/blog-post-3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/blog/blog-post-3/"
-                />
   </url><url>
-    <loc>//localhost:1313/blog/blog-post-4/</loc>
+    <loc>//localhost:1313/english/blog/blog-post-4/</loc>
     <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/blog/blog-post-4/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/blog/blog-post-4/"
-                />
   </url><url>
-    <loc>//localhost:1313/blog/blog-post-5/</loc>
+    <loc>//localhost:1313/english/blog/blog-post-5/</loc>
     <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/blog/blog-post-5/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/blog/blog-post-5/"
-                />
   </url><url>
-    <loc>//localhost:1313/blog/blog-post-6/</loc>
+    <loc>//localhost:1313/english/blog/blog-post-6/</loc>
     <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/blog/blog-post-6/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/blog/blog-post-6/"
-                />
+  </url><url>
+    <loc>//localhost:1313/korean/blog/blog-post-1/</loc>
+    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/korean/blog/blog-post-2/</loc>
+    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/korean/blog/blog-post-3/</loc>
+    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/korean/blog/blog-post-4/</loc>
+    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/korean/blog/blog-post-5/</loc>
+    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/korean/blog/blog-post-6/</loc>
+    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/legacy-support/</loc>
     <lastmod>2018-09-24T11:07:10+06:00</lastmod>
@@ -714,8 +482,34 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="//localhost:1313/categories/legacy-support/"
+                />
+  </url><url>
+    <loc>//localhost:1313/tags/mechine/</loc>
+    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/tags/mechine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/tags/mechine/"
+                />
+  </url><url>
+    <loc>//localhost:1313/tags/news/</loc>
+    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr-kr"
+                href="//localhost:1313/kr/tags/news/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/tags/news/"
                 />
   </url><url>
     <loc>//localhost:1313/tags/retro/</loc>
@@ -727,303 +521,129 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="//localhost:1313/tags/retro/"
                 />
   </url><url>
-    <loc>//localhost:1313/publications/2018-dis/</loc>
+    <loc>//localhost:1313/english/publications/2018-dis/</loc>
     <lastmod>2018-06-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2018-dis/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2018-dis/"
-                />
   </url><url>
-    <loc>//localhost:1313/project/2018-body2desk/</loc>
+    <loc>//localhost:1313/korean/publications/2018-dis/</loc>
+    <lastmod>2018-06-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/project/2018-body2desk/</loc>
     <lastmod>2018-06-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/project/2018-body2desk/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/project/2018-body2desk/"
-                />
   </url><url>
-    <loc>//localhost:1313/project/2016-bodymeter/</loc>
+    <loc>//localhost:1313/korean/project/2018-body2desk/</loc>
     <lastmod>2018-06-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/project/2016-bodymeter/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/project/2016-bodymeter/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2017-chi/</loc>
+    <loc>//localhost:1313/english/project/2016-bodymeter/</loc>
+    <lastmod>2018-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/korean/project/2016-bodymeter/</loc>
+    <lastmod>2018-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/publications/2017-chi/</loc>
     <lastmod>2017-05-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2017-chi/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2017-chi/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2017-chi-mandu/</loc>
+    <loc>//localhost:1313/korean/publications/2017-chi/</loc>
     <lastmod>2017-05-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2017-chi-mandu/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2017-chi-mandu/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2017-dis-mandu/</loc>
+    <loc>//localhost:1313/english/publications/2017-chi-mandu/</loc>
     <lastmod>2017-05-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2017-dis-mandu/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2017-dis-mandu/"
-                />
   </url><url>
-    <loc>//localhost:1313/project/2017-consumer2creator/</loc>
-    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/project/2017-consumer2creator/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/project/2017-consumer2creator/"
-                />
+    <loc>//localhost:1313/english/publications/2017-dis-mandu/</loc>
+    <lastmod>2017-05-14T15:40:24+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/project/2017-orimandu/</loc>
+    <loc>//localhost:1313/korean/publications/2017-chi-mandu/</loc>
+    <lastmod>2017-05-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/korean/publications/2017-dis-mandu/</loc>
+    <lastmod>2017-05-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/project/2017-consumer2creator/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/publications/2017-hcik/</loc>
+    <loc>//localhost:1313/korean/project/2017-consumer2creator/</loc>
+    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/project/2017-orimandu/</loc>
+    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/publications/2017-hcik/</loc>
     <lastmod>2017-01-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2017-hcik/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2017-hcik/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2016-nordichi-bodymeter/</loc>
+    <loc>//localhost:1313/korean/publications/2017-hcik/</loc>
+    <lastmod>2017-01-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/publications/2016-nordichi-bodymeter/</loc>
     <lastmod>2016-11-15T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2016-nordichi-bodymeter/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2016-nordichi-bodymeter/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2016-nordichi-poster/</loc>
+    <loc>//localhost:1313/korean/publications/2016-nordichi-bodymeter/</loc>
+    <lastmod>2016-11-15T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/publications/2016-nordichi-poster/</loc>
     <lastmod>2016-11-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2016-nordichi-poster/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2016-nordichi-poster/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2016-hcik/</loc>
+    <loc>//localhost:1313/korean/publications/2016-nordichi-poster/</loc>
+    <lastmod>2016-11-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/publications/2016-hcik/</loc>
     <lastmod>2016-10-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2016-hcik/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2016-hcik/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2015-ksds/</loc>
+    <loc>//localhost:1313/korean/publications/2016-hcik/</loc>
+    <lastmod>2016-10-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/publications/2015-ksds/</loc>
     <lastmod>2015-10-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2015-ksds/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2015-ksds/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2015-ubicomp/</loc>
+    <loc>//localhost:1313/korean/publications/2015-ksds/</loc>
+    <lastmod>2015-10-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/publications/2015-ubicomp/</loc>
     <lastmod>2015-09-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2015-ubicomp/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2015-ubicomp/"
-                />
   </url><url>
-    <loc>//localhost:1313/publications/2015-iasdr/</loc>
+    <loc>//localhost:1313/korean/publications/2015-ubicomp/</loc>
+    <lastmod>2015-09-14T15:40:24+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/english/publications/2015-iasdr/</loc>
     <lastmod>2015-06-14T15:40:24+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/publications/2015-iasdr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/publications/2015-iasdr/"
-                />
   </url><url>
-    <loc>//localhost:1313/message_sent/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/message_sent/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/message_sent/"
-                />
+    <loc>//localhost:1313/korean/publications/2015-iasdr/</loc>
+    <lastmod>2015-06-14T15:40:24+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/people/alumni/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/people/alumni/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/people/alumni/"
-                />
+    <loc>//localhost:1313/english/message_sent/</loc>
   </url><url>
-    <loc>//localhost:1313/author/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/author/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/author/"
-                />
+    <loc>//localhost:1313/korean/message_sent/</loc>
   </url><url>
-    <loc>//localhost:1313/contact/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/contact/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/contact/"
-                />
+    <loc>//localhost:1313/english/people/alumni/</loc>
   </url><url>
-    <loc>//localhost:1313/author/john-doe/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/author/john-doe/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/author/john-doe/"
-                />
+    <loc>//localhost:1313/korean/people/alumni/</loc>
   </url><url>
-    <loc>//localhost:1313/about/applicants/</loc>
+    <loc>//localhost:1313/english/contact/</loc>
   </url><url>
-    <loc>//localhost:1313/author/mark-dinn/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/author/mark-dinn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/author/mark-dinn/"
-                />
+    <loc>//localhost:1313/korean/contact/</loc>
   </url><url>
-    <loc>//localhost:1313/about/approach/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/about/approach/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/about/approach/"
-                />
+    <loc>//localhost:1313/english/author/john-doe/</loc>
   </url><url>
-    <loc>//localhost:1313/about/vision/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/about/vision/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/about/vision/"
-                />
+    <loc>//localhost:1313/korean/author/john-doe/</loc>
   </url><url>
-    <loc>//localhost:1313/people/students/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr-kr"
-                href="//localhost:1313/kr/people/students/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="//localhost:1313/people/students/"
-                />
+    <loc>//localhost:1313/english/about/applicants/</loc>
+  </url><url>
+    <loc>//localhost:1313/english/author/mark-dinn/</loc>
+  </url><url>
+    <loc>//localhost:1313/korean/author/mark-dinn/</loc>
+  </url><url>
+    <loc>//localhost:1313/english/about/approach/</loc>
+  </url><url>
+    <loc>//localhost:1313/korean/about/approach/</loc>
+  </url><url>
+    <loc>//localhost:1313/english/about/vision/</loc>
+  </url><url>
+    <loc>//localhost:1313/korean/about/vision/</loc>
+  </url><url>
+    <loc>//localhost:1313/korean/people/students/</loc>
+  </url><url>
+    <loc>//localhost:1313/english/people/students/</loc>
   </url>
 </urlset>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bokyung Lee Lab</title>
+    <link>//localhost:1313/korean/</link>
+    <description>Recent content on Bokyung Lee Lab</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/korean/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Frequently Asked Questions</title>
+      <link>//localhost:1313/korean/publication/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/korean/publication/</guid>
+      <description>Welcome to Airspace! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ullam sint quas pariatur ipsam nemo repellendus suscipit quod accusantium numquam tempora assumenda sequi, velit voluptatem soluta voluptatibus nesciunt ducimus iure.</description>
+    </item>
+    <item>
+      <title>Professor</title>
+      <link>//localhost:1313/korean/people/professor/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/korean/people/professor/</guid>
+      <description>Welcome to Airspace! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ullam sint quas pariatur ipsam nemo repellendus suscipit quod accusantium numquam tempora assumenda sequi, velit voluptatem soluta voluptatibus nesciunt ducimus iure.</description>
+    </item>
+    <item>
+      <title>신입생들을 위한 Q&amp;A</title>
+      <link>//localhost:1313/korean/about/faq/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/korean/about/faq/</guid>
+      <description>연구실에 관심이 있는 학생 및 연구원들을 위한 ㅈ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ullam sint quas pariatur ipsam nemo repellendus suscipit quod accusantium numquam tempora assumenda sequi, velit voluptatem soluta voluptatibus nesciunt ducimus iure.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/korean/message_sent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/korean/message_sent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Alumni</title>
+      <link>//localhost:1313/korean/people/alumni/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/korean/people/alumni/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>//localhost:1313/korean/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/korean/contact/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>John Doe</title>
+      <link>//localhost:1313/korean/author/john-doe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/korean/author/john-doe/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate augue. Duis auctor lacus id vehicula gravida. Nam suscipit vitae purus et laoreet. Donec nisi dolor, consequat vel pretium id, auctor in dui.</description>
+    </item>
+    <item>
+      <title>Mark Dinn</title>
+      <link>//localhost:1313/korean/author/mark-dinn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/korean/author/mark-dinn/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate augue. Duis auctor lacus id vehicula gravida. Nam suscipit vitae purus et laoreet. Donec nisi dolor, consequat vel pretium id, auctor in dui.</description>
+    </item>
+    <item>
+      <title>Research Approach</title>
+      <link>//localhost:1313/korean/about/approach/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/korean/about/approach/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Research Vision</title>
+      <link>//localhost:1313/korean/about/vision/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/korean/about/vision/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Researchers</title>
+      <link>//localhost:1313/korean/people/students/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/korean/people/students/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

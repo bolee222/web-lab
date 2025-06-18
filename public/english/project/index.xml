@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Bokyung Lee Lab</title>
+    <link>//localhost:1313/english/project/</link>
+    <description>Recent content in Projects on Bokyung Lee Lab</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 24 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/english/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Designatomy: Technology-Driven Rapid Ideation Pedagogy for Tech-Novice Design Students</title>
+      <link>//localhost:1313/english/project/2025-designatomy/</link>
+      <pubDate>Fri, 24 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/project/2025-designatomy/</guid>
+      <description>The rapid technological and cultural advancements of the Fourth Industrial Revolution require designers to develop two essential skills: (i) the ability to quickly adapt to emerging technology and (ii) the ability to generate creative ideas in both user-driven and technology-driven ways. However, conventional design education methods often fall short in simultaneously cultivating these skills. Therefore, this paper introduces Designatomy, a novel pedagogical approach to guide technology-driven design approaches to tech-novice design students. This method employs a taxonomy information framework as a foundational thinking strategy, encouraging students to independently explore and comprehend design features shaped by new technological advancements. Our study involving 22 students demonstrated that Designatomy effectively accelerates the acquisition of fundamental knowledge about the relationship between design and technology, fostering both engagement and efficiency. Furthermore, the acquired knowledge was successfully applied in students&amp;rsquo; idea-generation sessions. The results suggest that Designatomy has considerable potential to equip students with the skills necessary to navigate the rapidly evolving landscape of design, promoting a problem-solving mindset crucial for addressing emerging trends in design and technology.</description>
+    </item>
+    <item>
+      <title>User-Centered Investigation of Generative AI and XR Interactions in 3D Product Design Tools</title>
+      <link>//localhost:1313/english/project/2025-novicedesign/</link>
+      <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/project/2025-novicedesign/</guid>
+      <description>Advanced technologies empower novices to create 3D products independently, yet existing tools focus on simplifying object creation, overlooking support for reflecting on users’ needs and desires. This paper envisions generative Artificial Intelligence (AI) and eXtended Reality (XR) as means to better novices in adopting dual roles as designers and users while personalizing 3D products. A generative design study with 24 participants in their homes examined how novices think and act while designing personal products. Observations and interviews reveal that participants actively leverage their bodies, everyday objects, and context-based language, uncovering new opportunities for AI and XR in 3D design tools.</description>
+    </item>
+    <item>
+      <title>Exploring the Next Phase of Situated and Interactive Docents for XR Exhibitions: From the Perspective of Knowledge Delivery</title>
+      <link>//localhost:1313/english/project/2024-xrdocent/</link>
+      <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/project/2024-xrdocent/</guid>
+      <description>A well-designed docent significantly impacts visitors’ comprehension of the knowledge provided in museums. This study investigates the potential of eXtended Reality (XR) interactions to enhance knowledge delivery within exhibitions. Analyzing 737 exhibit commentary descriptions from 10 real-world exhibitions, we first provided a foundational knowledge taxonomy that outlines various types of information frequently conveyed along with physical exhibits. Subsequently, interviews with expert curators based on our taxonomy framework revealed their past challenges with communication for each type of knowledge and their desires. Our findings elucidate several implications for designing XR interactions to deliver curated knowledge more effectively. Unlike other works of knowledge-delivery supports in XR museums that focused on immersive representations and virtual human guides, our findings suggested new perspectives on incorporating the current understanding of situated visualization, spatio-temporal interaction, participatory embodiment, and the feedback loop into XR exhibition contexts, thus enriching the informative learning experience for museum visitors.</description>
+    </item>
+    <item>
+      <title>Investigating Work Companion Robot Interactions to Enhance Work-from-Home Productivity and Experience</title>
+      <link>//localhost:1313/english/project/2024-roby/</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/project/2024-roby/</guid>
+      <description>Working from home (WFH) provides flexibility but often at the expense of productivity. In traditional office settings, the presence of colleagues has an impact on productivity, and the absence of social monitoring is a key factor affecting WFH workers’ concentration. To address this challenge, this study proposes a desktop robot companion, Roby, that monitors workers’ behaviors to provide real-time interactive feedback to increase productivity and to enhance the WFH experience.&#xA;After generating our initial interaction design framework for Roby, we used a Wizard-of-Oz experiment to evaluate Roby’s suggested interactions and its form factor using our research prototype. The participants were asked to work at home with Roby on their tabletops. The collected data included observed behaviors, participant feedback on Roby’s design through questionnaires and interviews, and co-design session findings. Then, using a thematic analysis, we identified recurring themes to derive design guidelines for an optimized WFH companion robot.&#xA;The study showed that Roby’s physical presence and interactive behaviors positively impact WFH productivity. Contributing factors included its supervisory presence, clear, interactive cues marking work/break transitions, subtle non-intrusive motion reminders to stay on task, and simple, functional minimalist form factor. Future WFH companion robots should balance supervision with a lack of disruption, provide natural communication, deliver unobtrusive multi-sensory cues, and allow adaptability to diverse home setups to optimize productivity and user experiences.&#xA;This study provides insights into how a tabletop robot companion influences the productivity of knowledge workers in WFH settings. By evaluating Roby in real-world contexts, we identify key factors that we hope can inform the design of future intelligent robot companions to optimize remote work experiences across various professional domains.</description>
+    </item>
+    <item>
+      <title>Everyday Objects in VR Shape Exploration Tools for Novice Artists - A way to Support Geometry Shaping Process for Non-professionals</title>
+      <link>//localhost:1313/english/project/2024-everydayobject/</link>
+      <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/project/2024-everydayobject/</guid>
+      <description>Advanced technologies like Virtual Reality (VR) or Augmented Reality (AR) opened up new possibilities for non-professionals to create 3D shapes, forms, or artworks without professional training. Still, most existing works focus on supporting 3D modeling tasks; and understanding how to support the early stage of design (ideation and creative expression) is still lacking. This paper aims to investigate future interfaces that could support non-professional’s 3D geometry ideation and construction process. We present the generative design study in which we observed how ten non-professional designers brainstormed and generated custom 3D shapes for their personal desired objects. We found that non-design experts rely on various 3D reference objects when generating their desired 3D geometry shapes, and they tend to apply those references directly in shape descriptions. Based on these insights, we highlighted the potential of having reference-based digital 3D design tools for novices. A new system called ShapeloreVR is proposed, which utilizes everyday objects and basic primitives in a VR design playground so that non-experts can quickly interact with, merge, modify, and generate desired 3D shapes while brainstorming.</description>
+    </item>
+    <item>
+      <title>Generative design for COVID-19 and future pathogens using stochastic multi-agent simulation</title>
+      <link>//localhost:1313/english/project/2023-occsim/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/project/2023-occsim/</guid>
+      <description>• We propose a generative design workflow that integrates a stochastic multi-agent simulation with the intent of helping building designers reduce the risk posed by COVID-19 and future pathogens. Our custom simulation randomly generates activities and movements of individual occupants, tracking the amount of virus transmitted through air and surfaces from contagious to susceptible agents. The stochastic nature of the simulation requires that many repetitions be performed to achieve statistically reliable results. Accordingly, a series of initial experiments identified parameter values that balanced the trade-off between computational cost and accuracy. Applying generative design to a case study based on an existing office space reduced the predicted transmission by around 10% to 20% compared with a baseline set of layouts. Additionally, a qualitative examination of the generated layouts revealed design patterns that may reduce transmission. Stochastic multi-agent simulation is a computationally expensive yet plausible way to generate safer building designs.</description>
+    </item>
+    <item>
+      <title>Designing a Multi-Agent Occupant Simulation System To Support Facility Planning And Analysis For COVID-19</title>
+      <link>//localhost:1313/english/project/2021-occsim/</link>
+      <pubDate>Fri, 14 May 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/project/2021-occsim/</guid>
+      <description>&lt;p&gt;• The COVID-19 pandemic changed our lives, forcing us to reconsider our built environment, architectural designs, and even behaviours.&lt;/p&gt;&#xA;&lt;p&gt;• However, systems to effectively and interactively evaluate virus transmission in physical spaces are lacking.&lt;/p&gt;&#xA;&lt;p&gt;• To help fill this gap, we propose OccSim, a system that automatically generates occupancy behaviours in a 3D model of a building and helps users analyze the potential effect of virus transmission from a large-scale and longitudinal perspective.&lt;/p&gt;&#xA;&lt;p&gt;• Our participatory evaluation with four groups of stakeholders revealed that OccSim could enhance their decision making processes by identifying specific risks of virus transmission in advance, and illuminating how each risk relates to complex human-building interactions.&lt;/p&gt;&#xA;</description>
+    </item>
+    <item>
+      <title>An Empirical Study of How Socio-Spatial Formations are influenced by Interior Elements and Displays in an Office Context</title>
+      <link>//localhost:1313/english/project/2019-social_interactions/</link>
+      <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/project/2019-social_interactions/</guid>
+      <description>The design of a workplace can have a profound impact on the effectiveness of the workforce utilizing the space. When considering dynamic social activities in the flow of work, the constraints of the static elements of the interior reveals the adaptive behaviour of the occupants in trying to accommodate these constraints while performing their daily tasks. To better understand how workplace design shapes social interactions, we ran an empirical study in an office context over a two week period. We collected video from 24 cameras in a dozen space configurations totaling 1,920 hours of recorded activities. We utilized computer vision techniques, to produce skeletonized representations of the occupants, to assist in the annotation and data analysis process. We present our findings of socio-spatial formation patterns and the effects of furniture and interior elements on the observed behaviour of collaborators for both computer-supported work and for unmediated social interaction. Combining the observations with an interview of the occupants’ reflections, we discuss dynamics of socio-spatial formations and how this knowledge can support social interactions in the domain of space design systems and interactive interiors.</description>
+    </item>
+    <item>
+      <title>Socio-Spatial Comfort: Using Vision-based Analysis to Inform User-Centred Human-Building Interactions</title>
+      <link>//localhost:1313/english/project/2020-socio_spatial_comfort/</link>
+      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/project/2020-socio_spatial_comfort/</guid>
+      <description>A well-designed workplace has a direct and significant impact on our work experiences and productivity. In this paper, we investigate how office interior layouts influence the way we socially experience office buildings. We extend the previous work that examined static social formations of office workers by looking at their dynamic movements during informal desk visiting interactions. With a month of video data collected in the office, we implemented a vision-based analysis system that enables us to examine how people occupy space in social contexts in relation to desk configurations. The results showed that both social territoriality and approach path highlight social comfort in human-building interactions, which are different from efficiency or path optimization. From these findings, we propose the concepts of socio-spatial comfort: social buffers, privacy buffers, and varying proxemics to inform a user-centered way of designing human building interactions and architecture.</description>
+    </item>
+    <item>
+      <title>Sekeltonographer: Skeleton-based Digital Ethnography Tool</title>
+      <link>//localhost:1313/english/project/2019-skeletonographer/</link>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/project/2019-skeletonographer/</guid>
+      <description>The design of a workplace can have a profound impact on the effectiveness of the workforce utilizing the space. When considering dynamic social activities in the flow of work, the constraints of the static elements of the interior reveals the adaptive behaviour of the occupants in trying to accommodate these constraints while performing their daily tasks. To better understand how workplace design shapes social interactions, we ran an empirical study in an office context over a two week period. We collected video from 24 cameras in a dozen space configurations totaling 1,920 hours of recorded activities. We utilized computer vision techniques, to produce skeletonized representations of the occupants, to assist in the annotation and data analysis process. We present our findings of socio-spatial formation patterns and the effects of furniture and interior elements on the observed behaviour of collaborators for both computer-supported work and for unmediated social interaction. Combining the observations with an interview of the occupants’ reflections, we discuss dynamics of socio-spatial formations and how this knowledge can support social interactions in the domain of space design systems and interactive interiors.</description>
+    </item>
+    <item>
+      <title>SmartManikin: Virtual Humans with Agency for Design Tools</title>
+      <link>//localhost:1313/english/project/2019-smartmanikin/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/project/2019-smartmanikin/</guid>
+      <description>The design of a workplace can have a profound impact on the effectiveness of the workforce utilizing the space. When considering dynamic social activities in the flow of work, the constraints of the static elements of the interior reveals the adaptive behaviour of the occupants in trying to accommodate these constraints while performing their daily tasks. To better understand how workplace design shapes social interactions, we ran an empirical study in an office context over a two week period. We collected video from 24 cameras in a dozen space configurations totaling 1,920 hours of recorded activities. We utilized computer vision techniques, to produce skeletonized representations of the occupants, to assist in the annotation and data analysis process. We present our findings of socio-spatial formation patterns and the effects of furniture and interior elements on the observed behaviour of collaborators for both computer-supported work and for unmediated social interaction. Combining the observations with an interview of the occupants’ reflections, we discuss dynamics of socio-spatial formations and how this knowledge can support social interactions in the domain of space design systems and interactive interiors.</description>
+    </item>
+    <item>
+      <title>The Effect of Interruption Timings on Autonomous Height-Adjustable Desks that Responds to Task Changes</title>
+      <link>//localhost:1313/english/project/2019-robotdesk/</link>
+      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/project/2019-robotdesk/</guid>
+      <description>Actuated furniture, such as electric adjustable sit-stand desks, helps users vary their posture and contributes to comfort and health. However, studies found that users rarely initiate height changes. Therefore, in this paper, we look into furniture that adjusts itself to the user&amp;rsquo;s needs. A situated interview study indicated task-changing as an opportune moment for automatic height adjustment. We then performed a Wizard of Oz study to find the best timing for changing desk height to minimize interruption and discomfort. The results are in line with prior work on task interruption in graphical user interfaces and show that the table should change height during a task change. However, results also indicate that until users build trust in the system, they prefer actuation after a task change to experience the impact of the adjustment. Based on the results, we discuss design guidelines for interactive desks with agency.</description>
+    </item>
+    <item>
+      <title>Interactive and Situated Guidelines to Help Users Design a Personal Desk that Fits Their Bodies</title>
+      <link>//localhost:1313/english/project/2018-body2desk/</link>
+      <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/project/2018-body2desk/</guid>
+      <description>In this paper, we explored the application of human factor guidelines in personal fabrication. This is useful for several Do-It-Yourself (DIY) scenarios, including users adjusting workstation configurations or designing a desk to fit a single person. We identified a dependency map between the user&amp;rsquo;s anthropometrics, ergonomic pose recommendations, and design dimensions. Based on this, we developed situated and interactive guidelines to assist users in design applications. We applied these guidelines in a Virtual Reality (VR) system that lets users customize their desk and provides real-time feedback and feedforward on pose and design. We evaluated the system with six participants, had each one design a personal desk, fabricated their desks, and let them work on their desks for four hours. The design and evaluation contribute to fabrication tools as it helped users be aware of their pose and ergonomic knowledge, and design for their bodies and needs.</description>
+    </item>
+    <item>
+      <title>Posing and Acting as Input for Personalizing Furniture</title>
+      <link>//localhost:1313/english/project/2016-bodymeter/</link>
+      <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/project/2016-bodymeter/</guid>
+      <description>In this paper, we explored the application of human factor guidelines in personal fabrication. This is useful for several Do-It-Yourself (DIY) scenarios, including users adjusting workstation configurations or designing a desk to fit a single person. We identified a dependency map between the user&amp;rsquo;s anthropometrics, ergonomic pose recommendations, and design dimensions. Based on this, we developed situated and interactive guidelines to assist users in design applications. We applied these guidelines in a Virtual Reality (VR) system that lets users customize their desk and provides real-time feedback and feedforward on pose and design. We evaluated the system with six participants, had each one design a personal desk, fabricated their desks, and let them work on their desks for four hours. The design and evaluation contribute to fabrication tools as it helped users be aware of their pose and ergonomic knowledge, and design for their bodies and needs.</description>
+    </item>
+    <item>
+      <title>Consumer to Creator: How Households Buy Furniture to Inform Design and Fabrication Interfaces</title>
+      <link>//localhost:1313/english/project/2017-consumer2creator/</link>
+      <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/project/2017-consumer2creator/</guid>
+      <description>In this paper, we explored the application of human factor guidelines in personal fabrication. This is useful for several Do-It-Yourself (DIY) scenarios, including users adjusting workstation configurations or designing a desk to fit a single person. We identified a dependency map between the user&amp;rsquo;s anthropometrics, ergonomic pose recommendations, and design dimensions. Based on this, we developed situated and interactive guidelines to assist users in design applications. We applied these guidelines in a Virtual Reality (VR) system that lets users customize their desk and provides real-time feedback and feedforward on pose and design. We evaluated the system with six participants, had each one design a personal desk, fabricated their desks, and let them work on their desks for four hours. The design and evaluation contribute to fabrication tools as it helped users be aware of their pose and ergonomic knowledge, and design for their bodies and needs.</description>
+    </item>
+    <item>
+      <title>Ori-mandu: Korean Dumpling into Whatever Shape You Want</title>
+      <link>//localhost:1313/english/project/2017-orimandu/</link>
+      <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/english/project/2017-orimandu/</guid>
+      <description>Food 3D printing is getting the spotlight by offering the opportunity to customize food appearances, textures, and flavors that are troublesome to make by hand. Additive manufacturing machines extrude ingredients into a certain shape, however, they cannot be applied to all types of food, such as mandu (Korean dumpling). In this pictorial, we extend the research on digital gastronomy by using digital fabrication to create custom tools that assist the process of cooking. We present the iterative process of designing the “Ori-mandu” system, and how Ori-mandu enables users to fabricate dumplings in whatever shape they want.</description>
+    </item>
+  </channel>
+</rss>

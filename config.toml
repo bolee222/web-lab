@@ -247,52 +247,52 @@ weight = 8
 
 
 ################################# Korean translation ##########################
-[languages.kr]
-languageName = "Korean"
-languageCode = "kr-kr"
-contentDir = "content/korean"
-weight = 2
-copyright = "Copyright &copy; Bokyung Lee. All Rights Reserved."
+#[languages.kr]
+#languageName = "Korean"
+#languageCode = "kr-kr"
+#contentDir = "content/korean"
+#weight = 2
+#copyright = "Copyright &copy; Bokyung Lee. All Rights Reserved."
 
 # Main menu
 # NOTE: Leaf entries linking to content should be defined in the content file's respective front matter.
-[[languages.kr.menu.main]]
-hasChildren = true
-name = "About Lab"
-weight = 2
+#[[languages.kr.menu.main]]
+#hasChildren = true
+#name = "About Lab"
+#weight = 2
 
-[[languages.kr.menu.main]]
-hasChildren = true
-name = "People"
-weight = 3
+#[[languages.kr.menu.main]]
+#hasChildren = true
+#name = "People"
+#weight = 3
 
 # Footer menu
-[[languages.kr.menu.footer]]
-name = "Home"
-URL = ""
-weight = 1
+#[[languages.kr.menu.footer]]
+#name = "Home"
+#URL = ""
+#weight = 1
 
-[[languages.kr.menu.footer]]
-name = "Lab"
-URL = "about/vision"
-weight = 2
+#[[languages.kr.menu.footer]]
+#name = "Lab"
+#URL = "about/vision"
+#weight = 2
 
-[[languages.kr.menu.footer]]
-name = "Professor"
-URL = "people/professor"
-weight = 3
+#[[languages.kr.menu.footer]]
+#name = "Professor"
+#URL = "people/professor"
+#weight = 3
 
-[[languages.kr.menu.footer]]
-name = "Project"
-URL = "project"
-weight = 4
+#[[languages.kr.menu.footer]]
+#name = "Project"
+#URL = "project"
+#weight = 4
 
-[[languages.kr.menu.footer]]
-name = "FAQ"
-URL = "faq"
-weight = 5
+#[[languages.kr.menu.footer]]
+#name = "FAQ"
+#URL = "faq"
+#weight = 5
 
-[[languages.kr.menu.footer]]
-name = "Contact"
-URL = "contact"
-weight = 6
+#[[languages.kr.menu.footer]]
+#name = "Contact"
+#URL = "contact"
+#weight = 6
