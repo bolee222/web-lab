@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright &amp;copy; Bokyung Lee. All Rights Reserved.</copyright>
-    <lastBuildDate>Fri, 24 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/tags/augmented-reality-ar/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PONIFY: Pose-driven Painting Sonification to Enhance Augmented Artwork Perception through Sense of Dynamics</title>
+      <link>//localhost:1313/project/2025-ponify/</link>
+      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/2025-ponify/</guid>
+      <description>Integrating auditory elements that complement the visual features of the paintings can enhance artwork appreciation. Image sonification has advanced this paradigm by automatically generating matching sounds. However, existing techniques rely on basic features such as color without integrating complex contextual information. Based on the insights from our formative study, we introduce Ponify, a sonification method that translates a painting’s sense of dynamics into music through pose analysis. Ponify analyzes the limb movements of human figures in paintings and configures musical parameters such as the tempo and density to convey dynamic perceptions. Evaluation studies indicate that Ponify generates music that aligns harmoniously with the artwork, surpassing the performance of methods without pose analysis. In addition, Ponify enhances viewers’ enjoyment and empathy without reducing their concentration. We conclude that incorporating pose-based dynamics into sonification can offer a more immersive and emotionally engaging art appreciation experience, opening newpossibilities for multimedia interpretation.</description>
+    </item>
     <item>
       <title>Designatomy: Technology-Driven Rapid Ideation Pedagogy for Tech-Novice Design Students</title>
       <link>//localhost:1313/project/2025-designatomy/</link>
