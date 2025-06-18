@@ -7,15 +7,15 @@ draft: false
 category: [ "System", "User Study", "XR", "User-Centered Process" ]
 image: "/projects/2025-designatomy/_[opt]teaser.jpg"
 teaser: "/projects/2025-designatomy/_[opt]top.jpg"
-metacontent: "This paper envisions generative Artificial Intelligence (AI) and eXtended Reality (XR) as means to better novices in adopting dual roles as designers and users while personalizing 3D products. A generative design study with 24 paçrticipants in their homes examined how novices think and act while designing personal products."
+metacontent: "This article introduces Designatomy, a novel approach to guide technology-driven design approaches to tech-novice design students. This method employs a taxonomy framework as a foundational thinking strategy, encouraging students to independently explore and comprehend design features shaped by new technologies."
 
 # Meta-Data
-conference: "International Journal of Design Education / 2025"
+conference: "IJDE 2025"
 conference_full: International Journal of Design Education
 con_date: "Undecided"
-keywords: "generative AI, XR"
-researcher: "Bokyung Lee, Gyeol Han, Jundong Park, Daniel Saakes"
-summary: "Advanced technologies empower novices to create 3D products independently, yet existing tools focus on simplifying object creation, overlooking support for reflecting on users’ needs and desires. This paper envisions generative Artificial Intelligence (AI) and eXtended Reality (XR) as means to better novices in adopting dual roles as designers and users while personalizing 3D products. A generative design study with 24 participants in their homes examined how novices think and act while designing personal products. Observations and interviews reveal that participants actively leverage their bodies, everyday objects, and context-based language, uncovering new opportunities for AI and XR in 3D design tools."
+keywords: "generative AI, XR, Design Pedagogy"
+researcher: "Bokyung Lee"
+summary: "The rapid technological and cultural advancements of the Fourth Industrial Revolution require designers to develop two essential skills: (i) the ability to quickly adapt to emerging technology and (ii) the ability to generate creative ideas in both user-driven and technology-driven ways. However, conventional design education methods often fall short in simultaneously cultivating these skills. Therefore, this paper introduces Designatomy, a novel pedagogical approach to guide technology-driven design approaches to tech-novice design students. This method employs a taxonomy information framework as a foundational thinking strategy, encouraging students to independently explore and comprehend design features shaped by new technological advancements. Our study involving 22 students demonstrated that Designatomy effectively accelerates the acquisition of fundamental knowledge about the relationship between design and technology, fostering both engagement and efficiency. Furthermore, the acquired knowledge was successfully applied in students' idea-generation sessions. The results suggest that Designatomy has considerable potential to equip students with the skills necessary to navigate the rapidly evolving landscape of design, promoting a problem-solving mindset crucial for addressing emerging trends in design and technology."
 tags: ["Extended reality (XR)", "augmented reality (AR)", "exhibition", "situated communication", "virtual museum", "interactive visualization"]
 shortkeys: "#generative AI, XR/AR, design tools"
 

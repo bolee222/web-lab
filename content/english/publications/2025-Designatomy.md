@@ -2,7 +2,7 @@
 # BASIC INFO
 title: "Designatomy: Technology-Driven Rapid Ideation Pedagogy for Tech-Novice Design Students"
 author : "Bokyung Lee"
-Journal: "**International Journal of Design Education**, 2025 (To be published)"
+Journal: "**International Journal of Design Education**, 2025"
 
 #Type: Journal_sci, Journal_int, Journal_dom, Conference_sci, Conference_int, Conference_dom
 type: "Journal_int"
