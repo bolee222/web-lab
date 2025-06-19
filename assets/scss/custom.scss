@@ -939,6 +939,36 @@ a:link-text-publications {
 
 
 
+/* 1) .navbar-header(로고 영역)에 flexbox 적용 */
+.navigation .navbar-header {
+  display: flex;
+  align-items: center;     /* 상하 중앙 정렬 */
+  //padding-left: 20px;              /* 기본 패딩 리셋 */
+}
+
+/* 2) .navbar-brand 컨테이너도 flex */
+.navigation .navbar-header .navbar-brand {
+  display: flex;
+  align-items: center;     /* 이미지 상하 중앙 */
+  padding: 0;              /* 좌우 여백 조절 필요시 수정 */
+  order: 1;
+}
+
+/* 2) 토글 버튼은 두 번째 순서 + 오른쪽 끝으로 */
+.navigation .navbar-header .navbar-toggle {
+  order: 2;
+  margin-left: auto;
+}
+
+/* 3) 로고 이미지 크기 고정 */
+.navigation .navbar-brand img {
+  height: 30px;    /* 원하시는 높이로 조절 */
+  width: auto;     /* 비율 유지 */
+  max-width: none; /* inline width 속성 무시 */
+}
+
+
+
 
 /* publication 페이지의 nav-tabs 밑줄 제거 */
 #publicationTabs {
