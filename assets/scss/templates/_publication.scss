@@ -27,7 +27,7 @@
     color: black;
     background: $light;        /* Project 쪽 background */
     border: 1px solid $border-color;  /* Project 쪽 border-color */
-    border-radius: 5px !important;
+    border-radius: 0px !important;
     width: fit-content !important;
     padding: 5px 15px !important;
     @include transition(all, 0.3s, ease);

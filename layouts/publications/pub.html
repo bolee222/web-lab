@@ -21,7 +21,7 @@
       </ul>
 
 <!-- Publication List -->
-<div id="publication-list">
+<div class = "publication-list" id="publication-list">
   {{ $paginator := .Paginate .RegularPages.ByDate.Reverse }}
   {{ range $paginator.Pages }}
   <div class="publication-item col-12 mb-1" data-type="{{ .Params.type }}">
