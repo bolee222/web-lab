@@ -15,8 +15,7 @@
                     outline: 0;
                     background: $light;
                     margin: 2px;
-                    border-radius: 1px;
-                    border-radius: 5px !important;
+                    border-radius: 0px !important;
                     width: fit-content !important;
                     padding: 5px 15px !important;
                     @include transition (all, 0.3s, ease);
@@ -34,7 +33,7 @@
             .btn-toggle {
                 font-size: 14px;
                 color: black;
-                border-radius: 5px !important;
+                border-radius: 0px !important;
                 width: fit-content !important;
                 padding: 5px 15px !important;
 
