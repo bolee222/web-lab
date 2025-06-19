@@ -60,10 +60,11 @@
 
 
 
-<!-- /about -->
+<!-- /ABOUT OUR LAB PROJECTS -->
 {{ with .Params.about }} {{ if .enable }}
 <section class="about section-card">
   <div class="container ">
+    
       <!-- about -->
       <canvas class="orb-canvas"></canvas>
       <!-- Overlay -->
@@ -104,36 +105,32 @@
 <!-- /about -->
 
 
-<!-- /ongoing -->
+<!-- ACTIVE ONGOING PROJECTS -->
 {{ with .Params.ongoing }} {{ if .enable }}
-<section class="about section-card-ongoing">
-  <div class="container ">
-      <!-- ongoing -->
-      <canvas class="orb-canvas"></canvas>
-      <!-- Overlay -->
-      <div class="overlay-ongoing">
+<section class="about section white-box">
+    <div class="container">
+      <hr align="left" style="margin-top: 20px; margin-bottom: 30px; width:100%; border-style:dashed; background-color:black;">
         <div class="row">
           <div class="col-md-12 col-sm-12">
             <div class="block">
               <div class="section-title">
                 {{ with .title }}
                 <div class="home-title-ongoing">{{ . | markdownify }}</div>
-                {{ end }} {{ with .description }}<div class="lab-intro">{{ . | $.Page.RenderString (dict
+                {{ end }} {{ with .description }}<div class="ongoing-project">{{ . | $.Page.RenderString (dict
                 "display" "block") }}</div>{{ end }}
               </div>
             </div>
           </div>
-        </div>
-
-        </div>
-      </div>
-  </div>
+        </div>  
+        {{ end }}{{ end }} 
+     {{ with .Params.ongoing }}
+    </div>
 </section>
-{{ end }} {{ end }}
-<!-- / ongoing -->
+{{ end }}
+<!-- /ACTIVE ONGOING PROJECTS-->
 
 
-<!-- 
+<!-- ABOUT OUR LAB PAGE -- 메인작성
 {{ with .Params.about }} {{ if .enable }}
 <section class="about section white-box">
   <div class="container ">
@@ -164,16 +161,16 @@
 -->
 
 
-<!-- portfolio -->
+<!-- RECENT PROJECTS -->
 {{ with .Params.portfolio }} {{ if .enable }}
 <section class="about section white-box">
     <div class="container">
-      <hr align="left" style="margin-top: 0px; margin-bottom: 70px; width:100%; height:0px; border:none; background-color:black;">
+      <hr align="left" style="margin-top: 10px; margin-bottom: 30px; width:100%; border-style:dashed; background-color:black;">
         <div class="row">
             <div class="col-md-12 col-sm-12">
               <div class="block">
                 <div class="section-title">
-                    <div class="home-title">RECENT PROJECTS</div>
+                    <div class="home-title">PUBLISHED PROJECTS</div>
                     <div class="home-title-sub1">{{ .content | markdownify }}</div>
                 </div>
                 </div>
@@ -198,7 +195,7 @@
     </div>
 </section>
 {{ end }}
-<!-- /portfolio -->
+<!-- /RECENT PROJECTS -->
 
 <!-- NEWS
 <section class="white-box about section">
@@ -230,7 +227,7 @@
 <!-- News2 -->
 <section class="white-box about section-last">
   <div class="container">
-    <hr align="left" style="margin-top: 60px; margin-bottom: 60px; width:100%; height:2px; border:none; background-color:black;">
+    <hr align="left" style="margin-top: 20px; margin-bottom: 30px; width:100%; border-style:dashed; background-color:black;">
       <div class="row">
           <div class="col-md-7 col-sm-12">
             <div class="block">

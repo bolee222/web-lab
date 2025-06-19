@@ -26,19 +26,19 @@ banner:
 ############################# Ongoing Projects #################################
 ongoing:
   enable: true
-  title: "Active Projects (2025~)"
+  title: "ACTIVE ONGOING PROJECTS (2025 ~)"
   description: "
-  -  *-*  Development of **Creator-enhanced Interactions for Convergence Museums** with **XR & AI** Technology (NRF)
+  -  Development of **Creator-enhanced Interactions for Convergence Museums** with **XR & AI** Technology (NRF)
   
-  -  *-*  **AI Music Generation** based on the Artwork Perception and Embodied Appreciation (NRF)
+  -  **AI Music Generation** based on the Artwork Perception and Embodied Appreciation (NRF)
 
-  -  *-*  **Designing Interactions for Embodied Knowledge Sharing Platform** through Agent-based Digital Humans (NRF)
+  -  **Designing Interactions for Embodied Knowledge Sharing Platform** through Agent-based Digital Humans (NRF)
 
-  -  *-*  **Spatial Sensory Interactions with Gen AI in XR** for enhanced Learning and Touring (Yonsei)
+  -  **Spatial Sensory Interactions with Gen AI in XR** for enhanced Learning and Touring (Yonsei)
 
-  -  *-*  **Restrictive Embodied Interacitons** in Physical-Digital Logging (NRF)
+  -  **Restrictive Embodied Interacitons** in Physical-Digital Logging (NRF)
 
-  -  *-*  **New Interfaces for Sustainable LLM AI **
+  -  New Interfaces for **Sustainable LLM AI**
   "
 
   image: "images/logo/ongoing-buffer.png"

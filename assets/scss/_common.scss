@@ -245,6 +245,7 @@ input[type="tel"] {
 
 .section-card {
     padding: 20px 0 10px 0;
+    margin-bottom: 50px;
     @include tablet {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -648,3 +649,25 @@ span.cloaked-e-mail:before {
         float: none;
     }
 }
+
+
+
+.ongoing-project{
+    margin-left: 20px;
+}
+
+.ongoing-project ul {
+    list-style-type: disc;       /* 동그란 불릿 */ 
+    list-style-position: outside;  /* 외부에 불릿 배치 */
+    list-style: disc outside;   /* 검은색 채워진 불릿 + 밖에 위치 */
+    padding-left: 1.6rem; 
+  }
+
+.ongoing-project ul li {
+    margin-bottom: 0.5rem;
+    margin-left: -0.6rem;       /* 불릿 위치로 당겨오기 */
+    padding-left: 1.2rem; 
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+}
+
