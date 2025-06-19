@@ -11,6 +11,7 @@ banner:
   bg_image:
   bg_overlay: false 
   yonseiLogo1: "images/logo/yonsei_logo1.png"
+  lab-logo-tight: "images/logo/logo2_tight.png"
   affiliation: "Yonsei University"
   department: "[Department of Innovation ](https://www.uicinnovation.yonsei.ac.kr/)"
   title: "Convergence"
