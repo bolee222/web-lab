@@ -55,16 +55,30 @@ ongoing:
 about:
   enable: true
   title: "About Our Lab"
+  content0: "In **CXD Lab**, we envision novel **XR & AI systems**"
+  content1: "through **Human-Computer Interaction (HCI) & UX Research**"
+  content2: "within the paradigm of **Digital-Physical Convergence** trends."
+
+  content3: "How should we incorporate <b>digital intelligence more seamlessly into our physcial world</b> that we are living in? Our lab designs and evaluates novel interactive systems that could converge digital and physical worlds. We investigates various applications, including content creation, exhibition, creativity support, education, robotics, and smart environment. "    
+  
+  content4: "CXD 연구실은 <b>디지털 인텔리전스와 물리적 환경의 경계를 연결하는 사용자 경험(UX)</b>을 탐구하는 연구실입니다. 본 연구실은 '인간-컴퓨터 상호작용(HCI)'과 '인터랙션 디자인' 관점을 바탕으로, 교육, 문화 예술, 창의력 지원 도구, 스마트홈 등  다양한 분야에서의 <b>AI·XR 기술의 가능성과 가치를 탐색하고, 이를 바탕으로 혁신적인 UX 및 시스템 디자인 솔루션을 제안</b>합니다."
+
   description: "Welcome to <b>**Convergence Design Lab**—a creative hub dedicated to shaping the future of <u>Digital-Physical Convergence (XR)</u> and <u>Artifical Intelligence (AI)</u></b>!  As cutting-edge technologies such as XR, VR, AR, and AI become integral to our daily lives, our mission is to explore how can we merge these digital intelligency into our everyday lives more _seamlessly_ and _innovatively_.  
 
   
   Our lab bring together interdisciplinary perspectives, grounded in core expertise in <u><b>Human-Computer Interaction (HCI)</b></u> and <u><b>Interactive System Design</b></u>. Our research recently focuses on **planning and designing novel XR/AI interactions, systems, and applications** across a wide range of domains — including _education_, _museums_, _art & culture_, _work productivity_, _creativity support_, _smart homes_, _novel metaverse platforms_, _digital twins_, _spatial marketing_, and more.  
 
-
-  We employ diverse research approaches, including <b>User-Centered Design (UCD), Research-through-Design (RtD), and System Development with rigorous Evaluations</b>. Feel free to contact us if interested in similar research areas and approaches.
-
   "
 
+#"Welcome to <b>**Convergence Design Lab**—a creative hub dedicated to shaping the future of <u>Digital-Physical Convergence (XR)</u> and <u>Artifical Intelligence (AI)</u></b>!  As cutting-edge technologies such as XR, VR, AR, and AI become integral to our daily lives, our mission is to explore how can we merge these digital intelligency into our everyday lives more _seamlessly_ and _innovatively_.  
+
+  
+ # Our lab bring together interdisciplinary perspectives, grounded in core expertise in <u><b>Human-Computer Interaction (HCI)</b></u> and <u><b>Interactive System Design</b></u>. Our research recently focuses on **planning and designing novel XR/AI interactions, systems, and applications** across a wide range of domains — including _education_, _museums_, _art & culture_, _work productivity_, _creativity support_, _smart homes_, _novel metaverse platforms_, _digital twins_, _spatial marketing_, and more.  
+
+
+  #We employ diverse research approaches, including <b>User-Centered Design (UCD), Research-through-Design (RtD), and System Development with rigorous Evaluations</b>. Feel free to contact us if interested in similar research areas and approaches.
+
+  #"
 
   image: "images/logo/Lab-Identity.png"
 

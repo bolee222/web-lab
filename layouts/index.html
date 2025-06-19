@@ -23,7 +23,7 @@
                     {{ partial "cardbg.html" .}}
               
                     <div class="block">
-                      <img src="{{ .yonseiLogo1 | relURL }}" class="img-responsive yonsei-logo"  alt="Img" style = "margin-bottom: 100px"/>
+                      <img src="{{ .yonseiLogo1 | relURL }}" class="img-responsive yonsei-logo"  alt="Img" style = "margin-bottom: 100px; margin-top: 100px;"/>
                     </div>
 
                     <!--
@@ -36,15 +36,28 @@
                     {{ end }} 
                     -->
 
-                    <img src="/images/logo/logo2_extended-main.png" alt="CXD Lab" width="90%" style= "margin-bottom: 100px;"  class="img-responsive">
-
+                    <img src="/images/logo/logo2_extended-main.png" alt="CXD Lab" width="90%" style= "margin-bottom: 80px; margin-top: 120px;"  class="img-responsive">
+                    <!--
                     {{ with .content1 }}<div class="slider-vision">{{ . | markdownify  }}</div>{{ end }} 
                     {{ with .content2 }}<div class="slider-vision">{{ . | markdownify  }}</div>{{ end }} 
                     {{ with .content3 }}<div class="slider-vision-content3">{{ . | markdownify  }}</div>{{ end }} 
                     {{ with .content4 }}<div class="slider-vision-content4">{{ . | markdownify  }}</div>{{ end }} 
-                    {{ with .button }} {{ if .enable }}
-                    <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp">{{ .label }}</a>
-          {{ end }} {{ end }}
+
+                    <div class="banner-cta-buttons" style="margin-top: 20px;">
+                      <a href="{{ "/about/vision/" | relLangURL }}"
+                         class="home-slider-more btn-main btn-learnMore">
+                        → Research Areas
+                      </a>
+                      <a href="{{ "/about/approach/" | relLangURL }}"
+                         class="home-slider-more btn-main btn-learnMore">
+                        → Research Methods
+                      </a>
+                      <a href="{{ "/about/applicants/" | relLangURL }}"
+                         class="home-slider-more btn-main btn-learnMore">
+                        → Join Us
+                      </a>
+                    </div>
+                    -->
                     <!-- <hr align="left" style="margin-top: 100px; width:100%; height:5px; border:none; background-color:black;"> -->
                      
                 </div>
@@ -64,27 +77,34 @@
       <canvas class="orb-canvas"></canvas>
       <div class="overlay">
         <div class="row">
-          <div class="col-md-7 col-sm-12">
+          <div class="col-md-9 col-sm-12">
             <div class="block">
               <div class="section-title">
-                {{ with .title }}
-                <div class="home-title">{{ . | markdownify }}</div>
-                {{ end }} {{ with .description }}<div class="lab-intro">{{ . | $.Page.RenderString (dict
-                "display" "block") }}</div>{{ end }}
-              </div>
-              {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block")
-              }}{{ end }} {{ with .button }} {{ if .enable }}
-              <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main btn-learnMore">{{ .label | markdownify }}</a>
-              {{ end }}{{ end }}
-              {{ with .button2 }} {{ if .enable }}
-              <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main btn-learnMore">{{ .label | markdownify }}</a>
-              {{ end }}{{ end }}
-              {{ with .button3 }} {{ if .enable }}
-              <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main btn-learnMore">{{ .label | markdownify }}</a>
-              {{ end }}{{ end }}
+                <!-- {{ with .title }} <div class="home-title">{{ . | markdownify }}</div> {{ end }} -->
+                
+                {{ with .content0 }}<div class="slider-vision">{{ . | markdownify  }}</div>{{ end }} 
+                {{ with .content1 }}<div class="slider-vision">{{ . | markdownify  }}</div>{{ end }} 
+                {{ with .content2 }}<div class="slider-vision">{{ . | markdownify  }}</div>{{ end }} 
+                {{ with .content3 }}<div class="slider-vision-content3">{{ . | markdownify  }}</div>{{ end }} 
+                {{ with .content4 }}<div class="slider-vision-content4">{{ . | markdownify  }}</div>{{ end }} 
+                
+                <!--{{ with .description }}<div class="lab-intro">{{ . | $.Page.RenderString (dict
+                "display" "block") }}</div>{{ end }}-->
+
+                </div>
+                {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block")
+                }}{{ end }} {{ with .button }} {{ if .enable }}
+                <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main btn-learnMore">{{ .label | markdownify }}</a>
+                {{ end }}{{ end }}
+                {{ with .button2 }} {{ if .enable }}
+                <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main btn-learnMore">{{ .label | markdownify }}</a>
+                {{ end }}{{ end }}
+                {{ with .button3 }} {{ if .enable }}
+                <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main btn-learnMore">{{ .label | markdownify }}</a>
+                {{ end }}{{ end }}
             </div>
           </div>
-          <div class="col-md-5 col-sm-12">
+          <div class="col-md-3 col-sm-12">
             <div class="block">
               <img src="{{ .image | relURL }}" class="img-responsive" alt="Img" style = "margin-top: 50px" />
             </div>
