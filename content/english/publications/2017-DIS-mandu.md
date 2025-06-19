@@ -17,7 +17,7 @@ draft: false
 link_PDF: "https://www.dropbox.com/scl/fi/33auv3g6ebxf7kuyzl4qb/2017-DIS-mandu.pdf?rlkey=2jhtjg6g6ftnj53gn8a6qi23y&dl=0"
 
 exactPeriod: 10 June 2017
-cite_acm: "Bokyung Lee, Jiwoo Hong, Jaeheung Surh, and Daniel Saakes. 2017. Ori-mandu: Korean Dumpling into Whatever Shape You Want. In Proceedings of the 2017 Conference on Designing Interactive Systems (DIS '17). Association for Computing Machinery, New York, NY, USA, 929–941."
+cite_acm: "Bokyung Lee, Jiwoo Hong, Jaeheung Surh, and Daniel Saakes. 2017. **Ori-mandu: Korean Dumpling into Whatever Shape You Want.** _ACM Designing Interactive Systems (DIS '17)_. Association for Computing Machinery, New York, NY, USA, 929–941."
 doi: https://dl.acm.org/doi/10.1145/3064663.3064790
 
 # links

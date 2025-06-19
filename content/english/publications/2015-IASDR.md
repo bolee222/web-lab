@@ -17,7 +17,7 @@ draft: false
 link_PDF: "https://www.dropbox.com/scl/fi/4ued5mampjx43a1qtlh0x/2015-IASDR.pdf?rlkey=vpbej52bvcjlhwhrcb94zsxkt&dl=0"
 
 exactPeriod: 2015-11-04
-cite_acm: "Lee, B. Y., Saakes, D. P., & Sleeswijk Visser, F. (2015, November). Online user reviews as a design resource. In 2015 IASDR Interplay. Queensland University of Technology, Australia."
+cite_acm: "Bokyung LEe., Daniel Saakes, & Sleeswijk Visser, Froukje. (2015, November). **Online user reviews as a design resource**. _In 2015 IASDR Interplay_. Queensland University of Technology, Australia."
 doi: 
 
 # links
@@ -29,3 +29,4 @@ links:
   - label : "Source URL"
     link : "https://koasas.kaist.ac.kr/handle/10203/210415"
 ---
+

@@ -14,7 +14,7 @@ homeYearTag: 2025
 
 
 exactPeriod: 2025.06.23
-cite_acm: "Lee, Bokyung & Hanbin Bae. (2025). **PONIFY: Pose-driven Painting Sonification to Enhance Augmented Artwork Perception through Sense of Dynamics**. _International Journal of Human–Computer Interaction_, (Accepted)."
+cite_acm: "Bokyung Lee & Hanbin Bae. (2025). **PONIFY: Pose-driven Painting Sonification to Enhance Augmented Artwork Perception through Sense of Dynamics**. _International Journal of Human–Computer Interaction_, (Accepted)."
 doi: 
 
 

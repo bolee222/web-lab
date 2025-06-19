@@ -1,41 +1,38 @@
 {{ define "main" }} {{ partial "page-title.html" . }} {{ $data := index site.Data site.Language.Lang }}
 
 <section>
-  <div class="container publication">
-    <div class="row row-fix">
-    </div>
+  <div class="container">
+    <div class="row row-fix"> </div>
 
        <!-- Tabs for Filtering -->
-<ul class="nav nav-tabs" id="publicationTabs">
-  <li class="nav-item">
-    <a class="nav-link active" data-type="all" href="#">All Publications</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-type="top-ranked" href="#">Top-Ranked</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-type="international" href="#">International</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-type="domestic" href="#">Domestic</a>
-  </li>
-</ul>
+      <ul class="nav nav-tabs" id="publicationTabs">
+        <li class="nav-item">
+          <a class="nav-link active" data-type="all" href="#">All Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-type="top-ranked" href="#">Top-Ranked</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-type="international" href="#">International</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-type="domestic" href="#">Domestic</a>
+        </li>
+      </ul>
 
 <!-- Publication List -->
-<div class="row" id="publication-list">
+<div id="publication-list">
   {{ $paginator := .Paginate .RegularPages.ByDate.Reverse }}
   {{ range $paginator.Pages }}
-  <div class="container publication-item" 
-       data-type="{{ .Params.type }}">
-    <div class="col-md-12 col-sm-6 mb-3">
+  <div class="publication-item col-12 mb-1" data-type="{{ .Params.type }}">
       {{ .Render "publication_all_acm" }}
-    </div>
   </div>
   {{ end }}
   
   <div class="col-12 mt-5">
     {{ template "_internal/pagination.html" . }}
   </div>
+</div>
 </div>
 
 <script>

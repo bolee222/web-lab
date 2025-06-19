@@ -446,19 +446,18 @@ img.rounded {
   }
 
   .padding-publication_title {
-    padding-right: 20px !important;
+    padding-right: 90px !important;
     padding-left: 0px !important;
+    text-align: justify;
 
     .col-lg-9 {
       padding-left: 0 !important; /* Remove padding-left */
     }
-    
-    
 }
 
 
 .publication-text {
-  font-size: 15px !important;
+  font-size: 16px !important;
         font-weight: 400;
         line-height: 1.2;
 
@@ -467,8 +466,8 @@ img.rounded {
         }
 
         em {
-            color: black !important;
-            background-color: #dadada72;
+            color: rgb(0, 33, 125);
+            //background-color: #dfdfdf72;
             font-weight: 400;
         }
 
@@ -564,11 +563,11 @@ img.rounded {
   color: black;
   font-family: $primary-font;
   line-height: 1.4;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-decoration: underline !important;
 
   a{
-    color: $primary-color;
+    color: rgb(0, 33, 125);
   }
 }
 
@@ -580,6 +579,7 @@ a:link-text-publications {
 
 .publication{
   font-family: $primary-font;
+  //padding-right:0px !important;
 
   .section{
     padding: 0px !important;
@@ -918,3 +918,45 @@ a:link-text-publications {
 }
 
 
+
+
+/* publication 페이지의 nav-tabs 밑줄 제거 */
+#publicationTabs {
+  border-bottom: none !important;
+  padding-left: 0;
+  margin-bottom: 40px;
+  
+}
+
+/* nav-item 기본 마진 */
+#publicationTabs .nav-item {
+  margin: 2px; /* Project 쪽 label margin 과 동일 */
+}
+
+/* nav-link를 Project 버튼처럼 스타일링 */
+#publicationTabs .nav-link {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 14px;
+  color: black;
+  background: $light;        /* Project 쪽 background */
+  border: 1px solid $border-color !important;  /* Project 쪽 border-color */
+  border-radius: 5px !important;
+  width: fit-content !important;
+  padding: 5px 15px !important;
+  @include transition(all, 0.3s, ease);
+}
+
+/* hover, active 상태 */
+#publicationTabs .nav-link:hover,
+#publicationTabs .nav-link:focus,
+#publicationTabs .nav-link.active {
+  background: #4F088D !important;  /* Project 쪽 활성화 색 */
+  color: white !important;
+  text-decoration: none;
+}
+
+
+.margin-bottom-0{
+  margin-bottom: 0px !important;
+}

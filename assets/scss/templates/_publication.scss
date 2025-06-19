@@ -6,3 +6,39 @@
     margin-top: 0px;
     margin-bottom: 30px;
 }
+
+/* publication 페이지의 nav-tabs 밑줄 제거 */
+#publicationTabs {
+    border-bottom: none !important;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  /* nav-item 기본 마진 */
+  #publicationTabs .nav-item {
+    margin: 2px; /* Project 쪽 label margin 과 동일 */
+  }
+  
+  /* nav-link를 Project 버튼처럼 스타일링 */
+  #publicationTabs .nav-link {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    color: black;
+    background: $light;        /* Project 쪽 background */
+    border: 1px solid $border-color;  /* Project 쪽 border-color */
+    border-radius: 5px !important;
+    width: fit-content !important;
+    padding: 5px 15px !important;
+    @include transition(all, 0.3s, ease);
+  }
+  
+  /* hover, active 상태 */
+  #publicationTabs .nav-link:hover,
+  #publicationTabs .nav-link:focus,
+  #publicationTabs .nav-link.active {
+    background: #4F088D !important;  /* Project 쪽 활성화 색 */
+    color: white !important;
+    text-decoration: none;
+  }
+  

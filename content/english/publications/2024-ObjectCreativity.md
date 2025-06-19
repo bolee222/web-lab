@@ -10,11 +10,11 @@ type: "Journal_dom"
 # DATE INFO
 date: 2024-01-14T15:40:24+06:00
 publicationDate: 2024.01
-homeYearTag: 2024
+homeYearTag: 
 
 
 exactPeriod: 2023.06.01
-cite_acm: "이보경 and 이현경. (2024). Everyday Objects in VR Shape Exploration Tools for Novice Artists - A way to Support Geometry Shaping Process for Non-professionals -. 한국디자인포럼, 29(1), 77-87."
+cite_acm: "Bokyung Lee and Hyun-Kyung Lee. (2024). **Everyday Objects in VR Shape Exploration Tools for Novice Artists - A way to Support Geometry Shaping Process for Non-professionals**. _Korea Design Forum_, 29(1), 77-87."
 doi: https://doi.org/10.21326/ksdt.2024.29.1.007
 
 

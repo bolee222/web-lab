@@ -17,7 +17,7 @@ draft: false
 link_PDF: "https://www.dropbox.com/scl/fi/232unan4jwyh4v3aw6up2/2020-NordiCHI.pdf?rlkey=a6um08mnvi4bhv85cwic4i4iq&dl=0"
 
 exactPeriod: 26 October 2020
-cite_acm: "Jaeho Sung, Bokyung Lee, and Daniel Saakes. 2020. PoseScape: Pose-based Analysis System for Long-term Observation Studies. In Proceedings of the 11th Nordic Conference on Human-Computer Interaction: Shaping Experiences, Shaping Society (NordiCHI '20). Association for Computing Machinery, New York, NY, USA, Article 109, 1–3."
+cite_acm: "Jaeho Sung, Bokyung Lee, and Daniel Saakes. 2020. **PoseScape: Pose-based Analysis System for Long-term Observation Studies**. _Nordic Conference on Human-Computer Interaction: Shaping Experiences, Shaping Society (NordiCHI '20)_. Association for Computing Machinery, New York, NY, USA, Article 109, 1–3."
 doi: https://dl.acm.org/doi/10.1145/3419249.3421247
 
 

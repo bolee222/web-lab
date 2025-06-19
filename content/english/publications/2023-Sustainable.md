@@ -14,7 +14,7 @@ homeYearTag: 2023
 
 
 exactPeriod: 2023.06.01
-cite_acm: "Bokyung Lee, Damon Lau, Jeremy P.M. Mogk, Michael Lee, Jacobo Bibliowicz, Rhys Goldstein, Alexander Tessier, Generative design for COVID-19 and future pathogens using stochastic multi-agent simulation, Sustainable Cities and Society, Volume 97,2023, 104661, ISSN 2210-6707"
+cite_acm: "Bokyung Lee, Damon Lau, Jeremy P.M. Mogk, Michael Lee, Jacobo Bibliowicz, Rhys Goldstein, Alexander Tessier, **Generative Design for COVID-19 and Future Pathogens Using Stochastic Multi-agent Simulation**, _Sustainable Cities and Society_, Volume 97,2023, 104661, ISSN 2210-6707"
 doi: https://doi.org/10.1016/j.scs.2023.104661
 
 

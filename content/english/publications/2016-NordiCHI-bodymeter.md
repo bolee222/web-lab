@@ -17,7 +17,7 @@ draft: false
 link_PDF: "https://www.dropbox.com/scl/fi/7caseczgv96ragkf2s8jx/2016-NordiCHI.pdf?rlkey=60fvjs8wffpzju1a6v2wnkmnh&dl=0"
 
 exactPeriod: 23 October 2016
-cite_acm: "Bokyung Lee, Minjoo Cho, Joonhee Min, and Daniel Saakes. 2016. Posing and Acting as Input for Personalizing Furniture. In Proceedings of the 9th Nordic Conference on Human-Computer Interaction (NordiCHI '16). Association for Computing Machinery, New York, NY, USA, Article 44, 1–10."
+cite_acm: "Bokyung Lee, Minjoo Cho, Joonhee Min, and Daniel Saakes. 2016. **Posing and Acting as Input for Personalizing Furniture**. _Nordic Conference on Human-Computer Interaction (NordiCHI '16)_. Association for Computing Machinery, New York, NY, USA, Article 44, 1–10."
 doi: https://dl.acm.org/doi/10.1145/2971485.2971487
 
 # links
