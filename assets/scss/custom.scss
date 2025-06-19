@@ -1,6 +1,22 @@
 // Put custom SCSS rules in this file
 // Documentation: https://sass-lang.com/documentation
 
+// 전체 컨테이너 폭을 1200px로 제한 (기본 1140px → 1200px 예시)
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px !important;
+  }
+}
+
+// 컨테이너 좌우 패딩도 살짝 줄이기
+.container {
+  padding-left: 1rem !important;   // 기본 1.5rem → 1rem
+  padding-right: 1rem !important;
+}
+
+
+
+
 .slider-affiliation {
     font-family: $poppins-font;
     font-size: 22px;
