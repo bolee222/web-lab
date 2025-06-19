@@ -1,0 +1,137 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ with .Params.position_phd }}
+{{ if .enable }}
+<section class="service-about">
+  <div class="container container_wider">
+    {{ with .quote }}<div class="vision-sub">{{ . | markdownify }}</div>{{ end }}
+    {{ with .description }}<div class="vision-quote">{{ . | markdownify }}</div>{{ end }}
+
+    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 100%; margin-bottom: 30px;">
+    <div class="row">
+      <div class="col-md-8">
+        {{ with .title }}<div class="vision-title">{{ . | markdownify }}</div>{{ end }}
+        {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+        {{ with .FAQ }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
+      </div>
+
+      <div class="col-md-4">
+        <div style="height:50px; width:100%; clear:both;"></div>
+
+        {{ with .apply }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
+        {{ with .submit_1 }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
+        {{ with .submit_2 }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
+        {{ with .submit_3 }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
+      </div>
+      
+      
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ with .Params.position_master }}
+{{ if .enable }}
+<section class="service-about">
+  <div class="container container_wider">
+    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 100%; margin-bottom: 30px;">
+    <div class="row">
+      <div class="col-md-8">
+        {{ with .title }}<div class="vision-title">{{ . | markdownify }}</div>{{ end }}
+        {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+        
+        {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
+      </div>
+
+      <div class="col-md-4">
+        <div style="height:50px; width:100%; clear:both;"></div>
+
+        {{ with .apply }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
+        {{ with .submit_1 }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
+        {{ with .submit_2 }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
+        {{ with .submit_3 }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
+      </div>
+
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ with .Params.position_interns }}
+{{ if .enable }}
+<section class="service-about">
+  <div class="container container_wider">
+    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 100%; margin-bottom: 30px;">
+    <div class="row">
+      <div class="col-md-8">
+        {{ with .title }}<div class="vision-title">{{ . | markdownify }}</div>{{ end }}
+        {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+        {{ with .Q2 }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+        <div class="tracks">
+          {{ with .track_A }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
+          {{ with .track_B }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
+          {{ with .track_C }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
+        </div>
+        {{ with .FAQ }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
+      </div>
+
+      <div class="col-md-4">
+        <div style="height:50px; width:100%; clear:both;"></div>
+
+        {{ with .apply }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
+        {{ with .submit_1 }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
+        {{ with .submit_2 }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
+        {{ with .submit_3 }}<div class="applicants_track">{{ . | markdownify }}</div>{{ end }}
+      </div>
+
+    </div>
+    
+  </div>
+  
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ with .Params.offer }}
+{{ if .enable }}
+<section class="service-about">
+  <div class="container ">
+    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 100%; margin-bottom: 30px;">
+    <div class="row">
+      <div class="col-md-10">
+        {{ with .title }}<div class="vision-title">{{ . | markdownify }}</div>{{ end }}
+        {{ with .support }}<div class="apply_description">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+      </div>
+      {{ with .image -}}
+      <div class="col-md-2">
+        <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
+      </div>
+      {{- end }}
+    </div>
+    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 100%; margin-bottom: 30px;">
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+<!-- Service -->
+{{ if .Params.service.enable }}
+{{ partial "service.html" . }}
+{{ end }}
+<!-- /service -->
+
+<!-- Call to action -->
+{{ if .Params.cta.enable }}
+{{ partial "cta.html" . }}
+{{ end }}
+<!-- /Call to action -->
+
+{{ end }}

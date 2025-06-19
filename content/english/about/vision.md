@@ -1,6 +1,6 @@
 ---
 title: "Research Areas"
-description: 
+description: "Broad topic that CXD Lab actively investigates."
 bg_image: "images/headerbg/09.png"
 layout: "vision"
 draft: false

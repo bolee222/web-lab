@@ -1,6 +1,6 @@
 ---
-title: "Join Us"
-description:
+title: "Lab Branding"
+description: 
 bg_image: "images/headerbg/09.png"
 layout: "applicants"
 draft: false
