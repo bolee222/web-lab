@@ -54,12 +54,12 @@ particlesJS("particles-js", {
     },
     "move": {
       "enable": true,
-      "speed": 3,
+      "speed": 13,
       "direction": "none",
       "random": true,
       "straight": false,
-      "out_mode": "out",
-      "bounce": false,
+      "out_mode": "out", //"out"
+      "bounce": false, //"false"
       "attract": {
         "enable": false,
         "rotateX": 600,

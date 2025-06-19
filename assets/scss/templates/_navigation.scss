@@ -1,8 +1,8 @@
 .navigation {
   //background: #ffffff75;
   padding: 30px 0;
-  position: fixed;  
-  z-index: 999;  
+  position: relative;   /* 또는 이미 fixed/sticky를 쓰고 있다면 그 상태 유지 */
+  z-index: 1000;  
 
   .navbar {
     margin-bottom: 0px;
