@@ -3,7 +3,7 @@ title: "Lab Branding"
 description:
 bg_image: "images/headerbg/09.png"
 layout: "branding"
-draft: true
+draft: false
 menu:
   main:
     parent: "About Lab"
@@ -11,109 +11,40 @@ menu:
     weight: 5
 
 
-########################### PHD #############################
-position_phd:
+########################### Logo_wide #############################
+logo_wide:
   enable: true
-  teaser: "images/vision/statement.png"
-  quote: "**Are you interested in joining our lab?**"
-  description: "Please take a look at the information provided below to find out what opportunities are currently available."
-  title: "<b>Ph.D. Students</b>"
-  content:
-    "<b>Q. What Do We Expect for Ph.D. Students?</b>
+  title: "<b>Full Logo</b>"
+  logo_color: "images/logo_pic/logo_wide_color.png"
+  logo_black: "images/logo_pic/logo_wide_black.png"
+  logo_white: "images/logo_pic/logo_wide_white.png"
 
-    1. **Strong Motivation.** Enjoy conducting research in Human-Computer Interaction (HCI), Interactive System Design, UX, and Digital-Physical Convergence. 
-    
-    2. **Proactive Initiative.** In grad school, nobody will tell you exactly what to do next. You need to be able to take the initiative and try things without being told.
+  submit_1: "**Full Wide Version** <br> → Contains both the symbol and the abbreviation description."
 
-    3. **Desisgn/Implementation Skills.** While hands-on development skills are preferred, they are not a _strict_ requirement. What matters most is your willingness to learn and grow. 
 
-    4. **At Least Two Publications** in top-tier international journals or conferences (e.g., CHI, International Journal of HCI, TOCHI, or similar venues). This reflects our lab’s focus on contributing impactful and high-quality research to the global academic community.
+########################## Logo_Compact ############################
 
-    5. **Communication Skills**. Communication skills can be learnt during the PhD, but you need to start out willing to share and learn. If you are extremely shy/do not talk up, it will not matter how smart you are or how great your work is.
-    "
+logo_compact:
+  enable: false
+  title: "<b>Full Logo</b>"
+  logo_color: "images/logo_pic/logo_wide_color.png"
+  logo_black: "images/logo_pic/logo_wide_black.png"
+  logo_white: "images/logo_pic/logo_wide_white.png"
 
-  apply:
-    "<b>Q. How to Apply?</b>
-     
+  submit_1: "**Full Compact Version** <br> → Contains both the symbol and the abbreviation description in a square format."
 
-     To officially join our lab as a Ph.D. student, you must apply to Yonsei University / Graduate School / Department of Innovation and secure admission. But before then, please send the following documents <u>to my email</u> along with a brief introduction about yourself. 
-    "
 
-  submit_1: "**(1) Your CV or Resume** <br> → Include education/work background, and skill sets"
-  submit_2: "**(2) A list of publications or projects** (if applicable)<br> → If possible, send a copy of your papers or portfolio."
-  submit_3: "**(3) Research Proposal** (1~2 page) <br> → A statement detailing your research interests, goals, potential approaches, and why you’re interested in our lab."
-  
+########################## Logo_Wide_Short ############################
 
-  FAQ: 
-    "
-    <b>For more information:</b> 
-    [ - FAQ > 'Join our lab as a Ph.D. Student'](./about/faq/).
-    "
-
-########################## MASTERS ############################
-
-position_master:
+logo_wide_short:
   enable: true
-  title: "<b>Master Students</b>"
-  content:
-    "<b>Q. What Do We Expect for Master Students?</b>
+  title: "<b>Full Logo</b>"
+  logo_color: "images/logo_pic/logo_wide_color.png"
+  logo_black: "images/logo_pic/logo_wide_black.png"
+  logo_white: "images/logo_pic/logo_wide_white.png"
 
-    1. **Strong Motivation**. Enjoy conducting research in Human-Computer Interaction (HCI), Interactive System Design, UX, and Digital-Physical Convergence. 
+  submit_1: "**Short Wide Version** <br> → Contains the symbol and the text."
 
-    2. **At least one publication** in a domestic or international journal (top-tier or 2nd rank).
-
-    4. **Not being afraid to dive into the implementation and design of new systems.** While hands-on development skills are preferred, they are not a strict requirement. What matters most is your willingness to learn and grow. To support this, we provide access to online learning resources and guidance to help you acquire the necessary skills.
-    "
-  apply:
-    "<b>Q. How to Apply?</b>
-     
-
-     To officially join our lab as a master student, you must apply to Yonsei University / Graduate School / Department of Innovation and secure admission. But before then, please send the following documents <u>to my email</u> along with a brief introduction about yourself. 
-    "
-
-  submit_1: "**(1) Your CV or Resume** <br> → Include education/work background, and skill sets"
-  submit_2: "**(2) Research Interest Description** (max 3 paragraphs) <br> → A statement detailing your research interests and expected achievement from the masters program."
-  
-  
-
-  FAQ: 
-    "**For more information**: 
-    [FAQ > 'Join our lab as a Master's Student'](./about/faq/).
-    "
-
-########################## UNDERGRADUATE INTERNS ############################
-
-position_interns:
-  enable: true
-  title: "<b>Undergraduate Interns</b>"
-  content:
-    "<b>Q. What Do We Expect for Undergraduate Interns?</b>
-     
-     
-    The goal of our lab's internship program is **to provide students with the oppportunity to gain experience in design research projects and its procedures.** Depending on specific internship track, students will take on one or more of the following tasks: (i) learn how to plan experiments for design research, (ii) conduct experiments, and (iii) analyze findings and discuss how the results can inform and inspire future designs. Ultimately, the outputs can be published in the form of **an academic paper achievement or a design award**."
-
-  Q2: "<b>Q. What are the possible internship tracks?</b>
-  
-
-  We offer three types of internship tracks as below. The first two tracks (Track A & B) involve more active, engaging, and ownership-driven roles, while the last track (Track C) entails a relatively passive role."
-
-  FAQ: "**For more information**: [FAQ > 'Join our lab as an Undergraduate Intern'](./about/faq/)."
-
-  track_A: "**TRACK A:**  <b>For students who already have a specific research topic in mind:</b> <br> → We will plan a new design research project together regarding a particular topic (to answer the research question that the student wants to explore."
-  track_B: "**TRACK B:**  <b>For students who are open to explore any research projects actively</b>: <br> → The student will be assigned one of the small projects that the currently ongoing in the lab."
-  track_C: "**TRACK C:**  <b>For students who just want to serve as an research assistant</b>: <br> → The student will be assigned specific tasks (e.g., conducting surveys or interviews, recruiting participants, or creating videos) to complete within a set timeframe."
-
-  apply:
-    "<b>Q. How to Apply?</b>
-     
-
-     Undergraduate students from any institution are welcome to join as interns, regardless of their home affiliation. If you are interested in, please send the following information <u>to my email</u> along with a brief introduction about yourself. 
-    "
-
-  submit_1: "**TRACK A:**  <br> → (i) brief self-introduction, (ii) research interests, (iii) desired duation"
-  submit_2: "**TRACK B:**  <br> → (i) brief self-introduction, (ii) skill sets, (iii) desired duation"
-  submit_3: "**TRACK C:**  <br> → Track C may not always be available. Please send an email inquiry to check if tasks are currently available."
-  
 
 ########################## OFFER ############################
 offer:
@@ -139,7 +70,7 @@ offer:
 
 ########################## featured service ############################
 featured_service:
-  enable: true
+  enable: false
   service_item:
     # featured service item loop
     - name: "Supporting Creativity and Design Support"
@@ -163,6 +94,6 @@ featured_service:
 
 ############################# call to action #################################
 cta:
-  enable: true
+  enable: false
   # call to action content comes from "_index.md"
 ---

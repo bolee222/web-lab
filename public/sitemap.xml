@@ -284,6 +284,8 @@
   </url><url>
     <loc>//localhost:1313/about/applicants/</loc>
   </url><url>
+    <loc>//localhost:1313/about/branding/</loc>
+  </url><url>
     <loc>//localhost:1313/author/mark-dinn/</loc>
   </url><url>
     <loc>//localhost:1313/about/approach/</loc>
