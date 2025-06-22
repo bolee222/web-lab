@@ -79,9 +79,9 @@ pricing:
 
     # Student table loop
     - name: "Nirvika Gupta"
-      type: Undergraduate Researcher / IIT
+      type: Undergraduate Intern 
       email: 
-      image : "images/students/default.jpg"
+      image : "images/students/Nirvika.jpg"
       period: 2025 Winter - current
       content: "Nirvika is investiating a new system that integrates facial recognition-based XR system in class. She designs EmoViz for teachers to enhance more engaging class experiences."
       link: "#"
