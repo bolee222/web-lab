@@ -8,7 +8,7 @@ menu:
   main:
     parent: "About Lab"
     name: "Branding"
-    weight: 5
+    weight: 4
 
 
 ########################### Logo_wide #############################
