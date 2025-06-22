@@ -1,6 +1,6 @@
 ---
 title: "Students"
-description: "Here are our awesome students who are actively envisioning our next future in Convergence Design Lab."
+description: "Here are our awesome students who are actively envisioning our next future in CXD Lab."
 bg_image: "images/headerbg/09.png"
 layout: "researchers"
 draft: false
@@ -80,7 +80,7 @@ pricing:
     # Student table loop
     - name: "Nirvika Gupta"
       type: Undergraduate Intern 
-      email: 
+      email: "nirvika23351@iiitd.ac.in"
       image : "images/students/Nirvika.jpg"
       period: 2025 Winter - current
       content: "Nirvika is investiating a new system that integrates facial recognition-based XR system in class. She designs EmoViz for teachers to enhance more engaging class experiences."
