@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Augmented Reality (AR) on Bokyung Lee Lab</title>
-    <link>//localhost:1313/tags/augmented-reality-ar/</link>
+    <link>/tags/augmented-reality-ar/</link>
     <description>Recent content in Augmented Reality (AR) on Bokyung Lee Lab</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright &amp;copy; Bokyung Lee. All Rights Reserved.</copyright>
     <lastBuildDate>Tue, 10 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/augmented-reality-ar/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/augmented-reality-ar/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PONIFY: Pose-driven Painting Sonification to Enhance Augmented Artwork Perception through Sense of Dynamics</title>
-      <link>//localhost:1313/project/2025-ponify/</link>
+      <link>/project/2025-ponify/</link>
       <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/project/2025-ponify/</guid>
+      <guid>/project/2025-ponify/</guid>
       <description>Integrating auditory elements that complement the visual features of the paintings can enhance artwork appreciation. Image sonification has advanced this paradigm by automatically generating matching sounds. However, existing techniques rely on basic features such as color without integrating complex contextual information. Based on the insights from our formative study, we introduce Ponify, a sonification method that translates a painting’s sense of dynamics into music through pose analysis. Ponify analyzes the limb movements of human figures in paintings and configures musical parameters such as the tempo and density to convey dynamic perceptions. Evaluation studies indicate that Ponify generates music that aligns harmoniously with the artwork, surpassing the performance of methods without pose analysis. In addition, Ponify enhances viewers’ enjoyment and empathy without reducing their concentration. We conclude that incorporating pose-based dynamics into sonification can offer a more immersive and emotionally engaging art appreciation experience, opening newpossibilities for multimedia interpretation.</description>
     </item>
     <item>
       <title>Designatomy: Technology-Driven Rapid Ideation Pedagogy for Tech-Novice Design Students</title>
-      <link>//localhost:1313/project/2025-designatomy/</link>
+      <link>/project/2025-designatomy/</link>
       <pubDate>Fri, 24 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/project/2025-designatomy/</guid>
+      <guid>/project/2025-designatomy/</guid>
       <description>The rapid technological and cultural advancements of the Fourth Industrial Revolution require designers to develop two essential skills: (i) the ability to quickly adapt to emerging technology and (ii) the ability to generate creative ideas in both user-driven and technology-driven ways. However, conventional design education methods often fall short in simultaneously cultivating these skills. Therefore, this paper introduces Designatomy, a novel pedagogical approach to guide technology-driven design approaches to tech-novice design students. This method employs a taxonomy information framework as a foundational thinking strategy, encouraging students to independently explore and comprehend design features shaped by new technological advancements. Our study involving 22 students demonstrated that Designatomy effectively accelerates the acquisition of fundamental knowledge about the relationship between design and technology, fostering both engagement and efficiency. Furthermore, the acquired knowledge was successfully applied in students&amp;rsquo; idea-generation sessions. The results suggest that Designatomy has considerable potential to equip students with the skills necessary to navigate the rapidly evolving landscape of design, promoting a problem-solving mindset crucial for addressing emerging trends in design and technology.</description>
     </item>
     <item>
       <title>User-Centered Investigation of Generative AI and XR Interactions in 3D Product Design Tools</title>
-      <link>//localhost:1313/project/2025-novicedesign/</link>
+      <link>/project/2025-novicedesign/</link>
       <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/project/2025-novicedesign/</guid>
+      <guid>/project/2025-novicedesign/</guid>
       <description>Advanced technologies empower novices to create 3D products independently, yet existing tools focus on simplifying object creation, overlooking support for reflecting on users’ needs and desires. This paper envisions generative Artificial Intelligence (AI) and eXtended Reality (XR) as means to better novices in adopting dual roles as designers and users while personalizing 3D products. A generative design study with 24 participants in their homes examined how novices think and act while designing personal products. Observations and interviews reveal that participants actively leverage their bodies, everyday objects, and context-based language, uncovering new opportunities for AI and XR in 3D design tools.</description>
     </item>
     <item>
       <title>Exploring the Next Phase of Situated and Interactive Docents for XR Exhibitions: From the Perspective of Knowledge Delivery</title>
-      <link>//localhost:1313/project/2024-xrdocent/</link>
+      <link>/project/2024-xrdocent/</link>
       <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/project/2024-xrdocent/</guid>
+      <guid>/project/2024-xrdocent/</guid>
       <description>A well-designed docent significantly impacts visitors’ comprehension of the knowledge provided in museums. This study investigates the potential of eXtended Reality (XR) interactions to enhance knowledge delivery within exhibitions. Analyzing 737 exhibit commentary descriptions from 10 real-world exhibitions, we first provided a foundational knowledge taxonomy that outlines various types of information frequently conveyed along with physical exhibits. Subsequently, interviews with expert curators based on our taxonomy framework revealed their past challenges with communication for each type of knowledge and their desires. Our findings elucidate several implications for designing XR interactions to deliver curated knowledge more effectively. Unlike other works of knowledge-delivery supports in XR museums that focused on immersive representations and virtual human guides, our findings suggested new perspectives on incorporating the current understanding of situated visualization, spatio-temporal interaction, participatory embodiment, and the feedback loop into XR exhibition contexts, thus enriching the informative learning experience for museum visitors.</description>
     </item>
   </channel>

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How To on Bokyung Lee Lab</title>
-    <link>//localhost:1313/tags/how-to/</link>
+    <link>/tags/how-to/</link>
     <description>Recent content in How To on Bokyung Lee Lab</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright &amp;copy; Bokyung Lee. All Rights Reserved.</copyright>
     <lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0100</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pretty-print dates</title>
-      <link>//localhost:1313/blog/date-i18n/</link>
+      <link>/blog/date-i18n/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0100</pubDate>
-      <guid>//localhost:1313/blog/date-i18n/</guid>
+      <guid>/blog/date-i18n/</guid>
       <description>To write out an ISO 8601 timestamp in the current language, you can use the date_i18n shortcode:&#xA;Writing&#xA;{{% date_i18n &amp;#34;2020-10-20&amp;#34; %}} will result in&#xA;October 20, 2020 </description>
     </item>
   </channel>

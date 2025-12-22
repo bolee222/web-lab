@@ -2,158 +2,158 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Bokyung Lee Lab</title>
-    <link>//localhost:1313/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Bokyung Lee Lab</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright &amp;copy; Bokyung Lee. All Rights Reserved.</copyright>
     <lastBuildDate>Tue, 10 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Augmented Reality (AR)</title>
-      <link>//localhost:1313/tags/augmented-reality-ar/</link>
+      <link>/tags/augmented-reality-ar/</link>
       <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/augmented-reality-ar/</guid>
+      <guid>/tags/augmented-reality-ar/</guid>
       <description></description>
     </item>
     <item>
       <title>Exhibition</title>
-      <link>//localhost:1313/tags/exhibition/</link>
+      <link>/tags/exhibition/</link>
       <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/exhibition/</guid>
+      <guid>/tags/exhibition/</guid>
       <description></description>
     </item>
     <item>
       <title>Extended Reality (XR)</title>
-      <link>//localhost:1313/tags/extended-reality-xr/</link>
+      <link>/tags/extended-reality-xr/</link>
       <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/extended-reality-xr/</guid>
+      <guid>/tags/extended-reality-xr/</guid>
       <description></description>
     </item>
     <item>
       <title>Interactive Visualization</title>
-      <link>//localhost:1313/tags/interactive-visualization/</link>
+      <link>/tags/interactive-visualization/</link>
       <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/interactive-visualization/</guid>
+      <guid>/tags/interactive-visualization/</guid>
       <description></description>
     </item>
     <item>
       <title>Situated Communication</title>
-      <link>//localhost:1313/tags/situated-communication/</link>
+      <link>/tags/situated-communication/</link>
       <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/situated-communication/</guid>
+      <guid>/tags/situated-communication/</guid>
       <description></description>
     </item>
     <item>
       <title>Virtual Museum</title>
-      <link>//localhost:1313/tags/virtual-museum/</link>
+      <link>/tags/virtual-museum/</link>
       <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/virtual-museum/</guid>
+      <guid>/tags/virtual-museum/</guid>
       <description></description>
     </item>
     <item>
       <title>Interaction</title>
-      <link>//localhost:1313/tags/interaction/</link>
+      <link>/tags/interaction/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/interaction/</guid>
+      <guid>/tags/interaction/</guid>
       <description></description>
     </item>
     <item>
       <title>Productivity</title>
-      <link>//localhost:1313/tags/productivity/</link>
+      <link>/tags/productivity/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/productivity/</guid>
+      <guid>/tags/productivity/</guid>
       <description></description>
     </item>
     <item>
       <title>Robot</title>
-      <link>//localhost:1313/tags/robot/</link>
+      <link>/tags/robot/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/robot/</guid>
+      <guid>/tags/robot/</guid>
       <description></description>
     </item>
     <item>
       <title>Design</title>
-      <link>//localhost:1313/tags/design/</link>
+      <link>/tags/design/</link>
       <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/design/</guid>
+      <guid>/tags/design/</guid>
       <description></description>
     </item>
     <item>
       <title>Design Tools</title>
-      <link>//localhost:1313/tags/design-tools/</link>
+      <link>/tags/design-tools/</link>
       <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/design-tools/</guid>
+      <guid>/tags/design-tools/</guid>
       <description></description>
     </item>
     <item>
       <title>VR</title>
-      <link>//localhost:1313/tags/vr/</link>
+      <link>/tags/vr/</link>
       <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/vr/</guid>
+      <guid>/tags/vr/</guid>
       <description></description>
     </item>
     <item>
       <title>Bab</title>
-      <link>//localhost:1313/tags/bab/</link>
+      <link>/tags/bab/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/bab/</guid>
+      <guid>/tags/bab/</guid>
       <description></description>
     </item>
     <item>
       <title>Bibibib</title>
-      <link>//localhost:1313/tags/bibibib/</link>
+      <link>/tags/bibibib/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/bibibib/</guid>
+      <guid>/tags/bibibib/</guid>
       <description></description>
     </item>
     <item>
       <title>How To</title>
-      <link>//localhost:1313/tags/how-to/</link>
+      <link>/tags/how-to/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0100</pubDate>
-      <guid>//localhost:1313/tags/how-to/</guid>
+      <guid>/tags/how-to/</guid>
       <description></description>
     </item>
     <item>
       <title>Technology</title>
-      <link>//localhost:1313/tags/technology/</link>
+      <link>/tags/technology/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0100</pubDate>
-      <guid>//localhost:1313/tags/technology/</guid>
+      <guid>/tags/technology/</guid>
       <description></description>
     </item>
     <item>
       <title>Advice</title>
-      <link>//localhost:1313/tags/advice/</link>
+      <link>/tags/advice/</link>
       <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      <guid>//localhost:1313/tags/advice/</guid>
+      <guid>/tags/advice/</guid>
       <description></description>
     </item>
     <item>
       <title>AI</title>
-      <link>//localhost:1313/tags/ai/</link>
+      <link>/tags/ai/</link>
       <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      <guid>//localhost:1313/tags/ai/</guid>
+      <guid>/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Android</title>
-      <link>//localhost:1313/tags/android/</link>
+      <link>/tags/android/</link>
       <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      <guid>//localhost:1313/tags/android/</guid>
+      <guid>/tags/android/</guid>
       <description></description>
     </item>
     <item>
       <title>Babo</title>
-      <link>//localhost:1313/tags/babo/</link>
+      <link>/tags/babo/</link>
       <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      <guid>//localhost:1313/tags/babo/</guid>
+      <guid>/tags/babo/</guid>
       <description></description>
     </item>
     <item>
       <title>Retro</title>
-      <link>//localhost:1313/tags/retro/</link>
+      <link>/tags/retro/</link>
       <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      <guid>//localhost:1313/tags/retro/</guid>
+      <guid>/tags/retro/</guid>
       <description></description>
     </item>
   </channel>
