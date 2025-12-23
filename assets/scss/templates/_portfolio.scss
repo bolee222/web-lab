@@ -145,14 +145,14 @@
 
   
 .portfolio-item {
-    padding: 50 !important; /* Remove padding */
+    padding: 10 !important; /* Remove padding */
     margin-bottom: 30px; /* Add space between portfolio items */
 }
   
 .portfolio {
     &-item {
         position: relative;
-        padding: 10px;
+        padding: 0px;
         img {
             width: 100%;
             height: auto;
@@ -312,9 +312,9 @@
 .work-card{
     padding-left: 10px;
     height: 530px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* You can adjust the shadow size and opacity */
+    //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* You can adjust the shadow size and opacity */
     //transition: box-shadow 0.3s ease; /* Smooth transition on hover */
-    border: 0.3px solid #eaeaea; /* Light border for clarity */
+    //border: 0.3px solid #eaeaea; /* Light border for clarity */
     margin-bottom: 10px; /* Add vertical space between cards */
     margin-right: 0px; /* Horizontal spacing between cards */
 }

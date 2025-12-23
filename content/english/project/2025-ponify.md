@@ -10,7 +10,7 @@ teaser: "/projects/2025-ponify/_[opt]top.webp"
 metacontent: "We introduce Ponify, a sonification method that translates a painting’s sense of dynamics into music through pose analysis. Ponify analyzes the limb movements of human figures in paintings and configures musical parameters such as the tempo and density to convey dynamic perceptions."
 
 # Meta-Data
-conference: "IJHCI 2025"
+conference: "International Journal of HCI / 2025"
 con_date: "December 25"
 keywords: "XR Museum / Interactive Docent / UX Insights"
 researcher: "Bokyung Lee, Hanbin Bae"
