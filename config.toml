@@ -296,3 +296,7 @@ weight = 8
 #name = "Contact"
 #URL = "contact"
 #weight = 6
+
+
+[minify]
+  minifyOutput = true
