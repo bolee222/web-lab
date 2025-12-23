@@ -7,7 +7,7 @@ draft: false
 # Project thumb
 category: [ "System", "Innovation" ]
 image: "/projects/2020-Socio_Spatial_Comfort/_[opt]teaser.gif"
-teaser: "/projects/2020-Socio_Spatial_Comfort/_[opt]top.jpg"
+teaser: "/projects/2020-Socio_Spatial_Comfort/_[opt]top.webp"
 metacontent: "We investigated how office interior layouts influence the way we socially experience office buildings. Using the real-world vision data, we propose the concepts of socio-spatial comfort: social buffers, privacy buffers, and varying proxemics to inform a user-centered way of designing human building interactions and architecture."
 
 # Meta-Data

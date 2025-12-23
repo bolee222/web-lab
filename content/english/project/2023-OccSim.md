@@ -6,8 +6,8 @@ draft: false
 
 # Project thumb
 category: [ "System", "Innovation" ]
-image: "/projects/2023-OccSim/_[opt]teaser.jpg"
-teaser: "/projects/2023-OccSim/_[opt]top.jpg"
+image: "/projects/2023-OccSim/_[opt]teaser.webp"
+teaser: "/projects/2023-OccSim/_[opt]top.webp"
 metacontent: "We propose a generative design workflow that integrates a stochastic multi-agent simulation with the intent of helping building designers reduce the risk posed by COVID-19 and future pathogens."
 
 # Meta-Data

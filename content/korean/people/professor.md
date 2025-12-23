@@ -15,7 +15,7 @@ menu:
 ################################# Professor #####################################
 professor:
   enable : true
-  image : "images/bokyung/bokyungLee.jpg"
+  image : "images/bokyung/bokyungLee.webp"
   title : "We strive to be the best and <br> make awesome work."
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius enim, accusantium repellat ex autem numquam iure officiis facere vitae itaque.
 

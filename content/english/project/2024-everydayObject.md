@@ -6,8 +6,8 @@ draft: false
 
 # Project thumb
 category: [ "System", "Innovation", "User Study" ]
-image: "/projects/2024-everydayObjects/_[opt]teaser.jpg"
-teaser: "/projects/2024-everydayObjects/_[opt]top.jpg"
+image: "/projects/2024-everydayObjects/_[opt]teaser.webp"
+teaser: "/projects/2024-everydayObjects/_[opt]top.webp"
 metacontent: "ShapeloreVR is proposed, which utilizes everyday objects and basic primitives in a VR design playground so that non-experts can quickly interact with, merge, modify, and generate desired 3D shapes while brainstorming."
 
 # Meta-Data

@@ -5,8 +5,8 @@ draft: false
 
 # Project thumb
 category: [ "System", "User Study", "XR", "User-Centered Process" ]
-image: "/projects/2025-noviceDesign/_[opt]teaser.jpg"
-teaser: "/projects/2025-noviceDesign/_[opt]top.jpg"
+image: "/projects/2025-noviceDesign/_[opt]teaser.webp"
+teaser: "/projects/2025-noviceDesign/_[opt]top.webp"
 metacontent: "This paper envisions generative Artificial Intelligence (AI) and eXtended Reality (XR) as means to better novices in adopting dual roles as designers and users while personalizing 3D products. A generative design study with 24 participants in their homes examined how novices think and act while designing personal products."
 
 # Meta-Data

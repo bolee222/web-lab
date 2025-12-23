@@ -5,8 +5,8 @@ draft: false
 
 # Project thumb
 category: [ "System", "User Study", "XR", "User-Centered Process" ]
-image: "/projects/2024-xrdocent/_[opt]teaser.jpg"
-teaser: "/projects/2024-xrdocent/_[opt]top.jpg"
+image: "/projects/2024-xrdocent/_[opt]teaser.webp"
+teaser: "/projects/2024-xrdocent/_[opt]top.webp"
 metacontent: "This study investigates how XR interactions enhance museum knowledge delivery by analyzing 737 exhibit commentaries, interviewing curators to identify communication challenges, and proposing XR design strategies that incorporate situated visualization, spatio-temporal interaction, and participatory embodiment for richer visitor experiences."
 
 # Meta-Data

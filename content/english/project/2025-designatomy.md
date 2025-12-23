@@ -5,8 +5,8 @@ draft: false
 
 # Project thumb
 category: [ "System", "User Study", "XR", "User-Centered Process" ]
-image: "/projects/2025-designatomy/_[opt]teaser.jpg"
-teaser: "/projects/2025-designatomy/_[opt]top.jpg"
+image: "/projects/2025-designatomy/_[opt]teaser.webp"
+teaser: "/projects/2025-designatomy/_[opt]top.webp"
 metacontent: "This article introduces Designatomy, a novel approach to guide technology-driven design approaches to tech-novice design students. This method employs a taxonomy framework as a foundational thinking strategy, encouraging students to independently explore and comprehend design features shaped by new technologies."
 
 # Meta-Data

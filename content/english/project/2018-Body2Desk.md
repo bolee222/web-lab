@@ -6,8 +6,8 @@ draft: false
 
 # Project thumb
 category: [ "System", "Innovation" ]
-image: "/projects/2018-Body2Desk/_[opt]teaser.gif"
-teaser: "/projects/2018-Body2Desk/_[opt]top.jpg"
+image: "/projects/2018-Body2Desk/_[opt]teaser.webp"
+teaser: "/projects/2018-Body2Desk/_[opt]top.webp"
 metacontent: "We developed situated and interactive guidelines to assist users in design applications. We applied these guidelines in a Virtual Reality (VR) system that lets users customize their desk and provides real-time feedback and feedforward on pose and design."
 
 # Meta-Data

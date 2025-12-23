@@ -6,8 +6,8 @@ draft: false
 
 # Project thumb
 category: [ "System", "Innovation" ]
-image: "/projects/2019-Skeletonographer/_[opt]teaser.gif"
-teaser: "/projects/2019-Skeletonographer/_[opt]top.jpg"
+image: "/projects/2019-Skeletonographer/_[opt]teaser.webp"
+teaser: "/projects/2019-Skeletonographer/_[opt]top.webp"
 metacontent: "We designed a Skeletonographer is an online tool that supports digital ethnographic studies using anonymous skeletonized representations of human bodies. Users can play back and annotate skeleton data similar to a video analysis tool."
 
 # Meta-Data

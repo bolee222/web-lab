@@ -18,7 +18,7 @@ pricing:
     # pricing table loop
     - name: "Nur Izzatty"
       type: master program
-      image : "images/bokyung/bokyungLee.jpg"
+      image : "images/bokyung/bokyungLee.webp"
       period: "2022-2023"
       content: "Perfect for single freelancers who work by themselves"
       link: "#"
@@ -33,7 +33,7 @@ pricing:
     # pricing table loop
     - name: "Hung Pei-Tzu"
       type: master student
-      image : "images/bokyung/bokyungLee.jpg"
+      image : "images/bokyung/bokyungLee.webp"
       content: "Suitable for small businesses with up to 5 employees"
       link: "#"
       services:
@@ -47,7 +47,7 @@ pricing:
     # pricing table loop
     - name: "Premium"
       type: master student
-      image : "images/bokyung/bokyungLee.jpg"
+      image : "images/bokyung/bokyungLee.webp"
       content: "Suitable for small businesses with up to 5 employees"
       link: "#"
       services:
@@ -61,7 +61,7 @@ pricing:
     # pricing table loop
     - name: "Premium"
       type: master student
-      image : "images/bokyung/bokyungLee.jpg"
+      image : "images/bokyung/bokyungLee.webp"
       content: "Suitable for small businesses with up to 5 employees"
       link: "#"
       services:
