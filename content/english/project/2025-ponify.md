@@ -5,7 +5,7 @@ draft: false
 
 # Project thumb
 category: [ "System", "User Study", "Music Generation", "User-Centered Process" ]
-image: "/projects/2025-ponify/_[opt]teaser.jpg"
+image: "/projects/2025-ponify/_[opt]teaser.webp"
 teaser: "/projects/2025-ponify/_[opt]top.jpg"
 metacontent: "We introduce Ponify, a sonification method that translates a painting’s sense of dynamics into music through pose analysis. Ponify analyzes the limb movements of human figures in paintings and configures musical parameters such as the tempo and density to convey dynamic perceptions."
 
