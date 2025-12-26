@@ -14,24 +14,9 @@ menu:
 pricing:
   enable: true
   pricing_table:
-    # Student table loop
-    - name: "Hung Pei-Tzu (Ruby)"
-      type: master student
-      image : "images/students/Ruby-Hung.jpg"
-      email: "rubypazhung@yonsei.ac.kr"
-      period: 2023 Fall - current
-      content: "Ruby has a considerable interest in **designing AR/VR/XR exhibitions**, mainly focusing on **augmented docent systems**. She explores new AR interactions to deliver insightful knowledge to visitors in galleries or museums."
-      link: "#"
+    
 
-    # Student table loop
-    - name: "Nur Izzatty (Izza)"
-      type: master student
-      email: "izzattyjamal28@gmail.com"
-      period: 2023 Fall - current
-      image : "images/students/Izzatty.jpg"
-      content: "Izzatty is interested in **digital products** and is currently exploring new application scenarios for digital humans. She is researching the role of **augmented humans in traveling platforms**, focusing on photo-taking journeys."
-      link: "#"
-
+    
     # Student table loop
     - name: "Vu, Taho Phuong"
       type: Ph.D student
@@ -42,31 +27,44 @@ pricing:
       link: "#"
     
     # Student table loop
-    - name: "Melissa Aime Luna Marroquin"
-      type: master student
+    - name: "Melissa Luna Marroquin"
+      type: Ph.D student
       email: "melissa_luna00@yonsei.ac.kr"
       period: 2024 Spring - current
       image : "images/students/Luna.jpg"
       content: "Luna is interested in multicisciplinary fields that encompass sustainability, AI, data science, and mixed reality. "
       link: "#"
 
-    # Student table loop
-    - name: "Nuddrinn Sanphanit (Niki)"
-      type: master student
-      email: "nayarida@hotmail.com"
-      image : "images/students/default.jpg"
-      period: 2023 Fall - current
-      content: "Niki is exploring innovative synergies through the integration of scent visualization, a parametric toolkit, and shopping platforms."
-      link: "#"
-
+    
     # Student table loop
     - name: "Woojae Kang"
-      type: Post-graduate Research Scientist
+      type: Ph.D student
       email: 
       image : "images/students/Woojae.jpg"
       period: 2024 Fall - current
-      content: "Woojae finished his undergraduate studies at KAIST and earned a master's degree at the Royal College of Art in England. Woojae is currently interested in designing and analyzing interactive products and platforms through the lens of a designer and scientist."
+      content: "Woojae finished his undergraduate studies at KAIST and earned a master's degree at the Royal College of Art in England. Woojae is currently interested in designing and analyzing interactive products and platforms through the lens of a designer."
       link: "#"
+
+
+    # Student table loop
+    - name: "Karina Wijaya"
+      type: master student
+      image : "images/students/default.jpg"
+      email: "karinawijaya@yonsei.ac.kr"
+      period: 2024 Fall - Current
+      content: "Karina"
+      link: "#"
+
+
+    # Student table loop
+    - name: "Leslie Gawor"
+      type: master student
+      image : "images/students/Leslie.webp"
+      email: "gawor.leslie@yonsei.ac.kr"
+      period: 2025 Spring - Current
+      content: "Leslie started"
+      link: "#"
+
 
     # Student table loop
     - name: "Chanbin Park"
@@ -76,6 +74,7 @@ pricing:
       period: 2025 Winter - current
       content: "Chanbin is investiating context-driven embodied text-editing tool. He develops a motion-enhanced text editing tool to shape more natural and context-aware writing peirnece."
       link: "#"
+
 
     # Student table loop
     - name: "Nirvika Gupta"

@@ -22,6 +22,33 @@ pricing:
       content: "Heeji conducted individual research to investigate potential interaction strategies for work companion robots at home. Her project is published in Archives of Design Research."
       link: "#"
 
+    # Student table loop
+    - name: "Hung Pei-Tzu (Ruby)"
+      type: master student
+      image : "images/students/Ruby-Hung.jpg"
+      email: "rubypazhung@yonsei.ac.kr"
+      period: 2023 Fall - 2025.08
+      content: "Ruby has a considerable interest in **designing AR/VR/XR exhibitions**, mainly focusing on **augmented docent systems**. She explores new AR interactions to deliver insightful knowledge to visitors in galleries or museums."
+      link: "#"
+
+    # Student table loop
+    - name: "Nuddrinn Sanphanit"
+      type: master student
+      email: "nayarida@hotmail.com"
+      period: 2023 Fall - 2026.02
+      content: "Niki is exploring innovative synergies through the integration of scent visualization, a parametric toolkit, and shopping platforms."
+      link: "#"
+
+    # Student table loop
+    - name: "Nur Izzatty (Izza)"
+      type: master student
+      email: "izzattyjamal28@gmail.com"
+      period: 2023 Fall - 2026.02
+      image : "images/students/Izzatty.jpg"
+      content: "Izzatty is interested in **digital products** and is currently exploring new application scenarios for digital humans. She is researching the role of **augmented humans in traveling platforms**, focusing on photo-taking journeys."
+      link: "#"
+
+
 
     # Student table loop
     - name: "Nayoon Kim"
