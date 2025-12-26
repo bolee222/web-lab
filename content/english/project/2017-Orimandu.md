@@ -6,7 +6,7 @@ draft: false
 
 # Project thumb
 category: [ "System", "Innovation" ]
-image: 
+image: "/projects/2017-orimandu/_[opt]teaser.jpg"
 teaser: 
 metacontent: "We extend the research on digital gastronomy by using digital fabrication to create custom tools that
 assist the process of cooking. We present the iterative process of designing the “Ori-mandu” system, and how

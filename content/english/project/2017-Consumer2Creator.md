@@ -6,7 +6,7 @@ draft: false
 
 # Project thumb
 category: [ "User Study" ]
-image: 
+image: "/projects/2017-ConsumerToCreator/_[opt]teaser.jpg"
 teaser: 
 metacontent: "We developed situated and interactive guidelines to assist users in design applications. We applied these guidelines in a Virtual Reality (VR) system that lets users customize their desk and provides real-time feedback and feedforward on pose and design."
 
