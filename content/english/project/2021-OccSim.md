@@ -6,7 +6,7 @@ draft: false
 
 # Project thumb
 category: [ "System", "Innovation" ]
-image: "/projects/2021-OccSim/_[opt]virus-sim.gif"
+image: "/projects/2021-OccSim/_[opt]teaser.webp"
 teaser: "/projects/2021-OccSim/_[opt]top.webp"
 metacontent: "We propose OccSim, a system that automatically generates occupancy behaviours in a 3D model of a building and helps users analyze the potential effect of virus transmission from a large-scale and longitudinal perspective."
 
