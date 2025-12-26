@@ -64,6 +64,15 @@ pricing:
       content: "Interactive System Design, Embodied Interaction, Digital Human, AR/VR Systems."
       link: "#"
 
+    # Student table loop
+    - name: "Hyunju Kim"
+      type: Ph.D Intern (Cornell University)
+      image : "images/students/Hyunju.webp"
+      email: "hk724@cornell.edu"
+      period: 2025 Summer - Current
+      content: "Human-AI Interaction, AI-Enhanced Museum, Knowledge-Trigger"
+      link: "#"
+
 
     # Student table loop
     - name: "Karina Wijaya"
@@ -71,7 +80,7 @@ pricing:
       image : "images/students/Karina.webp"
       email: "karinawijaya@yonsei.ac.kr"
       period: 2024 Fall - Current
-      content: "Karina"
+      content: "Human-AI Interaction, AI-Enhanced Museum, Knowledge-Trigger"
       link: "#"
 
 
@@ -81,7 +90,7 @@ pricing:
       image : "images/students/Leslie.webp"
       email: "gawor.leslie@yonsei.ac.kr"
       period: 2025 Spring - Current
-      content: "Leslie started"
+      content: "Digital Diplomacy, Extended Reality Content, AI, Virtual Embassy, Digital Human Interactions"
       link: "#"
 
 
@@ -89,7 +98,7 @@ pricing:
     - name: "Chanbin Park"
       type: Undergraduate Researcher / UC Berkeley
       email: 
-      image : "images/students/default.jpg"
+      image : "images/students/Chanbin.webp"
       period: 2025 Winter - current
       content: "Chanbin is investiating context-driven embodied text-editing tool. He develops a motion-enhanced text editing tool to shape more natural and context-aware writing peirnece."
       link: "#"
@@ -101,7 +110,7 @@ pricing:
       email: "nirvika23351@iiitd.ac.in"
       image : "images/students/Nirvika.jpg"
       period: 2025 Winter - current
-      content: "Nirvika is investiating a new system that integrates facial recognition-based XR system in class. She designs EmoViz for teachers to enhance more engaging class experiences."
+      content: "Facial recognition, XR System, Education Supports, Learning Environment"
       link: "#"
 
 
@@ -113,9 +122,10 @@ alumni:
     - name: "HeeJi Kim"
       type: individual undergraduate researcher
       period: "2024.01-2024.06"
-      graduation_status: "2024 (Undergraduate)"
+      graduation_status: "2024 (Intern)"
       position: "KAIST Graduates"
       job: "HCI Researcher"
+      email: jolieheejikim@kaist.ac.kr
       content: "Heeji conducted individual research to investigate potential interaction strategies for work companion robots at home. Her project is published in Archives of Design Research."
       link: "#"
 
@@ -141,7 +151,7 @@ alumni:
       link: "#"
 
     # Student table loop
-    - name: "Nur Izzatty"
+    - name: "Izzatty Nur Jamal"
       type: master student
       graduation_status: "2026 (Master)"
       email: "izzattyjamal28@gmail.com"
@@ -152,6 +162,7 @@ alumni:
 
     - name: "Shin Shun Mya Aye"
       type: undergraduate Researcher
+      graduation_status: "2025 (Intern)"
       email: ssmasensan@gmail.com
       image : "images/students/Kathryn.jpg"
       period: 2024 Summer - current
