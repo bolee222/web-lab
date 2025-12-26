@@ -25,40 +25,76 @@
 {{ with .Params.projects}}
 <section class="service-about">
   <div class="container">
-    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 100%; margin-bottom: 30px;">
+    <hr align="left" style="border: solid 0.1px rgb(119, 119, 119); width: 100%; margin-bottom: 30px;">
     <div class="row">
       <div class="col-md-12">
         {{ with .title }}<div class="area-title">{{ . | markdownify }}</div>{{ end }}
         {{ with .list }}<div class="vision-content">{{ . | markdownify }}</div>{{ end }}
       </div>
     </div>
+    <hr align="left" style="border: solid 0.1px rgb(119, 119, 119); width: 100%;  margin-top: 30px; margin-bottom: 15px;">
   </div>
 </section>
 {{ end }}
+
+<!--RESEARCH PILLAR-->
+<div class="container">
+  {{ with .Params.research_pillar }}
+  {{ if .enable }}
+    <section class="service-arrow">
+      <div class="container-fluid">
+        <div class="row">
+          {{ with .title }}<div class="area-title-pillar">{{ . | markdownify }}</div>{{ end }}
+          {{ range .pillar_item }}
+          {{ $c := .color }}
+      <div class="col-md-3 no-float fill
+     {{ if and $c (not (strings.HasPrefix $c "#")) }}bg-{{ $c }}{{ end }}"
+     {{ if and $c (strings.HasPrefix $c "#") }}style="background: {{ $c }};"{{ end }}>
+
+            <div class="block">
+              {{ with .pillar_num }}<div class="pillar-num">{{ . | markdownify }}</div>{{ end }}
+              {{ with .name }}<div class="vision-domain-title">{{ . | markdownify }}</div>{{ end }}
+              {{ with .content }}<div class="vision-des">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+              {{ with .content_kor }}<div class="vision-des">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+   {{ end }}
+   {{ end }}
+</div>
+
+
 
 {{ with .Params.vision_1 }}
 {{ if .enable }}   
     
     <div class="container">
-      <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 100%; margin-bottom: 30px;">
     <div class="row">
-      <div class="col-md-6">
-        {{ with .topic }}<div class="area-title">{{ . | markdownify }}</div>{{ end }}
+      <div class="col-xs-12"> 
         {{ with .direction }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
         {{ with .title }}<div class="direction-title">{{ . | markdownify }}</div>{{ end }}
-    
+      </div>
+        
+      <div class="col-md-4">
         {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+        
+      </div>
+      <div class="col-md-4">
+        {{ with .content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
         {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
       </div>
       {{ with .image -}}
-      <div class="col-md-6">
+      <div class="col-md-4">
         <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
       </div>
       {{- end }}
-      
+    
     </div>
 
-    <hr align="left" style="border: 0.5px rgb(65, 65, 65); border-style: dashed; width: 50%; margin-bottom: 30px;">
+    <hr align="left" style="border: 0.5px rgb(65, 65, 65); border-style: dashed; width: 60%; margin-bottom: 30px;">
   </div> 
   </div>
 </section>
@@ -68,44 +104,97 @@
 
 {{ with .Params.vision_2 }}
 {{ if .enable }}
-<section class="service-about">
-  <div class="container">
+    <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        {{ with .dçirection }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
+      <div class="col-xs-12"> 
+        {{ with .direction }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
         {{ with .title }}<div class="direction-title">{{ . | markdownify }}</div>{{ end }}
-
+      </div>
+        
+      <div class="col-md-4">
         {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+        
+      </div>
+      <div class="col-md-4">
+        {{ with .content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
         {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
       </div>
       {{ with .image -}}
-      <div class="col-md-6">
+      <div class="col-md-4">
         <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
       </div>
       {{- end }}
+    
     </div>
-    <hr align="left" style="border: solid 2px rgb(65, 65, 65); width: 50%; margin-bottom: 80px;">
+
+    <hr align="left" style="border: 0.5px rgb(65, 65, 65); border-style: dashed; width: 60%; margin-bottom: 30px;">
+  </div> 
   </div>
 </section>
 {{ end }}
 {{ end }}
 
 
-{{ with .Params.featured_service }}
+{{ with .Params.vision_3 }}
 {{ if .enable }}
-<section class="service-arrow">
-  <div class="container-fluid">
+    <div class="container">
     <div class="row">
-      {{ range .service_item }}
-      <div class="col-md-4 bg-primary bg-{{ .color }} no-float fill">
-        <div class="block">
-          <i class="{{ .icon }}"></i>
-          {{ with .name }}<div class="vision-domain-title">{{ . | markdownify }}</div>{{ end }}
-          {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-        </div>
+      <div class="col-xs-12"> 
+        {{ with .direction }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
+        {{ with .title }}<div class="direction-title">{{ . | markdownify }}</div>{{ end }}
       </div>
-      {{ end }}
+        
+      <div class="col-md-4">
+        {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+        
+      </div>
+      <div class="col-md-4">
+        {{ with .content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+        {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
+      </div>
+      {{ with .image -}}
+      <div class="col-md-4">
+        <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
+      </div>
+      {{- end }}
+    
     </div>
+
+    <hr align="left" style="border: 0.5px rgb(65, 65, 65); border-style: dashed; width: 60%; margin-bottom: 30px;">
+  </div> 
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ with .Params.vision_4 }}
+{{ if .enable }}
+    <div class="container">
+    <div class="row">
+      <div class="col-xs-12"> 
+        {{ with .direction }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
+        {{ with .title }}<div class="direction-title">{{ . | markdownify }}</div>{{ end }}
+      </div>
+        
+      <div class="col-md-4">
+        {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+        
+      </div>
+      <div class="col-md-4">
+        {{ with .content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+        {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
+      </div>
+      {{ with .image -}}
+      <div class="col-md-4">
+        <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
+      </div>
+      {{- end }}
+    
+    </div>
+
+    <hr align="left" style="border: 0.5px rgb(65, 65, 65); border-style: dashed; width: 60%; margin-bottom: 30px;">
+  </div> 
   </div>
 </section>
 {{ end }}

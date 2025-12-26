@@ -763,14 +763,16 @@ a:link-text-publications {
 .vision-quote{
   width: 90%;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 
 .vision-quote-kor{
   width: 90%;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -782,13 +784,17 @@ a:link-text-publications {
 }
 
 .direction-mini{
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 0px;
+  margin-top: 40px;
   margin-bottom: 0px !important;
   color: black;
 }
 
 .direction-title{
-  font-size: 22px;
+  font-size: 16px;
+  padding-left: 0px;
   margin-bottom: 5px;
   font-weight: 600;
   color: black;
@@ -810,7 +816,16 @@ a:link-text-publications {
 .area-title{
   font-weight:700;
   color: black;
-  font-size: 26px;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.area-title-pillar{
+  font-weight:700;
+  color: black;
+  font-size: 20px;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
@@ -836,15 +851,16 @@ a:link-text-publications {
 
 
 .vision-content{
-  font-size: 17px;
+  font-size: 14px;
   margin-bottom: 20px;
   text-align: justify;
 
   p{
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.5;
+    padding-left: 0px;
     margin-bottom: 10px;
-    padding-right:100px;
+    padding-right:0px;
   }
 
   p strong{
@@ -865,22 +881,23 @@ a:link-text-publications {
   }
 
   li{
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 5px;
     padding-right:100px;
   }
 
   li strong{
     color:rgb(50, 50, 50);
-    background-color: #d6d6d67c !important;
+    //background-color: #d6d6d67c !important;
   }
 }
 
 
 
 .vision-keyword{
-  font-size: 15px;
+  font-size: 14px;
   margin-bottom: 30px;
+  padding-left: 0px;
   //font-style: italic;
 
   a{
@@ -899,8 +916,28 @@ a:link-text-publications {
 }
 
 .vision-domain-title{
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.vision-des{
+  p{
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: black !important;
+  }
+  
+}
+
+.pillar-num{
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: underline;
+
 }
 
 .tracks {
