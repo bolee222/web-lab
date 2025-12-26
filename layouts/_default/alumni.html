@@ -3,13 +3,13 @@
 
 {{ partial "page-title.html" . }}
 
-{{ with .Params.pricing }}
+{{ with .Params.alumni }}
 {{ if .enable }}
-<section class="pricing-table section bg-gray">
+<section class="alumni-table section">
   <div class="container">
     <div class="row">
       <!-- single pricing table -->
-      {{ range .pricing_table }}
+      {{ range .alumni_table }}
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="pricing-item text-center">
           <div class="price-title">

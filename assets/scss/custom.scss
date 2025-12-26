@@ -190,9 +190,19 @@
     border-radius: 5px; 
 } 
 
+.student-table .row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.student-table .row > [class*="col-"]{
+  display: flex;
+}
+
+
 .student-name{
-    font-family: $poppins-font;
-    font-size: 25px;
+    font-family: $primary-font;
+    font-size: 16px;
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 3px;
@@ -200,18 +210,19 @@
 
 .student-type{
     font-family: $primary-color;
-    font-style: italic;
-    font-size: 16px;
-    font-weight: 500;
+    //font-style: italic;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .student-email{
   font-family: $primary-color;
-  font-style: italic;
+  //font-style: italic;
+  color: $primary-color;
   font-size: 14px;
   font-weight: 400;
-  text-align: center !important;
-  justify-content: center;
+  text-align: left !important;
+  justify-content: left;
 }
 
 .student-period{
@@ -224,18 +235,21 @@
 }
 
 .student-des{
-    margin-top: 20px;
+    margin-top: 14px;
     font-family: $primary-color;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
+    padding-right: 80px;
 }
 
 img.rounded {
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 0%;
     height: 60%;
     width: 60%;
-  }
+    filter:
+      grayscale(20%)
+      contrast(1.05)  }
   
 
 
@@ -485,6 +499,7 @@ img.rounded {
 }
 
 
+
 .publication-text {
   font-size: 16px !important;
         font-weight: 400;
@@ -682,36 +697,54 @@ a:link-text-publications {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
+.people-prof-title{
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.people-title{
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+
 .professor-name{
-  font-weight:800;
-  font-size: 45px;;
+  font-weight:700;
+  font-size: 22px;;
 }
 
 .professor-title{
-  font-weight:600;
-  font-size: 22px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  font-weight:400;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .professor-email{
   font-weight:400;
-  font-size: 17px;
+  font-size: 14px;
   margin-top: 0px;
 }
 
 .professor-website{
   font-weight:600;
-  font-size: 17px;
+  font-size: 14px;
   margin-top: 0px;
   margin-bottom:40px;
 }
 
 .professor-context{
   font-weight:400;
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 0px;
   color: black;
+  p{
+    font-size:14px;
+  }
 }
 
 .vision-teaser{

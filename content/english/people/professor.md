@@ -6,11 +6,11 @@ lastmod: 2021-04-01T00:00:00
 bg_image: "images/headerbg/09.png"
 layout: "professor"
 draft: false
-menu:
-  main:
-    parent: "People"
-    name: "professor"
-    weight: 1
+#menu:
+#  main:
+#    parent: "People"
+#    name: "professor"
+#    weight: 1
 
 ################################# Professor #####################################
 professor:

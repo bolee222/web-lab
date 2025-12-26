@@ -4,17 +4,17 @@ description: "Students who worked in our lab."
 bg_image: "images/headerbg/09.png"
 layout: "alumni"
 draft: false
-menu:
-  main:
-    parent: "People"
-    name: "Alumni"
-    weight: 3
+#menu:
+#  main:
+#    parent: "People"
+#    name: "Alumni"
+#    weight: 3
 
 
 ################################ pricing ################################
-pricing:
+alumni:
   enable: true
-  pricing_table:
+  alumni_table:
     # Student
     - name: "HeeJi Kim"
       type: individual undergraduate researcher

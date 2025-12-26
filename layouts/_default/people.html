@@ -1,0 +1,107 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<!-- Professor -->
+{{ with .Params.professor }}
+{{ if .enable }}
+<section class="about section">
+  <div class="container">
+    <div class="people-prof-title">Professor</div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="image-cropper about-img">
+          <img class="img-responsive" src="{{ .image | relURL }}">
+        </div> 
+      </div> 
+      <div class="col-md-8">
+        {{ with .name }}<div class="professor-name">{{ . | markdownify }}</div>{{ end }}
+        {{ with .title }}<div class="professor-title">{{ . | markdownify }}</div>{{ end }}
+        {{ with .emailAcademic }}<div class="professor-email">{{ . | markdownify }}</div>{{ end }}
+        {{ with .emailGoogle }}<div class="professor-email">{{ . | markdownify }}</div>{{ end }}
+        {{ with .personalSite }}<div class="professor-website">{{ . | markdownify }}</div>{{ end }}
+        {{ with .content }}<div class="professor-context">{{ . | markdownify }}</div>{{ end }}
+        {{ with .button }}
+        {{ if .enable }}
+        <a href="{{ .link | relURL }}" class="btn btn-small mt-20">{{ .label }}</a>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Students -->
+{{ with .Params.pricing }}
+{{ if .enable }}
+<section class="student-table section">
+  <div class="container">
+    <div class="people-title">Students</div>
+    <div class="row"> 
+      <!-- single pricing table --> 
+      {{ range .student_table }} 
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="pricing-item text-center">
+          <div class="price-title">
+            {{ with .image }}<img src="{{ . | relURL }}" class="rounded">{{ end }}
+            {{ with .name }}<div class="student-name">{{ . | markdownify }}</div>{{ end }}
+            {{ with .type }}<div class="student-type">{{ . | markdownify }}</div>{{ end }}
+            {{ with .email }}<div class="student-email">{{ . }}</div>{{ end }}
+            {{ with .content }}<div class="student-des">{{ . | markdownify }}</div>{{ end }}
+          </div>
+        
+          <!-- <a class="btn btn-small" href="{{ .link | safeURL }}">{{ i18n "buy_now" }}</a> -->
+        </div>
+      </div>
+      {{ end }}
+      <!-- end single pricing table -->
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+
+<!-- ALUMNI -->
+{{ with .Params.alumni }}
+{{ if .enable }}
+<section class="student-table section">
+  <div class="container">
+    <div class="people-title">Alumni</div>
+    <div class="row">
+      <!-- single pricing table -->
+      {{ range .alumni_table }}
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="pricing-item text-center">
+          <div class="price-title">
+            {{ with .name }}<div class="student-name">{{ . | markdownify }}</div>{{ end }}
+            {{ with .graduation_status }}<div class="student-type">{{ . | markdownify }}</div>{{ end }}
+            {{ with .position }}<div class="student-type">{{ . | markdownify }}</div>{{ end }}
+            {{ with .job }}<div class="student-type">{{ . | markdownify }}</div>{{ end }}
+            {{ with .email }}<div class="student-email">{{ . | markdownify }}</div>{{ end }}
+          </div>
+        
+          <!-- <a class="btn btn-small" href="{{ .link | safeURL }}">{{ i18n "buy_now" }}</a> -->
+        </div>
+      </div>
+      {{ end }}
+      <!-- end single pricing table -->
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+
+
+<!-- Call to action -->
+{{ if .Params.cta.enable }}
+{{ partial "cta.html" . }}
+{{ end }}
+<!-- /Call to action -->
+
+{{ end }}
