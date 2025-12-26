@@ -6,7 +6,7 @@ layout: "about"
 draft: false
 menu:
   main:
-    parent: "About Lab"
+    parent: "CXD Lab"
     name: "Research Approach"
     weight: 2
 

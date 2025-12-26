@@ -8,7 +8,7 @@ layout: "faq"
 draft: false
 menu:
   main:
-    parent: "About Lab"
+    parent: "CXD Lab"
     name: "FAQ"
     weight: 3
 ---

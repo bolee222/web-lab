@@ -6,7 +6,7 @@ layout: "vision"
 draft: false
 menu:
   main:
-    parent: "About Lab"
+    parent: "CXD Lab"
     name: "Research Areas"
     weight: 1
 

@@ -6,7 +6,7 @@ layout: "branding"
 draft: false
 menu:
   main:
-    parent: "About Lab"
+    parent: "CXD Lab"
     name: "Branding"
     weight: 4
 

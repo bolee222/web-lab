@@ -259,7 +259,7 @@ weight = 8
 # NOTE: Leaf entries linking to content should be defined in the content file's respective front matter.
 #[[languages.kr.menu.main]]
 #hasChildren = true
-#name = "About Lab"
+#name = "CXD Lab"
 #weight = 2
 
 #[[languages.kr.menu.main]]

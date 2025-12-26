@@ -6,7 +6,7 @@ layout: "applicants"
 draft: false
 menu:
   main:
-    parent: "About Lab"
+    parent: "CXD Lab"
     name: "Join Us"
     weight: 3
 

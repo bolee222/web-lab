@@ -27,7 +27,11 @@ header {
           padding: 10px 26px;
           font-size: 15px;
         }
-        a :hover {
+        a:hover {
+          color: #913afb !important;
+        }
+        a.current,
+        a.current-parent {
           color: #913afb !important;
         }
       }
