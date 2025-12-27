@@ -70,7 +70,7 @@
 
 .service-arrow {
   .block {
-    padding: 40px 30px;
+    padding: 20px 30px !important;
 
     i {
       font-size: 40px;
@@ -82,6 +82,16 @@
   }
 }
 
+.service-arrow .container-fluid{
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.service-arrow .row{
+  margin-bottom: 0 !important;
+}
+
+.service-arrow .pillar-col:last-child { margin-bottom: 0 !important; }
 
 
 

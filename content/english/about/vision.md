@@ -19,7 +19,7 @@ overview:
 
 ########################### ONGOING PROJECTS #############################
 projects: 
-  title: "On-going Projects."
+  title: "On-going Projects"
   list: "
     1. Development of **Creator-enhanced Interactions for Convergence Museums through XR & AI** Technology (NRF)
 
@@ -43,28 +43,28 @@ research_pillar:
       pillar_num: "Pillar I"
       icon: "ion-erlenmeyer-flask"
       color: "#f0f0f0ff"
-      content: "How can generative AI and XR interactions expand human creativity and new way of thinking?"
-      content_kor: "인간의 창의성 및 사고 활동을 확장할 수 있는 생성형 AI 및 XR 기반 시스템을 탐색"
+      content: "Transforming human thinking and expanding cognitive limits through the convergence of Generative AI and immersive XR."
+      content_kor: "생성형 AI와 몰입형 XR의 융합을 통해, 단순 도구를 넘어 인간의 사고방식과 인지적 한계를 근본적으로 확장합니다."
       bg_img: "images/vision/domain-creativity.jpg"
 
     # featured service item loop
-    - name: "Intelligent Virtual Humans"
+    - name: "Virtual Humans"
       pillar_num: "Pillar II"
       icon: "ion-leaf"
       color: "#e9ecf0ff"
-      content: "What would be the possible future of 3D digital humans with visual embodiment and intelligence?"
-      content_kor: "시각적 실체(Embodiment)와 지능을 가진 3D 가상 인간의 상호작용 및 가능성을 탐색"
+      content: "Developing intelligent digital humans that perform complex roles and coexist with us across physical and virtual realities."
+      content_kor: "단순 대화를 넘어, 현실과 가상을 오가며 복합적 역할을 수행하고 우리와 공존하는 지능형 디지털 휴먼을 연구합니다."
 
     # featured service item loop
     - name: "Spatial Interactions"
       pillar_num: "Pillar	III"
       icon: "ion-lightbulb"
       color:  "#e8e8ebff"
-      content: "We design seamless interfaces that intelligently bridge the physical world with digital information."
-      content_kor: "물리적 공간과 디지털 정보를 지능적으로 연결하는 심리스 (Seamless)한 인터페이스와 공간 경험을 설계."
+      content: "Designing novel paradigms where the physical world becomes an intelligent interface, moving beyond the constraints of 2D screens."
+      content_kor: "2D 스크린의 한계를 넘어, 물리적 세상 그 자체가 지능형 인터페이스가 되는 차세대 공간 컴퓨팅 패러다임을 설계합니다."
           
     # featured service item loop
-    - name: "Convergence Experience & Media" 
+    - name: "Convergence UX" 
       pillar_num: "Pillar	IV"
       icon: "ion-lightbulb"
       color:  "#dedfe1ff"
@@ -79,7 +79,7 @@ vision_1:
   title: " Empowering Creativity"
   direction: "Pillar I"
   content: "The fusion of Generative AI and Extended Reality (XR) is opening an entirely new dimension for human expression. While AI acts as the engine of imagination, XR serves as the infinite canvas where these ideas come to life in 3D space. Beyond creating simple support tools, we explore how this convergence fundamentally transforms human thinking and creative processes. We investigate the cognitive expansion that occurs when ideating in immersive environments, defining a new paradigm where humans and technology collaborate to reach levels of imagination previously unattainable by cognition alone."
-  content_kor: "생성형 AI와 확장현실(XR)의 결합은 인간의 표현력을 완전히 새로운 차원으로 이끌고 있습니다. AI가 상상력의 엔진이라면, XR은 그 상상이 3차원 공간에서 생생하게 살아 움직이게 하는 무한한 캔버스입니다. 우리는 이 기술적 융합이 단순한 도구를 넘어, 인간의 사고방식 (Thinking Process)과 창의성을 어떻게 근본적으로 확장시키는지 그 가능성을 탐구합니다. 평면적 사고에서 벗어나 공간 속에서 AI와 함께 사유하며 인지적 한계를 넓혀가는 이 연구는, 미래 인류의 새로운 창의적 패러다임을 정의하는 혁신적인 도전이 될 것입니다."
+  content_kor: "생성형 AI와 확장현실(XR)의 결합은 인간의 표현력을 완전히 새로운 차원으로 이끌고 있습니다. AI가 상상력의 엔진이라면, XR은 그 상상이 3차원 공간에서 생생하게 살아 움직이게 하는 무한한 캔버스입니다. CXD Lab은 생성형 AI와 XR의 융합이 단순한 도구를 넘어 인간의 사고방식(Thinking Process)과 창의적 프로세스를 어떻게 근본적으로 혁신하고 인지적 한계를 확장시키는지 탐구합니다."
   image: "images/vision/vision-main_1.png"
   keywords: "**Keywords**:  Generative AI, Co-creation, Creativity Support Tools"
 
@@ -89,22 +89,22 @@ vision_2:
   title: "Intelligent Virtual Humans"
   direction: "Pillar II"
   content: "Digital humans are not merely conversational AI; they are visual entities capable of intelligently performing diverse roles in place of a physical body. We envision a future where these intelligent beings not only coexist and communicate with us in our daily physical reality but also autonomously execute complex new roles within virtual environments. Our research goes beyond visual fidelity to explore innovative service models where digital humans act as versatile agents. We aim to propose novel interaction paradigms for intelligent digital humans, defining how humans can meaningfully collaborate with these embodied intelligences in both physical and virtual worlds."
-  content_kor: "디지털 휴먼은 단순한 대화형 AI가 아니라, 실제 물리적 신체를 대신하여 다양한 역할을 지능적으로 수행할 수 있는 시각적 실체 (Visual Embodiment)입니다. 우리는 이들이 현실의 일상 공간에서 인간과 공존하며 소통하는 미래뿐만 아니라, 무한한 가상 환경 속에서도 스스로 판단하고 행동하며 새로운 사회적 가치를 창출하는 것에 주목합니다. 본 연구는 단순한 외형 구현을 넘어, 디지털 휴먼이 인간을 돕거나 대체하여 제공할 수 있는 혁신적인 서비스 모델을 발굴하고, 이에 최적화된 지능형 디지털 휴먼과의 새로운 인터랙션 (Interaction) 방식을 제안합니다."
+  content_kor: "CXD Lab은 디지털 휴먼을 단순한 대화 상대를 넘어, 물리적 신체를 대신해 복합적인 역할을 지능적으로 수행하며 현실과 가상에서 인간과 공존하는 새로운 사회적 실체로 정의합니다. 우리는 이들이 현실의 일상 공간에서 인간과 공존하며 소통하는 미래뿐만 아니라, 무한한 가상 환경 속에서도 스스로 판단하고 행동하며 새로운 사회적 가치를 창출하는 것에 주목합니다. 본 연구는 단순한 외형 구현을 넘어, 디지털 휴먼이 인간을 돕거나 대체하여 제공할 수 있는 혁신적인 서비스 모델을 발굴하고, 이에 최적화된 지능형 디지털 휴먼과의 새로운 인터랙션 (Interaction) 방식을 제안합니다."
   image: "images/vision/vision-main_2.png"
   keywords: "**Keywords**: Digital Persona, Digital Human Interaction, Embodied Interaction"
 
-########################### Vision 4 #############################
+########################### Vision 3 #############################
 vision_3:
   enable: true
   title: "Spatial Interaction"
   direction: "Pillar III"
-  content: "Digital humans are not merely conversational AI; they are visual entities capable of intelligently performing diverse roles in place of a physical body. We envision a future where these intelligent beings not only coexist and communicate with us in our daily physical reality but also autonomously execute complex new roles within virtual environments. Our research goes beyond visual fidelity to explore innovative service models where digital humans act as versatile agents. We aim to propose novel interaction paradigms for intelligent digital humans, defining how humans can meaningfully collaborate with these embodied intelligences in both physical and virtual worlds."
-  content_kor: "디지털 휴먼은 단순한 대화형 AI가 아니라, 실제 물리적 신체를 대신하여 다양한 역할을 지능적으로 수행할 수 있는 시각적 실체 (Visual Embodiment)입니다. 우리는 이들이 현실의 일상 공간에서 인간과 공존하며 소통하는 미래뿐만 아니라, 무한한 가상 환경 속에서도 스스로 판단하고 행동하며 새로운 사회적 가치를 창출하는 것에 주목합니다. 본 연구는 단순한 외형 구현을 넘어, 디지털 휴먼이 인간을 돕거나 대체하여 제공할 수 있는 혁신적인 서비스 모델을 발굴하고, 이에 최적화된 지능형 디지털 휴먼과의 새로운 인터랙션 (Interaction) 방식을 제안합니다."
+  content: "We design novel interaction paradigms where the physical world itself becomes an intelligent interface, moving beyond the constraints of 2D screens to seamlessly interlock human actions with digital information in 3D space."
+  content_kor: "CXD Lab은 2D 스크린의 한계를 벗어나, 물리적 세상 그 자체가 지능형 인터페이스가 되어 인간의 행동과 디지털 정보가 3차원 공간에서 빈틈없이 맞물리는 새로운 인터랙션 패러다임을 설계합니다."
   image: "images/vision/vision-main_2.png"
   keywords: "**Keywords**: Spatial Computing, Tangible Interface, Phygital"
 
 
-########################### Vision 3 #############################
+########################### Vision 4 #############################
 
 vision_4:
   enable: true

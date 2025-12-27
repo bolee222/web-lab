@@ -41,27 +41,28 @@
 <div class="container">
   {{ with .Params.research_pillar }}
   {{ if .enable }}
-    <section class="service-arrow">
-      <div class="container-fluid">
-        <div class="row">
-          {{ with .title }}<div class="area-title-pillar">{{ . | markdownify }}</div>{{ end }}
-          {{ range .pillar_item }}
-          {{ $c := .color }}
-      <div class="col-md-3 no-float fill
-     {{ if and $c (not (strings.HasPrefix $c "#")) }}bg-{{ $c }}{{ end }}"
-     {{ if and $c (strings.HasPrefix $c "#") }}style="background: {{ $c }};"{{ end }}>
+    <section class="service-arrow" style="padding:0 !important; margin:0 !important;">
+  <div class="container-fluid" style="padding:0 !important; margin:0 !important;">
+    <div class="row" style="margin:0 !important;">
+      <div class="col-xs-12">
+        {{ with .title }}<div class="area-title-pillar">{{ . | markdownify }}</div>{{ end }}
+      </div>
 
-            <div class="block">
-              {{ with .pillar_num }}<div class="pillar-num">{{ . | markdownify }}</div>{{ end }}
-              {{ with .name }}<div class="vision-domain-title">{{ . | markdownify }}</div>{{ end }}
-              {{ with .content }}<div class="vision-des">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-              {{ with .content_kor }}<div class="vision-des">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-            </div>
-          </div>
-          {{ end }}
+      {{ range .pillar_item }}
+      {{ $c := .color }}
+      <div class="col-md-3 col-sm-6 col-xs-12 no-float pillar-col">
+        <div class="pillar-card"
+             {{ if and $c (strings.HasPrefix $c "#") }}style="background: {{ $c }};"{{ end }}>
+          {{ with .pillar_num }}<div class="pillar-num">{{ . | markdownify }}</div>{{ end }}
+          {{ with .name }}<div class="vision-domain-title">{{ . | markdownify }}</div>{{ end }}
+          {{ with .content }}<div class="vision-des">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+          {{ with .content_kor }}<div class="vision-des-kor">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
         </div>
       </div>
-    </section>
+      {{ end }}
+    </div>
+  </div>
+</section>
    {{ end }}
    {{ end }}
 </div>
