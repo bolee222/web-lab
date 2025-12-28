@@ -11,6 +11,7 @@ metacontent: "We introduce Ponify, a sonification method that translates a paint
 
 # Meta-Data
 conference: "Society of Design Convergence / 2025"
+conference_full: "Society of Design Convergence (2025)"
 con_date: "December 25"
 keywords: "XR Museum / Interactive Docent / UX Insights"
 researcher: "Nuddrinn Sanphanit, Bokyung Lee"

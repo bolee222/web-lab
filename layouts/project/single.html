@@ -7,12 +7,17 @@
 <section class="portfolio-single-page section-sm">
   <div class="container">
     <div class="row">
+      <div class="col-md-4">
+        {{ with .Params.teaser_top }}
+            <img src="{{ . | absURL }}" style="padding: 0px" alt="" class="img-fluid mb-4 project-single-teaser-img" /> 
+        {{ end }}
+      </div>
+    </div>
+    <div class="row">
       <div class="col-md-12">
         <div class="block">
-          {{ with .Params.teaser }}
-            <img src="{{ . | absURL }}" style="padding: 0px" alt="" class="img-fluid mb-4 project-teaser-image" /> {{ end }}
           <div class="project-page-title">{{ .Title  | markdownify }}</div>
-
+          <div class="project-page-venue">{{ .Params.conference_full  | markdownify }}</div>
           <!--Link Buttons-->
           {{ if .Params.Links }}
           <ul class="btn-link-group list-inline">
@@ -24,7 +29,7 @@
           </ul>
           {{ end }}
         </div>    
-        <hr align="left" style="margin-top: 40px; margin-bottom: 70px; width:100%; height:1px; border:none; background-color:black;">
+        <hr align="left" style="margin-top: 40px; margin-bottom: 40px; width:100%; height:1px; border:none; background-color:black;">
       </div>
 
       
