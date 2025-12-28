@@ -99,7 +99,7 @@
 
 .slider-vision {
     //font-family: $poppins-font;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 300;
     line-height: 1.2;
     margin-bottom: 5px;
@@ -113,7 +113,7 @@
 
 .slider-vision-content3 {
   font-family: $primary-font;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.4;
   margin-top: 50px;
@@ -124,7 +124,7 @@
 
 .slider-vision-content4 {
   font-family: $primary-font;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   margin-top: 20px;
@@ -145,7 +145,7 @@
 .home-title{
     font-weight: 700;
     font-family: $poppins-font;
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 40px;
     color: black;
 }
@@ -153,7 +153,7 @@
 .home-title-ongoing{
   font-weight: 800;
   font-family: $primary-font;
-  font-size: 22px;
+  font-size: 18px;
   margin-bottom: 20px;
   color: black;
 }
@@ -172,10 +172,10 @@
 }
 
 .home-slider-more{
-    font-weight: 600 !important;
+    font-weight: 400 !important;
     color: black;
     font-family: $primary-font;
-    font-size: 16px !important;
+    font-size: 14px !important;
 }
 
 .white-box { 
@@ -285,8 +285,8 @@ img.rounded {
     padding: 6rem 6rem;
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.334);
-    box-shadow: 0 0.75rem 4rem 0 rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.212);
+    box-shadow: 0 0.75rem 4rem 0 rgba(0, 0, 0, 0.066);
     border-radius: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.125);
 
@@ -395,7 +395,7 @@ img.rounded {
   
   @media only screen and (max-width: 1140px) {
     .overlay {
-      padding: 8rem 4rem;
+      padding: 6rem 4rem;
     }
   }
   
@@ -688,11 +688,11 @@ a:link-text-publications {
 }
 
 .btn-learnMore{
-  font-weight: 500;
-  font-size: 16px !important;
+  font-weight: 400;
+  font-size: 13px !important;
   //border-style: dashe
   border-width: 0px important;
-  padding: 10px 15px;
+  padding: 6px 9px;
   margin-right: 15px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
@@ -824,7 +824,7 @@ a:link-text-publications {
 .area-title-pillar{
   font-weight:700;
   color: black;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 30px;
   margin-bottom: 20px;
 }
@@ -897,7 +897,7 @@ a:link-text-publications {
   }
 
   li{
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 5px;
     padding-right:100px;
   }

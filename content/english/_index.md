@@ -18,7 +18,7 @@ banner:
   content1: "**Human-Computer Interaction (HCI) & UX Research**"
   content2: "within the Paradigm of New **Digital-Physical Convergence**"
   content3: "How can we design <b>digital intelligence more seamlessly to our physcial world</b> that we are living in? If you are interested in **designing new XR & AI services** for our better lives, join our lab to shape the future!"    
-  content4: "Convergence Design Lab은 <b>디지털 인텔리전스와 물리적 환경의 경계를 연결하는 사용자 경험(UX)</b>을 탐구하는 연구실입니다. 본 연구실은 '인간-컴퓨터 상호작용(HCI)'과 '인터랙션 디자인' 관점을 바탕으로, 교육, 문화 예술, 창의력 지원 도구, 스마트홈 등  다양한 분야에서의 <b>AI·XR 기술의 가능성과 가치를 탐색하고, 이를 바탕으로 혁신적인 UX 및 시스템 디자인 솔루션을 제안</b>합니다."
+  content4: "CXD Lab은 <b>XR과 AI가 혼재된 서비스가 우리의 삶에 더 자연스럽게 녹아들 수 있도록 사용자 경험 및 인터랙션을 새롭게 디자인</b>하는 연구실입니다. 디지털 인텔리전스가 우리의 물리적 생활 환경에 자연스럽게 녹아들 수 있도록, 우리는 '인간-컴퓨터 상호작용(HCI)'과 '인터랙션 디자인' 관점을 바탕으로, 교육, 문화 예술, 창의력 지원 도구, 스마트홈 등  다양한 분야에서의 <b>AI·XR 인터랙션의 가능성과 가치를 탐색하고, 이를 바탕으로 혁신적인 UX 및 시스템 디자인 솔루션을 제안</b>합니다."
   button:
     enable: false
     label: "&rarr; Discover Our Project"
@@ -59,9 +59,9 @@ about:
   content1: "through **Human-Computer Interaction (HCI) & UX Research**"
   content2: "within the paradigm of **Digital-Physical Convergence** trends."
 
-  content3: "How should we incorporate <b>digital intelligence more seamlessly into our physcial world</b> that we are living in? Our lab designs and evaluates novel interactive systems that could converge digital and physical worlds. We investigates various applications, including content creation, exhibition, creativity support, education, robotics, and smart environment. "    
+  content3: "How should we incorporate <b>digital intelligence more seamlessly into our physcial world</b> that we are living in? CXD Lab explores, designs and evaluates **novel AI·XR interactive UX solutions that could converge digital and physical worlds**. We investigates various applications, including content creation, exhibition, creativity support, education, robotics, and smart environment. "    
   
-  content4: "CXD 연구실은 <b>디지털 인텔리전스와 물리적 환경의 경계를 연결하는 사용자 경험(UX)</b>을 탐구하는 연구실입니다. 본 연구실은 '인간-컴퓨터 상호작용(HCI)'과 '인터랙션 디자인' 관점을 바탕으로, 교육, 문화 예술, 창의력 지원 도구, 스마트홈 등  다양한 분야에서의 <b>AI·XR 기술의 가능성과 가치를 탐색하고, 이를 바탕으로 혁신적인 UX 및 시스템 디자인 솔루션을 제안</b>합니다."
+  content4: "CXD Lab은 <b>XR과 AI가 혼재된 서비스가 우리의 삶에 더 자연스럽게 녹아들 수 있도록 사용자 경험 및 인터랙션을 새롭게 디자인</b>하는 연구실입니다. 디지털 인텔리전스가 우리의 물리적 생활 환경에 자연스럽게 녹아들 수 있도록, 우리는 '인간-컴퓨터 상호작용(HCI)'과 '인터랙션 디자인' 관점을 바탕으로, 교육, 문화 예술, 창의력 지원 도구, 스마트홈 등  다양한 분야에서의 <b>AI·XR 인터랙션의 가능성과 가치를 탐색하고, 이를 바탕으로 혁신적인 UX 및 시스템 디자인 솔루션을 제안</b>합니다."
 
   description: "Welcome to <b>**Convergence Design Lab**—a creative hub dedicated to shaping the future of <u>Digital-Physical Convergence (XR)</u> and <u>Artifical Intelligence (AI)</u></b>!  As cutting-edge technologies such as XR, VR, AR, and AI become integral to our daily lives, our mission is to explore how can we merge these digital intelligency into our everyday lives more _seamlessly_ and _innovatively_.  
 
@@ -84,12 +84,12 @@ about:
 
   button:
     enable: true
-    label: "&rarr; **Research Areas**"
+    label: "&rarr; Research Areas"
     link: "about/vision/"
 
   button2:
     enable: true
-    label: "&rarr; **Research Methods**"
+    label: "&rarr; Research Methods"
     link: "about/approach/"
 
   button3:

@@ -44,9 +44,8 @@
     <section class="service-arrow" style="padding:0 !important; margin:0 !important;">
   <div class="container-fluid" style="padding:0 !important; margin:0 !important;">
     <div class="row" style="margin:0 !important;">
-      <div class="col-xs-12">
         {{ with .title }}<div class="area-title-pillar">{{ . | markdownify }}</div>{{ end }}
-      </div>
+
 
       {{ range .pillar_item }}
       {{ $c := .color }}
