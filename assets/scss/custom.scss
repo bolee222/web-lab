@@ -700,7 +700,7 @@ a:link-text-publications {
 .people-prof-title{
   font-size: 20px;
   font-weight: 600;
-  margin-top: 100px;
+  margin-top: 30px;
   margin-bottom: 60px;
 }
 
@@ -774,6 +774,10 @@ a:link-text-publications {
   font-size: 14px;
   margin-top: 60px;
   margin-bottom: 20px;
+  
+  strong{
+    font-weight: 700;
+  }
 }
 
 .vision-quote-key{
@@ -856,7 +860,7 @@ a:link-text-publications {
 
 .pillar-card{
   border-radius: 10px !important;  /* 카드 느낌 */
-  height: 220px;    /* 카드 높이 통일 원하면 */
+  height: 240px;    /* 카드 높이 통일 원하면 */
   box-shadow: 0 8px 24px rgba(0,0,0,0.06);
   padding-top: 15px; 
   padding-right: 20px;
@@ -897,13 +901,14 @@ a:link-text-publications {
   }
 
   li{
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 5px;
     padding-right:100px;
   }
 
   li strong{
     color:rgb(50, 50, 50);
+    font-weight: 600;
     //background-color: #d6d6d67c !important;
   }
 }

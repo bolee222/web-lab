@@ -120,14 +120,10 @@ cta:
   enable: true
   bg_image: 
   title: "Are you interested in **joining** our lab?"
-  content: "Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
+  content: "Explore more about our research vision, interests, research approaches, and application process. We welcome highly motivated students eager to innovate and shape the future through design and technology."
   button:
     enable: true
-    label: "&rarr; Our Research <b>Areas</b>"
-    link: "about/vision/"
-  button_approach:
-    enable: true
-    label: "&rarr; Our Research Methods"
+    label: "&rarr; Our Research Areas"
     link: "about/vision/"
   button_joinUs:
     enable: true

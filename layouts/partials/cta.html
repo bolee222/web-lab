@@ -12,7 +12,11 @@
           <a class="btn btn-main btn-solid-border" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
           {{ end }}{{ end }}
 
-          {{ with .button }}{{ if .enable }}
+          {{ with .button_joinUs }}{{ if .enable }}
+          <a class="btn btn-main btn-solid-border" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
+          {{ end }}{{ end }}
+
+          {{ with .button_FAQ }}{{ if .enable }}
           <a class="btn btn-main btn-solid-border" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
           {{ end }}{{ end }}
         </div>

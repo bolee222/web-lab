@@ -4,7 +4,7 @@
         .portfolio-menu {
             text-align: left;
             .btn-group {
-                margin-bottom: 40px;
+                margin-bottom: 20px;
                 label {
                     display: inline-block;
                     border: 1px solid $border-color;
@@ -23,7 +23,7 @@
                     &:hover,
                     &.focus,
                     &.active {
-                        background: #4F088D !important;
+                        background: #282828 !important;
                         color: white !important;
                     }
                 }
@@ -155,7 +155,7 @@
         position: relative;
         padding-top: 10px;
         img {
-            width: 90%;
+            width: 100%;
             height: auto;
             //filter: grayscale(50%) opacity(80%);
             //border: 1px solid $darkGray;

@@ -13,7 +13,7 @@ menu:
 overview: 
   vision_eng: "Convergence Design Lab bring together interdisciplinary perspectives, grounded in core expertise in Human-Computer Interaction (HCI) and Interaction Design (UX). Our work recently focuses on understanding and designing novel XR/AI interactions, systems, and applications across a wide range of domains—including education, museums, art & culture, productivity & creativity support tools, smart homes, digital twins, spatial marketing, and more."
 
-  vision_kor: "Convergence Design Lab은 XR과 AI가 혼재된 서비스가 우리의 삶에 더 자연스럽게 녹아들 수 있도록 사용자 경험 및 인터랙션을 새롭게 디자인하는 연구실입니다. 본 연구실은 인간-컴퓨터 상호작용 (HCI)과 인터랙션 디자인 분야를 중심으로, 교육, 문화 예술, 창의력 지원 도구, 스마트홈 등  다양한 분야에서 **XR·AI 기술의 활용 가능성과 가치**를 탐색하고, 이를 바탕으로 **혁신적이고 새로운 UX 및 시스템 디자인 솔루션을 제안**합니다."
+  vision_kor: "Convergence Design Lab은 **XR과 AI가 혼재된 서비스가 우리의 삶에 더 자연스럽게 녹아들 수 있도록 사용자 경험 및 인터랙션을 새롭게 디자인하는 연구실**입니다. 본 연구실은 인간-컴퓨터 상호작용 (HCI)과 인터랙션 디자인 분야를 중심으로, 교육, 문화 예술, 창의력 지원 도구, 스마트홈 등  다양한 분야에서 **XR·AI 기술의 활용 가능성과 가치**를 탐색하고, 이를 바탕으로 **혁신적이고 새로운 UX 및 시스템 디자인 솔루션을 제안**합니다."
 
   keywords: "Keywords: Digital-Physical Convergence, AR/VR/XR, AI Intelligence,  Media Interaction, Digital Human, HCI, UX Research , Interaction Design, User-Centered Design, Design Empowerment"
 

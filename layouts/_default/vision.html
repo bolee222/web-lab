@@ -73,28 +73,35 @@
     
     <div class="container">
     <div class="row">
-      <div class="col-xs-12"> 
+      <div class="col-xs-12">
+        <div class="col-xs-12"> 
         {{ with .direction }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
         {{ with .title }}<div class="direction-title">{{ . | markdownify }}</div>{{ end }}
-      </div>
+        </div>
         
-      <div class="col-md-4">
-        {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-        
-      </div>
-      <div class="col-md-4">
-        {{ with .content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-        {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
-      </div>
+        <div class="col-md-4">
+          {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+        </div>
+        <div class="col-md-4">
+          {{ with .content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+          {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
+        </div>
       {{ with .image -}}
-      <div class="col-md-4">
-        <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
+        <div class="col-md-4">
+          <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
+        </div>
+        <div class="col-xs-12"> 
+        <hr align="left" style="border: 0.5px rgb(65, 65, 65); border-style: dashed; width: 67%; margin-bottom: 0px;">
+        </div>
       </div>
+      
+      
+    </div>  
       {{- end }}
     
-    </div>
+    
 
-    <hr align="left" style="border: 0.5px rgb(65, 65, 65); border-style: dashed; width: 60%; margin-bottom: 30px;">
+    
   </div> 
   </div>
 </section>
@@ -106,10 +113,11 @@
 {{ if .enable }}
     <div class="container">
     <div class="row">
-      <div class="col-xs-12"> 
+      <div class="col-xs-12">
+        <div class="col-xs-12"> 
         {{ with .direction }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
         {{ with .title }}<div class="direction-title">{{ . | markdownify }}</div>{{ end }}
-      </div>
+        </div>
         
       <div class="col-md-4">
         {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
@@ -123,11 +131,14 @@
       <div class="col-md-4">
         <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
       </div>
+      <div class="col-xs-12"> 
+        <hr align="left" style="border: 0.5px rgb(65, 65, 65); border-style: dashed; width: 67%; margin-bottom: 0px;">
+        </div>
+      </div>
       {{- end }}
-    
     </div>
 
-    <hr align="left" style="border: 0.5px rgb(65, 65, 65); border-style: dashed; width: 60%; margin-bottom: 30px;">
+    
   </div> 
   </div>
 </section>
@@ -139,7 +150,8 @@
 {{ if .enable }}
     <div class="container">
     <div class="row">
-      <div class="col-xs-12"> 
+      <div class="col-xs-12">
+        <div class="col-xs-12"> 
         {{ with .direction }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
         {{ with .title }}<div class="direction-title">{{ . | markdownify }}</div>{{ end }}
       </div>
@@ -156,11 +168,14 @@
       <div class="col-md-4">
         <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
       </div>
+      <div class="col-xs-12"> 
+        <hr align="left" style="border: 0.5px rgb(65, 65, 65); border-style: dashed; width: 67%; margin-bottom: 0px;">
+      </div>
+      </div>
+      
       {{- end }}
     
     </div>
-
-    <hr align="left" style="border: 0.5px rgb(65, 65, 65); border-style: dashed; width: 60%; margin-bottom: 30px;">
   </div> 
   </div>
 </section>
@@ -173,7 +188,8 @@
     <div class="container">
     <div class="row">
       <div class="col-xs-12"> 
-        {{ with .direction }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
+        <div class="col-xs-12"> 
+          {{ with .direction }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
         {{ with .title }}<div class="direction-title">{{ . | markdownify }}</div>{{ end }}
       </div>
         
@@ -189,11 +205,13 @@
       <div class="col-md-4">
         <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
       </div>
+      <div class="col-xs-12"> 
+        <hr align="left" style="border: 0.5px rgb(65, 65, 65); border-style: dashed; width: 67%; margin-bottom: 30px;">
+      </div>
+        </div>
       {{- end }}
     
     </div>
-
-    <hr align="left" style="border: 0.5px rgb(65, 65, 65); border-style: dashed; width: 60%; margin-bottom: 30px;">
   </div> 
   </div>
 </section>
