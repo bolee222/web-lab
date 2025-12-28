@@ -18,6 +18,7 @@
         <div class="block">
           <div class="project-page-title">{{ .Title  | markdownify }}</div>
           <div class="project-page-venue">{{ .Params.conference_full  | markdownify }}</div>
+        
           <!--Link Buttons-->
           {{ if .Params.Links }}
           <ul class="btn-link-group list-inline">
@@ -38,6 +39,7 @@
       <div class="col-md-8">
         <div class="project-subtitle">Summary</div>
         <div class="project-single-meta">{{ .Params.summary | markdownify }}</div>
+        
       </div>
       <div class="col-md-4">
         <div class="project-details">

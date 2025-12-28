@@ -21,6 +21,7 @@ tags: ["Extended reality (XR)", "augmented reality (AR)", "exhibition", "situate
 shortkeys: "#XR interaction, XR/AR, situated visualization"
 apa: "Lee, B., & Bae, H. (2025). PONIFY: Pose-Driven Painting Sonification to Enhance Augmented Artwork Perception through Sense of Dynamics. International Journal of Human–Computer Interaction, 1–18."
 
+
 # links
 links:
   - label : "Paper"
@@ -43,3 +44,8 @@ information:
   - label : "Client"
     info : "Jannie Kelonsky"
 ---
+
+
+PONIFY는 회화 속 ‘움직임의 감각(Sense of Dynamics)’을  
+인간 포즈 분석을 통해 음악으로 번역하는  
+AI 기반 멀티센서리 아트 감상 시스템입니다.
