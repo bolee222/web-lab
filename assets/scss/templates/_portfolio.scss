@@ -4,7 +4,7 @@
         .portfolio-menu {
             text-align: left;
             .btn-group {
-                margin-bottom: 20px;
+                margin-bottom: 40px;
                 label {
                     display: inline-block;
                     border: 1px solid $border-color;
@@ -71,14 +71,13 @@
 }
 
 .btn-journal-name-purple {
-    background: rgb(40, 40, 40);
+    background: rgb(49, 49, 49);
     color: white;
     font-family: $primary-font;
-    font-weight: 600;
-    font-size: 15px !important;
-    text-align: center;
+    font-weight: 500;
+    font-size: 13px !important;
+    text-align: left;
     margin-top: 15px;
-    padding: 2px 5px;
     margin-bottom: 0px !important;
 
     border: 0px;
@@ -101,17 +100,20 @@
 }
 
 .portfolio-list-title {
-    font-size: 19px;
+    font-size: 16px;
     font-family: $primary-font;
     font-weight: 600;
     color: black;
-    line-height: 1.3;
-    padding-top: 10px;
+    line-height: 1.2;
+    padding-top: 5px;
+    padding-right: 5%;
+
+    a{
+        color: black;
+    }
 }
 
-.portfolio-list-title a {
-    color: black;
-}
+
 
 .portfolio-list-title a:hover {
     text-decoration: underline;
@@ -119,7 +121,7 @@
 }
 
 .portfolio-list-meta {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     font-family: $primary-font;
     margin-bottom: 10px;
@@ -145,16 +147,15 @@
 
   
 .portfolio-item {
-    padding: 10 !important; /* Remove padding */
     margin-bottom: 30px; /* Add space between portfolio items */
 }
   
 .portfolio {
     &-item {
         position: relative;
-        padding: 0px;
+        padding-top: 10px;
         img {
-            width: 100%;
+            width: 90%;
             height: auto;
             //filter: grayscale(50%) opacity(80%);
             //border: 1px solid $darkGray;
@@ -321,17 +322,16 @@
 }
 
 .work-card{
-    padding-left: 10px;
-    height: 530px;
+    padding-left: 15px;
+    height: 450px;
     //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* You can adjust the shadow size and opacity */
     //transition: box-shadow 0.3s ease; /* Smooth transition on hover */
     //border: 0.3px solid #eaeaea; /* Light border for clarity */
-    margin-bottom: 10px; /* Add vertical space between cards */
-    margin-right: 0px; /* Horizontal spacing between cards */
+    margin-bottom: 20px; /* Add vertical space between cards */
 }
 
 .work-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker and larger shadow on hover */
+    box-shadow: 0 8px 16px rgba(144, 144, 144, 0.2); /* Darker and larger shadow on hover */
   }
 
 
