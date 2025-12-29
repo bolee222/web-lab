@@ -838,6 +838,11 @@ a:link-text-publications {
   color: white;
 }
 
+.pillar-intro-des{
+  font-size: 14px !important;
+  margin-top: 0px;
+}
+
 .vision-title{
   font-weight:700;
   color: black;
@@ -860,7 +865,7 @@ a:link-text-publications {
 
 .pillar-card{
   border-radius: 10px !important;  /* 카드 느낌 */
-  height: 240px;    /* 카드 높이 통일 원하면 */
+  //height: 240px;    /* 카드 높이 통일 원하면 */
   box-shadow: 0 8px 24px rgba(0,0,0,0.06);
   padding-top: 15px; 
   padding-right: 20px;

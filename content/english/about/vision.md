@@ -37,7 +37,8 @@ projects:
 research_pillar:
   enable: true
   title: Research Pillars.
-  pillar_item:
+  intro: CXD Lab conducts research grounded in four main pillars, while remaining open to interdisciplinary and exploratory directions beyond these areas.
+  pillar_item: 
     # featured service item loop
     - name: "Empowering Creativity"
       pillar_num: "Pillar I"
@@ -69,7 +70,7 @@ research_pillar:
       icon: "ion-lightbulb"
       color:  "#dedfe1ff"
       content: "Envisioning next-generation immersive experiences where digital content and physical reality converge."
-      content_kor: "XR 기술을 통해 디지털 콘텐츠와 물리적 현실이 융합된 차세대 메타버스 및 몰입형 미디어 경험을 탐색."
+      content_kor: "XR과 AI의 융합으로 실현 가능한 새로운 가치를 발굴하고, 다양한 분야에 적용할 수 있는 혁신적인 융합 서비스 모델을 탐색합니다."
 
 ########################### Vision 1 ############################
 vision_1:

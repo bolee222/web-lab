@@ -46,6 +46,7 @@
     <div class="row" style="margin:0 !important;">
         {{ with .title }}<div class="area-title-pillar">{{ . | markdownify }}</div>{{ end }}
 
+        {{ with .intro }}<div class="pillar-intro-des">{{ . | markdownify }}</div>{{ end }}
 
       {{ range .pillar_item }}
       {{ $c := .color }}
