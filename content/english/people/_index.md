@@ -106,11 +106,29 @@ pricing:
 
     # Student table loop
     - name: "Nirvika Gupta"
-      type: Undergraduate Intern 
+      type: Undergraduate Researcher 
       email: "nirvika23351@iiitd.ac.in"
       image : "images/students/Nirvika.jpg"
       period: 2025 Winter - current
       content: "Facial recognition, XR System, Education Supports, Learning Environment"
+      link: "#"
+
+    # Student table loop
+    - name: "OlgaOlga Glebova"
+      type: Undergraduate Researcher
+      email: "glebovaola3@icloud.com"
+      image : "images/students/.jpg"
+      period: 2026 Winter - current
+      content: "Generative AI, Visual Story, Visual Media"
+      link: "#"
+
+    # Student table loop
+    - name: "Tonya Dzhen"
+      type: Undergraduate Researcher
+      email: "tonyadzhen@gmail.com"
+      image : "images/students/.jpg"
+      period: 2026 Winter - current
+      content: "Generative AI, Visual Story, Visual Media"
       link: "#"
 
 
