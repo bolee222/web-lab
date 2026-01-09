@@ -109,15 +109,24 @@ pricing:
       type: Undergraduate Researcher 
       email: "nirvika23351@iiitd.ac.in"
       image : "images/students/Nirvika.jpg"
-      period: 2025 Winter - current
+      period: 2024 Winter - current
       content: "Facial recognition, XR System, Education Supports, Learning Environment"
+      link: "#"
+
+    # Student table loop
+    - name: "Seeun Lee"
+      type: Undergraduate Researcher
+      email: "otpdo@yonsei.ac.kr"
+      image : "images/students/Seeun.jpg"
+      period: 2025 Fall - current
+      content: "Virtual Reality, Virtual Agent, Children's Education"
       link: "#"
 
     # Student table loop
     - name: "OlgaOlga Glebova"
       type: Undergraduate Researcher
       email: "glebovaola3@icloud.com"
-      image : "images/students/.jpg"
+      image : "images/students/default.jpg"
       period: 2026 Winter - current
       content: "Generative AI, Visual Story, Visual Media"
       link: "#"
@@ -126,7 +135,7 @@ pricing:
     - name: "Tonya Dzhen"
       type: Undergraduate Researcher
       email: "tonyadzhen@gmail.com"
-      image : "images/students/.jpg"
+      image : "images/students/default.jpg"
       period: 2026 Winter - current
       content: "Generative AI, Visual Story, Visual Media"
       link: "#"
