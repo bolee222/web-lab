@@ -1,5 +1,5 @@
 ---
-title: "DESIGNATOMY"
+title: "DESIGNATOMY Rapid Ideation for Tech-Novice Students"
 title_official: "DESIGNATOMY: Technology-Driven Rapid Ideation Pedagogy for Tech-Novice Design Students"
 date: 2025-01-24
 draft: false

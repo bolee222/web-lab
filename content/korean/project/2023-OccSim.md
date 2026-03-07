@@ -1,5 +1,5 @@
 ---
-title: "Generative OccSim"
+title: "Generative Multi-Agent Design for Future Pathogens"
 title_official: "Generative design for COVID-19 and future pathogens using stochastic multi-agent simulation"
 date: 2023-06-01
 description: "this is meta description"
