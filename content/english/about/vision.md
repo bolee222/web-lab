@@ -58,7 +58,7 @@ research_pillar:
 
     # featured service item loop
     - name: "Spatial Interactions"
-      pillar_num: "Pillar	III"
+      pillar_num: "Pillar III"
       icon: "ion-lightbulb"
       color:  "#e8e8ebff"
       content: "Designing novel paradigms where the physical world becomes an intelligent interface, moving beyond the constraints of 2D screens."
@@ -66,7 +66,7 @@ research_pillar:
           
     # featured service item loop
     - name: "Convergence UX" 
-      pillar_num: "Pillar	IV"
+      pillar_num: "Pillar IV"
       icon: "ion-lightbulb"
       color:  "#dedfe1ff"
       content: "Envisioning next-generation immersive experiences where digital content and physical reality converge."

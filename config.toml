@@ -4,9 +4,11 @@ baseURL = "/"
 title = "Bokyung Lee Lab"
 theme = "airspace-hugo"
 # Number of posts per page in list view
-paginate = "100"
 # Post excerpt length
 summaryLength = "30"
+
+[pagination]
+pagerSize = 100
 # Disabled languages
 disableLanguages = []
 # Short name to enable Disqus comments
