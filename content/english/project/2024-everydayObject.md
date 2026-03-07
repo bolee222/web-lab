@@ -1,5 +1,6 @@
 ---
-title: "Everyday Objects in VR Shape Exploration Tools for Novice Artists - A way to Support Geometry Shaping Process for Non-professionals"
+title: "Everyday Objects in VR"
+title_official: "Everyday Objects in VR Shape Exploration Tools for Novice Artists - A way to Support Geometry Shaping Process for Non-professionals"
 date: 2024-01-25
 description: "this is meta description"
 draft: false

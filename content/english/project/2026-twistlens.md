@@ -1,5 +1,6 @@
 ---
-title: "TwistLens: A Docent-Informed Image Transformation to Create Previews That Prompt Anticipation and Interpretive Experiences Before Museum Visits"
+title: "TwistLens"
+title_official: "TwistLens: A Docent-Informed Image Transformation to Create Previews That Prompt Anticipation and Interpretive Experiences Before Museum Visits"
 date: 2026-02-13
 publishDate: 2026-02-13
 draft: false
@@ -11,7 +12,6 @@ teaser_top: "/projects/2026-twistlens/top.webp"
 metacontent: "We introduce TwistLens, an AI-supported system that transforms artworks into anticipation-preserving previews. Guided by docent descriptions, the system reveals interpretive hints while obscuring the original visuals, encouraging curiosity and active interpretation before the museum visit."
 
 # 상세 상단 메타
-title_official: "TwistLens: A Docent-Informed Image Transformation to Create Previews That Prompt Anticipation and Interpretive Experiences" 
 conference: "CHI / 2026"
 conference_full: "ACM CHI Conference on Human Factors in Computing Systems (2026)"
 researcher: "Thao Phuong Vu, Bokyung Lee"

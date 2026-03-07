@@ -1,5 +1,6 @@
 ---
-title: "Designing a Multi-Agent Occupant Simulation System To Support Facility Planning And Analysis For COVID-19"
+title: "OccSim"
+title_official: "Designing a Multi-Agent Occupant Simulation System To Support Facility Planning And Analysis For COVID-19"
 date: 2021-05-14
 layout: projectSingle
 draft: false

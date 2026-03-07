@@ -1,5 +1,6 @@
 ---
-title: "Socio-Spatial Comfort: Using Vision-based Analysis to Inform User-Centred Human-Building Interactions"
+title: "Socio-Spatial Comfort"
+title_official: "Socio-Spatial Comfort: Using Vision-based Analysis to Inform User-Centred Human-Building Interactions"
 date: 2020-01-05
 layout: projectSingle
 draft: false

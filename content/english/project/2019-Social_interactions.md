@@ -1,5 +1,6 @@
 ---
-title: "An Empirical Study of How Socio-Spatial Formations are influenced by Interior Elements and Displays in an Office Context"
+title: "Social Interactions in Offices"
+title_official: "An Empirical Study of How Socio-Spatial Formations are influenced by Interior Elements and Displays in an Office Context"
 date: 2020-11-05
 layout: projectSingle
 draft: false

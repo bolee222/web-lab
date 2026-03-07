@@ -1,5 +1,6 @@
 ---
-title: "DanXeReflect: Interacting with the Spatio-Temporal Past Movements for Embodied, Reflective Choreographic Collaboration"
+title: "DanXeReflect"
+title_official: "DanXeReflect: Interacting with the Spatio-Temporal Past Movements for Embodied, Reflective Choreographic Collaboration"
 date: 2026-02-13
 publishDate: 2026-02-13
 draft: false

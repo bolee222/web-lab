@@ -1,5 +1,6 @@
 ---
-title: "Exploring the Next Phase of Situated and Interactive Docents for XR Exhibitions: From the Perspective of Knowledge Delivery"
+title: "XR Docent"
+title_official: "Exploring the Next Phase of Situated and Interactive Docents for XR Exhibitions: From the Perspective of Knowledge Delivery"
 date: 2024-12-23
 draft: false
 

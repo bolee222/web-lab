@@ -1,5 +1,6 @@
 ---
-title: "The Effect of Interruption Timings on Autonomous Height-Adjustable Desks that Responds to Task Changes"
+title: "RobotDesk"
+title_official: "The Effect of Interruption Timings on Autonomous Height-Adjustable Desks that Responds to Task Changes"
 date: 2019-05-02
 layout: projectSingle
 draft: false

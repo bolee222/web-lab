@@ -1,5 +1,6 @@
 ---
-title: "Sekeltonographer: Skeleton-based Digital Ethnography Tool"
+title: "Skeletonographer"
+title_official: "Sekeltonographer: Skeleton-based Digital Ethnography Tool"
 date: 2019-11-05
 layout: projectSingle
 draft: false
