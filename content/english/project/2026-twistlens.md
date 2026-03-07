@@ -1,7 +1,7 @@
 ---
 title: "TwistLens: A Docent-Informed Image Transformation to Create Previews That Prompt Anticipation and Interpretive Experiences Before Museum Visits"
 date: 2026-04-13
-publishDate: 2025-04-13
+publishDate: 2025-02-13
 draft: false
 
 # 목록 카드
