@@ -8,7 +8,7 @@ draft: false
 category: [ "System", "Innovation" ]
 image: "/projects/2021-OccSim/_[opt]teaser.webp"
 teaser: "/projects/2021-OccSim/_[opt]top.webp"
-metacontent: "We propose OccSim, a system that automatically generates occupancy behaviours in a 3D model of a building and helps users analyze the potential effect of virus transmission from a large-scale and longitudinal perspective."
+metacontent: "We introduce OccSim, a multi-agent occupant simulation system that models human movement and interactions in buildings. It enables designers to analyze spatial layouts and evaluate potential virus transmission scenarios."
 
 # Meta-Data
 conference: "DIS 2021"

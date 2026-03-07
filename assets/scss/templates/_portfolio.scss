@@ -158,7 +158,7 @@
             width: 100%;
             height: auto;
             //filter: grayscale(50%) opacity(80%);
-            //border: 1px solid $darkGray;
+            border: 1px solid rgba(215, 215, 215, 0.5);
             //padding: 10px;
         }
         //img:hover {
@@ -322,9 +322,9 @@
 }
 
 .work-card{
-    padding-left: 18px;
-    padding-right: 18px;
-    height: 450px;
+    padding-left: 20px;
+    padding-right: 15px;
+    height: 470px;
     //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* You can adjust the shadow size and opacity */
     //transition: box-shadow 0.3s ease; /* Smooth transition on hover */
     //border: 0.3px solid #eaeaea; /* Light border for clarity */

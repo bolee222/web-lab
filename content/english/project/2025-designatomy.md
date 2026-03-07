@@ -7,7 +7,7 @@ draft: false
 category: [ "System", "User Study", "XR", "User-Centered Process" ]
 image: "/projects/2025-designatomy/_[opt]teaser.webp"
 teaser: "/projects/2025-designatomy/_[opt]top.webp"
-metacontent: "This article introduces Designatomy, a novel approach to guide technology-driven design approaches to tech-novice design students. This method employs a taxonomy framework as a foundational thinking strategy, encouraging students to independently explore and comprehend design features shaped by new technologies."
+metacontent: "We introduce Designatomy, a taxonomy-driven design pedagogy that helps technology-novice students generate technology-inspired design ideas. The approach structures technological features into conceptual categories that support systematic ideation."
 
 # Meta-Data
 conference: "International Journal of Design Education / 2025"

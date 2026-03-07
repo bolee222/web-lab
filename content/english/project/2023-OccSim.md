@@ -8,7 +8,7 @@ draft: false
 category: [ "System", "Innovation" ]
 image: "/projects/2023-OccSim/_[opt]teaser.webp"
 teaser: "/projects/2023-OccSim/_[opt]top.webp"
-metacontent: "We propose a generative design workflow that integrates a stochastic multi-agent simulation with the intent of helping building designers reduce the risk posed by COVID-19 and future pathogens."
+metacontent: "We propose a generative design workflow that integrates multi-agent simulation to evaluate infection risks in architectural layouts. The system helps designers explore spatial strategies that reduce pathogen transmission."
 
 # Meta-Data
 conference: "Sustainable Cities and Society 2023"

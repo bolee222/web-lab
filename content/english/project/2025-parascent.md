@@ -7,7 +7,7 @@ draft: false
 category: [ "System", "User Study", "Music Generation", "User-Centered Process" ]
 image: "/projects/2025-parascent/_[opt]teaser.jpg"
 teaser: "/projects/2025-parascent/_[opt]top.jpg"
-metacontent: "We introduce Ponify, a sonification method that translates a painting’s sense of dynamics into music through pose analysis. Ponify analyzes the limb movements of human figures in paintings and configures musical parameters such as the tempo and density to convey dynamic perceptions."
+metacontent: "We introduce ParaScent, a parametric visualization toolkit that translates perfume attributes into motion-based visuals. By mapping scent qualities such as intensity, diffusion, and longevity to animated parameters, the system enables intuitive understanding of fragrances in digital environments."
 
 # Meta-Data
 conference: "Society of Design Convergence / 2025"

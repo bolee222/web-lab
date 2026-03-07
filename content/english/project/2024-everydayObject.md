@@ -8,7 +8,7 @@ draft: false
 category: [ "System", "Innovation", "User Study" ]
 image: "/projects/2024-everydayObjects/_[opt]teaser.webp"
 teaser: "/projects/2024-everydayObjects/_[opt]top.webp"
-metacontent: "ShapeloreVR is proposed, which utilizes everyday objects and basic primitives in a VR design playground so that non-experts can quickly interact with, merge, modify, and generate desired 3D shapes while brainstorming."
+metacontent: "We introduce ShapeloreVR, a VR design playground that helps novice artists explore 3D form creation using everyday objects and primitives. The system supports intuitive experimentation with geometric shapes in immersive environments."
 
 # Meta-Data
 conference: "KDF 2024"

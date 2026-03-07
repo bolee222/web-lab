@@ -8,7 +8,7 @@ category: [ "System", "User Study", "Music Generation", "User-Centered Process" 
 image: "/projects/2025-ponify/_[opt]teaser.webp"
 teaser: "/projects/2025-ponify/workflow.png"
 teaser_top: 
-metacontent: "We introduce Ponify, a sonification method that translates a painting’s sense of dynamics into music through pose analysis. Ponify analyzes the limb movements of human figures in paintings and configures musical parameters such as the tempo and density to convey dynamic perceptions."
+metacontent: "We introduce Ponify, a sonification method that translates the perceived dynamics of paintings into music through pose analysis. By extracting limb movements from human figures in artworks, Ponify maps visual motion cues to musical parameters such as tempo and density."
 
 # Meta-Data
 conference: "International Journal of HCI / 2025"
