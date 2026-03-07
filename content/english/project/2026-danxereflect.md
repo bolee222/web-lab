@@ -1,7 +1,7 @@
 ---
 title: "DanXeReflect: Interacting with the Spatio-Temporal Past Movements for Embodied, Reflective Choreographic Collaboration"
-date: 2026-04-13
-publishDate: 2025-02-13
+date: 2026-02-13
+publishDate: 2026-02-13
 draft: false
 
 # 목록 카드
