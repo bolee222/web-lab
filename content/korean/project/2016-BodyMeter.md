@@ -1,5 +1,5 @@
 ---
-title: "Posing and Acting as Input for Personalizing Furniture"
+title: "Embodied Posing Input for Furniture Personalization UX"
 title_official: "Posing and Acting as Input for Personalizing Furniture"
 date: 2018-06-02
 layout: projectSingle

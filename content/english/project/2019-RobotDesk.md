@@ -1,5 +1,5 @@
 ---
-title: "Autonomous Height-Adjustable Desks for Task Changes"
+title: "Interruption-Aware Autonomous Desk Interaction for Task Flow"
 title_official: "The Effect of Interruption Timings on Autonomous Height-Adjustable Desks that Responds to Task Changes"
 date: 2019-05-02
 layout: projectSingle

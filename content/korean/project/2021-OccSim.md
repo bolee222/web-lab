@@ -1,5 +1,5 @@
 ---
-title: "Multi-Agent Occupant Simulation for COVID-19 Facility Planning"
+title: "Multi-Agent Occupant Simulation for Pandemic-Aware Space UX"
 title_official: "Designing a Multi-Agent Occupant Simulation System To Support Facility Planning And Analysis For COVID-19"
 date: 2021-05-14
 layout: projectSingle

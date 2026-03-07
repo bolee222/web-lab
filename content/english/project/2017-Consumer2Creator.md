@@ -1,5 +1,5 @@
 ---
-title: "Consumer to Creator: How Households Buy Furniture"
+title: "From Consumer to Creator in Furniture Design Workflows"
 title_official: "Consumer to Creator: How Households Buy Furniture to Inform Design and Fabrication Interfaces"
 date: 2017-05-02
 layout: projectSingle

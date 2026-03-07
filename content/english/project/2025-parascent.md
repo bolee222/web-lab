@@ -1,5 +1,5 @@
 ---
-title: "PARASCENT: Motion-Enhanced Visualization of Perfume Attributes"
+title: "PARASCENT: Motion-Coupled Interaction for Perfume Meaning Communication"
 title_official: "PARASCENT: Motion‑Enhanced Parametric Visualization Toolkit to Digitally Communicate Perfume Attributes"
 date: 2025-06-10
 draft: false
