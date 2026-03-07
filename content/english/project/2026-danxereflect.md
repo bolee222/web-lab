@@ -6,9 +6,9 @@ draft: false
 
 # 목록 카드
 category: ["System", "XR", "Embodied Interaction", "User Study"]
-image: "/projects/2026-danxereflect/teaser.webp"
+image: "/projects/2026-danxereflect/_[opt]teaser.webp"
 teaser_top: "/projects/2026-danxereflect/top.webp"
-metacontent: "DanXeReflect transforms rehearsal videos into interactive XR avatars, enabling dancers to reflect on choreography through embodied queries, revisions, and body-anchored annotations."
+metacontent: "We introduce DanXeReflect, an XR system that transforms rehearsal videos into interactive dance studio for embodied and reflective choreography making. The system enables dancers to explore and communicate feedback through pose-based search, embodied revision, and body-anchored annotation."
 
 # 상세 상단 메타
 conference: "CHI / 2026"

@@ -6,9 +6,9 @@ draft: false
 
 # 목록 카드
 category: ["System", "Generative AI", "Museum Experience", "User Study"]
-image: "/projects/2026-twistlens/teaser.webp"
+image: "/projects/2026-twistlens/_[opt]teaser.webp"
 teaser_top: "/projects/2026-twistlens/top.webp"
-metacontent: "TwistLens generates spoiler-minimizing artwork previews by transforming images using docent-informed semantic cues."
+metacontent: "We introduce TwistLens, an AI-supported system that transforms artworks into anticipation-preserving previews. Guided by docent descriptions, the system reveals interpretive hints while obscuring the original visuals, encouraging curiosity and active interpretation before the museum visit."
 
 # 상세 상단 메타
 conference: "CHI / 2026"
