@@ -1,5 +1,5 @@
 ---
-title: "XR Interactive Docents for Museum Knowledge Delivery"
+title: "Interactive XR Docents for Museum Knowledge Delivery"
 title_official: "Exploring the Next Phase of Situated and Interactive Docents for XR Exhibitions: From the Perspective of Knowledge Delivery"
 date: 2024-12-23
 draft: false

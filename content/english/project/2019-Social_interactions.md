@@ -1,5 +1,5 @@
 ---
-title: "Socio-Spatial Formations in Office Interactions"
+title: "Socio-Spatial Formations in Office Collaboration"
 title_official: "An Empirical Study of How Socio-Spatial Formations are influenced by Interior Elements and Displays in an Office Context"
 date: 2020-11-05
 layout: projectSingle

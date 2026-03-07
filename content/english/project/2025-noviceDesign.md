@@ -1,5 +1,5 @@
 ---
-title: "GenAI + XR Interactions in Novice 3D Design"
+title: "GenAI and XR Interactions in Novice 3D Product Design"
 title_official: "User-Centered Investigation of Generative AI and XR Interactions in 3D Product Design Tools"
 date: 2025-01-23
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "PONIFY Pose-Driven Painting Sonification"
+title: "PONIFY: Pose-Driven Painting Sonification for Artwork Perception"
 title_official: "PONIFY: Pose-driven Painting Sonification to Enhance Augmented Artwork Perception through Sense of Dynamics"
 date: 2025-06-10
 draft: false
