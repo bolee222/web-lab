@@ -1,5 +1,5 @@
 ---
-title: "Multi-Agent Occupant Simulation for Pandemic-Aware Space UX"
+title: "OCCSIM: Multi-Agent Occupant Simulation to Support Pandemic-Aware Space Planning"
 title_official: "Designing a Multi-Agent Occupant Simulation System To Support Facility Planning And Analysis For COVID-19"
 date: 2021-05-14
 layout: projectSingle

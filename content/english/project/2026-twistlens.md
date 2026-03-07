@@ -1,5 +1,5 @@
 ---
-title: "TwistLens: Anticipation-Preserving Preview UX for Museum Visits"
+title: "TWISTLENS: AI-assisted Image Transformation for Anticipatory Museum Visits"
 title_official: "TwistLens: A Docent-Informed Image Transformation to Create Previews That Prompt Anticipation and Interpretive Experiences Before Museum Visits"
 date: 2026-02-13
 publishDate: 2026-02-13

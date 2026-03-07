@@ -1,5 +1,5 @@
 ---
-title: "Interactive XR Docent UX for Situated Museum Knowledge Delivery"
+title: Design Implications of Interactive XR Docent for Situated Knowledge Delivery in Museums
 title_official: "Exploring the Next Phase of Situated and Interactive Docents for XR Exhibitions: From the Perspective of Knowledge Delivery"
 date: 2024-12-23
 draft: false

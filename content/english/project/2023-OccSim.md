@@ -1,5 +1,5 @@
 ---
-title: "Generative Multi-Agent Design for Pathogen-Resilient Spaces"
+title: "Generative Multi-Agent Simulation to Design Pathogen-Resilient Spaces"
 title_official: "Generative design for COVID-19 and future pathogens using stochastic multi-agent simulation"
 date: 2023-06-01
 description: "this is meta description"

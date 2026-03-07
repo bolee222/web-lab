@@ -1,5 +1,5 @@
 ---
-title: "DanXeReflect: Reflective Choreography UX with Spatio-Temporal Memory"
+title: "DanXeReflect: Bring Videos into XR Studio for Reflective Choreographic Collaboration"
 title_official: "DanXeReflect: Interacting with the Spatio-Temporal Past Movements for Embodied, Reflective Choreographic Collaboration"
 date: 2026-02-13
 publishDate: 2026-02-13

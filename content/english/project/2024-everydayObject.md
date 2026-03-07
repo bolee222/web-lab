@@ -1,5 +1,5 @@
 ---
-title: "VR Shape Exploration UX with Everyday Objects for Novices"
+title: "Shaplore: Using Everyday Objects in VR Shape Ideation Tools for Novice Artists"
 title_official: "Everyday Objects in VR Shape Exploration Tools for Novice Artists - A way to Support Geometry Shaping Process for Non-professionals"
 date: 2024-01-25
 description: "this is meta description"

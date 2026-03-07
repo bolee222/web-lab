@@ -1,5 +1,5 @@
 ---
-title: "DESIGNATOMY: Tech-Novice Ideation Pedagogy through Structured Feedback"
+title: "DESIGNATOMY: Tech-Driven Rapid Ideation Pedagogy for Tech-Novice Design Students"
 title_official: "DESIGNATOMY: Technology-Driven Rapid Ideation Pedagogy for Tech-Novice Design Students"
 date: 2025-01-24
 draft: false

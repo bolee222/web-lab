@@ -1,5 +1,5 @@
 ---
-title: "GenAI + XR Co-Creation UX in Novice 3D Product Design"
+title: "Design Implications of Generative AI and XR Interactions for 3D Product Design Tools"
 title_official: "User-Centered Investigation of Generative AI and XR Interactions in 3D Product Design Tools"
 date: 2025-01-23
 draft: false
