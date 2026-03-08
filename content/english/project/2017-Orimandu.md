@@ -1,5 +1,5 @@
 ---
-title: "Ori-mandu: Shape-Customization Interaction for Everyday Food"
+title: "ORI-MANDU: Korean Dumpling into Whatever Shape You Want"
 title_official: "Ori-mandu: Korean Dumpling into Whatever Shape You Want"
 date: 2017-05-02
 layout: projectSingle

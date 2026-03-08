@@ -1,6 +1,6 @@
 ---
-title: "Skeletonographer: Vision-Based Ethnography for Activity Understanding"
-title_official: "Sekeltonographer: Skeleton-based Digital Ethnography Tool"
+title: "SKELETONOGRAPHER: Skeleton-based Digital Ethnography Tool"
+title_official: "Skeltonographer: Skeleton-based Digital Ethnography Tool"
 date: 2019-11-05
 layout: projectSingle
 draft: false

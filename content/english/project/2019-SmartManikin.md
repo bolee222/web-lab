@@ -1,5 +1,5 @@
 ---
-title: "SmartManikin: Agentic Virtual Humans for Design Exploration"
+title: "SMARTMANIKIN: Virtual Humans with Agency for Design Tools"
 title_official: "SmartManikin: Virtual Humans with Agency for Design Tools"
 date: 2019-05-05
 layout: projectSingle

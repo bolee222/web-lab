@@ -1,5 +1,5 @@
 ---
-title: "Interactive Body-to-Desk Guidelines for Personal Ergonomics"
+title: "BODY2DESK: Interactive and Situated Guidelines for Personalized Ergonomics"
 title_official: "Interactive and Situated Guidelines to Help Users Design a Personal Desk that Fits Their Bodies"
 date: 2018-06-02
 layout: projectSingle
