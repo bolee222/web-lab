@@ -7,7 +7,7 @@ draft: false
 
 # Project thumb
 #["XR", "AI", "Physical AI", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology", "User-centered Design", "Patent"]
-category: ["XR", "UX", "Digital Twin" , "Convergence", "System", "User Study", user-centered Design"]
+category: ["XR", "UX", "Digital Twin" , "Convergence", "System", "User Study", "User-centered Design"]
 image: "/projects/2024-everydayObjects/_[opt]teaser.webp"
 teaser: "/projects/2024-everydayObjects/_[opt]top.webp"
 metacontent: "We introduce ShapeloreVR, a VR design playground that helps novice artists explore 3D form creation using everyday objects and primitives. The system supports intuitive experimentation with geometric shapes in immersive environments."

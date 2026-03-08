@@ -32,7 +32,7 @@
                                 (dict "label" "Convergence" "aliases" (slice "Convergence"))
                                 (dict "label" "Interaction Design" "aliases" (slice "Interaction Design"))
                                 (dict "label" "Digital Creativity" "aliases" (slice "Digital Creativity"))
-                                (dict "label" "food" "aliases" (slice "food"))
+                                (dict "label" "Food" "aliases" (slice "food" "Food"))
                                 (dict "label" "System" "aliases" (slice "System"))
                                 (dict "label" "Visualization" "aliases" (slice "Visualization"))
                                 (dict "label" "User Study" "aliases" (slice "User Study"))
@@ -49,13 +49,17 @@
                                     {{- $matchedCategory = . -}}
                                   {{- end -}}
                                 {{- end -}}
-                                {{- if ne $matchedCategory "" -}}
-                                  {{- $renderedCategories = $renderedCategories | append $matchedCategory -}}
+                                {{- $shouldRender := or (ne $matchedCategory "") (eq .label "Food") -}}
+                                {{- if $shouldRender -}}
+                                  {{- $filterValue := cond (ne $matchedCategory "") $matchedCategory (index .aliases 0) -}}
+                                  {{- if ne $matchedCategory "" -}}
+                                    {{- $renderedCategories = $renderedCategories | append $matchedCategory -}}
+                                  {{- end -}}
                                   <label class="btn btn-toggle btn-sm btn-primary">
                                     <input
                                       type="radio"
                                       name="shuffle-filter"
-                                      value="{{ $matchedCategory | urlize }}"
+                                      value="{{ $filterValue | urlize }}"
                                     />{{ .label }}
                                   </label>
                                 {{- end -}}
