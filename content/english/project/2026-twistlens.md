@@ -41,6 +41,10 @@ section_rows:
     image: "/projects/2026-twistlens/_[opt]teaser.webp"
     caption: "Original previews often over-reveal artworks, reducing anticipation before museum visits."
 
+  - layout: "image_only"
+    image: "/projects/2026-twistlens/_[opt]teaser.jpg"
+    caption: "Image-only row example inserted between sections on the TwistLens page."
+
   - title: "Twisted Preview Concept"
     body_en: >-
       To address that question, we designed TwistLens as an anticipation-preserving preview system. Instead of presenting the original image directly, TwistLens generates transformed previews that keep meaningful interpretive cues while withholding spoiler-prone details. In this framing, the preview functions less as a direct representation and more as an interpretive prompt. It helps visitors build understanding before the visit while keeping enough uncertainty to preserve curiosity and surprise.
