@@ -10,7 +10,7 @@ type: "Journal_dom"
 # DATE INFO
 date: 2024-01-14T15:40:24+06:00
 publicationDate: 2024.01
-homeYearTag: 
+homeYearTag: 2023
 
 
 exactPeriod: 2023.06.01

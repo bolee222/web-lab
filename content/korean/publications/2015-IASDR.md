@@ -10,7 +10,7 @@ type: "Conference_int"
 # DATE INFO
 date: 2015-06-14T15:40:24+06:00
 publicationDate: 2015.06
-homeYearTag: 
+homeYearTag: 2015
 
 # PAGE PARAMETER
 draft: false

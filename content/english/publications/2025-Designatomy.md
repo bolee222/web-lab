@@ -10,7 +10,7 @@ type: "Journal_int"
 # DATE INFO
 date: 2025-02-15T15:40:24+06:00
 publicationDate: 2025.x
-homeYearTag: 
+homeYearTag: 2025
 
 
 exactPeriod: 202.12.23
