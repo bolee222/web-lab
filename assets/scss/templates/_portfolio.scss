@@ -45,6 +45,17 @@
                     color: white !important;
                 }
             }
+
+
+            .shuffle-filter-option {
+                cursor: grab;
+                user-select: none;
+            }
+
+            .shuffle-filter-option.is-dragging {
+                opacity: 0.6;
+                cursor: grabbing;
+            }
         }
     }
 }

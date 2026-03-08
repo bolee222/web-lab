@@ -21,6 +21,90 @@ $(document).ready(function () {
         myShuffle.filter(input.value);
       }
     });
+
+    var filterGroup = document.querySelector('.project-filter-group');
+    if (filterGroup) {
+      var filterStorageKey = 'project-filter-order';
+      var draggedFilter = null;
+
+      function filterLabels() {
+        return Array.from(filterGroup.querySelectorAll('.shuffle-filter-option'));
+      }
+
+      function saveFilterOrder() {
+        var order = filterLabels().map(function (label) {
+          return label.dataset.filterValue;
+        });
+        window.localStorage.setItem(filterStorageKey, JSON.stringify(order));
+      }
+
+      function restoreFilterOrder() {
+        var savedOrder = window.localStorage.getItem(filterStorageKey);
+        if (!savedOrder) {
+          return;
+        }
+
+        var order;
+        try {
+          order = JSON.parse(savedOrder);
+        } catch (error) {
+          return;
+        }
+
+        var labelsByValue = {};
+        filterLabels().forEach(function (label) {
+          labelsByValue[label.dataset.filterValue] = label;
+        });
+
+        order.forEach(function (value) {
+          var label = labelsByValue[value];
+          if (label) {
+            filterGroup.appendChild(label);
+            delete labelsByValue[value];
+          }
+        });
+
+        Object.keys(labelsByValue).forEach(function (value) {
+          filterGroup.appendChild(labelsByValue[value]);
+        });
+      }
+
+      function bindDragAndDrop(label) {
+        label.addEventListener('dragstart', function (event) {
+          draggedFilter = label;
+          label.classList.add('is-dragging');
+          event.dataTransfer.effectAllowed = 'move';
+        });
+
+        label.addEventListener('dragend', function () {
+          label.classList.remove('is-dragging');
+          draggedFilter = null;
+          saveFilterOrder();
+        });
+
+        label.addEventListener('dragover', function (event) {
+          event.preventDefault();
+          if (!draggedFilter || draggedFilter === label) {
+            return;
+          }
+
+          var rect = label.getBoundingClientRect();
+          var shouldInsertBefore = event.clientX < rect.left + (rect.width / 2);
+          if (shouldInsertBefore) {
+            filterGroup.insertBefore(draggedFilter, label);
+          } else {
+            filterGroup.insertBefore(draggedFilter, label.nextSibling);
+          }
+        });
+
+        label.addEventListener('drop', function (event) {
+          event.preventDefault();
+        });
+      }
+
+      restoreFilterOrder();
+      filterLabels().forEach(bindDragAndDrop);
+    }
   }
 
   $('.portfolio-single-slider').slick({

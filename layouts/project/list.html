@@ -7,8 +7,8 @@
             <div class="col-md-12">
                 <div class="block">
                     <div class="portfolio-menu">
-                        <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
-                            <label class="btn btn-sm btn-primary active">
+                        <div class="btn-group btn-group-toggle justify-content-center project-filter-group" data-toggle="buttons">
+                            <label class="btn btn-sm btn-primary active shuffle-filter-option" draggable="true" data-filter-value="all">
                                 <input
                                   type="radio"
                                   name="shuffle-filter"
@@ -16,7 +16,7 @@
                                   checked="checked"
                                 />{{ i18n "all" }}
                               </label> {{ $categories := slice -}} {{ range .Data.Pages -}} {{ $categories = $categories | append .Params.category -}} {{ end -}} {{ range ( $categories | uniq ) -}}
-                                            <label class="btn btn-toggle btn-sm btn-primary">
+                                            <label class="btn btn-toggle btn-sm btn-primary shuffle-filter-option" draggable="true" data-filter-value="{{ . | urlize }}">
                                 <input
                                   type="radio"
                                   name="shuffle-filter"
