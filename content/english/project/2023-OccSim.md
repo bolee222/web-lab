@@ -7,7 +7,7 @@ draft: false
 
 # Project thumb
 #["XR", "AI", "Physical AI", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology", "User-centered Design", "Patent"]
-category: ["AI", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "Interaction Design", "System", "Visualization", "User Study", "User-centered Design", "Patent"]
+category: [ "AI", "UX", "Embodied Interaction", "Digital Human", "Digital Twin", "Convergence", "Interaction Design", "System", "Visualization", "User Study", "User-centered Design", "Patent" ]
 image: "/projects/2023-OccSim/_[opt]teaser.webp"
 teaser: "/projects/2023-OccSim/_[opt]top.webp"
 metacontent: "We propose a generative design workflow that integrates multi-agent simulation to evaluate infection risks in architectural layouts. The system helps designers explore spatial strategies that reduce pathogen transmission."

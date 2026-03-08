@@ -6,7 +6,7 @@ draft: false
 
 # Project thumb
 #["XR", "AI", "Physical AI", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology", "User-centered Design", "Patent" ]
-category: ["XR", "AI", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "User Study", "Cultural Technology", "User-centered Design"]
+category: [ "XR", "AI", "UX", "Embodied Interaction", "Digital Human", "Digital Twin", "Convergence", "User Study", "Cultural Technology", "User-centered Design" ]
 image: "/projects/2024-xrdocent/_[opt]teaser.jpg"
 teaser: "/projects/2024-xrdocent/_[opt]top.webp"
 metacontent: "We investigate how XR-based interactive docents can enhance knowledge delivery in museum exhibitions. Through large-scale exhibit commentary analysis and curator interviews, we identify interaction strategies for situated museum learning."
