@@ -7,7 +7,7 @@ draft: false
 
 # Project thumb
 #["XR", "AI", "Physical AI", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology", "User-centered Design", "Patent"]
-category: [ "System", "Innovation" ]
+category: [ "XR", "UX", "Embodied Interaction", "Interaction Design", "System", "User Study", "User-centered Design" ]
 image: "/projects/2016-BodyMeter/_[opt]teaser.jpg"
 teaser: "/projects/2016-BodyMeter/_[opt]top.jpg"
 metacontent: "We developed situated and interactive guidelines to assist users in design applications. We applied these guidelines in a Virtual Reality (VR) system that lets users customize their desk and provides real-time feedback and feedforward on pose and design."

@@ -6,7 +6,7 @@ layout: projectSingle
 draft: false
 
 # Project thumb
-category: [ "System", "Innovation" ]
+category: [ "XR", "UX", "Embodied Interaction", "Interaction Design", "System", "User Study", "User-centered Design" ]
 image: "/projects/2018-Body2Desk/_[opt]teaser.gif"
 teaser: "/projects/2018-Body2Desk/_[opt]top.jpg"
 metacontent: "We developed situated and interactive guidelines to assist users in design applications. We applied these guidelines in a Virtual Reality (VR) system that lets users customize their desk and provides real-time feedback and feedforward on pose and design."

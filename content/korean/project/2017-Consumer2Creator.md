@@ -6,7 +6,7 @@ layout: projectSingle
 draft: false
 
 # Project thumb
-category: [ "User Study" ]
+category: [ "UX", "Interaction Design", "Digital Creativity", "User Study", "User-centered Design" ]
 image: 
 teaser: 
 metacontent: "We developed situated and interactive guidelines to assist users in design applications. We applied these guidelines in a Virtual Reality (VR) system that lets users customize their desk and provides real-time feedback and feedforward on pose and design."

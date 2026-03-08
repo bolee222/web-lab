@@ -7,7 +7,7 @@ draft: false
 
 # Project thumb
 #["XR", "AI", "Physical AI", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology", "User-centered Design", "Patent"]
-category: [ "System", "Innovation" ]
+category: [ "UX", "Interaction Design", "Digital Creativity", "food", "System", "Cultural Technology", "User-centered Design" ]
 image: "/projects/2017-orimandu/_[opt]teaser.jpg"
 teaser: 
 metacontent: "We extend the research on digital gastronomy by using digital fabrication to create custom tools that
