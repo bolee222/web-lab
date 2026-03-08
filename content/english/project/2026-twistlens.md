@@ -16,7 +16,7 @@ metacontent: "TwistLens generates transformed artwork previews that communicate 
 conference: "CHI / 2026"
 conference_full: "ACM CHI Conference on Human Factors in Computing Systems (2026)"
 researcher: "Thao Phuong Vu, Bokyung Lee"
-summary: "TwistLens is an AI-supported preview system for museum websites. Instead of showing the original artwork directly, TwistLens transforms selected visual elements based on docent descriptions to preserve anticipation while supporting interpretation. Through co-design and controlled evaluation, we found that twisted previews can increase curiosity, anticipation, surprise at encounter, and active interpretation."
+summary: "TwistLens is an AI-supported preview system for museum websites. Instead of showing original artwork directly, it transforms selected elements using docent descriptions to preserve anticipation while supporting interpretation. Studies show higher curiosity, stronger anticipation, and more active meaning-making."
 
 # 버튼 링크
 links:
@@ -26,148 +26,125 @@ links:
     link: "/papers/2026-TwistLens.pdf"
 ---
 
-## The Preview Dilemma
+## At a Glance
 
-Museum visitors often decide whether to visit an exhibition long before entering the gallery. They browse website materials such as docent descriptions and artwork images.
+> **Goal**: Help visitors understand artworks before a visit **without spoiling discovery**.
 
-This creates a trade-off:
+| What museums currently show | Advantage | Limitation |
+| --- | --- | --- |
+| Docent text | Rich interpretation | Hard to visualize |
+| Original image | Easy to understand | Can spoil anticipation |
 
-- **Text descriptions** support interpretation but are hard to visualize.
-- **Original images** are easy to understand but may spoil discovery.
-
-TwistLens begins from a core question:
-
-> Can we design previews that support interpretation **without revealing the artwork too early**?
+**TwistLens proposal:** do not choose between text *or* image. Instead, provide a **transformed preview**.
 
 ---
 
-## Twisted Previews
+## Why TwistLens
 
-TwistLens introduces **twisted previews**: transformed images that preserve interpretive hints while withholding key spoiler-prone details.
+Before visiting, people usually browse exhibition pages. The dilemma is simple:
 
-Instead of choosing between showing everything or hiding everything, TwistLens explores a third option—**transforming**.
+1. Text-only previews are informative but abstract.
+2. Original images are clear but reveal too much.
 
-Twisted previews are designed to:
+TwistLens asks one design question:
 
-- communicate meaningful cues,
-- trigger curiosity,
-- and preserve anticipation for the in-person encounter.
+> Can a preview provide interpretive cues while keeping the encounter fresh?
 
 ---
 
-## How TwistLens Works
+## Core Concept: Twisted Preview
 
-TwistLens uses a four-stage workflow.
+A **twisted preview** is a transformed artwork image that:
+
+- preserves key meaning,
+- withholds spoiler-sensitive details,
+- stimulates curiosity.
+
+It works as an **interpretive prompt**, not a literal reveal.
+
+---
+
+## System Pipeline (4 Steps)
 
 ### 1) Input
-
-The system takes:
-
-- an artwork image,
-- a docent-style text description.
+- Artwork image
+- Docent-style description
 
 ### 2) Semantic Analysis
-
-The text is analyzed to extract cues relevant to interpretation, including:
-
+Extract interpretive targets from text:
 - objects,
 - style,
 - symbolism,
 - composition.
 
-### 3) Image Segmentation
+### 3) Text-Guided Segmentation
+Locate image regions linked to those targets.
 
-Text-guided segmentation locates image regions corresponding to these cues.
+### 4) Transformation Strategy
+TwistLens applies one strategy per cue:
 
-### 4) Transformation
-
-TwistLens applies one of two strategies:
-
-- **EchoLens**: preserves semantic meaning while changing appearance.
-  - Example: steel armor → stylized steel armor.
-- **DecoyLens**: intentionally replaces the meaning of selected elements.
-  - Example: steel armor → chocolate armor.
-
-These transformed outputs function as **interpretive prompts**, not literal previews.
+- **EchoLens**: keep meaning, alter appearance  
+  *(steel armor → stylized steel armor)*
+- **DecoyLens**: replace selected meaning intentionally  
+  *(steel armor → chocolate armor)*
 
 ---
 
-## Co-Design with Art Enthusiasts
+## Co-Design Findings
 
-To refine transformation strategies, we conducted a co-design study with art enthusiasts.
+We ran a co-design study with art enthusiasts to tune transformation behavior.
 
-Participants reviewed transformed previews before seeing original artworks and reflected on:
-
+Participants evaluated transformed previews on:
 - spoiler prevention,
 - visual comfort,
 - curiosity stimulation.
 
-This process helped identify how transformation style should differ by information type.
+### What worked best
+
+- **Style cues** → EchoLens preferred
+- **Object cues** → DecoyLens preferred
+- **Symbolic cues** → EchoLens preferred
+
+This led to strategy-selection guidelines by information type.
 
 ---
 
-## Key Insights
+## Controlled Evaluation (Museum Scenario)
 
-### Style-focused information → EchoLens works best
+We compared two preview conditions:
 
-Participants preferred previews that preserved stylistic impressions (e.g., brushwork, texture) while altering contextual cues.
+- **Baseline**: original artwork image + docent text
+- **TwistLens**: transformed preview + docent text
 
-### Object-focused information → DecoyLens works best
+After previewing, participants visited virtual exhibitions.
 
-Replacing key objects created puzzle-like gaps that encouraged viewers to ask what the original looked like.
+### Observed effects of TwistLens
 
-### Symbolic meaning → EchoLens works best
-
-For symbolic content, reinterpretation preserved narrative coherence better than direct replacement.
-
-These findings informed practical guidelines for selecting transformation strategies.
-
----
-
-## Evaluation in a Museum Scenario
-
-We conducted a controlled study comparing:
-
-- **Baseline**: original artwork images + docent text,
-- **TwistLens**: transformed previews + docent text.
-
-Participants explored preview materials first, then visited virtual exhibitions.
-
-### Results
-
-TwistLens produced:
-
-- **stronger pre-visit anticipation**,
-- **higher curiosity**,
-- **greater surprise at first encounter**,
-- **more active interpretation** through comparison between preview, imagination, and original artwork.
+- Higher **pre-visit anticipation**
+- Higher **curiosity**
+- Stronger **surprise** at first encounter
+- More **active interpretation** (preview ↔ imagination ↔ original)
 
 ---
 
-## Design Principles for Anticipation-Preserving Media
-
-Based on our findings, we propose four principles:
+## Design Principles
 
 1. **Curated Visibility**  
-   Reveal interpretive anchors while transforming spoiler-sensitive details.
+   Reveal interpretive anchors, transform spoiler-prone details.
 2. **Curiosity Gaps**  
-   Use calibrated distortions to motivate exploration.
+   Use calibrated distortion to trigger exploration.
 3. **Semantic Alternation**  
-   Reinterpret style/symbolic cues rather than simply obscuring them.
+   Reinterpret style/symbolic cues instead of just hiding them.
 4. **Scale-Aware Transformation**  
-   Apply stronger transformations to small yet important visual elements.
+   Apply stronger transformation to small but critical elements.
 
 ---
 
-## Beyond Museums
+## Broader Applications
 
-The same concept can extend to other domains where anticipation matters:
-
-- **Education**: encourage hypothesis-making before full explanation.
-- **Tourism**: communicate atmosphere without revealing exact spots.
-- **Fine Dining**: hint at ingredients while preserving plating surprise.
-
-Across these contexts, previews become tools for **curiosity-driven engagement** rather than full disclosure.
+- **Education**: encourage hypothesis-building before full explanation.
+- **Tourism**: show atmosphere without exposing exact scenes.
+- **Fine Dining**: hint ingredients while preserving plating surprise.
 
 ---
 
