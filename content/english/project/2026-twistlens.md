@@ -17,6 +17,8 @@ conference: "CHI / 2026"
 conference_full: "ACM CHI Conference on Human Factors in Computing Systems (2026)"
 researcher: "Thao Phuong Vu, Bokyung Lee"
 summary: "TwistLens is an AI-supported preview system for museum websites that transforms artwork images using docent descriptions. By preserving interpretive cues while avoiding direct visual spoilers, TwistLens supports understanding, curiosity, and anticipation before museum visits."
+publication: "**TwistLens: A Docent-Informed Image Transformation to Create Previews That Prompt Anticipation and Interpretive Experiences Before Museum Visits**  \nACM CHI 2026"
+acknowledgement: "This research was supported by the National Research Foundation of Korea (NRF)."
 
 # 버튼 링크
 links:
@@ -90,25 +92,4 @@ section_rows:
     image: "/projects/2026-twistlens/_[opt]teaser.jpg"
     caption: "The anticipation-preserving preview concept can scale beyond museum experiences."
 
-  - title: "Project Team"
-    body_en: >-
-      Thao Phuong Vu, Bokyung Lee  
-      Yonsei University, Convergence Design Lab
-    body_kr: >-
-      Thao Phuong Vu, Bokyung Lee  
-      연세대학교 Convergence Design Lab
-
-  - title: "Publication"
-    body_en: >-
-      **TwistLens: A Docent-Informed Image Transformation to Create Previews That Prompt Anticipation and Interpretive Experiences Before Museum Visits**  
-      ACM CHI 2026
-    body_kr: >-
-      **TwistLens: A Docent-Informed Image Transformation to Create Previews That Prompt Anticipation and Interpretive Experiences Before Museum Visits**  
-      ACM CHI 2026
-
-  - title: "Acknowledgement"
-    body_en: >-
-      This research was supported by the National Research Foundation of Korea (NRF).
-    body_kr: >-
-      본 연구는 한국연구재단(NRF)의 지원을 받아 수행되었습니다.
 ---

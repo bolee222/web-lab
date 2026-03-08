@@ -39,8 +39,18 @@
       </div>
       <div class="col-md-4">
         <div class="project-details">
-          <div class="project-subtitle">Researcher</div>
+          <div class="project-subtitle">Project Team</div>
           <div class="project-single-meta">{{ .Params.researcher | markdownify }}</div>
+
+          {{ with .Params.publication }}
+          <div class="project-subtitle project-side-meta-title">Publication</div>
+          <div class="project-single-meta">{{ . | markdownify }}</div>
+          {{ end }}
+
+          {{ with .Params.acknowledgement }}
+          <div class="project-subtitle project-side-meta-title">Acknowledgement</div>
+          <div class="project-single-meta">{{ . | markdownify }}</div>
+          {{ end }}
         </div>
       </div>
     </div>
