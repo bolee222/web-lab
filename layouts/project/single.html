@@ -67,15 +67,15 @@
             <div class="project-section-bilingual">
               <div class="row">
                 <div class="col-sm-6 project-section-lang-col">
-                  <div class="project-section-body">{{ .body_en | default .body | markdownify }}</div>
+                  <div class="project-single-meta project-section-body">{{ .body_en | default .body | markdownify }}</div>
                 </div>
                 <div class="col-sm-6 project-section-lang-col">
-                  <div class="project-section-body">{{ .body_kr | markdownify }}</div>
+                  <div class="project-single-meta project-section-body">{{ .body_kr | markdownify }}</div>
                 </div>
               </div>
             </div>
             {{ else }}
-            <div class="project-section-body">{{ .body | markdownify }}</div>
+            <div class="project-single-meta project-section-body">{{ .body | markdownify }}</div>
             {{ end }}
           </div>
         </div>
