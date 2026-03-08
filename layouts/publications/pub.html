@@ -46,6 +46,24 @@ document.addEventListener("DOMContentLoaded", function() {
     "domestic": ["Conference_dom", "Journal_dom"]
   };
 
+  function updateYearLabels() {
+    const visiblePublications = Array.from(publications).filter(pub => pub.style.display !== "none");
+    const shownYears = new Set();
+
+    visiblePublications.forEach(pub => {
+      const yearElement = pub.querySelector(".publication-year");
+      if (!yearElement) return;
+
+      const year = (yearElement.getAttribute("data-year") || "").trim();
+      if (year && !shownYears.has(year)) {
+        yearElement.textContent = year;
+        shownYears.add(year);
+      } else {
+        yearElement.textContent = "";
+      }
+    });
+  }
+
   tabs.forEach(tab => {
     tab.addEventListener("click", function(event) {
       event.preventDefault();
@@ -67,8 +85,12 @@ document.addEventListener("DOMContentLoaded", function() {
           pub.style.display = "none";
         }
       });
+
+      updateYearLabels();
     });
   });
+
+  updateYearLabels();
 });
 </script>
 
