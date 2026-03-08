@@ -15,14 +15,21 @@
                                   value="all"
                                   checked="checked"
                                 />{{ i18n "all" }}
-                              </label> {{ $categories := slice -}} {{ range .Data.Pages -}} {{ $categories = $categories | append .Params.category -}} {{ end -}} {{ range ( $categories | uniq ) -}}
+                              </label> {{ $categories := slice -}} {{ range .Data.Pages -}} {{ $categories = $categories | append .Params.category -}} {{ end -}} {{ $uniqueCategories := $categories | uniq -}} {{ $preferredOrder := slice "XR UX" "AI UX" "Embodied Interaction" "Digital Twin" "Convergence" "Interaction Design" "System" "User Study" "Cultural Technology" "User-centered Design" -}} {{ range $preferredOrder -}} {{ if in $uniqueCategories . -}}
                                             <label class="btn btn-toggle btn-sm btn-primary">
                                 <input
                                   type="radio"
                                   name="shuffle-filter"
                                   value="{{ . | urlize }}"
                                 />{{ . }}
-                              </label> {{- end }}
+                              </label> {{- end }} {{- end }} {{ range $uniqueCategories -}} {{ if not (in $preferredOrder .) -}}
+                                            <label class="btn btn-toggle btn-sm btn-primary">
+                                <input
+                                  type="radio"
+                                  name="shuffle-filter"
+                                  value="{{ . | urlize }}"
+                                />{{ . }}
+                              </label> {{- end }} {{- end }}
                         </div>
                     </div>
                     <div class="row shuffle-wrapper">
