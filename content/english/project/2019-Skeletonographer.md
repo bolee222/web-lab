@@ -7,7 +7,7 @@ draft: false
 
 # Project thumb
 #["XR", "AI", "Physical AI", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology", "User-centered Design", "Patent"]
-category: [ "System", "Innovation" ]
+category: [ "AI", "Digital Human", "System", "Visualization", "User Study", "User-centered Design" ]
 image: "/projects/2019-Skeletonographer/_[opt]teaser.jpg"
 teaser: "/projects/2019-Skeletonographer/_[opt]top.webp"
 metacontent: "We designed a Skeletonographer is an online tool that supports digital ethnographic studies using anonymous skeletonized representations of human bodies. Users can play back and annotate skeleton data similar to a video analysis tool."

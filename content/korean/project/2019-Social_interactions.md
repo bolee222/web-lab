@@ -6,7 +6,7 @@ layout: projectSingle
 draft: false
 
 # Project thumb
-category: [ "System", "Innovation" ]
+category: [ "UX", "Embodied Interaction", "Digital Twin", "Convergence", "Interaction Design", "System", "Visualization", "User Study", "User-centered Design" ]
 image: "/projects/2019-social_interactions/_[opt]teaser.gif"
 teaser: "/projects/2019-social_interactions/_[opt]top.jpg"
 metacontent: "To better understand how workplace design shapes social interactions, we ran an empirical study in an office context over a two week period. Based on the data, we discuss dynamics of socio-spatial formations and how this knowledge can support social interactions in the domain of space design systems and interactive interiors."

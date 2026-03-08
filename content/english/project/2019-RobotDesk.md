@@ -7,7 +7,7 @@ draft: false
 
 # Project thumb
 #["XR", "AI", "Physical AI", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology", "User-centered Design", "Patent"]
-category: [ "System", "Innovation" ]
+category: [ "Physical AI", "UX", "Interaction Design", "System", "User Study", "User-centered Design" ]
 image: "/projects/2019-RobotDesk/_[opt]teaser.webp"
 teaser: "/projects/2019-RobotDesk/_[opt]top.webp"
 metacontent: "We performed a Wizard of Oz study to find the best timing for changing desk height to minimize interruption and discomfort. The results are in line with prior work on task interruption in graphical user interfaces and show that the table should change height during a task change."

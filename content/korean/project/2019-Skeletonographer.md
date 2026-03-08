@@ -6,7 +6,7 @@ layout: projectSingle
 draft: false
 
 # Project thumb
-category: [ "System", "Innovation" ]
+category: [ "AI", "Digital Human", "System", "Visualization", "User Study", "User-centered Design" ]
 image: "/projects/2019-Skeletonographer/_[opt]teaser.gif"
 teaser: "/projects/2019-Skeletonographer/_[opt]top.jpg"
 metacontent: "We designed a Skeletonographer is an online tool that supports digital ethnographic studies using anonymous skeletonized representations of human bodies. Users can play back and annotate skeleton data similar to a video analysis tool."
