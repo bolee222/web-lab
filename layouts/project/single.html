@@ -51,13 +51,13 @@
       <div class="row project-section-row">
         <div class="col-md-8">
           <div class="project-content project-content-main mt-50">
-            <h2>{{ .title | markdownify }}</h2>
+            <div class="project-subtitle project-section-title">{{ .title | markdownify }}</div>
             <div class="project-section-body">{{ .body | markdownify }}</div>
           </div>
         </div>
         <div class="col-md-4">
           {{ with $section.image }}
-          <aside class="project-reference-panel mt-50">
+          <aside class="project-reference-panel project-reference-panel--section mt-50">
             <div class="project-reference-item">
               <img src="{{ . | absURL }}" alt="{{ $.Title }} reference image" class="img-fluid" />
               {{ with $section.caption }}<div class="project-reference-caption">{{ . | markdownify }}</div>{{ end }}

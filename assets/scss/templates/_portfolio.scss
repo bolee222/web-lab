@@ -362,14 +362,6 @@
 
     p {
         max-width: 100%;
-        line-height: 1.75;
-        margin-bottom: 22px;
-    }
-
-    h2 {
-        margin-top: 0;
-        margin-bottom: 14px;
-        font-size: 34px;
     }
 }
 
@@ -377,7 +369,21 @@
     margin-bottom: 8px;
 }
 
+.project-section-title {
+    margin-bottom: 10px;
+}
+
 .project-section-body {
+    font-weight: 400;
+    color: black;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-right: 70px;
+
+    p {
+        margin-bottom: 14px;
+    }
+
     p:last-child {
         margin-bottom: 0;
     }
@@ -386,6 +392,10 @@
 .project-reference-panel {
     position: sticky;
     top: 110px;
+}
+
+.project-reference-panel--section {
+    padding-top: 28px;
 }
 
 .project-reference-item {
@@ -410,5 +420,13 @@
     .project-reference-panel {
         position: static;
         top: auto;
+    }
+
+    .project-reference-panel--section {
+        padding-top: 0;
+    }
+
+    .project-section-body {
+        padding-right: 0;
     }
 }
