@@ -33,22 +33,41 @@
         <hr align="left" style="margin-top: 40px; margin-bottom: 40px; width:100%; height:1px; border:none; background-color:black;">
       </div>
 
-      
-
-
       <div class="col-md-8">
         <div class="project-subtitle">Summary</div>
         <div class="project-single-meta">{{ .Params.summary | markdownify }}</div>
-        
       </div>
       <div class="col-md-4">
         <div class="project-details">
           <div class="project-subtitle">Researcher</div>
           <div class="project-single-meta">{{ .Params.researcher | markdownify }}</div>
-
         </div>
       </div>
     </div>
+
+    {{ if .Params.section_rows }}
+      {{ range .Params.section_rows }}
+      {{ $section := . }}
+      <div class="row project-section-row">
+        <div class="col-md-8">
+          <div class="project-content project-content-main mt-50">
+            <h2>{{ .title | markdownify }}</h2>
+            <div class="project-section-body">{{ .body | markdownify }}</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          {{ with $section.image }}
+          <aside class="project-reference-panel mt-50">
+            <div class="project-reference-item">
+              <img src="{{ . | absURL }}" alt="{{ $.Title }} reference image" class="img-fluid" />
+              {{ with $section.caption }}<div class="project-reference-caption">{{ . | markdownify }}</div>{{ end }}
+            </div>
+          </aside>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    {{ else }}
     <div class="row project-body-layout">
       <div class="col-md-8">
         <div class="project-content project-content-main mt-50">
@@ -69,6 +88,7 @@
         {{ end }}
       </div>
     </div>
+    {{ end }}
   </div>
 </section>
 

@@ -367,9 +367,19 @@
     }
 
     h2 {
-        margin-top: 36px;
+        margin-top: 0;
         margin-bottom: 14px;
-        font-size: 30px;
+        font-size: 34px;
+    }
+}
+
+.project-section-row {
+    margin-bottom: 8px;
+}
+
+.project-section-body {
+    p:last-child {
+        margin-bottom: 0;
     }
 }
 
