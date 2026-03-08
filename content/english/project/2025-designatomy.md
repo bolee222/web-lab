@@ -5,7 +5,8 @@ date: 2025-01-24
 draft: false
 
 # Project thumb
-category: [ "System", "User Study", "XR", "User-Centered Process" ]
+#["XR", "AI", "Physical AI", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology",  "Marketing", "User-centered Design", "Patent"]
+category: ["Convergence", "Design Education", "User Study"]
 image: "/projects/2025-designatomy/_[opt]teaser.webp"
 teaser: "/projects/2025-designatomy/_[opt]top.webp"
 metacontent: "We introduce Designatomy, a taxonomy-driven design pedagogy that helps technology-novice students generate technology-inspired design ideas. The approach structures technological features into conceptual categories that support systematic ideation."

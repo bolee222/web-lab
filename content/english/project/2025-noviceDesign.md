@@ -5,7 +5,8 @@ date: 2025-01-23
 draft: false
 
 # Project thumb
-category: [ "System", "User Study", "XR", "User-Centered Process" ]
+#["XR", "AI", "Physical AI", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology",  "Marketing", "User-centered Design", "Patent"]
+category: ["XR", "AI", "UX", "Embodied Interaction", "Convergence", "Interaction Design", "User Study", "User-centered Design"]
 image: "/projects/2025-noviceDesign/_[opt]teaser.webp"
 teaser: "/projects/2025-noviceDesign/_[opt]top.webp"
 metacontent: "This paper envisions generative AI and XR as means to better novices in adopting dual roles as designers and users while personalizing 3D products. A generative design study in their homes examined how novices think and act while designing personal products."

@@ -5,7 +5,8 @@ date: 2025-06-10
 draft: false
 
 # Project thumb
-category: [ "System", "User Study", "Music Generation", "User-Centered Process" ]
+#["XR", "AI", "Physical AI", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology", "User-centered Design",  "Marketing", "Patent"]
+category: ["UX", "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology", "User-centered Design",  "Marketing", ]
 image: "/projects/2025-parascent/_[opt]teaser.jpg"
 teaser: "/projects/2025-parascent/_[opt]top.jpg"
 metacontent: "We introduce ParaScent, a parametric visualization toolkit that translates perfume attributes into motion-based visuals. By mapping scent qualities such as intensity, diffusion, and longevity to animated parameters, the system enables intuitive understanding of fragrances in digital environments."

@@ -5,7 +5,8 @@ date: 2025-06-10
 draft: false
 
 # Project thumb
-category: [ "System", "User Study", "Music Generation", "User-Centered Process" ]
+#["XR", "AI", "Physical AI", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology", "User-centered Design", "Patent"]
+category: ["AI", "UX", "Embodied Interaction", "Convergence", "System", "User Study", "Cultural Technology", "User-centered Design", "Patent"]
 image: "/projects/2025-ponify/_[opt]teaser.webp"
 teaser: "/projects/2025-ponify/workflow.png"
 teaser_top: 

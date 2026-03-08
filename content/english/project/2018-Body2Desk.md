@@ -6,6 +6,7 @@ layout: projectSingle
 draft: false
 
 # Project thumb
+#["XR", "AI", "Physical AI", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology", "User-centered Design", "Patent"]
 category: [ "System", "Innovation" ]
 image: "/projects/2018-Body2Desk/_[opt]teaser.webp"
 teaser: "/projects/2018-Body2Desk/_[opt]top.webp"

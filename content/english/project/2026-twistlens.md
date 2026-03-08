@@ -6,7 +6,8 @@ publishDate: 2026-02-13
 draft: false
 
 # 목록 카드
-category: ["System", "AI", "Museum Experience", "User Study"]
+#["XR", "AI", "Physical AI", "UX", "Embodied Interaction", "Digital Human" ,"Digital Twin" , "Convergence", "Interaction Design", "Digital Creativity","System", "Visualization", "User Study", "Cultural Technology",  "User-centered Design", "Marketing", "Patent"]
+category: ["AI", "UX", "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology", "User-centered Design",  "Marketing",  "Patent"]
 image: "/projects/2026-twistlens/_[opt]teaser.webp"
 teaser_top: "/projects/2026-twistlens/top.webp"
 metacontent: "We introduce TwistLens, an AI-supported system that transforms artworks into anticipation-preserving previews. Guided by docent descriptions, the system reveals interpretive hints while obscuring the original visuals, encouraging curiosity and active interpretation before the museum visit."

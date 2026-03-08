@@ -6,7 +6,8 @@ publishDate: 2026-02-13
 draft: false
 
 # 목록 카드
-category: ["System", "XR", "Embodied Interaction", "User Study"]
+#["XR", "AI", "Physical AI", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology",  "User-centered Design", "Marketing", "Patent"]
+category: ["XR", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology", "User-centered Design"]
 image: "/projects/2026-danxereflect/_[opt]teaser.webp"
 teaser_top: "/projects/2026-danxereflect/top.webp"
 metacontent: "We introduce DanXeReflect, an XR system that transforms rehearsal videos into interactive dance studio for embodied and reflective choreography making. The system enables dancers to explore and communicate feedback through pose-based search, embodied revision, and body-anchored annotation."

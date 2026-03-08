@@ -6,6 +6,7 @@ layout: projectSingle
 draft: false
 
 # Project thumb
+#["XR", "AI", "Physical AI", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology", "User-centered Design", "Patent"]
 category: [ "System", "Innovation" ]
 image: "/projects/2017-orimandu/_[opt]teaser.jpg"
 teaser: 

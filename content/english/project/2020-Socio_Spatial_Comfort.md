@@ -6,7 +6,8 @@ layout: projectSingle
 draft: false
 
 # Project thumb
-category: [ "System", "Innovation" ]
+#["XR", "AI", "Physical AI", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology", "User-centered Design", "Patent"]
+category: ["UX", "Embodied Interaction", "Digital Twin" , "Convergence", "Interaction Design", "System", "Visualization", "User Study", "User-centered Design"]
 image: "/projects/2020-Socio_Spatial_Comfort/_[opt]teaser.gif"
 teaser: "/projects/2020-Socio_Spatial_Comfort/_[opt]top.webp"
 metacontent: "We investigated how office interior layouts influence the way we socially experience office buildings. Using the real-world vision data, we propose the concepts of socio-spatial comfort: social buffers, privacy buffers, and varying proxemics to inform a user-centered way of designing human building interactions and architecture."
