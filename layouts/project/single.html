@@ -36,16 +36,17 @@
       <div class="col-md-8">
         <div class="project-subtitle">Summary</div>
         <div class="project-single-meta">{{ .Params.summary | markdownify }}</div>
+
+        {{ $citation := .Params.citation | default .Params.publication }}
+        {{ with $citation }}
+        <div class="project-subtitle project-side-meta-title">Citation</div>
+        <div class="project-single-meta">{{ . | markdownify }}</div>
+        {{ end }}
       </div>
       <div class="col-md-4">
         <div class="project-details">
           <div class="project-subtitle">Project Team</div>
           <div class="project-single-meta">{{ .Params.researcher | markdownify }}</div>
-
-          {{ with .Params.publication }}
-          <div class="project-subtitle project-side-meta-title">Publication</div>
-          <div class="project-single-meta">{{ . | markdownify }}</div>
-          {{ end }}
 
           {{ with .Params.acknowledgement }}
           <div class="project-subtitle project-side-meta-title">Acknowledgement</div>
