@@ -22,16 +22,16 @@
                               {{- end -}}
                               {{- $uniqueCategories := $categories | uniq -}}
                               {{- $orderedFilters := slice
-                                (dict "aliases" (slice "XR UX" "XR"))
-                                (dict "aliases" (slice "AI UX" "AI"))
-                                (dict "aliases" (slice "Embodied Interaction"))
-                                (dict "aliases" (slice "Digital Twin"))
-                                (dict "aliases" (slice "Convergence"))
-                                (dict "aliases" (slice "Interaction Design"))
-                                (dict "aliases" (slice "System"))
-                                (dict "aliases" (slice "User Study"))
-                                (dict "aliases" (slice "Cultural Technology"))
-                                (dict "aliases" (slice "User-centered Design" "User-Centered Process"))
+                                (dict "label" "XR" "aliases" (slice "XR" "XR UX"))
+                                (dict "label" "AI" "aliases" (slice "AI" "AI UX" "AI-UX"))
+                                (dict "label" "Embodied Interaction" "aliases" (slice "Embodied Interaction"))
+                                (dict "label" "Digital Twin" "aliases" (slice "Digital Twin"))
+                                (dict "label" "Convergence" "aliases" (slice "Convergence"))
+                                (dict "label" "Interaction Design" "aliases" (slice "Interaction Design"))
+                                (dict "label" "System" "aliases" (slice "System"))
+                                (dict "label" "User Study" "aliases" (slice "User Study"))
+                                (dict "label" "Cultural Technology" "aliases" (slice "Cultural Technology"))
+                                (dict "label" "User-centered Design" "aliases" (slice "User-centered Design" "User-Centered Design" "User-Centered Process"))
                               -}}
                               {{- $renderedCategories := slice -}}
                               {{- range $orderedFilters -}}
@@ -48,7 +48,7 @@
                                       type="radio"
                                       name="shuffle-filter"
                                       value="{{ $matchedCategory | urlize }}"
-                                    />{{ $matchedCategory }}
+                                    />{{ .label }}
                                   </label>
                                 {{- end -}}
                               {{- end -}}
