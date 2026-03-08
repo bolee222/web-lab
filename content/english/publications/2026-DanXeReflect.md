@@ -8,7 +8,7 @@ Journal: "**Proceedings of the 2026 CHI Conference on Human Factors in Computing
 type: "Conference_sci"
 
 # DATE INFO
-date: 2026-04-13T00:00:00+09:00
+date: 2025-12-31T00:00:00+09:00
 publicationDate: 2026.04
 homeYearTag: 2026
 
