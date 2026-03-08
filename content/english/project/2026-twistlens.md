@@ -16,7 +16,7 @@ metacontent: "TwistLens generates transformed artwork previews that communicate 
 conference: "CHI / 2026"
 conference_full: "ACM CHI Conference on Human Factors in Computing Systems (2026)"
 researcher: "Thao Phuong Vu, Bokyung Lee"
-summary: "TwistLens is an AI-supported preview system for museum websites. Instead of showing original artwork directly, it transforms selected elements using docent descriptions to preserve anticipation while supporting interpretation. Studies show higher curiosity, stronger anticipation, and more active meaning-making."
+summary: "TwistLens is an AI-supported preview system for museum websites that transforms artwork images using docent descriptions. By preserving interpretive cues while avoiding direct visual spoilers, TwistLens supports understanding, curiosity, and anticipation before museum visits."
 
 # 버튼 링크
 links:
@@ -26,133 +26,24 @@ links:
     link: "/papers/2026-TwistLens.pdf"
 ---
 
-## At a Glance
+Museum visitors often decide whether to visit an exhibition long before entering the gallery. In practice, this decision is shaped by website previews, which usually include docent-style descriptions and artwork images. Yet these two formats create a recurring trade-off. Text descriptions can offer rich interpretation but are often difficult to visualize without a concrete visual anchor, while original images are immediately understandable but may reveal too much and reduce the sense of discovery during the actual visit. TwistLens started from this tension and asked a simple question: can a preview still help interpretation without revealing the artwork too early?
 
-> **Goal**: Help visitors understand artworks before a visit **without spoiling discovery**.
+To address this question, we designed TwistLens as an anticipation-preserving preview system. Instead of presenting the original artwork directly, TwistLens generates transformed previews that keep meaningful interpretive cues while withholding spoiler-prone visual details. In this way, the preview is not a literal representation of the artwork but an interpretive prompt that supports understanding and curiosity at the same time. This framing guided the design of two complementary transformation strategies. EchoLens preserves semantic meaning while altering appearance, so visitors can still grasp what an element represents without seeing the exact original form. DecoyLens intentionally replaces selected meanings for specific elements, creating a coherent but unexpected visual substitution that encourages viewers to ask what the original might actually look like.
 
-| What museums currently show | Advantage | Limitation |
-| --- | --- | --- |
-| Docent text | Rich interpretation | Hard to visualize |
-| Original image | Easy to understand | Can spoil anticipation |
+The system pipeline follows four stages. First, TwistLens receives an artwork image and a docent-style description as input. Second, it analyzes the description to identify interpretive targets such as object-level cues, stylistic information, symbolic elements, and compositional structure. Third, it uses text-guided segmentation to locate corresponding regions in the image. Finally, it applies either EchoLens or DecoyLens to selected regions depending on design intent and information type. The resulting output preserves enough meaning to support pre-visit interpretation while maintaining uncertainty around exact visual details, which is essential for anticipation.
 
-**TwistLens proposal:** do not choose between text *or* image. Instead, provide a **transformed preview**.
+To refine these transformations, we conducted a co-design study with art enthusiasts. Participants reviewed transformed previews before seeing original artworks and reflected on whether each transformation prevented spoilers, remained visually comfortable, and stimulated curiosity. The study showed that transformation preference depended on information type. For style-focused and symbolic cues, participants generally preferred EchoLens because it retained narrative coherence and artistic character while still distancing the preview from the original. For object-focused cues, participants often preferred DecoyLens because targeted replacements created productive curiosity gaps and motivated closer attention.
 
----
+We then evaluated TwistLens in a controlled museum scenario by comparing two preview conditions: a baseline condition with original artwork images plus docent text, and a TwistLens condition with transformed previews plus docent text. Participants explored preview materials first and then visited virtual exhibitions. Compared with the baseline, TwistLens increased pre-visit anticipation, raised curiosity, and produced stronger surprise when participants encountered original artworks. It also encouraged more active interpretation, as visitors tended to compare the transformed preview, their own mental reconstruction, and the final original work rather than consuming information passively.
 
-## Why TwistLens
+From these findings, we draw four design implications for anticipation-preserving media. First, curated visibility is more effective than complete hiding: previews should reveal interpretive anchors while transforming spoiler-sensitive details. Second, curiosity can be intentionally designed through calibrated information gaps. Third, for style and symbolic meaning, semantic reinterpretation is often preferable to blunt obfuscation. Fourth, transformation intensity should be scale-aware, since small but meaningful elements may require stronger visual intervention to become noticeable in previews.
 
-Before visiting, people usually browse exhibition pages. The dilemma is simple:
-
-1. Text-only previews are informative but abstract.
-2. Original images are clear but reveal too much.
-
-TwistLens asks one design question:
-
-> Can a preview provide interpretive cues while keeping the encounter fresh?
-
----
-
-## Core Concept: Twisted Preview
-
-A **twisted preview** is a transformed artwork image that:
-
-- preserves key meaning,
-- withholds spoiler-sensitive details,
-- stimulates curiosity.
-
-It works as an **interpretive prompt**, not a literal reveal.
-
----
-
-## System Pipeline (4 Steps)
-
-### 1) Input
-- Artwork image
-- Docent-style description
-
-### 2) Semantic Analysis
-Extract interpretive targets from text:
-- objects,
-- style,
-- symbolism,
-- composition.
-
-### 3) Text-Guided Segmentation
-Locate image regions linked to those targets.
-
-### 4) Transformation Strategy
-TwistLens applies one strategy per cue:
-
-- **EchoLens**: keep meaning, alter appearance  
-  *(steel armor → stylized steel armor)*
-- **DecoyLens**: replace selected meaning intentionally  
-  *(steel armor → chocolate armor)*
-
----
-
-## Co-Design Findings
-
-We ran a co-design study with art enthusiasts to tune transformation behavior.
-
-Participants evaluated transformed previews on:
-- spoiler prevention,
-- visual comfort,
-- curiosity stimulation.
-
-### What worked best
-
-- **Style cues** → EchoLens preferred
-- **Object cues** → DecoyLens preferred
-- **Symbolic cues** → EchoLens preferred
-
-This led to strategy-selection guidelines by information type.
-
----
-
-## Controlled Evaluation (Museum Scenario)
-
-We compared two preview conditions:
-
-- **Baseline**: original artwork image + docent text
-- **TwistLens**: transformed preview + docent text
-
-After previewing, participants visited virtual exhibitions.
-
-### Observed effects of TwistLens
-
-- Higher **pre-visit anticipation**
-- Higher **curiosity**
-- Stronger **surprise** at first encounter
-- More **active interpretation** (preview ↔ imagination ↔ original)
-
----
-
-## Design Principles
-
-1. **Curated Visibility**  
-   Reveal interpretive anchors, transform spoiler-prone details.
-2. **Curiosity Gaps**  
-   Use calibrated distortion to trigger exploration.
-3. **Semantic Alternation**  
-   Reinterpret style/symbolic cues instead of just hiding them.
-4. **Scale-Aware Transformation**  
-   Apply stronger transformation to small but critical elements.
-
----
-
-## Broader Applications
-
-- **Education**: encourage hypothesis-building before full explanation.
-- **Tourism**: show atmosphere without exposing exact scenes.
-- **Fine Dining**: hint ingredients while preserving plating surprise.
-
----
+Although TwistLens was developed for museum experiences, the same idea can be applied to other domains where pre-exposure risks reducing discovery. Educational materials could use transformed previews to promote hypothesis-building before full explanation. Tourism platforms could communicate atmosphere without disclosing exact scenes too early. Fine dining services could hint ingredients and concept while preserving surprise in final plating. Across these contexts, anticipation-preserving previews can function as a design strategy that balances understanding with curiosity instead of forcing a binary choice between full reveal and full concealment.
 
 ## Project Team
 
-- Thao Phuong Vu
-- Bokyung Lee  
-  Yonsei University, Convergence Design Lab
+Thao Phuong Vu, Bokyung Lee  
+Yonsei University, Convergence Design Lab
 
 ## Publication
 
