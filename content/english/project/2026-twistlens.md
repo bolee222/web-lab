@@ -27,6 +27,12 @@ links:
   - label: "PDF"
     link: "/papers/2026-TwistLens.pdf"
 
+# To embed videos at the bottom-left (col-8), add:
+# video_embeds:
+#   - url: "https://www.youtube.com/watch?v=VIDEO_ID"
+#     title: "Optional iframe title"
+#     caption: "Optional caption"
+
 section_rows:
   # To add an image-only row between sections, use:
   # - layout: "image_only"

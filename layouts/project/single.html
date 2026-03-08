@@ -130,6 +130,38 @@
       </div>
     </div>
     {{ end }}
+
+    {{ with .Params.video_embeds }}
+    <div class="row project-video-row">
+      <div class="col-md-8">
+        <div class="project-content mt-50">
+          {{ range . }}
+          {{ $rawURL := .url }}
+          {{ $embedURL := $rawURL }}
+          {{ if in $rawURL "youtube.com/watch?v=" }}
+            {{ $embedURL = replaceRE "^https?://(www\\.)?youtube\\.com/watch\\?v=([^&]+).*$" "https://www.youtube.com/embed/$2" $rawURL }}
+          {{ else if in $rawURL "youtu.be/" }}
+            {{ $embedURL = replaceRE "^https?://youtu\\.be/([^?&]+).*$" "https://www.youtube.com/embed/$1" $rawURL }}
+          {{ end }}
+
+          <div class="project-video-embed-wrap">
+            <iframe
+              src="{{ $embedURL | safeURL }}"
+              title="{{ .title | default "Project video" }}"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
+          {{ with .caption }}
+          <div class="project-reference-caption">{{ . | markdownify }}</div>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+    {{ end }}
   </div>
 </section>
 
