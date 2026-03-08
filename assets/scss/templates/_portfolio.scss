@@ -376,11 +376,13 @@
 .project-section-row--image-only {
     .project-content {
         margin-top: 40px;
+        padding-right: 0;
     }
 }
 
 .project-image-only-wrap {
-    max-width: 980px;
+    max-width: none;
+    padding-right: 0;
 }
 
 .project-image-only {
@@ -391,7 +393,7 @@
 }
 
 .project-image-only-caption {
-    max-width: 980px;
+    max-width: none;
 }
 
 .project-section-title {
