@@ -81,7 +81,7 @@ section_rows:
     image: 
     caption: "Pipeline overview: input, semantic analysis, segmentation, and transformation."
 
-  - title: "Evaluation Study in an Actual Museum-Visit Scenario"
+  - title: "Evaluation Study in-the-wild"
     body_en: >-
       We then conducted an evaluation study to examine how TwistLens influences museum experiences. Participants explored two types of previews: a baseline version with original images and a TwistLens version with transformed previews. After viewing the previews, they visited the exhibition and reported their experiences. The results showed that TwistLens increased anticipation and curiosity before the visit. It also helped preserve surprise when participants encountered the original artworks.
     body_kr: >-
