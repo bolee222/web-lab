@@ -24,6 +24,12 @@ links:
     link: "https://doi.org/10.1145/3772318.3790352"
   - label: "PDF"
     link: "/papers/2026-TwistLens.pdf"
+
+content_references:
+  - image: "/projects/2026-twistlens/_[opt]teaser.webp"
+    caption: "TwistLens transformed preview example used for project overview."
+  - image: "/projects/2026-twistlens/_[opt]teaser.jpg"
+    caption: "Reference image for anticipation-preserving visual transformation."
 ---
 
 ## The Preview Dilemma

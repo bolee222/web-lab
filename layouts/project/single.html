@@ -49,11 +49,24 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="project-content mt-50">
+    <div class="row project-body-layout">
+      <div class="col-md-8">
+        <div class="project-content project-content-main mt-50">
           {{ .Content }}
         </div>
+      </div>
+      <div class="col-md-4">
+        {{ if .Params.content_references }}
+        <aside class="project-reference-panel mt-50">
+          <div class="project-subtitle">Related References</div>
+          {{ range .Params.content_references }}
+          <div class="project-reference-item">
+            <img src="{{ .image | absURL }}" alt="{{ .caption | default "TwistLens reference image" }}" class="img-fluid" />
+            {{ with .caption }}<div class="project-reference-caption">{{ . | markdownify }}</div>{{ end }}
+          </div>
+          {{ end }}
+        </aside>
+        {{ end }}
       </div>
     </div>
   </div>

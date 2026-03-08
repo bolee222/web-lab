@@ -356,3 +356,49 @@
 .project-single-meta strong{
     font-weight: 800;
 }
+
+.project-content-main {
+    max-width: 100%;
+
+    p {
+        max-width: 100%;
+        line-height: 1.75;
+        margin-bottom: 22px;
+    }
+
+    h2 {
+        margin-top: 36px;
+        margin-bottom: 14px;
+        font-size: 30px;
+    }
+}
+
+.project-reference-panel {
+    position: sticky;
+    top: 110px;
+}
+
+.project-reference-item {
+    margin-bottom: 22px;
+
+    img {
+        width: 100%;
+        border-radius: 6px;
+        border: 1px solid #e6e6e6;
+        display: block;
+    }
+}
+
+.project-reference-caption {
+    margin-top: 8px;
+    color: #4f4f4f;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+@media (max-width: 991px) {
+    .project-reference-panel {
+        position: static;
+        top: auto;
+    }
+}
