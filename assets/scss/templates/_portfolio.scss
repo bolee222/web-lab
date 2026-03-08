@@ -373,6 +373,27 @@
     margin-bottom: 8px;
 }
 
+.project-section-row--image-only {
+    .project-content {
+        margin-top: 40px;
+    }
+}
+
+.project-image-only-wrap {
+    max-width: 980px;
+}
+
+.project-image-only {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #e6e6e6;
+    display: block;
+}
+
+.project-image-only-caption {
+    max-width: 980px;
+}
+
 .project-section-title {
     margin-bottom: 10px;
 }

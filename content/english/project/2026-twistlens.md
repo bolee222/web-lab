@@ -28,6 +28,11 @@ links:
     link: "/papers/2026-TwistLens.pdf"
 
 section_rows:
+  # To add an image-only row between sections, use:
+  # - layout: "image_only"
+  #   image: "/projects/2026-twistlens/your-image.webp"
+  #   caption: "Optional caption"
+
   - title: "The Preview Dilemma"
     body_en: >-
       Museum visitors often decide whether to visit an exhibition long before entering the gallery, and this decision is largely shaped by website previews. In most cases, those previews consist of docent-style descriptions and original artwork images. The problem is that each format solves one issue while creating another. Text descriptions can provide rich interpretation, but they are often difficult to visualize without a concrete visual anchor. Original images are easy to understand at a glance, but they may reveal too much and weaken the eventual sense of discovery. TwistLens started from this tension and asked whether a preview could still support interpretation without exposing the artwork too early.
