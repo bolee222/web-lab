@@ -91,15 +91,15 @@ section_rows:
 
   - title: "Design Implications"
     body_en: >-
-      Based on our findings, we propose design principles for anticipation-preserving media. First, selective visibility can be more effective than complete concealment, as showing some interpretive cues helps viewers stay oriented while maintaining anticipation. Second, curiosity can be designed through controlled information gaps rather than random distortions. Third, when presenting stylistic or symbolic information, semantic reinterpretation works better than simply hiding the content. Finally, scale-aware transformation is important, since small but key elements may require stronger visual changes in previews to remain noticeable.
+      Based on our findings, we propose design principles for anticipation-preserving media using AI image transformation. First, selective visibility can be more effective than complete concealment, since showing a few interpretive cues helps viewers stay oriented. Second, curiosity can be designed through controlled information gaps rather than random distortions. Third, for stylistic or symbolic information, semantic reinterpretation works better than simple concealment. Finally, scale-aware transformation is important, as small key elements may need stronger visual changes.
     body_kr: >-
-      연구 결과를 바탕으로 우리는 AI image transformation테크닉이 anticipation-preserving 미디어에 활용될 수 있는 디자인 원칙을 제안한다. 첫째, 완전히 숨기는 방식보다 선별적 가시화가 더 효과적일 수 있으며, 일부 해석 단서를 보여주는 것이 관람객이 맥락을 이해하면서도 기대감을 유지하도록 돕는다. 둘째, 호기심은 무작위 왜곡이 아니라 조절된 정보 공백을 통해 설계될 수 있다. 셋째, 스타일이나 상징과 같은 정보는 단순히 가리는 것보다 의미 재해석 방식이 더 효과적이다. 마지막으로, 작은 핵심 요소는 쉽게 눈에 띄지 않을 수 있으므로 스케일을 고려한 시각적 변형이 중요하다.
+      연구 결과를 바탕으로 우리는 AI image transformation 테크닉이 anticipation-preserving 미디어에 활용될 수 있는 디자인 원칙을 제안한다. 첫째, 완전히 숨기는 방식보다 선별적 가시화가 더 효과적일 수 있으며, 일부 해석 단서를 보여주는 것이 관람객이 맥락을 이해하면서도 기대감을 유지하도록 돕는다. 둘째, 호기심은 무작위 왜곡이 아니라 조절된 정보 공백을 통해 설계될 수 있다. 셋째, 스타일이나 상징과 같은 정보는 단순히 가리는 것보다 의미 재해석 방식이 더 효과적이다. 마지막으로, 작은 핵심 요소는 쉽게 눈에 띄지 않을 수 있으므로 스케일을 고려한 시각적 변형이 중요하다.
     image: 
     caption: "Design principles focus on balancing interpretive clarity with controlled ambiguity."
 
   - title: "Beyond Museums"
     body_en: >-
-      Although TwistLens was developed in the context of museum visits, the same principle can extend to other domains where early exposure may reduce discovery. In education, transformed previews could encourage learners to form hypotheses before receiving full explanations. In tourism, platforms could communicate the atmosphere of a place while delaying the reveal of key scenes. In fine dining, previews could hint at ingredients and concepts while preserving surprise in the final plating. Across these contexts, anticipation-preserving previews can serve as a practical strategy for balancing understanding with curiosity.
+      TwistLens can extend to other domains where early exposure may reduce discovery. In education, transformed previews can encourage learners to form hypotheses before full explanations. In tourism, platforms may convey the atmosphere of a place while delaying key scenes. In fine dining, previews can hint at ingredients and concepts while preserving surprise in the final plating. Across these contexts, anticipation-preserving previews can help balance understanding with curiosity.
     body_kr: >-
       TwistLens는 박물관 방문 맥락에서 개발되었지만, 사전 노출이 발견 경험을 약화시키는 다른 영역에도 적용할 수 있다. 예를 들어 교육에서는 전체 설명을 제시하기 전에 변형된 프리뷰를 통해 학습자가 먼저 가설을 세우도록 유도할 수 있다. 관광에서는 장소의 분위기만 전달하면서 핵심 장면의 노출 시점을 늦출 수 있다. 파인다이닝에서는 재료와 콘셉트를 암시하면서도 최종 플레이팅의 놀라움을 유지할 수 있다. 이러한 맥락에서 anticipation-preserving 프리뷰는 이해와 호기심 사이의 균형을 설계하는 실용적인 전략으로 활용될 수 있다.
     image: 
