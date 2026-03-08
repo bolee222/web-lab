@@ -52,7 +52,22 @@
         <div class="col-md-8">
           <div class="project-content project-content-main mt-50">
             <div class="project-subtitle project-section-title">{{ .title | markdownify }}</div>
+            {{ if .body_kr }}
+            <div class="project-section-bilingual">
+              <div class="row">
+                <div class="col-sm-6 project-section-lang-col">
+                  <div class="project-section-lang-label">EN</div>
+                  <div class="project-section-body">{{ .body_en | default .body | markdownify }}</div>
+                </div>
+                <div class="col-sm-6 project-section-lang-col">
+                  <div class="project-section-lang-label">KR</div>
+                  <div class="project-section-body">{{ .body_kr | markdownify }}</div>
+                </div>
+              </div>
+            </div>
+            {{ else }}
             <div class="project-section-body">{{ .body | markdownify }}</div>
+            {{ end }}
           </div>
         </div>
         <div class="col-md-4">
