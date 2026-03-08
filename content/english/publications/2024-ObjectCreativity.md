@@ -8,7 +8,7 @@ Journal: "**한국디자인포럼**, Volume 29, no.1, ISSN 2586-4777"
 type: "Journal_dom"
 
 # DATE INFO
-date: 2024-01-14T15:40:24+06:00
+date: 2023-06-14T15:40:24+06:00
 publicationDate: 2024.01
 homeYearTag: 2023
 

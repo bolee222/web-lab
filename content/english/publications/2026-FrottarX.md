@@ -14,7 +14,7 @@ homeYearTag: 2026
 
 
 exactPeriod: 2026
-cite_acm: "Woojae Kang and Bokyung Lee. 2026. FrottarX: A Visual Logging System for Immersive Reflection on Personal Visual Logs through Bodily Re-enactment. In Proceedings of HCI Korea 2026."
+cite_acm: "Woojae Kang and Bokyung Lee. (2026). FrottarX: A Visual Logging System for Immersive Reflection on Personal Visual Logs through Bodily Re-enactment. _In Proceedings of HCI Korea 2026 (Creative Award)_."
 doi: ""
 
 

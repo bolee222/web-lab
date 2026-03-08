@@ -8,13 +8,13 @@ Journal: "**International Conference Proceedings, 2024**"
 type: "Conference_int"
 
 # DATE INFO
-date: 2024-12-31T23:59:54+09:00
+date: 2024-11-14T15:40:24+06:00
 publicationDate: 2024.02
 homeYearTag: 2024
 
 
 exactPeriod: 2024
-cite_acm: "Pei-Tzu Hung and Bokyung Lee. 2024. Discovery of Themes for Museum Docent Narratives to Guide XR Interactions for Better Comprehension. In International Conference Proceedings, 2024."
+cite_acm: "Pei-Tzu Hung and Bokyung Lee. (2024). **Discovery of Themes for Museum Docent Narratives to Guide XR Interactions for Better Comprehension**. _Korea Society of Design and Science (KSDS)_, 2024."
 doi: ""
 
 

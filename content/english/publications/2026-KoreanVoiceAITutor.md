@@ -14,7 +14,7 @@ homeYearTag: 2026
 
 
 exactPeriod: 2026
-cite_acm: "Dongbin Joo, Karina Wijaya, Younah Kang, and Bokyung Lee. 2026. Exploring Learner Experiences with the Korean Voice AI Tutor for Korean Language Learning. In Proceedings of HCI Korea 2026."
+cite_acm: "Dongbin Joo, Karina Wijaya, Younah Kang, and Bokyung Lee. (2026). **Exploring Learner Experiences with the Korean Voice AI Tutor for Korean Language Learning**. _In Proceedings of HCI Korea 2026_."
 doi: ""
 
 

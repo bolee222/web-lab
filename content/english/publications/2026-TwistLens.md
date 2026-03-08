@@ -8,13 +8,13 @@ Journal: "**Proceedings of the 2026 CHI Conference on Human Factors in Computing
 type: "Conference_sci"
 
 # DATE INFO
-date: 2025-12-31T23:59:58+09:00
+date: 2026-03-01T23:59:58+09:00
 publicationDate: 2026.04
 homeYearTag: 2026
 
 
 exactPeriod: 2026.04.13-17
-cite_acm: "Thao Phuong Vu and Bokyung Lee. 2026. TwistLens: A Docent-Informed Image Transformation to Create Previews That Prompt Anticipation and Interpretive Experiences Before Museum Visits. In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26)."
+cite_acm: "Thao Phuong Vu and Bokyung Lee. (2026). **TwistLens: A Docent-Informed Image Transformation to Create Previews That Prompt Anticipation and Interpretive Experiences Before Museum Visits**. _In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26)_."
 doi: https://doi.org/10.1145/3772318.3790352
 
 

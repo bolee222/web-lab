@@ -8,8 +8,8 @@ Journal: "International Association of Societies of Design Research (**IASDR 202
 type: "Conference_int"
 
 # DATE INFO
-date: 2021-11-14T15:40:24+06:00
-publicationDate: 2021.11
+date: 2022-11-14T15:40:24+06:00
+publicationDate: 2022.11
 homeYearTag: 2022
 
 # PAGE PARAMETER
@@ -17,7 +17,7 @@ draft: false
 link_PDF: "https://www.dropbox.com/scl/fi/n437u9hfi2ln29xmeyxic/2021-IASDR.pdf?rlkey=2h51ueubkgf4i74rqz6x54jx1&dl=0"
 
 exactPeriod: 06 November 2022
-cite_acm: "Bokyung Lee, Daniel Saakes. (2022). **Understanding the Roles of Intelligent Product-Customization Systems Through Expert Interviews**. _International Association of Societies of Design Research_ 2021. Springer, Singapore." 
+cite_acm: "Bokyung Lee, Daniel Saakes. (2022). **Understanding the Roles of Intelligent Product-Customization Systems Through Expert Interviews**. _International Association of Societies of Design Research_ 2022. Springer, Singapore." 
 doi: https://doi.org/10.1007/978-981-19-4472-7_76
 
 
