@@ -8,7 +8,7 @@ Journal: "**Proceedings of HCI Korea 2026**"
 type: "Conference_dom"
 
 # DATE INFO
-date: 2025-12-31T00:00:00+09:00
+date: 2025-12-31T23:59:57+09:00
 publicationDate: 2026.02
 homeYearTag: 2026
 
