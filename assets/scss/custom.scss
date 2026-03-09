@@ -507,12 +507,18 @@ img.rounded {
 
         strong {
             font-weight: 600;
+            
         }
 
         em {
             color: rgb(0, 33, 125);
             //background-color: #dfdfdf72;
             font-weight: 400;
+            strong{
+              color: rgb(118, 26, 193);
+              font-weight: 500;
+              background-color: white;
+            }
         }
 
 }
