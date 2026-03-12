@@ -507,7 +507,9 @@ img.rounded {
 
         strong {
             font-weight: 600;
-            
+            em {
+              color: rgb(118, 26, 193) !important;
+            }
         }
 
         em {
