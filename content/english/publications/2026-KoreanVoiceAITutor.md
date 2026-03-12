@@ -2,7 +2,7 @@
 # BASIC INFO
 title: "Exploring Learner Experiences with the Korean Voice AI Tutor for Korean Language Learning"
 author : "Dongbin Joo, Karina Wijaya, Younah Kang, <ins>Bokyung Lee</ins>"
-Journal: "**Proceedings of HCI Korea 2026**"
+Journal: "**Proceedings of Human-Computer Interaction Korea 2026**"
 
 #Type: Journal_sci, Journal_int, Journal_dom, Conference_sci, Conference_int, Conference_dom
 type: "Conference_dom"
@@ -14,7 +14,7 @@ homeYearTag: 2026
 
 
 exactPeriod: 2026
-cite_acm: "Dongbin Joo, Karina Wijaya, Younah Kang, and Bokyung Lee. (2026). **Exploring Learner Experiences with the Korean Voice AI Tutor for Korean Language Learning**. _In Proceedings of HCI Korea_."
+cite_acm: "Dongbin Joo, Karina Wijaya, Younah Kang, and Bokyung Lee. (2026). **Exploring Learner Experiences with the Korean Voice AI Tutor for Korean Language Learning**. _In Proceedings of HCI Korea_ (p820-824)."
 doi: ""
 
 

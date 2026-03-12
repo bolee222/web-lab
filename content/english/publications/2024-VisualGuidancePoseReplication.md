@@ -2,7 +2,7 @@
 # BASIC INFO
 title: "A Preliminary Study on Visual Guidance in Pose Replication"
 author : "Nur Izzatty Binti Mohamad Jamal, <ins>Bokyung Lee</ins>"
-Journal: "**International Conference Proceedings, 2024**"
+Journal: "**Korea Society of Design and Science (KSDS), 2024**"
 
 #Type: Journal_sci, Journal_int, Journal_dom, Conference_sci, Conference_int, Conference_dom
 type: "Conference_int"
