@@ -516,10 +516,18 @@ img.rounded {
             color: rgb(0, 33, 125);
             background-color: #ebebeb72;
             font-weight: 400;
-            strong{
+            strong,
+            b {
               color: rgb(118, 26, 193) !important;
               font-weight: 500;
               background-color: white;
+            }
+
+            strong,
+            b,
+            strong *,
+            b * {
+              color: rgb(118, 26, 193) !important;
             }
         }
 
