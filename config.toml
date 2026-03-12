@@ -3,6 +3,7 @@
 baseURL = "/"
 title = "Bokyung Lee Lab"
 theme = "airspace-hugo"
+enableEmoji = true
 # Number of posts per page in list view
 # Post excerpt length
 summaryLength = "30"
