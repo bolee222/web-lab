@@ -34,11 +34,15 @@
   }
   
   /* hover, active 상태 */
-  #publicationTabs .nav-link:hover,
-  #publicationTabs .nav-link:focus,
-  #publicationTabs .nav-link.active {
-    background: #4F088D !important;  /* Project 쪽 활성화 색 */
-    color: white !important;
-    text-decoration: none;
-  }
+#publicationTabs .nav-link:hover,
+#publicationTabs .nav-link:focus,
+#publicationTabs .nav-link.active {
+  background: #4F088D !important;  /* Project 쪽 활성화 색 */
+  color: white !important;
+  text-decoration: none;
+}
+
+.honorable-mention-award {
+  color: #6f2dbd !important;
+}
   
