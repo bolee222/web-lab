@@ -3,8 +3,7 @@
           <div class="row margin-bottom-0">
               <div class="col-lg-9 margin-bottom-0 padding-publication_title ">
                   
-                  {{ $cite := .Params.cite_acm | markdownify | replaceRE "Honorable Mention Award \\(Top 5%\\)" "<span class=\"honorable-mention-award\">Honorable Mention Award (Top 5%)</span>" }}
-                  <div class="publication-text margin-bottom-0">{{ $cite | safeHTML }}</div>
+                  <div class="publication-text margin-bottom-0">{{ .Params.cite_acm | markdownify }}</div>
 
                       <ul class="btn-link-group list-inline margin-bottom-0">
                         {{ range .Params.Links }}
