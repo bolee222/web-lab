@@ -1,5 +1,5 @@
 ---
-title: "Research Area"
+title: "About CXD Lab"
 description: 
 bg_image: "images/headerbg/09.png"
 layout: "vision"
@@ -7,7 +7,7 @@ draft: false
 menu:
   main:
     parent: "CXD Lab"
-    name: "Research Areas"
+    name: "About CXD Lab"
     weight: 1
 
 overview: 

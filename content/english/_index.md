@@ -101,7 +101,7 @@ about:
 
   button:
     enable: true
-    label: "&rarr; Research Areas"
+    label: "&rarr; About CXD Lab"
     link: "about/vision/"
 
   button2:
@@ -140,7 +140,7 @@ cta:
   content: "Explore more about our research vision, interests, research approaches, and application process. We welcome highly motivated students eager to innovate and shape the future through design and technology."
   button:
     enable: true
-    label: "&rarr; Our Research Areas"
+    label: "&rarr; About CXD Lab"
     link: "about/vision/"
   button_joinUs:
     enable: true

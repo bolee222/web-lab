@@ -13,7 +13,7 @@ menu:
     weight: 5
 ---
 
-## **Research Area**
+## **About CXD Lab**
 
 
 ## **Join our lab as a Master’s Student**
