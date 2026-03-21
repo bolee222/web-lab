@@ -6,10 +6,23 @@
 <section class="service-about">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        {{ with .line1 }}<div class="vision-quote-key">{{ . | markdownify }}</div>{{ end }}
-        {{ with .line2 }}<div class="vision-quote-key">{{ . | markdownify }}</div>{{ end }}
-        {{ with .line3 }}<div class="vision-quote-key">{{ . | markdownify }}</div>{{ end }}
+      <div class="col-md-6">
+        {{ with .eng }}
+          {{ with .line1 }}<div class="vision-quote-key">{{ . | markdownify }}</div>{{ end }}
+          {{ with .line2 }}<div class="vision-quote-key">{{ . | markdownify }}</div>{{ end }}
+          {{ with .line3 }}<div class="vision-quote-key">{{ . | markdownify }}</div>{{ end }}
+        {{ else }}
+          {{ with $.Params.top_keywords.line1 }}<div class="vision-quote-key">{{ . | markdownify }}</div>{{ end }}
+          {{ with $.Params.top_keywords.line2 }}<div class="vision-quote-key">{{ . | markdownify }}</div>{{ end }}
+          {{ with $.Params.top_keywords.line3 }}<div class="vision-quote-key">{{ . | markdownify }}</div>{{ end }}
+        {{ end }}
+      </div>
+      <div class="col-md-6">
+        {{ with .kor }}
+          {{ with .line1 }}<div class="vision-quote-key">{{ . | markdownify }}</div>{{ end }}
+          {{ with .line2 }}<div class="vision-quote-key">{{ . | markdownify }}</div>{{ end }}
+          {{ with .line3 }}<div class="vision-quote-key">{{ . | markdownify }}</div>{{ end }}
+        {{ end }}
       </div>
     </div>
   </div>
