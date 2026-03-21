@@ -44,7 +44,7 @@ ordered = false
 logo = "images/logo/logo2_tight.png"
 logo_width = "150px"
 # OpenGraph / Twitter Card metadata
-description = "Convergence Design Lab (CXD Lab) at Yonsei University, led by Bokyung Lee (이보경), researches HCI, UX, XR design, XR interaction, and digital-physical convergence."
+description = "CXD Lab at Yonsei University, led by Bokyung Lee (이보경), researches HCI, UX, XR design, XR interaction, and digital-physical convergence."
 author = "Bokyung Lee"
 site_url = "https://cxdlab.com/"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
@@ -63,7 +63,7 @@ keywords = [
   "XR Lab",
   "XR Design",
   "XR Interaction",
-  "Convergence Design Lab"
+  "Convergence Experience Design Lab"
 ]
 
 
