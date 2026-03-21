@@ -4,6 +4,7 @@ baseURL = "/"
 title = "Bokyung Lee Lab"
 theme = "airspace-hugo"
 enableEmoji = true
+enableRobotsTXT = true
 # Number of posts per page in list view
 # Post excerpt length
 summaryLength = "30"
@@ -46,6 +47,23 @@ logo_width = "150px"
 description = "This is meta description"
 author = "Themefisher"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
+# Search intent keywords
+keywords = [
+  "연세대학교 이보경",
+  "연대 이보경",
+  "Yonsei Bokyung Lee",
+  "HCI Yonsei",
+  "Korea HCI Lab",
+  "Bokyung Lee Lab",
+  "CXD Lab",
+  "Convergence UX",
+  "Digital-Physical Convergence",
+  "XR 디자인",
+  "XR Lab",
+  "XR Design",
+  "XR Interaction",
+  "Convergence Design Lab"
+]
 
 
 ################################# Sidebar widgets #############################

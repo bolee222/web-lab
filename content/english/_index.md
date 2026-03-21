@@ -1,4 +1,21 @@
 ---
+title: "Convergence Design Lab (CXD Lab)"
+description: "CXD Lab at Yonsei University, directed by Bokyung Lee (이보경), researches HCI, UX, XR design, XR interaction, and digital-physical convergence."
+keywords:
+  - "연세대학교 이보경"
+  - "연대 이보경"
+  - "Yonsei Bokyung Lee"
+  - "HCI Yonsei"
+  - "Korea HCI Lab"
+  - "Bokyung Lee Lab"
+  - "CXD Lab"
+  - "Convergence UX"
+  - "Digital-Physical Convergence"
+  - "XR 디자인"
+  - "XR Lab"
+  - "XR Design"
+  - "XR Interaction"
+  - "Convergence Design Lab"
 menu:
   main:
     name: "Home"
