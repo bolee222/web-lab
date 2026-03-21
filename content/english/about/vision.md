@@ -9,6 +9,10 @@ menu:
     parent: "CXD Lab"
     name: "About CXD Lab"
     weight: 1
+top_keywords:
+  line1: "Yonsei University | 연세대학교"
+  line2: "CXD Lab | 컨버전스 경험 디자인 연구실"
+  line3: "Director: 이보경 교수"
 
 overview: 
   vision_eng: "Convergence Design Lab bring together interdisciplinary perspectives, grounded in core expertise in Human-Computer Interaction (HCI) and Interaction Design (UX). Our work recently focuses on understanding and designing novel XR/AI interactions, systems, and applications across a wide range of domains—including education, museums, art & culture, productivity & creativity support tools, smart homes, digital twins, spatial marketing, and more."

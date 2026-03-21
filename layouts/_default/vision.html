@@ -2,6 +2,20 @@
 
 {{ partial "page-title.html" . }}
 
+{{ with .Params.top_keywords }}
+<section class="service-about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {{ with .line1 }}<div class="vision-quote-key">{{ . | markdownify }}</div>{{ end }}
+        {{ with .line2 }}<div class="vision-quote-key">{{ . | markdownify }}</div>{{ end }}
+        {{ with .line3 }}<div class="vision-quote-key">{{ . | markdownify }}</div>{{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
 
 
 {{ with .Params.overview}}
