@@ -1,6 +1,6 @@
 ---
 title: "People"
-description: "Professor Bokyung Lee (이보경) at Yonsei University, leading the Convergence Design Lab."
+description: 
 bg_image: "images/headerbg/09.png"
 layout: "people"
 url: people
@@ -21,7 +21,7 @@ professor:
   emailGoogle: "bokyung.lee.lydia@gmail.com"
   personalSite: "https://boleehci.com"
 
-  content : "Hi. I am **Bokyung Lee (이보경)**, an **Interaction Design/  UX / HCI** researcher at **Yonsei University (연세대학교)**. I am an Associate Professor at Yonsei University, Underwood International Colleage, Humanities, Arts, and Social Sciences (HASS) Division. Under HASS, I am leading a **Convergence Experience Design Lab (CXD Lab)** and envisions the future of our new reality in this Digial-Physical convergence era. Previously, I worked as a Senior Designer at Samsung Research HQ, Korea; and before that, I worked as a Senior Research Scientist at Autodesk Research, Toronto. I received my PhD in Industrial Design (Human-Computer Interaction + Design) from ID KAIST, where I was working on embodied design tools for everyday designers.
+  content : "Hi. I am Bokyung Lee (이보경), an **Interaction Design/  UX / HCI** researcher at Yonsei University (연세대학교). I am an Associate Professor at Yonsei University, Underwood International Colleage, Humanities, Arts, and Social Sciences (HASS) Division. Under HASS, I am leading a **Convergence Experience Design Lab (CXD Lab)** and envisions the future of our new reality in this Digial-Physical convergence era. Previously, I worked as a Senior Designer at Samsung Research HQ, Korea; and before that, I worked as a Senior Research Scientist at Autodesk Research, Toronto. I received my PhD in Industrial Design (Human-Computer Interaction + Design) from ID KAIST, where I was working on embodied design tools for everyday designers.
 
 
   My research lies at the intersection of **Human-Computer Interaction** and **Interactive System Designs**. My vision is to design comfortable and novel experiences for an immersive, interactive, and simulated virtual world at a shared, with a multi-disciplinary approach. I envision the potential **interactions for future technologies (VR/AR/AI)** with a goal of enhancing our convergnece experiences. During my Ph.D., I explored embodied interactions for VR/AR digital design tools. I enjoy creating and applying new user-centered design methods, as well as prototyping interactive systems."
