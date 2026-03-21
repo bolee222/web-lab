@@ -118,32 +118,6 @@
 {{ end }} {{ end }}
 
 
-<!-- SEARCH / LAB IDENTITY -->
-{{ with .Params.seo }} {{ if .enable }}
-<section class="about section white-box">
-  <div class="container">
-    <hr align="left" style="margin-top: 10px; margin-bottom: 30px; width:100%; border-style:dashed; background-color:black;">
-    <div class="row">
-      <div class="col-md-12 col-sm-12">
-        <div class="block">
-          <div class="section-title">
-            {{ with .title }}<div class="home-title">{{ . | markdownify }}</div>{{ end }}
-            {{ with .description_en }}<div class="home-title-sub1">{{ . | markdownify }}</div>{{ end }}
-            {{ with .description_ko }}<div class="home-title-sub1">{{ . | markdownify }}</div>{{ end }}
-            {{ with .keyword_groups }}
-            <ul class="ongoing-project">
-              {{ range . }}<li>{{ . | markdownify }}</li>{{ end }}
-            </ul>
-            {{ end }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }} {{ end }}
-
-
 <!-- ACTIVE ONGOING PROJECTS -->
 {{ with .Params.ongoing }} {{ if .enable }}
 <section class="about section white-box">
