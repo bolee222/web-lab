@@ -24,13 +24,17 @@
   {{ $image_path := .Params.image | default site.Params.image -}}
   {{ $image_path_local :=  printf "static/%s" $image_path -}}
   {{ $image_ext := trim (path.Ext $image_path | lower) "." -}}
+  {{ $image_url := $image_path -}}
+  {{ if not (or (hasPrefix $image_path "http://") (hasPrefix $image_path "https://")) -}}
+    {{ $image_url = printf "%s%s" (replaceRE "/$" "" $canonicalBase) ($image_path | relURL) -}}
+  {{ end -}}
   {{ if fileExists $image_path_local -}}
-    <meta property="og:image" content="{{ $image_path | absURL }}" />
+    <meta property="og:image" content="{{ $image_url }}" />
     {{/* If not SVG, read image aspect ratio and define Twitter Card and Open Graph width and height  */ -}}
     {{ if ne $image_ext "svg" -}}
       {{ with (imageConfig $image_path_local) -}}
       {{ if (and (gt .Width 144) (gt .Height 144)) -}}
-        <meta name="twitter:image" content="{{ $image_path | absURL }}"/>
+        <meta name="twitter:image" content="{{ $image_url }}"/>
         <meta name="twitter:card" content="summary{{ if (and (gt .Width 300) (gt .Height 157) (not (eq .Width .Height))) }}_large_image{{ end }}">
       {{ end -}}
       <meta property="og:image:width" content="{{ .Width }}">
@@ -49,6 +53,44 @@
   {{ end -}}
 
   {{ template "_internal/opengraph.html" . }}
+
+  {{ if and .IsPage (eq .Section "project") }}
+  <script type="application/ld+json">
+    {{ $projectImage := .Params.image | default site.Params.image }}
+    {{ $projectImageURL := $projectImage }}
+    {{ if not (or (hasPrefix $projectImage "http://") (hasPrefix $projectImage "https://")) }}
+      {{ $projectImageURL = printf "%s%s" (replaceRE "/$" "" $canonicalBase) ($projectImage | relURL) }}
+    {{ end }}
+    {{ $projectSchema := dict
+      "@context" "https://schema.org"
+      "@type" "ScholarlyArticle"
+      "headline" (.Params.title_official | default .Title)
+      "name" .Title
+      "url" $canonical
+      "description" $metaDescription
+      "image" $projectImageURL
+      "datePublished" (.Date.Format "2006-01-02")
+      "dateModified" (.Lastmod.Format "2006-01-02")
+      "author" (slice (dict "@type" "Person" "name" (.Params.researcher | default site.Params.author)))
+      "publisher" (dict "@type" "Organization" "name" site.Title "url" $canonicalBase)
+      "isPartOf" (dict "@type" "WebSite" "name" site.Title "url" $canonicalBase)
+      "keywords" (cond .Params.category .Params.category (site.Params.keywords | default (slice)))
+    }}
+    {{ $doi := "" }}
+    {{ with .Params.links }}
+      {{ range . }}
+        {{ if and (eq (lower .label) "paper") (hasPrefix .link "https://doi.org/") }}
+          {{ $doi = replace .link "https://doi.org/" "" }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ if $doi }}
+      {{ $projectSchema = merge $projectSchema (dict "identifier" $doi) }}
+    {{ end }}
+    {{ $projectSchema | jsonify | safeJS }}
+  </script>
+  {{ end }}
+
   {{ template "_internal/google_analytics.html" . }}
 
   {{ if .IsHome }}
