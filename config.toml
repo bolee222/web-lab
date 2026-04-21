@@ -224,7 +224,7 @@ weight = 2
 [[languages.en.menu.main]]
 hasChildren = false
 name = "People"
-URL = "people"
+URL = "/people/"
 weight = 3
 
 # Footer menu
@@ -235,12 +235,12 @@ weight = 1
 
 [[languages.en.menu.footer]]
 name = "About CXD Lab"
-URL = "about/vision"
+URL = "/about/vision/"
 weight = 2
 
 [[languages.en.menu.footer]]
 name = "Join Us"
-URL = "about/applicants"
+URL = "/about/applicants/"
 weight = 3
 
 [[languages.en.menu.footer]]
@@ -250,17 +250,17 @@ weight = 4
 
 [[languages.en.menu.footer]]
 name = "Publication"
-URL = "publication"
+URL = "/publication/"
 weight = 5
 
 [[languages.en.menu.footer]]
 name = "Professor"
-URL = "people/professor"
+URL = "/people/professor/"
 weight = 6
 
 [[languages.en.menu.footer]]
 name = "FAQ"
-URL = "faq"
+URL = "/faq/"
 weight = 7
 
 [[languages.en.menu.footer]]
@@ -297,12 +297,12 @@ weight = 8
 
 #[[languages.kr.menu.footer]]
 #name = "Lab"
-#URL = "about/vision"
+#URL = "/about/vision/"
 #weight = 2
 
 #[[languages.kr.menu.footer]]
 #name = "Professor"
-#URL = "people/professor"
+#URL = "/people/professor/"
 #weight = 3
 
 #[[languages.kr.menu.footer]]
@@ -312,7 +312,7 @@ weight = 8
 
 #[[languages.kr.menu.footer]]
 #name = "FAQ"
-#URL = "faq"
+#URL = "/faq/"
 #weight = 5
 
 #[[languages.kr.menu.footer]]
