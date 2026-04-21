@@ -245,7 +245,7 @@ weight = 3
 
 [[languages.en.menu.footer]]
 name = "Project"
-URL = "project"
+URL = "/project/"
 weight = 4
 
 [[languages.en.menu.footer]]
@@ -265,7 +265,7 @@ weight = 7
 
 [[languages.en.menu.footer]]
 name = "Contact"
-URL = "contact"
+URL = "/contact/"
 weight = 8
 
 
@@ -307,7 +307,7 @@ weight = 8
 
 #[[languages.kr.menu.footer]]
 #name = "Project"
-#URL = "project"
+#URL = "/project/"
 #weight = 4
 
 #[[languages.kr.menu.footer]]
@@ -317,7 +317,7 @@ weight = 8
 
 #[[languages.kr.menu.footer]]
 #name = "Contact"
-#URL = "contact"
+#URL = "/contact/"
 #weight = 6
 
 

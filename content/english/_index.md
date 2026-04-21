@@ -39,7 +39,7 @@ banner:
   button:
     enable: false
     label: "&rarr; Discover Our Project"
-    link: "project"
+    link: "/project/"
 
 ############################# Ongoing Projects #################################
 ongoing:
@@ -123,7 +123,7 @@ portfolio:
   button:
     enable: true
     label: "&rarr; View All Projects"
-    link: "project"
+    link: "/project/"
 
 
 ############################# Service ############################
