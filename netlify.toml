@@ -18,3 +18,10 @@
   to = "https://cxdlab.com/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/*"
+  to = "https://cxdlab.com/:splat"
+  status = 301
+  force = true
+  conditions = {Host = ["www.cxdlab.com"]}

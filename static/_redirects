@@ -1,3 +1,8 @@
+# Canonical host + scheme normalization (Netlify-style conditions)
+/* https://cxdlab.com/:splat 301! Host=www.cxdlab.com
+/* https://cxdlab.com/:splat 301! Scheme=http
+
+# Fallback absolute-host rules (for environments that honor full-URL from patterns)
 https://www.cxdlab.com/* https://cxdlab.com/:splat 301!
 http://www.cxdlab.com/* https://cxdlab.com/:splat 301!
 http://cxdlab.com/* https://cxdlab.com/:splat 301!
