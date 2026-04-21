@@ -18,6 +18,7 @@
   <meta property="og:description" content="{{ $metaDescription }}" />
   <meta property="og:url" content="{{ $canonical }}" />
   <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
+  <meta property="og:site_name" content="{{ site.Title }}" />
   {{ hugo.Generator }}
 
   {{ "<!-- Open Graph image and Twitter Card metadata -->" | safeHTML }}
@@ -51,8 +52,6 @@
       {{ with .twitter -}}<meta name="twitter:creator" content="@{{ . }}"/>{{ end -}}
     {{ end -}}
   {{ end -}}
-
-  {{ template "_internal/opengraph.html" . }}
 
   {{ if and .IsPage (eq .Section "project") }}
   <script type="application/ld+json">
