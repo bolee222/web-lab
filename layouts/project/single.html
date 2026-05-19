@@ -9,7 +9,7 @@
     <div class="row">
       <div class="col-md-4">
         {{ with .Params.teaser_top }}
-            <img src="{{ . | absURL }}" style="padding: 0px" alt="" class="img-fluid mb-4 project-single-teaser-img" /> 
+            <img src="{{ . | relURL }}" style="padding: 0px" alt="" class="img-fluid mb-4 project-single-teaser-img" />
         {{ end }}
       </div>
     </div>
@@ -24,7 +24,9 @@
           <ul class="btn-link-group list-inline">
             {{ range .Params.Links }}
             <li class="list-inline-item">
-              <a href="{{ .link | absURL }}" target="_blank"><button class="project-link-btn">{{ .label }}</button></a>
+              {{ $href := .link }}
+              {{ if not (or (hasPrefix $href "http://") (hasPrefix $href "https://")) }}{{ $href = $href | relURL }}{{ end }}
+              <a href="{{ $href }}" target="_blank"><button class="project-link-btn">{{ .label }}</button></a>
                 </li>
                 {{ end }}
           </ul>
@@ -67,7 +69,7 @@
           <div class="project-content mt-10">
             <div class="project-image-only-wrap">
               {{ with $section.image }}
-              <img src="{{ . | absURL }}" alt="{{ $section.caption | default "Project section image" }}" class="img-fluid project-image-only" />
+              <img src="{{ . | relURL }}" alt="{{ $section.caption | default "Project section image" }}" class="img-fluid project-image-only" />
               {{ end }}
               {{ with $section.caption }}
               <div class="project-reference-caption project-image-only-caption">{{ . | markdownify }}</div>
@@ -101,7 +103,7 @@
           {{ with $section.image }}
           <aside class="project-reference-panel project-reference-panel--section mt-10">
             <div class="project-reference-item">
-              <img src="{{ . | absURL }}" alt="{{ $.Title }} reference image" class="img-fluid" />
+              <img src="{{ . | relURL }}" alt="{{ $.Title }} reference image" class="img-fluid" />
               {{ with $section.caption }}<div class="project-reference-caption">{{ . | markdownify }}</div>{{ end }}
             </div>
           </aside>
@@ -123,7 +125,7 @@
           <div class="project-subtitle">Related References</div>
           {{ range .Params.content_references }}
           <div class="project-reference-item">
-            <img src="{{ .image | absURL }}" alt="{{ .caption | default "TwistLens reference image" }}" class="img-fluid" />
+            <img src="{{ .image | relURL }}" alt="{{ .caption | default "TwistLens reference image" }}" class="img-fluid" />
             {{ with .caption }}<div class="project-reference-caption">{{ . | markdownify }}</div>{{ end }}
           </div>
           {{ end }}

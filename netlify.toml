@@ -1,2 +1,27 @@
 [build.environment]
   HUGO_VERSION = "0.153.0"
+
+[[redirects]]
+  from = "https://www.cxdlab.com/*"
+  to = "https://cxdlab.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.cxdlab.com/*"
+  to = "https://cxdlab.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://cxdlab.com/*"
+  to = "https://cxdlab.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "https://cxdlab.com/:splat"
+  status = 301
+  force = true
+  conditions = {Host = ["www.cxdlab.com"]}

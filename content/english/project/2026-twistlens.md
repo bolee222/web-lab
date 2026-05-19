@@ -11,6 +11,8 @@ category: ["AI", "UX", "Convergence", "Interaction Design", "System", "Visualiza
 image: "/projects/2026-twistlens/_[opt]teaser.webp"
 teaser_top: "/projects/2026-twistlens/top.webp"
 metacontent: "TwistLens generates transformed artwork previews that communicate interpretive cues while preserving surprise. Guided by docent descriptions, EchoLens and DecoyLens help museums balance understanding with anticipation before visits."
+description: "TwistLens project page: CHI 2026 paper on anticipation-preserving, docent-informed image previews for museum experiences by Thao Phuong Vu and Bokyung Lee."
+keywords: ["TwistLens", "CHI 2026", "museum preview", "anticipation-preserving", "docent-informed", "image transformation", "Bokyung Lee", "CXD Lab"]
 
 # 상세 상단 메타
 conference: "CHI / 2026"

@@ -17,7 +17,7 @@ banner:
   button:
     enable: false
     label: "&rarr; Discover Our Project"
-    link: "project"
+    link: "/project/"
 
 ############################# About #################################
 about:
@@ -46,7 +46,7 @@ portfolio:
   button:
     enable: true
     label: "&rarr; View all our works"
-    link: "project"
+    link: "/project/"
 
 
 ############################# Service ############################
