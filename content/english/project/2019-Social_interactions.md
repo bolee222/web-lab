@@ -13,7 +13,7 @@ teaser: "/projects/2019-social_interactions/_[opt]top.webp"
 metacontent: "To better understand how workplace design shapes social interactions, we ran an empirical study in an office context over a two week period. Based on the data, we discuss dynamics of socio-spatial formations and how this knowledge can support social interactions in the domain of space design systems and interactive interiors."
 
 # Meta-Data
-conference: "CSCW 2020"
+conference: "ACM CSCW 2020"
 conference_full: "ACM Journal of Hum.-Comput. Interact. 4, CSCW3, Article 238"
 con_date: "07 November 2019"
 keys: "simulation-driven design, virtual human with agency, digital human"

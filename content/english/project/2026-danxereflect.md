@@ -13,7 +13,7 @@ teaser_top: "/projects/2026-danxereflect/top.webp"
 metacontent: "We introduce DanXeReflect, an XR system that transforms rehearsal videos into interactive dance studio for embodied and reflective choreography making. The system enables dancers to explore and communicate feedback through pose-based search, embodied revision, and body-anchored annotation."
 
 # 상세 상단 메타
-conference: "CHI / 2026"
+conference: "ACM CHI / 2026"
 conference_full: "ACM CHI Conference on Human Factors in Computing Systems (2026)"
 researcher: "Hyunju Kim, François Guimbretière, Bokyung Lee"
 summary: "DanXeReflect is an XR system that reconstructs rehearsal videos as interactive 3D avatars, allowing dancers and choreographers to reflect on choreography through embodied interaction. The system supports pose-based searching, embodied revision, and body-anchored annotations. A user study with dancers demonstrates how embodied XR interaction enables richer asynchronous reflection and collaboration beyond traditional video-based review."

@@ -73,7 +73,7 @@
       "author" (slice (dict "@type" "Person" "name" (.Params.researcher | default site.Params.author)))
       "publisher" (dict "@type" "Organization" "name" site.Title "url" $canonicalBase)
       "isPartOf" (dict "@type" "WebSite" "name" site.Title "url" $canonicalBase)
-      "keywords" (cond .Params.category .Params.category (site.Params.keywords | default (slice)))
+      "keywords" (.Params.category | default (site.Params.keywords | default (slice)))
     }}
     {{ $doi := "" }}
     {{ with .Params.links }}

@@ -13,7 +13,7 @@ teaser: "/projects/2020-Socio_Spatial_Comfort/_[opt]top.webp"
 metacontent: "We investigated how office interior layouts influence the way we socially experience office buildings. Using the real-world vision data, we propose the concepts of socio-spatial comfort: social buffers, privacy buffers, and varying proxemics to inform a user-centered way of designing human building interactions and architecture."
 
 # Meta-Data
-conference: "CSCW 2020"
+conference: "ACM CSCW 2020"
 conference_full: "ACM Journal of Hum.-Comput. Interact. 4, CSCW3, Article 238"
 con_date: "05 January 2021"
 keys: "simulation-driven design, virtual human with agency, digital human"

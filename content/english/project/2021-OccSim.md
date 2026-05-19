@@ -13,7 +13,7 @@ teaser: "/projects/2021-OccSim/_[opt]top.webp"
 metacontent: "We introduce OccSim, a multi-agent occupant simulation system that models human movement and interactions in buildings. It enables designers to analyze spatial layouts and evaluate potential virus transmission scenarios."
 
 # Meta-Data
-conference: "DIS 2021"
+conference: "ACM DIS / 2021"
 conference_full: "ACM Designing Interactive Systems 2021"
 con_date: "June 28 - July 1, 2021"
 keys: "simulation-driven design, virtual human with agency, digital human"

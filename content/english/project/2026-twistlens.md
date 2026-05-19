@@ -15,7 +15,7 @@ description: "TwistLens project page: CHI 2026 paper on anticipation-preserving,
 keywords: ["TwistLens", "CHI 2026", "museum preview", "anticipation-preserving", "docent-informed", "image transformation", "Bokyung Lee", "CXD Lab"]
 
 # 상세 상단 메타
-conference: "CHI / 2026"
+conference: "ACM CHI / 2026"
 conference_full: "ACM CHI Conference on Human Factors in Computing Systems (2026)"
 researcher: "Thao Phuong Vu, Bokyung Lee"
 summary: "Pre-visit information can enrich museum experiences, yet creates a dilemma: text-only descriptions can overwhelm without visual anchors, while viewing artworks in advance can spoil surprise. To address this tension, we introduce _TwistLens_, a docent-informed, AI-supported image transformation system that generates twisted _previews_--transformed images that convey interpretive cues while concealing original visuals. TwistLens extracts key cues from docent text using a _structured taxonomy_, then applies two strategies: _EchoLens_, which preserves intended description while altering representation, and _DecoyLens_, which distorts described information while maintaining representational coherence. A co-design study identified strategy preferences by information type, informing category-specific refinements. A controlled evaluation further showed that TwistLens preserves _anticipation_, triggers _curiosity_, and supports _active learning_ without visual spoil. These findings demonstrate how semantically-aware image transformation can balance knowledge delivery and anticipation in museum contexts."
