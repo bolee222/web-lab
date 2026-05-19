@@ -14,7 +14,7 @@ homeYearTag: 2026
 
 
 exactPeriod: 2026.04.13-17
-cite_acm: "Hyunju Kim, François Guimbretière, and Bokyung Lee. (2026). **DanXeReflect: Interacting with the Spatio-Temporal Past Movements for Embodied, Reflective Choreographic Collaboration**. _In Proceedings of the CHI Conference on Human Factors in Computing Systems (ACM CHI)_. :trophy: _**Honorable Mention Award (Top 5%)**_"
+cite_acm: "Hyunju Kim, François Guimbretière, and Bokyung Lee. (2026). **DanXeReflect: Interacting with the Spatio-Temporal Past Movements for Embodied, Reflective Choreographic Collaboration**. _In Proceedings of the CHI Conference on Human Factors in Computing Systems (ACM CHI)_. Article 311, 1–18. :trophy: _**Honorable Mention Award (Top 5%)**_"
 doi: https://doi.org/10.1145/3772318.3790808
 
 
