@@ -27,12 +27,12 @@ links:
   - label: "Paper"
     link: "https://doi.org/10.1145/3772318.3790352"
   - label: "PDF"
-    link: "/papers/2026-TwistLens.pdf"
+    link: "https://www.dropbox.com/scl/fi/f0so6wp98l2xnqaqnni5v/TwistLens_authors.pdf?rlkey=2pbfqkhlzqfq2wlxhip627uve&st=vdf4pjny&dl=0"
 
 # To embed videos at the bottom-left (col-8), add:
 video_embeds:
    - url: "https://youtu.be/ggtlLv9Wabc"
-     title: "Optional iframe title"
+     title: "TwistLens project video"
 #     caption: "Optional caption"
 
 section_rows:

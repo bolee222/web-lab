@@ -148,25 +148,49 @@
     <div class="row project-video-row">
       <div class="col-md-8">
         <div class="project-content mt-10">
-          {{ range . }}
-          {{ $rawURL := .url }}
+          {{ range $videoIndex, $video := . }}
+          {{ $rawURL := $video.url }}
           {{ $embedURL := $rawURL }}
+          {{ $isYouTube := false }}
+          {{ $youtubeID := "" }}
           {{ if in $rawURL "youtube.com/watch?v=" }}
-            {{ $embedURL = replaceRE "^https?://(www\\.)?youtube\\.com/watch\\?v=([^&]+).*$" "https://www.youtube.com/embed/$2" $rawURL }}
+            {{ $isYouTube = true }}
+            {{ $youtubeID = replaceRE "^https?://(www\\.)?youtube\\.com/watch\\?v=([^&]+).*$" "$2" $rawURL }}
+            {{ $embedURL = replaceRE "^https?://(www\\.)?youtube\\.com/watch\\?v=([^&]+).*$" "https://www.youtube.com/embed/$2?enablejsapi=1&controls=0&rel=0&playsinline=1" $rawURL }}
           {{ else if in $rawURL "youtu.be/" }}
-            {{ $embedURL = replaceRE "^https?://youtu\\.be/([^?&]+).*$" "https://www.youtube.com/embed/$1" $rawURL }}
+            {{ $isYouTube = true }}
+            {{ $youtubeID = replaceRE "^https?://youtu\\.be/([^?&]+).*$" "$1" $rawURL }}
+            {{ $embedURL = replaceRE "^https?://youtu\\.be/([^?&]+).*$" "https://www.youtube.com/embed/$1?enablejsapi=1&controls=0&rel=0&playsinline=1" $rawURL }}
           {{ end }}
 
-          <div class="project-video-embed-wrap">
+          <div class="project-video-player{{ if $isYouTube }} project-video-player--youtube{{ end }}">
+            <div class="project-video-embed-wrap">
             <iframe
+              {{ if $isYouTube }}id="project-youtube-{{ $videoIndex }}" data-project-youtube-player{{ end }}
               src="{{ $embedURL | safeURL }}"
-              title="{{ .title | default "Project video" }}"
+              title="{{ $video.title | default "Project video" }}"
               loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen></iframe>
+              {{ if and $isYouTube $youtubeID }}
+              <button class="project-video-poster" type="button" data-project-youtube-poster for="project-youtube-{{ $videoIndex }}" aria-label="Play video">
+                <img src="https://img.youtube.com/vi/{{ $youtubeID }}/maxresdefault.jpg" data-fallback-src="https://img.youtube.com/vi/{{ $youtubeID }}/hqdefault.jpg" alt="{{ $video.title | default "Project video" }}">
+                <span class="project-video-poster-play" aria-hidden="true">Play</span>
+              </button>
+              {{ end }}
+            </div>
+            {{ if $isYouTube }}
+            <div class="project-video-controls" data-project-youtube-controls for="project-youtube-{{ $videoIndex }}">
+              <button type="button" class="project-video-control-btn" data-project-youtube-toggle aria-label="Play video">Play</button>
+              <span class="project-video-time" data-project-youtube-current>0:00</span>
+              <input class="project-video-timeline" data-project-youtube-timeline type="range" min="0" max="100" step="0.1" value="0" aria-label="Video timeline">
+              <span class="project-video-time" data-project-youtube-duration>0:00</span>
+              <a class="project-video-youtube-link" href="{{ $rawURL | safeURL }}" target="_blank" rel="noopener">Watch on YouTube</a>
+            </div>
+            {{ end }}
           </div>
-          {{ with .caption }}
+          {{ with $video.caption }}
           <div class="project-reference-caption">{{ . | markdownify }}</div>
           {{ end }}
           {{ end }}

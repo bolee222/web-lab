@@ -20,12 +20,12 @@ doi: https://doi.org/10.1145/3772318.3790352
 
 # PAGE PARAMETER
 draft: false
-link_PDF: ""
+link_PDF: "https://www.dropbox.com/scl/fi/f0so6wp98l2xnqaqnni5v/TwistLens_authors.pdf?rlkey=2pbfqkhlzqfq2wlxhip627uve&st=vdf4pjny&dl=0"
 
 # links
 links:
   - label : "PDF"
-    link : ""
+    link : "https://www.dropbox.com/scl/fi/f0so6wp98l2xnqaqnni5v/TwistLens_authors.pdf?rlkey=2pbfqkhlzqfq2wlxhip627uve&st=vdf4pjny&dl=0"
   - label : "Project Page"
     link : ""
   - label : "Source URL"
