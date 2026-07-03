@@ -370,7 +370,7 @@
 }
 
 .project-section-row {
-    margin-bottom: 8px;
+    margin-bottom: 2px;
 }
 
 .project-section-row--image-only {
@@ -399,15 +399,22 @@
 
 .project-section-title {
     margin-bottom: 0px;
-    margin-top: 30px;
+    margin-top: 18px;
 }
 
 .project-section-bilingual {
     padding-right: 8px;
+
+    .row {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
 }
 
 .project-section-lang-col {
     margin-bottom: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .project-section-body {
@@ -416,10 +423,11 @@
     color: black;
     font-size: 14px !important;
     line-height: 1.5;
-    padding-right: 18px;
+    padding-right: 4px;
     margin-top: 10px;
     margin-bottom: 10px;
-    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
 
     p {
         font-family: inherit;
@@ -430,6 +438,7 @@
         margin-top: 10px;
         margin-bottom: 10px;
         text-align: justify;
+        text-justify: inter-word;
     }
 
     p:last-child {
