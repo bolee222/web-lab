@@ -64,6 +64,39 @@ $(document).ready(function () {
     fixedBgPos: true
   });
 
+  // Project page image popup
+  $('.portfolio-single-page img').each(function () {
+    var $img = $(this);
+    var src = $img.attr('src');
+
+    if (!src || $img.closest('a').length) {
+      return;
+    }
+
+    var title = $img.attr('alt') || $img.closest('.project-reference-item, .project-image-only-wrap').find('.project-reference-caption').text();
+    $img.wrap($('<a />', {
+      class: 'project-image-popup',
+      href: src,
+      title: $.trim(title)
+    }));
+  });
+
+  $('.portfolio-single-page').magnificPopup({
+    delegate: '.project-image-popup',
+    type: 'image',
+    gallery: {
+      enabled: true
+    },
+    closeOnContentClick: false,
+    closeOnBgClick: true,
+    showCloseBtn: true,
+    fixedContentPos: true,
+    fixedBgPos: true,
+    image: {
+      titleSrc: 'title'
+    }
+  });
+
   //  Count Up
   function counter() {
     var oTop;

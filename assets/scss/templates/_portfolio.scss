@@ -393,6 +393,16 @@
     display: block;
 }
 
+.project-image-popup {
+    display: block;
+    cursor: zoom-in;
+
+    &:focus {
+        outline: 2px solid #111;
+        outline-offset: 3px;
+    }
+}
+
 .project-image-only-caption {
     max-width: none;
 }

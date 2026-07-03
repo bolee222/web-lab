@@ -69,7 +69,10 @@
           <div class="project-content mt-10">
             <div class="project-image-only-wrap">
               {{ with $section.image }}
-              <img src="{{ . | relURL }}" alt="{{ $section.caption | default "Project section image" }}" class="img-fluid project-image-only" />
+              {{ $caption := $section.caption | default "Project section image" }}
+              <a href="{{ . | relURL }}" class="project-image-popup" title="{{ $caption | plainify }}">
+                <img src="{{ . | relURL }}" alt="{{ $caption }}" class="img-fluid project-image-only" />
+              </a>
               {{ end }}
               {{ with $section.caption }}
               <div class="project-reference-caption project-image-only-caption">{{ . | markdownify }}</div>
@@ -103,7 +106,10 @@
           {{ with $section.image }}
           <aside class="project-reference-panel project-reference-panel--section mt-10">
             <div class="project-reference-item">
-              <img src="{{ . | relURL }}" alt="{{ $.Title }} reference image" class="img-fluid" />
+              {{ $caption := $section.caption | default (printf "%s reference image" $.Title) }}
+              <a href="{{ . | relURL }}" class="project-image-popup" title="{{ $caption | plainify }}">
+                <img src="{{ . | relURL }}" alt="{{ $.Title }} reference image" class="img-fluid" />
+              </a>
               {{ with $section.caption }}<div class="project-reference-caption">{{ . | markdownify }}</div>{{ end }}
             </div>
           </aside>
@@ -125,7 +131,10 @@
           <div class="project-subtitle">Related References</div>
           {{ range .Params.content_references }}
           <div class="project-reference-item">
-            <img src="{{ .image | relURL }}" alt="{{ .caption | default "TwistLens reference image" }}" class="img-fluid" />
+            {{ $caption := .caption | default "Project reference image" }}
+            <a href="{{ .image | relURL }}" class="project-image-popup" title="{{ $caption | plainify }}">
+              <img src="{{ .image | relURL }}" alt="{{ $caption }}" class="img-fluid" />
+            </a>
             {{ with .caption }}<div class="project-reference-caption">{{ . | markdownify }}</div>{{ end }}
           </div>
           {{ end }}
