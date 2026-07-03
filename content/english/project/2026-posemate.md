@@ -1,5 +1,5 @@
 ---
-title: "PoseMate: AI-Generated Socially Driven Pose Guidance for Gen Z Photo-Taking
+title: "PoseMate: AI-Generated Socially Driven Pose Guidance for Gen Z Photo-Taking"
 title_official: "PoseMate: A Conceptual Framework for AI-Generated Socially Driven Pose Guidance for Gen Z Photo-Taking"
 date: 2026-05-31
 publishDate: 2026-05-31
@@ -9,7 +9,6 @@ draft: false
 # ["XR", "AI", "Physical AI", "UX", "Embodied Interaction", "Digital Human" ,"Digital Twin" , "Convergence", "Interaction Design", "Digital Creativity","System", "Visualization", "User Study", "Cultural Technology",  "User-centered Design", "Marketing", "Patent"]
 category: ["AI", "UX", "Convergence", "Interaction Design", "System", "Visualization", "User Study", "User-centered Design", "Marketing"]
 image: "/projects/2026-posemate/_[opt]teaser.webp"
-teaser_top: "/projects/2026-posemate/_[opt]top.webp"
 metacontent: "PoseMate reframes AI photo-taking assistance around socially shared pose trends. Instead of prescribing expert-defined best poses, it helps Gen Z construct interpretable pose references from carefully filtered social media photo sets."
 description: "PoseMate project page: Archives of Design Research 2026 paper on AI-generated socially driven pose guidance for Gen Z photo-taking by Nur Izzatty Binti Mohamad Jamal and Bokyung Lee."
 keywords: ["PoseMate", "AI photo-taking assistant", "pose guidance", "pose trends", "Gen Z", "social media", "photo filtering", "Bokyung Lee", "CXD Lab"]
