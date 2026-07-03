@@ -30,7 +30,7 @@ links:
 
 section_rows:
   - layout: "image_only"
-    image: "/projects/2026-posemate/workflow.webp"
+    image: "/projects/2026-posemate/system.webp"
     caption: "PoseMate filters user-consented social media photos, extracts anonymized pose cues, and identifies recurring pose patterns for trend-based guidance."
 
   - title: "Background: Socially Inspired Photo-Taking"
@@ -38,7 +38,7 @@ section_rows:
       Gen Z often uses social media as a space for identity expression, belonging, and visual self-presentation. In everyday photo-taking, this means that poses are not only aesthetic choices but also socially legible references that can signal alignment with current trends. However, finding useful pose references from social media can require scrolling through many images and interpreting patterns without structured support.
     body_kr: >-
       Gen Z에게 소셜 미디어는 정체성을 표현하고 사회적 소속감을 형성하는 중요한 공간이다. 일상적인 사진 촬영에서 포즈는 단순한 미적 선택이 아니라 현재 유행과의 연결을 보여주는 사회적 참조가 된다. 하지만 소셜 미디어에서 유용한 포즈 레퍼런스를 찾으려면 많은 이미지를 훑고 반복되는 패턴을 스스로 해석해야 하므로 체계적인 지원이 필요하다.
-    image: "/projects/2026-posemate/framework.webp"
+    image: "/projects/2026-posemate/background.webp"
     caption: "Research focus at the intersection of Gen Z photo-taking practices, social media photo data, and AI photo-taking assistance."
 
   - title: "PoseMate Concept"
@@ -54,7 +54,7 @@ section_rows:
       The research combined a formative study of Gen Z photo-taking practices with a participatory design study focused on AI-supported photo filtering. Participants reviewed social media-inspired photo datasets, discussed which photos should or should not inform pose trends, and proposed filtering dimensions that would make AI-generated guidance feel more relevant, interpretable, and socially grounded.
     body_kr: >-
       본 연구는 Gen Z의 사진 촬영 관행을 이해하기 위한 형성 연구와 AI 기반 사진 필터링을 다루는 참여 디자인 연구로 구성되었다. 참여자들은 소셜 미디어에서 영감을 받은 사진 데이터셋을 살펴보며 어떤 사진이 포즈 트렌드 생성에 포함되거나 제외되어야 하는지 논의했고, AI가 더 관련성 있고 해석 가능한 포즈 가이던스를 제공하기 위해 고려해야 할 필터링 기준을 제안하였다.
-    image: "/projects/2026-posemate/study-setup.webp"
+    image: "/projects/2026-posemate/cards.webp"
     caption: "Participatory design study setup for examining how Gen Z expects AI to curate photo sets for pose-trend guidance."
 
   - title: "Design Implications"
