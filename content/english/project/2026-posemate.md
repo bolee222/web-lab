@@ -1,5 +1,5 @@
 ---
-title: "PoseMate: AI-Generated Socially Driven Pose Guidance"
+title: "PoseMate: AI-Generated Socially Driven Pose Guidance for Gen Z Photo-Taking
 title_official: "PoseMate: A Conceptual Framework for AI-Generated Socially Driven Pose Guidance for Gen Z Photo-Taking"
 date: 2026-05-31
 publishDate: 2026-05-31
