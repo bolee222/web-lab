@@ -15,7 +15,7 @@ assist the process of cooking. We present the iterative process of designing the
 Ori-mandu enables users to fabricate dumplings in whatever shape they want."
 
 # Meta-Data
-conference: "DIS 2017"
+conference: "ACM DIS 2017"
 conference_full: "ACM 2017 Designing Interactive Systems Conference"
 con_date: "02 May 2017"
 keys: "simulation-driven design, virtual human with agency, digital human"

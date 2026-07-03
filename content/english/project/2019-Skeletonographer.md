@@ -13,7 +13,7 @@ teaser: "/projects/2019-Skeletonographer/_[opt]top.webp"
 metacontent: "We designed a Skeletonographer is an online tool that supports digital ethnographic studies using anonymous skeletonized representations of human bodies. Users can play back and annotate skeleton data similar to a video analysis tool."
 
 # Meta-Data
-conference: "CSCW 2019"
+conference: "ACM CSCW 2019"
 conference_full: "ACM Journal of Hum.-Comput. Interact. 4, CSCW3, Article 238"
 con_date: "09 November 2019"
 keys: "simulation-driven design, virtual human with agency, digital human"

@@ -13,7 +13,7 @@ teaser: "/projects/2016-BodyMeter/_[opt]top.jpg"
 metacontent: "We developed situated and interactive guidelines to assist users in design applications. We applied these guidelines in a Virtual Reality (VR) system that lets users customize their desk and provides real-time feedback and feedforward on pose and design."
 
 # Meta-Data
-conference: "NordiCHI 2016"
+conference: "ACM NordiCHI 2016"
 conference_full: "ACM 2018 Designing Interactive Systems Conference"
 con_date: "23 October 2016"
 keys: "simulation-driven design, virtual human with agency, digital human"

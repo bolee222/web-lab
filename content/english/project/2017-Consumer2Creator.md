@@ -13,7 +13,7 @@ teaser:
 metacontent: "We developed situated and interactive guidelines to assist users in design applications. We applied these guidelines in a Virtual Reality (VR) system that lets users customize their desk and provides real-time feedback and feedforward on pose and design."
 
 # Meta-Data
-conference: "CHI 2017"
+conference: "ACM CHI 2017"
 conference_full: "ACM 2018 Designing Interactive Systems Conference"
 con_date: "02 May 2017"
 keys: "simulation-driven design, virtual human with agency, digital human"

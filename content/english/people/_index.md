@@ -66,7 +66,7 @@ pricing:
 
     # Student table loop
     - name: "Hyunju Kim"
-      type: Ph.D Intern (Cornell University)
+      type: Ph.D Researcher / Cornell University
       image : "images/students/Hyunju.webp"
       email: "hk724@cornell.edu"
       period: 2025 Summer - Current
@@ -114,20 +114,11 @@ pricing:
       link: "#"
 
     # Student table loop
-    - name: "Seeun Lee"
-      type: Undergraduate Researcher
-      email: "otpdo@yonsei.ac.kr"
-      image : "images/students/Seeun.jpg"
-      period: 2025 Fall - current
-      content: "Virtual Reality, Virtual Agent, Children's Education"
-      link: "#"
-
-    # Student table loop
-    - name: "OlgaOlga Glebova"
+    - name: "Olga Glebova"
       type: Undergraduate Researcher
       email: "glebovaola3@icloud.com"
-      image : "images/students/default.jpg"
-      period: 2026 Winter - current
+      image : "images/students/Olga.webp"
+      period: 2026 Spring - current
       content: "Generative AI, Visual Story, Visual Media"
       link: "#"
 
@@ -135,12 +126,54 @@ pricing:
     - name: "Tonya Dzhen"
       type: Undergraduate Researcher
       email: "tonyadzhen@gmail.com"
-      image : "images/students/default.jpg"
-      period: 2026 Winter - current
+      image : "images/students/Tonya.webp"
+      period: 2026 Spring - current
       content: "Generative AI, Visual Story, Visual Media"
       link: "#"
 
+    # Student table loop
+    - name: "Jebeen Ryu"
+      type: Undergraduate Researcher
+      email: "rjbin04@gmail.com"
+      image : "images/students/default.jpg"
+      period: 2026 Summer - current
+      content: "Robot Interaction, Autonomous UX"
+      link: "#"
 
+    # Student table loop
+    - name: "Jonghee Min"
+      type: Undergraduate Researcher
+      email: "j.min@yonsei.ac.kr"
+      image : "images/students/default.jpg"
+      period: 2026 Summer - current
+      content: "Visual UX, Customized Storytelling, XR"
+      link: "#"
+
+    # Student table loop
+    - name: "Hyemin Park"
+      type: Undergraduate Researcher
+      email: "hmini2611@gmail.com"
+      image : "images/students/Hyemin.webp"
+      period: 2026 Summer - current
+      content: "Visual Media, Media Art, Content Creating"
+      link: "#"
+
+    # Student table loop
+    - name: "Jeana Lee"
+      type: Undergraduate Researcher
+      email: "jeanalee@yonsei.ac.kr"
+      image : "images/students/Jeana.webp"
+      period: 2026 Summer - current
+      content: "Visual Media, Media Art, Content Creating"
+      link: "#"
+
+    - name: "Yumin Lee"
+      type: Undergraduate Researcher
+      email: "jeanalee@yonsei.ac.kr"
+      image : "images/students/default.jpg"
+      period: 2026 Summer - current
+      content: "User Research, UX/UI, Service Design"
+      link: "#"
     
 alumni:
   enable: true

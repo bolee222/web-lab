@@ -13,7 +13,7 @@ teaser: "/projects/2019-RobotDesk/_[opt]top.webp"
 metacontent: "We performed a Wizard of Oz study to find the best timing for changing desk height to minimize interruption and discomfort. The results are in line with prior work on task interruption in graphical user interfaces and show that the table should change height during a task change."
 
 # Meta-Data
-conference: "CHI 2019"
+conference: "ACM CHI 2019"
 conference_full: "ACM Journal of Hum.-Comput. Interact. 4, CSCW3, Article 238"
 con_date: "02 May 2019"
 keys: "simulation-driven design, virtual human with agency, digital human"
