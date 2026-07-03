@@ -103,6 +103,19 @@
           </div>
         </div>
         <div class="col-md-4">
+          {{ if $section.images }}
+          <aside class="project-reference-panel project-reference-panel--section mt-10">
+            {{ range $section.images }}
+            <div class="project-reference-item">
+              {{ $caption := .caption | default $section.caption | default (printf "%s reference image" $.Title) }}
+              <a href="{{ .image | relURL }}" class="project-image-popup" title="{{ $caption | plainify }}">
+                <img src="{{ .image | relURL }}" alt="{{ $.Title }} reference image" class="img-fluid" />
+              </a>
+              {{ with .caption }}<div class="project-reference-caption">{{ . | markdownify }}</div>{{ end }}
+            </div>
+            {{ end }}
+          </aside>
+          {{ else }}
           {{ with $section.image }}
           <aside class="project-reference-panel project-reference-panel--section mt-10">
             <div class="project-reference-item">
@@ -113,6 +126,7 @@
               {{ with $section.caption }}<div class="project-reference-caption">{{ . | markdownify }}</div>{{ end }}
             </div>
           </aside>
+          {{ end }}
           {{ end }}
         </div>
       </div>

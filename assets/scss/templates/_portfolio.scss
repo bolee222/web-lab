@@ -403,6 +403,10 @@
     }
 }
 
+.mfp-image-holder .mfp-figure:after {
+    background: #fff;
+}
+
 .project-image-only-caption {
     max-width: none;
 }
@@ -453,6 +457,16 @@
 
     p:last-child {
         margin-bottom: 0;
+    }
+
+    mark {
+        padding: 0 2px;
+        background: rgba(255, 246, 163, 0.4);
+        color: inherit;
+        text-decoration-line: underline;
+        text-decoration-color: rgba(230, 185, 0, 0.55);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
     }
 }
 
