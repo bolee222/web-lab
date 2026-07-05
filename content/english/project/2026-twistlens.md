@@ -56,9 +56,9 @@ section_rows:
 
   - title: "Docent-Informed Preview Generation"
     body_en: >-
-      TwistLens generates twisted previews based on the original artwork image and paired docent description. First, the system analyzes the text to identify the most salient information category, such as symbolic meaning, or composition. It also extracts cue phrases that connect the docent narrative to visible image regions. These phrases are grounded through segmentation so the system can transform the relevant parts of the image while keeping the surrounding scene stable. The result is not a generic blur or filter, but a semantically guided preview that controls what is revealed, what is withheld, and what is made curious.
+      TwistLens generates twisted previews based on the original artwork image and paired docent description. First, the system analyzes the text to identify the most salient information category, such as symbolic meaning, or composition. It also extracts cue phrases that connect the docent narrative to visible image regions. These phrases are grounded through segmentation so the system can transform the relevant parts of the image while keeping the surrounding scene stable. <mark>TwistLens output is not a generic blur or filter, but a semantically guided preview that controls what is revealed, what is withheld, and what is made curious.</mark>
     body_kr: >-
-      TwistLens는 작품 이미지와 도슨트 설명을 함께 입력으로 받아 프리뷰를 생성합니다. 먼저 시스템은 도슨트 텍스트에서 가장 중요한 정보 유형을 찾습니다. 예를 들어 상징적 의미나 구성과 같은 범주가 여기에 포함됩니다. 이후 설명 속 단서 문구를 추출하고, 그 문구가 이미지의 어느 영역과 연결되는지 segmentation을 통해 찾습니다. 이렇게 식별된 영역만 선택적으로 변형하고 주변 장면은 유지하기 때문에, TwistLens의 프리뷰는 단순한 블러나 필터가 아닙니다. 무엇을 보여주고, 무엇을 숨기고, 어떤 부분에서 호기심을 만들지 의미 단위로 조절하는 프리뷰입니다.
+      TwistLens는 작품 이미지와 도슨트 설명을 함께 입력으로 받아 프리뷰를 생성합니다. 먼저 시스템은 도슨트 텍스트에서 가장 중요한 정보 유형을 찾습니다. 예를 들어 상징적 의미나 구성과 같은 범주가 여기에 포함됩니다. 이후 설명 속 단서 문구를 추출하고, 그 문구가 이미지의 어느 영역과 연결되는지 segmentation을 통해 찾습니다. 이렇게 식별된 영역만 선택적으로 변형하고 주변 장면은 유지하기 때문에, <mark>TwistLens의 프리뷰는 단순한 블러나 필터가 아닙니다. 무엇을 보여주고, 무엇을 숨기고, 어떤 부분에서 호기심을 만들지 의미 단위로 조절하는 프리뷰입니다.</mark>
     image: "/projects/2026-twistlens/web_workflow.png"
     caption: "The workflow connects docent text analysis, information taxonomy, segmentation, and image transformation."
 
@@ -105,9 +105,9 @@ section_rows:
 
   - title: "Beyond Museums"
     body_en: >-
-      Although TwistLens was developed for art museum previews, the idea extends to other domains where early exposure can reduce later discovery. In education, transformed previews can prompt learners to form hypotheses before seeing full explanations. In tourism, preview media can communicate the atmosphere of a place while delaying key scenes or details. In fine dining, transformed images can hint at ingredients, concepts, or plating logic while preserving the final reveal. Across these contexts, TwistLens demonstrates how generative AI can be used not only to produce images, but to shape the timing, ambiguity, and interpretive depth of visual disclosure.
+      Although TwistLens was developed for art museum previews, the idea extends to other domains where early exposure can reduce later discovery. <mark>In education</mark>, transformed previews can prompt learners to form hypotheses before seeing full explanations. <mark>In tourism</mark>, preview media can communicate the atmosphere of a place while delaying key scenes or details. <mark>In fine dining</mark>, transformed images can hint at ingredients, concepts, or plating logic while preserving the final reveal. Across these contexts, TwistLens demonstrates how generative AI can be used not only to produce images, but to shape the timing, ambiguity, and interpretive depth of visual disclosure.
     body_kr: >-
-      TwistLens는 미술관 프리뷰를 위해 개발되었지만, 사전 노출이 이후의 발견 경험을 약화시킬 수 있는 다른 영역에도 확장될 수 있습니다. 교육에서는 전체 설명을 보여주기 전에 변형된 프리뷰를 통해 학습자가 먼저 가설을 세우도록 유도할 수 있습니다. 관광에서는 장소의 분위기는 전달하되 핵심 장면이나 세부 정보의 노출은 늦출 수 있습니다. 파인다이닝에서는 재료, 콘셉트, 플레이팅 논리를 암시하면서 최종 결과의 놀라움은 남겨둘 수 있습니다. 이런 맥락에서 TwistLens는 생성형 AI가 단순히 이미지를 만들어내는 도구를 넘어, 시각 정보가 언제, 얼마나, 어떤 모호함을 가지고 공개될지 설계하는 도구가 될 수 있음을 보여줍니다.
+      TwistLens는 미술관 프리뷰를 위해 개발되었지만, 사전 노출이 이후의 발견 경험을 약화시킬 수 있는 다른 영역에도 확장될 수 있습니다. <mark>교육에서는</mark> 전체 설명을 보여주기 전에 변형된 프리뷰를 통해 학습자가 먼저 가설을 세우도록 유도할 수 있습니다. <mark>관광에서는</mark> 장소의 분위기는 전달하되 핵심 장면이나 세부 정보의 노출은 늦출 수 있습니다. <mark>파인다이닝에서는</mark> 재료, 콘셉트, 플레이팅 논리를 암시하면서 최종 결과의 놀라움은 남겨둘 수 있습니다. 이런 맥락에서 TwistLens는 생성형 AI가 단순히 이미지를 만들어내는 도구를 넘어, 시각 정보가 언제, 얼마나, 어떤 모호함을 가지고 공개될지 설계하는 도구가 될 수 있음을 보여줍니다.
     image: 
     caption: "The anticipation-preserving preview concept can scale beyond museum experiences."
 
