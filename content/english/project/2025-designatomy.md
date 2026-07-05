@@ -19,7 +19,7 @@ keywords: "generative AI, XR, Design Pedagogy"
 researcher: "Bokyung Lee"
 summary: "The rapid technological and cultural advancements of the Fourth Industrial Revolution require designers to develop two essential skills: (i) the ability to quickly adapt to emerging technology and (ii) the ability to generate creative ideas in both user-driven and technology-driven ways. However, conventional design education methods often fall short in simultaneously cultivating these skills. Therefore, this paper introduces Designatomy, a novel pedagogical approach to guide technology-driven design approaches to tech-novice design students. This method employs a taxonomy information framework as a foundational thinking strategy, encouraging students to independently explore and comprehend design features shaped by new technological advancements. Our study involving 22 students demonstrated that Designatomy effectively accelerates the acquisition of fundamental knowledge about the relationship between design and technology, fostering both engagement and efficiency. Furthermore, the acquired knowledge was successfully applied in students' idea-generation sessions. The results suggest that Designatomy has considerable potential to equip students with the skills necessary to navigate the rapidly evolving landscape of design, promoting a problem-solving mindset crucial for addressing emerging trends in design and technology."
 tags: ["Extended reality (XR)", "augmented reality (AR)", "exhibition", "situated communication", "virtual museum", "interactive visualization"]
-shortkeys: "#generative AI, XR/AR, design tools"
+shortkeys: ["technology-driven ideation", "design pedagogy", "taxonomy for creativity", "tech-novice innovation"]
 
 # links
 links:

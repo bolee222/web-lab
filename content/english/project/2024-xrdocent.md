@@ -18,7 +18,7 @@ keywords: "XR Museum / Interactive Docent / UX Insights"
 researcher: "Pei-Tzu Hung, Bokyung Lee"
 summary: "A well-designed docent significantly impacts visitors’ comprehension of the knowledge provided in museums. This study investigates the potential of eXtended Reality (XR) interactions to enhance knowledge delivery within exhibitions. Analyzing 737 exhibit commentary descriptions from 10 real-world exhibitions, we first provided a foundational knowledge taxonomy that outlines various types of information frequently conveyed along with physical exhibits. Subsequently, interviews with expert curators based on our taxonomy framework revealed their past challenges with communication for each type of knowledge and their desires. Our findings elucidate several implications for designing XR interactions to deliver curated knowledge more effectively. Unlike other works of knowledge-delivery supports in XR museums that focused on immersive representations and virtual human guides, our findings suggested new perspectives on incorporating the current understanding of situated visualization, spatio-temporal interaction, participatory embodiment, and the feedback loop into XR exhibition contexts, thus enriching the informative learning experience for museum visitors."
 tags: ["Extended reality (XR)", "augmented reality (AR)", "exhibition", "situated communication", "virtual museum", "interactive visualization"]
-shortkeys: "#XR interaction, XR/AR, situated visualization"
+shortkeys: ["XR museum learning", "situated knowledge", "interactive docent", "cultural AI"]
 
 # links
 links:

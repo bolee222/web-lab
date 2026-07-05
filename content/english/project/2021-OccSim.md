@@ -30,7 +30,7 @@ summary: "
 
 • Our participatory evaluation with four groups of stakeholders revealed that OccSim could enhance their decision making processes by identifying specific risks of virus transmission in advance, and illuminating how each risk relates to complex human-building interactions."
 tags: ["Design", "Bab", "Bibibib"]
-shortkeys: "#simulation,   #covid-19"
+shortkeys: ["multi-agent simulation", "pandemic-aware planning", "digital twin", "risk-aware space UX"]
 keywords: ["generative AI", "multi-agent simulation", "human simulation", "human behaviors", "simulation-driven design", "interior layout design"]
 
 # description

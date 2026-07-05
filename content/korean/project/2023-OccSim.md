@@ -18,7 +18,7 @@ keywords: "generative design / human-centered architecture / AI-driven"
 researcher: "Bokyung Lee, Michael Lee, Jeremy Mogk, Rhys Goldstein, Jacky Bibliowicz, Frederik Brudy, Alexander Tessier."
 summary: "• We propose a generative design workflow that integrates a stochastic multi-agent simulation with the intent of helping building designers reduce the risk posed by COVID-19 and future pathogens. Our custom simulation randomly generates activities and movements of individual occupants, tracking the amount of virus transmitted through air and surfaces from contagious to susceptible agents. The stochastic nature of the simulation requires that many repetitions be performed to achieve statistically reliable results. Accordingly, a series of initial experiments identified parameter values that balanced the trade-off between computational cost and accuracy. Applying generative design to a case study based on an existing office space reduced the predicted transmission by around 10% to 20% compared with a baseline set of layouts. Additionally, a qualitative examination of the generated layouts revealed design patterns that may reduce transmission. Stochastic multi-agent simulation is a computationally expensive yet plausible way to generate safer building designs."
 tags: ["Design", "Bab", "Bibibib"]
-shortkeys: "#generative design"
+shortkeys: ["generative space design", "pathogen-resilient architecture", "multi-agent AI", "simulation-driven planning"]
 
 # links
 links:

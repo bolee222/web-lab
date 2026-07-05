@@ -19,7 +19,7 @@ keywords: "XR Museum / Interactive Docent / UX Insights"
 researcher: "Nuddrinn Sanphanit, Bokyung Lee"
 summary: "In digital spaces, people often struggle to intuitively grasp the qualities of a perfume—text descriptions can be long and tedious, underscoring the need for more visual and instantly understandable representations. To address this gap, we investigated a parametric visualization toolkit for communicating perfume qualities without the actual scent. A formative study explored which visual elements might best represent attributes, revealing commonly nominated features such as layers, stroke thickness, and curvature, and highlighting motion as a promising cue for dynamic characteristics. Building on these insights, we developed ParaScent, a toolkit that encodes perfume attributes into motion-enhanced visuals. In a user evaluation, ParaScent improved interpretation, stimulated curiosity, and increased confidence in scent selection compared to conventional static, chart-based visualizations. These findings point to the potential of motion-driven, multi-parameter representations as an engaging, accessible, and effective way to communicate scent in digital contexts."
 tags: ["Scent Visualization", "Parametric Design", "Visualization", "Digital Scent"]
-shortkeys: "#XR interaction, XR/AR, situated visualization"
+shortkeys: ["scent visualization", "motion-based fragrance", "parametric branding", "sensory UX"]
 
 # links
 links:

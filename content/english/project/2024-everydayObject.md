@@ -19,7 +19,7 @@ keywords: "generative design / human-centered architecture / AI-driven"
 researcher: "<b><u>Bokyung Lee</u></b>, Hyungkyung Lee."
 summary: "Advanced technologies like Virtual Reality (VR) or Augmented Reality (AR) opened up new possibilities for non-professionals to create 3D shapes, forms, or artworks without professional training. Still, most existing works focus on supporting 3D modeling tasks; and understanding how to support the early stage of design (ideation and creative expression) is still lacking. This paper aims to investigate future interfaces that could support non-professional’s 3D geometry ideation and construction process. We present the generative design study in which we observed how ten non-professional designers brainstormed and generated custom 3D shapes for their personal desired objects. We found that non-design experts rely on various 3D reference objects when generating their desired 3D geometry shapes, and they tend to apply those references directly in shape descriptions. Based on these insights, we highlighted the potential of having reference-based digital 3D design tools for novices. A new system called ShapeloreVR is proposed, which utilizes everyday objects and basic primitives in a VR design playground so that non-experts can quickly interact with, merge, modify, and generate desired 3D shapes while brainstorming."
 tags: ["Design", "VR", "Design Tools"]
-shortkeys: "#VR design tools, novices"
+shortkeys: ["VR shape ideation", "everyday-object creativity", "novice 3D making", "immersive design tools"]
 
 # links
 links:

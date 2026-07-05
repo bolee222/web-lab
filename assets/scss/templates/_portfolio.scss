@@ -159,12 +159,17 @@
     max-width: 100%;
     padding: 0;
     color: white;
-    font-family: $primary-font;
-    font-size: 13px;
-    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
     line-height: 1.35;
     word-break: break-word;
     text-shadow: 0 1px 8px rgba(0, 0, 0, .65);
+
+    &::before {
+        content: "#";
+    }
 
     &:not(:last-child)::after {
         content: ",";

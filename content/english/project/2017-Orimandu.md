@@ -26,7 +26,7 @@ pictorial, we extend the research on digital gastronomy by using digital fabrica
 assist the process of cooking. We present the iterative process of designing the “Ori-mandu” system, and how
 Ori-mandu enables users to fabricate dumplings in whatever shape they want."
 tags: ["Design", "Bab", "Bibibib"]
-shortkeys: "#social comfort,   #data-driven"
+shortkeys: ["digital gastronomy", "food fabrication", "playful making", "cultural design tech"]
 keywords: []
 
 # description

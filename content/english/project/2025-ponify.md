@@ -20,7 +20,7 @@ keywords: "XR Museum / Interactive Docent / UX Insights"
 researcher: "Bokyung Lee, Hanbin Bae"
 summary: "Integrating auditory elements that complement the visual features of the paintings can enhance artwork appreciation. Image sonification has advanced this paradigm by automatically generating matching sounds. However, existing techniques rely on basic features such as color without integrating complex contextual information. Based on the insights from our formative study, we introduce Ponify, a sonification method that translates a painting’s sense of dynamics into music through pose analysis. Ponify analyzes the limb movements of human figures in paintings and configures musical parameters such as the tempo and density to convey dynamic perceptions. Evaluation studies indicate that Ponify generates music that aligns harmoniously with the artwork, surpassing the performance of methods without pose analysis. In addition, Ponify enhances viewers’ enjoyment and empathy without reducing their concentration. We conclude that incorporating pose-based dynamics into sonification can offer a more immersive and emotionally engaging art appreciation experience, opening newpossibilities for multimedia interpretation."
 tags: ["Extended reality (XR)", "augmented reality (AR)", "exhibition", "situated communication", "virtual museum", "interactive visualization"]
-shortkeys: "#XR interaction, XR/AR, situated visualization"
+shortkeys: ["AI art listening", "pose-based sonification", "empathetic music UX", "cultural computing"]
 apa: "Lee, B., & Bae, H. (2025). PONIFY: Pose-Driven Painting Sonification to Enhance Augmented Artwork Perception through Sense of Dynamics. International Journal of Human–Computer Interaction, 1–18."
 
 

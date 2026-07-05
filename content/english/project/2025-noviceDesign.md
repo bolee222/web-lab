@@ -19,7 +19,7 @@ keywords: "generative AI, XR"
 researcher: "Bokyung Lee, Gyeol Han, Jundong Park, Daniel Saakes"
 summary: "Advanced technologies empower novices to create 3D products independently, yet existing tools focus on simplifying object creation, overlooking support for reflecting on users’ needs and desires. This paper envisions generative Artificial Intelligence (AI) and eXtended Reality (XR) as means to better novices in adopting dual roles as designers and users while personalizing 3D products. A generative design study with 24 participants in their homes examined how novices think and act while designing personal products. Observations and interviews reveal that participants actively leverage their bodies, everyday objects, and context-based language, uncovering new opportunities for AI and XR in 3D design tools."
 tags: ["Extended reality (XR)", "augmented reality (AR)", "exhibition", "situated communication", "virtual museum", "interactive visualization"]
-shortkeys: "#generative AI, XR/AR, design tools"
+shortkeys: ["generative AI + XR", "novice 3D design", "user-designer mindset", "future design tools"]
 
 # links
 links:

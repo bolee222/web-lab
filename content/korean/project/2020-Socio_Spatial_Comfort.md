@@ -19,7 +19,7 @@ keys: "simulation-driven design, virtual human with agency, digital human"
 researcher: "Bokyung Lee, Michael Lee, Pan Zhang, Alexander Tessier, Daniel Saakes, and Azam Khan"
 summary: "A well-designed workplace has a direct and significant impact on our work experiences and productivity. In this paper, we investigate how office interior layouts influence the way we socially experience office buildings. We extend the previous work that examined static social formations of office workers by looking at their dynamic movements during informal desk visiting interactions. With a month of video data collected in the office, we implemented a vision-based analysis system that enables us to examine how people occupy space in social contexts in relation to desk configurations. The results showed that both social territoriality and approach path highlight social comfort in human-building interactions, which are different from efficiency or path optimization. From these findings, we propose the concepts of socio-spatial comfort: social buffers, privacy buffers, and varying proxemics to inform a user-centered way of designing human building interactions and architecture."
 tags: ["Design", "Bab", "Bibibib"]
-shortkeys: "#socio-spatial comfort, #data-driven design"
+shortkeys: ["human-building interaction", "spatial comfort analytics", "vision-based UX", "smart workplace"]
 keywords: []
 
 # description
