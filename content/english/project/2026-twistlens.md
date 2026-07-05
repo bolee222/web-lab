@@ -93,7 +93,10 @@ section_rows:
       We evaluated TwistLens with 20 participants in a within-subjects museum preview study. Participants explored two exhibition brochures: a baseline brochure with original images and docent text, and a TwistLens brochure with transformed previews and the same kind of docent text. They then visited two virtual exhibitions and reflected on their experience after the visit. Compared with baseline previews, <mark>TwistLens significantly increased pre-visit anticipation and curiosity. During the visit, the gap between the imagined artwork and the actual artwork produced stronger surprise, higher enjoyment, and stronger perceived spoiler prevention. TwistLens also supported creative thinking before the visit and made information learning more enjoyable afterward.</mark>
     body_kr: >-
       이후 20명의 참여자를 대상으로 museum preview 경험에서 TwistLens를 평가했습니다. 참여자들은 두 가지 전시 브로슈어를 살펴보았습니다. 하나는 원본 이미지와 도슨트 텍스트를 제공하는 baseline 브로슈어였고, 다른 하나는 TwistLens가 생성한 변형 프리뷰와 도슨트 텍스트를 제공하는 브로슈어였습니다. 이후 참여자들은 두 개의 가상 전시를 관람하고 경험을 평가했습니다. <mark>결과적으로 TwistLens는 관람 전 기대감과 호기심을 유의미하게 높였습니다. 실제 작품을 마주했을 때에는 관람 전 상상했던 이미지와 원본 사이의 차이가 더 큰 놀라움, 더 높은 관람 즐거움, 더 강한 스포일러 방지 효과로 이어졌습니다. 또한 TwistLens는 관람 전 창의적 사고를 촉진하고, 관람 후 정보 학습의 즐거움을 높이는 데에도 기여했습니다.</mark>
-    image: 
+    images:
+      - image: "/projects/2026-twistlens/s2_procedure.webp"
+      - image: "/projects/2026-twistlens/s2_exhibitions.webp"
+        caption: "Participants visited virtual exhibitions after forming expectations from the preview materials."
     caption: "TwistLens improved anticipation, curiosity, and interpretive engagement in evaluation."
 
   - title: "Design Implications"
@@ -101,7 +104,9 @@ section_rows:
       <mark>TwistLens suggests that anticipation should be treated as a design material, not just a pre-visit emotion.</mark> The findings point to four principles for anticipatory visual media. First, curated visibility matters: previews should retain interpretive anchors instead of hiding everything. Second, curiosity emerges from calibrated distortion, where the transformed element is strange enough to invite hypotheses but coherent enough to keep viewers oriented. Third, stylistic and symbolic information often needs semantic alternation rather than heavy distortion, because narrative continuity helps visitors form meaningful expectations. Fourth, transformation should be scale-aware, since small but important regions may require stronger visual emphasis to be noticed.
     body_kr: >-
       <mark>TwistLens는 anticipation을 단순한 관람 전 감정이 아니라 설계 가능한 경험 요소로 다룹니다.</mark> 연구 결과는 anticipatory visual media를 위한 네 가지 원칙을 제안합니다. 첫째, 모든 것을 숨기는 것보다 해석의 기준점이 되는 단서는 남겨두는 선별적 가시화가 중요합니다. 둘째, 호기심은 무작위 왜곡이 아니라 조절된 변형에서 만들어집니다. 변형된 요소는 가설을 만들 만큼 낯설어야 하지만, 관람객이 맥락을 잃지 않을 만큼 일관성을 유지해야 합니다. 셋째, 스타일이나 상징적 정보는 강한 왜곡보다 의미를 다른 방식으로 재표현하는 semantic alternation이 더 적합합니다. 넷째, 중요한 단서가 작은 영역에 있을 때에는 더 강한 시각적 강조가 필요하므로 변형의 스케일을 고려해야 합니다.
-    image: 
+    images:
+      - image: "/projects/2026-twistlens/result2-1.webp"
+        caption: "Evaluation results show how TwistLens shaped anticipation and curiosity before the museum visit."
     caption: "Design principles focus on balancing interpretive clarity with controlled ambiguity."
 
   - title: "Beyond Museums"
@@ -109,6 +114,8 @@ section_rows:
       Although TwistLens was developed for art museum previews, the idea extends to other domains where early exposure can reduce later discovery. <mark>In education</mark>, transformed previews can prompt learners to form hypotheses before seeing full explanations. <mark>In tourism</mark>, preview media can communicate the atmosphere of a place while delaying key scenes or details. <mark>In fine dining</mark>, transformed images can hint at ingredients, concepts, or plating logic while preserving the final reveal. Across these contexts, TwistLens demonstrates how generative AI can be used not only to produce images, but to shape the timing, ambiguity, and interpretive depth of visual disclosure.
     body_kr: >-
       TwistLens는 미술관 프리뷰를 위해 개발되었지만, 사전 노출이 이후의 발견 경험을 약화시킬 수 있는 다른 영역에도 확장될 수 있습니다. <mark>교육에서는</mark> 전체 설명을 보여주기 전에 변형된 프리뷰를 통해 학습자가 먼저 가설을 세우도록 유도할 수 있습니다. <mark>관광에서는</mark> 장소의 분위기는 전달하되 핵심 장면이나 세부 정보의 노출은 늦출 수 있습니다. <mark>파인다이닝에서는</mark> 재료, 콘셉트, 플레이팅 논리를 암시하면서 최종 결과의 놀라움은 남겨둘 수 있습니다. 이런 맥락에서 TwistLens는 생성형 AI가 단순히 이미지를 만들어내는 도구를 넘어, 시각 정보가 언제, 얼마나, 어떤 모호함을 가지고 공개될지 설계하는 도구가 될 수 있음을 보여줍니다.
-    image: 
+    images:
+      - image: "/projects/2026-twistlens/result2-2.webp"
+        caption: "Post-visit responses highlight how transformed previews preserved surprise while supporting interpretation."
     caption: "The anticipation-preserving preview concept can scale beyond museum experiences."
 ---
