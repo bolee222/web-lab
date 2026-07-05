@@ -27,6 +27,7 @@ assist the process of cooking. We present the iterative process of designing the
 Ori-mandu enables users to fabricate dumplings in whatever shape they want."
 tags: ["Design", "Bab", "Bibibib"]
 shortkeys: "#social comfort,   #data-driven"
+keywords: []
 
 # description
 description: "This is meta description"
@@ -39,7 +40,6 @@ links:
     link : "https://dl.acm.org/doi/10.1145/3064663.3064790"
   - label : "Presentation"
     link : "/project/2017-orimandu/"
-
 
 ---
 

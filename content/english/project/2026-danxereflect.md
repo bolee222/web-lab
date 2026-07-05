@@ -11,6 +11,8 @@ category: ["XR", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "
 image: "/projects/2026-danxereflect/_[opt]teaser.webp"
 teaser_top: "/projects/2026-danxereflect/top.webp"
 metacontent: "We introduce DanXeReflect, an XR system that transforms rehearsal videos into interactive dance studio for embodied and reflective choreography making. The system enables dancers to explore and communicate feedback through pose-based search, embodied revision, and body-anchored annotation."
+keywords: []
+shortkeys: ""
 
 # 상세 상단 메타
 conference: "ACM CHI / 2026"

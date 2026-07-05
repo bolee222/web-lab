@@ -50,6 +50,18 @@
           <div class="project-subtitle">Project Team</div>
           <div class="project-single-meta">{{ .Params.researcher | markdownify }}</div>
 
+          {{ $projectKeywords := .Params.keywords | default .Params.category }}
+          {{ with $projectKeywords }}
+          <div class="project-subtitle project-side-meta-title">Keywords</div>
+          <div class="project-single-meta">
+            {{ if reflect.IsSlice . }}
+              {{ delimit . ", " }}
+            {{ else }}
+              {{ . | markdownify }}
+            {{ end }}
+          </div>
+          {{ end }}
+
           {{ with .Params.acknowledgement }}
           <div class="project-subtitle project-side-meta-title">Acknowledgement</div>
           <div class="project-single-meta">{{ . | markdownify }}</div>

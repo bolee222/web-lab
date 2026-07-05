@@ -12,6 +12,7 @@ image: "/projects/2026-posemate/_[opt]teaser.webp"
 metacontent: "PoseMate explores how AI can support Gen Z photo-taking by turning socially shared pose trends into controllable, privacy-aware guidance. Rather than recommending a universal best pose, it helps users build meaningful reference sets from filtered social media photos and translate recurring pose patterns into interpretable prompts."
 description: "PoseMate project page: Archives of Design Research 2026 paper on AI-generated socially driven pose guidance for Gen Z photo-taking by Nur Izzatty Binti Mohamad Jamal and Bokyung Lee."
 keywords: ["PoseMate", "AI photo-taking assistant", "pose guidance", "pose trends", "Gen Z", "social media", "photo filtering", "Bokyung Lee", "CXD Lab"]
+shortkeys: ""
 
 # 상세 상단 메타
 conference: "Archives of Design Research / 2026"
@@ -72,5 +73,4 @@ section_rows:
       PoseMate의 핵심은 AI 사진 보조를 정답 추천이 아니라 의미 해석의 문제로 본다는 데 있습니다. AI가 "이 포즈가 가장 좋다"고 말하는 대신, 사용자가 어떤 레퍼런스를 왜 참고하고 싶은지 이해하고, 그것을 자신의 몸과 옷차림, 함께 찍는 사람, 장소에 맞게 바꿔볼 수 있도록 도와야 한다는 것입니다. 따라서 이 논문에서 필터링은 단순한 전처리가 아니라 트렌드를 만드는 기반이 됩니다. 어떤 사진을 포함하느냐에 따라 사회적으로 그럴듯한 포즈, 표현하고 싶은 분위기, 실제로 가능한 포즈의 범위가 달라집니다. 동시에 소셜 미디어 사진을 다루는 만큼, 사용자가 데이터 구성을 조절할 수 있어야 하고, 식별 가능한 이미지보다 스켈레톤 기반 포즈 표현과 프라이버시를 고려한 처리 방식이 중요합니다.
     image:
     caption: "PoseMate shifts AI pose guidance from prescribing best poses to supporting user-controllable trend construction."
-
 ---

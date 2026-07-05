@@ -21,6 +21,7 @@ researcher: "Bokyung Lee, Michael Lee, Pan Zhang, Alexander Tessier, Daniel Saak
 summary: "The design of a workplace can have a profound impact on the effectiveness of the workforce utilizing the space. When considering dynamic social activities in the flow of work, the constraints of the static elements of the interior reveals the adaptive behaviour of the occupants in trying to accommodate these constraints while performing their daily tasks. To better understand how workplace design shapes social interactions, we ran an empirical study in an office context over a two week period. We collected video from 24 cameras in a dozen space configurations totaling 1,920 hours of recorded activities. We utilized computer vision techniques, to produce skeletonized representations of the occupants, to assist in the annotation and data analysis process. We present our findings of socio-spatial formation patterns and the effects of furniture and interior elements on the observed behaviour of collaborators for both computer-supported work and for unmediated social interaction. Combining the observations with an interview of the occupants’ reflections, we discuss dynamics of socio-spatial formations and how this knowledge can support social interactions in the domain of space design systems and interactive interiors."
 tags: ["Design", "Bab", "Bibibib"]
 shortkeys: "#social comfort,   #data-driven"
+keywords: []
 
 # description
 description: "This is meta description"
@@ -33,7 +34,6 @@ links:
     link : "https://dl.acm.org/doi/10.1145/3461778.3462030"
   - label : "Presentation"
     link : "/projects/2021-Occsim/"
-
 
 ---
 
