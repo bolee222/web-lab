@@ -23,7 +23,7 @@
         {{ with .content }}<div class="professor-context">{{ . | markdownify }}</div>{{ end }}
         {{ with .button }}
         {{ if .enable }}
-        <a href="{{ .link | relURL }}" class="btn btn-small mt-20">{{ .label }}</a>
+        <a href="{{ .link | relURL }}" class="btn btn-small mt-20 btn-solid-line" style="border-style: solid;">{{ .label }}</a>
         {{ end }}
         {{ end }}
       </div>

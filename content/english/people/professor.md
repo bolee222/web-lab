@@ -28,8 +28,8 @@ professor:
   My research lies at the intersection of **Human-Computer Interaction** and **Interactive System Designs**. My vision is to design comfortable and novel experiences for an immersive, interactive, and simulated virtual world at a shared, with a multi-disciplinary approach. I envision the potential **interactions for future technologies (VR/AR/AI)** with a goal of enhancing our convergnece experiences. During my Ph.D., I explored embodied interactions for VR/AR digital design tools. I enjoy creating and applying new user-centered design methods, as well as prototyping interactive systems."
   button:
     enable : true
-    label : "Download CV"
-    link : "https://github.com/bolee222/Bokyung-Lee-CV/blob/main/Bokyung_Lee_CV.pdf"
+    label : "CXD구성원 전체보기"
+    link : "/people/"
     
 
 
@@ -48,5 +48,4 @@ nemo. Necessitatibus est quod quo deserunt, dicta aut voluptatem blanditiis, ali
 dolore aliquam quis reiciendis qui vitae reprehenderit. Similique nemo accusamus, vel possimus error cumque
 quas, tempora repellendus velit, unde cupiditate impedit deserunt fugit labore et nostrum sapiente est
 obcaecati maiores voluptates.
-
 
