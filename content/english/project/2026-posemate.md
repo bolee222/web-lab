@@ -10,16 +10,16 @@ draft: false
 category: ["AI", "UX", "Convergence", "Interaction Design", "System", "Visualization", "User Study", "User-centered Design", "Marketing"]
 image: "/projects/2026-posemate/_[opt]teaser.webp"
 metacontent: "PoseMate explores how AI can support Gen Z photo-taking by turning socially shared pose trends into controllable, privacy-aware guidance. Rather than recommending a universal best pose, it helps users build meaningful reference sets from filtered social media photos and translate recurring pose patterns into interpretable prompts."
-description: "PoseMate project page: Archives of Design Research 2026 paper on AI-generated socially driven pose guidance for Gen Z photo-taking by Nur Izzatty Binti Mohamad Jamal and Bokyung Lee."
+description: "PoseMate project page: Archives of Design Research (AoDR) 2026 paper on AI-generated socially driven pose guidance for Gen Z photo-taking by Nur Izzatty Binti Mohamad Jamal and Bokyung Lee."
 keywords: ["AI in photo-taking", "AI for FoMO", "socially-driven AI guide" ,"pose guidance", "pose trends", "Gen Z", "social media", "photo filtering"]
 shortkeys: ["Gen Z photo AI", "social pose intelligence", "privacy-aware guidance", "trend-driven UX"]
 
 # 상세 상단 메타
-conference: "Archives of Design Research / 2026"
-conference_full: "Archives of Design Research, 39(2), 77-95 (2026)"
+conference: "Archives of Design Research (AoDR) / 2026"
+conference_full: "Archives of Design Research (AoDR), 39(2), 77-95 (2026)"
 researcher: "Nur Izzatty Binti Mohamad Jamal, Bokyung Lee"
 summary: "Gen Z spends substantial time on social media and often experiences fear of missing out (FoMO), motivating them to align everyday decisions, including photo-taking, with socially visible trends. While recent design and human-computer interaction (HCI) research has examined socially driven decision support, how such support should be designed to support Gen Z's expressive photo-taking remains underexplored. We conducted a formative study to examine Gen Z's photo-taking practices and their reliance on socially shared visual references. Building on these insights, we introduced PoseMate, a conceptual artificial intelligence (AI) photo-taking assistant that frames posture trends from social media as designable knowledge. Then, we conducted a participatory design study to inform PoseMate's initial analytic workflow, focusing on how Gen Z expects AI to curate the input photo set from which pose trends are derived. The studies showed that Gen Z prefers socially shared, user-generated pose references over expert-driven, rule-based guidance, and that pose trends become meaningful only when derived from carefully filtered photo sets rather than all available images. In the participatory study, participants articulated key filtering dimensions that shape how socially driven pose trends are constructed and interpreted, suggesting design strategies for AI-supported pose-trend guidance generation. This work contributes empirical and design insights into socially inspired photo-taking in Gen Z and reframes photo filtering as a trend-making infrastructure for socially driven pose-guidance systems. By foregrounding user-controllable photo set construction, PoseMate shifts AI support away from prescribing \"best\" poses toward enabling interpretable, socially grounded pose references derived from shared visual practices."
-citation: "Nur Izzatty Binti Mohamad Jamal and Bokyung Lee. (2026). **PoseMate: A Conceptual Framework for AI-Generated Socially Driven Pose Guidance for Gen Z Photo-Taking**. _Archives of Design Research_, 39(2), 77-95. http://dx.doi.org/10.15187/adr.2026.05.39.2.77"
+citation: "Nur Izzatty Binti Mohamad Jamal and Bokyung Lee. (2026). **PoseMate: A Conceptual Framework for AI-Generated Socially Driven Pose Guidance for Gen Z Photo-Taking**. _Archives of Design Research (AoDR)_, 39(2), 77-95. http://dx.doi.org/10.15187/adr.2026.05.39.2.77"
 acknowledgement: "This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) [RS-2024-00340828]."
 
 # 버튼 링크

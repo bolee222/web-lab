@@ -2,7 +2,7 @@
 # BASIC INFO
 title: "Exploring the Next Phase of Situated and Interactive Docents for XR Exhibitions: From the Perspective of Knowledge Delivery"
 author : Pei-Tzu Hung,Bokyung Lee, 
-Journal: "**International Journal of Human-Computer Interaction**, 1-20"
+Journal: "**International Journal of Human-Computer Interaction** (IJHCI), 1-20"
 
 #Type: Journal_sci, Journal_int, Journal_dom, Conference_sci, Conference_int, Conference_dom
 type: "Journal_sci"
@@ -14,7 +14,7 @@ homeYearTag: 2024
 
 
 exactPeriod: 2024.12.23
-cite_acm: "Hung, Pei-Tzu., & Lee, Bokyung. (2024). **Exploring the Next Phase of Situated and Interactive Docents for XR Exhibitions: From the Perspective of Knowledge Delivery**. _International Journal of Human–Computer Interaction_, 1–20."
+cite_acm: "Hung, Pei-Tzu., & Lee, Bokyung. (2024). **Exploring the Next Phase of Situated and Interactive Docents for XR Exhibitions: From the Perspective of Knowledge Delivery**. _International Journal of Human–Computer Interaction (IJHCI)_, 1–20."
 doi: https://doi.org/10.1080/10447318.2024.2437127
 
 

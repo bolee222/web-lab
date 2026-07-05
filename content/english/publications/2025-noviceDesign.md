@@ -2,7 +2,7 @@
 # BASIC INFO
 title: "User-Centered Investigation of Generative AI and XR Interactions in 3D Product Design Tools"
 author : "Bokyung Lee, Gyeol Han, Jundong Park, Daniel Saakes"
-Journal: "**Ergonomics in Design**, 2025 (To be published)"
+Journal: "**Ergonomics in Design (EiD)**, 2025 (To be published)"
 
 #Type: Journal_sci, Journal_int, Journal_dom, Conference_sci, Conference_int, Conference_dom
 type: "Journal_int"
@@ -14,7 +14,7 @@ homeYearTag: 2025
 
 
 exactPeriod: 2025.01.23
-cite_acm: "Bokyung Lee, Gyeol Han, Jundong Park, and Daniel Saakes. (2025). **User-Centered Investigation of Generative AI and XR Interactions in 3D Product Design Tools**. _Ergonomics in Design_, (Accepted). "
+cite_acm: "Bokyung Lee, Gyeol Han, Jundong Park, and Daniel Saakes. (2025). **User-Centered Investigation of Generative AI and XR Interactions in 3D Product Design Tools**. _Ergonomics in Design (EiD)_, (Accepted). "
 doi: 
 
 

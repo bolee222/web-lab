@@ -772,6 +772,265 @@ a:link-text-publications {
   }
 }
 
+.professor-profile.section {
+  padding-bottom: 25px;
+}
+
+.professor-cv {
+  padding-bottom: 80px;
+}
+
+.professor-cv-rule {
+  margin: 0 0 58px;
+  width: 100%;
+  height: 1px;
+  border: none;
+  background: #000;
+}
+
+.professor-cv-section {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 8fr) minmax(0, 2fr) minmax(0, 1fr);
+  column-gap: 24px;
+  margin-bottom: 46px;
+}
+
+.professor-cv-label {
+  grid-column: 1;
+  color: #2a2a2a;
+  font-family: $primary-font;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.professor-cv-items {
+  grid-column: 2 / 4;
+  min-width: 0;
+}
+
+.professor-cv a {
+  display: inline;
+  width: auto;
+  height: auto;
+  align-items: baseline;
+  justify-content: initial;
+}
+
+.professor-cv-item,
+.professor-publication-item {
+  display: grid;
+  grid-template-columns: minmax(0, 9fr) minmax(0, 3fr);
+  column-gap: 28px;
+  align-items: start;
+  margin-bottom: 9px;
+}
+
+.professor-cv-heading,
+.professor-cv-meta {
+  color: #2f2f2f;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.12;
+}
+
+.professor-cv-meta {
+  color: #555;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.professor-cv-item .professor-cv-heading,
+.professor-cv-item .professor-cv-meta {
+  display: inline;
+}
+
+.professor-cv-item.is-bulleted .professor-cv-heading {
+  display: inline-block;
+  padding-left: 14px;
+  position: relative;
+}
+
+.professor-cv-item.is-bulleted .professor-cv-heading::before {
+  content: "•";
+  font-weight: 600;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.professor-cv-item.is-bulleted .professor-cv-description {
+  padding-left: 14px;
+}
+
+.professor-cv-section-project-experience .professor-cv-item {
+  margin-bottom: 6px;
+}
+
+.professor-cv-section-project-experience .professor-cv-heading,
+.professor-cv-section-project-experience .professor-cv-period {
+  line-height: 1.12;
+}
+
+.professor-cv-section-teaching-experience .professor-cv-item {
+  margin-bottom: 6px;
+}
+
+.professor-cv-section-teaching-experience .professor-cv-heading,
+.professor-cv-section-teaching-experience .professor-cv-meta,
+.professor-cv-section-teaching-experience .professor-cv-period {
+  line-height: 1.12;
+}
+
+.professor-cv-description {
+  color: #5f5f5f;
+  font-family: $primary-font;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.16;
+  margin-top: -1px;
+}
+
+.professor-cv-period,
+.professor-publication-year {
+  color: #3f3f3f;
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.22;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.professor-publications-section {
+  margin-bottom: 0;
+}
+
+.professor-publication-item {
+  grid-template-columns: minmax(0, 1fr) 95px;
+  margin-bottom: 18px;
+}
+
+.professor-publication-main .publication-text {
+  color: #2f2f2f;
+  font-size: 15px !important;
+  font-weight: 400;
+  line-height: 1.3;
+  padding-left: 0;
+}
+
+.professor-publication-main .publication-text p {
+  margin: 0;
+}
+
+.professor-publication-main .publication-text strong {
+  color: #2f2f2f;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.professor-publication-main .publication-text em {
+  color: #4f4f4f;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.professor-publication-main .publication-text em strong {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.professor-publication-main .professor-publication-venue {
+  color: #2f2f2f;
+  font-weight: 600;
+}
+
+.professor-publication-main .btn-link-group {
+  padding-left: 0;
+  margin-top: 0;
+  line-height: 1.05;
+}
+
+.professor-publication-main .link-text-publications {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 4px;
+  padding-right: 8px;
+}
+
+.professor-publication-main .link-text-publications + .link-text-publications {
+  margin-left: 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .professor-cv-section {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 8fr) minmax(0, 2fr);
+    column-gap: 20px;
+  }
+
+  .professor-cv-label {
+    grid-column: 1;
+  }
+
+  .professor-cv-items {
+    grid-column: 2 / 4;
+  }
+
+  .professor-cv-item,
+  .professor-publication-item {
+    grid-template-columns: minmax(0, 9fr) minmax(0, 3fr);
+    column-gap: 18px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .professor-cv-rule {
+    margin-bottom: 44px;
+  }
+
+  .professor-cv-section {
+    display: block;
+    margin-bottom: 38px;
+  }
+
+  .professor-cv-label {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .professor-cv-item,
+  .professor-publication-item {
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .professor-cv-heading,
+  .professor-cv-meta {
+    font-size: 16px;
+  }
+
+  .professor-publication-main .publication-text strong {
+    font-size: 16px;
+  }
+
+  .professor-cv-description,
+  .professor-publication-main .publication-text {
+    font-size: 15px;
+  }
+
+  .professor-cv-period,
+  .professor-publication-year {
+    font-size: 14px;
+    margin-top: 4px;
+    text-align: left;
+  }
+}
+
 .btn-solid-line{
   border-style: solid !important;
 }

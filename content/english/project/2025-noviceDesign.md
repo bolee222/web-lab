@@ -12,8 +12,8 @@ teaser: "/projects/2025-noviceDesign/_[opt]top.webp"
 metacontent: "This paper envisions generative AI and XR as means to better novices in adopting dual roles as designers and users while personalizing 3D products. A generative design study in their homes examined how novices think and act while designing personal products."
 
 # Meta-Data
-conference: "Ergonomics in Design / 2025"
-conference_full: Ergonomics in Design
+conference: "Ergonomics in Design (EiD) / 2025"
+conference_full: Ergonomics in Design (EiD)
 con_date: "Undecided"
 keywords: "generative AI, XR"
 researcher: "Bokyung Lee, Gyeol Han, Jundong Park, Daniel Saakes"

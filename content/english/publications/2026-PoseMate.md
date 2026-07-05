@@ -2,7 +2,7 @@
 # BASIC INFO
 title: "PoseMate: A Conceptual Framework for AI-Generated Socially Driven Pose Guidance for Gen Z Photo-Taking"
 author : "Nur Izzatty Binti Mohamad Jamal, <ins>Bokyung Lee</ins>"
-Journal: "**Archives of Design Research, 39(2)**"
+Journal: "**Archives of Design Research (AoDR), 39(2)**"
 
 #Type: Journal_sci, Journal_int, Journal_dom, Conference_sci, Conference_int, Conference_dom
 type: "Journal_int"
@@ -14,7 +14,7 @@ homeYearTag: 2026
 
 
 exactPeriod: 2026.05
-cite_acm: "Nur Izzatty Binti Mohamad Jamal and Bokyung Lee. (2026). **PoseMate: A Conceptual Framework for AI-Generated Socially Driven Pose Guidance for Gen Z Photo-Taking**. _Archives of Design Research_, 39(2), 77-95."
+cite_acm: "Nur Izzatty Binti Mohamad Jamal and Bokyung Lee. (2026). **PoseMate: A Conceptual Framework for AI-Generated Socially Driven Pose Guidance for Gen Z Photo-Taking**. _Archives of Design Research (AoDR)_, 39(2), 77-95."
 doi: http://dx.doi.org/10.15187/adr.2026.05.39.2.77
 
 

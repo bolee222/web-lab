@@ -5,7 +5,9 @@
       <div class="col-md-12">
         <div class="block">
           <h1>{{ .Title  | markdownify }}</h1>
-          <p>{{ .Params.description  | markdownify }}</p>
+          {{ with .Params.description }}
+          <p>{{ . | markdownify }}</p>
+          {{ end }}
         </div>
       </div>
     </div>

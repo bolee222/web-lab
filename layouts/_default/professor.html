@@ -4,7 +4,7 @@
 
 {{ with .Params.professor }}
 {{ if .enable }}
-<section class="about section">
+<section class="about section professor-profile">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
@@ -31,83 +31,62 @@
 {{ end }}
 {{ end }}
 
-{{ with .Params.features }}
+{{ with .Params.cv }}
 {{ if .enable }}
-<section class="about-feature bg-dark section dark-service">
+<section class="professor-cv">
   <div class="container">
-    {{ with .title }}
-    <div class="row">
-      <div class="col-md-12">
-        <div class="title">
-          <h2>{{ . | markdownify }}</h2>
+    <hr class="professor-cv-rule">
+    {{ range .sections }}
+    <div class="professor-cv-section professor-cv-section-{{ .title | plainify | urlize }}">
+      <div class="professor-cv-label">{{ .title | markdownify }}</div>
+      <div class="professor-cv-items">
+        {{ $bullets := .bullets }}
+        {{ range .items }}
+        <div class="professor-cv-item{{ if $bullets }} is-bulleted{{ end }}">
+          <div class="professor-cv-main">
+            <div class="professor-cv-heading">{{ .heading | markdownify }}</div>
+            {{ with .meta }}<span class="professor-cv-meta"> | {{ . | markdownify }}</span>{{ end }}
+            {{ with .description }}<div class="professor-cv-description">{{ . | markdownify }}</div>{{ end }}
+          </div>
+          {{ with .period }}<div class="professor-cv-period">{{ . | markdownify }}</div>{{ end }}
         </div>
+        {{ end }}
       </div>
     </div>
     {{ end }}
-    <div class="row">
-      {{ range .feature_item }}
-      <div class="col-md-4">
-        <div class="service-item">
-          {{ with .icon }}<i class="{{ . }}"></i>{{ end }}
-          {{ with .name }}<h4>{{ . | markdownify }}</h4>{{ end }}
-          {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
+
+    {{ with site.GetPage "section" "publications" }}
+    <div class="professor-cv-section professor-publications-section">
+      <div class="professor-cv-label">Publication</div>
+      <div class="professor-cv-items professor-publication-list">
+        {{ $shownYears := dict }}
+        {{ range .RegularPages.ByDate.Reverse }}
+        {{ $year := printf "%v" .Params.homeYearTag }}
+        {{ $showYear := not (index $shownYears $year) }}
+        {{ if $showYear }}{{ $shownYears = merge $shownYears (dict $year true) }}{{ end }}
+        <div class="professor-publication-item">
+          <div class="professor-publication-main">
+            {{ $cite := .Params.cite_acm }}
+            {{ $cite = replaceRE `(ACM CHI(?: EA)? '[0-9]{2}|ACM CHI|ACM DIS '[0-9]{2}|ACM CSCW '[0-9]{2}|ACM NordiCHI '[0-9]{2}|ACM SIGGRAPH '[0-9]{2}|ACM DFHS'[0-9]{2}|ACM UbiComp/ISWC ?'[0-9]{2} Adjunct|IJHCI|IJDE|EiD|AoDR)` `<span class="professor-publication-venue">$1</span>` $cite }}
+            <div class="publication-text margin-bottom-0">{{ $cite | emojify | markdownify }}</div>
+            <ul class="btn-link-group list-inline margin-bottom-0">
+              {{ range .Params.Links }}
+              <li class="list-inline-item link-text-publications">
+                <a href="{{ .link | absURL }}" target="_blank">{{ .label }}</a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          <div class="professor-publication-year">{{ if $showYear }}{{ .Params.homeYearTag }}{{ end }}</div>
         </div>
+        {{ end }}
       </div>
-      {{ end }}
     </div>
+    {{ end }}
   </div>
 </section>
 {{ end }}
 {{ end }}
-
-<section class="testimonial section-sm">
-  <div class="container">
-    <div class="row">
-      {{ if .Params.testimonial.enable }}
-      {{ with .GetPage "/" }}
-      <div class="col-md-6">
-        <div class="testimonial-carousel text-center">
-          <div class="testimonial-slider owl-carousel">
-            {{ range .Params.funfacts.testimonial_slider }}
-            <div>
-              <i class="ion-quote"></i>
-              {{ with .content }}<p>"{{ . | markdownify }}"</p>{{ end }}
-              <div class="user">
-                {{ with .image }}<img src="{{ . | relURL }}" alt="client">{{ end }}
-                <p><span>{{ .name | markdownify }}</span> {{ .designation | markdownify }}</p>
-              </div>
-            </div>
-            {{ end }}
-          </div>
-        </div>
-      </div>
-      {{ end }}
-      {{ end }}
-
-      {{ with .Params.mission_vision }}
-      {{ if .enable }}
-      <div class="col-md-6">
-        <div class="tabCommon">
-          <ul class="nav nav-tabs">
-            {{ range $index, $elements := .tabs }}
-            <li {{ if eq $index 0 }} class="active" {{ end }}><a href="#{{ .name | urlize }}"
-                data-toggle="tab">{{ .name }}</a></li>
-            {{ end }}
-          </ul>
-          <div class="tab-content">
-            {{ range $index, $elements := .tabs }}
-            <div id="{{ .name | urlize }}" class="tab-pane fade {{ if eq $index 0 }} active in {{ end }}">
-              {{ .content | $.Page.RenderString (dict "display" "block") }}
-            </div>
-            {{ end }}
-          </div>
-        </div>
-      </div>
-      {{ end }}
-      {{ end }}
-    </div>
-  </div>
-</section>
 
 <!-- Call to action -->
 {{ if .Params.cta.enable }}

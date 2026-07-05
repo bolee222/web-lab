@@ -2,7 +2,7 @@
 # BASIC INFO
 title: "PONIFY: Pose-driven Painting Sonification to Enhance Augmented Artwork Perception through Sense of Dynamics"
 author : Bokyung Lee, Hanbin Bae 
-Journal: "**International Journal of Human-Computer Interaction** (TBD)"
+Journal: "**International Journal of Human-Computer Interaction** (IJHCI) (TBD)"
 
 #Type: Journal_sci, Journal_int, Journal_dom, Conference_sci, Conference_int, Conference_dom
 type: "Journal_sci"
@@ -14,7 +14,7 @@ homeYearTag: 2026
 
 
 exactPeriod: 2026.05.18
-cite_acm: "Bokyung Lee & Hanbin Bae. (2026). **PONIFY: Pose-driven Painting Sonification to Enhance Augmented Artwork Perception through Sense of Dynamics**. _International Journal of Human–Computer Interaction_, 42(2), 891–908. https://doi.org/10.1080/10447318.2025.2514876"
+cite_acm: "Bokyung Lee & Hanbin Bae. (2026). **PONIFY: Pose-driven Painting Sonification to Enhance Augmented Artwork Perception through Sense of Dynamics**. _International Journal of Human–Computer Interaction (IJHCI)_, 42(2), 891–908. https://doi.org/10.1080/10447318.2025.2514876"
 doi: 
 
 
