@@ -6,9 +6,8 @@ layout: "applicants"
 draft: false
 menu:
   main:
-    parent: "CXD Lab"
     name: "Join Us"
-    weight: 3
+    weight: 7
 
 
 ########################### PHD #############################
