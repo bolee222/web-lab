@@ -130,8 +130,8 @@
   {{ end }}
 
   {{ "<!-- Main stylesheet -->" | safeHTML }}
-  {{ $styles := slice (resources.Get "scss/style.scss") (resources.Get "scss/custom.scss") | resources.Concat "scss/bundled.scss" | toCSS | minify -}}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+  {{ $styles := slice (resources.Get "scss/style.scss") (resources.Get "scss/custom.scss") | resources.Concat "scss/bundled.scss" | toCSS | minify | fingerprint -}}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 
   {{ "<!-- Favicon -->" | safeHTML }}
   {{ partial "favicon.html" . }}

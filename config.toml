@@ -229,18 +229,18 @@ weight = 3
 
 # Footer menu
 [[languages.en.menu.footer]]
-name = "Home"
-URL = ""
+name = "Vision"
+URL = "/about/vision/"
 weight = 1
 
 [[languages.en.menu.footer]]
-name = "Research Vision"
-URL = "/about/vision/"
+name = "Professor"
+URL = "/people/professor/"
 weight = 2
 
 [[languages.en.menu.footer]]
-name = "Join Us"
-URL = "/about/applicants/"
+name = "People"
+URL = "/people/"
 weight = 3
 
 [[languages.en.menu.footer]]
@@ -250,23 +250,28 @@ weight = 4
 
 [[languages.en.menu.footer]]
 name = "Publication"
-URL = "/publication/"
+URL = "/publications/"
 weight = 5
 
 [[languages.en.menu.footer]]
-name = "Professor"
-URL = "/people/professor/"
+name = "Join Us"
+URL = "/about/applicants/"
 weight = 6
 
 [[languages.en.menu.footer]]
 name = "FAQ"
-URL = "/faq/"
+URL = "/about/faq/"
 weight = 7
+
+[[languages.en.menu.footer]]
+name = "Branding"
+URL = "/about/branding/"
+weight = 8
 
 [[languages.en.menu.footer]]
 name = "Contact"
 URL = "/contact/"
-weight = 8
+weight = 9
 
 
 ################################# Korean translation ##########################
