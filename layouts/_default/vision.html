@@ -59,14 +59,14 @@
 {{ with .Params.projects}}
 <section class="service-about">
   <div class="container">
-    <hr align="left" style="border: solid 0.1px rgb(119, 119, 119); width: 100%; margin-bottom: 30px;">
+    <hr class="vision-section-divider" align="left">
     <div class="row">
       <div class="col-md-12">
         {{ with .title }}<div class="area-title">{{ . | markdownify }}</div>{{ end }}
         {{ with .list }}<div class="vision-content">{{ . | markdownify }}</div>{{ end }}
       </div>
     </div>
-    <hr align="left" style="border: solid 0.1px rgb(119, 119, 119); width: 100%;  margin-top: 30px; margin-bottom: 30px;">
+    <hr class="vision-section-divider vision-section-divider-after" align="left">
   </div>
 </section>
 {{ end }}
@@ -100,7 +100,7 @@
     <section class="service-arrow" style="padding:0 !important; margin:0 !important;">
   <div class="container-fluid" style="padding:0 !important; margin:0 !important;">
     <div class="row" style="margin:0 !important;">
-        <hr align="left" style="border: solid 0.1px rgb(119, 119, 119); width: 100%; margin-bottom: 30px;">
+        <hr class="vision-section-divider" align="left">
         {{ with .title }}<div class="area-title-pillar">{{ . | markdownify }}</div>{{ end }}
 
         {{ with .intro }}<div class="pillar-intro-des">{{ . | markdownify }}</div>{{ end }}
@@ -283,7 +283,7 @@
 {{ if .enable }}
 <section class="vision-research-approach-section">
   <div class="container">
-    <hr align="left" style="border: solid 0.1px rgb(119, 119, 119); width: 100%; margin-bottom: 30px;">
+    <hr class="vision-section-divider" align="left">
     {{ with .title }}<div class="area-title">{{ . | markdownify }}</div>{{ end }}
   </div>
 </section>
