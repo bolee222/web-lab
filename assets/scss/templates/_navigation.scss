@@ -30,23 +30,31 @@
         }
 
         text-transform:uppercase;
+      }
 
-        &:hover,
-        &:focus {
-          color: #913afb;
-          font-weight: 600;
-          background: transparent;
-        }
+      a.nav-major {
+        color: #000;
+      }
+
+      a.nav-minor {
+        color: #777;
+      }
+
+      a:hover,
+      a:focus {
+        color: #913afb;
+        font-weight: 600;
+        background: transparent;
       }
 
       a.current {
-        color: #000;
+        color: #913afb;
         pointer-events: none;
         cursor: default;
       }
 
       a.current-parent {
-        color: #000;
+        color: #913afb;
       }
 
       select {
