@@ -3,7 +3,7 @@
 {{ partial "page-title.html" . }}
 
 {{ with .Params.overview.motto }}
-<section class="vision-motto-section">
+<section class="vision-motto-section" id="vision-overview">
   <div class="container">
     <div class="vision-motto">{{ . | markdownify }}</div>
   </div>
@@ -56,8 +56,16 @@
 </section>
 {{ end }}
 
+<nav class="vision-section-index" aria-label="Vision page sections">
+  <a href="#vision-overview">Overview</a>
+  <a href="#vision-projects">Projects</a>
+  <a href="#vision-directions">Directions</a>
+  <a href="#vision-pillars">Pillars</a>
+  <a href="#vision-approach">Approach</a>
+</nav>
+
 {{ with .Params.projects}}
-<section class="service-about">
+<section class="service-about" id="vision-projects">
   <div class="container">
     <hr class="vision-section-divider" align="left">
     <div class="row">
@@ -73,7 +81,7 @@
 
 {{ with .Params.convergence_directions }}
 {{ if .enable }}
-  <section class="vision-main-images-section">
+  <section class="vision-main-images-section" id="vision-directions">
     <div class="container">
       {{ with .title }}<div class="vision-main-images-title">{{ . | markdownify }}</div>{{ end }}
       <div class="row vision-main-images">
@@ -94,7 +102,7 @@
 {{ end }}
 
 <!--RESEARCH PILLAR-->
-<div class="container">
+<div class="container" id="vision-pillars">
   {{ with .Params.research_pillar }}
   {{ if .enable }}
     <section class="service-arrow" style="padding:0 !important; margin:0 !important;">
@@ -281,7 +289,7 @@
 
 {{ with .Params.research_approach }}
 {{ if .enable }}
-<section class="vision-research-approach-section">
+<section class="vision-research-approach-section" id="vision-approach">
   <div class="container">
     <hr class="vision-section-divider" align="left">
     {{ with .title }}<div class="area-title">{{ . | markdownify }}</div>{{ end }}

@@ -1131,6 +1131,46 @@ a:link-text-publications {
   }
 }
 
+.vision-section-index{
+  position: fixed;
+  top: 140px;
+  right: 32px;
+  z-index: 20;
+  display: none;
+  width: 96px;
+
+  a{
+    display: block;
+    color: #555;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  a::before{
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background: #bcbcbc;
+    vertical-align: 2px;
+  }
+
+  a:hover{
+    color: #000;
+  }
+}
+
+@media(min-width:1400px){
+  .vision-section-index{
+    display: block;
+  }
+}
+
 .vision-main-images-section{
   padding-top: 0;
   padding-bottom: 8px;
