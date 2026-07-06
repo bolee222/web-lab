@@ -59,16 +59,17 @@ projects:
 research_pillar:
   enable: true
   title: Research Pillars.
-  intro: CXD Lab conducts research grounded in four main pillars, while remaining open to interdisciplinary and exploratory directions beyond these areas.
+  intro: We conduct research grounded in four main pillars, while remaining open to interdisciplinary and exploratory directions beyond these areas.
+  intro_kor: 우리는 네 가지 주요 연구 축을 기반으로 연구를 수행하며, 이 영역을 넘어 학제적이고 탐색적인 연구 방향에도 열려 있습니다.
   pillar_item: 
     # featured service item loop
-    - name: "Empowering Creativity"
+    - name: "Empowering Human"
       pillar_num: "Pillar I"
       icon: "ion-erlenmeyer-flask"
       color: "#f0f0f0ff"
       content: "Transforming human thinking and expanding cognitive limits through the convergence of Generative AI and immersive XR."
       content_kor: "생성형 AI와 몰입형 XR의 융합을 통해, 단순 도구를 넘어 인간의 사고방식과 인지적 한계를 근본적으로 확장합니다."
-      bg_img: "images/vision/domain-creativity.jpg"
+      bg_img: "images/vision/pillar1.jpg"
 
     # featured service item loop
     - name: "Virtual Humans"
@@ -99,7 +100,7 @@ vision_1:
   enable: true
   teaser: "images/vision/statement_.png"
   quote: "We aim to blur the boundary between the digital-world and the real-world, <br> suggesting a new way of looking at user experience and design."
-  title: " Empowering Creativity"
+  title: " Empowering Human"
   direction: "Pillar I"
   content: "The fusion of Generative AI and Extended Reality (XR) is opening an entirely new dimension for human expression. While AI acts as the engine of imagination, XR serves as the infinite canvas where these ideas come to life in 3D space. Beyond creating simple support tools, we explore how this convergence fundamentally transforms human thinking and creative processes. We investigate the cognitive expansion that occurs when ideating in immersive environments, defining a new paradigm where humans and technology collaborate to reach levels of imagination previously unattainable by cognition alone."
   content_kor: "생성형 AI와 확장현실(XR)의 결합은 인간의 표현력을 완전히 새로운 차원으로 이끌고 있습니다. AI가 상상력의 엔진이라면, XR은 그 상상이 3차원 공간에서 생생하게 살아 움직이게 하는 무한한 캔버스입니다. CXD Lab은 생성형 AI와 XR의 융합이 단순한 도구를 넘어 인간의 사고방식(Thinking Process)과 창의적 프로세스를 어떻게 근본적으로 혁신하고 인지적 한계를 확장시키는지 탐구합니다."

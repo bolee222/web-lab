@@ -1187,6 +1187,22 @@ a:link-text-publications {
   margin-top: 0px;
 }
 
+.pillar-intro-des-kor{
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.pillar-grid{
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.pillar-grid::after{
+  display: table;
+  clear: both;
+  content: "";
+}
+
 .vision-title{
   font-weight:700;
   color: black;
@@ -1260,6 +1276,25 @@ a:link-text-publications {
     font-weight: 600;
     //background-color: #d6d6d67c !important;
   }
+}
+
+.vision-pillar-divider{
+  width: 67%;
+  height: 1px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  border: 0;
+  background-image: repeating-linear-gradient(
+    to right,
+    rgb(65, 65, 65) 0,
+    rgb(65, 65, 65) 4px,
+    transparent 4px,
+    transparent 7px
+  );
+}
+
+.vision-pillar-divider-last{
+  margin-bottom: 30px;
 }
 
 

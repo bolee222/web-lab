@@ -82,19 +82,22 @@
         {{ with .title }}<div class="area-title-pillar">{{ . | markdownify }}</div>{{ end }}
 
         {{ with .intro }}<div class="pillar-intro-des">{{ . | markdownify }}</div>{{ end }}
+        {{ with .intro_kor }}<div class="pillar-intro-des pillar-intro-des-kor">{{ . | markdownify }}</div>{{ end }}
 
-      {{ range .pillar_item }}
-      {{ $c := .color }}
-      <div class="col-md-3 col-sm-6 col-xs-12 no-float pillar-col">
-        <div class="pillar-card"
-             {{ if and $c (strings.HasPrefix $c "#") }}style="background: {{ $c }};"{{ end }}>
-          {{ with .pillar_num }}<div class="pillar-num">{{ . | markdownify }}</div>{{ end }}
-          {{ with .name }}<div class="vision-domain-title">{{ . | markdownify }}</div>{{ end }}
-          {{ with .content }}<div class="vision-des">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-          {{ with .content_kor }}<div class="vision-des-kor">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+      <div class="pillar-grid">
+        {{ range .pillar_item }}
+        {{ $c := .color }}
+        <div class="col-md-3 col-sm-6 col-xs-12 no-float pillar-col">
+          <div class="pillar-card"
+               {{ if and $c (strings.HasPrefix $c "#") }}style="background: {{ $c }};"{{ end }}>
+            {{ with .pillar_num }}<div class="pillar-num">{{ . | markdownify }}</div>{{ end }}
+            {{ with .name }}<div class="vision-domain-title">{{ . | markdownify }}</div>{{ end }}
+            {{ with .content }}<div class="vision-des">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+            {{ with .content_kor }}<div class="vision-des-kor">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+          </div>
         </div>
+        {{ end }}
       </div>
-      {{ end }}
     </div>
   </div>
 </section>
@@ -106,6 +109,10 @@
 
 {{ with .Params.vision_1 }}
 {{ if .enable }}   
+    {{ $pillar1Image := .image }}
+    {{ with index $.Params.research_pillar.pillar_item 0 }}
+      {{ with .bg_img }}{{ $pillar1Image = . }}{{ end }}
+    {{ end }}
     
     <div class="container">
     <div class="row">
@@ -122,12 +129,12 @@
           {{ with .content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
           {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
         </div>
-      {{ with .image -}}
+      {{ with $pillar1Image -}}
         <div class="col-md-4">
           <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
         </div>
         <div class="col-xs-12"> 
-        <hr align="left" style="border: 0.5px rgb(65, 65, 65); border-style: dashed; width: 67%; margin-bottom: 0px;">
+        <hr class="vision-pillar-divider" align="left">
         </div>
       </div>
       
@@ -168,7 +175,7 @@
         <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
       </div>
       <div class="col-xs-12"> 
-        <hr align="left" style="border: 0.5px rgb(65, 65, 65); border-style: dashed; width: 67%; margin-bottom: 0px;">
+        <hr class="vision-pillar-divider" align="left">
         </div>
       </div>
       {{- end }}
@@ -205,7 +212,7 @@
         <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
       </div>
       <div class="col-xs-12"> 
-        <hr align="left" style="border: 0.5px rgb(65, 65, 65); border-style: dashed; width: 67%; margin-bottom: 0px;">
+        <hr class="vision-pillar-divider" align="left">
       </div>
       </div>
       
@@ -242,7 +249,7 @@
         <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
       </div>
       <div class="col-xs-12"> 
-        <hr align="left" style="border: 0.5px rgb(65, 65, 65); border-style: dashed; width: 67%; margin-bottom: 30px;">
+        <hr class="vision-pillar-divider vision-pillar-divider-last" align="left">
       </div>
         </div>
       {{- end }}
