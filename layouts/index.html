@@ -250,10 +250,10 @@
               </div>
           </div>
       </div>
-      {{ range first 6 (where .Site.RegularPages "Section" "==" "news") }}
+      {{ range first 10 (where .Site.RegularPages "Section" "==" "news") }}
       {{ $imagePath := .Params.image -}}
       {{ $hasImage := and $imagePath (fileExists (printf "static/%s" $imagePath)) -}}
-      <div class="col-md-12 portfolio-card shuffle-item home-news-item{{ if $hasImage }} has-thumb{{ end }}">
+      <div class="portfolio-card shuffle-item home-news-item{{ if $hasImage }} has-thumb{{ end }}">
         <a class="home-news-thumb" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
           {{ if $hasImage }}
           <img src="{{ $imagePath | relURL }}" alt="{{ .Title }}">
@@ -267,7 +267,7 @@
         </div>
       </div>
       {{ end }}
-      <a href="{{ "/news/" | relLangURL }}" class="home-slider-more btn-main"
+      <a href="{{ "/news/" | relLangURL }}" class="home-slider-more btn-main home-news-more"
         >→ View All News & Essays</a>
 
         <hr align="left" style="margin-top: 80px; margin-bottom: 0; width:100%; height:0px; border:none;background-color:black;">
