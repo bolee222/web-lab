@@ -1131,6 +1131,73 @@ a:link-text-publications {
   }
 }
 
+.vision-main-images-section{
+  padding-top: 0;
+  padding-bottom: 8px;
+}
+
+.vision-main-images-title{
+  color: black;
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.vision-main-images{
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.vision-main-images > div{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.vision-main-image-subtitle{
+  display: flex;
+  align-items: flex-start;
+  width: 76%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.vision-main-image-subtitle-num{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 3px;
+  width: 17px;
+  height: 17px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  flex: 0 0 17px;
+  line-height: 1;
+  vertical-align: text-bottom;
+}
+
+.vision-main-image-subtitle-text{
+  display: block;
+}
+
+.vision-main-image{
+  width: 70%;
+  margin-left: 24px;
+  margin-right: 0;
+  margin-bottom: 8px;
+}
+
 .direction-mini{
   font-size: 14px;
   font-weight: 400;
@@ -1164,7 +1231,7 @@ a:link-text-publications {
 .area-title{
   font-weight:700;
   color: black;
-  font-size: 20px;
+  font-size: 19px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -1172,9 +1239,13 @@ a:link-text-publications {
 .area-title-pillar{
   font-weight:700;
   color: black;
-  font-size: 20px;
+  font-size: 19px;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+.vision-research-approach-section{
+  padding-bottom: 30px;
 }
 
 .area-title b{
@@ -1188,7 +1259,7 @@ a:link-text-publications {
 }
 
 .pillar-intro-des-kor{
-  margin-top: 4px;
+  margin-top: 1px;
   margin-bottom: 8px;
 }
 

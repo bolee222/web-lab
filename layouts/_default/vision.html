@@ -56,7 +56,6 @@
 </section>
 {{ end }}
 
-
 {{ with .Params.projects}}
 <section class="service-about">
   <div class="container">
@@ -67,9 +66,31 @@
         {{ with .list }}<div class="vision-content">{{ . | markdownify }}</div>{{ end }}
       </div>
     </div>
-    <hr align="left" style="border: solid 0.1px rgb(119, 119, 119); width: 100%;  margin-top: 30px; margin-bottom: 15px;">
+    <hr align="left" style="border: solid 0.1px rgb(119, 119, 119); width: 100%;  margin-top: 30px; margin-bottom: 30px;">
   </div>
 </section>
+{{ end }}
+
+{{ with .Params.convergence_directions }}
+{{ if .enable }}
+  <section class="vision-main-images-section">
+    <div class="container">
+      {{ with .title }}<div class="vision-main-images-title">{{ . | markdownify }}</div>{{ end }}
+      <div class="row vision-main-images">
+        {{ range .item }}
+        <div class="col-sm-6">
+          <div class="vision-main-image-subtitle">
+            {{ with .num }}<span class="vision-main-image-subtitle-num">{{ . | markdownify }}</span>{{ end }}
+            <span class="vision-main-image-subtitle-text">{{ with .subtitle_line1 }}{{ . | markdownify }}{{ end }}{{ with .subtitle_line2 }}<br>{{ . | markdownify }}{{ end }}</span>
+          </div>
+          {{ $alt := .alt }}
+          {{ with .image }}<img class="img-responsive vision-main-image" src="{{ . | relURL }}" alt="{{ $alt }}">{{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}
 {{ end }}
 
 <!--RESEARCH PILLAR-->
@@ -79,6 +100,7 @@
     <section class="service-arrow" style="padding:0 !important; margin:0 !important;">
   <div class="container-fluid" style="padding:0 !important; margin:0 !important;">
     <div class="row" style="margin:0 !important;">
+        <hr align="left" style="border: solid 0.1px rgb(119, 119, 119); width: 100%; margin-bottom: 30px;">
         {{ with .title }}<div class="area-title-pillar">{{ . | markdownify }}</div>{{ end }}
 
         {{ with .intro }}<div class="pillar-intro-des">{{ . | markdownify }}</div>{{ end }}
@@ -147,7 +169,6 @@
     
   </div> 
   </div>
-</section>
 {{ end }}
 {{ end }}
 
@@ -184,7 +205,6 @@
     
   </div> 
   </div>
-</section>
 {{ end }}
 {{ end }}
 
@@ -221,7 +241,6 @@
     </div>
   </div> 
   </div>
-</section>
 {{ end }}
 {{ end }}
 
@@ -256,6 +275,16 @@
     
     </div>
   </div> 
+  </div>
+{{ end }}
+{{ end }}
+
+{{ with .Params.research_approach }}
+{{ if .enable }}
+<section class="vision-research-approach-section">
+  <div class="container">
+    <hr align="left" style="border: solid 0.1px rgb(119, 119, 119); width: 100%; margin-bottom: 30px;">
+    {{ with .title }}<div class="area-title">{{ . | markdownify }}</div>{{ end }}
   </div>
 </section>
 {{ end }}

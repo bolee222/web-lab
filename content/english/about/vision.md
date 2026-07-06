@@ -41,7 +41,7 @@ overview:
 
 ########################### ONGOING PROJECTS #############################
 projects: 
-  title: "On-going Projects"
+  title: "ON_GOING PROJECTS"
   list: "
     1. Development of **Creator-enhanced Interactions for Convergence Museums through XR & AI** Technology (NRF)
 
@@ -55,12 +55,28 @@ projects:
     
   "
 
+########################### CONVERGENCE DIRECTIONS #############################
+convergence_directions:
+  enable: true
+  title: "TWO DIRECTIONS OF DIGITAL-PHYSICAL CONVERGENCE HCI RESEARCH"
+  item:
+    - num: "1"
+      subtitle_line1: "Designing New Intelligent Digital Systems"
+      subtitle_line2: "that Aligns with and Support User World"
+      image: "images/vision/vision-main_1.png"
+      alt: "Vision image 1"
+    - num: "2"
+      subtitle_line1: "Designing New Interactive Physical Systems"
+      subtitle_line2: "through Digital Intelligence"
+      image: "images/vision/vision-main_2.png"
+      alt: "Vision image 2"
+
 ########################## RESEARCH PILLAR ############################
 research_pillar:
   enable: true
-  title: Research Pillars.
+  title: RESEARCH PILLARS
   intro: We conduct research grounded in four main pillars, while remaining open to interdisciplinary and exploratory directions beyond these areas.
-  intro_kor: 우리는 네 가지 주요 연구 축을 기반으로 연구를 수행하며, 이 영역을 넘어 학제적이고 탐색적인 연구 방향에도 열려 있습니다.
+  intro_kor: 저희는 네 가지 주요 축을 기반으로 연구를 수행하는 한편, 해당 분야를 넘어선 다른 다학제 HCI 연구 방향에도 열려있습니다. 
   pillar_item: 
     # featured service item loop
     - name: "Empowering Human"
@@ -139,6 +155,11 @@ vision_4:
   image: "images/vision/vision-main_2.png"
   keywords: "**Keywords**: Metaverse, Ambient Experience, Immersive Media"
   
+
+########################### RESEARCH APPROACH ############################
+research_approach:
+  enable: true
+  title: "RESEARCH APPROACH"
 
 
 
