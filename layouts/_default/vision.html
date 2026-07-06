@@ -11,7 +11,7 @@
 {{ end }}
 
 {{ with .Params.top_keywords }}
-<section class="service-about">
+<section class="service-about vision-top-keywords-section">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -84,15 +84,19 @@
   <section class="vision-main-images-section" id="vision-directions">
     <div class="container">
       {{ with .title }}<div class="vision-main-images-title">{{ . | markdownify }}</div>{{ end }}
+      {{ with .intro_eng }}<div class="vision-main-images-intro">{{ . | markdownify }}</div>{{ end }}
+      {{ with .intro_kor }}<div class="vision-main-images-intro vision-main-images-intro-kor">{{ . | markdownify }}</div>{{ end }}
       <div class="row vision-main-images">
         {{ range .item }}
         <div class="col-sm-6">
-          <div class="vision-main-image-subtitle">
-            {{ with .num }}<span class="vision-main-image-subtitle-num">{{ . | markdownify }}</span>{{ end }}
-            <span class="vision-main-image-subtitle-text">{{ with .subtitle_line1 }}{{ . | markdownify }}{{ end }}{{ with .subtitle_line2 }}<br>{{ . | markdownify }}{{ end }}</span>
+          <div class="vision-main-image-card">
+            <div class="vision-main-image-subtitle">
+              {{ with .num }}<span class="vision-main-image-subtitle-num">{{ . | markdownify }}</span>{{ end }}
+              <span class="vision-main-image-subtitle-text">{{ with .subtitle_line1 }}{{ . | markdownify }}{{ end }}{{ with .subtitle_line2 }}<br>{{ . | markdownify }}{{ end }}</span>
+            </div>
+            {{ $alt := .alt }}
+            {{ with .image }}<img class="img-responsive vision-main-image" src="{{ . | relURL }}" alt="{{ $alt }}">{{ end }}
           </div>
-          {{ $alt := .alt }}
-          {{ with .image }}<img class="img-responsive vision-main-image" src="{{ . | relURL }}" alt="{{ $alt }}">{{ end }}
         </div>
         {{ end }}
       </div>
@@ -139,13 +143,8 @@
 
 {{ with .Params.vision_1 }}
 {{ if .enable }}   
-    {{ $pillar1Image := .image }}
-    {{ with index $.Params.research_pillar.pillar_item 0 }}
-      {{ with .bg_img }}{{ $pillar1Image = . }}{{ end }}
-    {{ end }}
-    
     <div class="container">
-    <div class="row">
+    <div class="row vision-pillar-detail-row">
       <div class="col-xs-12">
         <div class="col-xs-12"> 
         {{ with .direction }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
@@ -159,7 +158,7 @@
           {{ with .content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
           {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
         </div>
-      {{ with $pillar1Image -}}
+      {{ with .image -}}
         <div class="col-md-4">
           <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
         </div>
@@ -184,7 +183,7 @@
 {{ with .Params.vision_2 }}
 {{ if .enable }}
     <div class="container">
-    <div class="row">
+    <div class="row vision-pillar-detail-row">
       <div class="col-xs-12">
         <div class="col-xs-12"> 
         {{ with .direction }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
@@ -220,7 +219,7 @@
 {{ with .Params.vision_3 }}
 {{ if .enable }}
     <div class="container">
-    <div class="row">
+    <div class="row vision-pillar-detail-row">
       <div class="col-xs-12">
         <div class="col-xs-12"> 
         {{ with .direction }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
@@ -256,7 +255,7 @@
 {{ with .Params.vision_4 }}
 {{ if .enable }}
     <div class="container">
-    <div class="row">
+    <div class="row vision-pillar-detail-row">
       <div class="col-xs-12"> 
         <div class="col-xs-12"> 
           {{ with .direction }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
@@ -293,6 +292,29 @@
   <div class="container">
     <hr class="vision-section-divider" align="left">
     {{ with .title }}<div class="area-title">{{ . | markdownify }}</div>{{ end }}
+    {{ with .intro }}<div class="vision-approach-intro">{{ . | markdownify }}</div>{{ end }}
+    {{ with .intro_kor }}<div class="vision-approach-intro vision-approach-intro-kor">{{ . | markdownify }}</div>{{ end }}
+    {{ with .item }}
+    <div class="row vision-approach-grid">
+      {{ range . }}
+      <div class="col-sm-4">
+        <div class="vision-approach-card">
+          <div class="vision-approach-mark" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </div>
+          {{ with .title }}<div class="vision-approach-title">{{ . | markdownify }}</div>{{ end }}
+          {{ with .description }}<div class="vision-approach-description">{{ . | markdownify }}</div>{{ end }}
+          {{ with .examples }}
+          <ul class="vision-approach-examples">
+            {{ range . }}<li>{{ . | markdownify }}</li>{{ end }}
+          </ul>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
   </div>
 </section>
 {{ end }}

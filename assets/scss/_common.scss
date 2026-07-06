@@ -309,6 +309,7 @@ input[type="tel"] {
 
 .page-title {
     padding-top: 20px;
+    margin-bottom: 18px;
     @extend .overly;
     .block {
         text-align: center;
@@ -671,4 +672,3 @@ span.cloaked-e-mail:before {
     margin-bottom: 0.4rem;
     line-height: 1.4;
 }
-

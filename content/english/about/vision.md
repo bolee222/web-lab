@@ -20,7 +20,7 @@ overview:
   vision_eng: |
     **CXD Lab explores and shapes the next generation of human experiences in the age of XR/AI, where digital intelligence seamlessly converges into the spaces, objects, and activities of everyday life**. As XR, AI, and digital intelligence become increasingly embedded in daily life, we believe the true challenge is not only to develop new technologies, but also to design meaningful ways for people to live, interact, and thrive with them. At CXD Lab, we **investigates new interaction paradigms for these technologies, and reshape how people learn, create, communicate, move, and interact with the world around them.**
 
-    Grounded in **Human-Computer Interaction (HCI) and Interactive System Design, our research spans diverse contexts, including education, museums and cultural experiences, creativity support tools, robotics, media art, smart homes, and beyond.** Depending on the research question, our work may involve user-centered exploration, research-through-design, concept development, system prototyping, or rigorous UX evaluation.
+    **Grounded in Human-Computer Interaction (HCI) and Interactive System Design, our research spans diverse contexts, including education, museums and cultural experiences, creativity support tools, robotics, media art, smart homes, and beyond.** Depending on the research question, our work may involve user-centered exploration, research-through-design, concept development, system prototyping, or rigorous UX evaluation.
 
     **Rather than simply applying XR/AI to existing problems, we aim to anticipate the emerging relationships between people, digital intelligence, and everyday environments.** Through this process, we generate new interaction concepts, design insights, and practical knowledge that can inform the future of digital-physical experiences.
 
@@ -28,7 +28,7 @@ overview:
   vision_kor: | 
     **CXD Lab은 XR과 AI 시대의 차세대 사용자 경험과 인터랙션을 탐구하고 설계하는 연구실입니다. 우리는 디지털 인텔리전스가 일상의 공간, 사물, 활동 속으로 자연스럽게 스며드는 미래를 상상합니다.** XR, AI와 같은 기술이 우리의 일상에 점점 더 깊이 자리 잡고 있는 지금, 중요한 과제는 단순히 새로운 기술을 개발하는 것이 아니라, 사람들이 이러한 기술과 함께 살아가고, 상호작용하며, 더 나은 경험을 만들어갈 수 있는 의미 있는 방식을 설계하는 것이라고 믿습니다. CXD Lab은 **디지털 인텔리전스가 일상의 공간, 사물, 활동 속에 자연스럽게 녹아드는 미래를 상상하며, 이러한 미래 환경에서 사람들이 배우고, 창작하고, 소통하고, 움직이고, 세상과 상호작용하는 방식을 새롭게 변화시킬 인터랙션 패러다임을 선제적으로 탐색하고 제안합니다.**
     
-    우리 연구실은 **'인간-컴퓨터 상호작용 (HCI)'과 '인터랙티브 시스템 디자인'을 핵심 기반으로, 교육, 박물관 및 문화 경험, 창의력 지원 도구, 로보틱스, 미디어아트, 스마트홈 등 다양한 분야에서 XR·AI 기술의 활용 가능성과 가치를 탐색하고, 이를 바탕으로 혁신적이고 새로운 UX 및 시스템 디자인 솔루션을 제안**합니다.연구 질문에 따라 사용자 중심 탐구, 리서치 스루 디자인 (Research-through-Design), 콘셉트 개발, 시스템 프로토타이핑, 그리고 엄격한 UX 평가 등 다양한 연구 방법을 활용합니다.
+    **우리 연구실은 '인간-컴퓨터 상호작용 (HCI)'과 '인터랙티브 시스템 디자인'을 핵심 기반으로, 교육, 박물관 및 문화 경험, 창의력 지원 도구, 로보틱스, 미디어아트, 스마트홈 등 다양한 분야에서 XR·AI 기술의 활용 가능성과 가치를 탐색하고, 이를 바탕으로 혁신적이고 새로운 UX 및 시스템 디자인 솔루션을 제안**합니다.연구 질문에 따라 사용자 중심 탐구, 리서치 스루 디자인 (Research-through-Design), 콘셉트 개발, 시스템 프로토타이핑, 그리고 엄격한 UX 평가 등 다양한 연구 방법을 활용합니다.
     
     **CXD Lab은 XR과 AI를 단순히 기존 문제에 적용하는 데 머무르지 않으며, 사람, 디지털 인텔리전스, 그리고 일상 환경 사이에서 새롭게 형성될 관계를 예측하고 고찰합니다.** 이 과정을 통해 궁극적으로 우리 연구실은 미래의 디지털-피지컬 융합 경험을 위한 새로운 인터랙션 디자인, 디자인 인사이트, 디자인 가이드라인을 만들어 나가고 있습니다.
 
@@ -41,7 +41,7 @@ overview:
 
 ########################### ONGOING PROJECTS #############################
 projects: 
-  title: "ON_GOING PROJECTS"
+  title: "ON-GOING PROJECTS"
   list: "
     1. Development of **Creator-enhanced Interactions for Convergence Museums through XR & AI** Technology (NRF)
 
@@ -58,7 +58,9 @@ projects:
 ########################### CONVERGENCE DIRECTIONS #############################
 convergence_directions:
   enable: true
-  title: "TWO DIRECTIONS OF DIGITAL-PHYSICAL CONVERGENCE HCI RESEARCH"
+  title: "TWO DIRECTIONS OF DIGITAL-PHYSICAL CONVERGENCE IN HCI RESEARCH"
+  intro_eng: "Digital-physical convergence in HCI can be approached from two complementary directions: bringing digital intelligence closer to people's everyday worlds, and designing physical systems that become more interactive through digital intelligence. CXD Lab considers both directions and designs experiences according to the context, users, and needs of each situation."
+  intro_kor: "HCI에서 디지털-피지컬 융합 연구는 두 가지 상호보완적 방향으로 생각해볼 수 있습니다. 하나는 디지털 인텔리전스가 사용자의 일상 세계와 더 잘 맞물리도록 설계하는 것이고, 다른 하나는 디지털 인텔리전스를 통해 물리적 시스템을 더 상호작용적으로 만드는 것입니다. CXD Lab은 이 두 방향을 모두 염두에 두고, 상황과 사용자, 니즈에 따라 가장 적합한 경험을 설계합니다."
   item:
     - num: "1"
       subtitle_line1: "Designing New Intelligent Digital Systems"
@@ -85,7 +87,6 @@ research_pillar:
       color: "#f0f0f0ff"
       content: "Transforming human thinking and expanding cognitive limits through the convergence of Generative AI and immersive XR."
       content_kor: "생성형 AI와 몰입형 XR의 융합을 통해, 단순 도구를 넘어 인간의 사고방식과 인지적 한계를 근본적으로 확장합니다."
-      bg_img: "images/vision/pillar1.jpg"
 
     # featured service item loop
     - name: "Virtual Humans"
@@ -120,7 +121,7 @@ vision_1:
   direction: "Pillar I"
   content: "The fusion of Generative AI and Extended Reality (XR) is opening an entirely new dimension for human expression. While AI acts as the engine of imagination, XR serves as the infinite canvas where these ideas come to life in 3D space. Beyond creating simple support tools, we explore how this convergence fundamentally transforms human thinking and creative processes. We investigate the cognitive expansion that occurs when ideating in immersive environments, defining a new paradigm where humans and technology collaborate to reach levels of imagination previously unattainable by cognition alone."
   content_kor: "생성형 AI와 확장현실(XR)의 결합은 인간의 표현력을 완전히 새로운 차원으로 이끌고 있습니다. AI가 상상력의 엔진이라면, XR은 그 상상이 3차원 공간에서 생생하게 살아 움직이게 하는 무한한 캔버스입니다. CXD Lab은 생성형 AI와 XR의 융합이 단순한 도구를 넘어 인간의 사고방식(Thinking Process)과 창의적 프로세스를 어떻게 근본적으로 혁신하고 인지적 한계를 확장시키는지 탐구합니다."
-  image: "images/vision/vision-main_1.png"
+  image: "images/vision/pillar1.webp"
   keywords: "**Keywords**:  Generative AI, Co-creation, Creativity Support Tools"
 
 ########################### Vision 2 #############################
@@ -130,7 +131,7 @@ vision_2:
   direction: "Pillar II"
   content: "Digital humans are not merely conversational AI; they are visual entities capable of intelligently performing diverse roles in place of a physical body. We envision a future where these intelligent beings not only coexist and communicate with us in our daily physical reality but also autonomously execute complex new roles within virtual environments. Our research goes beyond visual fidelity to explore innovative service models where digital humans act as versatile agents. We aim to propose novel interaction paradigms for intelligent digital humans, defining how humans can meaningfully collaborate with these embodied intelligences in both physical and virtual worlds."
   content_kor: "CXD Lab은 디지털 휴먼을 단순한 대화 상대를 넘어, 물리적 신체를 대신해 복합적인 역할을 지능적으로 수행하며 현실과 가상에서 인간과 공존하는 새로운 사회적 실체로 정의합니다. 우리는 이들이 현실의 일상 공간에서 인간과 공존하며 소통하는 미래뿐만 아니라, 무한한 가상 환경 속에서도 스스로 판단하고 행동하며 새로운 사회적 가치를 창출하는 것에 주목합니다. 본 연구는 단순한 외형 구현을 넘어, 디지털 휴먼이 인간을 돕거나 대체하여 제공할 수 있는 혁신적인 서비스 모델을 발굴하고, 이에 최적화된 지능형 디지털 휴먼과의 새로운 인터랙션 (Interaction) 방식을 제안합니다."
-  image: "images/vision/vision-main_2.png"
+  image: "images/vision/pillar2-.webp"
   keywords: "**Keywords**: Digital Persona, Digital Human Interaction, Embodied Interaction"
 
 ########################### Vision 3 #############################
@@ -140,7 +141,7 @@ vision_3:
   direction: "Pillar III"
   content: "We design novel interaction paradigms where the physical world itself becomes an intelligent interface, moving beyond the constraints of 2D screens to seamlessly interlock human actions with digital information in 3D space."
   content_kor: "CXD Lab은 2D 스크린의 한계를 벗어나, 물리적 세상 그 자체가 지능형 인터페이스가 되어 인간의 행동과 디지털 정보가 3차원 공간에서 빈틈없이 맞물리는 새로운 인터랙션 패러다임을 설계합니다."
-  image: "images/vision/vision-main_2.png"
+  image: "images/vision/pillar3.webp"
   keywords: "**Keywords**: Spatial Computing, Tangible Interface, Phygital"
 
 
@@ -160,6 +161,27 @@ vision_4:
 research_approach:
   enable: true
   title: "RESEARCH APPROACH"
+  intro: "We are interested in a broad range of design research approaches, from understanding people and contexts to designing, evaluating, and integrating new interactive systems."
+  intro_kor: "CXD Lab은 사람과 맥락을 이해하는 연구부터 새로운 인터랙티브 시스템을 설계, 평가, 통합하는 연구까지 폭넓은 디자인 리서치 접근을 활용합니다."
+  item:
+    - title: "Understanding"
+      description: "Understanding users, contexts, practices, and emerging needs through qualitative, quantitative, and mixed-method research."
+      examples:
+        - "Ethnography"
+        - "Interview & observation"
+        - "Mixed-method study"
+    - title: "Design & Evaluate"
+      description: "Translating insights into concepts, prototypes, and interactive systems, then evaluating their experiential and practical value."
+      examples:
+        - "Research-through-design"
+        - "System prototyping"
+        - "UX evaluation"
+    - title: "Integrated"
+      description: "Combining understanding, design, implementation, and evaluation to develop holistic digital-physical experiences."
+      examples:
+        - "Design workshop"
+        - "Field deployment"
+        - "Integrated HCI study"
 
 
 
