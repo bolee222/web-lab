@@ -118,16 +118,135 @@
         {{ with .intro }}<div class="pillar-intro-des">{{ . | markdownify }}</div>{{ end }}
         {{ with .intro_kor }}<div class="pillar-intro-des pillar-intro-des-kor">{{ . | markdownify }}</div>{{ end }}
 
-      <div class="pillar-grid">
-        {{ range .pillar_item }}
-        {{ $c := .color }}
-        <div class="col-md-3 col-sm-6 col-xs-12 no-float pillar-col">
-          <div class="pillar-card"
-               {{ if and $c (strings.HasPrefix $c "#") }}style="background: {{ $c }};"{{ end }}>
-            {{ with .pillar_num }}<div class="pillar-num">{{ . | markdownify }}</div>{{ end }}
-            {{ with .name }}<div class="vision-domain-title">{{ . | markdownify }}</div>{{ end }}
-            {{ with .content }}<div class="vision-des">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-            {{ with .content_kor }}<div class="vision-des-kor">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+      <div class="pillar-row-list">
+        {{ $pillar := index .pillar_item 0 }}
+        {{ $vision := $.Params.vision_1 }}
+        {{ if $vision.enable }}
+        <div class="row pillar-detail-row">
+          <div class="col-md-2 col-sm-12">
+            <div class="pillar-card pillar-row-card">
+              {{ with $pillar.pillar_num }}<div class="pillar-num">{{ . | markdownify }}</div>{{ end }}
+              {{ with $pillar.name }}<div class="vision-domain-title">{{ . | markdownify }}</div>{{ end }}
+              {{ with $pillar.content }}<div class="vision-des">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            {{ with $vision.content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+          </div>
+          <div class="col-md-3 col-sm-6">
+            {{ with $vision.content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+          </div>
+          <div class="col-md-2 col-sm-6">
+            {{ with $vision.related_projects }}
+            <div class="pillar-related-projects">
+              <div class="pillar-related-title">Related Projects</div>
+              {{ range . }}
+                <a href="{{ .url | relURL }}">{{ .title | markdownify }}</a>
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
+          <div class="col-md-2 col-sm-12">
+            {{ with $vision.image }}<img class="img-responsive pillar-row-image" src="{{ . | relURL }}">{{ end }}
+          </div>
+        </div>
+        {{ end }}
+
+        {{ $pillar := index .pillar_item 1 }}
+        {{ $vision := $.Params.vision_2 }}
+        {{ if $vision.enable }}
+        <div class="row pillar-detail-row">
+          <div class="col-md-2 col-sm-12">
+            <div class="pillar-card pillar-row-card">
+              {{ with $pillar.pillar_num }}<div class="pillar-num">{{ . | markdownify }}</div>{{ end }}
+              {{ with $pillar.name }}<div class="vision-domain-title">{{ . | markdownify }}</div>{{ end }}
+              {{ with $pillar.content }}<div class="vision-des">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            {{ with $vision.content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+          </div>
+          <div class="col-md-3 col-sm-6">
+            {{ with $vision.content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+          </div>
+          <div class="col-md-2 col-sm-6">
+            {{ with $vision.related_projects }}
+            <div class="pillar-related-projects">
+              <div class="pillar-related-title">Related Projects</div>
+              {{ range . }}
+                <a href="{{ .url | relURL }}">{{ .title | markdownify }}</a>
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
+          <div class="col-md-2 col-sm-12">
+            {{ with $vision.image }}<img class="img-responsive pillar-row-image" src="{{ . | relURL }}">{{ end }}
+          </div>
+        </div>
+        {{ end }}
+
+        {{ $pillar := index .pillar_item 2 }}
+        {{ $vision := $.Params.vision_3 }}
+        {{ if $vision.enable }}
+        <div class="row pillar-detail-row">
+          <div class="col-md-2 col-sm-12">
+            <div class="pillar-card pillar-row-card">
+              {{ with $pillar.pillar_num }}<div class="pillar-num">{{ . | markdownify }}</div>{{ end }}
+              {{ with $pillar.name }}<div class="vision-domain-title">{{ . | markdownify }}</div>{{ end }}
+              {{ with $pillar.content }}<div class="vision-des">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            {{ with $vision.content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+          </div>
+          <div class="col-md-3 col-sm-6">
+            {{ with $vision.content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+          </div>
+          <div class="col-md-2 col-sm-6">
+            {{ with $vision.related_projects }}
+            <div class="pillar-related-projects">
+              <div class="pillar-related-title">Related Projects</div>
+              {{ range . }}
+                <a href="{{ .url | relURL }}">{{ .title | markdownify }}</a>
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
+          <div class="col-md-2 col-sm-12">
+            {{ with $vision.image }}<img class="img-responsive pillar-row-image" src="{{ . | relURL }}">{{ end }}
+          </div>
+        </div>
+        {{ end }}
+
+        {{ $pillar := index .pillar_item 3 }}
+        {{ $vision := $.Params.vision_4 }}
+        {{ if $vision.enable }}
+        <div class="row pillar-detail-row pillar-detail-row-last">
+          <div class="col-md-2 col-sm-12">
+            <div class="pillar-card pillar-row-card">
+              {{ with $pillar.pillar_num }}<div class="pillar-num">{{ . | markdownify }}</div>{{ end }}
+              {{ with $pillar.name }}<div class="vision-domain-title">{{ . | markdownify }}</div>{{ end }}
+              {{ with $pillar.content }}<div class="vision-des">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            {{ with $vision.content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+          </div>
+          <div class="col-md-3 col-sm-6">
+            {{ with $vision.content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+          </div>
+          <div class="col-md-2 col-sm-6">
+            {{ with $vision.related_projects }}
+            <div class="pillar-related-projects">
+              <div class="pillar-related-title">Related Projects</div>
+              {{ range . }}
+                <a href="{{ .url | relURL }}">{{ .title | markdownify }}</a>
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
+          <div class="col-md-2 col-sm-12">
+            {{ with $vision.image }}<img class="img-responsive pillar-row-image" src="{{ . | relURL }}">{{ end }}
           </div>
         </div>
         {{ end }}
@@ -138,154 +257,40 @@
    {{ end }}
    {{ end }}
 </div>
+<script>
+  (function () {
+    function syncPillarCardHeights() {
+      var rows = document.querySelectorAll('.pillar-detail-row');
+      rows.forEach(function (row) {
+        var card = row.querySelector('.pillar-row-card');
+        var english = row.querySelector('.col-md-3:nth-child(2) .vision-content');
+        var korean = row.querySelector('.col-md-3:nth-child(3) .vision-content');
 
+        if (!card) return;
+        card.style.height = 'auto';
 
+        if (window.innerWidth < 992 || !english || !korean) return;
 
-{{ with .Params.vision_1 }}
-{{ if .enable }}   
-    <div class="container">
-    <div class="row vision-pillar-detail-row">
-      <div class="col-xs-12">
-        <div class="col-xs-12"> 
-        {{ with .direction }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
-        {{ with .title }}<div class="direction-title">{{ . | markdownify }}</div>{{ end }}
-        </div>
-        
-        <div class="col-md-4">
-          {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-        </div>
-        <div class="col-md-4">
-          {{ with .content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-          {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
-        </div>
-      {{ with .image -}}
-        <div class="col-md-4">
-          <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
-        </div>
-        <div class="col-xs-12"> 
-        <hr class="vision-pillar-divider" align="left">
-        </div>
-      </div>
-      
-      
-    </div>  
-      {{- end }}
-    
-    
+        var textHeight = Math.max(
+          english.getBoundingClientRect().height,
+          korean.getBoundingClientRect().height
+        );
+        var cardContentHeight = card.scrollHeight;
+        card.style.height = Math.ceil(Math.max(textHeight, cardContentHeight)) + 'px';
+      });
+    }
 
-    
-  </div> 
-  </div>
-{{ end }}
-{{ end }}
+    var resizeTimer;
+    function scheduleSync() {
+      window.clearTimeout(resizeTimer);
+      resizeTimer = window.setTimeout(syncPillarCardHeights, 80);
+    }
 
-
-{{ with .Params.vision_2 }}
-{{ if .enable }}
-    <div class="container">
-    <div class="row vision-pillar-detail-row">
-      <div class="col-xs-12">
-        <div class="col-xs-12"> 
-        {{ with .direction }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
-        {{ with .title }}<div class="direction-title">{{ . | markdownify }}</div>{{ end }}
-        </div>
-        
-      <div class="col-md-4">
-        {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-        
-      </div>
-      <div class="col-md-4">
-        {{ with .content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-        {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
-      </div>
-      {{ with .image -}}
-      <div class="col-md-4">
-        <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
-      </div>
-      <div class="col-xs-12"> 
-        <hr class="vision-pillar-divider" align="left">
-        </div>
-      </div>
-      {{- end }}
-    </div>
-
-    
-  </div> 
-  </div>
-{{ end }}
-{{ end }}
-
-
-{{ with .Params.vision_3 }}
-{{ if .enable }}
-    <div class="container">
-    <div class="row vision-pillar-detail-row">
-      <div class="col-xs-12">
-        <div class="col-xs-12"> 
-        {{ with .direction }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
-        {{ with .title }}<div class="direction-title">{{ . | markdownify }}</div>{{ end }}
-      </div>
-        
-      <div class="col-md-4">
-        {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-        
-      </div>
-      <div class="col-md-4">
-        {{ with .content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-        {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
-      </div>
-      {{ with .image -}}
-      <div class="col-md-4">
-        <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
-      </div>
-      <div class="col-xs-12"> 
-        <hr class="vision-pillar-divider" align="left">
-      </div>
-      </div>
-      
-      {{- end }}
-    
-    </div>
-  </div> 
-  </div>
-{{ end }}
-{{ end }}
-
-
-{{ with .Params.vision_4 }}
-{{ if .enable }}
-    <div class="container">
-    <div class="row vision-pillar-detail-row">
-      <div class="col-xs-12"> 
-        <div class="col-xs-12"> 
-          {{ with .direction }}<div class="direction-mini">{{ . | markdownify }}</div>{{ end }}
-        {{ with .title }}<div class="direction-title">{{ . | markdownify }}</div>{{ end }}
-      </div>
-        
-      <div class="col-md-4">
-        {{ with .content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-        
-      </div>
-      <div class="col-md-4">
-        {{ with .content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-        {{ with .keywords }}<div class="vision-keyword">{{ . | markdownify }}</div>{{ end }}
-      </div>
-      {{ with .image -}}
-      <div class="col-md-4">
-        <img class="img-responsive vision-minifig" src="{{ . | relURL }}">
-      </div>
-      <div class="col-xs-12"> 
-        <hr class="vision-pillar-divider vision-pillar-divider-last" align="left">
-      </div>
-        </div>
-      {{- end }}
-    
-    </div>
-  </div> 
-  </div>
-{{ end }}
-{{ end }}
-
+    document.addEventListener('DOMContentLoaded', syncPillarCardHeights);
+    window.addEventListener('load', syncPillarCardHeights);
+    window.addEventListener('resize', scheduleSync);
+  })();
+</script>
 {{ with .Params.research_approach }}
 {{ if .enable }}
 <section class="vision-research-approach-section" id="vision-approach">
@@ -296,19 +301,29 @@
     {{ with .intro_kor }}<div class="vision-approach-intro vision-approach-intro-kor">{{ . | markdownify }}</div>{{ end }}
     {{ with .item }}
     <div class="row vision-approach-grid">
-      {{ range . }}
+      {{ range $index, $item := . }}
       <div class="col-sm-4">
-        <div class="vision-approach-card">
+        <div class="vision-approach-card vision-approach-card-{{ add $index 1 }}">
           <div class="vision-approach-mark" aria-hidden="true">
-            <span></span>
-            <span></span>
+            <svg viewBox="0 0 116 52" focusable="false">
+              <polygon class="vision-approach-diamond-left" points="8,26 34,4 60,26 34,48"></polygon>
+              <polygon class="vision-approach-diamond-right" points="60,26 86,4 112,26 86,48"></polygon>
+            </svg>
           </div>
-          {{ with .title }}<div class="vision-approach-title">{{ . | markdownify }}</div>{{ end }}
-          {{ with .description }}<div class="vision-approach-description">{{ . | markdownify }}</div>{{ end }}
-          {{ with .examples }}
+          {{ with $item.title }}<div class="vision-approach-title">{{ . | markdownify }}</div>{{ end }}
+          {{ with $item.description }}<div class="vision-approach-description">{{ . | markdownify }}</div>{{ end }}
+          {{ with $item.examples }}
           <ul class="vision-approach-examples">
             {{ range . }}<li>{{ . | markdownify }}</li>{{ end }}
           </ul>
+          {{ end }}
+          {{ with $item.related_projects }}
+          <div class="vision-approach-related">
+            <div class="vision-approach-related-title">Related Projects</div>
+            {{ range . }}
+              <a href="{{ .url | relURL }}">{{ .title | markdownify }}</a>
+            {{ end }}
+          </div>
           {{ end }}
         </div>
       </div>

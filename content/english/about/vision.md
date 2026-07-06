@@ -78,10 +78,10 @@ research_pillar:
   enable: true
   title: RESEARCH PILLARS
   intro: We conduct research grounded in four main pillars, while remaining open to interdisciplinary and exploratory directions beyond these areas.
-  intro_kor: 저희는 네 가지 주요 축을 기반으로 연구를 수행하는 한편, 해당 분야를 넘어선 다른 다학제 HCI 연구 방향에도 열려있습니다. 
+  intro_kor: 저희는 네 가지 주요 축을 기반으로 연구를 주로 수행하고 있으며, 이 외에 다양한 다학제 HCI 연구 방향도 진행하고 있습니다. 
   pillar_item: 
     # featured service item loop
-    - name: "Empowering Human"
+    - name: "Empowering Humans"
       pillar_num: "Pillar I"
       icon: "ion-erlenmeyer-flask"
       color: "#f0f0f0ff"
@@ -89,7 +89,7 @@ research_pillar:
       content_kor: "생성형 AI와 몰입형 XR의 융합을 통해, 단순 도구를 넘어 인간의 사고방식과 인지적 한계를 근본적으로 확장합니다."
 
     # featured service item loop
-    - name: "Virtual Humans"
+    - name: "Intelligent Virtual Humans"
       pillar_num: "Pillar II"
       icon: "ion-leaf"
       color: "#e9ecf0ff"
@@ -97,19 +97,19 @@ research_pillar:
       content_kor: "단순 대화를 넘어, 현실과 가상을 오가며 복합적 역할을 수행하고 우리와 공존하는 지능형 디지털 휴먼을 연구합니다."
 
     # featured service item loop
-    - name: "Spatial Interactions"
+    - name: "Spatial & Embodied Interaction"
       pillar_num: "Pillar III"
       icon: "ion-lightbulb"
       color:  "#e8e8ebff"
-      content: "Designing novel paradigms where the physical world becomes an intelligent interface, moving beyond the constraints of 2D screens."
+      content: "Exploring paradigms where physical worlds become an intelligent interface, moving beyond the constraints of 2D screens."
       content_kor: "2D 스크린의 한계를 넘어, 물리적 세상 그 자체가 지능형 인터페이스가 되는 차세대 공간 컴퓨팅 패러다임을 설계합니다."
           
     # featured service item loop
-    - name: "Convergence UX" 
+    - name: "Convergence Experience, Media & Robots " 
       pillar_num: "Pillar IV"
       icon: "ion-lightbulb"
       color:  "#dedfe1ff"
-      content: "Envisioning next-generation immersive experiences where digital content and physical reality converge."
+      content: "Envisioning immersive experiences where digital content and physical reality converge."
       content_kor: "XR과 AI의 융합으로 실현 가능한 새로운 가치를 발굴하고, 다양한 분야에 적용할 수 있는 혁신적인 융합 서비스를 탐색합니다."
 
 ########################### Vision 1 ############################
@@ -117,32 +117,69 @@ vision_1:
   enable: true
   teaser: "images/vision/statement_.png"
   quote: "We aim to blur the boundary between the digital-world and the real-world, <br> suggesting a new way of looking at user experience and design."
-  title: " Empowering Human"
+  title: " Empowering Humans"
   direction: "Pillar I"
-  content: "The fusion of Generative AI and Extended Reality (XR) is opening an entirely new dimension for human expression. While AI acts as the engine of imagination, XR serves as the infinite canvas where these ideas come to life in 3D space. Beyond creating simple support tools, we explore how this convergence fundamentally transforms human thinking and creative processes. We investigate the cognitive expansion that occurs when ideating in immersive environments, defining a new paradigm where humans and technology collaborate to reach levels of imagination previously unattainable by cognition alone."
-  content_kor: "생성형 AI와 확장현실(XR)의 결합은 인간의 표현력을 완전히 새로운 차원으로 이끌고 있습니다. AI가 상상력의 엔진이라면, XR은 그 상상이 3차원 공간에서 생생하게 살아 움직이게 하는 무한한 캔버스입니다. CXD Lab은 생성형 AI와 XR의 융합이 단순한 도구를 넘어 인간의 사고방식(Thinking Process)과 창의적 프로세스를 어떻게 근본적으로 혁신하고 인지적 한계를 확장시키는지 탐구합니다."
+  content: "We explore how AI and XR can expand how people think, create, and experience the world. Rather than treating AI/XR just as tools for productivity or creativity, we investigate how they can open new perspectives, support alternative ways of understanding, and create experiences difficult to access through ordinary perception or cognition. Through this pillar, we study how AI and XR can empower people to engage with information, environments, and themselves in new ways."
+  content_kor: "생성형 AI와 몰입형 XR이 인간의 사고, 창작, 경험 방식을 어떻게 확장할 수 있는지를 탐구하고 새로운 인터랙션 방식을 디자인하고 제안합니다. 우리는 이러한 기술을 단순한 생산성 도구나 창의성 지원 도구로 바라보는 것을 넘어, 사람들이 새로운 관점에서 사고하고, 기존과 다른 방식으로 정보를 이해하며, 일상적인 지각이나 인지만으로는 접근하기 어려운 경험을 할 수 있도록 돕는 가능성을 연구합니다. 이를 통해 AI와 XR이 사람들이 정보, 환경, 그리고 자기 자신과 새롭게 관계 맺고 상호작용하는 방식을 어떻게 확장할 수 있는지 탐색합니다."
   image: "images/vision/pillar1.webp"
   keywords: "**Keywords**:  Generative AI, Co-creation, Creativity Support Tools"
+  related_projects:
+    - title: "TwistLens"
+      url: "/project/2026-twistlens/"
+    - title: "DanXeReflect"
+      url: "/project/2026-danxereflect/"
+    - title: "PoseMate"
+      url: "/project/2026-posemate/"
+    - title: "NoviceDesign"
+      url: "/project/2025-novicedesign/"
+    - title: "OccSim"
+      url: "/project/2021-occsim/"
+    - title: "BodyMeter"
+      url: "/project/2016-bodymeter/"
 
 ########################### Vision 2 #############################
 vision_2:
   enable: true
   title: "Intelligent Virtual Humans"
   direction: "Pillar II"
-  content: "Digital humans are not merely conversational AI; they are visual entities capable of intelligently performing diverse roles in place of a physical body. We envision a future where these intelligent beings not only coexist and communicate with us in our daily physical reality but also autonomously execute complex new roles within virtual environments. Our research goes beyond visual fidelity to explore innovative service models where digital humans act as versatile agents. We aim to propose novel interaction paradigms for intelligent digital humans, defining how humans can meaningfully collaborate with these embodied intelligences in both physical and virtual worlds."
-  content_kor: "CXD Lab은 디지털 휴먼을 단순한 대화 상대를 넘어, 물리적 신체를 대신해 복합적인 역할을 지능적으로 수행하며 현실과 가상에서 인간과 공존하는 새로운 사회적 실체로 정의합니다. 우리는 이들이 현실의 일상 공간에서 인간과 공존하며 소통하는 미래뿐만 아니라, 무한한 가상 환경 속에서도 스스로 판단하고 행동하며 새로운 사회적 가치를 창출하는 것에 주목합니다. 본 연구는 단순한 외형 구현을 넘어, 디지털 휴먼이 인간을 돕거나 대체하여 제공할 수 있는 혁신적인 서비스 모델을 발굴하고, 이에 최적화된 지능형 디지털 휴먼과의 새로운 인터랙션 (Interaction) 방식을 제안합니다."
+  content: "We define digital humans as social entities that perform complex roles beyond physical bodies and coexist with people across real & virtual environments. Beyond everyday communication, we examine how they perceive, decide, and act to create new social value. Moving beyond visual realism, this pillar explores service models where digital humans support, augment, or substitute human roles, and proposes new interaction paradigms for collaboration."
+  content_kor: "우리는 디지털 휴먼을 단순한 대화 상대를 넘어, 물리적 신체를 대신해 복합적인 역할을 지능적으로 수행하며 현실과 가상에서 인간과 공존하는 새로운 사회적 실체로 정의합니다. 우리는 이들이 현실의 일상 공간에서 인간과 공존하며 소통하는 미래뿐만 아니라, 무한한 가상 환경 속에서도 스스로 판단하고 행동하며 새로운 사회적 가치를 창출하는 것에 주목합니다. 본 연구는 단순한 외형 구현을 넘어, 디지털 휴먼이 인간을 돕거나 대체하여 제공할 수 있는 혁신적인 서비스 모델을 발굴하고, 이에 최적화된 지능형 디지털 휴먼과의 새로운 인터랙션 방식을 제안합니다."
   image: "images/vision/pillar2-.webp"
   keywords: "**Keywords**: Digital Persona, Digital Human Interaction, Embodied Interaction"
+  related_projects:
+    - title: "DanXeReflect"
+      url: "/project/2026-danxereflect/"
+    - title: "OccSim"
+      url: "/project/2021-occsim/"
+    - title: "SmartManikin"
+      url: "/project/2019-smartmanikin/"
+    - title: "PoseMate"
+      url: "/project/2026-posemate/"
+    - title: "Body2Desk"
+      url: "/project/2018-body2desk/"
 
 ########################### Vision 3 #############################
 vision_3:
   enable: true
-  title: "Spatial Interaction"
+  title: "Spatial & Embodied Interaction"
   direction: "Pillar III"
-  content: "We design novel interaction paradigms where the physical world itself becomes an intelligent interface, moving beyond the constraints of 2D screens to seamlessly interlock human actions with digital information in 3D space."
-  content_kor: "CXD Lab은 2D 스크린의 한계를 벗어나, 물리적 세상 그 자체가 지능형 인터페이스가 되어 인간의 행동과 디지털 정보가 3차원 공간에서 빈틈없이 맞물리는 새로운 인터랙션 패러다임을 설계합니다."
+  content: "We explore spatial and embodied interactions where everyday spaces, objects, and human movements become part of the interface. Moving beyond 2D screens, we investigate how digital information can be embedded in physical environments and connected to people’s gestures, movements, and spatial behaviors. We study how spatial computing, tangible interfaces, and embodied interaction can create more natural, intuitive, and context-aware experiences in various contexts."
+  content_kor: "우리는 2D 스크린이나 손 안의 디바이스에 한정된 인터랙션을 넘어, 디지털 정보가 물리적 환경 속에 자연스럽게 배치되고 사람의 제스처, 움직임, 위치, 시선, 그리고 사물과의 관계에 반응하는 방식을 연구합니다. 이 연구는 공간이 단순한 배경이 아니라 정보를 담고, 반응하고, 사용자의 행동을 유도하는 지능형 인터페이스가 될 수 있다는 관점에서 출발합니다. 이를 통해 공간 컴퓨팅, 탠저블 인터페이스, 체화된 인터랙션이 만들어낼 수 있는 가능성을 박물관, 주거 공간, 공공장소, 미래형 인터랙티브 등의 다양한 환경에서 탐색합니다."
   image: "images/vision/pillar3.webp"
   keywords: "**Keywords**: Spatial Computing, Tangible Interface, Phygital"
+  related_projects:
+    - title: "DanXeReflect"
+      url: "/project/2026-danxereflect/"
+    - title: "Roby"
+      url: "/project/2024-roby/"
+    - title: "PoseMate"
+      url: "/project/2026-posemate/"
+    - title: "Body2Desk"
+      url: "/project/2018-body2desk/"
+    - title: "Skeletonographer"
+      url: "/project/2019-skeletonographer/"
+    - title: "Autonomous Height-Adjustable Desks"
+      url: "/project/2019-robotdesk/"
 
 
 ########################### Vision 4 #############################
@@ -151,10 +188,19 @@ vision_4:
   enable: true
   title: "Convergence Experience & Media"
   direction: "Pillar IV"
-  content: "The core mission is to construct 'Phygital experiences' where digital content seamlessly blends into our physical daily lives, dissolving the boundary between the real and the virtual. We explore how user experiences should be architected when XR content converges with AI intelligence. Beyond mere technical implementation, our goal is to propose diverse service models and next-generation UX that provide tangible benefits and practical aid to human life. This research positions itself at the forefront of defining the future standard of living in a mixed-reality era."
-  content_kor: "혁신의 핵심은 디지털 콘텐츠가 우리의 물리적 일상과 자연스럽게 어우러지며, 현실과 가상의 경계를 허무는 '피지털(Phygital) 경험'을 구축하는 것입니다. 우리는 XR 콘텐츠와 AI가 결합했을 때 사용자 경험이 어떻게 설계되어야 하는지, 그 최적의 방법론을 탐구합니다. 단순히 기술을 보여주는 것을 넘어, 실질적으로 인간의 삶의 질을 높이고 도움을 줄 수 있는 다양한 융합 서비스와 차세대 UX 모델을 제안하는 것이 우리의 목표입니다. 이는 미래 라이프스타일의 새로운 표준을 정립하는 가장 실용적이고도 혁신적인 연구 분야가 될 것입니다."
-  image: "images/vision/vision-main_2.png"
+  content: "We explore next-generation convergence experiences where XR, AI, robotics, and media technologies blend into everyday life. Beyond a single technology or domain, this pillar covers phygital services, immersive media, robotic interaction, smart environments, and future lifestyle experiences. We study how these technologies can be orchestrated to create practical, engaging, and socially meaningful user experiences."
+  content_kor: "우리는 XR, AI, 로보틱스, 미디어 기술이 일상 속에 융합되며 만들어내는 미래형 컨버전스 경험을 탐구합니다. 이 연구 축은 특정 기술이나 단일 분야에 국한되지 않고, 피지털 서비스, 몰입형 미디어, 로봇 인터랙션, 스마트 환경, 차세대 라이프스타일 경험 등 다양한 융합적 맥락을 포괄합니다. 우리는 단순한 기술 구현을 넘어, 여러 기술이 어떻게 유기적으로 연결되어 사람들에게 실질적인 도움과 몰입감 있는 경험, 그리고 사회적으로 의미 있는 가치를 제공할 수 있는지 연구합니다."
+  image: "images/vision/pillar3.webp"
   keywords: "**Keywords**: Metaverse, Ambient Experience, Immersive Media"
+  related_projects:
+    - title: "XR Docent"
+      url: "/project/2024-xrdocent/"
+    - title: "Socio-Spatial Interaction Patterns"
+      url: "/project/2019-social_interactions/"
+    - title: "TwistLens"
+      url: "/project/2026-twistlens/"
+    - title: "PONIFY"
+      url: "/project/2025-ponify/"
   
 
 ########################### RESEARCH APPROACH ############################
@@ -164,24 +210,52 @@ research_approach:
   intro: "We are interested in a broad range of design research approaches, from understanding people and contexts to designing, evaluating, and integrating new interactive systems."
   intro_kor: "CXD Lab은 사람과 맥락을 이해하는 연구부터 새로운 인터랙티브 시스템을 설계, 평가, 통합하는 연구까지 폭넓은 디자인 리서치 접근을 활용합니다."
   item:
-    - title: "Understanding"
-      description: "Understanding users, contexts, practices, and emerging needs through qualitative, quantitative, and mixed-method research."
+    - title: "Envisioning Interactions<br>by Understanding People"
+      description: "We uncover people’s needs, behaviors, and contexts to envision meaningful future interactions."
       examples:
-        - "Ethnography"
         - "Interview & observation"
-        - "Mixed-method study"
-    - title: "Design & Evaluate"
-      description: "Translating insights into concepts, prototypes, and interactive systems, then evaluating their experiential and practical value."
+        - "Participatory Design"
+      related_projects:
+        - title: "PoseMate"
+          url: "/project/2026-posemate/"
+        - title: "XR Docent"
+          url: "/project/2024-xrdocent/"
+        - title: "Socio-Spatial Comfort"
+          url: "/project/2020-socio_spatial_comfort/"
+        - title: "Socio-Spatial Interaction Patterns"
+          url: "/project/2019-social_interactions/"
+        - title: "Consumer to Creator"
+          url: "/project/2017-consumer2creator/"
+    - title: "Designing and Evaluating<br>New Proposed Interactions"
+      description: "We prototype new interaction concepts and evaluate how they shape user experiences."
       examples:
-        - "Research-through-design"
         - "System prototyping"
         - "UX evaluation"
-    - title: "Integrated"
-      description: "Combining understanding, design, implementation, and evaluation to develop holistic digital-physical experiences."
+      related_projects:
+        - title: "Roby"
+          url: "/project/2024-roby/"
+        - title: "Body2Desk"
+          url: "/project/2018-body2desk/"
+        - title: "Generative Multi-Agent Simulation"
+          url: "/project/2023-occsim/"
+        - title: "ORI-MANDU"
+          url: "/project/2017-orimandu/"
+    - title: "Integrated: User-Centered Interaction<br>Design with Evaluation"
+      description: "We conduct the full research cycle—from understanding users to designing, and evaluating interactive systems."
       examples:
-        - "Design workshop"
-        - "Field deployment"
-        - "Integrated HCI study"
+        - "Research-through-Design"
+        - "Mixed Stages"
+      related_projects:
+        - title: "TwistLens"
+          url: "/project/2026-twistlens/"
+        - title: "DanXeReflect"
+          url: "/project/2026-danxereflect/"
+        - title: "OccSim"
+          url: "/project/2021-occsim/"
+        - title: "SmartManikin"
+          url: "/project/2019-smartmanikin/"
+        - title: "PONIFY"
+          url: "/project/2025-ponify/"
 
 
 
