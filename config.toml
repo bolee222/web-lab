@@ -234,7 +234,7 @@ URL = ""
 weight = 1
 
 [[languages.en.menu.footer]]
-name = "About CXD Lab"
+name = "Research Vision"
 URL = "/about/vision/"
 weight = 2
 

@@ -1048,7 +1048,43 @@ a:link-text-publications {
   margin-bottom: 0px;
 }
 
-.vision-quote{
+.vision-motto-section{
+  padding-bottom: 30px;
+}
+
+.vision-motto{
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.12;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.vision-motto-primary{
+  color: #5f1ebb;
+}
+
+.vision-motto-secondary{
+  color: #9f46d7;
+  font-weight:500;
+}
+
+@media(max-width:768px){
+  .vision-motto{
+    font-size: 68px;
+  }
+}
+
+@media(max-width:480px){
+  .vision-motto{
+    font-size: 56px;
+  }
+}
+
+.vision-quote,
+.vision-quote-kor{
   width: 90%;
   font-weight: 400;
   font-size: 14px;
@@ -1056,16 +1092,25 @@ a:link-text-publications {
   margin-bottom: 20px;
 }
 
-.vision-quote-kor{
-  width: 90%;
-  font-weight: 400;
-  font-size: 14px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  
-  strong{
-    font-weight: 700;
-  }
+.vision-quote p,
+.vision-quote-kor p{
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.vision-quote p:last-child,
+.vision-quote-kor p:last-child{
+  margin-bottom: 0;
+}
+
+.vision-quote strong,
+.vision-quote-kor strong{
+  font-weight: 700;
+  background-color: transparent;
 }
 
 .vision-quote-key{
@@ -1119,7 +1164,7 @@ a:link-text-publications {
 .area-title{
   font-weight:700;
   color: black;
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -1127,7 +1172,7 @@ a:link-text-publications {
 .area-title-pillar{
   font-weight:700;
   color: black;
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 30px;
   margin-bottom: 20px;
 }

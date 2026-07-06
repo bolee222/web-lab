@@ -1,5 +1,5 @@
 ---
-title: "Research Approach"
+title: "Research Method"
 description: "A **high-level vision** that our lab seek to pursue & our **key research areas**."
 bg_image: "images/headerbg/09.png"
 layout: "about"

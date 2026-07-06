@@ -2,6 +2,14 @@
 
 {{ partial "page-title.html" . }}
 
+{{ with .Params.overview.motto }}
+<section class="vision-motto-section">
+  <div class="container">
+    <div class="vision-motto">{{ . | markdownify }}</div>
+  </div>
+</section>
+{{ end }}
+
 {{ with .Params.top_keywords }}
 <section class="service-about">
   <div class="container">
@@ -37,11 +45,11 @@
   <div class="row">
     <div class="col-md-6">
         {{ with .vision_eng }}<div class="vision-quote">{{ . | markdownify }}</div>{{ end }}
-        {{ with .keywords }}<div class="vision-quote-key">{{ . | markdownify }}</div>{{ end }}
+        {{ with .keywords_eng }}<div class="vision-quote-key">{{ . | markdownify }}</div>{{ end }}
     </div>
     <div class="col-md-6">
         {{ with .vision_kor }}<div class="vision-quote-kor">{{ . | markdownify }}</div>{{ end }}
-        {{ with .keywords }}<div class="vision-quote-key">{{ . | markdownify }}</div>{{ end }}
+        {{ with .keywords_kor }}<div class="vision-quote-key">{{ . | markdownify }}</div>{{ end }}
     </div>
   </div>
 
