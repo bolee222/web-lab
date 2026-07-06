@@ -4,11 +4,6 @@ description:
 bg_image: "images/headerbg/09.png"
 layout: "branding"
 draft: false
-menu:
-  main:
-    parent: "CXD Lab"
-    name: "Branding"
-    weight: 4
 
 
 ########################### Logo_wide #############################

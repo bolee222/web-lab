@@ -4,11 +4,6 @@ description:
 bg_image: "images/headerbg/09.png"
 layout: "vision"
 draft: false
-menu:
-  main:
-    parent: "CXD Lab"
-    name: "Research Vision"
-    weight: 1
 top_keywords:
   eng:
     line1: "Yonsei University"

@@ -217,8 +217,9 @@ copyright = "Copyright &copy; Bokyung Lee. All Rights Reserved."
 # Main menu
 # NOTE: Leaf entries linking to content should be defined in the content file's respective front matter.
 [[languages.en.menu.main]]
-hasChildren = true
-name = "CXD Lab"
+hasChildren = false
+name = "Vision"
+URL = "/about/vision/"
 weight = 2
 
 [[languages.en.menu.main]]

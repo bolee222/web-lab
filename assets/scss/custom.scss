@@ -1479,3 +1479,19 @@ a:link-text-publications {
 .margin-bottom-0{
   margin-bottom: 0px !important;
 }
+
+.footer .footer-identity {
+  align-items: center !important;
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+}
+
+.footer .footer-identity a {
+  align-items: baseline !important;
+  display: inline !important;
+  height: auto !important;
+  justify-content: initial !important;
+  width: auto !important;
+}

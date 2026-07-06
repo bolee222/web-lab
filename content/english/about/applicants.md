@@ -7,7 +7,7 @@ draft: false
 menu:
   main:
     name: "Join Us"
-    weight: 7
+    weight: 6
 
 
 ########################### PHD #############################

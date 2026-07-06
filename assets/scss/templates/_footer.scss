@@ -16,16 +16,20 @@
     align-items: center;
     color: #303030;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     font-family: $primary-font;
     font-size: 13px;
     font-weight: 400;
     justify-content: center;
     line-height: 1.5;
     margin-bottom: 14px;
+    white-space: nowrap;
 
     a {
       color: #303030;
+      display: inline !important;
+      height: auto !important;
+      width: auto !important;
 
       &:hover {
         color: #913afb;
