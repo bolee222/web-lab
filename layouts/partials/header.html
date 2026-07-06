@@ -39,34 +39,6 @@
               {{- end }}
               {{- end }}
 
-              <!-- Language List -->
-
-              <!--<li class="btn_lan">
-                <select id="select-language" onchange="location = this.value;">
-                  {{ $siteLanguages := site.Languages -}}
-                  {{ $pageLang := .Page.Lang -}}
-                  {{ $translations := "" }}{{ if eq .Page.Kind "404" }}{{ $translations = site.Home.AllTranslations }}{{ else }}{{ $translations = .Page.AllTranslations }}{{ end -}}
-                  {{ range $translations -}}
-                  {{ $translation := . -}}
-                  {{ range $siteLanguages -}}
-                  {{ if eq $translation.Lang .Lang -}}
-                  {{ $selected := false -}}
-                  {{ if eq $pageLang .Lang -}}
-                  <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}" selected>
-                    {{ .LanguageName }}
-                  </option>
-                  {{ else -}}
-                  <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}">
-                    {{ .LanguageName }}
-                  </option>
-                  {{- end }}
-                  {{- end }}
-                  {{- end }}
-                  {{- end }}
-                </select>
-              </li>  -->
-
-              <!-- /Language List -->
             </ul>
           </div>
         </nav>
