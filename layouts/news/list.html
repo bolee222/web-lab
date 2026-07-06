@@ -1,0 +1,181 @@
+{{ define "main" }}
+
+<section class="news-index-title">
+  <div class="container">
+    <h1>{{ .Title | markdownify }}</h1>
+  </div>
+</section>
+
+<section class="page-wrapper news-list-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        {{ $paginator := .Paginate .Data.Pages -}}
+        <h2 class="news-list-heading">All News</h2>
+        <div class="news-filter-status" hidden>
+          <span></span>
+          <a href="{{ "/news/" | relURL }}">Show all</a>
+        </div>
+        <div class="news-list">
+          {{ range $paginator.Pages -}}
+          {{ $imagePath := .Params.image -}}
+          {{ $hasImage := and $imagePath (fileExists (printf "static/%s" $imagePath)) -}}
+          <article class="news-list-item{{ if $hasImage }} has-thumb{{ end }}" data-news-categories="{{ delimit .Params.categories "||" }}" data-news-tags="{{ delimit .Params.tags "||" }}">
+            {{ if $hasImage }}
+            <a class="news-list-thumb" href="{{ .RelPermalink }}">
+              <img src="{{ $imagePath | relURL }}" alt="{{ .Title }}">
+            </a>
+            {{ end }}
+            <div class="news-list-body">
+              <div class="news-list-meta">
+                <span>{{ partial "date_i18n.html" (dict "date" .PublishDate "lang" .Page.Language.Lang) }}</span>
+                {{ with .Params.categories }}
+                <span>{{ delimit . ", " }}</span>
+                {{ end }}
+              </div>
+              <h2><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+              <p>{{ .Summary }}</p>
+            </div>
+          </article>
+          {{- end }}
+        </div>
+
+        {{ $paginator := .Paginator -}}
+        {{ if gt $paginator.TotalPages 1 -}}
+        <nav class="text-center">
+          <ul class="pagination post-pagination">
+            {{ if $paginator.HasPrev -}}
+            <li><a href="{{ $paginator.Prev.URL }}" class="page-link">{{ i18n "page_prev" }}</a></li>
+            {{- end }}
+            {{ range $paginator.Pagers -}}
+            <li class="{{ if eq . $paginator }} active {{ end }}"><a href="{{ .URL }}">{{ .PageNumber }}</a></li>
+            {{- end }}
+            {{ if $paginator.HasNext -}}
+            <li><a href="{{ $paginator.Next.URL }}">{{ i18n "page_next" }}</a></li>
+            {{- end }}
+          </ul>
+        </nav>
+        {{- end }}
+      </div>
+      <div class="col-md-4">
+        {{ partial "blog-sidebar.html" . }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var items = document.querySelectorAll(".news-list-item");
+    var categoryLinks = document.querySelectorAll("[data-news-category]");
+    var tagLinks = document.querySelectorAll("[data-news-tag]");
+    var heading = document.querySelector(".news-list-heading");
+    var status = document.querySelector(".news-filter-status");
+
+    function getSelectedCategories() {
+      var params = new URLSearchParams(window.location.search);
+      return params.getAll("category").filter(Boolean);
+    }
+
+    function getSelectedTags() {
+      var params = new URLSearchParams(window.location.search);
+      return params.getAll("tag").filter(Boolean);
+    }
+
+    function setFilters(categories, tags) {
+      var params = new URLSearchParams(window.location.search);
+      params.delete("category");
+      params.delete("tag");
+      categories.forEach(function (category) { params.append("category", category); });
+      tags.forEach(function (tag) { params.append("tag", tag); });
+      var query = params.toString();
+      window.history.pushState({}, "", window.location.pathname + (query ? "?" + query : ""));
+      applyFilters(categories, tags);
+    }
+
+    function applyFilters(selectedCategories, selectedTags) {
+      var normalizedCategories = selectedCategories.map(function (category) { return category.toLowerCase(); });
+      var normalizedTags = selectedTags.map(function (tag) { return tag.toLowerCase(); });
+      var visibleCount = 0;
+
+      items.forEach(function (item) {
+        var itemCategories = (item.getAttribute("data-news-categories") || "")
+          .split("||")
+          .map(function (category) { return category.trim().toLowerCase(); });
+        var itemTags = (item.getAttribute("data-news-tags") || "")
+          .split("||")
+          .map(function (tag) { return tag.trim().toLowerCase(); });
+        var categoryMatches = normalizedCategories.length === 0 || normalizedCategories.some(function (category) {
+          return itemCategories.indexOf(category) !== -1;
+        });
+        var tagMatches = normalizedTags.length === 0 || normalizedTags.some(function (tag) {
+          return itemTags.indexOf(tag) !== -1;
+        });
+        var isVisible = categoryMatches && tagMatches;
+        item.hidden = !isVisible;
+        if (isVisible) visibleCount += 1;
+      });
+
+      if (heading) {
+        var labels = [];
+        if (selectedCategories.length) labels.push("category: " + selectedCategories.join(", "));
+        if (selectedTags.length) labels.push("tag: " + selectedTags.join(", "));
+        heading.textContent = labels.length ? "News filtered by " + labels.join(" · ") : "All News";
+      }
+
+      if (status) {
+        status.hidden = normalizedCategories.length === 0 && normalizedTags.length === 0;
+        var label = status.querySelector("span");
+        if (label) label.textContent = visibleCount + " item" + (visibleCount === 1 ? "" : "s");
+      }
+
+      categoryLinks.forEach(function (link) {
+        var category = (link.getAttribute("data-news-category") || "").toLowerCase();
+        link.classList.toggle("current", normalizedCategories.indexOf(category) !== -1);
+      });
+
+      tagLinks.forEach(function (link) {
+        var tag = (link.getAttribute("data-news-tag") || "").toLowerCase();
+        link.classList.toggle("current", normalizedTags.indexOf(tag) !== -1);
+      });
+    }
+
+    categoryLinks.forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        var category = link.getAttribute("data-news-category");
+        var selectedCategories = getSelectedCategories();
+        var selectedTags = getSelectedTags();
+        var normalizedCategory = category.toLowerCase();
+        var nextCategories = selectedCategories.filter(function (selectedCategory) {
+          return selectedCategory.toLowerCase() !== normalizedCategory;
+        });
+        if (nextCategories.length === selectedCategories.length) nextCategories.push(category);
+        setFilters(nextCategories, selectedTags);
+      });
+    });
+
+    tagLinks.forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        var tag = link.getAttribute("data-news-tag");
+        var selectedCategories = getSelectedCategories();
+        var selectedTags = getSelectedTags();
+        var normalizedTag = tag.toLowerCase();
+        var nextTags = selectedTags.filter(function (selectedTag) {
+          return selectedTag.toLowerCase() !== normalizedTag;
+        });
+        if (nextTags.length === selectedTags.length) nextTags.push(tag);
+        setFilters(selectedCategories, nextTags);
+      });
+    });
+
+    window.addEventListener("popstate", function () {
+      applyFilters(getSelectedCategories(), getSelectedTags());
+    });
+
+    applyFilters(getSelectedCategories(), getSelectedTags());
+  })();
+</script>
+
+{{ end }}

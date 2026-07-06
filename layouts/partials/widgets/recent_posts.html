@@ -1,15 +1,21 @@
 <div class="widget widget-latest-post">
     <h4 class="widget-title">{{ i18n "latest_posts" }}</h4>
-    {{ range first 4 (where site.Pages "Type" "post") }}
-    <div class="media">
-      <div class="col-md-4 recent-news">
+    {{ $recentPosts := where site.RegularPages "Section" "news" }}
+    {{ if eq (len $recentPosts) 0 }}
+    {{ $recentPosts = where site.RegularPages "Type" "post" }}
+    {{ end }}
+    {{ range first 4 $recentPosts }}
+      {{ $imagePath := .Params.image -}}
+      {{ $hasImage := and $imagePath (fileExists (printf "static/%s" $imagePath)) -}}
+    <div class="media{{ if $hasImage }} has-thumb{{ end }}">
+      {{ if $hasImage }}
+      <div class="recent-news">
         <a class="" href="{{ .RelPermalink }}">
-          {{ if isset .Params "image" }}
-          <img class="media-object" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
-          {{ end }}
+          <img class="media-object" src="{{ $imagePath | relURL }}" alt="{{ .Title }}">
         </a>
       </div>
-      <div class="col-md-8 recent-news-right">
+      {{ end }}
+      <div class="recent-news-right">
         <h4 class="media-heading"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h4>
         <p>{{ .Summary | truncate 50 }}</p>
       </div>

@@ -5,10 +5,10 @@
 <!-- checking blog -->
 {{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "categories") (eq .Section "tags") }}
 
-<div class="page-wrapper">
+<div class="page-wrapper{{ if eq .Section "news" }} news-list-page{{ end }}">
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
+      <div class="{{ if eq .Section "news" }}col-md-7{{ else }}col-md-8{{ end }}">
         {{ $paginator := .Paginate .Data.Pages -}}
         {{ range $paginator.Pages -}}
         <div class="post">
@@ -98,7 +98,7 @@
         </nav>
         {{- end }}
       </div>
-      <div class="col-md-4">
+      <div class="{{ if eq .Section "news" }}col-md-4 col-md-offset-1{{ else }}col-md-4{{ end }}">
         {{ partial "blog-sidebar.html" . }}
       </div>
     </div>

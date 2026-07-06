@@ -35,7 +35,7 @@
                 </ul>
               </li>
               {{ else -}}
-              <li><a href="{{ .URL | relLangURL }}" class="{{ $navPriorityClass }}{{ if $currentPage.IsMenuCurrent "main" . }} current{{ else if and (in (slice "post" "categories" "tags") $currentPage.Type) (eq .Identifier "blog") }} current-parent{{ end }}">{{ .Name }}</a></li>
+              <li><a href="{{ .URL | relLangURL }}" class="{{ $navPriorityClass }}{{ if $currentPage.IsMenuCurrent "main" . }} current{{ else if and (or (eq $currentPage.Section "news") (in (slice "post" "categories" "tags") $currentPage.Type)) (eq .Identifier "news") }} current-parent{{ end }}">{{ .Name }}</a></li>
               {{- end }}
               {{- end }}
 

@@ -97,13 +97,17 @@
         display: inline-block;
         margin-right: 5px;
 
-        a {
+        a,
+        span {
           color: black;
           display: inline-block;
           padding: 8px 15px;
           border: 1px solid #4f4e4e;
           border-radius: 2px;
           font-size: 14px;
+        }
+
+        a {
           @include transition-multi (background-color 0.3s ease, border 0.3s ease, color 0.1s ease);
 
           &:hover {
