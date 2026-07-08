@@ -6,6 +6,9 @@ lastmod: 2024-01-01T00:00:00
 bg_image: "images/headerbg/09.png"
 layout: "faq"
 draft: false
+url: "/faq/"
+aliases:
+  - "/about/faq/"
 menu:
   main:
     name: "FAQ"

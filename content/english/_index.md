@@ -102,7 +102,7 @@ about:
   button:
     enable: true
     label: "&rarr; About CXD Lab"
-    link: "about/vision/"
+    link: "/vision/"
 
   button2:
     enable: true
@@ -141,15 +141,15 @@ cta:
   button:
     enable: true
     label: "&rarr; About CXD Lab"
-    link: "about/vision/"
+    link: "/vision/"
   button_joinUs:
     enable: true
     label: "&rarr; Join Us"
-    link: "about/applicants/"
+    link: "/join/"
   button_FAQ:
     enable: true
     label: "&rarr; FAQ"
-    link: "about/faq/"
+    link: "/faq/"
 
 ############################# Funfacts ###############################
 funfacts:

@@ -4,6 +4,9 @@ description:
 bg_image: "images/headerbg/09.png"
 layout: "applicants"
 draft: false
+url: "/join/"
+aliases:
+  - "/about/applicants/"
 menu:
   main:
     name: "Join Us"
@@ -46,7 +49,7 @@ position_phd:
   FAQ: 
     "
     <b>For more information:</b> 
-    [ - FAQ > 'Join our lab as a Ph.D. Student'](./about/faq/).
+    [ - FAQ > 'Join our lab as a Ph.D. Student'](/faq/).
     "
 
 ########################## MASTERS ############################
@@ -77,7 +80,7 @@ position_master:
 
   FAQ: 
     "**For more information**: 
-    [FAQ > 'Join our lab as a Master's Student'](./about/faq/).
+    [FAQ > 'Join our lab as a Master's Student'](/faq/).
     "
 
 ########################## UNDERGRADUATE INTERNS ############################
@@ -96,7 +99,7 @@ position_interns:
 
   We offer three types of internship tracks as below. The first two tracks (Track A & B) involve more active, engaging, and ownership-driven roles, while the last track (Track C) entails a relatively passive role."
 
-  FAQ: "**For more information**: [FAQ > 'Join our lab as an Undergraduate Intern'](./about/faq/)."
+  FAQ: "**For more information**: [FAQ > 'Join our lab as an Undergraduate Intern'](/faq/)."
 
   track_A: "**TRACK A:**  <b>For students who already have a specific research topic in mind:</b> <br> → We will plan a new design research project together regarding a particular topic (to answer the research question that the student wants to explore."
   track_B: "**TRACK B:**  <b>For students who are open to explore any research projects actively</b>: <br> → The student will be assigned one of the small projects that the currently ongoing in the lab."

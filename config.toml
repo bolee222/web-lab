@@ -217,7 +217,7 @@ copyright = "Copyright &copy; Bokyung Lee. All Rights Reserved."
 [[languages.en.menu.main]]
 hasChildren = false
 name = "Vision"
-URL = "/about/vision/"
+URL = "/vision/"
 weight = 2
 
 [[languages.en.menu.main]]
@@ -229,7 +229,7 @@ weight = 3
 # Footer menu
 [[languages.en.menu.footer]]
 name = "Vision"
-URL = "/about/vision/"
+URL = "/vision/"
 weight = 1
 
 [[languages.en.menu.footer]]
@@ -254,12 +254,12 @@ weight = 5
 
 [[languages.en.menu.footer]]
 name = "Join Us"
-URL = "/about/applicants/"
+URL = "/join/"
 weight = 6
 
 [[languages.en.menu.footer]]
 name = "FAQ"
-URL = "/about/faq/"
+URL = "/faq/"
 weight = 7
 
 [[languages.en.menu.footer]]

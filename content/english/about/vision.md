@@ -4,6 +4,9 @@ description:
 bg_image: "images/headerbg/09.png"
 layout: "vision"
 draft: false
+url: "/vision/"
+aliases:
+  - "/about/vision/"
 top_keywords:
   eng:
     line1: "Yonsei University"
