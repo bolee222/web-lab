@@ -128,13 +128,13 @@ transform: perspective(500px) translate3d(-20vh, -20vh, 0px);
 #circle1 {
   background-image: radial-gradient(circle at center, rgba(61, 210, 240, 1) 0%, rgba(61, 210, 240, 0) var(--circle-fallout));
   opacity: .9;
-  animation: orbit1 20s linear infinite;
+  animation: orbit1 8s linear infinite;
 }
 
 #circle2 {
   background-image: radial-gradient(circle at center, rgba(122, 76, 226, 1) 0%, rgba(122, 76, 226, 0) var(--circle-fallout));
   opacity: .5;
-  animation: orbit2 20s linear infinite;
+  animation: orbit2 8s linear infinite;
 }
 
 
@@ -161,13 +161,13 @@ canvas {
 }
 
 @keyframes orbit1 {
-from { transform: rotate(0deg) perspective(500px) translate3d(50px,0,0); }
-to   { transform: rotate(360deg) perspective(500px) translate3d(50px,0,0); }
+from { transform: rotate(0deg) perspective(500px) translate3d(70px,0,0); }
+to   { transform: rotate(360deg) perspective(500px) translate3d(70px,0,0); }
 }
 
 @keyframes orbit2 {
-from { transform: rotate(360deg) perspective(500px) translate3d(-50px,0,0); }
-to   { transform: rotate(0deg) perspective(500px) translate3d(-50px,0,0); }
+from { transform: rotate(360deg) perspective(500px) translate3d(-70px,0,0); }
+to   { transform: rotate(0deg) perspective(500px) translate3d(-70px,0,0); }
 }
 //.body {
   //background-color: #eee;
