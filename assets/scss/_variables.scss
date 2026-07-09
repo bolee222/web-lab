@@ -1,20 +1,22 @@
-$light: #fff;
+$light: #FFFFFF; // Lab White
 $darkGray: #3d3d3d;
 $mediumGray: #575757;
 $lightGray: #e5e4e2;
-$brand-color-text-primary: #435fa7;
-$brand-color-text-secondary: #29abd7;
-$brand-color-grad-primary: #5E7DEB;
+$brand-color-text-primary: #435fa7; // CXD Anchor Indigo
+$brand-color-text-secondary: #29ABD7; // CXD Sky Blue
+$brand-color-grad-primary: #5E7DEB; // CXD Extended Blue
 $brand-color-grad-secondary: #3DB7E6;
+$brand-color-ambient: #BFC2F4; // CXD Soft Violet
+$brand-color-softgray: #F4F5F7; // Soft Gray
+
+// Web-only supporting colors
 $brand-color-fuse: #5C82E4;
-$brand-color-ambient: #BFC2F4;
 $brand-color-glow: #3DD2F0;
-$brand-color-softgray: #F4F5F7;
 $primary-color:#550596;
 $secondary-color: #1bbb1b;
 $primary-text-color: rgb(78, 78, 78);
 $success: #1bbb1b;
-$black: #000;
+$black: #111111; // Symbol Black
 $alert:#c7254e;
 $border-color:#dedede;
 $yellow-highlight: rgba(255, 244, 41, 0.406) ;
