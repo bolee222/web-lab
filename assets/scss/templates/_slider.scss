@@ -3,7 +3,8 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    padding: 80px 0 60px;
+    min-height: 760px;
+    padding: 120px 0 120px;
     position: relative;
     @include tablet {
         background-attachment: scroll;

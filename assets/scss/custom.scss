@@ -558,13 +558,13 @@ img.rounded {
     
     //max-width: 1140px;
     //max-height: 640px;
-    padding: 6rem 6rem;
+    padding: 4rem 6rem;
     display: flex;
     align-items: center;
     background: rgba(255, 255, 255, 0.212);
-    box-shadow: 0 0.75rem 4rem 0 rgba(0, 0, 0, 0.066);
+    box-shadow: none;
     border-radius: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.125);
+    border: 0;
 
     position: relative;
     z-index: 1;
@@ -2196,7 +2196,8 @@ a:link-text-publications {
 
 /* 3) 로고 이미지 크기 고정 */
 .navigation .navbar-brand img {
-  height: 30px;    /* 원하시는 높이로 조절 */
+  height: 26px;    /* 원하시는 높이로 조절 */
+  transform: translateY(5px);
   width: auto;     /* 비율 유지 */
   max-width: none; /* inline width 속성 무시 */
 }
