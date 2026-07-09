@@ -87,6 +87,7 @@ body {
   //background-color: white;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body_grad {
@@ -115,6 +116,10 @@ position: absolute;
 top: 50%;
 left: 50%;
 z-index: 0;
+}
+
+.slider {
+  overflow: hidden;
 }
 
 #circle-container-1 {
@@ -168,6 +173,30 @@ to   { transform: rotate(360deg) perspective(500px) translate3d(70px,0,0); }
 @keyframes orbit2 {
 from { transform: rotate(360deg) perspective(500px) translate3d(-70px,0,0); }
 to   { transform: rotate(0deg) perspective(500px) translate3d(-70px,0,0); }
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --circle-size: 48vh;
+  }
+
+  #circle-container-1 {
+    transform: perspective(500px) translate3d(-30vh, -30vh, 0px);
+  }
+
+  #circle-container-2 {
+    transform: perspective(500px) translate3d(-18vh, -18vh, 0px);
+  }
+
+  @keyframes orbit1 {
+    from { transform: rotate(0deg) perspective(500px) translate3d(45px,0,0); }
+    to   { transform: rotate(360deg) perspective(500px) translate3d(45px,0,0); }
+  }
+
+  @keyframes orbit2 {
+    from { transform: rotate(360deg) perspective(500px) translate3d(-45px,0,0); }
+    to   { transform: rotate(0deg) perspective(500px) translate3d(-45px,0,0); }
+  }
 }
 //.body {
   //background-color: #eee;
