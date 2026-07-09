@@ -562,7 +562,10 @@ img.rounded {
     display: flex;
     align-items: center;
     background: rgba(255, 255, 255, 0.212);
-    box-shadow: none;
+    box-shadow:
+      -16px 0 24px -24px rgba(17, 17, 17, 0.20),
+      16px 0 24px -24px rgba(17, 17, 17, 0.24),
+      0 18px 26px -24px rgba(17, 17, 17, 0.28);
     border-radius: 2rem;
     border: 0;
 
