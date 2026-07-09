@@ -1,0 +1,102 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<main class="teaching-page">
+  <section class="teaching-hero" aria-label="Teaching overview">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          {{ with .Params.hero.statement }}<p class="teaching-statement">{{ . | markdownify }}</p>{{ end }}
+          {{ with .Params.hero.keywords }}
+          <div class="teaching-keywords" aria-label="Teaching keywords">
+            {{ range . }}<span class="teaching-keyword">{{ . }}</span>{{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ $sections := slice
+    (dict "id" "undergraduate-courses" "title" "Undergraduate" "overview_title" "Undergraduate Courses" "courses" .Params.undergraduate_courses)
+    (dict "id" "graduate-courses" "title" "Graduate" "overview_title" "Graduate Courses" "courses" .Params.graduate_courses)
+  }}
+
+  <section class="teaching-overview-section" aria-labelledby="course-overview-title">
+    <div class="container">
+      <div class="teaching-section-heading teaching-overview-heading">
+        <h2 id="course-overview-title">Course Overview</h2>
+      </div>
+      <div class="row">
+        {{ range $sections }}
+        <div class="col-md-6">
+          <div class="teaching-overview-group">
+            <h3>{{ .overview_title }}</h3>
+            <div class="teaching-overview-list">
+              {{ range .courses }}
+              <a class="teaching-overview-course" href="#course-{{ .code | urlize }}">
+                <span class="teaching-overview-code">{{ .code }}</span>
+                <span class="teaching-overview-title">{{ .title | markdownify }}</span>
+                <span class="teaching-overview-meta">{{ len .offerings }} offerings</span>
+              </a>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{ range $sections }}
+  <section class="teaching-course-section" id="{{ .id }}" aria-labelledby="{{ .id }}-title">
+    <div class="container">
+      <div class="teaching-section-heading">
+        <div>
+          <span class="teaching-section-kicker">Course Level</span>
+          <h2 id="{{ .id }}-title">{{ .title }}</h2>
+        </div>
+        <span class="teaching-section-count">{{ len .courses }} course groups</span>
+      </div>
+
+      {{ range .courses }}
+      {{ $courseCode := .code }}
+      {{ $courseTitle := .title }}
+      <article class="teaching-course-entry" id="course-{{ .code | urlize }}">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="teaching-course-summary">
+              <div class="teaching-course-code">{{ .code }}</div>
+              <h3>{{ .title | markdownify }}</h3>
+              <div class="teaching-course-meta">{{ .type }}</div>
+              {{ with .description }}<p>{{ . | markdownify }}</p>{{ end }}
+              {{ with .keywords }}
+              <div class="teaching-keyword-group" aria-label="{{ $courseCode }} course-level keywords">
+                {{ range . }}<span class="teaching-keyword">{{ . }}</span>{{ end }}
+              </div>
+              {{ end }}
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="teaching-semester-index" aria-label="{{ .title }} semester offerings">
+              <div class="teaching-semester-index-label">Semester Offerings</div>
+              <div class="teaching-semester-grid">
+              {{ range .offerings }}
+              <a class="teaching-semester-link" href="{{ .url | relURL }}" title="{{ .project_focus }}" aria-label="Open {{ $courseCode }} — {{ .semester }} Course Hub. Focus: {{ .project_focus }}">
+                {{ .semester }}
+              </a>
+              {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+</main>
+
+{{ end }}

@@ -9,10 +9,6 @@ draft: false
 url: "/faq/"
 aliases:
   - "/about/faq/"
-menu:
-  main:
-    name: "FAQ"
-    weight: 8
 ---
 
 ## **About CXD Lab**
