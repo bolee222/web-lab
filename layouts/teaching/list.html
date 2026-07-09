@@ -67,9 +67,7 @@
         <div class="row">
           <div class="col-md-7">
             <div class="teaching-course-summary">
-              <div class="teaching-course-code">{{ .code }}</div>
-              <h3>{{ .title | markdownify }}</h3>
-              <div class="teaching-course-meta">{{ .type }}</div>
+              <h3><span>{{ .code }}</span> {{ .title | markdownify }}</h3>
               {{ with .description }}<p>{{ . | markdownify }}</p>{{ end }}
               {{ with .keywords }}
               <div class="teaching-keyword-group" aria-label="{{ $courseCode }} course-level keywords">

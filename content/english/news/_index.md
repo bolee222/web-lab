@@ -6,5 +6,5 @@ menu:
   main:
     name: "News"
     identifier: "news"
-    weight: 7
+    weight: 8
 ---

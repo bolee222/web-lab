@@ -402,55 +402,31 @@ img.rounded {
 }
 
 .teaching-course-entry {
-  padding: 24px;
-  margin-bottom: 22px;
-  border: 1px solid #dedede;
-  background: white;
+  padding: 22px 0 28px;
+  border-top: 1px solid #e6e6e6;
   scroll-margin-top: 90px;
 }
 
 .teaching-course-section .teaching-course-entry:first-of-type {
-  border-top-color: #dedede;
-}
-
-.teaching-course-entry:hover {
-  border-color: #c8c8c8;
-}
-
-.teaching-course-entry > .row {
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.teaching-course-entry > .row > [class*="col-"] {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.teaching-course-code {
-  margin-bottom: 6px;
-  font-family: $primary-font;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: .04em;
-  color: #777;
+  border-top: 0;
+  padding-top: 12px;
 }
 
 .teaching-course-summary h3 {
   margin: 0 0 10px;
   font-family: $primary-font;
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 700;
   line-height: 1.25;
   color: #111;
 }
 
-.teaching-course-meta {
-  margin-bottom: 14px;
-  font-family: $primary-font;
-  font-size: 13px;
-  font-weight: 400;
-  color: #5a5a5a;
+.teaching-course-summary h3 span {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: 0;
+  white-space: nowrap;
 }
 
 .teaching-course-summary p {
@@ -534,7 +510,7 @@ img.rounded {
   }
 
   .teaching-course-entry {
-    padding: 18px;
+    padding: 22px 0 28px;
   }
 
   .teaching-overview-course {

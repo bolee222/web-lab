@@ -9,5 +9,5 @@ draft: false
 menu:
   main:
     name: "Publication"
-    weight: 5
+    weight: 4
 ---
