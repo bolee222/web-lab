@@ -750,7 +750,8 @@ img.rounded {
       border-color: black;
   
       &:hover {
-        background: black; /*darken($primary-color, 20%);*/
+        background: $brand-color-text-primary; /*darken($primary-color, 20%);*/
+        border-color: $brand-color-text-primary;
         color: $light;
     }
     }
@@ -982,12 +983,14 @@ a:link-text-publications {
 }
 
 .faq-bg{
-  background: #ffffff6a !important;
+  background: $brand-color-softgray !important;
+  box-shadow: 0 18px 32px -28px rgba(17, 17, 17, 0.28) !important;
+  padding: 2.4rem 3.5rem !important;
   b {
-    color:rgb(97, 13, 161);
+    color: $brand-color-text-primary;
   }
   p{
-    padding: 0 30px;
+    padding: 0 24px;
   }
 }
 
