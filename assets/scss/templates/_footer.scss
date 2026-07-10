@@ -3,7 +3,7 @@
   border-top: 1px solid $lightGray;
   color: rgba(17, 17, 17, 0.62);
   margin-top: 64px;
-  padding: 30px 0 26px;
+  padding: 14px 0 13px;
   text-align: left;
 
   > .container {
@@ -34,9 +34,10 @@
 
   .footer-main {
     display: grid;
-    align-items: start;
-    grid-template-columns: minmax(360px, 1fr) 360px 390px;
-    gap: 42px;
+    align-items: center;
+    grid-template-columns: auto minmax(320px, 1fr);
+    gap: 48px;
+    justify-content: space-between;
     padding-bottom: 0;
   }
 
@@ -54,86 +55,19 @@
       display: block;
       height: auto;
       max-width: 100%;
-      width: 125px;
+      width: 112px;
     }
   }
 
   .footer-meta {
-    margin-top: 18px;
+    text-align: right;
 
     p,
     a {
       color: rgba(17, 17, 17, 0.62);
       display: block;
-      font-size: 12px;
-      line-height: 1.32;
-    }
-  }
-
-  .footer-copyright {
-    color: rgba(17, 17, 17, 0.48);
-    font-size: 11px;
-    line-height: 1.4;
-    margin-top: 20px;
-  }
-
-  .footer-tagline {
-    color: $brand-color-text-primary;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 1.45;
-    margin-left: 80px;
-    margin-top: 6px;
-    max-width: 360px;
-    overflow-wrap: normal;
-    word-break: normal;
-  }
-
-  .footer-tagline span {
-    display: block;
-  }
-
-  .footer-tagline-spaced {
-    margin-top: 6px;
-  }
-
-  .footer-nowrap {
-    white-space: nowrap;
-  }
-
-  .footer-links {
-    display: grid;
-    grid-template-columns: repeat(3, max-content);
-    gap: 42px;
-    justify-content: end;
-    min-width: 0;
-  }
-
-  .footer-column {
-    h2 {
-      color: $brand-color-text-primary;
-      font-family: $primary-font;
-      font-size: 13px;
-      font-weight: 600;
-      line-height: 1.2;
-      margin: 0 0 10px;
-    }
-
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-
-      li {
-        color: rgba(17, 17, 17, 0.58);
-        font-size: 12px;
-        line-height: 1.25;
-        margin-bottom: 7px;
-
-        a {
-          color: rgba(17, 17, 17, 0.58);
-        }
-      }
+      font-size: 9px;
+      line-height: 9.8px;
     }
   }
 
@@ -142,17 +76,8 @@
 @media only screen and (max-width: 991px) {
   .footer {
     .footer-main {
-      grid-template-columns: minmax(0, 1fr) minmax(280px, 0.9fr);
-      gap: 24px 48px;
-    }
-
-    .footer-tagline {
-      margin-left: 0;
-      margin-top: 0;
-    }
-
-    .footer-links {
-      display: none;
+      grid-template-columns: auto minmax(280px, 1fr);
+      gap: 32px;
     }
   }
 }
@@ -165,24 +90,15 @@
     }
 
     .footer-main {
-      grid-template-columns: minmax(300px, 1fr) 320px minmax(310px, auto);
-      gap: 22px;
-    }
-
-    .footer-tagline {
-      margin-left: 40px;
-      max-width: 320px;
-    }
-
-    .footer-links {
-      gap: 24px;
+      grid-template-columns: auto minmax(280px, 1fr);
+      gap: 32px;
     }
   }
 }
 
 @media only screen and (max-width: 767px) {
   .footer {
-    padding: 24px 0 18px;
+    padding: 16px 0 14px;
 
     > .container {
       margin-left: 20px;
@@ -192,18 +108,16 @@
 
     .footer-main {
       grid-template-columns: 1fr;
-      gap: 18px;
-      padding-bottom: 18px;
+      gap: 10px;
+      padding-bottom: 0;
     }
 
-    .footer-links {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      width: 100%;
+    .footer-meta {
+      text-align: left;
     }
 
     .footer-logo img {
-      width: 118px;
+      width: 104px;
     }
   }
 }
