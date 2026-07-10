@@ -12,7 +12,7 @@ teaser: "/projects/2025-designatomy/_[opt]top.webp"
 metacontent: "We introduce Designatomy, a taxonomy-driven design pedagogy that helps technology-novice students generate technology-inspired design ideas. The approach structures technological features into conceptual categories that support systematic ideation."
 
 # Meta-Data
-conference: "International Journal of Design Education / 2025"
+conference: "Int’l Journal of Design Education / 2025"
 conference_full: International Journal of Design Education (IJDE)
 con_date: "Undecided"
 keywords: "generative AI, XR, Design Pedagogy"

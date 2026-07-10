@@ -143,11 +143,11 @@
 }
 
 .home-title{
-    font-weight: 700;
-    font-family: $poppins-font;
-    font-size: 25px;
-    margin-bottom: 40px;
-    color: black;
+  font-weight: 800;
+  font-family: $primary-font;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: black;
 }
 
 .home-title-ongoing{
@@ -161,9 +161,10 @@
 .home-title-sub1{
   font-weight: 400;
   font-family: $primary-font;
-  font-size: 16px !important;
-  margin-top: -10px;
-  margin-bottom: 30px;
+  font-size: 15px !important;
+  line-height: 1.5;
+  margin-top: -4px;
+  margin-bottom: 20px;
   color: black;
   
   b{
