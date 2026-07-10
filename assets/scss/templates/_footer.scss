@@ -1,76 +1,157 @@
 .footer {
-  background: $brand-color-text-primary;
-  text-align: center;
-  padding: 42px 0 34px;
+  background: $brand-color-softgray;
+  border-top: 1px solid $lightGray;
+  color: rgba(17, 17, 17, 0.62);
   margin-top: 64px;
+  padding: 30px 0 26px;
+  text-align: left;
+
+  > .container {
+    margin-left: 60px;
+    margin-right: 60px;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+  }
+
   p {
-    font-size: 13px;
-    line-height: 25px;
-    color: rgba(255, 255, 255, 0.72);
+    color: inherit;
+    font-size: 14px;
+    line-height: 1.65;
+    margin: 0;
   }
+
   a {
-    color: rgba(255, 255, 255, 0.86);
-  }
+    color: rgba(17, 17, 17, 0.62);
+    transition: color 0.2s ease;
 
-  .footer-identity {
-    align-items: center;
-    color: rgba(255, 255, 255, 0.86);
-    display: flex;
-    flex-wrap: nowrap;
-    font-family: $primary-font;
-    font-size: 13px;
-    font-weight: 400;
-    justify-content: center;
-    line-height: 1.5;
-    margin-bottom: 14px;
-    white-space: nowrap;
-
-    a {
-      color: rgba(255, 255, 255, 0.9);
-      display: inline !important;
-      height: auto !important;
-      width: auto !important;
-
-      &:hover {
-        color: $brand-color-text-secondary;
-      }
+    &:hover {
+      color: $brand-color-text-secondary;
+      text-decoration: none;
     }
   }
 
-  .footer-separator {
-    color: rgba(255, 255, 255, 0.42);
-    padding: 0 6px;
+  .footer-main {
+    display: grid;
+    align-items: start;
+    grid-template-columns: minmax(460px, 1fr) minmax(0, 620px);
+    gap: 64px;
+    padding-bottom: 0;
   }
 
-  .footer-menu {
-    padding-bottom: 6px;
-    font-size: 14px;
-    font-weight: 400;
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-logo {
+    display: inline-flex;
+    margin-bottom: 0;
+
+    img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+      width: 145px;
+    }
+  }
+
+  .footer-meta {
+    margin-top: 18px;
+
+    p,
+    a {
+      color: rgba(17, 17, 17, 0.62);
+      display: block;
+      font-size: 12px;
+      line-height: 1.55;
+    }
+  }
+
+  .footer-copyright {
+    color: rgba(17, 17, 17, 0.48);
+    font-size: 11px;
+    line-height: 1.4;
+    margin-top: 20px;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 64px;
+    justify-content: end;
+    min-width: 0;
+  }
+
+  .footer-column {
+    h2 {
+      color: $brand-color-text-primary;
+      font-family: $primary-font;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.2;
+      margin: 0 0 10px;
+    }
 
     ul {
-      margin: 0px;
-      padding: 0px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
       li {
-        display: inline-block;
-        padding: 0px 12px 6px;
+        color: rgba(17, 17, 17, 0.58);
+        font-size: 12px;
+        line-height: 1.25;
+        margin-bottom: 7px;
+
         a {
-          display: inline-block;
-          color: rgba(255, 255, 255, 0.78);
-          &:hover {
-            color: $brand-color-text-secondary;
-          }
+          color: rgba(17, 17, 17, 0.58);
         }
       }
     }
   }
 
-  .copyright {
-    margin-top: 4px;
-    font-family: $primary-font;
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.58);
-    a {
-      font-weight: 600;
+}
+
+@media only screen and (max-width: 991px) {
+  .footer {
+    .footer-main {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .footer-links {
+      gap: 48px;
+      min-width: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    padding: 24px 0 18px;
+
+    > .container {
+      margin-left: 20px;
+      margin-right: 20px;
+      width: auto;
+    }
+
+    .footer-main {
+      gap: 18px;
+      padding-bottom: 18px;
+    }
+
+    .footer-links {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      width: 100%;
+    }
+
+    .footer-logo img {
+      width: 138px;
     }
   }
 }
