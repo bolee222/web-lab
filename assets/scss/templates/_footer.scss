@@ -7,8 +7,8 @@
   text-align: left;
 
   > .container {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
     max-width: none;
     padding-left: 0;
     padding-right: 0;
@@ -35,8 +35,8 @@
   .footer-main {
     display: grid;
     align-items: start;
-    grid-template-columns: minmax(460px, 1fr) minmax(0, 620px);
-    gap: 64px;
+    grid-template-columns: minmax(360px, 1fr) 360px 390px;
+    gap: 42px;
     padding-bottom: 0;
   }
 
@@ -66,7 +66,7 @@
       color: rgba(17, 17, 17, 0.62);
       display: block;
       font-size: 12px;
-      line-height: 1.55;
+      line-height: 1.32;
     }
   }
 
@@ -77,10 +77,34 @@
     margin-top: 20px;
   }
 
+  .footer-tagline {
+    color: $brand-color-text-primary;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.45;
+    margin-left: 80px;
+    margin-top: 6px;
+    max-width: 360px;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .footer-tagline span {
+    display: block;
+  }
+
+  .footer-tagline-spaced {
+    margin-top: 6px;
+  }
+
+  .footer-nowrap {
+    white-space: nowrap;
+  }
+
   .footer-links {
     display: grid;
     grid-template-columns: repeat(3, max-content);
-    gap: 64px;
+    gap: 42px;
     justify-content: end;
     min-width: 0;
   }
@@ -118,13 +142,40 @@
 @media only screen and (max-width: 991px) {
   .footer {
     .footer-main {
-      grid-template-columns: 1fr;
-      gap: 28px;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 0.9fr);
+      gap: 24px 48px;
+    }
+
+    .footer-tagline {
+      margin-left: 0;
+      margin-top: 0;
     }
 
     .footer-links {
-      gap: 48px;
-      min-width: 0;
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1320px) {
+  .footer {
+    > .container {
+      margin-left: 60px;
+      margin-right: 40px;
+    }
+
+    .footer-main {
+      grid-template-columns: minmax(300px, 1fr) 320px minmax(310px, auto);
+      gap: 22px;
+    }
+
+    .footer-tagline {
+      margin-left: 40px;
+      max-width: 320px;
+    }
+
+    .footer-links {
+      gap: 24px;
     }
   }
 }
@@ -140,6 +191,7 @@
     }
 
     .footer-main {
+      grid-template-columns: 1fr;
       gap: 18px;
       padding-bottom: 18px;
     }
