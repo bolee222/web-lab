@@ -39,7 +39,7 @@ ordered = false
 
 ################################# Default parameters ##########################
 [params]
-logo = "images/logo/cxd_header-2b-trimmed.png"
+logo = "images/logo/cxd_header-2b-symbol.png"
 logo_width = "150px"
 # OpenGraph / Twitter Card metadata
 description = "CXD Lab at Yonsei University, led by Bokyung Lee (이보경), researches HCI, UX, XR design, XR interaction, and digital-physical convergence."
