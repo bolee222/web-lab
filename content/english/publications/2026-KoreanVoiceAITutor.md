@@ -29,7 +29,7 @@ links:
   - label : "Project Page"
     link : ""
   - label : "Source URL"
-    link : ""
+    link : "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12745883"
 ---
 
 This paper investigates how non-Korean learners experience a Korean voice-based AI tutor during speaking practice. Through an in-lab study and semi-structured interviews, the work identifies key interaction challenges and opportunities, and offers design implications for more supportive voice AI tutoring systems in non-English language learning contexts.

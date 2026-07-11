@@ -3,11 +3,14 @@
     <div class="publication-text margin-bottom-0">{{ .Params.cite_acm | emojify | markdownify }}</div>
 
     <ul class="btn-link-group list-inline margin-bottom-0">
-      {{ range .Params.Links }}
+      {{ range $targetLabel := slice "Source URL" "Project Page" "PDF" }}
+      {{ range $.Params.Links }}
+      {{ if eq .label $targetLabel }}
       <li class="list-inline-item link-text-publications">
         {{- $label := .label -}}
         {{- $kind := "publisher" -}}
         {{- $icon := "↗" -}}
+        {{- $publisherIcon := "" -}}
         {{- if eq $label "PDF" -}}
           {{- $kind = "pdf" -}}
           {{- $icon = "📄" -}}
@@ -16,12 +19,39 @@
           {{- $icon = "🔗" -}}
         {{- else if eq $label "Source URL" -}}
           {{- $label = "Publisher Page" -}}
+          {{- $publisherURL := lower .link -}}
+          {{- $publisherIcon = "/images/publishers/doi.png" -}}
+          {{- if or (strings.Contains $publisherURL "acm.org") (strings.Contains $publisherURL "10.1145") -}}
+            {{- $publisherIcon = "/images/publishers/acm.png" -}}
+          {{- else if strings.Contains $publisherURL "springer" -}}
+            {{- $publisherIcon = "/images/publishers/springer.png" -}}
+          {{- else if strings.Contains $publisherURL "sciencedirect" -}}
+            {{- $publisherIcon = "/images/publishers/elsevier.png" -}}
+          {{- else if strings.Contains $publisherURL "dbpia" -}}
+            {{- $publisherIcon = "/images/publishers/dbpia.png" -}}
+          {{- else if strings.Contains $publisherURL "kci.go.kr" -}}
+            {{- $publisherIcon = "/images/publishers/kci.jpg" -}}
+          {{- else if or (strings.Contains $publisherURL "aodr.org") (strings.Contains $publisherURL "10.15187") -}}
+            {{- $publisherIcon = "/images/publishers/aodr.png" -}}
+          {{- else if strings.Contains $publisherURL "koasas.kaist.ac.kr" -}}
+            {{- $publisherIcon = "/images/publishers/kaist.png" -}}
+          {{- else if strings.Contains $publisherURL "tandfonline" -}}
+            {{- $publisherIcon = "/images/publishers/tandfonline.png" -}}
+          {{- else if strings.Contains $publisherURL "ebsco" -}}
+            {{- $publisherIcon = "/images/publishers/ebsco.png" -}}
+          {{- end -}}
         {{- end -}}
         <a class="publication-link-button publication-link-button-{{ $kind }}" href="{{ .link | absURL }}" target="_blank" rel="noopener noreferrer">
+          {{- if $publisherIcon -}}
+          <img class="publication-publisher-favicon" src="{{ $publisherIcon }}" alt="" aria-hidden="true">
+          {{- else -}}
           <span class="publication-link-icon" aria-hidden="true">{{ $icon }}</span>
+          {{- end -}}
           <span>{{ $label }}</span>
         </a>
       </li>
+      {{ end }}
+      {{ end }}
       {{ end }}
       {{ with .Params.award }}
       <li class="list-inline-item link-text-publications">

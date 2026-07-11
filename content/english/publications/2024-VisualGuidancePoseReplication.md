@@ -29,7 +29,7 @@ links:
   - label : "Project Page"
     link : ""
   - label : "Source URL"
-    link : ""
+    link : "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12512898"
 ---
 
 This preliminary study explores how different visual guidance designs affect users’ ability to replicate poses in photo-taking scenarios. It compares multiple guidance modalities and discusses implications for improving accuracy, usability, and satisfaction in pose-based interaction systems.

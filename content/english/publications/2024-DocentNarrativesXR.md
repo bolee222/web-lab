@@ -29,7 +29,7 @@ links:
   - label : "Project Page"
     link : ""
   - label : "Source URL"
-    link : ""
+    link : "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11999988"
 ---
 
 This paper analyzes museum docent narratives to derive thematic frameworks that can guide XR interaction design for improved visitor comprehension. The findings organize key knowledge-description patterns that help designers structure more effective, context-aware XR museum experiences.

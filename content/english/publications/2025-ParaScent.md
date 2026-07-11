@@ -29,7 +29,7 @@ links:
   - label : "Project Page"
     link : ""
   - label : "Source URL"
-    link : "http://dx.doi.org/10.31678/SDC114.12"
+    link : "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003259559"
 ---
 
 ParaScent explores a motion-enhanced parametric visualization toolkit designed to communicate perfume attributes in digital environments.

@@ -30,7 +30,7 @@ links:
   - label : "Project Page"
     link : ""
   - label : "Source URL"
-    link : ""
+    link : "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12746087"
 ---
 
 FrottarX presents a bodily re-enactment based visual logging approach that helps users reflect on personal museum visit records in a more immersive way. Instead of relying only on static photos, the system captures selectively extracted visual snippets through touch-based frottage interactions and connects them with spatial and movement cues to support richer, embodied recollection.

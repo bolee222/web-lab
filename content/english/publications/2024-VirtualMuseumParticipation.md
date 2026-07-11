@@ -29,7 +29,7 @@ links:
   - label : "Project Page"
     link : ""
   - label : "Source URL"
-    link : ""
+    link : "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11999989"
 ---
 
 This work investigates how virtual museum interactions can better support art appreciation through participatory methods. By combining interviews and generative design activities, the study identifies opportunities for immersive, social, and creative interaction designs in virtual museum contexts.
