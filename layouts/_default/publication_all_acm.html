@@ -23,6 +23,14 @@
         </a>
       </li>
       {{ end }}
+      {{ with .Params.award }}
+      <li class="list-inline-item link-text-publications">
+        <span class="publication-link-button publication-link-button-award">
+          <span class="publication-link-icon" aria-hidden="true">🏆</span>
+          <span>{{ . }}</span>
+        </span>
+      </li>
+      {{ end }}
     </ul>
   </div>
   <div class="cv-text-bold publication-year" data-year="{{ .Params.homeYearTag }}">{{ .Params.homeYearTag }}</div>

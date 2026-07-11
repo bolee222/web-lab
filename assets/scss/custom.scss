@@ -879,7 +879,8 @@ img.rounded {
 }
 
 .publication-list .btn-link-group .link-text-publications {
-  margin: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .publication-list .publication-link-button {
@@ -904,7 +905,7 @@ img.rounded {
   }
 }
 
-.publication-list .publication-link-button-pdf {
+.publication-list .publication-link-button-award {
   background: rgba($brand-color-ambient, .35);
   color: $brand-color-grad-primary !important;
 
