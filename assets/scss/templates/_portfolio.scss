@@ -51,6 +51,84 @@
     }
 }
 
+.page-title-project {
+    margin-bottom: 6px;
+
+    .block h1 {
+        margin-bottom: 36px;
+    }
+}
+
+.portfolio-filter-all-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.portfolio-filter-keywords {
+    margin-bottom: 18px;
+}
+
+.portfolio-filter-panel {
+    display: grid;
+    grid-template-columns: 132px minmax(0, 1fr);
+    align-items: start;
+    padding: 1px 0;
+    margin-bottom: 0;
+
+    .btn-group {
+        margin-bottom: 0 !important;
+    }
+}
+
+.portfolio-filter-panel-label {
+    padding: 7px 14px 0 2px;
+    color: #333;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+
+.portfolio-row-all {
+    width: fit-content !important;
+    margin: 2px;
+    padding: 4px 10px !important;
+    border: 1px solid #747474;
+    border-radius: 0 !important;
+    background: $light;
+    color: #747474;
+    font-size: 12px;
+    line-height: 1.42857143;
+
+    &:hover,
+    &:focus,
+    &.active {
+        border-color: #282828 !important;
+        background: #282828 !important;
+        color: $light !important;
+        outline: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio-filter-panel {
+        grid-template-columns: 92px minmax(0, 1fr);
+        padding: 1px 0;
+    }
+
+    .portfolio-filter-panel-label {
+        padding-right: 8px;
+        font-size: 9px;
+    }
+
+    .portfolio-row-all {
+        font-size: 11px;
+    }
+}
+
 .btn-journal-name-home {
     background: rgb(43, 43, 43);
     color: white;
@@ -116,8 +194,6 @@
         color: black;
     }
 }
-
-
 
 .portfolio-list-title a:hover,
 .portfolio-list-title a:focus {

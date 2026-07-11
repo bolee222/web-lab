@@ -1,4 +1,4 @@
-<section class="page-title bg-2">
+<section class="page-title bg-2{{ if and .IsSection (eq .Section "project") }} page-title-project{{ end }}">
   <!--style="background-image: url('{{ .Params.bg_image | relURL }}');"-->
   <div class="container">
     <div class="row">

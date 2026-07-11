@@ -7,7 +7,7 @@ draft: false
 
 # Project thumb
 #["XR", "AI", "Physical AI", "UX", "Embodied Interaction", "Digital Twin" , "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology", "User-centered Design", "Patent"]
-category: [ "AI", "UX", "Embodied Interaction", "Digital Human", "Digital Twin", "Convergence", "Interaction Design", "System", "Visualization", "User Study", "User-centered Design", "Patent" ]
+category: [ "AI", "UX", "Embodied Interaction", "Digital Human", "Digital Twin", "Convergence", "Interaction Design", "System", "Visualization", "User Study", "User-centered Design", "Patent", "Award" ]
 image: "/projects/2021-OccSim/_[opt]teaser.webp"
 teaser: "/projects/2021-OccSim/_[opt]top.webp"
 metacontent: "We introduce OccSim, a multi-agent occupant simulation system that models human movement and interactions in buildings. It enables designers to analyze spatial layouts and evaluate potential virus transmission scenarios."

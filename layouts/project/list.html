@@ -7,75 +7,67 @@
             <div class="col-md-12">
                 <div class="block">
                     <div class="portfolio-menu">
-                        <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
-                            <label class="btn btn-sm btn-primary active">
-                                <input
-                                  type="radio"
-                                  name="shuffle-filter"
-                                  value="all"
-                                  checked="checked"
-                                />{{ i18n "all" }}
-                              </label>
-                              {{- $categories := slice -}}
-                              {{- range .Data.Pages -}}
-                                {{- $categories = $categories | append .Params.category -}}
-                              {{- end -}}
-                              {{- $uniqueCategories := $categories | uniq -}}
-                              {{- $orderedFilters := slice
-                                (dict "label" "XR Interaction" "aliases" (slice "XR" "XR UX" "XR Interaction"))
-                                (dict "label" "Human-AI Interaction" "aliases" (slice "AI" "AI UX" "AI-UX" "Human-AI Interaction"))
-                                (dict "label" "Physical AI" "aliases" (slice "Physical AI"))
-                                (dict "label" "UX" "aliases" (slice "UX"))
-                                (dict "label" "Embodied Interaction" "aliases" (slice "Embodied Interaction"))
-                                (dict "label" "Digital Human" "aliases" (slice "Digital Human"))
-                                (dict "label" "Digital Twin" "aliases" (slice "Digital Twin"))
-                                (dict "label" "Interaction Design" "aliases" (slice "Interaction Design"))
-                                (dict "label" "Digital Creativity" "aliases" (slice "Digital Creativity"))
-                                (dict "label" "Design Education" "aliases" (slice "Design Education"))
-                                (dict "label" "Food" "aliases" (slice "food" "Food"))
-                                (dict "label" "System" "aliases" (slice "System"))
-                                (dict "label" "Innovation" "aliases" (slice "Innovation"))
-                                (dict "label" "Visualization" "aliases" (slice "Visualization"))
-                                (dict "label" "User Study" "aliases" (slice "User Study"))
-                                (dict "label" "Cultural Technology" "aliases" (slice "Cultural Technology"))
-                                (dict "label" "User-centered Design" "aliases" (slice "User-centered Design" "User-Centered Design" "User-Centered Process"))
-                                (dict "label" "Marketing" "aliases" (slice "Marketing"))
-                                (dict "label" "Patent" "aliases" (slice "Patent"))
-                              -}}
-                              {{- $renderedCategories := slice -}}
-                              {{- range $orderedFilters -}}
+                        {{- $categories := slice -}}
+                        {{- range .Data.Pages -}}
+                          {{- $categories = $categories | append .Params.category -}}
+                        {{- end -}}
+                        {{- $uniqueCategories := $categories | uniq -}}
+                        {{- $filterGroups := slice
+                          (dict "id" "interaction" "label" "Interaction" "items" (slice
+                            (dict "label" "XR Interaction" "aliases" (slice "XR" "XR UX" "XR Interaction"))
+                            (dict "label" "Human-AI Interaction" "aliases" (slice "AI" "AI UX" "AI-UX" "Human-AI Interaction"))
+                            (dict "label" "Physical AI" "aliases" (slice "Physical AI"))
+                            (dict "label" "Embodied Interaction" "aliases" (slice "Embodied Interaction"))
+                            (dict "label" "Sensory" "aliases" (slice "Sensory" "Sensory Interaction"))
+                            (dict "label" "Digital Human" "aliases" (slice "Digital Human"))
+                            (dict "label" "Digital Twin" "aliases" (slice "Digital Twin"))
+                          ))
+                          (dict "id" "application" "label" "Application" "items" (slice
+                            (dict "label" "Living" "aliases" (slice "Living"))
+                            (dict "label" "Social" "aliases" (slice "Social"))
+                            (dict "label" "Cultural Experience" "aliases" (slice "Cultural Experience" "Cultural Technology"))
+                            (dict "label" "Productivity" "aliases" (slice "Productivity"))
+                            (dict "label" "Creativity" "aliases" (slice "Creativity" "Digital Creativity"))
+                            (dict "label" "Learning" "aliases" (slice "Learning" "Design Education"))
+                            (dict "label" "Food" "aliases" (slice "Food" "food"))
+                            (dict "label" "Marketing" "aliases" (slice "Marketing"))
+                          ))
+                          (dict "id" "method" "label" "Method" "items" (slice
+                            (dict "label" "User Study" "aliases" (slice "User Study"))
+                            (dict "label" "User-Centered Design" "aliases" (slice "User-centered Design" "User-Centered Design" "User-Centered Process"))
+                            (dict "label" "Interaction Design" "aliases" (slice "Interaction Design"))
+                            (dict "label" "System" "aliases" (slice "System"))
+                          ))
+                          (dict "id" "recognition" "label" "Recognition" "items" (slice
+                            (dict "label" "Patent" "aliases" (slice "Patent"))
+                            (dict "label" "Award" "aliases" (slice "Award"))
+                          ))
+                        -}}
+
+                        <input class="portfolio-filter-all-input" type="radio" name="shuffle-filter" value="all" checked="checked" />
+
+                        <div class="portfolio-filter-keywords" aria-label="Project filters">
+                          {{- range $filterGroups }}
+                          <div class="portfolio-filter-panel" data-filter-panel="{{ .id }}">
+                            <div class="portfolio-filter-panel-label">{{ .label }}</div>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                              <button class="btn btn-sm portfolio-row-all active" type="button" data-filter-all>{{ i18n "all" }}</button>
+                              {{- range .items }}
                                 {{- $matchedCategory := "" -}}
-                                {{- range .aliases -}}
+                                {{- range .aliases }}
                                   {{- if and (eq $matchedCategory "") (in $uniqueCategories .) -}}
                                     {{- $matchedCategory = . -}}
                                   {{- end -}}
                                 {{- end -}}
-                                {{- $shouldRender := or (ne $matchedCategory "") (eq .label "Food") -}}
-                                {{- if $shouldRender -}}
-                                  {{- $filterValue := cond (ne $matchedCategory "") $matchedCategory (index .aliases 0) -}}
-                                  {{- if ne $matchedCategory "" -}}
-                                    {{- $renderedCategories = $renderedCategories | append $matchedCategory -}}
-                                  {{- end -}}
-                                  <label class="btn btn-toggle btn-sm btn-primary">
-                                    <input
-                                      type="radio"
-                                      name="shuffle-filter"
-                                      value="{{ $filterValue | urlize }}"
-                                    />{{ .label }}
-                                  </label>
-                                {{- end -}}
-                              {{- end -}}
-                              {{- range $uniqueCategories -}}
-                                {{- if and (not (in $renderedCategories .)) (ne . "Convergence") -}}
-                                  <label class="btn btn-toggle btn-sm btn-primary">
-                                    <input
-                                      type="radio"
-                                      name="shuffle-filter"
-                                      value="{{ . | urlize }}"
-                                    />{{ . }}
-                                  </label>
-                                {{- end -}}
+                                {{- if ne $matchedCategory "" }}
+                                <label class="btn btn-toggle btn-sm btn-primary">
+                                  <input type="radio" name="shuffle-filter" value="{{ $matchedCategory | urlize }}" />{{ .label }}
+                                </label>
+                                {{- end }}
                               {{- end }}
+                            </div>
+                          </div>
+                          {{- end }}
                         </div>
                     </div>
                     <div class="row shuffle-wrapper">
@@ -154,6 +146,37 @@
 </style>
 
 <script>
+  (function () {
+    var menu = document.querySelector('.portfolio-menu');
+    if (!menu) return;
+
+    var allInput = menu.querySelector('.portfolio-filter-all-input');
+    var allButtons = menu.querySelectorAll('[data-filter-all]');
+
+    function setAllButtonsActive(isActive) {
+      allButtons.forEach(function (button) {
+        button.classList.toggle('active', isActive);
+      });
+    }
+
+    allButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        allInput.checked = true;
+        menu.querySelectorAll('.portfolio-filter-panel label.active').forEach(function (label) {
+          label.classList.remove('active');
+        });
+        allInput.dispatchEvent(new Event('change', { bubbles: true }));
+        setAllButtonsActive(true);
+      });
+    });
+
+    menu.querySelectorAll('input[name="shuffle-filter"]').forEach(function (input) {
+      input.addEventListener('change', function () {
+        setAllButtonsActive(input.value === 'all' && input.checked);
+      });
+    });
+  })();
+
   document.addEventListener('mouseover', function (event) {
     var title = event.target.closest('.portfolio-work .portfolio-list-title');
     if (!title) return;

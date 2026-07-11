@@ -11,8 +11,22 @@
 #publicationTabs {
     border-bottom: none !important;
     padding-left: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
+
+.publication-filter-panel {
+  margin-bottom: 22px;
+  padding: 1px 0;
+}
+
+.publication-filter-label {
+  padding: 7px 14px 0 2px;
+  color: #333;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
   
   /* nav-item 기본 마진 */
   #publicationTabs .nav-item {
@@ -23,13 +37,13 @@
   #publicationTabs .nav-link {
     display: inline-block;
     cursor: pointer;
-    font-size: 14px;
-    color: black;
+    font-size: 12px;
+    color: #747474 !important;
     background: $light;        /* Project 쪽 background */
-    border: 1px solid $border-color;  /* Project 쪽 border-color */
+    border: 1px solid #747474;
     border-radius: 0px !important;
     width: fit-content !important;
-    padding: 5px 15px !important;
+    padding: 4px 10px !important;
     @include transition(all, 0.3s, ease);
   }
   
@@ -37,9 +51,17 @@
 #publicationTabs .nav-link:hover,
 #publicationTabs .nav-link:focus,
 #publicationTabs .nav-link.active {
-  background: #4F088D !important;  /* Project 쪽 활성화 색 */
+  background: #282828 !important;
+  border-color: #282828 !important;
   color: white !important;
   text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .publication-filter-label {
+    padding-right: 8px;
+    font-size: 9px;
+  }
 }
 
 .publication-text em strong {

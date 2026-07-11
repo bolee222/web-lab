@@ -1,13 +1,23 @@
 {{ define "main" }} {{ partial "page-title.html" . }} {{ $data := index site.Data site.Language.Lang }}
 
-<section>
+{{- $publicationPages := .RegularPages.ByDate.Reverse -}}
+{{- $publicationYears := slice -}}
+{{- range $publicationPages -}}
+  {{- $year := printf "%v" .Params.homeYearTag -}}
+  {{- if and $year (not (in $publicationYears $year)) -}}
+    {{- $publicationYears = $publicationYears | append $year -}}
+  {{- end -}}
+{{- end -}}
+
+<section class="publication-page-section">
   <div class="container">
     <div class="row row-fix"> </div>
 
-       <!-- Tabs for Filtering -->
+    <div class="publication-filter-panel">
+      <!-- Tabs for Filtering -->
       <ul class="nav nav-tabs" id="publicationTabs">
         <li class="nav-item">
-          <a class="nav-link active" data-type="all" href="#">All Publications</a>
+          <a class="nav-link active" data-type="all" href="#">All</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" data-type="top-ranked" href="#">Top-Ranked</a>
@@ -19,21 +29,33 @@
           <a class="nav-link" data-type="domestic" href="#">Domestic</a>
         </li>
       </ul>
+    </div>
 
 <!-- Publication List -->
 <div class = "publication-list" id="publication-list">
-  {{ range .RegularPages.ByDate.Reverse }}
-  <div class="publication-item col-12 mb-1" data-type="{{ .Params.type }}">
+  {{ range $index, $publication := $publicationPages }}
+  {{- $year := printf "%v" .Params.homeYearTag -}}
+  <div class="publication-item col-12 mb-1" id="publication-{{ $year | urlize }}-{{ $index }}" data-type="{{ .Params.type }}" data-year="{{ $year }}">
       {{ .Render "publication_all_acm" }}
   </div>
   {{ end }}
 </div>
 </div>
 
+<nav class="publication-year-guide" aria-label="Publication years">
+  <div class="publication-year-guide-title">Year</div>
+  <ul>
+    {{- range $publicationYears }}
+    <li><a href="#" data-publication-year-link="{{ . }}">{{ . }}</a></li>
+    {{- end }}
+  </ul>
+</nav>
+
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const tabs = document.querySelectorAll("#publicationTabs .nav-link");
   const publications = document.querySelectorAll(".publication-item");
+  const yearLinks = document.querySelectorAll("[data-publication-year-link]");
 
   const categoryMapping = {
     "top-ranked": [ "Journal_sci", "Conference_sci"],
@@ -44,12 +66,16 @@ document.addEventListener("DOMContentLoaded", function() {
   function updateYearLabels() {
     const visiblePublications = Array.from(publications).filter(pub => pub.style.display !== "none");
     const shownYears = new Set();
+    const firstVisibleByYear = new Map();
 
     visiblePublications.forEach(pub => {
       const yearElement = pub.querySelector(".publication-year");
       if (!yearElement) return;
 
       const year = (yearElement.getAttribute("data-year") || "").trim();
+      if (year && !firstVisibleByYear.has(year)) {
+        firstVisibleByYear.set(year, pub);
+      }
       if (year && !shownYears.has(year)) {
         yearElement.textContent = year;
         shownYears.add(year);
@@ -57,28 +83,45 @@ document.addEventListener("DOMContentLoaded", function() {
         yearElement.textContent = "";
       }
     });
+
+    yearLinks.forEach(link => {
+      const year = link.getAttribute("data-publication-year-link");
+      const target = firstVisibleByYear.get(year);
+      link.parentElement.hidden = !target;
+      link.setAttribute("href", target ? "#" + target.id : "#");
+    });
   }
 
   tabs.forEach(tab => {
     tab.addEventListener("click", function(event) {
       event.preventDefault();
       const selectedType = this.getAttribute("data-type");
+      const allTab = document.querySelector('#publicationTabs .nav-link[data-type="all"]');
 
-      // Update active tab styling
-      tabs.forEach(tab => tab.classList.remove("active"));
-      this.classList.add("active");
+      if (selectedType === "all") {
+        tabs.forEach(tab => tab.classList.remove("active"));
+        allTab.classList.add("active");
+      } else {
+        allTab.classList.remove("active");
+        this.classList.toggle("active");
 
-      // Show or hide publications based on selected tab
+        const hasSelectedFilter = Array.from(tabs).some(tab =>
+          tab.getAttribute("data-type") !== "all" && tab.classList.contains("active")
+        );
+        if (!hasSelectedFilter) allTab.classList.add("active");
+      }
+
+      const selectedTypes = Array.from(tabs)
+        .filter(tab => tab.getAttribute("data-type") !== "all" && tab.classList.contains("active"))
+        .map(tab => tab.getAttribute("data-type"));
+
+      // Show publications matching any of the selected filters.
       publications.forEach(pub => {
         const pubType = pub.getAttribute("data-type");
-
-        if (selectedType === "all" || 
-            (categoryMapping[selectedType] && categoryMapping[selectedType].includes(pubType)) ||
-            pubType === selectedType) {
-          pub.style.display = "block";
-        } else {
-          pub.style.display = "none";
-        }
+        const isVisible = selectedTypes.length === 0 || selectedTypes.some(type =>
+          (categoryMapping[type] && categoryMapping[type].includes(pubType)) || pubType === type
+        );
+        pub.style.display = isVisible ? "block" : "none";
       });
 
       updateYearLabels();

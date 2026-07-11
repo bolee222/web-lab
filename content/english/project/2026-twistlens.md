@@ -7,7 +7,7 @@ draft: false
 
 # 목록 카드
 # ["XR", "AI", "Physical AI", "UX", "Embodied Interaction", "Digital Human" ,"Digital Twin" , "Convergence", "Interaction Design", "Digital Creativity","System", "Visualization", "User Study", "Cultural Technology",  "User-centered Design", "Marketing", "Patent"]
-category: ["AI", "UX", "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology", "User-centered Design", "Marketing", "Patent"]
+category: ["AI", "UX", "Convergence", "Interaction Design", "System", "Visualization", "User Study", "Cultural Technology", "User-centered Design", "Marketing", "Patent", "Award"]
 image: "/projects/2026-twistlens/_[opt]teaser.webp"
 teaser_top: 
 metacontent: "TwistLens creates docent-informed, semantically transformed artwork previews that preserve anticipation before museum visits. By combining an information taxonomy with EchoLens and DecoyLens strategies, it turns previews into cues for curiosity, interpretation, and later discovery."
