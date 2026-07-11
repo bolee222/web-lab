@@ -57,7 +57,7 @@ undergraduate_courses:
         caption: "Student workflow and service proposal"
     offerings:
       - semester: "Fall 2026"
-        status: "Completed"
+        status: "Upcoming"
         project_focus: "Culture and Design Management Project"
         keywords:
           - "Culture"

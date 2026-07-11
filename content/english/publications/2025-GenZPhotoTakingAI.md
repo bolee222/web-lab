@@ -1,6 +1,6 @@
 ---
 # BASIC INFO
-title: "Exploring Gen Z’s Photo-taking Behaviors to Inform Novel Uses of AI for Photo-taking Assistants"
+title: "A Preliminary Study on Visual Guidance in Pose Replication"
 author : "Nur Izzatty Binti Mohamad Jamal, <ins>Bokyung Lee</ins>"
 Journal: "**Korea Society of Design and Science (KSDS), 2025**"
 
@@ -14,7 +14,7 @@ homeYearTag: 2025
 
 
 exactPeriod: 2025
-cite_acm: "Nur Izzatty Binti Mohamad Jamal and Bokyung Lee. (2025). **Exploring Gen Z’s Photo-taking Behaviors to Inform Novel Uses of AI for Photo-taking Assistants**. _Korea Society of Design and Science (KSDS)_ (p38 -39)."
+cite_acm: "Nur Izzatty Binti Mohamad Jamal and Bokyung Lee. (2025). **A Preliminary Study on Visual Guidance in Pose Replication**. _Korea Society of Design and Science (KSDS)_, 2025."
 doi: ""
 
 
@@ -26,10 +26,8 @@ link_PDF: ""
 links:
   - label : "PDF"
     link : ""
-  - label : "Project Page"
-    link : ""
   - label : "Source URL"
-    link : "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11999905"
+    link : "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12512898"
 ---
 
-This paper examines how Gen Z users take photos in trend-driven social contexts and identifies opportunities for AI photo-taking assistants. The study highlights behavior patterns, pain points, and design implications for AI support that better aligns with social media-driven photography practices.
+This preliminary study explores how different visual guidance designs affect users’ ability to replicate poses in photo-taking scenarios. It compares multiple guidance modalities and discusses implications for improving accuracy, usability, and satisfaction in pose-based interaction systems.

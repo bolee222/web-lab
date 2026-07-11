@@ -1,0 +1,125 @@
+{{ define "main" }}
+<main class="course-hub">
+  <header class="course-hub-hero">
+    <div class="container">
+      <a class="course-hub-back" href="{{ `/teaching/` | relURL }}"><span aria-hidden="true">←</span> All courses</a>
+      <div class="course-hub-identity">
+        <div class="course-hub-code-row">
+          <span class="course-hub-code">{{ .Params.course_code }}</span>
+          <span class="course-hub-status course-hub-status--{{ .Params.status | urlize }}">{{ .Params.status }}</span>
+        </div>
+        <h1>{{ .Title }}</h1>
+        <p class="course-hub-semester">{{ .Params.semester }} <span aria-hidden="true">·</span> {{ .Params.course_type }}</p>
+        <p class="course-hub-lede">{{ .Params.lede }}</p>
+        {{ with .Params.keywords }}
+        <div class="course-hub-tags" aria-label="Course keywords">
+          {{ range . }}<span>{{ . }}</span>{{ end }}
+        </div>
+        {{ end }}
+      </div>
+      {{ with .Params.course_facts }}
+      <dl class="course-hub-facts">
+        {{ range . }}<div><dt>{{ .label }}</dt><dd>{{ .value }}</dd></div>{{ end }}
+      </dl>
+      {{ end }}
+    </div>
+  </header>
+
+  <nav class="course-hub-nav" aria-label="Course page sections">
+    <div class="container">
+      <a href="#overview">Overview</a>
+      <a href="#project">Project</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#assessment">Assessment</a>
+      <a href="#policies">Policies</a>
+      <a href="#resources">Resources</a>
+    </div>
+  </nav>
+
+  <div class="container course-hub-body">
+    {{ with .Params.notice }}
+    <aside class="course-hub-notice" aria-label="Course notice">
+      <span>{{ .eyebrow }}</span><div><h2>{{ .title }}</h2><p>{{ .text }}</p></div>
+    </aside>
+    {{ end }}
+
+    <section class="course-hub-section" id="overview" aria-labelledby="overview-title">
+      <div class="course-hub-section-label">01 · Course overview</div>
+      <div class="course-hub-section-content">
+        <h2 id="overview-title">Learning to read culture through design</h2>
+        <p class="course-hub-intro">{{ .Params.overview }}</p>
+        <div class="course-hub-outcomes">
+          {{ range .Params.learning_outcomes }}
+          <article><span>{{ .title }}</span><p>{{ .text }}</p></article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+
+    {{ with .Params.project }}
+    <section class="course-hub-section course-hub-project" id="project" aria-labelledby="project-title">
+      <div class="course-hub-section-label">02 · {{ .label }}</div>
+      <div class="course-hub-section-content">
+        <h2 id="project-title">{{ .title }}</h2>
+        <p class="course-hub-intro">{{ .description }}</p>
+        <blockquote><span>Guiding question</span>{{ .question }}</blockquote>
+        <div class="course-hub-deliverables">
+          <h3>Core deliverables</h3>
+          <ol>{{ range .deliverables }}<li>{{ . }}</li>{{ end }}</ol>
+        </div>
+      </div>
+    </section>
+    {{ end }}
+
+    <section class="course-hub-section" id="roadmap" aria-labelledby="roadmap-title">
+      <div class="course-hub-section-label">03 · Project roadmap</div>
+      <div class="course-hub-section-content">
+        <h2 id="roadmap-title">One semester, five connected phases</h2>
+        <p class="course-hub-provisional">Planned learning arc · Exact dates are provisional</p>
+        <div class="course-hub-roadmap">
+          {{ range .Params.roadmap }}
+          <article>
+            <div class="course-hub-phase"><span>{{ .phase }}</span><small>{{ .weeks }}</small></div>
+            <div><h3>{{ .title }}</h3><p>{{ .description }}</p><div class="course-hub-activities">{{ .activities }}</div></div>
+          </article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+
+    <section class="course-hub-section" id="assessment" aria-labelledby="assessment-title">
+      <div class="course-hub-section-label">04 · Assessment</div>
+      <div class="course-hub-section-content">
+        <h2 id="assessment-title">Evaluation at a glance</h2>
+        <div class="course-hub-assessment">
+          {{ range .Params.assessment }}
+          <article><strong>{{ .value }}</strong><div><h3>{{ .label }}</h3><p>{{ .note }}</p></div></article>
+          {{ end }}
+        </div>
+        <p class="course-hub-footnote">Assessment weights are provisional until the official syllabus is published.</p>
+      </div>
+    </section>
+
+    <section class="course-hub-section" id="policies" aria-labelledby="policies-title">
+      <div class="course-hub-section-label">05 · Working together</div>
+      <div class="course-hub-section-content">
+        <h2 id="policies-title">Course principles & policies</h2>
+        <div class="course-hub-policies">
+          {{ range .Params.policies }}<article><h3>{{ .title }}</h3><p>{{ .text }}</p></article>{{ end }}
+        </div>
+      </div>
+    </section>
+
+    <section class="course-hub-section" id="resources" aria-labelledby="resources-title">
+      <div class="course-hub-section-label">06 · Resources</div>
+      <div class="course-hub-section-content">
+        <h2 id="resources-title">Course materials</h2>
+        <div class="course-hub-resources">
+          {{ range .Params.resources }}<div><span>{{ .label }}</span><small>{{ .status }}</small></div>{{ end }}
+        </div>
+        <a class="course-hub-footer-link" href="{{ `/teaching/` | relURL }}"><span aria-hidden="true">←</span> Return to all courses</a>
+      </div>
+    </section>
+  </div>
+</main>
+{{ end }}
