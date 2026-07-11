@@ -138,4 +138,51 @@
     </div>
 </section>
 
+<style>
+  .portfolio-work .portfolio-list-title a:hover,
+  .portfolio-work .portfolio-list-title a:focus,
+  .portfolio-work .portfolio-card.title-hover .portfolio-list-title a {
+    color: #29ABD7 !important;
+    text-decoration: underline !important;
+  }
+
+  .portfolio-work .btn-journal-name-purple:hover,
+  .portfolio-work .btn-journal-name-purple:focus,
+  .portfolio-work .portfolio-card.title-hover .btn-journal-name-purple {
+    background: linear-gradient(-45deg, #29ABD7 0%, #BFC2F4 50%, #5E7DEB 100%) !important;
+    color: #fff !important;
+  }
+</style>
+
+<script>
+  document.addEventListener('mouseover', function (event) {
+    var title = event.target.closest('.portfolio-work .portfolio-list-title');
+    if (!title) return;
+    var card = title.closest('.portfolio-card');
+    if (card) card.classList.add('title-hover');
+  });
+
+  document.addEventListener('mouseout', function (event) {
+    var title = event.target.closest('.portfolio-work .portfolio-list-title');
+    if (!title) return;
+    if (title.contains(event.relatedTarget)) return;
+    var card = title.closest('.portfolio-card');
+    if (card) card.classList.remove('title-hover');
+  });
+
+  document.addEventListener('focusin', function (event) {
+    var titleLink = event.target.closest('.portfolio-work .portfolio-list-title a');
+    if (!titleLink) return;
+    var card = titleLink.closest('.portfolio-card');
+    if (card) card.classList.add('title-hover');
+  });
+
+  document.addEventListener('focusout', function (event) {
+    var titleLink = event.target.closest('.portfolio-work .portfolio-list-title a');
+    if (!titleLink) return;
+    var card = titleLink.closest('.portfolio-card');
+    if (card) card.classList.remove('title-hover');
+  });
+</script>
+
 {{ end }}

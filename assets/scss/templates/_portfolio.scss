@@ -63,6 +63,7 @@
     border: 0px;
     &:active,
     &:hover,
+    .portfolio-card.title-hover &,
     &.focus,
     &.active {
         background: linear-gradient(-45deg, #29ABD7 0%, #BFC2F4 50%, #5E7DEB 100%) !important;
@@ -83,9 +84,10 @@
     border: 0px;
     &:active,
     &:hover,
+    .portfolio-card.title-hover &,
     &.focus,
     &.active {
-        background: #4F088D !important;
+        background: linear-gradient(-45deg, #29ABD7 0%, #BFC2F4 50%, #5E7DEB 100%) !important;
         color: white !important;
     }
 }
@@ -116,9 +118,29 @@
 
 
 .portfolio-list-title a:hover,
-.portfolio-list-title-home a:hover {
+.portfolio-list-title a:focus {
     text-decoration: underline;
-    color: $brand-color-text-primary !important;
+    color: $brand-color-text-secondary !important;
+}
+
+.portfolio-list-title-home a:hover,
+.portfolio-list-title-home a:focus {
+    text-decoration: underline;
+    color: $brand-color-text-secondary !important;
+}
+
+.portfolio-card:has(.portfolio-list-title a:hover) .btn-journal-name-purple,
+.portfolio-card:has(.portfolio-list-title a:focus) .btn-journal-name-purple,
+.portfolio-card:has(.portfolio-list-title-home a:hover) .btn-journal-name-home,
+.portfolio-card:has(.portfolio-list-title-home a:focus) .btn-journal-name-home,
+.portfolio-card.title-hover .btn-journal-name-purple {
+    background: linear-gradient(-45deg, #29ABD7 0%, #BFC2F4 50%, #5E7DEB 100%) !important;
+    color: white !important;
+}
+
+.portfolio-card.title-hover .btn-journal-name-home {
+    background: linear-gradient(-45deg, #29ABD7 0%, #BFC2F4 50%, #5E7DEB 100%) !important;
+    color: white !important;
 }
 
 .portfolio-image-link {
@@ -527,7 +549,7 @@
     //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* You can adjust the shadow size and opacity */
     //transition: box-shadow 0.3s ease; /* Smooth transition on hover */
     //border: 0.3px solid #eaeaea; /* Light border for clarity */
-    margin-bottom: 25px; /* Add a bit more vertical space between cards */
+    //margin-bottom: 25px; /* Add a bit more vertical space between cards */
 }
 
 .home-published-projects-grid {

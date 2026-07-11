@@ -182,3 +182,45 @@
     document.head.appendChild(script);
   }
 })();
+
+(function () {
+  var titleSelector = ".portfolio-list-title a, .portfolio-list-title-home a";
+
+  function setCardHoverState(target, isActive) {
+    var titleLink = target.closest(titleSelector);
+
+    if (!titleLink) {
+      return;
+    }
+
+    var card = titleLink.closest(".portfolio-card");
+
+    if (!card) {
+      return;
+    }
+
+    card.classList.toggle("title-hover", isActive);
+  }
+
+  document.addEventListener("mouseover", function (event) {
+    setCardHoverState(event.target, true);
+  });
+
+  document.addEventListener("mouseout", function (event) {
+    var titleLink = event.target.closest(titleSelector);
+
+    if (!titleLink || titleLink.contains(event.relatedTarget)) {
+      return;
+    }
+
+    setCardHoverState(event.target, false);
+  });
+
+  document.addEventListener("focusin", function (event) {
+    setCardHoverState(event.target, true);
+  });
+
+  document.addEventListener("focusout", function (event) {
+    setCardHoverState(event.target, false);
+  });
+})();
