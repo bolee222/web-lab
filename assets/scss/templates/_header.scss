@@ -30,12 +30,12 @@ header {
           font-weight: 400;
         }
         a:hover {
-          color: $brand-color-text-secondary !important;
+          color: $brand-color-grad-primary !important;
           font-weight: 600;
         }
         a.current,
         a.current-parent {
-          color: $brand-color-text-primary !important;
+          color: $brand-color-grad-primary !important;
           font-weight: 600;
         }
       }

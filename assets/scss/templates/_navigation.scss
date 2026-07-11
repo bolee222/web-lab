@@ -45,25 +45,25 @@
       }
 
       a.nav-minor {
-        color: #999;
+        color: #000;
       }
 
       a:hover,
       a:focus {
-        color: $brand-color-text-secondary;
+        color: $brand-color-grad-primary;
         font-weight: 600;
         background: transparent;
       }
 
       a.current {
-        color: $brand-color-text-primary;
+        color: $brand-color-grad-primary;
         font-weight: 600;
         pointer-events: none;
         cursor: default;
       }
 
       a.current-parent {
-        color: $brand-color-text-primary;
+        color: $brand-color-grad-primary;
         font-weight: 600;
       }
 
