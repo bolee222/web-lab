@@ -20,6 +20,7 @@ professor:
   emailAcademic: "bo.lee@yonsei.ac.kr"
   emailGoogle: "bokyung.lee.lydia@gmail.com"
   personalSite: "https://boleehci.com"
+  labSite: "https://cxdlab.com"
 
   content : "Hi. I am Bokyung Lee (이보경), an **Interaction Design/  UX / HCI** researcher at Yonsei University (연세대학교). I am an Associate Professor at Yonsei University, Underwood International Colleage, Humanities, Arts, and Social Sciences (HASS) Division. Under HASS, I am leading a **Convergence Experience Design Lab (CXD Lab)** and envisions the future of our new reality in this Digial-Physical convergence era. Previously, I worked as a Senior Designer at Samsung Research HQ, Korea; and before that, I worked as a Senior Research Scientist at Autodesk Research, Toronto. I received my PhD in Industrial Design (Human-Computer Interaction + Design) from ID KAIST, where I was working on embodied design tools for everyday designers.
 

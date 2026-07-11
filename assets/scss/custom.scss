@@ -1,10 +1,11 @@
 // Put custom SCSS rules in this file
 // Documentation: https://sass-lang.com/documentation
 
-// 전체 컨테이너 폭을 1200px로 제한 (기본 1140px → 1200px 예시)
+// Keep the whole site at a comfortable reading width on large displays.
 @media (min-width: 1200px) {
   .container {
-    max-width: 1200px !important;
+    width: calc(100% - 32px) !important;
+    max-width: 1080px !important;
   }
 }
 
@@ -254,7 +255,7 @@
 .student-email{
   font-family: $primary-color;
   //font-style: italic;
-  color: $primary-color;
+  color: $brand-color-grad-primary;
   font-size: 14px;
   font-weight: 400;
   text-align: left !important;
@@ -286,6 +287,12 @@ img.rounded {
     filter:
       grayscale(20%)
       contrast(1.05)  }
+
+.student-image-placeholder {
+    width: 60%;
+    aspect-ratio: 1 / 1;
+    background: $brand-color-ambient;
+}
   
 
 .teaching-page {
@@ -1030,6 +1037,221 @@ a:link-text-publications {
   }
 }
 
+.faq-page{
+  padding-top: 36px;
+  padding-bottom: 72px;
+  background: #fff;
+}
+
+.faq-layout{
+  display: flex;
+  align-items: flex-start;
+}
+
+.faq-sidebar{
+  position: sticky;
+  top: 28px;
+}
+
+.faq-sidebar-card{
+  padding: 30px;
+  border-radius: 20px;
+  background: $brand-color-softgray;
+
+  h2{
+    margin: 8px 0 14px;
+    color: #111;
+    font-family: $poppins-font;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+.faq-kicker,
+.faq-toc-label{
+  color: $brand-color-grad-primary;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.faq-intro{
+  color: #444;
+  font-size: 14px;
+  line-height: 1.6;
+
+  p{
+    margin-bottom: 0;
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+}
+
+.faq-updated{
+  margin: 18px 0 26px;
+  color: #777;
+  font-size: 12px;
+}
+
+.faq-toc-label{
+  padding-top: 20px;
+  border-top: 1px solid rgba(17, 17, 17, .1);
+  color: #555;
+}
+
+.faq-toc{
+  margin-top: 10px;
+
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  ul ul{
+    display: none;
+  }
+
+  li{
+    margin-bottom: 3px;
+  }
+
+  a{
+    display: block;
+    padding: 7px 10px;
+    border-radius: 8px;
+    color: #333;
+    font-size: 13px;
+    line-height: 1.35;
+  }
+
+  a:hover,
+  a:focus{
+    background: rgba($brand-color-ambient, .35);
+    color: $brand-color-grad-primary;
+    text-decoration: none;
+  }
+}
+
+.faq-main{
+  padding-left: 44px;
+}
+
+.faq-content{
+  max-width: 760px;
+
+  > h2{
+    margin: 0 0 18px;
+    padding: 28px 30px 20px;
+    border: 1px solid #ececf1;
+    border-bottom: 0;
+    border-radius: 16px 16px 0 0;
+    background: $brand-color-softgray;
+    color: #111;
+    font-family: $poppins-font;
+    font-size: 21px;
+    line-height: 1.35;
+
+    strong{
+      background: transparent;
+      color: inherit;
+    }
+  }
+
+  > h2:not(:first-child){
+    margin-top: 46px;
+  }
+
+  > h2 + p{
+    margin-top: -18px;
+    padding: 0 30px 26px;
+    border: 1px solid #ececf1;
+    border-top: 0;
+    border-radius: 0 0 16px 16px;
+    background: $brand-color-softgray;
+  }
+
+  h4{
+    position: relative;
+    margin: 28px 0 10px;
+    padding-left: 18px;
+    color: #111;
+    font-family: $poppins-font;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4;
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: .2em;
+      bottom: .2em;
+      left: 0;
+      width: 4px;
+      border-radius: 4px;
+      background: $brand-color-grad-primary;
+    }
+  }
+
+  p{
+    color: #3b3b3b;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  a{
+    color: $brand-color-grad-primary;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+@media (max-width: 991px){
+  .faq-layout{
+    display: block;
+  }
+
+  .faq-sidebar{
+    position: static;
+    margin-bottom: 34px;
+  }
+
+  .faq-main{
+    padding-left: 15px;
+  }
+
+  .faq-content{
+    max-width: none;
+  }
+}
+
+@media (max-width: 600px){
+  .faq-page{
+    padding-top: 20px;
+    padding-bottom: 46px;
+  }
+
+  .faq-sidebar-card{
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+
+  .faq-content > h2{
+    padding: 22px 20px 18px;
+    font-size: 19px;
+  }
+
+  .faq-content > h2 + p{
+    padding: 0 20px 22px;
+  }
+
+  .faq-content p{
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
 .btn-learnMore{
   background: $light;
   border: 1px solid rgba(17, 17, 17, 0.72);
@@ -1103,6 +1325,10 @@ a:link-text-publications {
   font-size: 22px;;
 }
 
+.people-professor-name{
+  font-size: 24px;
+}
+
 .professor-title{
   font-weight:400;
   font-size: 18px;
@@ -1117,9 +1343,21 @@ a:link-text-publications {
 }
 
 .professor-website{
-  font-weight:600;
+  font-weight:400;
   font-size: 14px;
   margin-top: 0px;
+
+  a{
+    color: $brand-color-grad-primary;
+  }
+
+  a:hover,
+  a:focus{
+    color: $brand-color-grad-primary;
+  }
+}
+
+.professor-websites{
   margin-bottom:40px;
 }
 
@@ -1131,6 +1369,10 @@ a:link-text-publications {
   p{
     font-size:14px;
   }
+}
+
+.people-professor-context strong{
+  background-color: rgba($brand-color-ambient, 0.35);
 }
 
 .professor-profile.section {
@@ -1401,6 +1643,24 @@ a:link-text-publications {
   margin-bottom: 50px;
 }
 
+.home-overview-identity{
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .home-overview-identity{
+    max-width: 260px;
+    margin: 36px auto 0;
+  }
+}
+
+@media (max-width: 767px){
+  .home-overview-identity{
+    max-width: 220px;
+    margin: 32px auto 0;
+  }
+}
+
 
 .vision-sub{
   width: 90%;
@@ -1424,11 +1684,11 @@ a:link-text-publications {
 }
 
 .vision-motto-primary{
-  color: $brand-color-text-primary;
+  color: $brand-color-grad-primary;
 }
 
 .vision-motto-secondary{
-  color: $brand-color-text-secondary;
+  color: $brand-color-grad-secondary;
   font-weight:500;
 }
 

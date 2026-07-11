@@ -15,15 +15,18 @@
         </div> 
       </div> 
       <div class="col-md-8">
-        {{ with .name }}<div class="professor-name">{{ . | markdownify }}</div>{{ end }}
+        {{ with .name }}<div class="professor-name people-professor-name">{{ . | markdownify }}</div>{{ end }}
         {{ with .title }}<div class="professor-title">{{ . | markdownify }}</div>{{ end }}
         {{ with .emailAcademic }}<div class="professor-email">{{ . | markdownify }}</div>{{ end }}
         {{ with .emailGoogle }}<div class="professor-email">{{ . | markdownify }}</div>{{ end }}
-        {{ with .personalSite }}<div class="professor-website">{{ . | markdownify }}</div>{{ end }}
-        {{ with .content }}<div class="professor-context">{{ . | markdownify }}</div>{{ end }}
+        <div class="professor-websites">
+          {{ with .personalSite }}<div class="professor-website"><a href="{{ . | safeURL }}">{{ . }}</a></div>{{ end }}
+          {{ with .labSite }}<div class="professor-website"><a href="{{ . | safeURL }}">{{ . }}</a></div>{{ end }}
+        </div>
+        {{ with .content }}<div class="professor-context people-professor-context">{{ . | markdownify }}</div>{{ end }}
         {{ with .button }}
         {{ if .enable }}
-        <a href="{{ .link | relURL }}" class="btn btn-small mt-20 btn-solid-line" style="border-style: solid;">{{ .label }}</a>
+        <a href="{{ .link | relURL }}" class="home-slider-more btn-main btn-learnMore">{{ .label }}</a>
         {{ end }}
         {{ end }}
       </div>
@@ -49,7 +52,13 @@
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="pricing-item text-center">
           <div class="price-title">
-            {{ with .image }}<img src="{{ . | relURL }}" class="rounded">{{ end }}
+            {{ with .image }}
+              {{ if eq . "images/students/default.jpg" }}
+                <div class="student-image-placeholder" aria-hidden="true"></div>
+              {{ else }}
+                <img src="{{ . | relURL }}" class="rounded" alt="">
+              {{ end }}
+            {{ end }}
             {{ with .name }}<div class="student-name">{{ . | markdownify }}</div>{{ end }}
             {{ with .type }}<div class="student-type">{{ . | markdownify }}</div>{{ end }}
             {{ with .email }}<div class="student-email">{{ . }}</div>{{ end }}
@@ -105,7 +114,37 @@
 
 <!-- Call to action -->
 {{ if .Params.cta.enable }}
-{{ partial "cta.html" . }}
+{{ with site.GetPage "/" }}
+{{ with .Params.cta }}
+<section class="about section-card call-to-action" id="people-join">
+  <div class="container cta-custom">
+    <canvas class="orb-canvas"></canvas>
+    <div class="overlay faq-bg">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block">
+            {{ with .title }}<h2>{{ . | markdownify | replaceRE "<strong>" "<b>" | replaceRE "</strong>" "</b>" | safeHTML }}</h2>{{ end }}
+            {{ with .content }}<p>{{ . | markdownify }}</p>{{ end }}
+
+            {{ with .button }}{{ if .enable }}
+            <a class="home-slider-more btn-main btn-learnMore" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
+            {{ end }}{{ end }}
+
+            {{ with .button_joinUs }}{{ if .enable }}
+            <a class="home-slider-more btn-main btn-learnMore" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
+            {{ end }}{{ end }}
+
+            {{ with .button_FAQ }}{{ if .enable }}
+            <a class="home-slider-more btn-main btn-learnMore" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
+            {{ end }}{{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
 {{ end }}
 <!-- /Call to action -->
 

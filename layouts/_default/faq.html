@@ -2,18 +2,25 @@
 
 {{ partial "page-title.html" . }}
 
-<section class="page-wrapper">
+<section class="page-wrapper faq-page">
   <div class="container">
-    <div class="row">
-      <div class="col-md-4 sticky-top">
-        <h2>{{ .Title }}</h2>
-        {{ with .Params.subtitle }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-        <p>{{ i18n "last_update" | markdownify }}: {{ partial "date_i18n.html" (dict "date" .Lastmod "lang" .Page.Language.Lang) }}</p>
-        <h3>{{ i18n "faq_toc_title" | markdownify }}</h3>
-        {{ .TableOfContents }}
-      </div>
-      <div class="col-md-8">
-        {{ .Content }}
+    <div class="row faq-layout">
+      <aside class="col-md-4 faq-sidebar">
+        <div class="faq-sidebar-card">
+          <div class="faq-kicker">FAQ GUIDE</div>
+          <h2>{{ .Title }}</h2>
+          {{ with .Params.subtitle }}<div class="faq-intro">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+          <div class="faq-updated">{{ i18n "last_update" | markdownify }} · {{ partial "date_i18n.html" (dict "date" .Lastmod "lang" .Page.Language.Lang) }}</div>
+          <div class="faq-toc-label">{{ i18n "faq_toc_title" | markdownify }}</div>
+          <nav class="faq-toc" aria-label="FAQ sections">
+            {{ .TableOfContents }}
+          </nav>
+        </div>
+      </aside>
+      <div class="col-md-8 faq-main">
+        <div class="faq-content">
+          {{ .Content }}
+        </div>
       </div>
     </div>
   </div>

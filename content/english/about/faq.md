@@ -11,9 +11,6 @@ aliases:
   - "/about/faq/"
 ---
 
-## **About CXD Lab**
-
-
 ## **Join our lab as a Master’s Student**
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ullam sint quas pariatur ipsam nemo
