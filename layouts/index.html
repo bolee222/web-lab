@@ -66,11 +66,19 @@
 {{ end }} {{ end }}
 <!-- /banner -->
 
+<nav class="vision-section-index home-section-index" aria-label="Home page sections">
+  <a href="#home-overview">Overview</a>
+  <a href="#home-active-projects">Active</a>
+  <a href="#home-published-projects">Projects</a>
+  <a href="#home-news">News</a>
+  <a href="#home-join">Join</a>
+</nav>
+
 
 
 <!-- /ABOUT OUR LAB -->
 {{ with .Params.about }} {{ if .enable }}
-<section class="about section-card">
+<section class="about section-card" id="home-overview">
   <div class="container ">
       <canvas class="orb-canvas"></canvas>
       <div class="overlay">
@@ -118,7 +126,7 @@
 
 <!-- ACTIVE ONGOING PROJECTS -->
 {{ with .Params.ongoing }} {{ if .enable }}
-<section class="about section white-box home-published-section">
+<section class="about section white-box home-published-section" id="home-active-projects">
     <div class="container">
       <hr align="left" style="margin-top: 20px; margin-bottom: 30px; width:100%; border-style:dashed; background-color:black;">
         <div class="row">
@@ -174,7 +182,7 @@
 
 <!-- RECENT PROJECTS -->
 {{ with .Params.portfolio }} {{ if .enable }}
-<section class="about section white-box">
+<section class="about section white-box" id="home-published-projects">
     <div class="container">
       <hr align="left" style="margin-top: 10px; margin-bottom: 30px; width:100%; border-style:dashed; background-color:black;">
         <div class="row">
@@ -258,7 +266,7 @@
 -->
 
 <!-- News2 -->
-<section class="white-box about section-last home-news-section">
+<section class="white-box about section-last home-news-section" id="home-news">
   <div class="container">
     <hr align="left" style="margin-top: 10px; margin-bottom: 30px; width:100%; border-style:dashed; background-color:black;">
       <div class="row">
@@ -308,7 +316,7 @@
 
 <!-- call to action -->
 {{ if .Params.cta.enable }}
-<section class="about section-card call-to-action">
+<section class="about section-card call-to-action" id="home-join">
   <div class="container cta-custom">
       <!-- about -->
       <canvas class="orb-canvas"></canvas>
