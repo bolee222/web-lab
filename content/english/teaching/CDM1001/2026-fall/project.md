@@ -1,5 +1,5 @@
 ---
-title: "Semester Project"
+title: "Learning Journey"
 url: "/courses/cdm1001/2026-fall/project/"
 description: "Semester project for CDM1001 Fall 2026."
 layout: "course-hub"

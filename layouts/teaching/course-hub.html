@@ -47,7 +47,7 @@
   <nav class="course-hub-nav" aria-label="Course pages">
     <div class="container">
       <a href="{{ $base }}"{{ if eq $tab "overview" }} class="active" aria-current="page"{{ end }}>Overview</a>
-      <a href="{{ printf `%sproject/` $base }}"{{ if eq $tab "project" }} class="active" aria-current="page"{{ end }}>Project</a>
+      <a href="{{ printf `%sproject/` $base }}"{{ if eq $tab "project" }} class="active" aria-current="page"{{ end }}>Learning Journey</a>
       <a href="{{ printf `%sschedule/` $base }}"{{ if eq $tab "schedule" }} class="active" aria-current="page"{{ end }}>Weekly schedule</a>
       <a href="{{ printf `%sassignments/` $base }}"{{ if eq $tab "assignments" }} class="active" aria-current="page"{{ end }}>Assignments</a>
       <a href="{{ printf `%slogistics/` $base }}"{{ if eq $tab "logistics" }} class="active" aria-current="page"{{ end }}>Course Logistics</a>
@@ -121,54 +121,81 @@
       <section class="course-hub-section" aria-labelledby="roadmap-title">
         <div class="course-hub-section-label">Course roadmap</div>
         <div class="course-hub-section-content">
-          <h2 id="roadmap-title">Four projects, one cumulative learning journey</h2>
-          <p class="course-hub-provisional">The four projects form a cumulative learning sequence. Students first use D:Branch to practice seeing design cases from multiple perspectives, then apply those perspectives to a critical analysis of a real pop-up store. They extend this ability through a multidisciplinary industry collaboration with Studio Mikko Laakkonen and finally translate their accumulated learning into a personal interdisciplinary map.</p>
+          <h2 id="roadmap-title">A learning journey from seeing to integrating</h2>
+          <p class="course-hub-provisional">The course progresses through two connected series and four cumulative projects. In the CDM Design Lens Series, students learn to examine design from multiple perspectives and apply those lenses to a real-world critique. In the CDM Integrated Design Thinking Series, they bring these perspectives together through an industry collaboration and conclude by articulating their own interdisciplinary direction.</p>
           <div class="course-hub-roadmap">
             <div class="course-hub-roadmap-head" aria-hidden="true"><span>Stage</span><span>Project</span><span>Core learning</span></div>
-            {{ range $course.Params.roadmap }}
+            {{ $previousSeries := "" }}
+            {{ range $roadmapIndex, $roadmapItem := $course.Params.roadmap }}
+            {{ if ne .series $previousSeries }}<div class="course-hub-roadmap-series"><strong>{{ .series }}</strong><span>{{ .series_stages }}</span></div>{{ end }}
             {{ $stageNumber := replaceRE `^Stage ([0-9]+):.*$` `$1` .phase }}
             {{ $stageTitle := replaceRE `^Stage [0-9]+:[[:space:]]*` `` .phase }}
             <article id="{{ .phase | urlize }}">
               <div class="course-hub-phase"><div class="course-hub-stage-node"><span class="course-hub-stage-number">{{ $stageNumber }}</span><div><strong>{{ $stageTitle }}</strong><small>{{ .weeks }}</small></div></div></div>
-              <div class="course-hub-roadmap-project"><h3>{{ .title }}</h3></div>
+              <div class="course-hub-roadmap-project"><h3><a href="#project-{{ add $roadmapIndex 1 }}">{{ .title }}</a></h3></div>
               <div class="course-hub-roadmap-learning"><p>{{ .description }}</p></div>
             </article>
+            {{ $previousSeries = .series }}
             {{ end }}
           </div>
         </div>
       </section>
       {{ with $course.Params.project }}
-      <section class="course-hub-section course-hub-project" aria-labelledby="project-title">
-        <div class="course-hub-section-label">{{ .label }}</div>
-        <div class="course-hub-section-content">
-          <h2 id="project-title">{{ .title }}</h2>
-          <p class="course-hub-intro">{{ .description }}</p>
-          <blockquote><span>Guiding question</span>{{ .question }}</blockquote>
-          {{ with .items }}
-          <div class="course-hub-project-list">
-            {{ range $index, $project := . }}
-            <article id="project-{{ add $index 1 }}">
-              <div class="course-hub-project-meta">{{ .unit }}</div>
-              <h3>{{ .title }}</h3>
-              <p>{{ .description }}</p>
+        {{ range $index, $project := .items }}
+        {{ $projectNumber := add $index 1 }}
+        <section class="course-hub-section course-hub-project-section" id="project-{{ $projectNumber }}" aria-labelledby="project-{{ $projectNumber }}-title">
+          <div class="course-hub-section-label course-hub-project-label"><span>Project {{ $projectNumber }}</span></div>
+          <div class="course-hub-section-content">
+              <div class="course-hub-project-heading">
+                <h2 id="project-{{ $projectNumber }}-title" class="course-hub-project-title"><span>Project {{ $projectNumber }}:</span> {{ .title }}</h2>
+                <div class="course-hub-project-meta">{{ replaceRE `^Project [0-9]+ · ` `` .unit }}</div>
+              </div>
+              <p class="course-hub-intro">{{ .description }}</p>
+              {{ with .learning_objectives }}
+              <div class="course-hub-project-subsection">
+                <h3>Learning Goal:</h3>
+                <ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+              </div>
+              {{ end }}
+              {{ with .format }}
+              <div class="course-hub-project-subsection">
+                <h3>Format</h3>
+                <ol class="course-hub-project-format">{{ range . }}<li><strong>{{ .title }}</strong><p>{{ .text }}</p></li>{{ end }}</ol>
+              </div>
+              {{ end }}
+              {{ with .work_setup }}
+              <div class="course-hub-project-subsection"><h3>Project unit</h3><p>{{ . | safeHTML }}</p></div>
+              {{ end }}
+              {{ with .grade_breakdown }}
+              <div class="course-hub-project-subsection">
+                <h3>Grade breakdown</h3>
+                <div class="course-hub-grade-table" role="table" aria-label="Project 1 grade breakdown">
+                  <div class="course-hub-grade-head" role="row"><span role="columnheader">Deliverable</span><span role="columnheader">Focus</span><span role="columnheader">Weight</span></div>
+                  {{ range . }}{{ $isTotal := eq .deliverable "Total" }}{{ $isLinkedDeliverable := strings.HasPrefix .deliverable "Deliverable #" }}{{ $deliverableNumber := replaceRE `^Deliverable #([0-9]+)$` `$1` .deliverable }}<div role="row"{{ if $isTotal }} class="is-total"{{ end }}><span role="cell">{{ if $isLinkedDeliverable }}<a href="{{ printf `%sassignments/#deliverable-%s` $base $deliverableNumber }}">{{ .deliverable }}</a>{{ else }}{{ .deliverable }}{{ end }}</span><span role="cell">{{ .focus }}</span><strong role="cell">{{ .weight }}</strong></div>{{ end }}
+                </div>
+              </div>
+              {{ end }}
+              {{ with .evaluation_criteria }}
+              <div class="course-hub-project-subsection"><h3>Key evaluation criteria</h3><ul class="course-hub-evaluation-list">{{ range . }}<li><strong>{{ .title }}:</strong> {{ .text }}</li>{{ end }}</ul></div>
+              {{ end }}
+              {{ if not .learning_objectives }}
               <div class="course-hub-project-details">
                 <div><h4>Deliverables</h4><ul>{{ range .deliverables }}<li>{{ . }}</li>{{ end }}</ul></div>
                 <div><h4>Evaluation</h4><p>{{ .evaluation }}</p></div>
               </div>
-            </article>
-            {{ end }}
+              {{ end }}
           </div>
-          {{ else }}
-          <div class="course-hub-deliverables"><h3>Core deliverables</h3><ol>{{ range .deliverables }}<li>{{ . }}</li>{{ end }}</ol></div>
-          {{ end }}
-        </div>
-      </section>
+        </section>
+        {{ end }}
       {{ end }}
     {{ end }}
 
     {{ if eq $tab "schedule" }}
+      {{ $deliverableWeights := dict }}
+      {{ range $course.Params.assignments }}{{ $deliverableWeights = merge $deliverableWeights (dict (printf "Deliverable %v" .number) .weight) }}{{ end }}
       <section class="course-hub-section course-hub-schedule-section" aria-label="Weekly schedule">
         <div class="course-hub-section-content">
+          <p class="course-hub-schedule-intro">This course is composed of two parts: (i) CDM's Design Lens Series (w1–w8) and (ii) CDM's Integrated Design Thinking Series (w9–w16). For each part, a series of lectures will be given to provide fundamental knowledge and principles about each topic. Then, students will conduct corresponding case studies or in-class group activities each week to gain an in-depth understanding and finish term projects through integrated comprehension of what they have learned.</p>
           <div class="course-hub-schedule" role="list">
             <div class="course-hub-schedule-head" aria-hidden="true"><span>Date</span><span>Lecture</span><span><strong>Before Class:</strong> FC Lecture</span><span><strong>In Class:</strong> Activity</span><span><strong>After Class:</strong> Assignment</span><span>Stage & Project</span></div>
             {{ $schedule := $course.Params.weekly_schedule }}
@@ -181,9 +208,9 @@
             <article{{ if $isStageStart }} class="is-project-start"{{ end }} role="listitem">
               <div class="course-hub-week"><strong>Week {{ .week }}</strong><span>{{ .date }}</span></div>
               <div class="course-hub-week-topic"><span class="course-hub-mobile-label">Lecture</span><h3>{{ if strings.Contains .lecture ":" }}{{ replaceRE `^([^:]+:)[[:space:]]*(.*)$` `$1<br><span>$2</span>` .lecture | safeHTML }}{{ else }}{{ .lecture }}{{ end }}</h3></div>
-              <div class="course-hub-week-cell"><span class="course-hub-mobile-label">Before Class</span><ul class="course-hub-task-list">{{ range .before_class }}{{ $taskLabel := .type }}{{ if eq $taskLabel "FC Lecture" }}{{ $taskLabel = "FC" }}{{ else if eq $taskLabel "Preparation" }}{{ $taskLabel = "Prep" }}{{ end }}{{ $taskClass := "task-label-default" }}{{ if eq $taskLabel "FC" }}{{ $taskClass = "task-label-fc" }}{{ else if strings.HasPrefix $taskLabel "Deliverable" }}{{ $taskClass = "task-label-deliverable" }}{{ end }}<li>{{ if not (strings.HasPrefix $taskLabel "Project") }}<span class="{{ $taskClass }}">[{{ $taskLabel }}]</span> {{ end }}{{ .task }}</li>{{ end }}</ul></div>
+              <div class="course-hub-week-cell"><span class="course-hub-mobile-label">Before Class</span><ul class="course-hub-task-list">{{ range .before_class }}{{ $taskLabel := .type }}{{ if eq $taskLabel "FC Lecture" }}{{ $taskLabel = "FC" }}{{ else if eq $taskLabel "Preparation" }}{{ $taskLabel = "Prep" }}{{ end }}{{ $taskClass := "task-label-default" }}{{ if eq $taskLabel "FC" }}{{ $taskClass = "task-label-fc" }}{{ else if strings.HasPrefix $taskLabel "Deliverable" }}{{ $taskClass = "task-label-deliverable" }}{{ end }}<li>{{ if not (strings.HasPrefix $taskLabel "Project") }}<span class="{{ $taskClass }}">[{{ $taskLabel }}]</span>{{ with index $deliverableWeights $taskLabel }} <span class="task-weight-deliverable">({{ . }})</span>{{ end }} {{ end }}{{ .task }}</li>{{ end }}</ul></div>
               <div class="course-hub-week-cell"><span class="course-hub-mobile-label">In Class</span><ul>{{ range .in_class }}<li>{{ . }}</li>{{ end }}</ul></div>
-              <div class="course-hub-week-cell"><span class="course-hub-mobile-label">After Class</span><ul class="course-hub-task-list">{{ range .after_class }}{{ $taskLabel := .type }}{{ if eq $taskLabel "FC Lecture" }}{{ $taskLabel = "FC" }}{{ else if eq $taskLabel "Preparation" }}{{ $taskLabel = "Prep" }}{{ end }}{{ $taskClass := "task-label-default" }}{{ if eq $taskLabel "FC" }}{{ $taskClass = "task-label-fc" }}{{ else if strings.HasPrefix $taskLabel "Deliverable" }}{{ $taskClass = "task-label-deliverable" }}{{ end }}<li>{{ if not (strings.HasPrefix $taskLabel "Project") }}<span class="{{ $taskClass }}">[{{ $taskLabel }}]</span> {{ end }}{{ .task }}</li>{{ end }}</ul></div>
+              <div class="course-hub-week-cell"><span class="course-hub-mobile-label">After Class</span><ul class="course-hub-task-list">{{ range .after_class }}{{ $taskLabel := .type }}{{ if eq $taskLabel "FC Lecture" }}{{ $taskLabel = "FC" }}{{ else if eq $taskLabel "Preparation" }}{{ $taskLabel = "Prep" }}{{ end }}{{ $taskClass := "task-label-default" }}{{ if eq $taskLabel "FC" }}{{ $taskClass = "task-label-fc" }}{{ else if strings.HasPrefix $taskLabel "Deliverable" }}{{ $taskClass = "task-label-deliverable" }}{{ end }}<li>{{ if not (strings.HasPrefix $taskLabel "Project") }}<span class="{{ $taskClass }}">[{{ $taskLabel }}]</span>{{ with index $deliverableWeights $taskLabel }} <span class="task-weight-deliverable">({{ . }})</span>{{ end }} {{ end }}{{ .task }}</li>{{ end }}</ul></div>
               <div class="course-hub-stage-project{{ if $isStageStart }} is-stage-start{{ else }} is-stage-continuation{{ end }}{{ if $isStageEnd }} is-stage-end{{ end }}">
                 {{ if $isStageStart }}
                   <span class="course-hub-mobile-label">Stage & Project</span>
@@ -200,17 +227,46 @@
     {{ end }}
 
     {{ if eq $tab "assignments" }}
-      <section class="course-hub-section" aria-labelledby="assignments-title">
-        <div class="course-hub-section-label">Assignments</div>
+      {{ range $course.Params.assignments }}
+      <section class="course-hub-section course-hub-assignment-section" id="deliverable-{{ .number }}" aria-labelledby="deliverable-{{ .number }}-title">
+        <div class="course-hub-section-label">Deliverable #{{ .number }}</div>
         <div class="course-hub-section-content">
-          <h2 id="assignments-title">Assignments & evaluation</h2>
-          <div class="course-hub-assessment">{{ range $course.Params.assessment }}<article><strong>{{ .value }}</strong><div><h3>{{ .label }}</h3><p>{{ .note }}</p></div></article>{{ end }}</div>
-          <p class="course-hub-footnote">Assessment weights are provisional until the official syllabus is published.</p>
+          <div class="course-hub-assignment-heading">
+            <h2 id="deliverable-{{ .number }}-title">Deliverable #{{ .number }}: {{ .title }}</h2>
+            <span>{{ .weight }}</span>
+          </div>
+          <dl class="course-hub-assignment-meta"><div><dt>Project</dt><dd>{{ .project }}</dd></div><div><dt>Due</dt><dd>{{ .due }}</dd></div></dl>
+          <p class="course-hub-assignment-summary">{{ .summary }}</p>
+          {{ with .purpose }}<div class="course-hub-assignment-detail"><h3>Purpose</h3><p>{{ . }}</p></div>{{ end }}
+          {{ with .requirements }}<div class="course-hub-assignment-detail"><h3>Requirements</h3><ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul></div>{{ end }}
+          {{ with .submission }}<div class="course-hub-assignment-detail"><h3>Submission</h3><p>{{ . }}</p></div>{{ end }}
+          {{ with .criteria }}<div class="course-hub-assignment-detail"><h3>Evaluation criteria</h3><ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul></div>{{ end }}
         </div>
       </section>
+      {{ end }}
     {{ end }}
 
     {{ if eq $tab "logistics" }}
+      <section class="course-hub-section" aria-labelledby="grading-title">
+        <div class="course-hub-section-label">Grading</div>
+        <div class="course-hub-section-content">
+          <h2 id="grading-title">Grading scheme</h2>
+          <div class="course-hub-assessment course-hub-assessment--single">
+            {{ range $course.Params.assessment }}
+            <article>
+              <strong>{{ .value }}</strong>
+              <div><h3>{{ .label }}</h3><p>{{ .note }}</p></div>
+              {{ with .project }}
+              <div class="course-hub-assessment-breakdown" aria-label="Project {{ . }} deliverable weights">
+                {{ range where $course.Params.assignments "project" (printf "Project %v" .) }}<a href="{{ printf `%sassignments/#deliverable-%v` $base .number }}">D{{ .number }} <strong>{{ .weight }}</strong></a>{{ end }}
+              </div>
+              {{ end }}
+            </article>
+            {{ end }}
+          </div>
+          <p class="course-hub-footnote">Assessment weights are provisional until the official syllabus is published.</p>
+        </div>
+      </section>
       <section class="course-hub-section" aria-labelledby="policies-title">
         <div class="course-hub-section-label">Course logistics</div>
         <div class="course-hub-section-content">

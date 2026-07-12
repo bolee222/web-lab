@@ -74,9 +74,9 @@ overview_cards:
       - "Branding & Marketing"
   - title: "Grading"
     items:
-      - "Project 1: Critical Design Thinking with D:Branch · 20%"
+      - "Project 1: Critical Design Case Analysis with D:Branch System · 20%"
       - "Project 2: Pop-up Store Design Critique · 15%"
-      - "Project 3: Finland–Korea Industry Project · 40%"
+      - "Project 3: Interdisciplinary Industry Project (Studio Mikko Laakkonen) · 40%"
       - "Project 4: Personal Interdisciplinary Map · 10%"
       - "Attendance & Class Preparation · 10%"
       - "Participation & Attitude · 5%"
@@ -87,38 +87,144 @@ project:
   description: "The four projects form a cumulative learning sequence. Students first use D:Branch to practice seeing design cases from multiple perspectives, then apply those perspectives to a critical analysis of a real pop-up store. They extend this ability through a multidisciplinary industry collaboration with Studio Mikko Laakkonen and finally translate their accumulated learning into a personal interdisciplinary map."
   question: "How can repeated practice in seeing, analyzing, integrating, and reflecting develop an interdisciplinary way of thinking?"
   items:
-    - title: "Critical Design Thinking with D:Branch"
+    - title: "Critical Design Case Analysis with D:Branch System"
       unit: "Project 1 · Individual · 20%"
-      description: "Use D:Branch, a design-analysis tool developed by the instructor, to examine design cases through multiple art-to-design lenses. Repeated case analysis builds the ability to notice different dimensions of design and support judgments with clear reasoning."
-      deliverables: ["Six design-lens exercises", "D:Branch case-analysis records", "Evidence-based good/bad design judgments", "Short discussion contributions"]
-      evaluation: "Perspective diversity · Quality of observation · Evidence and reasoning · Development across cases"
-    - title: "Pop-up Store Critical Design Analysis"
+      description: "This project introduces students to multiple ways of seeing, interpreting, and evaluating design. Using D:Branch, students explore how alternative design decisions can influence meaning, perception, usability, customer response, and overall experience."
+      learning_objectives:
+        - "Connect foundational design principles to real-world social innovation cases for better understanding."
+        - "Analyze each design case using a Problem–Solution framework."
+        - "Compare alternative design decisions systematically."
+        - "Move beyond subjective judgments such as ‘I like it’ or ‘it looks good’; rather, explain why a design decision may be effective or ineffective for a particular purpose, user, and context."
+        - "Develop an increasingly critical and multidimensional way of examining design cases."
+      format:
+        - title: "Lecture"
+          text: "Students first learn a foundational design principle for each design domain covered in Weeks 2–7 through an FC lecture and a follow-up in-class lecture."
+        - title: "In-Class Group Exercise"
+          text: "Students critically examine design principles through example cases. Working in small groups, they use D:Branch to explore a design case, compare alternative design decisions, and discuss their interpretations with classmates."
+        - title: "Individual D:Branch Exploration"
+          text: "After class, each student independently uses D:Branch to further examine the relevant design topic. Students may revisit the in-class case or explore additional alternatives and examples."
+        - title: "Individual Analytical Report"
+          text: "Each student submits a short report documenting what they explored, what they observed, how their thinking developed, and what conclusions they reached. Individual submissions are used to assess each student’s own understanding and critical thinking."
+      work_setup: "The in-class group exercise supports collaborative learning and exposure to different perspectives. However, <strong>Deliverables #1–6 are submitted and assessed individually</strong>. Participation in the group exercises is evaluated separately under <strong>Participation & Professional Engagement</strong>."
+      grade_breakdown:
+        - { deliverable: "Deliverable #1", focus: "Art as a cultural and expressive lens", weight: "3%" }
+        - { deliverable: "Deliverable #2", focus: "Art and business integration", weight: "3%" }
+        - { deliverable: "Deliverable #3", focus: "Graphic design analysis", weight: "4%" }
+        - { deliverable: "Deliverable #4", focus: "Product design analysis", weight: "3%" }
+        - { deliverable: "Deliverable #5", focus: "Interaction design analysis", weight: "3%" }
+        - { deliverable: "Deliverable #6", focus: "Service design analysis and cross-disciplinary synthesis", weight: "4%" }
+        - { deliverable: "Total", focus: "", weight: "20%" }
+      evaluation_criteria:
+        - { title: "Understanding of design concepts", text: "Demonstrates an accurate understanding of the design principles introduced each week." }
+        - { title: "Depth of comparison", text: "Identifies meaningful differences between design alternatives rather than merely describing visible features." }
+        - { title: "Quality of reasoning", text: "Clearly explains why particular design decisions may be effective or ineffective." }
+        - { title: "Consideration of context", text: "Evaluates design in relation to its intended users, purpose, cultural context, and medium." }
+        - { title: "Critical perspective", text: "Moves beyond personal preference and supports judgments with relevant concepts and evidence." }
+        - { title: "Development across assignments", text: "Demonstrates an increasingly sophisticated ability to connect and apply multiple design lenses." }
+    - title: "Pop-up Store Design Critique"
       unit: "Project 2 · Individual · 15%"
-      description: "Apply the analytical perspectives developed in Project 1 to a real pop-up store. Examine how art, graphic, product, interaction, and service-design elements work together and explain what succeeds, what does not, and why."
-      deliverables: ["Pop-up store field visit", "Visual and observational documentation", "Integrated analysis using the CDM design lenses", "Midterm critical-analysis report"]
-      evaluation: "Application of Project 1 learning · Critical depth · Evidence · Integrated interpretation · Communication"
-    - title: "Studio Mikko Laakkonen: Korea Launch Strategy"
+      description: "This project asks students to apply the design perspectives developed in Project 1 to a real-world integrated spatial experience. Students visit a pop-up store—or a comparable space such as a marketing booth or exhibition booth—and analyze how art, graphic design, product design, interaction design, and service design elements shape the overall visitor experience."
+      learning_objectives:
+        - "Identify how different art and design elements are incorporated into the space."
+        - "Evaluate whether each design decision supports the purpose of the space and its targeted visitors."
+        - "Explain why particular design elements are effective or ineffective beyond subjective judgments."
+        - "Develop a holistic perspective on how multiple design components work together."
+      format:
+        - title: "Field Visit"
+          text: "Students visit one pop-up store or comparable space and collect their own observations, photographs, and supporting information."
+        - title: "Design Elements Analysis"
+          text: "Students analyze art, graphic design, product design, interaction design, and service design elements within the selected space. For each area, they examine its contribution to the visitor experience, its alignment with the purpose and targeted visitors, and possible directions for improvement. They also identify at least three relationships among different design elements and analyze how these elements support, enhance, or conflict with one another."
+        - title: "Individual Report Writing"
+          text: "Each student submits an individual Mid-term Report using the provided template. The report includes four sections: Pop-up Store Description, Single Design Elements Analysis, Inter-relational Design Reflection, and Personal Reflection."
+      work_setup: "<strong>Individual.</strong> Students may visit and discuss the space with classmates. However, the observation, analysis, improvement suggestions, and final report are completed and assessed individually."
+      grade_breakdown:
+        - { deliverable: "Deliverable #7", focus: "Pop-up Store Design Critique (Mid-term Report)", weight: "15%" }
+      evaluation_criteria:
+        - { title: "Application of learned design principles", text: "Accurately applies the principles introduced in Project 1." }
+        - { title: "Quality of observation", text: "Supports the analysis with specific examples and visual evidence." }
+        - { title: "Purpose- and user-centered thinking", text: "Evaluates design decisions in relation to the space’s goals and targeted visitors." }
+        - { title: "Quality of reasoning", text: "Clearly explains why specific design elements are effective or ineffective." }
+        - { title: "Inter-relational thinking", text: "Identifies meaningful synergies and tensions among different design elements." }
+        - { title: "Holistic reflection", text: "Demonstrates an integrated understanding of art, design, experience, and design management." }
+    - title: "Interdisciplinary Industry Project (Studio Mikko Laakkonen)"
       unit: "Project 3 · Team · 40%"
-      description: "Work with Finnish furniture designer Studio Mikko Laakkonen on an industry-like project. Research the Korean market and propose a culturally informed marketing strategy that the company could consider when launching in Korea."
-      deliverables: ["Korean market and user research", "User insight and opportunity definition", "Brand positioning and launch strategy", "Final strategy presentation and report"]
-      evaluation: "Research quality · Interdisciplinary rationale · Strategic relevance · Feasibility · Presentation"
+      description: "This industry-like project is developed in collaboration with a Finnish company. Student teams propose a culturally relevant marketing strategy that the company could use when launching its brand, product, or service in the Korean market. The project integrates user research, customer insight, design, marketing, culture, and strategic management."
+      learning_objectives:
+        - "Understand the Finnish company’s identity, values, products, and existing market position."
+        - "Investigate the needs, perceptions, and behaviors of potential Korean users and customers."
+        - "Identify cultural and market differences that should be considered when entering Korea."
+        - "Translate user research findings into meaningful customer insights and opportunity areas."
+        - "Develop a coherent marketing strategy connecting target customers, positioning, messaging, channels, and customer experience."
+        - "Integrate user-centered, customer-centered, and strategic-centered thinking."
+      format:
+        - title: "Company Briefing and Project Framing"
+          text: "Students learn about the partner company, its products, values, and project expectations. Each group defines the initial project scope and examines the Korean market and cultural context."
+        - title: "User Research Planning and Execution"
+          text: "Students identify potential Korean users or customers, develop an appropriate research plan, and conduct user research. The research should generate evidence that can guide later strategic decisions."
+        - title: "User Insight and Ideation"
+          text: "Students analyze their research findings, identify meaningful patterns and customer insights, and define key opportunity areas. Based on these insights, they explore and compare possible marketing directions."
+        - title: "Strategic Marketing Proposal"
+          text: "Students integrate cultural, customer, design, marketing, and company perspectives into a coherent Korean market launch strategy. The proposal should clearly explain the target customer, positioning, core message, communication channels, customer experience, and implementation direction."
+        - title: "Final Presentation"
+          text: "Each group presents its final strategy to the class and external collaborators. The presentation should communicate the research process, supporting evidence, strategic rationale, and final proposal in a professional and persuasive manner."
+      work_setup: "<strong>Group.</strong> Deliverables #8–11 are completed and assessed as group submissions. All members are expected to participate meaningfully in research, analysis, ideation, strategy development, and presentation. Individual grades may be adjusted when there is a substantial difference in documented contribution."
+      grade_breakdown:
+        - { deliverable: "Deliverable #8", focus: "Company and Korean market understanding, project framing, and user research plan", weight: "4%" }
+        - { deliverable: "Deliverable #9", focus: "User research execution and key findings", weight: "7%" }
+        - { deliverable: "Deliverable #10", focus: "Customer insights, opportunity areas, and initial strategic direction", weight: "9%" }
+        - { deliverable: "Deliverable #11", focus: "Integrated Korean market launch strategy and final presentation", weight: "20%" }
+        - { deliverable: "Total", focus: "", weight: "40%" }
+      evaluation_criteria:
+        - { title: "Understanding of the company and context", text: "Accurately reflects the Finnish company’s identity while considering the Korean cultural and market environment." }
+        - { title: "Quality of user research", text: "Uses appropriate participants, questions, and methods to collect meaningful evidence." }
+        - { title: "Insight development", text: "Moves beyond summarizing responses and identifies relevant customer needs, patterns, and opportunities." }
+        - { title: "Research-to-strategy connection", text: "Clearly demonstrates how the proposed strategy was developed from research findings." }
+        - { title: "Interdisciplinary integration", text: "Meaningfully connects culture, design, customer experience, marketing, and management perspectives." }
+        - { title: "Strategic coherence", text: "Aligns the target customer, positioning, message, channels, and experience within one consistent proposal." }
+        - { title: "Cultural relevance and feasibility", text: "Proposes an approach that is appropriate for Korean customers and realistic for the partner company." }
+        - { title: "Originality and professional communication", text: "Presents a distinctive, well-supported, and clearly communicated strategy." }
     - title: "Personal Interdisciplinary Map"
       unit: "Project 4 · Individual · 10%"
-      description: "Reflect on the experiences and learning accumulated through the first three projects to visualize your own interdisciplinary perspective. Map the fields, questions, methods, and future directions that you want to connect."
-      deliverables: ["Personal interdisciplinary map", "Written explanation of key relationships", "Reflection on learning and future direction"]
-      evaluation: "Clarity · Depth of reflection · Meaningful connections · Communication"
+      description: "This project asks students to reflect on their learning experiences throughout the course and define the interdisciplinary approach they may wish to pursue in the future. Students create a personal diagram that connects relevant domains—such as design, art, management, technology, culture, or other fields—and explain how these areas may work together in their future study or career."
+      learning_objectives:
+        - "Reflect on personal interests, strengths, and learning experiences from Projects 1–3."
+        - "Identify the disciplines and design subdomains that students wish to integrate."
+        - "Explain the relationships, intersection areas, and potential synergies among selected disciplines."
+        - "Connect personal interests to user-centered, customer-centered, and company-centered design thinking approaches."
+        - "Clarify a possible future learning or career direction through a representative interdisciplinary case."
+        - "Develop a more intentional understanding of one’s position within Culture and Design Management."
+      format:
+        - title: "Personal Interdisciplinary Diagram"
+          text: "Students create a visual diagram representing the disciplines they wish to connect. The diagram may begin with design, art, management, and technology, but students may add or subdivide domains such as product design, graphic design, service design, psychology, architecture, culture, or museum studies."
+        - title: "Diagram Description and Reflection"
+          text: "Students explain the selected domains, their intersection areas, and the synergies they hope to create. They should also describe which design thinking perspectives and processes they wish to emphasize, using their course and project experiences—particularly the interdisciplinary collaboration in Project 3—as supporting evidence."
+        - title: "Representative Case Analysis"
+          text: "Students select one design project, business case, organization, or professional example that closely aligns with their interdisciplinary diagram. They explain how the case combines the selected domains and how it may serve as a reference for their future learning or career direction."
+        - title: "Individual Final Report"
+          text: "Each student submits an individual report using the provided format. The report consists of a personal interdisciplinary diagram, a written explanation of the diagram, and a representative case analysis."
+      work_setup: "<strong>Individual.</strong> Project 4 is completed and assessed individually. The diagram and written discussion should reflect each student’s own interests, experiences, and future direction rather than presenting a general description of interdisciplinary design."
+      grade_breakdown:
+        - { deliverable: "Deliverable #12", focus: "Personal Interdisciplinary Map and Final Report", weight: "10%" }
+        - { deliverable: "Total", focus: "", weight: "10%" }
+      evaluation_criteria:
+        - { title: "Clarity of interdisciplinary mapping", text: "Clearly identifies the disciplines and subdomains the student wishes to integrate." }
+        - { title: "Quality of connections", text: "Explains meaningful relationships and synergies among the selected domains." }
+        - { title: "Use of course experience", text: "Supports the diagram with specific learning or collaboration experiences from the course." }
+        - { title: "Understanding of design thinking", text: "Appropriately connects the map to user-, customer-, and company-centered perspectives." }
+        - { title: "Case alignment", text: "Selects and analyzes a representative case that closely reflects the proposed interdisciplinary approach." }
+        - { title: "Future direction", text: "Presents a thoughtful and plausible direction for further learning, projects, or career exploration." }
 
 roadmap:
-  - { phase: "Stage 1: Learn to See", weeks: "Weeks 2–7", title: "Project 1. Design Case Analysis with D:Branch", description: "Learn to analyze a single design from multiple perspectives and support observations with clear reasoning." }
-  - { phase: "Stage 2: Apply the Lenses", weeks: "Week 8", title: "Project 2. Pop-up Store Design Critique", description: "Apply multiple design lenses in a real design context and critically evaluate what works, what does not, and why." }
-  - { phase: "Stage 3: Integrate and Create", weeks: "Weeks 9–15", title: "Project 3. Finland–Korea Industry Project", description: "Integrate culture, design, marketing, and strategy to address a real industry challenge." }
-  - { phase: "Stage 4: Reflect and Position", weeks: "Weeks 15–16", title: "Project 4. Personal Interdisciplinary Map", description: "Use the project experiences to clarify a personal academic and professional direction." }
+  - { series: "CDM Design Lens Series", series_stages: "Stages 1–2", phase: "Stage 1: Learn to See", weeks: "Weeks 2–7", title: "Project 1: Critical Design Case Analysis with D:Branch System", description: "Learn to analyze a single design from multiple perspectives and support observations with clear reasoning." }
+  - { series: "CDM Design Lens Series", series_stages: "Stages 1–2", phase: "Stage 2: Apply the Lenses", weeks: "Week 8", title: "Project 2. Pop-up Store Design Critique", description: "Apply multiple design lenses in a real design context and critically evaluate what works, what does not, and why." }
+  - { series: "CDM Design Thinking Series", series_stages: "Stages 3–4", phase: "Stage 3: Integrate and Create", weeks: "Weeks 9–15", title: "Project 3: Interdisciplinary Industry Project (Studio Mikko Laakkonen)", description: "Integrate culture, design, marketing, and strategy to address a real industry challenge." }
+  - { series: "CDM Design Thinking Series", series_stages: "Stages 3–4", phase: "Stage 4: Reflect and Position", weeks: "Weeks 15–16", title: "Project 4. Personal Interdisciplinary Map", description: "Use the project experiences to clarify a personal academic and professional direction." }
 
 schedule_stage_labels:
   "Foundations": { stage: "Course Foundation", weeks: "Week 1", project: "Orientation" }
-  "Project 1 · D:Branch": { stage: "Stage 1: Learn to See", weeks: "Weeks 2–7", project: "Project 1: Critical Design Thinking with D:Branch", anchor: "stage-1-learn-to-see", project_anchor: "project-1" }
+  "Project 1 · D:Branch": { stage: "Stage 1: Learn to See", weeks: "Weeks 2–7", project: "Project 1: Critical Design Case Analysis with D:Branch System", anchor: "stage-1-learn-to-see", project_anchor: "project-1" }
   "Project 2 · Pop-up Store Analysis": { stage: "Stage 2: Apply the Lenses", weeks: "Week 8", project: "Project 2: Pop-up Store Design Critique", anchor: "stage-2-apply-the-lenses", project_anchor: "project-2" }
-  "Project 3 · Industry Project": { stage: "Stage 3: Integrate and Create", weeks: "Weeks 9–15", project: "Project 3: Finland–Korea Industry Project", anchor: "stage-3-integrate-and-create", project_anchor: "project-3" }
+  "Project 3 · Industry Project": { stage: "Stage 3: Integrate and Create", weeks: "Weeks 9–15", project: "Project 3: Interdisciplinary Industry Project (Studio Mikko Laakkonen)", anchor: "stage-3-integrate-and-create", project_anchor: "project-3" }
   "Project 4 · Reflection": { stage: "Stage 4: Reflect and Position", weeks: "Weeks 15–16", project: "Project 4: Personal Interdisciplinary Map", anchor: "stage-4-reflect-and-position", project_anchor: "project-4" }
 
 weekly_schedule:
@@ -251,11 +357,25 @@ weekly_schedule:
     in_class: ["No offline lecture"]
     after_class: [{ type: "Deliverable 12", task: "Submit the Personal Interdisciplinary Map (Final Report) online.", due: "Dec. 14" }]
 
+assignments:
+  - { number: 1, title: "Art as a Cultural and Expressive Lens", project: "Project 1", due: "Sep. 15", weight: "3%", summary: "Complete the Art design-lens exercise using D:Branch and document the observations, comparisons, and reasoning developed through the analysis." }
+  - { number: 2, title: "Art and Business Integration", project: "Project 1", due: "Sep. 22", weight: "3%", summary: "Analyze how artistic and business considerations interact, compare alternative design decisions, and explain their implications." }
+  - { number: 3, title: "Graphic Design Analysis", project: "Project 1", due: "Sep. 29", weight: "4%", summary: "Use D:Branch to examine graphic-design elements and explain how alternative decisions influence meaning, perception, and communication." }
+  - { number: 4, title: "Product Design Analysis", project: "Project 1", due: "Oct. 06", weight: "3%", summary: "Compare product-design alternatives and evaluate their relationship to purpose, usability, users, and context." }
+  - { number: 5, title: "Interaction Design Analysis", project: "Project 1", due: "Oct. 13", weight: "3%", summary: "Analyze interaction-design decisions and explain how they shape usability, behavior, feedback, and the overall user experience." }
+  - { number: 6, title: "Service Design Analysis and Cross-Disciplinary Synthesis", project: "Project 1", due: "Oct. 20", weight: "4%", summary: "Analyze a service-design case and synthesize insights across the design lenses explored throughout Project 1." }
+  - { number: 7, title: "Pop-up Store Design Critique", project: "Project 2", due: "Oct. 20", weight: "15%", summary: "Submit the midterm critical-analysis report based on a pop-up store field visit and the integrated application of multiple CDM design lenses." }
+  - { number: 8, title: "Company, Market, and User Research Plan", project: "Project 3", due: "Nov. 03", weight: "4%", summary: "Frame the project through an initial understanding of the partner company and Korean market, and prepare a focused user research plan." }
+  - { number: 9, title: "User Research Execution and Key Findings", project: "Project 3", due: "Nov. 10", weight: "7%", summary: "Conduct user research and document the key evidence and findings that can inform the Korean market launch strategy." }
+  - { number: 10, title: "Customer Insights and Initial Strategic Direction", project: "Project 3", due: "Nov. 17", weight: "9%", summary: "Synthesize research findings into customer insights, opportunity areas, and an initial strategic direction." }
+  - { number: 11, title: "Integrated Korean Market Launch Strategy", project: "Project 3", due: "Dec. 08", weight: "20%", summary: "Present the integrated Korean market launch strategy and submit the final presentation deck." }
+  - { number: 12, title: "Personal Interdisciplinary Map", project: "Project 4", due: "Dec. 14", weight: "10%", summary: "Submit the personal interdisciplinary map and final reflective report connecting the semester’s accumulated learning." }
+
 assessment:
-  - { label: "Project 1 · Critical Design Thinking with D:Branch", value: "20%", note: "Repeated case analysis using multiple CDM design lenses" }
-  - { label: "Project 2 · Pop-up Store Design Critique", value: "15%", note: "Integrated field-based application of Project 1 learning" }
-  - { label: "Project 3 · Finland–Korea Industry Project", value: "40%", note: "Korea-launch strategy developed with Studio Mikko Laakkonen" }
-  - { label: "Project 4 · Personal Interdisciplinary Map", value: "10%", note: "Individual interdisciplinary map and final reflection" }
+  - { project: 1, label: "Project 1: Critical Design Case Analysis with D:Branch System", value: "20%", note: "Repeated case analysis using multiple CDM design lenses" }
+  - { project: 2, label: "Project 2 · Pop-up Store Design Critique", value: "15%", note: "Integrated field-based application of Project 1 learning" }
+  - { project: 3, label: "Project 3: Interdisciplinary Industry Project (Studio Mikko Laakkonen)", value: "40%", note: "Korea-launch strategy developed with Studio Mikko Laakkonen" }
+  - { project: 4, label: "Project 4 · Personal Interdisciplinary Map", value: "10%", note: "Individual interdisciplinary map and final reflection" }
   - { label: "Attendance & Class Preparation", value: "10%", note: "Attendance and required preparation before class" }
   - { label: "Participation & Attitude", value: "5%", note: "Active, respectful, and constructive engagement" }
   - { label: "Total", value: "100%", note: "Deliverable-level criteria will be announced with each project" }
