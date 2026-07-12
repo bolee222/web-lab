@@ -117,7 +117,6 @@
         {{ with .title }}<div class="area-title-pillar">{{ . | markdownify }}</div>{{ end }}
 
         {{ with .intro }}<div class="pillar-intro-des">{{ . | markdownify }}</div>{{ end }}
-        {{ with .intro_kor }}<div class="pillar-intro-des pillar-intro-des-kor">{{ . | markdownify }}</div>{{ end }}
 
       <div class="pillar-card-grid">
         {{ range $index, $pillar := .pillar_item }}
@@ -135,9 +134,12 @@
               {{ with $vision.related_projects }}
               <div class="pillar-related-projects">
                 <div class="pillar-related-title">Related Projects</div>
-                {{ range . }}
-                  <a href="{{ .url | relURL }}">{{ .title | markdownify }}</a>
+                <div class="pillar-related-list">
+                {{ range $projectIndex, $project := . }}
+                  {{ if $projectIndex }}<span class="pillar-related-separator" aria-hidden="true">·</span>{{ end }}
+                  <a href="{{ $project.url | relURL }}">{{ $project.title | markdownify }}</a>
                 {{ end }}
+                </div>
               </div>
               {{ end }}
 
@@ -249,7 +251,6 @@
     <hr class="vision-section-divider" align="left">
     {{ with .title }}<div class="area-title">{{ . | markdownify }}</div>{{ end }}
     {{ with .intro }}<div class="vision-approach-intro">{{ . | markdownify }}</div>{{ end }}
-    {{ with .intro_kor }}<div class="vision-approach-intro vision-approach-intro-kor">{{ . | markdownify }}</div>{{ end }}
     {{ with .item }}
     <div class="row vision-approach-grid">
       {{ range $index, $item := . }}
@@ -266,9 +267,12 @@
           {{ with $item.related_projects }}
           <div class="vision-approach-related">
             <div class="vision-approach-related-title">Related Projects</div>
-            {{ range . }}
-              <a href="{{ .url | relURL }}">{{ .title | markdownify }}</a>
+            <div class="vision-approach-related-list">
+            {{ range $projectIndex, $project := . }}
+              {{ if $projectIndex }}<span class="pillar-related-separator" aria-hidden="true">·</span>{{ end }}
+              <a href="{{ $project.url | relURL }}">{{ $project.title | markdownify }}</a>
             {{ end }}
+            </div>
           </div>
           {{ end }}
         </div>
@@ -302,15 +306,15 @@
             {{ with .content }}<p>{{ . | markdownify }}</p>{{ end }}
 
             {{ with .button }}{{ if .enable }}
-            <a class="home-slider-more btn-main btn-learnMore" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
+            <a class="btn home-slider-more btn-main btn-learnMore" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
             {{ end }}{{ end }}
 
             {{ with .button_joinUs }}{{ if .enable }}
-            <a class="home-slider-more btn-main btn-learnMore" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
+            <a class="btn home-slider-more btn-main btn-learnMore" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
             {{ end }}{{ end }}
 
             {{ with .button_FAQ }}{{ if .enable }}
-            <a class="home-slider-more btn-main btn-learnMore" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
+            <a class="btn home-slider-more btn-main btn-learnMore" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
             {{ end }}{{ end }}
           </div>
         </div>

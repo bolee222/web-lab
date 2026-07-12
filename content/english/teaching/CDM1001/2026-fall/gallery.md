@@ -1,0 +1,10 @@
+---
+title: "Project Gallery"
+url: "/courses/CDM1001/2026-fall/gallery/"
+description: "Student work and project outcomes from CDM1001 Fall 2026."
+layout: "course-hub"
+course_tab: "gallery"
+aliases:
+  - "/teaching/CDM1001/2026-fall/gallery/"
+draft: false
+---

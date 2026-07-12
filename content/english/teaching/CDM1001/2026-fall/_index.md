@@ -10,60 +10,116 @@ draft: false
 course_code: "CDM1001"
 semester: "Fall 2026"
 semester_slug: "2026-fall"
+hero_meta: "Yonsei 2026-Fall | Bokyung Lee"
 status: "Upcoming"
 course_type: "Undergraduate · Project-based Lecture"
 course_level: "Undergraduate"
 project_focus: "Interdisciplinary Design Lens and Design Thinking"
-lede: "This introductory course examines how culture, design, and management intersect—and how interdisciplinary design thinking can create meaningful social and market value."
-keywords: ["Culture", "Design Management", "Social Impact", "Design Thinking", "Interdisciplinary Learning"]
-
+lede: "Interdisciplinary thinking lies at the heart of Culture and Design Management. This course introduces fundamental perspectives, concepts, and methods across culture, design, management, UX, technology, art, branding, and marketing. Through lectures, case discussions, and interdisciplinary projects, students will learn to connect these domains and develop thoughtful strategies for real-world opportunities."
+semester_focus:
+  label: "Industry Collaboration"
+  title: "Studio Mikko Laakkonen × CDM1001"
+  text: "This semester, students will collaborate with Studio Mikko Laakkonen, a Finnish furniture company, to explore its potential entry into the Korean market. Drawing on concepts introduced throughout the course, students will use interdisciplinary thinking to propose culturally informed strategies across design, branding, marketing, and management."
+  link: { label: "Studio Mikko Laakkonen", url: "https://www.mikkolaakkonen.com/" }
+flipped_learning:
+  label: "Course Format"
+  title: "Flipped Learning"
+  text: "This course was designated as a Flipped Classroom (FC) course by the Innovation Center for Teaching & Learning (ICTL)."
+  detail: "Each week, students spend one hour watching lecture videos and completing individual learning tasks provided by the instructor in advance, followed by two hours of cooperative learning with fellow students in the classroom."
 course_facts:
-  - { label: "Class time", value: "Every Tuesday, 10:00–13:00" }
-  - { label: "Location", value: "VeritasB 416" }
+  - { label: "Class time", value: "Tuesday(s), 10:00–13:00" }
+  - { label: "Location", value: "VeritasB 443" }
   - { label: "Instructor", value: "Prof. Bokyung Lee" }
+  - { label: "Office hours", value: "Monday, 9:00–11:00" }
   - { label: "Language", value: "English" }
-
 notice:
   eyebrow: "Before the semester"
   title: "The course begins on Sep. 01."
   text: "Review the course overview and weekly schedule. Confirmed readings and submission links will be added before each class."
 
-overview: "The course builds foundational knowledge across culture, design, and management through lectures, case discussions, group activities, and three connected projects. Students first explore design through art, graphics, products, spaces, interactions, and services; they then apply user-, customer-, and strategy-centered design thinking to social impact, global marketing, and their own academic direction."
+overview: "This course aims to teach and practice fundamental knowledge established in academic disciplines related to culture, design, and management. It consists of a series of lectures, case presentations, and term projects. Students will obtain foundational knowledge and up-to-date industrial and academic design and marketing cases to gain a fundamental understanding of the Culture and Design Management major. Through this course, students will understand the interrelationships among Design, UX, Technology, Culture, Art, Management, and Marketing and cultivate an interdisciplinary mindset that brings them together."
 
 learning_outcomes:
-  - { title: "Understand", text: "Build a foundational vocabulary for the backgrounds, methods, and skills of Culture and Design Management." }
-  - { title: "Connect", text: "Explain relationships among design, UX, technology, culture, art, management, and marketing." }
-  - { title: "Apply", text: "Use interdisciplinary design lenses and design-thinking approaches to analyze cases and develop proposals." }
-  - { title: "Position", text: "Reflect on possible academic and career paths and articulate a personal interdisciplinary direction." }
+  - { title: "Build foundations", text: "Gain a fundamental understanding of the Culture and Design Management major, including its foundational backgrounds, methods, and skill sets." }
+  - { title: "Connect disciplines", text: "Understand the interrelationships among Design, UX, Technology, Culture, Art, Management, and Marketing and cultivate an interdisciplinary mindset that connects them." }
+  - { title: "Plan a direction", text: "Understand the career paths available to students in the Culture and Design Management major and set personal career goals and future plans." }
 
+prerequisites: "There are no formal course prerequisites. Students are expected to participate actively in lectures, case discussions, group activities, and project work."
+
+overview_cards:
+  - title: "Course information"
+    facts:
+      - { label: "Class time", value: "Tuesday(s), 10:00–13:00" }
+      - { label: "Location", value: "VeritasB 443" }
+      - { label: "Instructor", value: "Prof. Bokyung Lee" }
+      - { label: "Office hours", value: "Monday, 9:00–11:00" }
+      - { label: "Language", value: "English" }
+  - title: "Course links"
+    rows:
+      - { label: "Submission & Grading", value: "Yonsei LearnUS", url: "https://ys.learnus.org/" }
+      - { label: "Discussion and Q&A", value: "Campuswire", url: "https://campuswire.com/p/GC828CA78" }
+      - label: "Previous Years"
+        links:
+          - { label: "Spring 2026", url: "/courses/CDM1001/2026-spring/" }
+          - { label: "Fall 2025", url: "/courses/CDM1001/2025-fall/" }
+          - { label: "Spring 2025", url: "/courses/CDM1001/2025-spring/" }
+          - { label: "Fall 2024", url: "/courses/CDM1001/2024-fall/" }
+          - { label: "Spring 2024", url: "/courses/CDM1001/2024-spring/" }
+  - title: "Topics"
+    items:
+      - "Culture, Design, and Management"
+      - "Art, Graphics, Products, Interactions, and Services"
+      - "User-, Customer-, and Strategy-Centered Design Thinking"
+      - "Interdisciplinary Design Thinking"
+      - "Branding & Marketing"
+  - title: "Grading"
+    items:
+      - "Project 1: Critical Design Thinking with D:Branch · 20%"
+      - "Project 2: Pop-up Store Design Critique · 15%"
+      - "Project 3: Finland–Korea Industry Project · 40%"
+      - "Project 4: Personal Interdisciplinary Map · 10%"
+      - "Attendance & Class Preparation · 10%"
+      - "Participation & Attitude · 5%"
+      - "Total · 100%"
 project:
-  label: "Three connected projects"
-  title: "Learning across cases, strategy, and personal direction"
-  description: "The semester moves from individual case research to a collaborative marketing challenge and concludes with an individual reflection. Together, the projects connect design lenses, social innovation, strategic thinking, and each student's developing interests."
-  question: "How can interdisciplinary design thinking connect culture, social impact, markets, and personal direction?"
+  label: "Four connected projects"
+  title: "Building interdisciplinary thinking through four connected experiences"
+  description: "The four projects form a cumulative learning sequence. Students first use D:Branch to practice seeing design cases from multiple perspectives, then apply those perspectives to a critical analysis of a real pop-up store. They extend this ability through a multidisciplinary industry collaboration with Studio Mikko Laakkonen and finally translate their accumulated learning into a personal interdisciplinary map."
+  question: "How can repeated practice in seeing, analyzing, integrating, and reflecting develop an interdisciplinary way of thinking?"
   items:
-    - title: "Design × Social Impact: A Casebook"
-      unit: "Project 1 · Individual · 30%"
-      description: "Research real cases that connect design and social innovation. Weekly articles examine art, graphics, products, spaces, interactions, and services through a clear Problem–Solution structure; the strongest work is refined into a collective class casebook."
-      deliverables: ["Weekly 2–3 page case-study articles", "Revised and designed casebook contribution", "Short case-sharing presentations"]
-      evaluation: "Relevance 20 · Depth of analysis 40 · Social innovation value 20 · Presentation 20"
-    - title: "K-Food, Beyond Taste: Global Marketing Challenge"
-      unit: "Project 2 · Team · 30%"
-      description: "Select a K-Food brand and develop a culturally engaging, feasible marketing strategy for global tourists or MZ consumers using user-, customer-, and strategy-centered design thinking."
-      deliverables: ["Brand, competitor, and customer-insight analysis", "Problem definition, social message, and campaign strategy", "Exhibition-booth mock-up and A2 poster", "15-minute presentation and presentation PDF"]
-      evaluation: "Design-thinking rationale 40 · Creativity 20 · Social impact 20 · Presentation 20"
+    - title: "Critical Design Thinking with D:Branch"
+      unit: "Project 1 · Individual · 20%"
+      description: "Use D:Branch, a design-analysis tool developed by the instructor, to examine design cases through multiple art-to-design lenses. Repeated case analysis builds the ability to notice different dimensions of design and support judgments with clear reasoning."
+      deliverables: ["Six design-lens exercises", "D:Branch case-analysis records", "Evidence-based good/bad design judgments", "Short discussion contributions"]
+      evaluation: "Perspective diversity · Quality of observation · Evidence and reasoning · Development across cases"
+    - title: "Pop-up Store Critical Design Analysis"
+      unit: "Project 2 · Individual · 15%"
+      description: "Apply the analytical perspectives developed in Project 1 to a real pop-up store. Examine how art, graphic, product, interaction, and service-design elements work together and explain what succeeds, what does not, and why."
+      deliverables: ["Pop-up store field visit", "Visual and observational documentation", "Integrated analysis using the CDM design lenses", "Midterm critical-analysis report"]
+      evaluation: "Application of Project 1 learning · Critical depth · Evidence · Integrated interpretation · Communication"
+    - title: "Studio Mikko Laakkonen: Korea Launch Strategy"
+      unit: "Project 3 · Team · 40%"
+      description: "Work with Finnish furniture designer Studio Mikko Laakkonen on an industry-like project. Research the Korean market and propose a culturally informed marketing strategy that the company could consider when launching in Korea."
+      deliverables: ["Korean market and user research", "User insight and opportunity definition", "Brand positioning and launch strategy", "Final strategy presentation and report"]
+      evaluation: "Research quality · Interdisciplinary rationale · Strategic relevance · Feasibility · Presentation"
     - title: "Personal Interdisciplinary Map"
-      unit: "Project 3 · Individual · 15%"
-      description: "Map your academic and career interests through an interdisciplinary design perspective, then explain the relationships among selected fields through a representative case."
-      deliverables: ["Interdisciplinary relationship diagram", "Written explanation of interests and direction", "Representative case and final reflection"]
-      evaluation: "Clarity 30 · Design-thinking rationale 30 · Case relevance 25 · Writing and presentation 15"
+      unit: "Project 4 · Individual · 10%"
+      description: "Reflect on the experiences and learning accumulated through the first three projects to visualize your own interdisciplinary perspective. Map the fields, questions, methods, and future directions that you want to connect."
+      deliverables: ["Personal interdisciplinary map", "Written explanation of key relationships", "Reflection on learning and future direction"]
+      evaluation: "Clarity · Depth of reflection · Meaningful connections · Communication"
 
 roadmap:
-  - { phase: "01", weeks: "Weeks 1–3", title: "Establish foundations", description: "Introduce CDM, examine art in relation to culture and business, and begin the social-impact casebook.", activities: "Course orientation · Art and business · Case research" }
-  - { phase: "02", weeks: "Weeks 4–7", title: "Use design lenses", description: "Study graphics, products, spaces, interactions, and services as distinct but connected ways of framing design.", activities: "Design Lens series · Weekly cases · Peer sharing" }
-  - { phase: "03", weeks: "Week 8", title: "Synthesize the casebook", description: "Select, revise, and organize case research into a coherent midterm casebook contribution.", activities: "Editing · Visual organization · Midterm submission" }
-  - { phase: "04", weeks: "Weeks 9–13", title: "Apply design thinking", description: "Move through user-, customer-, and strategy-centered approaches while developing the K-Food marketing challenge.", activities: "Design thinking · Strategy development · Consultation" }
-  - { phase: "05", weeks: "Weeks 14–15", title: "Present and reflect", description: "Present the team proposal, connect design research to scientific thinking, and articulate a personal interdisciplinary direction.", activities: "Final presentation · Design research · Personal map" }
+  - { phase: "Stage 1: Learn to See", weeks: "Weeks 2–7", title: "Project 1. Design Case Analysis with D:Branch", description: "Learn to analyze a single design from multiple perspectives and support observations with clear reasoning." }
+  - { phase: "Stage 2: Apply the Lenses", weeks: "Week 8", title: "Project 2. Pop-up Store Design Critique", description: "Apply multiple design lenses in a real design context and critically evaluate what works, what does not, and why." }
+  - { phase: "Stage 3: Integrate and Create", weeks: "Weeks 9–15", title: "Project 3. Finland–Korea Industry Project", description: "Integrate culture, design, marketing, and strategy to address a real industry challenge." }
+  - { phase: "Stage 4: Reflect and Position", weeks: "Weeks 15–16", title: "Project 4. Personal Interdisciplinary Map", description: "Use the project experiences to clarify a personal academic and professional direction." }
+
+schedule_stage_labels:
+  "Foundations": { stage: "Course Foundation", weeks: "Week 1", project: "Orientation" }
+  "Project 1 · D:Branch": { stage: "Stage 1: Learn to See", weeks: "Weeks 2–7", project: "Project 1: Critical Design Thinking with D:Branch", anchor: "stage-1-learn-to-see", project_anchor: "project-1" }
+  "Project 2 · Pop-up Store Analysis": { stage: "Stage 2: Apply the Lenses", weeks: "Week 8", project: "Project 2: Pop-up Store Design Critique", anchor: "stage-2-apply-the-lenses", project_anchor: "project-2" }
+  "Project 3 · Industry Project": { stage: "Stage 3: Integrate and Create", weeks: "Weeks 9–15", project: "Project 3: Finland–Korea Industry Project", anchor: "stage-3-integrate-and-create", project_anchor: "project-3" }
+  "Project 4 · Reflection": { stage: "Stage 4: Reflect and Position", weeks: "Weeks 15–16", project: "Project 4: Personal Interdisciplinary Map", anchor: "stage-4-reflect-and-position", project_anchor: "project-4" }
 
 weekly_schedule:
   - week: "01"
@@ -71,129 +127,138 @@ weekly_schedule:
     iso_date: "2026-09-01"
     phase: "Foundations"
     lecture: "Course Introduction"
-    before_class: [{ type: "Preparation", task: "Review the course hub and bring one example that connects culture, design, and management." }]
-    in_class: ["Course goals, structure, and assessment", "Introduction to the three projects", "Group formation and interest mapping"]
-    after_class: [{ type: "Project 1", task: "Set up the casebook format and identify possible social-impact cases." }]
+    before_class: [{ type: "Preparation", task: "Review the course hub before the first class." }]
+    in_class: ["Course introduction", "Four-project overview", "Group formation"]
+    after_class: [{ type: "FC Lecture", task: "Watch ‘Art, Not Design.’", due: "Sep. 08" }]
   - week: "02"
     date: "Sep. 08"
     iso_date: "2026-09-08"
-    phase: "Foundations"
-    lecture: "Art, Not Design"
-    before_class: [{ type: "FC Lecture", task: "Watch the lecture and note how art frames meaning, expression, and social questions." }]
-    in_class: ["Lecture discussion and concept check", "Case analysis: art and social impact", "Problem–Solution writing workshop"]
-    after_class: [{ type: "Casebook", task: "Write a 2–3 page case article connecting art and social innovation." }]
+    phase: "Project 1 · D:Branch"
+    lecture: "CDM Design Lens #1: Art"
+    before_class: [{ type: "FC Lecture", task: "Art, Not Design" }]
+    in_class: ["Short lecture", "Group discussion"]
+    after_class: [{ type: "FC Lecture", task: "Watch ‘Art + Business.’", due: "Sep. 15" }, { type: "Deliverable 1", task: "Complete the Art design-lens exercise.", due: "Sep. 15" }]
   - week: "03"
     date: "Sep. 15"
     iso_date: "2026-09-15"
-    phase: "Foundations"
-    lecture: "Art + Business"
-    before_class: [{ type: "FC Lecture", task: "Watch the lecture and identify how art creates cultural and market value." }]
-    in_class: ["Selected case sharing", "Art-marketing and value-creation discussion", "Casebook feedback"]
-    after_class: [{ type: "Casebook", task: "Research and write the next social-impact case article." }]
+    phase: "Project 1 · D:Branch"
+    lecture: "CDM Design Lens #2: Art + Business"
+    before_class: [{ type: "FC Lecture", task: "Art + Business" }]
+    in_class: ["Short lecture", "Group discussion using D:Branch"]
+    after_class: [{ type: "FC Lecture", task: "Watch ‘Graphic Design Elements.’", due: "Sep. 22" }, { type: "Deliverable 2", task: "Complete the Art + Business design-lens exercise.", due: "Sep. 22" }]
   - week: "04"
     date: "Sep. 22"
     iso_date: "2026-09-22"
-    phase: "Design Lens"
-    lecture: "Design, Not Art: Graphics"
-    before_class: [{ type: "FC Lecture", task: "Watch the Design Lens lecture on graphic communication." }]
-    in_class: ["Art–design comparison", "Graphic-design case critique", "Best-case sharing"]
-    after_class: [{ type: "Casebook", task: "Analyze a graphic-design case with measurable or observable social value." }]
+    phase: "Project 1 · D:Branch"
+    lecture: "CDM Design Lens #3: Graphic Design"
+    before_class: [{ type: "FC Lecture", task: "Graphic Design Elements" }]
+    in_class: ["Short lecture", "Group discussion using D:Branch"]
+    after_class: [{ type: "FC Lecture", task: "Watch ‘Product Design Elements.’", due: "Sep. 29" }, { type: "Deliverable 3", task: "Complete the Graphic Design lens exercise.", due: "Sep. 29" }]
   - week: "05"
     date: "Sep. 29"
     iso_date: "2026-09-29"
-    phase: "Design Lens"
-    lecture: "Products and Spaces"
-    before_class: [{ type: "FC Lecture", task: "Watch the Design Lens lecture on products and spatial experience." }]
-    in_class: ["Product and space case comparison", "Users, context, and constraints", "Casebook peer review"]
-    after_class: [{ type: "Casebook", task: "Write a product- or space-design social-impact case." }]
+    phase: "Project 1 · D:Branch"
+    lecture: "CDM Design Lens #4: Product Design"
+    before_class: [{ type: "FC Lecture", task: "Product Design Elements" }]
+    in_class: ["Short lecture", "Group discussion using D:Branch"]
+    after_class: [{ type: "FC Lecture", task: "Watch ‘Interaction Design Elements.’", due: "Oct. 06" }, { type: "Deliverable 4", task: "Complete the Product Design lens exercise.", due: "Oct. 06" }]
   - week: "06"
     date: "Oct. 06"
     iso_date: "2026-10-06"
-    phase: "Design Lens"
-    lecture: "Interactions"
-    before_class: [{ type: "FC Lecture", task: "Watch the Design Lens lecture on interaction and user experience." }]
-    in_class: ["Interaction-design concepts", "Behavior and feedback analysis", "Case discussion"]
-    after_class: [{ type: "Casebook", task: "Write an interaction-design social-impact case." }]
+    phase: "Project 1 · D:Branch"
+    lecture: "CDM Design Lens #5: Interaction Design"
+    before_class: [{ type: "FC Lecture", task: "Interaction Design Elements" }]
+    in_class: ["Short lecture", "Group discussion using D:Branch"]
+    after_class: [{ type: "FC Lecture", task: "Watch ‘Service Design Elements.’", due: "Oct. 13" }, { type: "Deliverable 5", task: "Complete the Interaction Design lens exercise.", due: "Oct. 13" }]
   - week: "07"
     date: "Oct. 13"
     iso_date: "2026-10-13"
-    phase: "Design Lens"
-    lecture: "Services"
-    before_class: [{ type: "FC Lecture", task: "Watch the Design Lens lecture on services and systems." }]
-    in_class: ["Service-system mapping", "Stakeholder and touchpoint analysis", "Best-case sharing"]
-    after_class: [{ type: "Casebook", task: "Complete the final weekly case and select work to refine for the casebook." }]
+    phase: "Project 1 · D:Branch"
+    lecture: "CDM Design Lens #6: Service Design"
+    before_class: [{ type: "FC Lecture", task: "Service Design Elements" }]
+    in_class: ["Short lecture", "Group discussion using D:Branch", "Project 1 synthesis"]
+    after_class: [{ type: "Deliverable 6", task: "Complete the Service Design lens exercise.", due: "Oct. 20" }, { type: "Project 2", task: "Visit a pop-up store to prepare the critical design analysis report for Project 2.", due: "Oct. 20" }]
   - week: "08"
     date: "Oct. 20"
     iso_date: "2026-10-20"
-    phase: "Synthesis"
-    lecture: "Midterm Casebook Submission"
-    before_class: [{ type: "Preparation", task: "Revise selected articles for analytical depth, clarity, and visual consistency." }]
-    in_class: ["Casebook editorial review", "Cross-category synthesis", "Midterm submission check"]
-    after_class: [{ type: "Project 1", task: "Submit the polished individual casebook contribution." }]
+    phase: "Project 2 · Pop-up Store Analysis"
+    lecture: "Midterm Report Submission (Online Submission)"
+    before_class: [{ type: "Project 2", task: "Complete the final pop-up store analysis report." }]
+    in_class: ["No offline lecture"]
+    after_class: [{ type: "Deliverable 7", task: "Submit the Pop-up Store Design Critique (Midterm Report) online.", due: "Oct. 20" }]
   - week: "09"
     date: "Oct. 27"
     iso_date: "2026-10-27"
-    phase: "Design Thinking"
-    lecture: "Design as User-Centered Design Thinking"
-    before_class: [{ type: "FC Lecture", task: "Watch the lecture on users, needs, contexts, and evidence." }]
-    in_class: ["User-centered case analysis", "K-Food challenge introduction", "Target-user framing"]
-    after_class: [{ type: "Project 2", task: "Select a K-Food brand and prepare initial user and context research." }]
+    phase: "Project 3 · Industry Project"
+    lecture: "Special Lecture: Studio Mikko Laakkonen"
+    before_class: [{ type: "Preparation", task: "Review Studio Mikko Laakkonen and the Korean furniture market." }]
+    in_class: ["Special lecture", "Project 3 description", "New group formation"]
+    after_class: [{ type: "FC Lecture", task: "Watch ‘User-centered Design’ and ‘User Research Methods.’", due: "Nov. 03" }, { type: "Deliverable 8", task: "Prepare a user-research plan.", due: "Nov. 03" }]
   - week: "10"
     date: "Nov. 03"
     iso_date: "2026-11-03"
-    phase: "Design Thinking"
-    lecture: "Design Management as Customer-Centered Thinking"
-    before_class: [{ type: "FC Lecture", task: "Watch the lecture on customer insight, experience, and value." }]
-    in_class: ["Brand and competitor analysis", "Customer journey and insight workshop", "Problem definition"]
-    after_class: [{ type: "Project 2", task: "Develop the customer insight and refined problem statement." }]
+    phase: "Project 3 · Industry Project"
+    lecture: "CDMs’ Design Thinking Series #1: Design as User-Centered Thinking"
+    before_class: [{ type: "FC Lecture", task: "User-centered Design and User Research Methods" }]
+    in_class: ["Short lecture", "Research-planning discussion", "Feedback"]
+    after_class: [{ type: "Deliverable 9", task: "Conduct user research interviews.", due: "Nov. 10" }]
   - week: "11"
     date: "Nov. 10"
     iso_date: "2026-11-10"
-    phase: "Design Thinking"
-    lecture: "Design Management as Strategy-Centered Thinking"
-    before_class: [{ type: "FC Lecture", task: "Watch the lecture on strategic fit, differentiation, and implementation." }]
-    in_class: ["Strategy and campaign concept development", "Social-message critique", "Feasibility check"]
-    after_class: [{ type: "Project 2", task: "Draft the marketing strategy, campaign, and experience concept." }]
+    phase: "Project 3 · Industry Project"
+    lecture: "CDMs’ Design Thinking Series #1: User Insight + Ideation"
+    before_class: [{ type: "Research", task: "Bring interview findings and initial insights." }]
+    in_class: ["Short lecture", "Group discussion", "Brainstorming"]
+    after_class: [{ type: "FC Lecture", task: "Watch ‘Customer-centered Thinking.’", due: "Nov. 17" }, { type: "Deliverable 10", task: "Synthesize user insights and opportunity areas.", due: "Nov. 17" }]
   - week: "12"
     date: "Nov. 17"
     iso_date: "2026-11-17"
-    phase: "Design Thinking"
-    lecture: "Group Project Consultation"
-    before_class: [{ type: "Preparation", task: "Bring the complete research-to-strategy logic and open questions." }]
-    in_class: ["Team consultation", "Booth and poster concept review", "Presentation-story feedback"]
-    after_class: [{ type: "Project 2", task: "Revise the strategy and begin the booth mock-up and A2 poster." }]
+    phase: "Project 3 · Industry Project"
+    lecture: "CDMs’ Design Thinking Series #2: Design Marketing as Customer-Centered Thinking"
+    before_class: [{ type: "FC Lecture", task: "Customer-centered Thinking" }]
+    in_class: ["Short lecture", "Group discussion", "Brainstorming"]
+    after_class: [{ type: "FC Lecture", task: "Watch ‘Strategic Design Thinking.’", due: "Nov. 24" }, { type: "Project 3", task: "Develop customer-centered marketing concepts.", due: "Nov. 24" }]
   - week: "13"
     date: "Nov. 24"
     iso_date: "2026-11-24"
-    phase: "Design Thinking"
-    lecture: "Special Lecture and Project Studio"
-    before_class: [{ type: "Preparation", task: "Prepare a working prototype, poster draft, and presentation outline." }]
-    in_class: ["Special lecture topic to be confirmed", "Group consultation", "Prototype and communication critique"]
-    after_class: [{ type: "Project 2", task: "Complete the final presentation, booth mock-up, poster, and PDF." }]
+    phase: "Project 3 · Industry Project"
+    lecture: "CDMs’ Design Thinking Series #3: Design Management as Strategic-Centered Thinking"
+    before_class: [{ type: "FC Lecture", task: "Strategic Design Thinking" }]
+    in_class: ["Short lecture", "Group discussion", "Strategy development"]
+    after_class: [{ type: "Project 3", task: "Develop the final Korea-launch strategy and presentation.", due: "Dec. 01" }]
   - week: "14"
     date: "Dec. 01"
     iso_date: "2026-12-01"
-    phase: "Presentation"
-    lecture: "K-Food Global Marketing Challenge: Final Presentation"
-    before_class: [{ type: "Preparation", task: "Rehearse the 15-minute team presentation and verify all deliverables." }]
-    in_class: ["Final team presentations", "Questions and critique", "Cross-team reflection"]
-    after_class: [{ type: "Project 3", task: "Begin the Personal Interdisciplinary Map and select a representative case." }]
+    phase: "Project 3 · Industry Project"
+    lecture: "Group Consultation (Optional)"
+    before_class: [{ type: "Project 3", task: "Bring the complete research-to-strategy proposal and open questions." }]
+    in_class: ["Group feedback"]
+    after_class: [{ type: "Project 3", task: "Finalize and rehearse the strategy presentation.", due: "Dec. 08" }]
   - week: "15"
     date: "Dec. 08"
     iso_date: "2026-12-08"
-    phase: "Reflection"
-    lecture: "Design Research as Scientific Thinking"
-    before_class: [{ type: "FC Lecture", task: "Watch the lecture on design questions, evidence, comparison, and reflection." }]
-    in_class: ["Design research and scientific thinking", "Personal interdisciplinary mapping workshop", "Course synthesis and reflection"]
-    after_class: [{ type: "Project 3", task: "Complete the Personal Interdisciplinary Map and final report; submission date to be confirmed." }]
+    phase: "Project 3 · Industry Project"
+    lecture: "Final Project Presentation"
+    before_class: [{ type: "Project 3", task: "Rehearse the final presentation and verify all deliverables." }]
+    in_class: ["Final strategy presentations", "Co-evaluation with Mikko Laakkonen", "Questions and critique"]
+    after_class: [{ type: "FC Lecture", task: "Watch ‘Personal Interdisciplinary Mapping.’", due: "Dec. 14" }, { type: "Deliverable 11", task: "Submit the Industry Project Final Presentation deck.", due: "Dec. 08" }, { type: "Project 4", task: "Complete the Personal Interdisciplinary Map and final report.", due: "Dec. 14" }]
+  - week: "16"
+    date: "Dec. 14"
+    iso_date: "2026-12-14"
+    phase: "Project 4 · Reflection"
+    lecture: "Final Report Submission (Online Submission)"
+    before_class: [{ type: "Project 4", task: "Complete the Personal Interdisciplinary Map and final report." }]
+    in_class: ["No offline lecture"]
+    after_class: [{ type: "Deliverable 12", task: "Submit the Personal Interdisciplinary Map (Final Report) online.", due: "Dec. 14" }]
 
 assessment:
-  - { label: "Attendance", value: "10%", note: "Presence and punctuality" }
-  - { label: "FC video completion", value: "10%", note: "Required flipped-classroom preparation" }
-  - { label: "Effort & engagement", value: "5%", note: "Discussion, activities, feedback, and contribution" }
-  - { label: "Project 1 · Casebook", value: "30%", note: "Individual social-impact case research and compilation" }
-  - { label: "Project 2 · K-Food", value: "30%", note: "Team global marketing challenge" }
-  - { label: "Project 3 · Personal map", value: "15%", note: "Individual interdisciplinary map and final reflection" }
+  - { label: "Project 1 · Critical Design Thinking with D:Branch", value: "20%", note: "Repeated case analysis using multiple CDM design lenses" }
+  - { label: "Project 2 · Pop-up Store Design Critique", value: "15%", note: "Integrated field-based application of Project 1 learning" }
+  - { label: "Project 3 · Finland–Korea Industry Project", value: "40%", note: "Korea-launch strategy developed with Studio Mikko Laakkonen" }
+  - { label: "Project 4 · Personal Interdisciplinary Map", value: "10%", note: "Individual interdisciplinary map and final reflection" }
+  - { label: "Attendance & Class Preparation", value: "10%", note: "Attendance and required preparation before class" }
+  - { label: "Participation & Attitude", value: "5%", note: "Active, respectful, and constructive engagement" }
+  - { label: "Total", value: "100%", note: "Deliverable-level criteria will be announced with each project" }
 
 policies:
   - { title: "Attendance", text: "Attendance is required. More than one-third of total class meetings missed results in an F; arriving 30 minutes or more late counts as an absence. Each unexcused absence deducts 2 points." }

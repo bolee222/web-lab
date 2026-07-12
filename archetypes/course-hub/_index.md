@@ -10,11 +10,23 @@ draft: true
 course_code: "COURSE-CODE"
 semester: "Semester Year"
 semester_slug: "SEMESTER-SLUG"
+hero_meta: "Institution Semester | Instructor"
 status: "Upcoming"
 course_level: "Undergraduate"
 course_type: "Undergraduate Course"
 lede: "A concise description of this semester's course focus."
 keywords: []
+
+semester_focus:
+  label: "Semester Focus"
+  title: "This Semester's Theme"
+  text: "Describe the distinctive project, collaboration, partner, location, or teaching format for this offering."
+
+flipped_learning:
+  label: "Course Format"
+  title: "Flipped Learning"
+  text: "Describe the flipped-classroom designation."
+  detail: "Describe the weekly balance of advance preparation and in-class collaborative learning."
 
 course_facts:
   - label: "Class time"
@@ -33,6 +45,7 @@ notice:
 
 overview: "Course overview."
 learning_outcomes: []
+prerequisites: "There are no formal course prerequisites."
 
 project:
   label: "Semester project"

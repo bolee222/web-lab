@@ -6,5 +6,7 @@ layout: "course-hub"
 course_tab: "schedule"
 aliases:
   - "/teaching/CDM1001/2026-fall/schedule/"
+  - "/courses/CDM1001/2026-fall/roadmap/"
+  - "/teaching/CDM1001/2026-fall/roadmap/"
 draft: false
 ---
