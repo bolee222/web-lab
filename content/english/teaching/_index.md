@@ -1,5 +1,8 @@
 ---
 title: "Courses"
+url: "/courses/"
+aliases:
+  - "/teaching/"
 description:
 bg_image: "images/headerbg/09.png"
 draft: false
@@ -64,7 +67,7 @@ undergraduate_courses:
           - "Design Management"
           - "Project-based Learning"
         final_deliverable: "Culture and design management proposal"
-        url: "/teaching/CDM1001/2026-fall/"
+        url: "/courses/CDM1001/2026-fall/"
       - semester: "Spring 2026"
         status: "On-going"
         project_focus: "Local Rebranding Studio"
@@ -75,7 +78,7 @@ undergraduate_courses:
           - "Brand Strategy"
           - "Cultural Resource"
         final_deliverable: "Local rebranding proposal and final presentation"
-        url: "/teaching/CDM1001/2026-spring/"
+        url: "/courses/CDM1001/2026-spring/"
       - semester: "Fall 2025"
         status: "Completed"
         project_focus: "Culture and Design Management Project"
@@ -84,7 +87,7 @@ undergraduate_courses:
           - "Design Strategy"
           - "Field Research"
         final_deliverable: "Project proposal and presentation"
-        url: "/teaching/CDM1001/2025-fall/"
+        url: "/courses/CDM1001/2025-fall/"
       - semester: "Spring 2025"
         status: "Completed"
         project_focus: "Cultural Consumption Mapping"
@@ -93,7 +96,7 @@ undergraduate_courses:
           - "Urban Experience"
           - "Visual Analysis"
         final_deliverable: "Cultural mapping report"
-        url: "/teaching/CDM1001/2025-spring/"
+        url: "/courses/CDM1001/2025-spring/"
       - semester: "Fall 2024"
         status: "Archived"
         project_focus: "Culture and Design Management Project"
@@ -102,7 +105,7 @@ undergraduate_courses:
           - "Local Context"
           - "Design Proposal"
         final_deliverable: "Project proposal and presentation"
-        url: "/teaching/CDM1001/2024-fall/"
+        url: "/courses/CDM1001/2024-fall/"
       - semester: "Spring 2024"
         status: "Archived"
         project_focus: "Regional Cultural Identity"
@@ -111,7 +114,7 @@ undergraduate_courses:
           - "Cultural Heritage"
           - "Design Proposal"
         final_deliverable: "Regional identity proposal"
-        url: "/teaching/CDM1001/2024-spring/"
+        url: "/courses/CDM1001/2024-spring/"
 
   - code: "CDM1011"
     title: "Design and City in Culture"

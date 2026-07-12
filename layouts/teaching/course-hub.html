@@ -2,19 +2,19 @@
 {{ $tab := .Params.course_tab | default "overview" }}
 {{ $course := . }}
 {{ if ne $tab "overview" }}{{ $course = .Parent }}{{ end }}
-{{ $base := printf "/teaching/%s/%s/" $course.Params.course_code $course.Params.semester_slug }}
+{{ $base := printf "/courses/%s/%s/" $course.Params.course_code $course.Params.semester_slug }}
 
 <main class="course-hub">
   <header class="course-hub-hero">
     <div class="container">
-      <a class="course-hub-back" href="{{ `/teaching/` | relURL }}"><span aria-hidden="true">←</span> All courses</a>
+      <a class="course-hub-back" href="{{ `/courses/` | relURL }}"><span aria-hidden="true">←</span> All courses</a>
       <div class="course-hub-identity">
         <div class="course-hub-code-row">
           <span class="course-hub-code">{{ $course.Params.course_code }}</span>
           <span class="course-hub-status course-hub-status--{{ $course.Params.status | urlize }}">{{ $course.Params.status }}</span>
         </div>
         <h1>{{ $course.Title }}</h1>
-        <p class="course-hub-semester">{{ $course.Params.semester }} <span aria-hidden="true">·</span> {{ $course.Params.course_type }}</p>
+        <p class="course-hub-semester">{{ $course.Params.semester }} <span aria-hidden="true">·</span> {{ $course.Params.course_level }}</p>
         <p class="course-hub-lede">{{ $course.Params.lede }}</p>
         {{ with $course.Params.keywords }}
         <div class="course-hub-tags" aria-label="Course keywords">
@@ -80,7 +80,23 @@
           <h2 id="project-title">{{ .title }}</h2>
           <p class="course-hub-intro">{{ .description }}</p>
           <blockquote><span>Guiding question</span>{{ .question }}</blockquote>
+          {{ with .items }}
+          <div class="course-hub-project-list">
+            {{ range . }}
+            <article>
+              <div class="course-hub-project-meta">{{ .unit }}</div>
+              <h3>{{ .title }}</h3>
+              <p>{{ .description }}</p>
+              <div class="course-hub-project-details">
+                <div><h4>Deliverables</h4><ul>{{ range .deliverables }}<li>{{ . }}</li>{{ end }}</ul></div>
+                <div><h4>Evaluation</h4><p>{{ .evaluation }}</p></div>
+              </div>
+            </article>
+            {{ end }}
+          </div>
+          {{ else }}
           <div class="course-hub-deliverables"><h3>Core deliverables</h3><ol>{{ range .deliverables }}<li>{{ . }}</li>{{ end }}</ol></div>
+          {{ end }}
         </div>
       </section>
       {{ end }}
@@ -150,7 +166,7 @@
         <div class="course-hub-section-content">
           <h2 id="resources-title">Course materials</h2>
           <div class="course-hub-resources">{{ range $course.Params.resources }}<div><span>{{ .label }}</span><small>{{ .status }}</small></div>{{ end }}</div>
-          <a class="course-hub-footer-link" href="{{ `/teaching/` | relURL }}"><span aria-hidden="true">←</span> Return to all courses</a>
+          <a class="course-hub-footer-link" href="{{ `/courses/` | relURL }}"><span aria-hidden="true">←</span> Return to all courses</a>
         </div>
       </section>
     {{ end }}
@@ -167,6 +183,7 @@
   var schedule;
   try { schedule = JSON.parse(source.textContent); } catch (error) { return; }
   if (!schedule || !schedule.length) return;
+  var courseSemester = {{ jsonify $course.Params.semester | safeJS }};
   function localDate(value) { var parts = value.split('-'); return new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2])); }
   function tasks(items) { return (items || []).map(function (item) { return item.task || item; }).join(' · '); }
   var now = new Date();
@@ -179,8 +196,8 @@
   var text = document.getElementById('course-status-text');
   var details = document.getElementById('course-status-details');
   var link = document.getElementById('course-status-link');
-  if (today < firstClass) { eyebrow.textContent = 'Before the semester'; title.textContent = 'The course begins on Sep. 01.'; text.textContent = 'Review the course overview and weekly schedule. Confirmed readings and submission links will be added before each class.'; return; }
-  if (today >= afterFinal) { eyebrow.textContent = 'Course completed'; title.textContent = 'Fall 2026 course archive'; text.textContent = 'The semester concluded on Dec. 08. Course materials remain available as an archive.'; return; }
+  if (today < firstClass) { eyebrow.textContent = 'Before the semester'; title.textContent = 'The course begins on ' + schedule[0].date + '.'; text.textContent = 'Review the course overview and weekly schedule. Confirmed readings and submission links will be added before each class.'; return; }
+  if (today >= afterFinal) { eyebrow.textContent = 'Course completed'; title.textContent = courseSemester + ' course archive'; text.textContent = 'The semester concluded on ' + schedule[schedule.length - 1].date + '. Course materials remain available as an archive.'; return; }
   var currentIndex = 0;
   for (var i = 0; i < schedule.length; i += 1) { if (localDate(schedule[i].iso_date) <= today) currentIndex = i; else break; }
   var current = schedule[currentIndex];

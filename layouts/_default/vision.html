@@ -119,125 +119,54 @@
         {{ with .intro }}<div class="pillar-intro-des">{{ . | markdownify }}</div>{{ end }}
         {{ with .intro_kor }}<div class="pillar-intro-des pillar-intro-des-kor">{{ . | markdownify }}</div>{{ end }}
 
-      <div class="pillar-row-list">
-        {{ $pillar := index .pillar_item 0 }}
-        {{ $vision := $.Params.vision_1 }}
-        {{ if $vision.enable }}
-        <div class="row pillar-detail-row">
-          <div class="col-md-2 col-sm-12">
-            <div class="pillar-card pillar-row-card">
-              {{ with $pillar.pillar_num }}<div class="pillar-num">{{ . | markdownify }}</div>{{ end }}
-              {{ with $pillar.name }}<div class="vision-domain-title">{{ . | markdownify }}</div>{{ end }}
-              {{ with $pillar.content }}<div class="vision-des">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            {{ with $vision.content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-          </div>
-          <div class="col-md-3 col-sm-6">
-            {{ with $vision.content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-          </div>
-          <div class="col-md-2 col-sm-6">
-            {{ with $vision.related_projects }}
-            <div class="pillar-related-projects">
-              <div class="pillar-related-title">Related Projects</div>
-              {{ range . }}
-                <a href="{{ .url | relURL }}">{{ .title | markdownify }}</a>
-              {{ end }}
-            </div>
-            {{ end }}
-          </div>
-        </div>
-        {{ end }}
+      <div class="pillar-card-grid">
+        {{ range $index, $pillar := .pillar_item }}
+          {{ $visionKey := printf "vision_%d" (add $index 1) }}
+          {{ $vision := index $.Params $visionKey }}
+          {{ if $vision.enable }}
+          <div class="pillar-accordion pillar-accordion-{{ add $index 1 }}">
+            <div class="pillar-card pillar-grid-card">
+              <div class="pillar-grid-card-main">
+                {{ with $pillar.pillar_num }}<div class="pillar-num">{{ . | markdownify }}</div>{{ end }}
+                {{ with $pillar.name }}<div class="vision-domain-title">{{ . | markdownify }}</div>{{ end }}
+                {{ with $pillar.content }}<div class="vision-des">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+              </div>
 
-        {{ $pillar := index .pillar_item 1 }}
-        {{ $vision := $.Params.vision_2 }}
-        {{ if $vision.enable }}
-        <div class="row pillar-detail-row">
-          <div class="col-md-2 col-sm-12">
-            <div class="pillar-card pillar-row-card">
-              {{ with $pillar.pillar_num }}<div class="pillar-num">{{ . | markdownify }}</div>{{ end }}
-              {{ with $pillar.name }}<div class="vision-domain-title">{{ . | markdownify }}</div>{{ end }}
-              {{ with $pillar.content }}<div class="vision-des">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            {{ with $vision.content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-          </div>
-          <div class="col-md-3 col-sm-6">
-            {{ with $vision.content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-          </div>
-          <div class="col-md-2 col-sm-6">
-            {{ with $vision.related_projects }}
-            <div class="pillar-related-projects">
-              <div class="pillar-related-title">Related Projects</div>
-              {{ range . }}
-                <a href="{{ .url | relURL }}">{{ .title | markdownify }}</a>
+              {{ with $vision.related_projects }}
+              <div class="pillar-related-projects">
+                <div class="pillar-related-title">Related Projects</div>
+                {{ range . }}
+                  <a href="{{ .url | relURL }}">{{ .title | markdownify }}</a>
+                {{ end }}
+              </div>
               {{ end }}
-            </div>
-            {{ end }}
-          </div>
-        </div>
-        {{ end }}
 
-        {{ $pillar := index .pillar_item 2 }}
-        {{ $vision := $.Params.vision_3 }}
-        {{ if $vision.enable }}
-        <div class="row pillar-detail-row">
-          <div class="col-md-2 col-sm-12">
-            <div class="pillar-card pillar-row-card">
-              {{ with $pillar.pillar_num }}<div class="pillar-num">{{ . | markdownify }}</div>{{ end }}
-              {{ with $pillar.name }}<div class="vision-domain-title">{{ . | markdownify }}</div>{{ end }}
-              {{ with $pillar.content }}<div class="vision-des">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+              <button class="pillar-expand-label" type="button" aria-expanded="false" aria-controls="pillar-description-{{ add $index 1 }}">
+                <span class="pillar-expand-label-closed">View descriptions</span>
+                <span class="pillar-expand-label-open">Close descriptions</span>
+              </button>
             </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            {{ with $vision.content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-          </div>
-          <div class="col-md-3 col-sm-6">
-            {{ with $vision.content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-          </div>
-          <div class="col-md-2 col-sm-6">
-            {{ with $vision.related_projects }}
-            <div class="pillar-related-projects">
-              <div class="pillar-related-title">Related Projects</div>
-              {{ range . }}
-                <a href="{{ .url | relURL }}">{{ .title | markdownify }}</a>
-              {{ end }}
-            </div>
-            {{ end }}
-          </div>
-        </div>
-        {{ end }}
 
-        {{ $pillar := index .pillar_item 3 }}
-        {{ $vision := $.Params.vision_4 }}
-        {{ if $vision.enable }}
-        <div class="row pillar-detail-row pillar-detail-row-last">
-          <div class="col-md-2 col-sm-12">
-            <div class="pillar-card pillar-row-card">
-              {{ with $pillar.pillar_num }}<div class="pillar-num">{{ . | markdownify }}</div>{{ end }}
-              {{ with $pillar.name }}<div class="vision-domain-title">{{ . | markdownify }}</div>{{ end }}
-              {{ with $pillar.content }}<div class="vision-des">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            {{ with $vision.content }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-          </div>
-          <div class="col-md-3 col-sm-6">
-            {{ with $vision.content_kor }}<div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
-          </div>
-          <div class="col-md-2 col-sm-6">
-            {{ with $vision.related_projects }}
-            <div class="pillar-related-projects">
-              <div class="pillar-related-title">Related Projects</div>
-              {{ range . }}
-                <a href="{{ .url | relURL }}">{{ .title | markdownify }}</a>
+            <div class="pillar-expanded-content" id="pillar-description-{{ add $index 1 }}" hidden>
+              <div class="pillar-expanded-heading">
+                {{ with $pillar.pillar_num }}<span>{{ . | markdownify }}</span>{{ end }}
+                {{ with $pillar.name }}<strong>{{ . | markdownify }}</strong>{{ end }}
+              </div>
+              {{ with $vision.content }}
+              <div class="pillar-expanded-language">
+                <div class="pillar-expanded-language-label">English</div>
+                <div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>
+              </div>
+              {{ end }}
+              {{ with $vision.content_kor }}
+              <div class="pillar-expanded-language">
+                <div class="pillar-expanded-language-label">한국어</div>
+                <div class="vision-content">{{ . | $.Page.RenderString (dict "display" "block") }}</div>
+              </div>
               {{ end }}
             </div>
-            {{ end }}
           </div>
-        </div>
+          {{ end }}
         {{ end }}
       </div>
     </div>
@@ -249,35 +178,68 @@
 <script>
   (function () {
     function syncPillarCardHeights() {
-      var rows = document.querySelectorAll('.pillar-detail-row');
-      rows.forEach(function (row) {
-        var card = row.querySelector('.pillar-row-card');
-        var english = row.querySelector('.col-md-3:nth-child(2) .vision-content');
-        var korean = row.querySelector('.col-md-3:nth-child(3) .vision-content');
+      var cards = Array.prototype.slice.call(document.querySelectorAll('.pillar-grid-card'));
+      var mainSections = Array.prototype.slice.call(document.querySelectorAll('.pillar-grid-card-main'));
+      var maxHeight = 0;
+      var maxMainHeight = 0;
 
-        if (!card) return;
+      cards.forEach(function (card) {
         card.style.height = 'auto';
+      });
+      mainSections.forEach(function (section) {
+        section.style.height = 'auto';
+      });
 
-        if (window.innerWidth < 992 || !english || !korean) return;
+      if (window.innerWidth < 600) return;
 
-        var textHeight = Math.max(
-          english.getBoundingClientRect().height,
-          korean.getBoundingClientRect().height
-        );
-        var cardContentHeight = card.scrollHeight;
-        card.style.height = Math.ceil(Math.max(textHeight, cardContentHeight)) + 'px';
+      mainSections.forEach(function (section) {
+        maxMainHeight = Math.max(maxMainHeight, section.scrollHeight);
+      });
+      mainSections.forEach(function (section) {
+        section.style.height = Math.ceil(maxMainHeight) + 'px';
+      });
+
+      cards.forEach(function (card) {
+        maxHeight = Math.max(maxHeight, card.scrollHeight);
+      });
+
+      cards.forEach(function (card) {
+        card.style.height = Math.ceil(maxHeight) + 'px';
       });
     }
 
+    document.querySelectorAll('.pillar-expand-label').forEach(function (button) {
+      button.addEventListener('click', function () {
+        var content = document.getElementById(button.getAttribute('aria-controls'));
+        var item = button.closest('.pillar-accordion');
+        var isOpen = button.getAttribute('aria-expanded') === 'true';
+
+        if (!isOpen) {
+          document.querySelectorAll('.pillar-expand-label[aria-expanded="true"]').forEach(function (openButton) {
+            var openContent = document.getElementById(openButton.getAttribute('aria-controls'));
+            var openItem = openButton.closest('.pillar-accordion');
+
+            openButton.setAttribute('aria-expanded', 'false');
+            openContent.hidden = true;
+            openItem.classList.remove('is-open');
+          });
+        }
+
+        button.setAttribute('aria-expanded', String(!isOpen));
+        content.hidden = isOpen;
+        item.classList.toggle('is-open', !isOpen);
+      });
+    });
+
     var resizeTimer;
-    function scheduleSync() {
+    function schedulePillarCardSync() {
       window.clearTimeout(resizeTimer);
       resizeTimer = window.setTimeout(syncPillarCardHeights, 80);
     }
 
     document.addEventListener('DOMContentLoaded', syncPillarCardHeights);
     window.addEventListener('load', syncPillarCardHeights);
-    window.addEventListener('resize', scheduleSync);
+    window.addEventListener('resize', schedulePillarCardSync);
   })();
 </script>
 {{ with .Params.research_approach }}
@@ -301,11 +263,6 @@
           </div>
           {{ with $item.title }}<div class="vision-approach-title">{{ . | markdownify }}</div>{{ end }}
           {{ with $item.description }}<div class="vision-approach-description">{{ . | markdownify }}</div>{{ end }}
-          {{ with $item.examples }}
-          <ul class="vision-approach-examples">
-            {{ range . }}<li>{{ . | markdownify }}</li>{{ end }}
-          </ul>
-          {{ end }}
           {{ with $item.related_projects }}
           <div class="vision-approach-related">
             <div class="vision-approach-related-title">Related Projects</div>
@@ -332,7 +289,37 @@
 
 <!-- Call to action -->
 {{ if .Params.cta.enable }}
-{{ partial "cta.html" . }}
+{{ with site.GetPage "/" }}
+{{ with .Params.cta }}
+<section class="about section-card call-to-action" id="vision-join">
+  <div class="container cta-custom">
+    <canvas class="orb-canvas"></canvas>
+    <div class="overlay faq-bg">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block">
+            {{ with .title }}<h2>{{ . | markdownify | replaceRE "<strong>" "<b>" | replaceRE "</strong>" "</b>" | safeHTML }}</h2>{{ end }}
+            {{ with .content }}<p>{{ . | markdownify }}</p>{{ end }}
+
+            {{ with .button }}{{ if .enable }}
+            <a class="home-slider-more btn-main btn-learnMore" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
+            {{ end }}{{ end }}
+
+            {{ with .button_joinUs }}{{ if .enable }}
+            <a class="home-slider-more btn-main btn-learnMore" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
+            {{ end }}{{ end }}
+
+            {{ with .button_FAQ }}{{ if .enable }}
+            <a class="home-slider-more btn-main btn-learnMore" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
+            {{ end }}{{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
 {{ end }}
 <!-- /Call to action -->
 

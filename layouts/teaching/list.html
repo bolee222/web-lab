@@ -87,7 +87,8 @@
               {{ $scheduleStart := .schedule_start }}
               {{ $scheduleEnd := .schedule_end }}
               {{ if .url }}
-                {{ with site.GetPage .url }}
+                {{ $contentPath := replace .url "/courses/" "/teaching/" }}
+                {{ with site.GetPage $contentPath }}
                   {{ with .Params.weekly_schedule }}
                     {{ $scheduleStart = (index . 0).iso_date }}
                     {{ $scheduleEnd = (index . (sub (len .) 1)).iso_date }}

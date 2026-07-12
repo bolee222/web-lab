@@ -1,7 +1,8 @@
 ---
 title: "Introduction to Culture and Design Management"
 description: "Interactive course hub for CDM1001 Introduction to Culture and Design Management, Fall 2026."
-url: "/teaching/CDM1001/2026-fall/"
+url: "/courses/CDM1001/2026-fall/"
+aliases: ["/teaching/CDM1001/2026-fall/"]
 layout: "course-hub"
 course_tab: "overview"
 draft: false
@@ -11,366 +12,202 @@ semester: "Fall 2026"
 semester_slug: "2026-fall"
 status: "Upcoming"
 course_type: "Undergraduate · Project-based Lecture"
-project_focus: "Culture and Design Management Project"
-lede: "How can cultural insight become a thoughtful design strategy? This course introduces the relationships among culture, design, and management through observation, discussion, and a semester-long team project."
-keywords:
-  - "Culture"
-  - "Design Management"
-  - "Field Research"
-  - "Strategy"
-  - "Project-based Learning"
+course_level: "Undergraduate"
+project_focus: "Interdisciplinary Design Lens and Design Thinking"
+lede: "This introductory course examines how culture, design, and management intersect—and how interdisciplinary design thinking can create meaningful social and market value."
+keywords: ["Culture", "Design Management", "Social Impact", "Design Thinking", "Interdisciplinary Learning"]
 
 course_facts:
-  - label: "Class time"
-    value: "To be announced"
-  - label: "Location"
-    value: "To be announced"
-  - label: "Instructor"
-    value: "Bokyung Lee"
-  - label: "Language"
-    value: "English"
+  - { label: "Class time", value: "Every Tuesday, 10:00–13:00" }
+  - { label: "Location", value: "VeritasB 416" }
+  - { label: "Instructor", value: "Prof. Bokyung Lee" }
+  - { label: "Language", value: "English" }
 
 notice:
   eyebrow: "Before the semester"
-  title: "The detailed schedule is being prepared."
-  text: "The roadmap below shows the planned learning arc. Confirmed dates, readings, and submission links will be published before the first class."
+  title: "The course begins on Sep. 01."
+  text: "Review the course overview and weekly schedule. Confirmed readings and submission links will be added before each class."
 
-overview: "Culture shapes what people value, how they interpret experiences, and why particular products, services, and places matter. In this course, students learn to read those cultural contexts and translate research findings into coherent design-management proposals. Lectures build a shared vocabulary; workshops and critiques put it into practice."
+overview: "The course builds foundational knowledge across culture, design, and management through lectures, case discussions, group activities, and three connected projects. Students first explore design through art, graphics, products, spaces, interactions, and services; they then apply user-, customer-, and strategy-centered design thinking to social impact, global marketing, and their own academic direction."
 
 learning_outcomes:
-  - title: "Frame"
-    text: "Describe a cultural context and turn observations into a focused design opportunity."
-  - title: "Research"
-    text: "Plan and conduct field research using appropriate qualitative methods."
-  - title: "Synthesize"
-    text: "Identify patterns, tensions, and stakeholder needs across research materials."
-  - title: "Propose"
-    text: "Develop a culturally grounded design-management strategy and communicate it clearly."
+  - { title: "Understand", text: "Build a foundational vocabulary for the backgrounds, methods, and skills of Culture and Design Management." }
+  - { title: "Connect", text: "Explain relationships among design, UX, technology, culture, art, management, and marketing." }
+  - { title: "Apply", text: "Use interdisciplinary design lenses and design-thinking approaches to analyze cases and develop proposals." }
+  - { title: "Position", text: "Reflect on possible academic and career paths and articulate a personal interdisciplinary direction." }
 
 project:
-  label: "Semester project"
-  title: "From Cultural Insight to Design Strategy"
-  description: "Student teams select a cultural context, investigate how value is currently created and experienced, and develop a design-management proposal grounded in evidence. The project moves from field observation to synthesis, concept development, prototyping, and a final strategic narrative."
-  question: "How might we create meaningful value without flattening the culture we are designing with?"
-  deliverables:
-    - "Research plan and field notes"
-    - "Cultural insight map"
-    - "Concept and strategy prototype"
-    - "Final proposal and presentation"
+  label: "Three connected projects"
+  title: "Learning across cases, strategy, and personal direction"
+  description: "The semester moves from individual case research to a collaborative marketing challenge and concludes with an individual reflection. Together, the projects connect design lenses, social innovation, strategic thinking, and each student's developing interests."
+  question: "How can interdisciplinary design thinking connect culture, social impact, markets, and personal direction?"
+  items:
+    - title: "Design × Social Impact: A Casebook"
+      unit: "Project 1 · Individual · 30%"
+      description: "Research real cases that connect design and social innovation. Weekly articles examine art, graphics, products, spaces, interactions, and services through a clear Problem–Solution structure; the strongest work is refined into a collective class casebook."
+      deliverables: ["Weekly 2–3 page case-study articles", "Revised and designed casebook contribution", "Short case-sharing presentations"]
+      evaluation: "Relevance 20 · Depth of analysis 40 · Social innovation value 20 · Presentation 20"
+    - title: "K-Food, Beyond Taste: Global Marketing Challenge"
+      unit: "Project 2 · Team · 30%"
+      description: "Select a K-Food brand and develop a culturally engaging, feasible marketing strategy for global tourists or MZ consumers using user-, customer-, and strategy-centered design thinking."
+      deliverables: ["Brand, competitor, and customer-insight analysis", "Problem definition, social message, and campaign strategy", "Exhibition-booth mock-up and A2 poster", "15-minute presentation and presentation PDF"]
+      evaluation: "Design-thinking rationale 40 · Creativity 20 · Social impact 20 · Presentation 20"
+    - title: "Personal Interdisciplinary Map"
+      unit: "Project 3 · Individual · 15%"
+      description: "Map your academic and career interests through an interdisciplinary design perspective, then explain the relationships among selected fields through a representative case."
+      deliverables: ["Interdisciplinary relationship diagram", "Written explanation of interests and direction", "Representative case and final reflection"]
+      evaluation: "Clarity 30 · Design-thinking rationale 30 · Case relevance 25 · Writing and presentation 15"
 
 roadmap:
-  - phase: "01"
-    weeks: "Weeks 1–3"
-    title: "Orient"
-    description: "Build a shared vocabulary around culture, design, value, and management; examine cases and form project teams."
-    activities: "Lectures · Case discussion · Team formation"
-  - phase: "02"
-    weeks: "Weeks 4–6"
-    title: "Observe"
-    description: "Define a context, plan fieldwork, and gather situated evidence through observation and conversation."
-    activities: "Research planning · Fieldwork · Documentation"
-  - phase: "03"
-    weeks: "Weeks 7–9"
-    title: "Interpret"
-    description: "Organize research materials, surface patterns and tensions, and articulate a design opportunity."
-    activities: "Synthesis · Insight mapping · Midterm critique"
-  - phase: "04"
-    weeks: "Weeks 10–12"
-    title: "Propose"
-    description: "Generate alternatives and connect a design concept to stakeholders, resources, and a value strategy."
-    activities: "Ideation · Concept development · Strategy mapping"
-  - phase: "05"
-    weeks: "Weeks 13–15"
-    title: "Refine & share"
-    description: "Prototype the proposal, test its coherence, and craft a persuasive final story supported by research."
-    activities: "Prototyping · Critique · Final presentation"
+  - { phase: "01", weeks: "Weeks 1–3", title: "Establish foundations", description: "Introduce CDM, examine art in relation to culture and business, and begin the social-impact casebook.", activities: "Course orientation · Art and business · Case research" }
+  - { phase: "02", weeks: "Weeks 4–7", title: "Use design lenses", description: "Study graphics, products, spaces, interactions, and services as distinct but connected ways of framing design.", activities: "Design Lens series · Weekly cases · Peer sharing" }
+  - { phase: "03", weeks: "Week 8", title: "Synthesize the casebook", description: "Select, revise, and organize case research into a coherent midterm casebook contribution.", activities: "Editing · Visual organization · Midterm submission" }
+  - { phase: "04", weeks: "Weeks 9–13", title: "Apply design thinking", description: "Move through user-, customer-, and strategy-centered approaches while developing the K-Food marketing challenge.", activities: "Design thinking · Strategy development · Consultation" }
+  - { phase: "05", weeks: "Weeks 14–15", title: "Present and reflect", description: "Present the team proposal, connect design research to scientific thinking, and articulate a personal interdisciplinary direction.", activities: "Final presentation · Design research · Personal map" }
 
 weekly_schedule:
   - week: "01"
     date: "Sep. 01"
     iso_date: "2026-09-01"
-    phase: "Orient"
-    lecture: "Course Introduction: Culture, Design, and Management"
-    before_class:
-      - type: "FC Lecture"
-        task: "Watch: What do culture, design, and management mean in this course?"
-      - type: "Preparation"
-        task: "Bring one designed object or service that expresses a cultural value."
-    in_class:
-      - "Course orientation and semester-project overview"
-      - "Object stories: identifying embedded cultural values"
-      - "Mini workshop: culture–design–management connections"
-    after_class:
-      - type: "Assignment 01"
-        task: "Document one cultural observation with a photograph and a 200-word reflection."
+    phase: "Foundations"
+    lecture: "Course Introduction"
+    before_class: [{ type: "Preparation", task: "Review the course hub and bring one example that connects culture, design, and management." }]
+    in_class: ["Course goals, structure, and assessment", "Introduction to the three projects", "Group formation and interest mapping"]
+    after_class: [{ type: "Project 1", task: "Set up the casebook format and identify possible social-impact cases." }]
   - week: "02"
     date: "Sep. 08"
     iso_date: "2026-09-08"
-    phase: "Orient"
-    lecture: "Reading Cultural Contexts"
-    before_class:
-      - type: "FC Lecture"
-        task: "Watch: Visible practices, shared meanings, and underlying values."
-      - type: "Reading"
-        task: "Read the assigned short case on cultural meaning in everyday products."
-    in_class:
-      - "Lecture check-in and concept mapping"
-      - "Cultural layers analysis of selected cases"
-      - "Observation exercise: description before interpretation"
-    after_class:
-      - type: "Field Note 01"
-        task: "Observe a familiar place for 30 minutes and separate evidence from interpretation."
+    phase: "Foundations"
+    lecture: "Art, Not Design"
+    before_class: [{ type: "FC Lecture", task: "Watch the lecture and note how art frames meaning, expression, and social questions." }]
+    in_class: ["Lecture discussion and concept check", "Case analysis: art and social impact", "Problem–Solution writing workshop"]
+    after_class: [{ type: "Casebook", task: "Write a 2–3 page case article connecting art and social innovation." }]
   - week: "03"
     date: "Sep. 15"
     iso_date: "2026-09-15"
-    phase: "Orient"
-    lecture: "Design Management in Practice"
-    before_class:
-      - type: "FC Lecture"
-        task: "Watch: Design as product, process, strategy, and organizational capability."
-      - type: "Case Review"
-        task: "Compare two organizations that create cultural value differently."
-    in_class:
-      - "Case comparison and stakeholder-role discussion"
-      - "Value creation system mapping"
-      - "Project team formation and interest sharing"
-    after_class:
-      - type: "Team Task"
-        task: "Select two possible project contexts and explain why each matters culturally."
+    phase: "Foundations"
+    lecture: "Art + Business"
+    before_class: [{ type: "FC Lecture", task: "Watch the lecture and identify how art creates cultural and market value." }]
+    in_class: ["Selected case sharing", "Art-marketing and value-creation discussion", "Casebook feedback"]
+    after_class: [{ type: "Casebook", task: "Research and write the next social-impact case article." }]
   - week: "04"
     date: "Sep. 22"
     iso_date: "2026-09-22"
-    phase: "Observe"
-    lecture: "Framing a Cultural Design Opportunity"
-    before_class:
-      - type: "FC Lecture"
-        task: "Watch: Moving from a broad topic to a researchable opportunity."
-      - type: "Preparation"
-        task: "List assumptions, stakeholders, and unknowns for the selected context."
-    in_class:
-      - "Problem-framing clinic"
-      - "Stakeholder and ecosystem mapping"
-      - "Research-question workshop with peer feedback"
-    after_class:
-      - type: "Project Brief 01"
-        task: "Submit the context, initial opportunity statement, stakeholders, and research questions."
+    phase: "Design Lens"
+    lecture: "Design, Not Art: Graphics"
+    before_class: [{ type: "FC Lecture", task: "Watch the Design Lens lecture on graphic communication." }]
+    in_class: ["Art–design comparison", "Graphic-design case critique", "Best-case sharing"]
+    after_class: [{ type: "Casebook", task: "Analyze a graphic-design case with measurable or observable social value." }]
   - week: "05"
     date: "Sep. 29"
     iso_date: "2026-09-29"
-    phase: "Observe"
-    lecture: "Field Research Methods and Ethics"
-    before_class:
-      - type: "FC Lecture"
-        task: "Watch: Observation, contextual interview, and artifact elicitation."
-      - type: "Reading"
-        task: "Review the fieldwork ethics and informed-consent guide."
-    in_class:
-      - "Interview practice in pairs"
-      - "Observation protocol and note-taking exercise"
-      - "Research-plan critique and ethics check"
-    after_class:
-      - type: "Research Plan"
-        task: "Submit participant criteria, method, protocol, responsibilities, and fieldwork schedule."
+    phase: "Design Lens"
+    lecture: "Products and Spaces"
+    before_class: [{ type: "FC Lecture", task: "Watch the Design Lens lecture on products and spatial experience." }]
+    in_class: ["Product and space case comparison", "Users, context, and constraints", "Casebook peer review"]
+    after_class: [{ type: "Casebook", task: "Write a product- or space-design social-impact case." }]
   - week: "06"
     date: "Oct. 06"
     iso_date: "2026-10-06"
-    phase: "Observe"
-    lecture: "Fieldwork Studio"
-    before_class:
-      - type: "Fieldwork"
-        task: "Complete the first observation or interview and organize raw documentation."
-      - type: "Preparation"
-        task: "Bring anonymized notes, photographs, quotes, and questions."
-    in_class:
-      - "Evidence wall and team check-in"
-      - "Research-quality review: gaps, bias, and contradictions"
-      - "Revision of the remaining fieldwork plan"
-    after_class:
-      - type: "Fieldwork Set"
-        task: "Complete the planned fieldwork and submit an organized, anonymized research log."
+    phase: "Design Lens"
+    lecture: "Interactions"
+    before_class: [{ type: "FC Lecture", task: "Watch the Design Lens lecture on interaction and user experience." }]
+    in_class: ["Interaction-design concepts", "Behavior and feedback analysis", "Case discussion"]
+    after_class: [{ type: "Casebook", task: "Write an interaction-design social-impact case." }]
   - week: "07"
     date: "Oct. 13"
     iso_date: "2026-10-13"
-    phase: "Interpret"
-    lecture: "Making Sense of Qualitative Research"
-    before_class:
-      - type: "FC Lecture"
-        task: "Watch: Coding, affinity clustering, and pattern identification."
-      - type: "Preparation"
-        task: "Convert field notes into atomic evidence statements."
-    in_class:
-      - "Affinity mapping workshop"
-      - "Pattern naming and evidence-strength review"
-      - "Cross-team synthesis critique"
-    after_class:
-      - type: "Synthesis Board"
-        task: "Refine clusters and connect each pattern to traceable field evidence."
+    phase: "Design Lens"
+    lecture: "Services"
+    before_class: [{ type: "FC Lecture", task: "Watch the Design Lens lecture on services and systems." }]
+    in_class: ["Service-system mapping", "Stakeholder and touchpoint analysis", "Best-case sharing"]
+    after_class: [{ type: "Casebook", task: "Complete the final weekly case and select work to refine for the casebook." }]
   - week: "08"
     date: "Oct. 20"
     iso_date: "2026-10-20"
-    phase: "Interpret"
-    lecture: "From Findings to Cultural Insights"
-    before_class:
-      - type: "FC Lecture"
-        task: "Watch: Findings, insights, tensions, and design implications."
-      - type: "Preparation"
-        task: "Draft three insight statements using evidence from the synthesis board."
-    in_class:
-      - "Insight-writing clinic"
-      - "Cultural tension and value-opportunity mapping"
-      - "How-might-we question development"
-    after_class:
-      - type: "Insight Map"
-        task: "Submit the evidence-to-insight map and prioritized opportunity areas."
+    phase: "Synthesis"
+    lecture: "Midterm Casebook Submission"
+    before_class: [{ type: "Preparation", task: "Revise selected articles for analytical depth, clarity, and visual consistency." }]
+    in_class: ["Casebook editorial review", "Cross-category synthesis", "Midterm submission check"]
+    after_class: [{ type: "Project 1", task: "Submit the polished individual casebook contribution." }]
   - week: "09"
     date: "Oct. 27"
     iso_date: "2026-10-27"
-    phase: "Interpret"
-    lecture: "Midterm Research Critique"
-    before_class:
-      - type: "Preparation"
-        task: "Prepare a concise narrative connecting context, method, evidence, insights, and opportunity."
-      - type: "Rehearsal"
-        task: "Check that every claim is supported by visible research evidence."
-    in_class:
-      - "Team research presentations"
-      - "Critique on rigor, cultural interpretation, and opportunity framing"
-      - "Direction-setting conference"
-    after_class:
-      - type: "Midterm Revision"
-        task: "Submit the revised research narrative and a response-to-feedback memo."
+    phase: "Design Thinking"
+    lecture: "Design as User-Centered Design Thinking"
+    before_class: [{ type: "FC Lecture", task: "Watch the lecture on users, needs, contexts, and evidence." }]
+    in_class: ["User-centered case analysis", "K-Food challenge introduction", "Target-user framing"]
+    after_class: [{ type: "Project 2", task: "Select a K-Food brand and prepare initial user and context research." }]
   - week: "10"
     date: "Nov. 03"
     iso_date: "2026-11-03"
-    phase: "Propose"
-    lecture: "Generating Culturally Grounded Alternatives"
-    before_class:
-      - type: "FC Lecture"
-        task: "Watch: Divergent ideation and evidence-based concept criteria."
-      - type: "Preparation"
-        task: "Turn each prioritized insight into multiple design prompts."
-    in_class:
-      - "Rapid individual and team ideation"
-      - "Concept combination and scenario sketching"
-      - "Criteria-based review without premature selection"
-    after_class:
-      - type: "Concept Portfolio"
-        task: "Develop at least three distinct alternatives with insight links and expected value."
+    phase: "Design Thinking"
+    lecture: "Design Management as Customer-Centered Thinking"
+    before_class: [{ type: "FC Lecture", task: "Watch the lecture on customer insight, experience, and value." }]
+    in_class: ["Brand and competitor analysis", "Customer journey and insight workshop", "Problem definition"]
+    after_class: [{ type: "Project 2", task: "Develop the customer insight and refined problem statement." }]
   - week: "11"
     date: "Nov. 10"
     iso_date: "2026-11-10"
-    phase: "Propose"
-    lecture: "Value, Stakeholders, and Design Strategy"
-    before_class:
-      - type: "FC Lecture"
-        task: "Watch: Value propositions, stakeholder exchange, and strategic fit."
-      - type: "Case Review"
-        task: "Identify who creates, receives, enables, and sustains value in the assigned case."
-    in_class:
-      - "Stakeholder value-exchange mapping"
-      - "Experience flow and backstage requirements"
-      - "Strategy stress test: desirability, viability, and cultural integrity"
-    after_class:
-      - type: "Strategy Map"
-        task: "Submit the draft value proposition, stakeholder system, and experience flow."
+    phase: "Design Thinking"
+    lecture: "Design Management as Strategy-Centered Thinking"
+    before_class: [{ type: "FC Lecture", task: "Watch the lecture on strategic fit, differentiation, and implementation." }]
+    in_class: ["Strategy and campaign concept development", "Social-message critique", "Feasibility check"]
+    after_class: [{ type: "Project 2", task: "Draft the marketing strategy, campaign, and experience concept." }]
   - week: "12"
     date: "Nov. 17"
     iso_date: "2026-11-17"
-    phase: "Propose"
-    lecture: "Concept Selection and Development"
-    before_class:
-      - type: "Preparation"
-        task: "Evaluate alternatives with shared criteria and document trade-offs."
-      - type: "Prototype Plan"
-        task: "Define what must be made or simulated to test the concept's coherence."
-    in_class:
-      - "Alternative review and selection rationale"
-      - "Scenario storyboard workshop"
-      - "Feasibility, risk, and cultural-integrity critique"
-    after_class:
-      - type: "Concept Decision"
-        task: "Submit the selected concept, rationale, scenario, and prototype plan."
+    phase: "Design Thinking"
+    lecture: "Group Project Consultation"
+    before_class: [{ type: "Preparation", task: "Bring the complete research-to-strategy logic and open questions." }]
+    in_class: ["Team consultation", "Booth and poster concept review", "Presentation-story feedback"]
+    after_class: [{ type: "Project 2", task: "Revise the strategy and begin the booth mock-up and A2 poster." }]
   - week: "13"
     date: "Nov. 24"
     iso_date: "2026-11-24"
-    phase: "Refine & share"
-    lecture: "Prototyping a Design-Management Proposal"
-    before_class:
-      - type: "FC Lecture"
-        task: "Watch: Choosing prototype fidelity for experiences, services, and strategies."
-      - type: "Preparation"
-        task: "Bring prototype materials and a focused feedback question."
-    in_class:
-      - "Studio prototyping sprint"
-      - "Peer walkthrough and feedback capture"
-      - "Proposal coherence check against research insights"
-    after_class:
-      - type: "Prototype Revision"
-        task: "Revise the prototype and document changes made in response to feedback."
+    phase: "Design Thinking"
+    lecture: "Special Lecture and Project Studio"
+    before_class: [{ type: "Preparation", task: "Prepare a working prototype, poster draft, and presentation outline." }]
+    in_class: ["Special lecture topic to be confirmed", "Group consultation", "Prototype and communication critique"]
+    after_class: [{ type: "Project 2", task: "Complete the final presentation, booth mock-up, poster, and PDF." }]
   - week: "14"
     date: "Dec. 01"
     iso_date: "2026-12-01"
-    phase: "Refine & share"
-    lecture: "Building the Final Strategic Narrative"
-    before_class:
-      - type: "FC Lecture"
-        task: "Watch: Structuring an evidence-to-insight-to-proposal story."
-      - type: "Preparation"
-        task: "Prepare the complete presentation draft and final-deliverable outline."
-    in_class:
-      - "Narrative and visual hierarchy critique"
-      - "Presentation rehearsal with timed feedback"
-      - "Final evidence, attribution, and accessibility check"
-    after_class:
-      - type: "Final Draft"
-        task: "Revise the proposal, prototype, and presentation for final review."
+    phase: "Presentation"
+    lecture: "K-Food Global Marketing Challenge: Final Presentation"
+    before_class: [{ type: "Preparation", task: "Rehearse the 15-minute team presentation and verify all deliverables." }]
+    in_class: ["Final team presentations", "Questions and critique", "Cross-team reflection"]
+    after_class: [{ type: "Project 3", task: "Begin the Personal Interdisciplinary Map and select a representative case." }]
   - week: "15"
     date: "Dec. 08"
     iso_date: "2026-12-08"
-    phase: "Refine & share"
-    lecture: "Final Presentation and Reflection"
-    before_class:
-      - type: "Preparation"
-        task: "Complete the final presentation, proposal document, prototype, and team rehearsal."
-      - type: "Submission Check"
-        task: "Verify file naming, source attribution, consent, and team credits."
-    in_class:
-      - "Final team presentations and response session"
-      - "Cross-project discussion on cultural value and design responsibility"
-      - "Individual course reflection"
-    after_class:
-      - type: "Final Submission"
-        task: "Submit the final proposal package and individual reflection."
+    phase: "Reflection"
+    lecture: "Design Research as Scientific Thinking"
+    before_class: [{ type: "FC Lecture", task: "Watch the lecture on design questions, evidence, comparison, and reflection." }]
+    in_class: ["Design research and scientific thinking", "Personal interdisciplinary mapping workshop", "Course synthesis and reflection"]
+    after_class: [{ type: "Project 3", task: "Complete the Personal Interdisciplinary Map and final report; submission date to be confirmed." }]
 
 assessment:
-  - label: "Engagement"
-    value: "20%"
-    note: "Preparation, discussion, workshops, and critique"
-  - label: "Research process"
-    value: "25%"
-    note: "Planning, fieldwork quality, and documentation"
-  - label: "Midterm synthesis"
-    value: "20%"
-    note: "Evidence, insights, and opportunity framing"
-  - label: "Final project"
-    value: "35%"
-    note: "Proposal, strategic rationale, and presentation"
+  - { label: "Attendance", value: "10%", note: "Presence and punctuality" }
+  - { label: "FC video completion", value: "10%", note: "Required flipped-classroom preparation" }
+  - { label: "Effort & engagement", value: "5%", note: "Discussion, activities, feedback, and contribution" }
+  - { label: "Project 1 · Casebook", value: "30%", note: "Individual social-impact case research and compilation" }
+  - { label: "Project 2 · K-Food", value: "30%", note: "Team global marketing challenge" }
+  - { label: "Project 3 · Personal map", value: "15%", note: "Individual interdisciplinary map and final reflection" }
 
 policies:
-  - title: "Participation"
-    text: "This is a collaborative, project-based course. Come prepared to contribute, listen closely, and give specific, constructive feedback."
-  - title: "Attendance"
-    text: "Fieldwork, workshops, and critiques are part of the learning process. Detailed attendance guidance will be confirmed in the official syllabus."
-  - title: "Academic integrity"
-    text: "Acknowledge sources, collaborators, research participants, and any AI-assisted work. Never fabricate research evidence or participant accounts."
-  - title: "Care in fieldwork"
-    text: "Seek informed consent, minimize personal data collection, and represent people and communities with accuracy and respect."
+  - { title: "Attendance", text: "Attendance is required. More than one-third of total class meetings missed results in an F; arriving 30 minutes or more late counts as an absence. Each unexcused absence deducts 2 points." }
+  - { title: "Flipped classroom", text: "Assigned FC lectures must be completed before class. Each incomplete required video deducts 2 points." }
+  - { title: "Participation", text: "Contribute respectfully and actively to discussions, workshops, presentations, and peer feedback." }
+  - { title: "Teamwork", text: "Team projects normally receive a shared grade; peer evaluation may adjust individual results when contribution differs substantially." }
+  - { title: "Late submissions", text: "The working policy is a 10% deduction within 6 hours, 25% within 24 hours, 50% within 48 hours, and 75% within 72 hours. Work over three days late is not evaluated." }
+  - { title: "Integrity & course materials", text: "Plagiarism receives zero for the project. Cite all sources and collaborators. Course materials and class recordings may not be copied or distributed without permission." }
 
 resources:
-  - label: "Official syllabus"
-    status: "Coming before Week 1"
-  - label: "Reading list"
-    status: "Coming before Week 1"
-  - label: "Submission links"
-    status: "Published with each assignment"
+  - { label: "Universal Methods of Design", status: "Hanington & Martin · 2019" }
+  - { label: "The Field Guide to Human-Centered Design", status: "IDEO.org" }
+  - { label: "The Fundamentals of Design Management", status: "Kathryn Best · 2010" }
+  - { label: "Design Thinking and Design Management", status: "Cooper, Junginger & Lockwood · 2009" }
+  - { label: "Official Fall 2026 syllabus", status: "To be confirmed before Week 1" }
+  - { label: "Submission links", status: "Published with each assignment" }
 ---
