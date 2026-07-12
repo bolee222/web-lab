@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Culture and Design Management"
 description: "Interactive course hub for CDM1001 Introduction to Culture and Design Management, Fall 2026."
-url: "/courses/CDM1001/2026-fall/"
+url: "/courses/cdm1001/2026-fall/"
 aliases: ["/teaching/CDM1001/2026-fall/"]
 layout: "course-hub"
 course_tab: "overview"
@@ -60,11 +60,11 @@ overview_cards:
       - { label: "Discussion and Q&A", value: "Campuswire", url: "https://campuswire.com/p/GC828CA78" }
       - label: "Previous Years"
         links:
-          - { label: "Spring 2026", url: "/courses/CDM1001/2026-spring/" }
-          - { label: "Fall 2025", url: "/courses/CDM1001/2025-fall/" }
-          - { label: "Spring 2025", url: "/courses/CDM1001/2025-spring/" }
-          - { label: "Fall 2024", url: "/courses/CDM1001/2024-fall/" }
-          - { label: "Spring 2024", url: "/courses/CDM1001/2024-spring/" }
+          - { label: "Spring 2026", url: "/courses/cdm1001/2026-spring/" }
+          - { label: "Fall 2025", url: "/courses/cdm1001/2025-fall/" }
+          - { label: "Spring 2025", url: "/courses/cdm1001/2025-spring/" }
+          - { label: "Fall 2024", url: "/courses/cdm1001/2024-fall/" }
+          - { label: "Spring 2024", url: "/courses/cdm1001/2024-spring/" }
   - title: "Topics"
     items:
       - "Culture, Design, and Management"

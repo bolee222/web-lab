@@ -2,7 +2,7 @@
 {{ $tab := .Params.course_tab | default "overview" }}
 {{ $course := . }}
 {{ if ne $tab "overview" }}{{ $course = .Parent }}{{ end }}
-{{ $base := printf "/courses/%s/%s/" $course.Params.course_code $course.Params.semester_slug }}
+{{ $base := printf "/courses/%s/%s/" (lower $course.Params.course_code) $course.Params.semester_slug }}
 
 <main class="course-hub">
   <header class="course-hub-hero">

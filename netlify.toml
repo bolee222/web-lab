@@ -2,6 +2,12 @@
   HUGO_VERSION = "0.153.0"
 
 [[redirects]]
+  from = "/courses/CDM1001/*"
+  to = "/courses/cdm1001/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "https://www.cxdlab.com/*"
   to = "https://cxdlab.com/:splat"
   status = 301

@@ -1134,6 +1134,8 @@ img.rounded {
 .course-hub-provisional, .course-hub-footnote { font-size: 12px; }
 
 .course-hub-roadmap { margin-top: 27px; }
+#roadmap-title { font-size: 24px; }
+#roadmap-title + .course-hub-provisional { max-width: 920px; font-size: 14px; line-height: 1.6; }
 .course-hub-roadmap-head,
 .course-hub-roadmap article {
   display: grid;
