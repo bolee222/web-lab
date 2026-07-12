@@ -13,12 +13,17 @@ img {
     height: auto;
 }
 
-a,
+a {
+    text-decoration: none;
+    outline: 0;
+    color: $brand-color-text-primary;
+}
+
 a:focus,
 a:hover {
     text-decoration: none;
     outline: 0;
-    color: $primary-color;
+    color: $brand-color-link-hover;
 }
 
 blockquote {

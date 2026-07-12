@@ -38,7 +38,7 @@
               <a class="teaching-overview-course" href="#course-{{ .code | urlize }}">
                 <span class="teaching-overview-code">{{ .code }}</span>
                 <span class="teaching-overview-title">{{ .title | markdownify }}</span>
-                <span class="teaching-overview-meta">{{ len .offerings }} offerings</span>
+                {{ with .offerings }}<span class="teaching-overview-meta">{{ len . }} offerings</span>{{ end }}
               </a>
               {{ end }}
             </div>
@@ -63,11 +63,12 @@
       {{ range .courses }}
       {{ $courseCode := .code }}
       {{ $courseTitle := .title }}
+      {{ $hasOfferings := gt (len (.offerings | default (slice))) 0 }}
       <article class="teaching-course-entry" id="course-{{ .code | urlize }}">
         <div class="row">
-          <div class="col-md-7">
+          <div class="{{ if $hasOfferings }}col-md-7{{ else }}col-md-12{{ end }}">
             <div class="teaching-course-summary">
-              <h3><span>{{ .code }}</span> {{ .title | markdownify }}</h3>
+              <h3><span class="teaching-course-code">{{ .code }}</span> <span class="teaching-course-title">{{ .title | markdownify }}</span></h3>
               {{ with .description }}<p>{{ . | markdownify }}</p>{{ end }}
               {{ with .keywords }}
               <div class="teaching-keyword-group" aria-label="{{ $courseCode }} course-level keywords">
@@ -77,18 +78,34 @@
             </div>
           </div>
 
+          {{ if $hasOfferings }}
           <div class="col-md-5">
             <div class="teaching-semester-index" aria-label="{{ .title }} semester offerings">
               <div class="teaching-semester-index-label">Semester Offerings</div>
               <div class="teaching-semester-grid">
               {{ range .offerings }}
-              <a class="teaching-semester-link" href="{{ .url | relURL }}" title="{{ .project_focus }}" aria-label="Open {{ $courseCode }} — {{ .semester }} Course Hub. Focus: {{ .project_focus }}">
-                {{ .semester }}
+              {{ $scheduleStart := .schedule_start }}
+              {{ $scheduleEnd := .schedule_end }}
+              {{ if .url }}
+                {{ with site.GetPage .url }}
+                  {{ with .Params.weekly_schedule }}
+                    {{ $scheduleStart = (index . 0).iso_date }}
+                    {{ $scheduleEnd = (index . (sub (len .) 1)).iso_date }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+              {{ if .url }}
+              <a class="teaching-semester-link" href="{{ .url | relURL }}"{{ with .project_focus }} title="{{ . }}"{{ end }} aria-label="Open {{ $courseCode }} — {{ .semester }} Course Hub{{ with .project_focus }}. Focus: {{ . }}{{ end }}"{{ with $scheduleStart }} data-schedule-start="{{ . }}"{{ end }}{{ with $scheduleEnd }} data-schedule-end="{{ . }}"{{ end }}>
+                <span>{{ .semester }}</span><span class="teaching-live-badge" aria-hidden="true"></span>
               </a>
+              {{ else }}
+              <span class="teaching-semester-link teaching-semester-link--plain"><span>{{ .semester }}</span></span>
+              {{ end }}
               {{ end }}
               </div>
             </div>
           </div>
+          {{ end }}
         </div>
       </article>
       {{ end }}
@@ -96,5 +113,40 @@
   </section>
   {{ end }}
 </main>
+
+<script>
+(function () {
+  function localDate(value) {
+    var parts = value.split('-');
+    return new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]));
+  }
+
+  var now = new Date();
+  var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  var offerings = document.querySelectorAll('.teaching-semester-link[data-schedule-start][data-schedule-end]');
+
+  offerings.forEach(function (offering) {
+    var start = localDate(offering.getAttribute('data-schedule-start'));
+    var end = localDate(offering.getAttribute('data-schedule-end'));
+    var badge = offering.querySelector('.teaching-live-badge');
+    if (!badge) return;
+
+    if (today < start) {
+      badge.textContent = 'Upcoming';
+      badge.classList.add('is-upcoming');
+      offering.classList.add('has-upcoming');
+    } else if (today <= end) {
+      badge.textContent = 'On-going';
+      badge.classList.add('is-ongoing');
+    } else {
+      badge.remove();
+      return;
+    }
+
+    badge.removeAttribute('aria-hidden');
+    offering.setAttribute('aria-label', offering.getAttribute('aria-label') + '. Status: ' + badge.textContent);
+  });
+}());
+</script>
 
 {{ end }}

@@ -124,7 +124,6 @@ vision_1:
   direction: "Pillar I"
   content: "We explore how AI and XR can expand how people think, create, and experience the world. Rather than treating AI/XR just as tools for productivity or creativity, we investigate how they can open new perspectives, support alternative ways of understanding, and create experiences difficult to access through ordinary perception or cognition. Through this pillar, we study how AI and XR can empower people to engage with information, environments, and themselves in new ways."
   content_kor: "생성형 AI와 몰입형 XR이 인간의 사고, 창작, 경험 방식을 어떻게 확장할 수 있는지를 탐구하고 새로운 인터랙션 방식을 디자인하고 제안합니다. 우리는 이러한 기술을 단순한 생산성 도구나 창의성 지원 도구로 바라보는 것을 넘어, 사람들이 새로운 관점에서 사고하고, 기존과 다른 방식으로 정보를 이해하며, 일상적인 지각이나 인지만으로는 접근하기 어려운 경험을 할 수 있도록 돕는 가능성을 연구합니다. 이를 통해 AI와 XR이 사람들이 정보, 환경, 그리고 자기 자신과 새롭게 관계 맺고 상호작용하는 방식을 어떻게 확장할 수 있는지 탐색합니다."
-  image: "images/vision/pillar1.webp"
   keywords: "**Keywords**:  Generative AI, Co-creation, Creativity Support Tools"
   related_projects:
     - title: "TwistLens"
@@ -147,7 +146,6 @@ vision_2:
   direction: "Pillar II"
   content: "We define digital humans as social entities that perform complex roles beyond physical bodies and coexist with people across real & virtual environments. Beyond everyday communication, we examine how they perceive, decide, and act to create new social value. Moving beyond visual realism, this pillar explores service models where digital humans support, augment, or substitute human roles, and proposes new interaction paradigms for collaboration."
   content_kor: "우리는 디지털 휴먼을 단순한 대화 상대를 넘어, 물리적 신체를 대신해 복합적인 역할을 지능적으로 수행하며 현실과 가상에서 인간과 공존하는 새로운 사회적 실체로 정의합니다. 우리는 이들이 현실의 일상 공간에서 인간과 공존하며 소통하는 미래뿐만 아니라, 무한한 가상 환경 속에서도 스스로 판단하고 행동하며 새로운 사회적 가치를 창출하는 것에 주목합니다. 본 연구는 단순한 외형 구현을 넘어, 디지털 휴먼이 인간을 돕거나 대체하여 제공할 수 있는 혁신적인 서비스 모델을 발굴하고, 이에 최적화된 지능형 디지털 휴먼과의 새로운 인터랙션 방식을 제안합니다."
-  image: "images/vision/pillar2-.webp"
   keywords: "**Keywords**: Digital Persona, Digital Human Interaction, Embodied Interaction"
   related_projects:
     - title: "DanXeReflect"
@@ -168,7 +166,6 @@ vision_3:
   direction: "Pillar III"
   content: "We explore spatial and embodied interactions where everyday spaces, objects, and human movements become part of the interface. Moving beyond 2D screens, we investigate how digital information can be embedded in physical environments and connected to people’s gestures, movements, and spatial behaviors. We study how spatial computing, tangible interfaces, and embodied interaction can create more natural, intuitive, and context-aware experiences in various contexts."
   content_kor: "우리는 2D 스크린이나 손 안의 디바이스에 한정된 인터랙션을 넘어, 디지털 정보가 물리적 환경 속에 자연스럽게 배치되고 사람의 제스처, 움직임, 위치, 시선, 그리고 사물과의 관계에 반응하는 방식을 연구합니다. 이 연구는 공간이 단순한 배경이 아니라 정보를 담고, 반응하고, 사용자의 행동을 유도하는 지능형 인터페이스가 될 수 있다는 관점에서 출발합니다. 이를 통해 공간 컴퓨팅, 탠저블 인터페이스, 체화된 인터랙션이 만들어낼 수 있는 가능성을 박물관, 주거 공간, 공공장소, 미래형 인터랙티브 등의 다양한 환경에서 탐색합니다."
-  image: "images/vision/pillar3.webp"
   keywords: "**Keywords**: Spatial Computing, Tangible Interface, Phygital"
   related_projects:
     - title: "DanXeReflect"
@@ -193,7 +190,6 @@ vision_4:
   direction: "Pillar IV"
   content: "We explore next-generation convergence experiences where XR, AI, robotics, and media technologies blend into everyday life. Beyond a single technology or domain, this pillar covers phygital services, immersive media, robotic interaction, smart environments, and future lifestyle experiences. We study how these technologies can be orchestrated to create practical, engaging, and socially meaningful user experiences."
   content_kor: "우리는 XR, AI, 로보틱스, 미디어 기술이 일상 속에 융합되며 만들어내는 미래형 컨버전스 경험을 탐구합니다. 이 연구 축은 특정 기술이나 단일 분야에 국한되지 않고, 피지털 서비스, 몰입형 미디어, 로봇 인터랙션, 스마트 환경, 차세대 라이프스타일 경험 등 다양한 융합적 맥락을 포괄합니다. 우리는 단순한 기술 구현을 넘어, 여러 기술이 어떻게 유기적으로 연결되어 사람들에게 실질적인 도움과 몰입감 있는 경험, 그리고 사회적으로 의미 있는 가치를 제공할 수 있는지 연구합니다."
-  image: "images/vision/pillar3.webp"
   keywords: "**Keywords**: Metaverse, Ambient Experience, Immersive Media"
   related_projects:
     - title: "XR Docent"

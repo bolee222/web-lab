@@ -3,7 +3,9 @@
 {{- partial "head.html" . -}}
 
 <body>
+  {{- if not (and (eq .Section "teaching") .Params.course_tab) -}}
   {{- partialCached "preloader.html" . -}}
+  {{- end -}}
   {{- partial "header.html" . -}}
   {{- block "main" . }}{{- end }}
   {{- partial "footer.html" . -}}

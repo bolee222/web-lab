@@ -1,23 +1,28 @@
 {{ define "main" }}
+{{ $tab := .Params.course_tab | default "overview" }}
+{{ $course := . }}
+{{ if ne $tab "overview" }}{{ $course = .Parent }}{{ end }}
+{{ $base := printf "/teaching/%s/%s/" $course.Params.course_code $course.Params.semester_slug }}
+
 <main class="course-hub">
   <header class="course-hub-hero">
     <div class="container">
       <a class="course-hub-back" href="{{ `/teaching/` | relURL }}"><span aria-hidden="true">←</span> All courses</a>
       <div class="course-hub-identity">
         <div class="course-hub-code-row">
-          <span class="course-hub-code">{{ .Params.course_code }}</span>
-          <span class="course-hub-status course-hub-status--{{ .Params.status | urlize }}">{{ .Params.status }}</span>
+          <span class="course-hub-code">{{ $course.Params.course_code }}</span>
+          <span class="course-hub-status course-hub-status--{{ $course.Params.status | urlize }}">{{ $course.Params.status }}</span>
         </div>
-        <h1>{{ .Title }}</h1>
-        <p class="course-hub-semester">{{ .Params.semester }} <span aria-hidden="true">·</span> {{ .Params.course_type }}</p>
-        <p class="course-hub-lede">{{ .Params.lede }}</p>
-        {{ with .Params.keywords }}
+        <h1>{{ $course.Title }}</h1>
+        <p class="course-hub-semester">{{ $course.Params.semester }} <span aria-hidden="true">·</span> {{ $course.Params.course_type }}</p>
+        <p class="course-hub-lede">{{ $course.Params.lede }}</p>
+        {{ with $course.Params.keywords }}
         <div class="course-hub-tags" aria-label="Course keywords">
           {{ range . }}<span>{{ . }}</span>{{ end }}
         </div>
         {{ end }}
       </div>
-      {{ with .Params.course_facts }}
+      {{ with $course.Params.course_facts }}
       <dl class="course-hub-facts">
         {{ range . }}<div><dt>{{ .label }}</dt><dd>{{ .value }}</dd></div>{{ end }}
       </dl>
@@ -25,101 +30,168 @@
     </div>
   </header>
 
-  <nav class="course-hub-nav" aria-label="Course page sections">
+  <nav class="course-hub-nav" aria-label="Course pages">
     <div class="container">
-      <a href="#overview">Overview</a>
-      <a href="#project">Project</a>
-      <a href="#roadmap">Roadmap</a>
-      <a href="#assessment">Assessment</a>
-      <a href="#policies">Policies</a>
-      <a href="#resources">Resources</a>
+      <a href="{{ $base }}"{{ if eq $tab "overview" }} class="active" aria-current="page"{{ end }}>Overview</a>
+      <a href="{{ printf `%sproject/` $base }}"{{ if eq $tab "project" }} class="active" aria-current="page"{{ end }}>Project</a>
+      <a href="{{ printf `%sroadmap/` $base }}"{{ if eq $tab "roadmap" }} class="active" aria-current="page"{{ end }}>Roadmap</a>
+      <a href="{{ printf `%sschedule/` $base }}"{{ if eq $tab "schedule" }} class="active" aria-current="page"{{ end }}>Weekly schedule</a>
+      <a href="{{ printf `%sassessment/` $base }}"{{ if eq $tab "assessment" }} class="active" aria-current="page"{{ end }}>Assessment</a>
+      <a href="{{ printf `%spolicies/` $base }}"{{ if eq $tab "policies" }} class="active" aria-current="page"{{ end }}>Policies</a>
+      <a href="{{ printf `%sresources/` $base }}"{{ if eq $tab "resources" }} class="active" aria-current="page"{{ end }}>Resources</a>
     </div>
   </nav>
 
-  <div class="container course-hub-body">
-    {{ with .Params.notice }}
-    <aside class="course-hub-notice" aria-label="Course notice">
-      <span>{{ .eyebrow }}</span><div><h2>{{ .title }}</h2><p>{{ .text }}</p></div>
-    </aside>
+  <div class="container course-hub-body course-hub-body--{{ $tab }}">
+    {{ if eq $tab "overview" }}
+      {{ with $course.Params.notice }}
+      <aside class="course-hub-notice" id="course-status-panel" aria-label="Current course status" aria-live="polite">
+        <span id="course-status-eyebrow">{{ .eyebrow }}</span>
+        <div>
+          <h2 id="course-status-title">{{ .title }}</h2>
+          <p id="course-status-text">{{ .text }}</p>
+          <div class="course-hub-current-details" id="course-status-details" hidden>
+            <div><strong>Before class</strong><span id="course-status-before"></span></div>
+            <div><strong>In class</strong><span id="course-status-in"></span></div>
+            <div><strong>After class</strong><span id="course-status-after"></span></div>
+          </div>
+          <a class="course-hub-current-link" id="course-status-link" href="{{ printf `%sschedule/` $base }}" hidden>View this week in the schedule <span aria-hidden="true">→</span></a>
+        </div>
+      </aside>
+      {{ end }}
+
+      <section class="course-hub-section" aria-labelledby="overview-title">
+        <div class="course-hub-section-label">Course overview</div>
+        <div class="course-hub-section-content">
+          <h2 id="overview-title">Learning to read culture through design</h2>
+          <p class="course-hub-intro">{{ $course.Params.overview }}</p>
+          <div class="course-hub-outcomes">
+            {{ range $course.Params.learning_outcomes }}<article><span>{{ .title }}</span><p>{{ .text }}</p></article>{{ end }}
+          </div>
+        </div>
+      </section>
     {{ end }}
 
-    <section class="course-hub-section" id="overview" aria-labelledby="overview-title">
-      <div class="course-hub-section-label">01 · Course overview</div>
-      <div class="course-hub-section-content">
-        <h2 id="overview-title">Learning to read culture through design</h2>
-        <p class="course-hub-intro">{{ .Params.overview }}</p>
-        <div class="course-hub-outcomes">
-          {{ range .Params.learning_outcomes }}
-          <article><span>{{ .title }}</span><p>{{ .text }}</p></article>
-          {{ end }}
+    {{ if eq $tab "project" }}
+      {{ with $course.Params.project }}
+      <section class="course-hub-section course-hub-project" aria-labelledby="project-title">
+        <div class="course-hub-section-label">{{ .label }}</div>
+        <div class="course-hub-section-content">
+          <h2 id="project-title">{{ .title }}</h2>
+          <p class="course-hub-intro">{{ .description }}</p>
+          <blockquote><span>Guiding question</span>{{ .question }}</blockquote>
+          <div class="course-hub-deliverables"><h3>Core deliverables</h3><ol>{{ range .deliverables }}<li>{{ . }}</li>{{ end }}</ol></div>
         </div>
-      </div>
-    </section>
-
-    {{ with .Params.project }}
-    <section class="course-hub-section course-hub-project" id="project" aria-labelledby="project-title">
-      <div class="course-hub-section-label">02 · {{ .label }}</div>
-      <div class="course-hub-section-content">
-        <h2 id="project-title">{{ .title }}</h2>
-        <p class="course-hub-intro">{{ .description }}</p>
-        <blockquote><span>Guiding question</span>{{ .question }}</blockquote>
-        <div class="course-hub-deliverables">
-          <h3>Core deliverables</h3>
-          <ol>{{ range .deliverables }}<li>{{ . }}</li>{{ end }}</ol>
-        </div>
-      </div>
-    </section>
+      </section>
+      {{ end }}
     {{ end }}
 
-    <section class="course-hub-section" id="roadmap" aria-labelledby="roadmap-title">
-      <div class="course-hub-section-label">03 · Project roadmap</div>
-      <div class="course-hub-section-content">
-        <h2 id="roadmap-title">One semester, five connected phases</h2>
-        <p class="course-hub-provisional">Planned learning arc · Exact dates are provisional</p>
-        <div class="course-hub-roadmap">
-          {{ range .Params.roadmap }}
-          <article>
-            <div class="course-hub-phase"><span>{{ .phase }}</span><small>{{ .weeks }}</small></div>
-            <div><h3>{{ .title }}</h3><p>{{ .description }}</p><div class="course-hub-activities">{{ .activities }}</div></div>
-          </article>
-          {{ end }}
+    {{ if eq $tab "roadmap" }}
+      <section class="course-hub-section" aria-labelledby="roadmap-title">
+        <div class="course-hub-section-label">Project roadmap</div>
+        <div class="course-hub-section-content">
+          <h2 id="roadmap-title">One semester, five connected phases</h2>
+          <p class="course-hub-provisional">Planned learning arc · Exact activities may shift as the semester develops</p>
+          <div class="course-hub-roadmap">
+            {{ range $course.Params.roadmap }}
+            <article><div class="course-hub-phase"><span>{{ .phase }}</span><small>{{ .weeks }}</small></div><div><h3>{{ .title }}</h3><p>{{ .description }}</p><div class="course-hub-activities">{{ .activities }}</div></div></article>
+            {{ end }}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    {{ end }}
 
-    <section class="course-hub-section" id="assessment" aria-labelledby="assessment-title">
-      <div class="course-hub-section-label">04 · Assessment</div>
-      <div class="course-hub-section-content">
-        <h2 id="assessment-title">Evaluation at a glance</h2>
-        <div class="course-hub-assessment">
-          {{ range .Params.assessment }}
-          <article><strong>{{ .value }}</strong><div><h3>{{ .label }}</h3><p>{{ .note }}</p></div></article>
-          {{ end }}
+    {{ if eq $tab "schedule" }}
+      <section class="course-hub-section" aria-labelledby="schedule-title">
+        <div class="course-hub-section-label">Weekly schedule</div>
+        <div class="course-hub-section-content">
+          <h2 id="schedule-title">Week by week</h2>
+          <p class="course-hub-provisional">Provisional schedule · Topics and milestones may shift as the semester develops</p>
+          <div class="course-hub-schedule" role="list">
+            <div class="course-hub-schedule-head" aria-hidden="true"><span>Date</span><span>Lecture</span><span><strong>Before Class:</strong> FC Lecture</span><span><strong>In Class:</strong> Activity</span><span><strong>After Class:</strong> Assignment</span></div>
+            {{ range $course.Params.weekly_schedule }}
+            <article role="listitem">
+              <div class="course-hub-week"><strong>Week {{ .week }}</strong><span>{{ .date }}</span></div>
+              <div class="course-hub-week-topic"><span class="course-hub-mobile-label">Lecture</span><h3>{{ .lecture }}</h3><small>{{ .phase }}</small></div>
+              <div class="course-hub-week-cell"><span class="course-hub-mobile-label">Before Class</span>{{ range .before_class }}<div class="course-hub-task"><b>{{ .type }}</b><p>{{ .task }}</p></div>{{ end }}</div>
+              <div class="course-hub-week-cell"><span class="course-hub-mobile-label">In Class</span><ul>{{ range .in_class }}<li>{{ . }}</li>{{ end }}</ul></div>
+              <div class="course-hub-week-cell"><span class="course-hub-mobile-label">After Class</span>{{ range .after_class }}<div class="course-hub-task"><b>{{ .type }}</b><p>{{ .task }}</p></div>{{ end }}</div>
+            </article>
+            {{ end }}
+          </div>
         </div>
-        <p class="course-hub-footnote">Assessment weights are provisional until the official syllabus is published.</p>
-      </div>
-    </section>
+      </section>
+    {{ end }}
 
-    <section class="course-hub-section" id="policies" aria-labelledby="policies-title">
-      <div class="course-hub-section-label">05 · Working together</div>
-      <div class="course-hub-section-content">
-        <h2 id="policies-title">Course principles & policies</h2>
-        <div class="course-hub-policies">
-          {{ range .Params.policies }}<article><h3>{{ .title }}</h3><p>{{ .text }}</p></article>{{ end }}
+    {{ if eq $tab "assessment" }}
+      <section class="course-hub-section" aria-labelledby="assessment-title">
+        <div class="course-hub-section-label">Assessment</div>
+        <div class="course-hub-section-content">
+          <h2 id="assessment-title">Evaluation at a glance</h2>
+          <div class="course-hub-assessment">{{ range $course.Params.assessment }}<article><strong>{{ .value }}</strong><div><h3>{{ .label }}</h3><p>{{ .note }}</p></div></article>{{ end }}</div>
+          <p class="course-hub-footnote">Assessment weights are provisional until the official syllabus is published.</p>
         </div>
-      </div>
-    </section>
+      </section>
+    {{ end }}
 
-    <section class="course-hub-section" id="resources" aria-labelledby="resources-title">
-      <div class="course-hub-section-label">06 · Resources</div>
-      <div class="course-hub-section-content">
-        <h2 id="resources-title">Course materials</h2>
-        <div class="course-hub-resources">
-          {{ range .Params.resources }}<div><span>{{ .label }}</span><small>{{ .status }}</small></div>{{ end }}
+    {{ if eq $tab "policies" }}
+      <section class="course-hub-section" aria-labelledby="policies-title">
+        <div class="course-hub-section-label">Working together</div>
+        <div class="course-hub-section-content">
+          <h2 id="policies-title">Course principles & policies</h2>
+          <div class="course-hub-policies">{{ range $course.Params.policies }}<article><h3>{{ .title }}</h3><p>{{ .text }}</p></article>{{ end }}</div>
         </div>
-        <a class="course-hub-footer-link" href="{{ `/teaching/` | relURL }}"><span aria-hidden="true">←</span> Return to all courses</a>
-      </div>
-    </section>
+      </section>
+    {{ end }}
+
+    {{ if eq $tab "resources" }}
+      <section class="course-hub-section" aria-labelledby="resources-title">
+        <div class="course-hub-section-label">Resources</div>
+        <div class="course-hub-section-content">
+          <h2 id="resources-title">Course materials</h2>
+          <div class="course-hub-resources">{{ range $course.Params.resources }}<div><span>{{ .label }}</span><small>{{ .status }}</small></div>{{ end }}</div>
+          <a class="course-hub-footer-link" href="{{ `/teaching/` | relURL }}"><span aria-hidden="true">←</span> Return to all courses</a>
+        </div>
+      </section>
+    {{ end }}
   </div>
 </main>
+
+{{ if eq $tab "overview" }}
+<script type="application/json" id="course-schedule-data">{{ jsonify $course.Params.weekly_schedule | safeJS }}</script>
+<script>
+(function () {
+  var source = document.getElementById('course-schedule-data');
+  var panel = document.getElementById('course-status-panel');
+  if (!source || !panel) return;
+  var schedule;
+  try { schedule = JSON.parse(source.textContent); } catch (error) { return; }
+  if (!schedule || !schedule.length) return;
+  function localDate(value) { var parts = value.split('-'); return new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2])); }
+  function tasks(items) { return (items || []).map(function (item) { return item.task || item; }).join(' · '); }
+  var now = new Date();
+  var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  var firstClass = localDate(schedule[0].iso_date);
+  var finalClass = localDate(schedule[schedule.length - 1].iso_date);
+  var afterFinal = new Date(finalClass); afterFinal.setDate(afterFinal.getDate() + 1);
+  var eyebrow = document.getElementById('course-status-eyebrow');
+  var title = document.getElementById('course-status-title');
+  var text = document.getElementById('course-status-text');
+  var details = document.getElementById('course-status-details');
+  var link = document.getElementById('course-status-link');
+  if (today < firstClass) { eyebrow.textContent = 'Before the semester'; title.textContent = 'The course begins on Sep. 01.'; text.textContent = 'Review the course overview and weekly schedule. Confirmed readings and submission links will be added before each class.'; return; }
+  if (today >= afterFinal) { eyebrow.textContent = 'Course completed'; title.textContent = 'Fall 2026 course archive'; text.textContent = 'The semester concluded on Dec. 08. Course materials remain available as an archive.'; return; }
+  var currentIndex = 0;
+  for (var i = 0; i < schedule.length; i += 1) { if (localDate(schedule[i].iso_date) <= today) currentIndex = i; else break; }
+  var current = schedule[currentIndex];
+  eyebrow.textContent = 'This week · Week ' + current.week + ' · ' + current.date;
+  title.textContent = current.lecture;
+  text.textContent = 'Current phase: ' + current.phase;
+  document.getElementById('course-status-before').textContent = tasks(current.before_class);
+  document.getElementById('course-status-in').textContent = tasks(current.in_class);
+  document.getElementById('course-status-after').textContent = tasks(current.after_class);
+  details.hidden = false; link.hidden = false;
+}());
+</script>
+{{ end }}
 {{ end }}

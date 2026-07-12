@@ -53,16 +53,17 @@
     </div>
   </div>
 
+  <nav class="vision-section-index" aria-label="Vision page sections">
+    <a href="#vision-overview">Overview</a>
+    <a href="#vision-projects">Projects</a>
+    <a href="#vision-directions">Directions</a>
+    <a href="#vision-pillars">Pillars</a>
+    <a href="#vision-approach">Approach</a>
+  </nav>
+  </div>
+
 </section>
 {{ end }}
-
-<nav class="vision-section-index" aria-label="Vision page sections">
-  <a href="#vision-overview">Overview</a>
-  <a href="#vision-projects">Projects</a>
-  <a href="#vision-directions">Directions</a>
-  <a href="#vision-pillars">Pillars</a>
-  <a href="#vision-approach">Approach</a>
-</nav>
 
 {{ with .Params.projects}}
 <section class="service-about" id="vision-projects">
@@ -146,9 +147,6 @@
             </div>
             {{ end }}
           </div>
-          <div class="col-md-2 col-sm-12">
-            {{ with $vision.image }}<img class="img-responsive pillar-row-image" src="{{ . | relURL }}">{{ end }}
-          </div>
         </div>
         {{ end }}
 
@@ -178,9 +176,6 @@
               {{ end }}
             </div>
             {{ end }}
-          </div>
-          <div class="col-md-2 col-sm-12">
-            {{ with $vision.image }}<img class="img-responsive pillar-row-image" src="{{ . | relURL }}">{{ end }}
           </div>
         </div>
         {{ end }}
@@ -212,9 +207,6 @@
             </div>
             {{ end }}
           </div>
-          <div class="col-md-2 col-sm-12">
-            {{ with $vision.image }}<img class="img-responsive pillar-row-image" src="{{ . | relURL }}">{{ end }}
-          </div>
         </div>
         {{ end }}
 
@@ -244,9 +236,6 @@
               {{ end }}
             </div>
             {{ end }}
-          </div>
-          <div class="col-md-2 col-sm-12">
-            {{ with $vision.image }}<img class="img-responsive pillar-row-image" src="{{ . | relURL }}">{{ end }}
           </div>
         </div>
         {{ end }}

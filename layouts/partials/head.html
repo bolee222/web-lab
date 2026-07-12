@@ -133,6 +133,15 @@
   {{ $styles := slice (resources.Get "scss/style.scss") (resources.Get "scss/custom.scss") | resources.Concat "scss/bundled.scss" | toCSS | minify | fingerprint -}}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 
+  {{ if and (eq .Section "teaching") .Params.course_tab }}
+    {{ $course := . }}{{ if ne .Params.course_tab "overview" }}{{ $course = .Parent }}{{ end }}
+    {{ $courseBase := printf "/teaching/%s/%s/" $course.Params.course_code $course.Params.semester_slug }}
+    <link rel="prefetch" href="{{ $courseBase }}" as="document">
+    {{ range slice "project" "roadmap" "schedule" "assessment" "policies" "resources" }}
+    <link rel="prefetch" href="{{ printf `%s%s/` $courseBase . }}" as="document">
+    {{ end }}
+  {{ end }}
+
   {{ "<!-- Favicon -->" | safeHTML }}
   {{ partial "favicon.html" . }}
 
