@@ -122,12 +122,14 @@
         <div class="course-hub-section-label">Course roadmap</div>
         <div class="course-hub-section-content">
           <h2 id="roadmap-title">Four projects, one cumulative learning journey</h2>
-          <p class="course-hub-provisional">Each project builds the capacity needed for the next.</p>
+          <p class="course-hub-provisional">The four projects form a cumulative learning sequence. Students first use D:Branch to practice seeing design cases from multiple perspectives, then apply those perspectives to a critical analysis of a real pop-up store. They extend this ability through a multidisciplinary industry collaboration with Studio Mikko Laakkonen and finally translate their accumulated learning into a personal interdisciplinary map.</p>
           <div class="course-hub-roadmap">
             <div class="course-hub-roadmap-head" aria-hidden="true"><span>Stage</span><span>Project</span><span>Core learning</span></div>
             {{ range $course.Params.roadmap }}
+            {{ $stageNumber := replaceRE `^Stage ([0-9]+):.*$` `$1` .phase }}
+            {{ $stageTitle := replaceRE `^Stage [0-9]+:[[:space:]]*` `` .phase }}
             <article id="{{ .phase | urlize }}">
-              <div class="course-hub-phase"><span>{{ .phase }}</span><small>{{ .weeks }}</small></div>
+              <div class="course-hub-phase"><div class="course-hub-stage-node"><span class="course-hub-stage-number">{{ $stageNumber }}</span><div><strong>{{ $stageTitle }}</strong><small>{{ .weeks }}</small></div></div></div>
               <div class="course-hub-roadmap-project"><h3>{{ .title }}</h3></div>
               <div class="course-hub-roadmap-learning"><p>{{ .description }}</p></div>
             </article>
