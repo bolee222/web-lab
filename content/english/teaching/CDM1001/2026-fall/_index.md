@@ -241,7 +241,7 @@ weekly_schedule:
     iso_date: "2026-09-08"
     phase: "Project 1 · D:Branch"
     lecture: "CDM Design Lens #1: Art"
-    before_class: [{ type: "FC Lecture", task: "Art, Not Design" }]
+    before_class: [{ type: "FC Lecture", task: '"Art, Not Design" video should be watched.' }]
     in_class: ["Short lecture", "Group discussion"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘Art + Business.’", due: "Sep. 15" }, { type: "Deliverable 1", task: "Complete the Art design-lens exercise.", due: "Sep. 15" }]
   - week: "03"
@@ -249,7 +249,7 @@ weekly_schedule:
     iso_date: "2026-09-15"
     phase: "Project 1 · D:Branch"
     lecture: "CDM Design Lens #2: Art + Business"
-    before_class: [{ type: "FC Lecture", task: "Art + Business" }]
+    before_class: [{ type: "FC Lecture", task: '"Art + Business" video should be watched.' }]
     in_class: ["Short lecture", "Group discussion using D:Branch"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘Graphic Design Elements.’", due: "Sep. 22" }, { type: "Deliverable 2", task: "Complete the Art + Business design-lens exercise.", due: "Sep. 22" }]
   - week: "04"
@@ -257,7 +257,7 @@ weekly_schedule:
     iso_date: "2026-09-22"
     phase: "Project 1 · D:Branch"
     lecture: "CDM Design Lens #3: Graphic Design"
-    before_class: [{ type: "FC Lecture", task: "Graphic Design Elements" }]
+    before_class: [{ type: "FC Lecture", task: '"Graphic Design Elements" video should be watched.' }]
     in_class: ["Short lecture", "Group discussion using D:Branch"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘Product Design Elements.’", due: "Sep. 29" }, { type: "Deliverable 3", task: "Complete the Graphic Design lens exercise.", due: "Sep. 29" }]
   - week: "05"
@@ -265,7 +265,7 @@ weekly_schedule:
     iso_date: "2026-09-29"
     phase: "Project 1 · D:Branch"
     lecture: "CDM Design Lens #4: Product Design"
-    before_class: [{ type: "FC Lecture", task: "Product Design Elements" }]
+    before_class: [{ type: "FC Lecture", task: '"Product Design Elements" video should be watched.' }]
     in_class: ["Short lecture", "Group discussion using D:Branch"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘Interaction Design Elements.’", due: "Oct. 06" }, { type: "Deliverable 4", task: "Complete the Product Design lens exercise.", due: "Oct. 06" }]
   - week: "06"
@@ -273,7 +273,7 @@ weekly_schedule:
     iso_date: "2026-10-06"
     phase: "Project 1 · D:Branch"
     lecture: "CDM Design Lens #5: Interaction Design"
-    before_class: [{ type: "FC Lecture", task: "Interaction Design Elements" }]
+    before_class: [{ type: "FC Lecture", task: '"Interaction Design Elements" video should be watched.' }]
     in_class: ["Short lecture", "Group discussion using D:Branch"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘Service Design Elements.’", due: "Oct. 13" }, { type: "Deliverable 5", task: "Complete the Interaction Design lens exercise.", due: "Oct. 13" }]
   - week: "07"
@@ -281,7 +281,7 @@ weekly_schedule:
     iso_date: "2026-10-13"
     phase: "Project 1 · D:Branch"
     lecture: "CDM Design Lens #6: Service Design"
-    before_class: [{ type: "FC Lecture", task: "Service Design Elements" }]
+    before_class: [{ type: "FC Lecture", task: '"Service Design Elements" video should be watched.' }]
     in_class: ["Short lecture", "Group discussion using D:Branch", "Project 1 synthesis"]
     after_class: [{ type: "Deliverable 6", task: "Complete the Service Design lens exercise.", due: "Oct. 20" }, { type: "Project 2", task: "Visit a pop-up store to prepare the critical design analysis report for Project 2.", due: "Oct. 20" }]
   - week: "08"
