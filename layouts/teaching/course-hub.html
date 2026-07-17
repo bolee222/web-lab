@@ -49,7 +49,7 @@
       <a href="{{ $base }}"{{ if eq $tab "overview" }} class="active" aria-current="page"{{ end }}>Overview</a>
       <a href="{{ printf `%sproject/` $base }}"{{ if eq $tab "project" }} class="active" aria-current="page"{{ end }}>Learning Journey</a>
       <a href="{{ printf `%sschedule/` $base }}"{{ if eq $tab "schedule" }} class="active" aria-current="page"{{ end }}>Weekly schedule</a>
-      <a href="{{ printf `%sassignments/` $base }}"{{ if eq $tab "assignments" }} class="active" aria-current="page"{{ end }}>Assignments</a>
+      <a href="{{ printf `%sassignments/` $base }}"{{ if eq $tab "assignments" }} class="active" aria-current="page"{{ end }}>Deliverables</a>
       <a href="{{ printf `%slogistics/` $base }}"{{ if eq $tab "logistics" }} class="active" aria-current="page"{{ end }}>Course Logistics</a>
       <a href="{{ printf `%sgallery/` $base }}"{{ if eq $tab "gallery" }} class="active" aria-current="page"{{ end }}>Project Gallery</a>
     </div>
@@ -227,16 +227,78 @@
     {{ end }}
 
     {{ if eq $tab "assignments" }}
+      <section class="course-hub-deliverables-overview" aria-labelledby="deliverables-overview-title">
+        <div class="course-hub-deliverables-overview-heading">
+          <div>
+            <span>At a glance</span>
+            <h2 id="deliverables-overview-title">Deliverables overview</h2>
+          </div>
+        </div>
+        <div class="course-hub-deliverables-table-wrap">
+          <div class="course-hub-deliverables-table" role="table" aria-label="Deliverables overview">
+            <div class="course-hub-deliverables-table-head" role="row">
+              <span role="columnheader">Deliverable</span>
+              <span role="columnheader">Weight</span>
+              <span role="columnheader">Focus</span>
+              <span role="columnheader">Due</span>
+              <span role="columnheader">D-Day</span>
+            </div>
+            {{ $previousProject := "" }}
+            {{ range $course.Params.assignments }}
+            {{ if ne .project $previousProject }}
+            <div class="course-hub-deliverables-project" role="row">
+              <strong role="cell">{{ .project }}</strong>
+            </div>
+            {{ end }}
+            <a class="course-hub-deliverables-table-row {{ if or (strings.HasPrefix .title "[Mini-Report]") (strings.HasPrefix .title "[Progress-Report]") }}is-mini-report{{ else }}is-milestone{{ end }}" href="#deliverable-{{ .number }}" role="row" data-deliverable-trigger>
+              <strong role="cell">Deliverable #{{ .number }}</strong>
+              <strong role="cell">{{ .weight }}</strong>
+              <span role="cell">{{ .title }}</span>
+              <span role="cell">{{ .due }}</span>
+              <small class="course-hub-deliverable-deadline" role="cell" data-deliverable-deadline data-year="{{ replaceRE `^([0-9]{4}).*$` `$1` $course.Params.semester_slug }}" data-due="{{ .due }}" data-deadline="{{ with .due_iso }}{{ . }}{{ end }}"></small>
+              <span class="course-hub-deliverable-toggle" aria-hidden="true">+</span>
+            </a>
+            {{ $previousProject = .project }}
+            {{ end }}
+          </div>
+        </div>
+        <p class="course-hub-deliverables-hint"><span aria-hidden="true">↓</span> Select a deliverable above to view its full details below.</p>
+      </section>
       {{ range $course.Params.assignments }}
-      <section class="course-hub-section course-hub-assignment-section" id="deliverable-{{ .number }}" aria-labelledby="deliverable-{{ .number }}-title">
+      <section class="course-hub-section course-hub-assignment-section" id="deliverable-{{ .number }}" aria-labelledby="deliverable-{{ .number }}-title" data-deliverable-detail>
         <div class="course-hub-section-label">Deliverable #{{ .number }}</div>
         <div class="course-hub-section-content">
           <div class="course-hub-assignment-heading">
-            <h2 id="deliverable-{{ .number }}-title">Deliverable #{{ .number }}: {{ .title }}</h2>
+            <h2 id="deliverable-{{ .number }}-title"><span>Deliverable #{{ .number }}:</span> {{ .title }}</h2>
             <span>{{ .weight }}</span>
           </div>
-          <dl class="course-hub-assignment-meta"><div><dt>Project</dt><dd>{{ .project }}</dd></div><div><dt>Due</dt><dd>{{ .due }}</dd></div></dl>
+          <dl class="course-hub-assignment-meta"><div><dt>Project</dt><dd>{{ .project }}</dd></div>{{ with .assignment_type }}<div><dt>Format</dt><dd>{{ . }}</dd></div>{{ end }}<div><dt>Due</dt><dd>{{ .due }}</dd></div></dl>
           <p class="course-hub-assignment-summary">{{ .summary }}</p>
+          {{ with .objective }}<div class="course-hub-assignment-detail"><h3>Objective</h3><p>{{ . }}</p></div>{{ end }}
+          {{ with .contents }}
+          <div class="course-hub-assignment-detail">
+            <h3>Contents should include</h3>
+            <ol class="course-hub-assignment-contents">
+              {{ range . }}<li><h4>{{ .title }}</h4><ul>{{ range .items }}<li>{{ . }}</li>{{ end }}</ul></li>{{ end }}
+            </ol>
+          </div>
+          {{ end }}
+          {{ with .presentation }}<div class="course-hub-assignment-detail"><h3>Presentation</h3><p>{{ . }}</p></div>{{ end }}
+          {{ with .upload_file }}
+          <div class="course-hub-assignment-detail">
+            <h3>Upload file</h3>
+            <dl class="course-hub-assignment-file">
+              <div><dt>File type</dt><dd>{{ .file_type }}</dd></div>
+              <div><dt>Recommended length</dt><dd>{{ .recommended_length }}</dd></div>
+              <div><dt>File naming rule</dt><dd><code>{{ .filename_rule }}</code></dd></div>
+              <div><dt>Example</dt><dd><code>{{ .example }}</code></dd></div>
+            </dl>
+          </div>
+          {{ end }}
+          {{ with .submission_method }}<div class="course-hub-assignment-detail"><h3>Submission method</h3><p>{{ . }}</p></div>{{ end }}
+          {{ with .deadline }}<div class="course-hub-assignment-detail"><h3>Deadline</h3><p><strong>{{ . }}</strong></p></div>{{ end }}
+          {{ with .evaluation_percentage }}<div class="course-hub-assignment-detail"><h3>Evaluation percentage</h3><p><strong>{{ . }}</strong></p></div>{{ end }}
+          {{ with .evaluation_focus }}<div class="course-hub-assignment-detail"><h3>Evaluation focus</h3><p>{{ . }}</p></div>{{ end }}
           {{ with .purpose }}<div class="course-hub-assignment-detail"><h3>Purpose</h3><p>{{ . }}</p></div>{{ end }}
           {{ with .requirements }}<div class="course-hub-assignment-detail"><h3>Requirements</h3><ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul></div>{{ end }}
           {{ with .submission }}<div class="course-hub-assignment-detail"><h3>Submission</h3><p>{{ . }}</p></div>{{ end }}
@@ -258,7 +320,7 @@
               <div><h3>{{ .label }}</h3><p>{{ .note }}</p></div>
               {{ with .project }}
               <div class="course-hub-assessment-breakdown" aria-label="Project {{ . }} deliverable weights">
-                {{ range where $course.Params.assignments "project" (printf "Project %v" .) }}<a href="{{ printf `%sassignments/#deliverable-%v` $base .number }}">D{{ .number }} <strong>{{ .weight }}</strong></a>{{ end }}
+                {{ range where $course.Params.assignments "project" (printf "Project %v" .) }}<a href="{{ printf `%sassignments/#deliverable-%v` $base .number }}">Deliverable #{{ .number }} <strong>{{ .weight }}</strong></a>{{ end }}
               </div>
               {{ end }}
             </article>
@@ -344,6 +406,94 @@
   document.getElementById('course-status-in').textContent = tasks(current.in_class);
   document.getElementById('course-status-assignment').textContent = assignments(current.after_class);
   details.hidden = false; link.hidden = false;
+}());
+</script>
+{{ end }}
+{{ if eq $tab "assignments" }}
+<script>
+(function () {
+  var triggers = Array.prototype.slice.call(document.querySelectorAll('[data-deliverable-trigger]'));
+  var details = Array.prototype.slice.call(document.querySelectorAll('[data-deliverable-detail]'));
+  var deadlines = Array.prototype.slice.call(document.querySelectorAll('[data-deliverable-deadline]'));
+  if (!triggers.length || !details.length) return;
+
+  function updateDeadlines() {
+    var months = { jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5, jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11 };
+    var now = new Date();
+    var dayInMilliseconds = 24 * 60 * 60 * 1000;
+    var hourInMilliseconds = 60 * 60 * 1000;
+
+    deadlines.forEach(function (item) {
+      var explicitDeadline = item.getAttribute('data-deadline');
+      var deadline;
+      if (explicitDeadline) {
+        deadline = new Date(explicitDeadline);
+      } else {
+        var match = item.getAttribute('data-due').match(/^([A-Za-z]{3})\.\s+(\d{1,2})$/);
+        if (!match) return;
+        var month = months[match[1].toLowerCase()];
+        var year = Number(item.getAttribute('data-year'));
+        var day = Number(match[2]);
+        deadline = new Date(year, month, day, 0, 0, 0, 0);
+      }
+      if (Number.isNaN(deadline.getTime())) return;
+      var remaining = deadline.getTime() - now.getTime();
+
+      item.classList.remove('is-upcoming', 'is-urgent', 'is-completed');
+      if (remaining <= 0) {
+        item.textContent = 'Completed';
+        item.classList.add('is-completed');
+      } else if (remaining < dayInMilliseconds) {
+        item.textContent = Math.ceil(remaining / hourInMilliseconds) + ' hr left';
+        item.classList.add('is-urgent');
+      } else {
+        item.textContent = 'D-' + Math.ceil(remaining / dayInMilliseconds);
+        item.classList.add('is-upcoming');
+      }
+      item.title = 'Deadline: ' + deadline.toLocaleString([], { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+    });
+  }
+
+  updateDeadlines();
+  window.setInterval(updateDeadlines, 60000);
+
+  details.forEach(function (detail) { detail.hidden = true; });
+  triggers.forEach(function (trigger) {
+    var targetId = trigger.getAttribute('href').slice(1);
+    trigger.setAttribute('aria-controls', targetId);
+    trigger.setAttribute('aria-expanded', 'false');
+  });
+
+  function showDeliverable(id, shouldScroll) {
+    var selected = document.getElementById(id);
+    if (!selected || !selected.hasAttribute('data-deliverable-detail')) return;
+
+    details.forEach(function (detail) { detail.hidden = detail !== selected; });
+    triggers.forEach(function (trigger) {
+      var isActive = trigger.getAttribute('href') === '#' + id;
+      trigger.classList.toggle('is-active', isActive);
+      trigger.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+      var toggle = trigger.querySelector('.course-hub-deliverable-toggle');
+      if (toggle) toggle.textContent = isActive ? '−' : '+';
+    });
+
+    if (shouldScroll) {
+      var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      requestAnimationFrame(function () { selected.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'start' }); });
+    }
+  }
+
+  triggers.forEach(function (trigger) {
+    trigger.addEventListener('click', function (event) {
+      event.preventDefault();
+      var id = trigger.getAttribute('href').slice(1);
+      if (history.replaceState) history.replaceState(null, '', '#' + id);
+      showDeliverable(id, true);
+    });
+  });
+
+  window.addEventListener('hashchange', function () { showDeliverable(window.location.hash.slice(1), true); });
+  if (window.location.hash) showDeliverable(window.location.hash.slice(1), false);
 }());
 </script>
 {{ end }}

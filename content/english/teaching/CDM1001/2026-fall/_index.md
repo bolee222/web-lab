@@ -241,15 +241,15 @@ weekly_schedule:
     iso_date: "2026-09-08"
     phase: "Project 1 · D:Branch"
     lecture: "CDM Design Lens #1: Art"
-    before_class: [{ type: "FC Lecture", task: "Art, Not Design" }]
+    before_class: [{ type: "FC Lecture", task: '"Art, Not Design" video should be watched.' }]
     in_class: ["Short lecture", "Group discussion"]
-    after_class: [{ type: "FC Lecture", task: "Watch ‘Art + Business.’", due: "Sep. 15" }, { type: "Deliverable 1", task: "Complete the Art design-lens exercise.", due: "Sep. 15" }]
+    after_class: [{ type: "FC Lecture", task: "Watch ‘Art + Business.’", due: "Sep. 15" }, { type: "Deliverable 1", task: "Complete the Art design-lens exercise.", due: "Sep. 14, 11:59 PM" }]
   - week: "03"
     date: "Sep. 15"
     iso_date: "2026-09-15"
     phase: "Project 1 · D:Branch"
     lecture: "CDM Design Lens #2: Art + Business"
-    before_class: [{ type: "FC Lecture", task: "Art + Business" }]
+    before_class: [{ type: "FC Lecture", task: '"Art + Business" video should be watched.' }]
     in_class: ["Short lecture", "Group discussion using D:Branch"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘Graphic Design Elements.’", due: "Sep. 22" }, { type: "Deliverable 2", task: "Complete the Art + Business design-lens exercise.", due: "Sep. 22" }]
   - week: "04"
@@ -257,7 +257,7 @@ weekly_schedule:
     iso_date: "2026-09-22"
     phase: "Project 1 · D:Branch"
     lecture: "CDM Design Lens #3: Graphic Design"
-    before_class: [{ type: "FC Lecture", task: "Graphic Design Elements" }]
+    before_class: [{ type: "FC Lecture", task: '"Graphic Design Elements" video should be watched.' }]
     in_class: ["Short lecture", "Group discussion using D:Branch"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘Product Design Elements.’", due: "Sep. 29" }, { type: "Deliverable 3", task: "Complete the Graphic Design lens exercise.", due: "Sep. 29" }]
   - week: "05"
@@ -265,7 +265,7 @@ weekly_schedule:
     iso_date: "2026-09-29"
     phase: "Project 1 · D:Branch"
     lecture: "CDM Design Lens #4: Product Design"
-    before_class: [{ type: "FC Lecture", task: "Product Design Elements" }]
+    before_class: [{ type: "FC Lecture", task: '"Product Design Elements" video should be watched.' }]
     in_class: ["Short lecture", "Group discussion using D:Branch"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘Interaction Design Elements.’", due: "Oct. 06" }, { type: "Deliverable 4", task: "Complete the Product Design lens exercise.", due: "Oct. 06" }]
   - week: "06"
@@ -273,7 +273,7 @@ weekly_schedule:
     iso_date: "2026-10-06"
     phase: "Project 1 · D:Branch"
     lecture: "CDM Design Lens #5: Interaction Design"
-    before_class: [{ type: "FC Lecture", task: "Interaction Design Elements" }]
+    before_class: [{ type: "FC Lecture", task: '"Interaction Design Elements" video should be watched.' }]
     in_class: ["Short lecture", "Group discussion using D:Branch"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘Service Design Elements.’", due: "Oct. 13" }, { type: "Deliverable 5", task: "Complete the Interaction Design lens exercise.", due: "Oct. 13" }]
   - week: "07"
@@ -281,7 +281,7 @@ weekly_schedule:
     iso_date: "2026-10-13"
     phase: "Project 1 · D:Branch"
     lecture: "CDM Design Lens #6: Service Design"
-    before_class: [{ type: "FC Lecture", task: "Service Design Elements" }]
+    before_class: [{ type: "FC Lecture", task: '"Service Design Elements" video should be watched.' }]
     in_class: ["Short lecture", "Group discussion using D:Branch", "Project 1 synthesis"]
     after_class: [{ type: "Deliverable 6", task: "Complete the Service Design lens exercise.", due: "Oct. 20" }, { type: "Project 2", task: "Visit a pop-up store to prepare the critical design analysis report for Project 2.", due: "Oct. 20" }]
   - week: "08"
@@ -358,18 +358,57 @@ weekly_schedule:
     after_class: [{ type: "Deliverable 12", task: "Submit the Personal Interdisciplinary Map (Final Report) online.", due: "Dec. 14" }]
 
 assignments:
-  - { number: 1, title: "Art as a Cultural and Expressive Lens", project: "Project 1", due: "Sep. 15", weight: "3%", summary: "Complete the Art design-lens exercise using D:Branch and document the observations, comparisons, and reasoning developed through the analysis." }
-  - { number: 2, title: "Art and Business Integration", project: "Project 1", due: "Sep. 22", weight: "3%", summary: "Analyze how artistic and business considerations interact, compare alternative design decisions, and explain their implications." }
-  - { number: 3, title: "Graphic Design Analysis", project: "Project 1", due: "Sep. 29", weight: "4%", summary: "Use D:Branch to examine graphic-design elements and explain how alternative decisions influence meaning, perception, and communication." }
-  - { number: 4, title: "Product Design Analysis", project: "Project 1", due: "Oct. 06", weight: "3%", summary: "Compare product-design alternatives and evaluate their relationship to purpose, usability, users, and context." }
-  - { number: 5, title: "Interaction Design Analysis", project: "Project 1", due: "Oct. 13", weight: "3%", summary: "Analyze interaction-design decisions and explain how they shape usability, behavior, feedback, and the overall user experience." }
-  - { number: 6, title: "Service Design Analysis and Cross-Disciplinary Synthesis", project: "Project 1", due: "Oct. 20", weight: "4%", summary: "Analyze a service-design case and synthesize insights across the design lenses explored throughout Project 1." }
-  - { number: 7, title: "Pop-up Store Design Critique", project: "Project 2", due: "Oct. 20", weight: "15%", summary: "Submit the midterm critical-analysis report based on a pop-up store field visit and the integrated application of multiple CDM design lenses." }
-  - { number: 8, title: "Company, Market, and User Research Plan", project: "Project 3", due: "Nov. 03", weight: "4%", summary: "Frame the project through an initial understanding of the partner company and Korean market, and prepare a focused user research plan." }
-  - { number: 9, title: "User Research Execution and Key Findings", project: "Project 3", due: "Nov. 10", weight: "7%", summary: "Conduct user research and document the key evidence and findings that can inform the Korean market launch strategy." }
-  - { number: 10, title: "Customer Insights and Initial Strategic Direction", project: "Project 3", due: "Nov. 17", weight: "9%", summary: "Synthesize research findings into customer insights, opportunity areas, and an initial strategic direction." }
-  - { number: 11, title: "Integrated Korean Market Launch Strategy", project: "Project 3", due: "Dec. 08", weight: "20%", summary: "Present the integrated Korean market launch strategy and submit the final presentation deck." }
-  - { number: 12, title: "Personal Interdisciplinary Map", project: "Project 4", due: "Dec. 14", weight: "10%", summary: "Submit the personal interdisciplinary map and final reflective report connecting the semester’s accumulated learning." }
+  - number: 1
+    title: "[Mini-Report] Art as a Cultural and Expressive Lens"
+    project: "Project 1"
+    assignment_type: "Individual Assignment"
+    due: "Sep. 14, 11:59 PM"
+    due_iso: "2026-09-14T23:59:00+09:00"
+    weight: "3%"
+    summary: "Develop an understanding of art as a cultural and expressive practice and apply this perspective to the critical analysis of a real-world design case using D:Branch."
+    objective: "To develop an understanding of art as a cultural and expressive practice and apply this perspective to the critical analysis of a real-world design case using D:Branch."
+    contents:
+      - title: "Selected Case"
+        items:
+          - "Briefly introduce the social innovation or design case explored through D:Branch."
+          - "Identify the social or cultural issue addressed by the case."
+      - title: "Problem–Solution Analysis"
+        items:
+          - "Define the problem addressed by the case."
+          - "Explain the original solution and its intended purpose."
+      - title: "D:Branch Exploration"
+        items:
+          - "Present the alternative design decisions explored using D:Branch."
+          - "Include relevant screenshots of the generated alternatives."
+      - title: "Comparative Analysis"
+        items:
+          - "Compare the original case and alternative options."
+          - "Explain how different artistic decisions influence meaning, emotional response, cultural interpretation, or overall experience."
+      - title: "Critical Reflection"
+        items:
+          - "Identify which option is most appropriate for the intended purpose, audience, and context."
+          - "Explain whether and how the exploration changed or expanded your initial understanding."
+    presentation: "No presentation is required. Findings will be discussed through the in-class group exercise."
+    upload_file:
+      file_type: "PDF"
+      recommended_length: "2–3 pages, including images"
+      filename_rule: "D1_StudentID_StudentName.pdf"
+      example: "D1_2026123456_JaneKim.pdf"
+    submission_method: "Upload the final PDF to the Deliverable #1 submission folder on LearnUs. Submissions through email or other channels will not be accepted."
+    deadline: "Monday, September 14, 2026, 11:59 PM (KST)"
+    evaluation_percentage: "3% of the final course grade"
+    evaluation_focus: "The assignment will be evaluated based on the student’s understanding of the weekly design principle, quality of D:Branch exploration, depth of comparison, consideration of purpose and context, and clarity of critical reasoning."
+  - { number: 2, title: "[Mini-Report] Analysis: Art Infusion", project: "Project 1", due: "Sep. 22", weight: "3%", summary: "Analyze how artistic and business considerations interact, compare alternative design decisions, and explain their implications." }
+  - { number: 3, title: "[Mini-Report] Analysis: Graphic Design Elements", project: "Project 1", due: "Sep. 29", weight: "4%", summary: "Use D:Branch to examine graphic-design elements and explain how alternative decisions influence meaning, perception, and communication." }
+  - { number: 4, title: "[Mini-Report] Analysis: Product Design Elements", project: "Project 1", due: "Oct. 06", weight: "3%", summary: "Compare product-design alternatives and evaluate their relationship to purpose, usability, users, and context." }
+  - { number: 5, title: "[Mini-Report] Analysis: Interaction Design Elements", project: "Project 1", due: "Oct. 13", weight: "3%", summary: "Analyze interaction-design decisions and explain how they shape usability, behavior, feedback, and the overall user experience." }
+  - { number: 6, title: "[Mini-Report] Analysis: Service Design Elements", project: "Project 1", due: "Oct. 20", weight: "4%", summary: "Analyze a service-design case and synthesize insights across the design lenses explored throughout Project 1." }
+  - { number: 7, title: "[Mid-term Report] Pop-up Store Design Critique", project: "Project 2", due: "Oct. 20", weight: "15%", summary: "Submit the midterm critical-analysis report based on a pop-up store field visit and the integrated application of multiple CDM design lenses." }
+  - { number: 8, title: "[Progress-Report] User Research Planning", project: "Project 3", due: "Nov. 03", weight: "4%", summary: "Frame the project through an initial understanding of the partner company and Korean market, and prepare a focused user research plan." }
+  - { number: 9, title: "[Progress-Report] User Research Execution and Key Findings", project: "Project 3", due: "Nov. 10", weight: "7%", summary: "Conduct user research and document the key evidence and findings that can inform the Korean market launch strategy." }
+  - { number: 10, title: "[Progress-Report] Initial Strategic Direction", project: "Project 3", due: "Nov. 17", weight: "9%", summary: "Synthesize research findings into customer insights, opportunity areas, and an initial strategic direction." }
+  - { number: 11, title: "[Presentation] Integrated Korean Market Launch Proposal", project: "Project 3", due: "Dec. 08", weight: "20%", summary: "Present the integrated Korean market launch strategy and submit the final presentation deck." }
+  - { number: 12, title: "[Final Report] Personal Interdisciplinary Map", project: "Project 4", due: "Dec. 14", weight: "10%", summary: "Submit the personal interdisciplinary map and final reflective report connecting the semester’s accumulated learning." }
 
 assessment:
   - { project: 1, label: "Project 1: Critical Design Case Analysis with D:Branch System", value: "20%", note: "Repeated case analysis using multiple CDM design lenses" }
