@@ -1,0 +1,43 @@
+{{- $item := .task -}}
+{{- $base := .base -}}
+{{- $weights := .weights -}}
+{{- $showDue := .showDue -}}
+{{- $projectAnchor := .projectAnchor -}}
+{{- $taskType := $item.type -}}
+{{- $taskLabel := $taskType -}}
+{{- if eq $taskLabel "FC Lecture" -}}
+  {{- $taskLabel = "FC" -}}
+{{- else if eq $taskLabel "Preparation" -}}
+  {{- $taskLabel = "Prep" -}}
+{{- end -}}
+{{- $taskClass := "task-label-default" -}}
+{{- if eq $taskLabel "FC" -}}
+  {{- $taskClass = "task-label-fc" -}}
+{{- else if strings.HasPrefix $taskLabel "Deliverable" -}}
+  {{- $taskClass = "task-label-deliverable" -}}
+{{- end -}}
+{{- $isDeliverable := strings.HasPrefix $taskType "Deliverable" -}}
+{{- $isProject := strings.HasPrefix $taskType "Project" -}}
+{{- $taskHref := "" -}}
+{{- if $isDeliverable -}}
+  {{- $deliverableNumber := replaceRE `^Deliverable[[:space:]]+([0-9]+).*$` `$1` $taskType -}}
+  {{- if ne $deliverableNumber $taskType -}}
+    {{- $taskHref = printf `%sassignments/#deliverable-%s` $base $deliverableNumber -}}
+  {{- end -}}
+{{- else if $isProject -}}
+  {{- $projectNumber := replaceRE `^Project[[:space:]]+([0-9]+).*$` `$1` $taskType -}}
+  {{- if ne $projectNumber $taskType -}}
+    {{- $taskHref = printf `%sproject/#project-%s` $base $projectNumber -}}
+  {{- else if $projectAnchor -}}
+    {{- $taskHref = printf `%sproject/#%s` $base $projectAnchor -}}
+  {{- else -}}
+    {{- $taskHref = printf `%sproject/` $base -}}
+  {{- end -}}
+{{- end -}}
+<li>
+  {{- with $taskHref }}<a class="course-hub-task-link{{ if $isDeliverable }} is-deliverable{{ end }}" href="{{ . }}">{{ end -}}
+  {{- if not $isProject }}<span class="course-hub-task-tag"><span class="{{ $taskClass }}">[{{ $taskLabel }}]</span>{{ with index $weights $taskLabel }}<span class="task-weight-deliverable">({{ . }})</span>{{ end }}</span> {{ end -}}
+  <span class="course-hub-task-copy">{{ $item.task }}</span>
+  {{- with $taskHref }}</a>{{ end -}}
+  {{- if and $showDue $item.due }} <small class="course-hub-task-due">Due: {{ $item.due }}</small>{{ end -}}
+</li>

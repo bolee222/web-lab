@@ -100,9 +100,9 @@ project:
         - title: "Lecture"
           text: "Students first learn a foundational design principle for each design domain covered in Weeks 2–7 through an FC lecture and a follow-up in-class lecture."
         - title: "In-Class Group Exercise"
-          text: "Students critically examine design principles through example cases. Working in small groups, they use D:Branch to explore a design case, compare alternative design decisions, and discuss their interpretations with classmates."
-        - title: "Individual D:Branch Exploration"
-          text: "After class, each student independently uses D:Branch to further examine the relevant design topic. Students may revisit the in-class case or explore additional alternatives and examples."
+          text: "Students critically examine design principles through example cases and group discussion. During Weeks 4–7, they use D:Branch to explore a design case, compare alternative design decisions, and discuss their interpretations with classmates."
+        - title: "Individual D:Branch Exploration (Weeks 4–7)"
+          text: "During Weeks 4–7, each student independently uses D:Branch to further examine the relevant design topic. Students may revisit the in-class case or explore additional alternatives and examples."
         - title: "Individual Analytical Report"
           text: "Each student submits a short report documenting what they explored, what they observed, how their thinking developed, and what conclusions they reached. Individual submissions are used to assess each student’s own understanding and critical thinking."
       work_setup: "The in-class group exercise supports collaborative learning and exposure to different perspectives. However, <strong>Deliverables #1–6 are submitted and assessed individually</strong>. Participation in the group exercises is evaluated separately under <strong>Participation & Professional Engagement</strong>."
@@ -250,7 +250,7 @@ weekly_schedule:
     phase: "Project 1 · D:Branch"
     lecture: "CDM Design Lens #2: Art + Business"
     before_class: [{ type: "FC Lecture", task: '"Art + Business" video should be watched.' }]
-    in_class: ["Short lecture", "Group discussion using D:Branch"]
+    in_class: ["Short lecture", "Group discussion"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘Graphic Design Elements.’", due: "Sep. 22" }, { type: "Deliverable 2", task: "Complete the Art + Business design-lens exercise.", due: "Sep. 22" }]
   - week: "04"
     date: "Sep. 22"
@@ -365,21 +365,21 @@ assignments:
     due: "Sep. 14, 11:59 PM"
     due_iso: "2026-09-14T23:59:00+09:00"
     weight: "3%"
-    summary: "Develop an understanding of art as a cultural and expressive practice and apply this perspective to the critical analysis of a real-world design case using D:Branch."
-    objective: "To develop an understanding of art as a cultural and expressive practice and apply this perspective to the critical analysis of a real-world design case using D:Branch."
+    summary: "Develop an understanding of art as a cultural and expressive practice and apply this perspective to the critical analysis of a real-world design case."
+    objective: "To develop an understanding of art as a cultural and expressive practice and apply this perspective to the critical analysis of a real-world design case."
     contents:
       - title: "Selected Case"
         items:
-          - "Briefly introduce the social innovation or design case explored through D:Branch."
+          - "Briefly introduce the selected social innovation or design case."
           - "Identify the social or cultural issue addressed by the case."
       - title: "Problem–Solution Analysis"
         items:
           - "Define the problem addressed by the case."
           - "Explain the original solution and its intended purpose."
-      - title: "D:Branch Exploration"
+      - title: "Alternative Design Exploration"
         items:
-          - "Present the alternative design decisions explored using D:Branch."
-          - "Include relevant screenshots of the generated alternatives."
+          - "Present the alternative design decisions considered in the analysis."
+          - "Include relevant images or visual references where appropriate."
       - title: "Comparative Analysis"
         items:
           - "Compare the original case and alternative options."
@@ -397,7 +397,7 @@ assignments:
     submission_method: "Upload the final PDF to the Deliverable #1 submission folder on LearnUs. Submissions through email or other channels will not be accepted."
     deadline: "Monday, September 14, 2026, 11:59 PM (KST)"
     evaluation_percentage: "3% of the final course grade"
-    evaluation_focus: "The assignment will be evaluated based on the student’s understanding of the weekly design principle, quality of D:Branch exploration, depth of comparison, consideration of purpose and context, and clarity of critical reasoning."
+    evaluation_focus: "The assignment will be evaluated based on the student’s understanding of the weekly design principle, depth of comparison, consideration of purpose and context, and clarity of critical reasoning."
   - { number: 2, title: "[Mini-Report] Analysis: Art Infusion", project: "Project 1", due: "Sep. 22", weight: "3%", summary: "Analyze how artistic and business considerations interact, compare alternative design decisions, and explain their implications." }
   - { number: 3, title: "[Mini-Report] Analysis: Graphic Design Elements", project: "Project 1", due: "Sep. 29", weight: "4%", summary: "Use D:Branch to examine graphic-design elements and explain how alternative decisions influence meaning, perception, and communication." }
   - { number: 4, title: "[Mini-Report] Analysis: Product Design Elements", project: "Project 1", due: "Oct. 06", weight: "3%", summary: "Compare product-design alternatives and evaluate their relationship to purpose, usability, users, and context." }
