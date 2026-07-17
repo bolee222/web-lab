@@ -16,6 +16,17 @@
 {{- else if strings.HasPrefix $taskLabel "Deliverable" -}}
   {{- $taskClass = "task-label-deliverable" -}}
 {{- end -}}
+{{- $isBadgeLabel := or (eq $taskLabel "FC") (eq $taskLabel "Prep") -}}
+{{- $taskDisplay := printf "[%s]" $taskLabel -}}
+{{- if eq $taskLabel "FC" -}}
+  {{- $taskDisplay = "🎬 FC" -}}
+{{- else if eq $taskLabel "Assignment" -}}
+  {{- $taskDisplay = "✏️ Assignment" -}}
+{{- else if strings.HasPrefix $taskLabel "Deliverable" -}}
+  {{- $taskDisplay = printf "📤 %s" $taskLabel -}}
+{{- else if $isBadgeLabel -}}
+  {{- $taskDisplay = $taskLabel -}}
+{{- end -}}
 {{- $isDeliverable := strings.HasPrefix $taskType "Deliverable" -}}
 {{- $isProject := strings.HasPrefix $taskType "Project" -}}
 {{- $taskHref := "" -}}
@@ -36,7 +47,7 @@
 {{- end -}}
 <li>
   {{- with $taskHref }}<a class="course-hub-task-link{{ if $isDeliverable }} is-deliverable{{ end }}" href="{{ . }}">{{ end -}}
-  {{- if not $isProject }}<span class="course-hub-task-tag"><span class="{{ $taskClass }}">[{{ $taskLabel }}]</span>{{ with index $weights $taskLabel }}<span class="task-weight-deliverable">({{ . }})</span>{{ end }}</span> {{ end -}}
+  {{- if not $isProject }}<span class="course-hub-task-tag course-hub-task-tag--{{ lower $taskLabel }}"><span class="{{ $taskClass }}">{{ $taskDisplay }}</span></span> {{ end -}}
   <span class="course-hub-task-copy">{{ $item.task }}</span>
   {{- with $taskHref }}</a>{{ end -}}
   {{- if and $showDue $item.due }} <small class="course-hub-task-due">Due: {{ $item.due }}</small>{{ end -}}

@@ -221,6 +221,7 @@ roadmap:
   - { series: "CDM Design Thinking Series", series_stages: "Stages 3–4", phase: "Stage 4: Reflect and Position", weeks: "Weeks 15–16", title: "Project 4. Personal Interdisciplinary Map", description: "Use the project experiences to clarify a personal academic and professional direction." }
 
 schedule_stage_labels:
+  "Preparation": { stage: "Course Preparation", weeks: "Week 0", project: "Getting ready for the first class" }
   "Foundations": { stage: "Course Foundation", weeks: "Week 1", project: "Orientation" }
   "Project 1 · D:Branch": { stage: "Stage 1: Learn to See", weeks: "Weeks 2–7", project: "Project 1: Critical Design Case Analysis with D:Branch System", anchor: "stage-1-learn-to-see", project_anchor: "project-1" }
   "Project 2 · Pop-up Store Analysis": { stage: "Stage 2: Apply the Lenses", weeks: "Week 8", project: "Project 2: Pop-up Store Design Critique", anchor: "stage-2-apply-the-lenses", project_anchor: "project-2" }
@@ -228,12 +229,18 @@ schedule_stage_labels:
   "Project 4 · Reflection": { stage: "Stage 4: Reflect and Position", weeks: "Weeks 15–16", project: "Project 4: Personal Interdisciplinary Map", anchor: "stage-4-reflect-and-position", project_anchor: "project-4" }
 
 weekly_schedule:
+  - week: "00"
+    date: "Before Sep. 01"
+    iso_date: "2026-08-31"
+    phase: "Preparation"
+    lecture: "Getting Ready for the Course"
+    in_class: ["No class"]
+    after_class: [{ type: "Preparation", task: "Review the course hub before the first class.", due: "Sep. 01" }]
   - week: "01"
     date: "Sep. 01"
     iso_date: "2026-09-01"
     phase: "Foundations"
     lecture: "Course Introduction"
-    before_class: [{ type: "Preparation", task: "Review the course hub before the first class." }]
     in_class: ["Course introduction", "Four-project overview", "Group formation"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘Art, Not Design.’", due: "Sep. 08" }]
   - week: "02"
@@ -241,7 +248,6 @@ weekly_schedule:
     iso_date: "2026-09-08"
     phase: "Project 1 · D:Branch"
     lecture: "CDM Design Lens #1: Art"
-    before_class: [{ type: "FC Lecture", task: '"Art, Not Design" video should be watched.' }]
     in_class: ["Short lecture", "Group discussion"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘Art + Business.’", due: "Sep. 15" }, { type: "Deliverable 1", task: "Complete the Art design-lens exercise.", due: "Sep. 14, 11:59 PM" }]
   - week: "03"
@@ -249,7 +255,6 @@ weekly_schedule:
     iso_date: "2026-09-15"
     phase: "Project 1 · D:Branch"
     lecture: "CDM Design Lens #2: Art + Business"
-    before_class: [{ type: "FC Lecture", task: '"Art + Business" video should be watched.' }]
     in_class: ["Short lecture", "Group discussion"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘Graphic Design Elements.’", due: "Sep. 22" }, { type: "Deliverable 2", task: "Complete the Art + Business design-lens exercise.", due: "Sep. 22" }]
   - week: "04"
@@ -257,7 +262,6 @@ weekly_schedule:
     iso_date: "2026-09-22"
     phase: "Project 1 · D:Branch"
     lecture: "CDM Design Lens #3: Graphic Design"
-    before_class: [{ type: "FC Lecture", task: '"Graphic Design Elements" video should be watched.' }]
     in_class: ["Short lecture", "Group discussion using D:Branch"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘Product Design Elements.’", due: "Sep. 29" }, { type: "Deliverable 3", task: "Complete the Graphic Design lens exercise.", due: "Sep. 29" }]
   - week: "05"
@@ -265,7 +269,6 @@ weekly_schedule:
     iso_date: "2026-09-29"
     phase: "Project 1 · D:Branch"
     lecture: "CDM Design Lens #4: Product Design"
-    before_class: [{ type: "FC Lecture", task: '"Product Design Elements" video should be watched.' }]
     in_class: ["Short lecture", "Group discussion using D:Branch"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘Interaction Design Elements.’", due: "Oct. 06" }, { type: "Deliverable 4", task: "Complete the Product Design lens exercise.", due: "Oct. 06" }]
   - week: "06"
@@ -273,7 +276,6 @@ weekly_schedule:
     iso_date: "2026-10-06"
     phase: "Project 1 · D:Branch"
     lecture: "CDM Design Lens #5: Interaction Design"
-    before_class: [{ type: "FC Lecture", task: '"Interaction Design Elements" video should be watched.' }]
     in_class: ["Short lecture", "Group discussion using D:Branch"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘Service Design Elements.’", due: "Oct. 13" }, { type: "Deliverable 5", task: "Complete the Interaction Design lens exercise.", due: "Oct. 13" }]
   - week: "07"
@@ -281,23 +283,20 @@ weekly_schedule:
     iso_date: "2026-10-13"
     phase: "Project 1 · D:Branch"
     lecture: "CDM Design Lens #6: Service Design"
-    before_class: [{ type: "FC Lecture", task: '"Service Design Elements" video should be watched.' }]
     in_class: ["Short lecture", "Group discussion using D:Branch", "Project 1 synthesis"]
-    after_class: [{ type: "Deliverable 6", task: "Complete the Service Design lens exercise.", due: "Oct. 20" }, { type: "Project 2", task: "Visit a pop-up store to prepare the critical design analysis report for Project 2.", due: "Oct. 20" }]
+    after_class: [{ type: "Deliverable 6", task: "Complete the Service Design lens exercise.", due: "Oct. 20" }, { type: "Project 2", task: "Visit a pop-up store and complete the critical design analysis report for Project 2.", due: "Oct. 20" }]
   - week: "08"
     date: "Oct. 20"
     iso_date: "2026-10-20"
     phase: "Project 2 · Pop-up Store Analysis"
     lecture: "Midterm Report Submission (Online Submission)"
-    before_class: [{ type: "Project 2", task: "Complete the final pop-up store analysis report." }]
     in_class: ["No offline lecture"]
-    after_class: [{ type: "Deliverable 7", task: "Submit the Pop-up Store Design Critique (Midterm Report) online.", due: "Oct. 20" }]
+    after_class: [{ type: "Deliverable 7", task: "Submit the Pop-up Store Design Critique (Midterm Report) online.", due: "Oct. 20" }, { type: "Preparation", task: "Review Studio Mikko Laakkonen and the Korean furniture market.", due: "Oct. 27" }]
   - week: "09"
     date: "Oct. 27"
     iso_date: "2026-10-27"
     phase: "Project 3 · Industry Project"
     lecture: "Special Lecture: Studio Mikko Laakkonen"
-    before_class: [{ type: "Preparation", task: "Review Studio Mikko Laakkonen and the Korean furniture market." }]
     in_class: ["Special lecture", "Project 3 description", "New group formation"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘User-centered Design’ and ‘User Research Methods.’", due: "Nov. 03" }, { type: "Deliverable 8", task: "Prepare a user-research plan.", due: "Nov. 03" }]
   - week: "10"
@@ -305,15 +304,13 @@ weekly_schedule:
     iso_date: "2026-11-03"
     phase: "Project 3 · Industry Project"
     lecture: "CDMs’ Design Thinking Series #1: Design as User-Centered Thinking"
-    before_class: [{ type: "FC Lecture", task: "User-centered Design and User Research Methods" }]
     in_class: ["Short lecture", "Research-planning discussion", "Feedback"]
-    after_class: [{ type: "Deliverable 9", task: "Conduct user research interviews.", due: "Nov. 10" }]
+    after_class: [{ type: "Deliverable 9", task: "Conduct user research interviews and bring the findings and initial insights to class.", due: "Nov. 10" }]
   - week: "11"
     date: "Nov. 10"
     iso_date: "2026-11-10"
     phase: "Project 3 · Industry Project"
     lecture: "CDMs’ Design Thinking Series #1: User Insight + Ideation"
-    before_class: [{ type: "Research", task: "Bring interview findings and initial insights." }]
     in_class: ["Short lecture", "Group discussion", "Brainstorming"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘Customer-centered Thinking.’", due: "Nov. 17" }, { type: "Deliverable 10", task: "Synthesize user insights and opportunity areas.", due: "Nov. 17" }]
   - week: "12"
@@ -321,7 +318,6 @@ weekly_schedule:
     iso_date: "2026-11-17"
     phase: "Project 3 · Industry Project"
     lecture: "CDMs’ Design Thinking Series #2: Design Marketing as Customer-Centered Thinking"
-    before_class: [{ type: "FC Lecture", task: "Customer-centered Thinking" }]
     in_class: ["Short lecture", "Group discussion", "Brainstorming"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘Strategic Design Thinking.’", due: "Nov. 24" }, { type: "Project 3", task: "Develop customer-centered marketing concepts.", due: "Nov. 24" }]
   - week: "13"
@@ -329,15 +325,13 @@ weekly_schedule:
     iso_date: "2026-11-24"
     phase: "Project 3 · Industry Project"
     lecture: "CDMs’ Design Thinking Series #3: Design Management as Strategic-Centered Thinking"
-    before_class: [{ type: "FC Lecture", task: "Strategic Design Thinking" }]
     in_class: ["Short lecture", "Group discussion", "Strategy development"]
-    after_class: [{ type: "Project 3", task: "Develop the final Korea-launch strategy and presentation.", due: "Dec. 01" }]
+    after_class: [{ type: "Project 3", task: "Develop the complete Korea-launch strategy proposal and presentation, and bring open questions for consultation.", due: "Dec. 01" }]
   - week: "14"
     date: "Dec. 01"
     iso_date: "2026-12-01"
     phase: "Project 3 · Industry Project"
     lecture: "Group Consultation (Optional)"
-    before_class: [{ type: "Project 3", task: "Bring the complete research-to-strategy proposal and open questions." }]
     in_class: ["Group feedback"]
     after_class: [{ type: "Project 3", task: "Finalize and rehearse the strategy presentation.", due: "Dec. 08" }]
   - week: "15"
@@ -345,7 +339,6 @@ weekly_schedule:
     iso_date: "2026-12-08"
     phase: "Project 3 · Industry Project"
     lecture: "Final Project Presentation"
-    before_class: [{ type: "Project 3", task: "Rehearse the final presentation and verify all deliverables." }]
     in_class: ["Final strategy presentations", "Co-evaluation with Mikko Laakkonen", "Questions and critique"]
     after_class: [{ type: "FC Lecture", task: "Watch ‘Personal Interdisciplinary Mapping.’", due: "Dec. 14" }, { type: "Deliverable 11", task: "Submit the Industry Project Final Presentation deck.", due: "Dec. 08" }, { type: "Project 4", task: "Complete the Personal Interdisciplinary Map and final report.", due: "Dec. 14" }]
   - week: "16"
@@ -353,7 +346,6 @@ weekly_schedule:
     iso_date: "2026-12-14"
     phase: "Project 4 · Reflection"
     lecture: "Final Report Submission (Online Submission)"
-    before_class: [{ type: "Project 4", task: "Complete the Personal Interdisciplinary Map and final report." }]
     in_class: ["No offline lecture"]
     after_class: [{ type: "Deliverable 12", task: "Submit the Personal Interdisciplinary Map (Final Report) online.", due: "Dec. 14" }]
 

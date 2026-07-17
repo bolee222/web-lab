@@ -64,9 +64,8 @@
           <h2 id="course-status-title">{{ .title }}</h2>
           <p id="course-status-text">{{ .text }}</p>
           <div class="course-hub-current-details" id="course-status-details" hidden>
-            <div><strong>Before Class</strong><span id="course-status-before"></span></div>
             <div><strong>In Class</strong><span id="course-status-in"></span></div>
-            <div><strong>Assignment</strong><span id="course-status-assignment"></span></div>
+            <div><strong>After Class</strong><span id="course-status-after"></span></div>
           </div>
           <a class="course-hub-current-link" id="course-status-link" href="{{ printf `%sschedule/` $base }}" hidden>View this week in the schedule <span aria-hidden="true">→</span></a>
         </div>
@@ -192,38 +191,105 @@
 
     {{ if eq $tab "schedule" }}
       {{ $deliverableWeights := dict }}
+      {{ $lectureStyle := $course.Params.lecture_style | default "style-2" }}
       {{ range $course.Params.assignments }}{{ $deliverableWeights = merge $deliverableWeights (dict (printf "Deliverable %v" .number) .weight) }}{{ end }}
+      {{ $schedule := $course.Params.weekly_schedule }}
+      {{ $hasPaper := false }}{{ range $schedule }}{{ with .paper }}{{ $hasPaper = true }}{{ end }}{{ end }}
       <section class="course-hub-section course-hub-schedule-section" aria-label="Weekly schedule">
         <div class="course-hub-section-content">
-          <p class="course-hub-schedule-intro">{{ with $course.Params.schedule_intro }}{{ . }}{{ else }}This course is composed of two parts: (i) CDM's Design Lens Series (w1–w8) and (ii) CDM's Integrated Design Thinking Series (w9–w16). For each part, a series of lectures will be given to provide fundamental knowledge and principles about each topic. Then, students will conduct corresponding case studies or in-class group activities each week to gain an in-depth understanding and finish term projects through integrated comprehension of what they have learned.{{ end }}</p>
-          <div class="course-hub-schedule" role="list">
-            <div class="course-hub-schedule-head" aria-hidden="true"><span>Date</span><span>Lecture</span><span><strong>Before Class:</strong> FC Lecture</span><span><strong>In Class:</strong> Activity</span><span><strong>After Class:</strong> Assignment</span><span>Stage & Project</span></div>
-            {{ $schedule := $course.Params.weekly_schedule }}
+          <p class="course-hub-schedule-intro">{{ with $course.Params.schedule_intro }}{{ . }}{{ else }}This course is composed of two parts: (i) CDM's Design Lens Series (w1–w8) and (ii) CDM's Integrated Design Thinking Series (w9–w16). For each part, a series of lectures will be given to provide fundamental knowledge and principles about each topic. Then, students will conduct corresponding case studies or in-class group activities each week to gain an in-depth understanding and finish term projects through integrated comprehension of what they have learned.{{ end }} Week 00 is the pre-semester preparation period, and each week’s After Class items prepare students for the following session.</p>
+          <div class="course-hub-schedule-mode" data-schedule-mode-control>
+            <div class="course-hub-schedule-mode-toggle" role="group" aria-label="Weekly schedule display mode">
+              <button type="button" data-schedule-mode="abstract" aria-pressed="false">Abstract</button>
+              <button type="button" data-schedule-mode="extended" aria-pressed="true">Extended</button>
+            </div>
+            <p data-schedule-mode-description>Extended mode includes paper progress, in-class activities, and after-class preparation.</p>
+          </div>
+          <div class="course-hub-schedule{{ if $hasPaper }} has-paper-mapping{{ end }}" role="list">
+            <div class="course-hub-schedule-head" aria-hidden="true"><span>Date</span><span>Lecture</span><span><strong>In Class:</strong> Activity</span><span><strong>After Class:</strong> Assignment &amp; Preparation</span>{{ if $hasPaper }}<span>Paper</span><span>Learning journey</span>{{ else }}<span class="course-hub-learning-journey-header"><span class="course-hub-extended-label">Stage &amp; Project</span><span class="course-hub-abstract-label">Learning journey</span></span>{{ end }}</div>
             {{ range $index, $week := $schedule }}
             {{ $phase := .phase }}
             {{ $stageInfo := dict "stage" .phase "project" .phase }}
             {{ with $course.Params.schedule_stage_labels }}{{ with index . $phase }}{{ $stageInfo = . }}{{ end }}{{ end }}
             {{ $isStageStart := or (eq $index 0) (ne (index $schedule (sub $index 1)).phase .phase) }}
             {{ $isStageEnd := or (eq (add $index 1) (len $schedule)) (ne (index $schedule (mod (add $index 1) (len $schedule))).phase .phase) }}
-            <article{{ if or $isStageStart .holiday }} class="{{ if $isStageStart }}is-project-start{{ end }}{{ if and $isStageStart .holiday }} {{ end }}{{ with .holiday }}is-public-holiday{{ end }}"{{ end }} role="listitem">
+            {{ $showStageDivider := $isStageStart }}
+            {{ $stageNumber := 0 }}
+            {{ range $stageIndex, $stageWeek := first (add $index 1) $schedule }}
+              {{ $stageStartsHere := or (eq $stageIndex 0) (ne (index $schedule (sub $stageIndex 1)).phase $stageWeek.phase) }}
+              {{ if and $stageStartsHere (ne $stageWeek.phase "Preparation") }}{{ $stageNumber = add $stageNumber 1 }}{{ end }}
+            {{ end }}
+            {{ $stageDisplay := $stageInfo.stage }}
+            {{ if ne .phase "Preparation" }}{{ $stageName := replaceRE `^Stage[[:space:]]+[0-9]+:[[:space:]]*` `` $stageInfo.stage }}{{ $stageDisplay = printf "Stage %d: %s" $stageNumber $stageName }}{{ end }}
+            {{ $isPresentationWeek := or (eq .week "08") (eq .week "15") }}
+            <article{{ if or $showStageDivider .holiday $isPresentationWeek }} class="{{ if $showStageDivider }}is-project-start{{ end }}{{ if and $showStageDivider (or .holiday $isPresentationWeek) }} {{ end }}{{ with .holiday }}is-public-holiday{{ end }}{{ if eq .week "00" }} is-preparation-week{{ end }}{{ if $isPresentationWeek }} is-presentation-week{{ end }}"{{ end }} role="listitem">
               <div class="course-hub-week"{{ with .holiday }} aria-label="Week {{ $week.week }}, {{ $week.date }}, public holiday: {{ . }}"{{ end }}><strong>Week {{ .week }}</strong><span>{{ .date }}</span>{{ with .holiday }}<small class="course-hub-holiday">{{ . }}</small>{{ end }}</div>
-              <div class="course-hub-week-topic"><span class="course-hub-mobile-label">Lecture</span><h3>{{ if strings.Contains .lecture ":" }}{{ replaceRE `^([^:]+:)[[:space:]]*(.*)$` `$1<br><span>$2</span>` .lecture | safeHTML }}{{ else }}{{ .lecture }}{{ end }}</h3></div>
-              <div class="course-hub-week-cell"><span class="course-hub-mobile-label">Before Class</span><ul class="course-hub-task-list">{{ range .before_class }}{{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "weights" $deliverableWeights "showDue" false "projectAnchor" $stageInfo.project_anchor) }}{{ end }}</ul></div>
+              <div class="course-hub-week-topic course-hub-lecture--{{ $lectureStyle }}"><span class="course-hub-mobile-label">Lecture</span><h3>{{ if strings.Contains .lecture ":" }}{{ replaceRE `^([^:]+:)[[:space:]]*(.*)$` `$1<br><span>$2</span>` .lecture | safeHTML }}{{ else }}{{ .lecture }}{{ end }}</h3></div>
               <div class="course-hub-week-cell"><span class="course-hub-mobile-label">In Class</span><ul>{{ range .in_class }}<li>{{ . }}</li>{{ end }}</ul></div>
               <div class="course-hub-week-cell course-hub-week-cell--after"><span class="course-hub-mobile-label">After Class</span><ul class="course-hub-task-list">{{ range .after_class }}{{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "weights" $deliverableWeights "showDue" true "projectAnchor" $stageInfo.project_anchor) }}{{ end }}</ul></div>
+              {{ if $hasPaper }}
+              <div class="course-hub-paper"><span class="course-hub-mobile-label">Paper</span>{{ with .paper }}<em>{{ . }}</em>{{ end }}</div>
               <div class="course-hub-stage-project{{ if $isStageStart }} is-stage-start{{ else }} is-stage-continuation{{ end }}{{ if $isStageEnd }} is-stage-end{{ end }}">
                 {{ if $isStageStart }}
-                  <span class="course-hub-mobile-label">Stage & Project</span>
-                  {{ with $stageInfo.anchor }}<a class="course-hub-stage-link" href="{{ printf `%sproject/#%s` $base . }}"><strong>{{ $stageInfo.stage }}</strong></a>{{ else }}<strong>{{ $stageInfo.stage }}</strong>{{ end }}
+                  <span class="course-hub-mobile-label">Learning journey</span>
+                  {{ with $stageInfo.anchor }}<a class="course-hub-stage-link" href="{{ printf `%sproject/#%s` $base . }}"><strong>{{ $stageDisplay }}</strong></a>{{ else }}<strong>{{ $stageDisplay }}</strong>{{ end }}
                   {{ with $stageInfo.project_anchor }}<a class="course-hub-project-link" href="{{ printf `%sproject/#%s` $base . }}">{{ $stageInfo.project }}</a>{{ else }}<span>{{ $stageInfo.project }}</span>{{ end }}
                   {{ with $stageInfo.weeks }}<small>{{ . }}</small>{{ end }}
                 {{ end }}
               </div>
+              {{ else }}
+              <div class="course-hub-stage-project{{ if $isStageStart }} is-stage-start{{ else }} is-stage-continuation{{ end }}{{ if $isStageEnd }} is-stage-end{{ end }}">
+                {{ if $isStageStart }}
+                  <span class="course-hub-mobile-label">Stage & Project</span>
+                  {{ with $stageInfo.anchor }}<a class="course-hub-stage-link" href="{{ printf `%sproject/#%s` $base . }}"><strong>{{ $stageDisplay }}</strong></a>{{ else }}<strong>{{ $stageDisplay }}</strong>{{ end }}
+                  {{ with $stageInfo.project_anchor }}<a class="course-hub-project-link" href="{{ printf `%sproject/#%s` $base . }}">{{ $stageInfo.project }}</a>{{ else }}<span>{{ $stageInfo.project }}</span>{{ end }}
+                  {{ with $stageInfo.weeks }}<small>{{ . }}</small>{{ end }}
+                {{ end }}
+              </div>
+              {{ end }}
             </article>
             {{ end }}
           </div>
         </div>
       </section>
+      <script>
+      (function () {
+        var schedule = document.querySelector('.course-hub-schedule');
+        var control = document.querySelector('[data-schedule-mode-control]');
+        if (!schedule || !control) return;
+
+        var buttons = Array.prototype.slice.call(control.querySelectorAll('[data-schedule-mode]'));
+        var description = control.querySelector('[data-schedule-mode-description]');
+        var storageKey = 'course-hub-schedule-mode:' + {{ jsonify $base | safeJS }};
+        var descriptions = {
+          abstract: 'Abstract mode shows the date, lecture, and learning journey.',
+          extended: 'Extended mode includes paper progress, in-class activities, and after-class preparation.'
+        };
+
+        function setMode(mode, save) {
+          var isAbstract = mode === 'abstract';
+          schedule.classList.toggle('is-abstract', isAbstract);
+          buttons.forEach(function (button) {
+            button.setAttribute('aria-pressed', button.getAttribute('data-schedule-mode') === mode ? 'true' : 'false');
+          });
+          if (description) description.textContent = descriptions[mode];
+          if (save) {
+            try { window.localStorage.setItem(storageKey, mode); } catch (error) {}
+          }
+        }
+
+        var initialMode = 'extended';
+        try {
+          var savedMode = window.localStorage.getItem(storageKey);
+          if (savedMode === 'abstract' || savedMode === 'extended') initialMode = savedMode;
+        } catch (error) {}
+        setMode(initialMode, false);
+
+        buttons.forEach(function (button) {
+          button.addEventListener('click', function () { setMode(button.getAttribute('data-schedule-mode'), true); });
+        });
+      }());
+      </script>
     {{ end }}
 
     {{ if eq $tab "assignments" }}
@@ -317,12 +383,15 @@
             {{ range $course.Params.assessment }}
             <article>
               <strong>{{ .value }}</strong>
-              <div><h3>{{ .label }}</h3><p>{{ .note }}</p></div>
+              <div>
+                <h3>{{ .label }}</h3><p>{{ .note }}</p>
               {{ with .project }}
               <div class="course-hub-assessment-breakdown" aria-label="Project {{ . }} deliverable weights">
+                <span class="course-hub-assessment-breakdown-label">Deliverables</span>
                 {{ range where $course.Params.assignments "project" (printf "Project %v" .) }}<a href="{{ printf `%sassignments/#deliverable-%v` $base .number }}">Deliverable #{{ .number }} <strong>{{ .weight }}</strong></a>{{ end }}
               </div>
               {{ end }}
+              </div>
             </article>
             {{ end }}
           </div>
@@ -374,6 +443,8 @@
   var schedule;
   try { schedule = JSON.parse(source.textContent); } catch (error) { return; }
   if (!schedule || !schedule.length) return;
+  var classSchedule = schedule.filter(function (item) { return item.week !== '00'; });
+  if (!classSchedule.length) return;
   var courseSemester = {{ jsonify $course.Params.semester | safeJS }};
   function localDate(value) { var parts = value.split('-'); return new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2])); }
   function tasks(items) { return (items || []).map(function (item) { return item.task || item; }).join(' · '); }
@@ -386,25 +457,24 @@
   }
   var now = new Date();
   var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  var firstClass = localDate(schedule[0].iso_date);
-  var finalClass = localDate(schedule[schedule.length - 1].iso_date);
+  var firstClass = localDate(classSchedule[0].iso_date);
+  var finalClass = localDate(classSchedule[classSchedule.length - 1].iso_date);
   var afterFinal = new Date(finalClass); afterFinal.setDate(afterFinal.getDate() + 1);
   var eyebrow = document.getElementById('course-status-eyebrow');
   var title = document.getElementById('course-status-title');
   var text = document.getElementById('course-status-text');
   var details = document.getElementById('course-status-details');
   var link = document.getElementById('course-status-link');
-  if (today < firstClass) { eyebrow.textContent = 'Before the semester'; title.textContent = 'The course begins on ' + schedule[0].date + '.'; text.textContent = 'Review the course overview and weekly schedule. Confirmed readings and submission links will be added before each class.'; return; }
-  if (today >= afterFinal) { eyebrow.textContent = 'Course completed'; title.textContent = courseSemester + ' course archive'; text.textContent = 'The semester concluded on ' + schedule[schedule.length - 1].date + '. Course materials remain available as an archive.'; return; }
+  if (today < firstClass) { eyebrow.textContent = 'Before the semester'; title.textContent = 'The course begins on ' + classSchedule[0].date + '.'; text.textContent = 'Review Week 00 in the weekly schedule and complete the preparation for the first class.'; return; }
+  if (today >= afterFinal) { eyebrow.textContent = 'Course completed'; title.textContent = courseSemester + ' course archive'; text.textContent = 'The semester concluded on ' + classSchedule[classSchedule.length - 1].date + '. Course materials remain available as an archive.'; return; }
   var currentIndex = 0;
-  for (var i = 0; i < schedule.length; i += 1) { if (localDate(schedule[i].iso_date) <= today) currentIndex = i; else break; }
-  var current = schedule[currentIndex];
+  for (var i = 0; i < classSchedule.length; i += 1) { if (localDate(classSchedule[i].iso_date) <= today) currentIndex = i; else break; }
+  var current = classSchedule[currentIndex];
   eyebrow.textContent = 'This week · Week ' + current.week + ' · ' + current.date;
   title.textContent = current.lecture;
   text.textContent = 'Current phase: ' + current.phase;
-  document.getElementById('course-status-before').textContent = tasks(current.before_class);
   document.getElementById('course-status-in').textContent = tasks(current.in_class);
-  document.getElementById('course-status-assignment').textContent = assignments(current.after_class);
+  document.getElementById('course-status-after').textContent = assignments(current.after_class);
   details.hidden = false; link.hidden = false;
 }());
 </script>
