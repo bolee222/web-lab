@@ -161,6 +161,15 @@ undergraduate_courses:
       - "Evidence-based Design"
     offerings:
       - semester: "Fall 2026"
+        status: "Upcoming"
+        project_focus: "Evidence-based Design Research"
+        description: "Students move from research framing to fieldwork, synthesis, and evidence-based design recommendations through a semester-long study."
+        keywords:
+          - "Research Framing"
+          - "Qualitative Methods"
+          - "Research Synthesis"
+        final_deliverable: "Design research report and final presentation"
+        url: "/courses/cdm2008/2026-fall/"
 
   - code: "CDM4008"
     title: "Social Innovation in Sustainability"

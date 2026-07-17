@@ -122,7 +122,7 @@
         <div class="course-hub-section-label">Course roadmap</div>
         <div class="course-hub-section-content">
           <h2 id="roadmap-title">A learning journey from seeing to integrating</h2>
-          <p class="course-hub-provisional">The course progresses through two connected series and four cumulative projects. In the CDM Design Lens Series, students learn to examine design from multiple perspectives and apply those lenses to a real-world critique. In the CDM Integrated Design Thinking Series, they bring these perspectives together through an industry collaboration and conclude by articulating their own interdisciplinary direction.</p>
+          <p class="course-hub-provisional">{{ with $course.Params.roadmap_intro }}{{ . }}{{ else }}The course progresses through two connected series and four cumulative projects. In the CDM Design Lens Series, students learn to examine design from multiple perspectives and apply those lenses to a real-world critique. In the CDM Integrated Design Thinking Series, they bring these perspectives together through an industry collaboration and conclude by articulating their own interdisciplinary direction.{{ end }}</p>
           <div class="course-hub-roadmap">
             <div class="course-hub-roadmap-head" aria-hidden="true"><span>Stage</span><span>Project</span><span>Core learning</span></div>
             {{ $previousSeries := "" }}
@@ -195,7 +195,7 @@
       {{ range $course.Params.assignments }}{{ $deliverableWeights = merge $deliverableWeights (dict (printf "Deliverable %v" .number) .weight) }}{{ end }}
       <section class="course-hub-section course-hub-schedule-section" aria-label="Weekly schedule">
         <div class="course-hub-section-content">
-          <p class="course-hub-schedule-intro">This course is composed of two parts: (i) CDM's Design Lens Series (w1–w8) and (ii) CDM's Integrated Design Thinking Series (w9–w16). For each part, a series of lectures will be given to provide fundamental knowledge and principles about each topic. Then, students will conduct corresponding case studies or in-class group activities each week to gain an in-depth understanding and finish term projects through integrated comprehension of what they have learned.</p>
+          <p class="course-hub-schedule-intro">{{ with $course.Params.schedule_intro }}{{ . }}{{ else }}This course is composed of two parts: (i) CDM's Design Lens Series (w1–w8) and (ii) CDM's Integrated Design Thinking Series (w9–w16). For each part, a series of lectures will be given to provide fundamental knowledge and principles about each topic. Then, students will conduct corresponding case studies or in-class group activities each week to gain an in-depth understanding and finish term projects through integrated comprehension of what they have learned.{{ end }}</p>
           <div class="course-hub-schedule" role="list">
             <div class="course-hub-schedule-head" aria-hidden="true"><span>Date</span><span>Lecture</span><span><strong>Before Class:</strong> FC Lecture</span><span><strong>In Class:</strong> Activity</span><span><strong>After Class:</strong> Assignment</span><span>Stage & Project</span></div>
             {{ $schedule := $course.Params.weekly_schedule }}
@@ -205,8 +205,8 @@
             {{ with $course.Params.schedule_stage_labels }}{{ with index . $phase }}{{ $stageInfo = . }}{{ end }}{{ end }}
             {{ $isStageStart := or (eq $index 0) (ne (index $schedule (sub $index 1)).phase .phase) }}
             {{ $isStageEnd := or (eq (add $index 1) (len $schedule)) (ne (index $schedule (mod (add $index 1) (len $schedule))).phase .phase) }}
-            <article{{ if $isStageStart }} class="is-project-start"{{ end }} role="listitem">
-              <div class="course-hub-week"><strong>Week {{ .week }}</strong><span>{{ .date }}</span></div>
+            <article{{ if or $isStageStart .holiday }} class="{{ if $isStageStart }}is-project-start{{ end }}{{ if and $isStageStart .holiday }} {{ end }}{{ with .holiday }}is-public-holiday{{ end }}"{{ end }} role="listitem">
+              <div class="course-hub-week"{{ with .holiday }} aria-label="Week {{ $week.week }}, {{ $week.date }}, public holiday: {{ . }}"{{ end }}><strong>Week {{ .week }}</strong><span>{{ .date }}</span>{{ with .holiday }}<small class="course-hub-holiday">{{ . }}</small>{{ end }}</div>
               <div class="course-hub-week-topic"><span class="course-hub-mobile-label">Lecture</span><h3>{{ if strings.Contains .lecture ":" }}{{ replaceRE `^([^:]+:)[[:space:]]*(.*)$` `$1<br><span>$2</span>` .lecture | safeHTML }}{{ else }}{{ .lecture }}{{ end }}</h3></div>
               <div class="course-hub-week-cell"><span class="course-hub-mobile-label">Before Class</span><ul class="course-hub-task-list">{{ range .before_class }}{{ $taskLabel := .type }}{{ if eq $taskLabel "FC Lecture" }}{{ $taskLabel = "FC" }}{{ else if eq $taskLabel "Preparation" }}{{ $taskLabel = "Prep" }}{{ end }}{{ $taskClass := "task-label-default" }}{{ if eq $taskLabel "FC" }}{{ $taskClass = "task-label-fc" }}{{ else if strings.HasPrefix $taskLabel "Deliverable" }}{{ $taskClass = "task-label-deliverable" }}{{ end }}<li>{{ if not (strings.HasPrefix $taskLabel "Project") }}<span class="{{ $taskClass }}">[{{ $taskLabel }}]</span>{{ with index $deliverableWeights $taskLabel }} <span class="task-weight-deliverable">({{ . }})</span>{{ end }} {{ end }}{{ .task }}</li>{{ end }}</ul></div>
               <div class="course-hub-week-cell"><span class="course-hub-mobile-label">In Class</span><ul>{{ range .in_class }}<li>{{ . }}</li>{{ end }}</ul></div>

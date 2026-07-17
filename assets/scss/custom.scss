@@ -691,6 +691,8 @@ img.rounded {
 .course-hub-schedule article > div:last-child { border-right: 0; }
 .course-hub-week strong { display: block; color: var(--course-accent); font-size: 13px; font-weight: 700; white-space: nowrap; }
 .course-hub-week span { display: block; margin-top: 5px; color: #777; font-size: 9px; line-height: 1.35; letter-spacing: .05em; text-transform: uppercase; }
+.course-hub-schedule article.is-public-holiday > div:not(:last-child) { background: #eeeeee; }
+.course-hub-week .course-hub-holiday { display: block; margin-top: 8px; color: #3f3f3f; font-size: 9px; font-weight: 700; line-height: 1.35; letter-spacing: .02em; text-transform: none; }
 .course-hub-week-topic h3 { margin: 0; color: #222; font-size: 15px; font-weight: 600; line-height: 1.4; }
 .course-hub-week-topic h3 span { display: block; color: $brand-color-grad-primary; }
 .course-hub-week-topic small { color: var(--course-accent); font-size: 9px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
