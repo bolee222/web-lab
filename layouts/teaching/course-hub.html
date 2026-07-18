@@ -47,16 +47,23 @@
     </div>
   </header>
 
-  <nav class="course-hub-nav" aria-label="Course pages">
+  <nav class="course-hub-nav" aria-label="Course pages" data-course-nav>
     <div class="container">
-      <a href="{{ $base }}"{{ if eq $tab "overview" }} class="active" aria-current="page"{{ end }}>Overview</a>
-      <a href="{{ printf `%sproject/` $base }}"{{ if eq $tab "project" }} class="active" aria-current="page"{{ end }}>Learning Journey</a>
-      <a href="{{ printf `%sschedule/` $base }}"{{ if eq $tab "schedule" }} class="active" aria-current="page"{{ end }}>Weekly schedule</a>
-      <a href="{{ printf `%sassignments/` $base }}"{{ if eq $tab "assignments" }} class="active" aria-current="page"{{ end }}>Deliverables</a>
-      <a href="{{ printf `%slogistics/` $base }}"{{ if eq $tab "logistics" }} class="active" aria-current="page"{{ end }}>Course Logistics</a>
-      <a href="{{ printf `%sgallery/` $base }}"{{ if eq $tab "gallery" }} class="active" aria-current="page"{{ end }}>Project Gallery</a>
+      <div class="course-hub-nav-links">
+        <a href="{{ $base }}"{{ if eq $tab "overview" }} class="active" aria-current="page"{{ end }}>Overview</a>
+        <a href="{{ printf `%sproject/` $base }}"{{ if eq $tab "project" }} class="active" aria-current="page"{{ end }}>Learning Journey</a>
+        <a href="{{ printf `%sschedule/` $base }}"{{ if or (eq $tab "schedule") (eq $tab "week") }} class="active" aria-current="page"{{ end }}>Weekly schedule</a>
+        <a href="{{ printf `%sassignments/` $base }}"{{ if eq $tab "assignments" }} class="active" aria-current="page"{{ end }}>Deliverables</a>
+        <a href="{{ printf `%slogistics/` $base }}"{{ if eq $tab "logistics" }} class="active" aria-current="page"{{ end }}>Course Logistics</a>
+        <a href="{{ printf `%sgallery/` $base }}"{{ if eq $tab "gallery" }} class="active" aria-current="page"{{ end }}>Project Gallery</a>
+      </div>
+      <button class="course-hub-nav-fix" type="button" aria-pressed="false" data-course-nav-fix>
+        <span data-course-nav-fix-label>Fix</span>
+        <span class="course-hub-nav-fix-track" aria-hidden="true"><span></span></span>
+      </button>
     </div>
   </nav>
+  <div class="course-hub-nav-spacer" aria-hidden="true" data-course-nav-spacer></div>
 
   <div class="container course-hub-body course-hub-body--{{ $tab }}">
     {{ if eq $tab "overview" }}
@@ -227,7 +234,9 @@
             {{ $isPresentationWeek := or (eq .week "08") (eq .week "15") }}
             <article{{ if or $showStageDivider .holiday $isPresentationWeek }} class="{{ if $showStageDivider }}is-project-start{{ end }}{{ if and $showStageDivider (or .holiday $isPresentationWeek) }} {{ end }}{{ with .holiday }}is-public-holiday{{ end }}{{ if eq .week "00" }} is-preparation-week{{ end }}{{ if $isPresentationWeek }} is-presentation-week{{ end }}"{{ end }} role="listitem">
               <div class="course-hub-week"{{ with .holiday }} aria-label="Week {{ $week.week }}, {{ $week.date }}, public holiday: {{ . }}"{{ end }}><strong>Week {{ .week }}</strong><span>{{ .date }}</span>{{ with .holiday }}<small class="course-hub-holiday">{{ . }}</small>{{ end }}</div>
-              <div class="course-hub-week-topic course-hub-lecture--{{ $lectureStyle }}"><span class="course-hub-mobile-label">Lecture</span><h3>{{ if strings.Contains .lecture ":" }}{{ replaceRE `^([^:]+:)[[:space:]]*(.*)$` `$1<br><span>$2</span>` .lecture | safeHTML }}{{ else }}{{ .lecture }}{{ end }}</h3></div>
+              {{ $weekNumber := replaceRE `^0+` `` .week }}{{ if eq $weekNumber "" }}{{ $weekNumber = "0" }}{{ end }}
+              {{ $weekPath := printf "w%s" $weekNumber }}
+              <div class="course-hub-week-topic course-hub-lecture--{{ $lectureStyle }}"><span class="course-hub-mobile-label">Lecture</span><h3><a href="{{ printf `%s%s/` $base $weekPath }}">{{ if strings.Contains .lecture ":" }}{{ replaceRE `^([^:]+:)[[:space:]]*(.*)$` `$1<br><span>$2</span>` .lecture | safeHTML }}{{ else }}{{ .lecture }}{{ end }}</a></h3></div>
               <div class="course-hub-week-cell"><span class="course-hub-mobile-label">In Class</span><ul>{{ range .in_class }}<li>{{ . }}</li>{{ end }}</ul></div>
               <div class="course-hub-week-cell course-hub-week-cell--after"><span class="course-hub-mobile-label">After Class</span><ul class="course-hub-task-list">{{ range .after_class }}{{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "weights" $deliverableWeights "showDue" true "projectAnchor" $stageInfo.project_anchor) }}{{ end }}</ul></div>
               {{ if $hasPaper }}
@@ -293,6 +302,62 @@
         });
       }());
       </script>
+    {{ end }}
+
+    {{ if eq $tab "week" }}
+      {{ $weekID := .Params.week }}
+      {{ $schedule := $course.Params.weekly_schedule }}
+      {{ $selectedWeek := dict }}
+      {{ $selectedIndex := -1 }}
+      {{ range $index, $scheduleWeek := $schedule }}
+        {{ if eq $scheduleWeek.week $weekID }}{{ $selectedWeek = $scheduleWeek }}{{ $selectedIndex = $index }}{{ end }}
+      {{ end }}
+      {{ if ge $selectedIndex 0 }}
+        {{ $deliverableWeights := dict }}
+        {{ range $course.Params.assignments }}{{ $deliverableWeights = merge $deliverableWeights (dict (printf "Deliverable %v" .number) .weight) }}{{ end }}
+        {{ $stageInfo := dict "stage" $selectedWeek.phase "project" $selectedWeek.phase }}
+        {{ with $course.Params.schedule_stage_labels }}{{ with index . $selectedWeek.phase }}{{ $stageInfo = . }}{{ end }}{{ end }}
+        <section class="course-hub-section course-hub-week-detail" aria-labelledby="week-detail-title">
+          <div class="course-hub-section-content">
+            <a class="course-hub-week-detail-back" href="{{ printf `%sschedule/#week-%s` $base $selectedWeek.week }}"><span aria-hidden="true">←</span> Weekly schedule</a>
+            <div class="course-hub-week-detail-meta">
+              <span>Week {{ $selectedWeek.week }}</span>
+              <span>{{ $selectedWeek.date }}</span>
+              <span>{{ $stageInfo.stage }}</span>
+            </div>
+            <h2 id="week-detail-title">{{ $selectedWeek.lecture }}</h2>
+            {{ with $selectedWeek.holiday }}<p class="course-hub-week-detail-holiday">{{ . }} · No regular offline class</p>{{ end }}
+            {{ with .Content }}<article class="course-hub-week-content">{{ . }}</article>{{ end }}
+            <div class="course-hub-week-outline">
+              <section>
+                <h3>In Class</h3>
+                <ul>{{ range $selectedWeek.in_class }}<li>{{ . }}</li>{{ end }}</ul>
+              </section>
+              <section>
+                <h3>After Class</h3>
+                <ul class="course-hub-task-list">{{ range $selectedWeek.after_class }}{{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "weights" $deliverableWeights "showDue" true "projectAnchor" $stageInfo.project_anchor) }}{{ end }}</ul>
+              </section>
+              {{ with $selectedWeek.paper }}
+              <section>
+                <h3>Paper progress</h3>
+                <p>{{ . }}</p>
+              </section>
+              {{ end }}
+              <section>
+                <h3>Learning journey</h3>
+                <p>{{ $stageInfo.project }}</p>
+                {{ with $stageInfo.weeks }}<small>{{ . }}</small>{{ end }}
+              </section>
+            </div>
+            <nav class="course-hub-week-pagination" aria-label="Week navigation">
+              {{ if gt $selectedIndex 0 }}{{ $previousWeek := index $schedule (sub $selectedIndex 1) }}{{ $previousWeekNumber := replaceRE `^0+` `` $previousWeek.week }}{{ if eq $previousWeekNumber "" }}{{ $previousWeekNumber = "0" }}{{ end }}<a href="{{ printf `%sw%s/` $base $previousWeekNumber }}"><span aria-hidden="true">←</span><small>Previous</small><strong>Week {{ $previousWeek.week }}</strong></a>{{ else }}<span></span>{{ end }}
+              {{ if lt (add $selectedIndex 1) (len $schedule) }}{{ $nextWeek := index $schedule (add $selectedIndex 1) }}{{ $nextWeekNumber := replaceRE `^0+` `` $nextWeek.week }}{{ if eq $nextWeekNumber "" }}{{ $nextWeekNumber = "0" }}{{ end }}<a class="is-next" href="{{ printf `%sw%s/` $base $nextWeekNumber }}"><small>Next</small><strong>Week {{ $nextWeek.week }}</strong><span aria-hidden="true">→</span></a>{{ end }}
+            </nav>
+          </div>
+        </section>
+      {{ else }}
+        <section class="course-hub-section"><div class="course-hub-section-label">Week</div><div class="course-hub-section-content"><h2>Week not found</h2><p><a href="{{ printf `%sschedule/` $base }}">Return to the weekly schedule</a></p></div></section>
+      {{ end }}
     {{ end }}
 
     {{ if eq $tab "assignments" }}
@@ -658,12 +723,14 @@
 
   var storageKey = 'course-hub-scroll:' + {{ jsonify $base | safeJS }};
   var savedPosition = sessionStorage.getItem(storageKey);
+  var navIsFixed = false;
+  try { navIsFixed = window.localStorage.getItem('course-hub-nav-fixed') === 'true'; } catch (error) {}
 
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
   if (savedPosition !== null) {
     sessionStorage.removeItem(storageKey);
-    var targetY = Number(savedPosition);
+    var targetY = navIsFixed ? 0 : Number(savedPosition);
     if (!Number.isNaN(targetY)) {
       requestAnimationFrame(function () {
         requestAnimationFrame(function () { window.scrollTo(0, targetY); });
@@ -674,8 +741,58 @@
   nav.addEventListener('click', function (event) {
     var link = event.target.closest('a');
     if (!link || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-    sessionStorage.setItem(storageKey, String(window.scrollY));
+    var fixed = false;
+    try { fixed = window.localStorage.getItem('course-hub-nav-fixed') === 'true'; } catch (error) {}
+    if (fixed) sessionStorage.removeItem(storageKey);
+    else sessionStorage.setItem(storageKey, String(window.scrollY));
   });
+}());
+</script>
+<script>
+(function () {
+  var nav = document.querySelector('[data-course-nav]');
+  var toggle = document.querySelector('[data-course-nav-fix]');
+  var spacer = document.querySelector('[data-course-nav-spacer]');
+  var mainHeader = document.querySelector('.navigation');
+  var courseHub = nav && nav.closest('.course-hub');
+  if (!nav || !toggle || !spacer) return;
+
+  var storageKey = 'course-hub-nav-fixed';
+  var label = toggle.querySelector('[data-course-nav-fix-label]');
+
+  function updateMeasurements() {
+    var headerHeight = mainHeader ? mainHeader.getBoundingClientRect().height : 0;
+    document.documentElement.style.setProperty('--course-main-header-height', Math.round(headerHeight) + 'px');
+    document.documentElement.style.setProperty('--course-fixed-nav-height', Math.round(nav.getBoundingClientRect().height) + 'px');
+  }
+
+  function setFixed(isFixed, save) {
+    nav.classList.toggle('is-fixed', isFixed);
+    if (courseHub) courseHub.classList.toggle('is-nav-fixed', isFixed);
+    spacer.classList.toggle('is-active', isFixed);
+    toggle.classList.toggle('is-active', isFixed);
+    toggle.setAttribute('aria-pressed', isFixed ? 'true' : 'false');
+    if (label) label.textContent = isFixed ? 'Fixed' : 'Fix';
+    updateMeasurements();
+    if (save) {
+      try { window.localStorage.setItem(storageKey, isFixed ? 'true' : 'false'); } catch (error) {}
+      window.scrollTo(0, 0);
+    }
+  }
+
+  var initialFixed = false;
+  try { initialFixed = window.localStorage.getItem(storageKey) === 'true'; } catch (error) {}
+  setFixed(initialFixed, false);
+
+  toggle.addEventListener('click', function () {
+    setFixed(toggle.getAttribute('aria-pressed') !== 'true', true);
+  });
+  window.addEventListener('resize', updateMeasurements);
+  if (window.ResizeObserver) {
+    var observer = new ResizeObserver(updateMeasurements);
+    if (mainHeader) observer.observe(mainHeader);
+    observer.observe(nav);
+  }
 }());
 </script>
 {{ end }}
