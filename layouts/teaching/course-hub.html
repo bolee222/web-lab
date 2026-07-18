@@ -313,42 +313,68 @@
         {{ if eq $scheduleWeek.week $weekID }}{{ $selectedWeek = $scheduleWeek }}{{ $selectedIndex = $index }}{{ end }}
       {{ end }}
       {{ if ge $selectedIndex 0 }}
+        {{ $weekDisplay := replaceRE `^0+` `` $selectedWeek.week }}{{ if eq $weekDisplay "" }}{{ $weekDisplay = "0" }}{{ end }}
         {{ $deliverableWeights := dict }}
         {{ range $course.Params.assignments }}{{ $deliverableWeights = merge $deliverableWeights (dict (printf "Deliverable %v" .number) .weight) }}{{ end }}
         {{ $stageInfo := dict "stage" $selectedWeek.phase "project" $selectedWeek.phase }}
         {{ with $course.Params.schedule_stage_labels }}{{ with index . $selectedWeek.phase }}{{ $stageInfo = . }}{{ end }}{{ end }}
+        {{ $activities := .Params.activities }}
+        {{ if not $activities }}{{ $activities = $selectedWeek.in_class }}{{ end }}
+        {{ $assignments := .Params.assignments }}
+        {{ if not $assignments }}{{ $assignments = $selectedWeek.after_class }}{{ end }}
         <section class="course-hub-section course-hub-week-detail" aria-labelledby="week-detail-title">
           <div class="course-hub-section-content">
             <a class="course-hub-week-detail-back" href="{{ printf `%sschedule/#week-%s` $base $selectedWeek.week }}"><span aria-hidden="true">←</span> Weekly schedule</a>
             <div class="course-hub-week-detail-meta">
-              <span>Week {{ $selectedWeek.week }}</span>
               <span>{{ $selectedWeek.date }}</span>
               <span>{{ $stageInfo.stage }}</span>
             </div>
-            <h2 id="week-detail-title">{{ $selectedWeek.lecture }}</h2>
+            <h2 id="week-detail-title"><span>Week {{ $weekDisplay }}:</span> {{ $selectedWeek.lecture }}</h2>
             {{ with $selectedWeek.holiday }}<p class="course-hub-week-detail-holiday">{{ . }} · No regular offline class</p>{{ end }}
-            {{ with .Content }}<article class="course-hub-week-content">{{ . }}</article>{{ end }}
             <div class="course-hub-week-outline">
               <section>
-                <h3>In Class</h3>
-                <ul>{{ range $selectedWeek.in_class }}<li>{{ . }}</li>{{ end }}</ul>
+                <h3>Opening Questions</h3>
+                {{ $openingQuestionEmphasis := .Params.opening_question_emphasis }}
+                {{ with .Params.opening_questions }}<ul class="course-hub-opening-questions">{{ range $questionIndex, $question := . }}<li>{{ if and $openingQuestionEmphasis (lt $questionIndex (len $openingQuestionEmphasis)) }}{{ $phrase := index $openingQuestionEmphasis $questionIndex }}{{ replace $question $phrase (printf `<strong>%s</strong>` $phrase) | safeHTML }}{{ else }}{{ $question }}{{ end }}</li>{{ end }}</ul>{{ else }}<p class="course-hub-week-placeholder">Add two or three opening questions for this week.</p>{{ end }}
               </section>
               <section>
-                <h3>After Class</h3>
-                <ul class="course-hub-task-list">{{ range $selectedWeek.after_class }}{{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "weights" $deliverableWeights "showDue" true "projectAnchor" $stageInfo.project_anchor) }}{{ end }}</ul>
+                <h3>Learning Goal</h3>
+                {{ with .Params.learning_goal }}<p>{{ . }}</p>{{ else }}<p class="course-hub-week-placeholder">Add the learning goal for this week.</p>{{ end }}
               </section>
-              {{ with $selectedWeek.paper }}
               <section>
-                <h3>Paper progress</h3>
-                <p>{{ . }}</p>
+                <h3>Lecture Materials</h3>
+                {{ with .Params.lecture_materials }}
+                <ul class="course-hub-week-links">
+                  {{ range . }}{{ $material := . }}{{ with .url }}<li><a class="course-hub-week-resource-link" href="{{ . }}"{{ if strings.HasPrefix . "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ $material.label | default "Open lecture materials" }}</a></li>{{ end }}{{ end }}
+                </ul>
+                {{ else }}<p class="course-hub-week-placeholder">Add the LearnUS lecture-material link.</p>{{ end }}
               </section>
-              {{ end }}
               <section>
-                <h3>Learning journey</h3>
-                <p>{{ $stageInfo.project }}</p>
-                {{ with $stageInfo.weeks }}<small>{{ . }}</small>{{ end }}
+                <h3>In-class Activity</h3>
+                <ul class="course-hub-activity-list">{{ range $activities }}<li>{{ . }}</li>{{ end }}</ul>
+              </section>
+              <section>
+                <h3>Assignments</h3>
+                <ul class="course-hub-task-list">{{ range $assignments }}{{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "weights" $deliverableWeights "showDue" true "projectAnchor" $stageInfo.project_anchor) }}{{ end }}</ul>
+              </section>
+              <section>
+                <h3>Key Takeaways</h3>
+                {{ with .Params.key_takeaways }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ else }}<p class="course-hub-week-placeholder">Add the key messages students should remember.</p>{{ end }}
+              </section>
+              <section>
+                <h3>Related Readings</h3>
+                {{ with .Params.related_readings }}
+                <ul class="course-hub-week-readings">
+                  {{ range . }}{{ $reading := . }}<li>{{ with .url }}<a class="course-hub-week-resource-link" href="{{ . }}"{{ if strings.HasPrefix . "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ $reading.title | default "Related reading" }}</a>{{ else }}<strong>{{ .title | default "Related reading" }}</strong>{{ end }}{{ with .author }}<span>{{ . }}</span>{{ end }}</li>{{ end }}
+                </ul>
+                {{ else }}<p class="course-hub-week-placeholder">Add papers, books, or reference links.</p>{{ end }}
+              </section>
+              <section>
+                <h3>Next Week Preparation</h3>
+                {{ with .Params.next_week_preparation }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ else }}<p class="course-hub-week-placeholder">Add anything students should prepare before the next class.</p>{{ end }}
               </section>
             </div>
+            {{ if .Plain }}<article class="course-hub-week-content">{{ .Content }}</article>{{ end }}
             <nav class="course-hub-week-pagination" aria-label="Week navigation">
               {{ if gt $selectedIndex 0 }}{{ $previousWeek := index $schedule (sub $selectedIndex 1) }}{{ $previousWeekNumber := replaceRE `^0+` `` $previousWeek.week }}{{ if eq $previousWeekNumber "" }}{{ $previousWeekNumber = "0" }}{{ end }}<a href="{{ printf `%sw%s/` $base $previousWeekNumber }}"><span aria-hidden="true">←</span><small>Previous</small><strong>Week {{ $previousWeek.week }}</strong></a>{{ else }}<span></span>{{ end }}
               {{ if lt (add $selectedIndex 1) (len $schedule) }}{{ $nextWeek := index $schedule (add $selectedIndex 1) }}{{ $nextWeekNumber := replaceRE `^0+` `` $nextWeek.week }}{{ if eq $nextWeekNumber "" }}{{ $nextWeekNumber = "0" }}{{ end }}<a class="is-next" href="{{ printf `%sw%s/` $base $nextWeekNumber }}"><small>Next</small><strong>Week {{ $nextWeek.week }}</strong><span aria-hidden="true">→</span></a>{{ end }}
@@ -406,7 +432,7 @@
             <h2 id="deliverable-{{ .number }}-title"><span>Deliverable #{{ .number }}:</span> {{ .title }}</h2>
             <span>{{ .weight }}</span>
           </div>
-          <dl class="course-hub-assignment-meta"><div><dt>Project</dt><dd>{{ .project }}</dd></div>{{ with .assignment_type }}<div><dt>Format</dt><dd>{{ . }}</dd></div>{{ end }}<div><dt>Due</dt><dd>{{ .due }}</dd></div></dl>
+          <dl class="course-hub-assignment-meta"><div><dt>Project</dt><dd>{{ .project }}</dd></div>{{ with .assignment_type }}<div><dt>Format</dt><dd>{{ . }}</dd></div>{{ end }}<div class="course-hub-assignment-due"><dt>Due</dt><dd>{{ .due }}</dd></div></dl>
           <p class="course-hub-assignment-summary">{{ .summary }}</p>
           {{ with .objective }}<div class="course-hub-assignment-detail"><h3>Objective</h3><p>{{ . }}</p></div>{{ end }}
           {{ with .contents }}
