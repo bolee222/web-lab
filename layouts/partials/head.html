@@ -131,13 +131,16 @@
 
   {{ "<!-- Main stylesheet -->" | safeHTML }}
   {{ $styles := slice (resources.Get "scss/style.scss") (resources.Get "scss/custom.scss") | resources.Concat "scss/bundled.scss" | toCSS | minify | fingerprint -}}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="all">
 
   {{ if and (eq .Section "teaching") .Params.course_tab }}
     {{ $course := . }}{{ if ne .Params.course_tab "overview" }}{{ $course = .Parent }}{{ end }}
     {{ $courseBase := printf "/courses/%s/%s/" (lower $course.Params.course_code) $course.Params.semester_slug }}
     <link rel="prefetch" href="{{ $courseBase }}" as="document">
-    {{ range slice "project" "roadmap" "schedule" "assessment" "policies" "resources" }}
+    {{/* Keep this list aligned with the course-hub navigation.  The former
+         roadmap/assessment/resources/policies routes are legacy aliases and
+         can otherwise create noisy 404s while the browser prefetches them. */}}
+    {{ range slice "project" "schedule" "assignments" "logistics" "gallery" }}
     <link rel="prefetch" href="{{ printf `%s%s/` $courseBase . }}" as="document">
     {{ end }}
   {{ end }}

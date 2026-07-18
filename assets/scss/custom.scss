@@ -215,6 +215,167 @@
   }
 }
 
+/* Print uses a narrow page viewport, which would otherwise trigger the mobile
+   roadmap layout and split the stage markers across page boundaries. */
+@media print {
+  body:not(.course-pdf-preview-active) .course-hub-roadmap {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .course-hub-roadmap-head,
+  .course-hub-roadmap article {
+    display: grid !important;
+    grid-template-columns: minmax(120px, .8fr) minmax(190px, 1.2fr) minmax(220px, 1.45fr) !important;
+    gap: 20px !important;
+  }
+
+  .course-hub-roadmap-head { display: grid !important; }
+
+  .course-hub-roadmap article {
+    padding: 18px 0 !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .course-hub-roadmap article:not(:last-child) .course-hub-phase::before,
+  .course-hub-roadmap article:not(:last-child) .course-hub-phase::after {
+    display: none !important;
+  }
+}
+
+/* Exported course syllabus: print only the assembled all-tabs document. */
+.course-pdf-print-root {
+  display: none;
+}
+
+.course-pdf-preview-active > *:not(.course-pdf-print-root) {
+  display: none !important;
+}
+
+.course-pdf-preview-active .course-pdf-print-root {
+  display: block;
+  min-height: 100vh;
+  background: #fff;
+}
+
+/* Keep assembled-tab headings aligned with the course content in preview too. */
+.course-pdf-print-root .course-pdf-section > h2 {
+  width: calc(100% - 48px);
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  font-size: 22px;
+}
+
+.course-pdf-preview-toolbar {
+  position: fixed;
+  z-index: 20;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(22, 30, 49, .22);
+}
+
+.course-pdf-preview-dialog {
+  width: 100%;
+  max-width: 440px;
+  padding: 27px 28px 24px;
+  border: 1px solid #dce1ee;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 16px 42px rgba(23, 35, 63, .24);
+  color: #25334f;
+  text-align: center;
+}
+
+.course-pdf-preview-dialog strong {
+  display: block;
+  color: #1a2a55;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.course-pdf-preview-dialog > span {
+  display: block;
+  margin-top: 9px;
+  color: #5d6678;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.course-pdf-preview-actions {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 20px;
+}
+
+.course-pdf-preview-toolbar button {
+  padding: 8px 12px;
+  border: 1px solid #9aa8c7;
+  border-radius: 4px;
+  background: #fff;
+  color: #25334f;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.course-pdf-preview-toolbar [data-course-pdf-print] { border-color: $brand-color-grad-primary; background: $brand-color-grad-primary; color: #fff; }
+
+@media print {
+  @page {
+    margin: 12mm;
+  }
+
+  /* Preserve ordinary single-tab printing. Only the assembled PDF preview
+     replaces the page contents when it is explicitly active. */
+  body.course-pdf-preview-active > *:not(.course-pdf-print-root) {
+    display: none !important;
+  }
+
+  body.course-pdf-preview-active .course-pdf-print-root {
+    display: block !important;
+  }
+
+  body.course-pdf-preview-active .course-pdf-preview-toolbar {
+    display: none !important;
+  }
+
+  .course-pdf-print-root .course-hub-nav,
+  .course-pdf-print-root .course-hub-back,
+  .course-pdf-print-root .course-hub-pdf-export,
+  .course-pdf-print-root .course-hub-hero-actions,
+  .course-pdf-print-root .course-hub-schedule-mode,
+  .course-pdf-print-root .course-hub-deliverables-hint,
+  .course-pdf-print-root .course-hub-deliverable-toggle {
+    display: none !important;
+  }
+
+  .course-pdf-print-root .course-pdf-section {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .course-pdf-print-root .course-pdf-section.is-first {
+    break-before: auto;
+    page-break-before: auto;
+  }
+
+  .course-pdf-print-root .course-hub-section,
+  .course-pdf-print-root .course-hub-assignment-section,
+  .course-pdf-print-root .course-hub-roadmap article,
+  .course-pdf-print-root .course-hub-schedule article {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .course-pdf-print-root .course-hub-deliverable-detail[hidden] {
+    display: block !important;
+  }
+}
+
 .white-box { 
     background: rgba(255,255,255,1);
     -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
@@ -605,6 +766,10 @@ img.rounded {
 .course-hub-back:focus,
 .course-hub-footer-link:hover,
 .course-hub-footer-link:focus { color: var(--course-accent); }
+.course-hub-hero-actions { display: flex; align-items: center; justify-content: flex-start; gap: 13px; }
+.course-hub-pdf-export { display: inline-flex; align-items: center; gap: 5px; padding: 0 0 0 13px; border: 0; border-left: 1px solid #d3d3d3; border-radius: 0; background: transparent; color: #777; font: inherit; font-size: 11px; font-weight: 500; line-height: 1.2; white-space: nowrap; cursor: pointer; }
+.course-hub-pdf-export:hover, .course-hub-pdf-export:focus { color: var(--course-accent); }
+.course-hub-pdf-export:disabled { cursor: progress; opacity: .65; }
 
 .course-hub-identity { max-width: 890px; margin-top: 52px; }
 .course-hub-code-row { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
@@ -619,6 +784,10 @@ img.rounded {
   line-height: 1.03;
   letter-spacing: -.04em;
 }
+
+.course-hub-title-link { color: inherit; text-decoration: none; }
+.course-hub-title-link:hover,
+.course-hub-title-link:focus { color: inherit; text-decoration: underline; text-decoration-color: var(--course-accent); text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .course-hub-semester { margin: 18px 0 0; font-size: 15px; font-weight: 500; color: #4f4f4f; }
 .course-hub-lede { max-width: 790px; margin: 34px 0 0; font-size: 20px; line-height: 1.55; color: #333; }
@@ -889,6 +1058,7 @@ img.rounded {
   letter-spacing: 0;
   text-transform: none;
 }
+.course-hub-pdf-export { color: #747474; font-size: 11px; font-weight: 400; }
 
 .course-hub-identity {
   max-width: 1100px;

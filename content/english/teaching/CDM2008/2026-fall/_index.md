@@ -65,8 +65,8 @@ overview_cards:
   - title: "Assessment"
     items:
       - "Preparation & In-class Engagement · 10%"
-      - "Weekly mini-assignments · 15%"
-      - "Deliverables #1–#4 · 75%"
+      - "Weekly mini-assignments · 10%"
+      - "Deliverables #1–#4 · 80%"
 
 project:
   label: "Semester research project"
@@ -96,8 +96,8 @@ project:
         - { deliverable: "Deliverable #1", focus: "Research framing & RQ proposal", weight: "10%" }
         - { deliverable: "Deliverable #2", focus: "Mid-term presentation", weight: "15%" }
         - { deliverable: "Deliverable #3", focus: "Final presentation", weight: "20%" }
-        - { deliverable: "Deliverable #4", focus: "Final research paper", weight: "30%" }
-        - { deliverable: "Total", focus: "", weight: "75%" }
+        - { deliverable: "Deliverable #4", focus: "Final research paper", weight: "35%" }
+        - { deliverable: "Total", focus: "", weight: "80%" }
       evaluation_criteria:
         - { title: "Research coherence", text: "The question, method, evidence, and conclusions form a clear and defensible chain." }
         - { title: "Evidence quality", text: "Claims are grounded in appropriately collected and documented material." }
@@ -144,13 +144,14 @@ assignments:
   - { number: 1, title: "Research Framing & RQ Proposal", project: "Project 1", due: "Sep. 24", weight: "10%", summary: "Research question, related work, research gap, and initial research plan submitted for asynchronous feedback before Week 4." }
   - { number: 2, title: "Mid-term Presentation", project: "Project 1", due: "Oct. 23", weight: "15%", summary: "Present the feedback-informed research proposal and stimuli package in Week 8." }
   - { number: 3, title: "Final Presentation", project: "Project 1", due: "Dec. 11", weight: "20%", summary: "Present the complete research process, findings, and evidence-based design implications in Week 15." }
-  - { number: 4, title: "Final Research Paper", project: "Project 1", due: "Dec. 18", weight: "30%", summary: "Submit the complete research document: research logic, method, analysis, discussion, limitations, appendices, and supporting materials." }
+  - { number: 4, title: "Final Research Paper", project: "Project 1", due: "Dec. 18", weight: "35%", summary: "Submit the complete research document: research logic, method, analysis, discussion, limitations, appendices, and supporting materials." }
 
 assessment:
-  - { label: "Preparation & In-class Engagement", value: "10%", note: "FC preparation, workshop participation, feedback, and collaboration throughout the semester" }
-  - { label: "Weekly mini-assignments", value: "15%", note: "Weekly assignment uploads and completion checks" }
-  - { project: 1, label: "Semester Design Research Project", value: "75%", note: "Four assessed deliverables developed across the semester" }
+  - { label: "Preparation & In-class Engagement", value: "10%", note: "FC lecture completion, class preparedness, workshop participation, peer feedback, and collaboration throughout the semester" }
+  - { label: "Weekly Process Assignments", value: "10%", note: "Timely completion, effort, and progress demonstrated through weekly worksheets, drafts, research materials, and feedback submissions" }
+  - { project: 1, label: "Semester Design Research Project", value: "80%", note: "Four assessed deliverables developed across the semester" }
 policies:
+  - { title: "Assignments and Deliverables", text: "Weekly assignments support the step-by-step development of the semester research project. Depending on the week, an assignment may be prepared for class, completed through a worksheet, presented during a feedback session, or uploaded for review. Assignments are assessed collectively under the <strong>Weekly Process Assignments</strong> category based primarily on timely completion, preparedness, effort, and evidence of continued progress. Not every assignment will receive a separate numerical score or detailed feedback.<br><br>Formal <strong>Deliverables</strong> are the major assessed outcomes of the course. Each Deliverable carries a designated grade weight and is evaluated using specific criteria. Most of the course grade is therefore determined by the quality and coherence of the four formal Deliverables." }
   - { title: "Research ethics", text: "Students must follow the approved consent, privacy, data handling, and participant-respect procedures introduced in class." }
   - { title: "Attendance and participation", text: "Detailed attendance, lateness, and participation policies will follow the official syllabus and Yonsei University regulations." }
   - { title: "Academic integrity", text: "Research records, analysis, writing, and attribution must accurately represent the student's work and sources. Any use of AI tools must follow the course policy announced by the instructor." }

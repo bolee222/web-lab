@@ -7,13 +7,16 @@
 <main class="course-hub">
   <header class="course-hub-hero">
     <div class="container">
-      <a class="course-hub-back" href="{{ `/courses/` | relURL }}"><span aria-hidden="true">←</span> All courses</a>
+      <div class="course-hub-hero-actions">
+        <a class="course-hub-back" href="{{ `/courses/` | relURL }}"><span aria-hidden="true">←</span> All courses</a>
+        {{ if eq $tab "overview" }}<button class="course-hub-pdf-export" type="button" data-course-pdf-export aria-label="Export full syllabus as PDF"><span aria-hidden="true">↓</span> Export full syllabus</button>{{ end }}
+      </div>
       <div class="course-hub-identity">
         <div class="course-hub-code-row">
           {{ with $course.Params.hero_meta }}<span class="course-hub-code course-hub-code--meta">{{ . }}</span>{{ end }}
           <span class="course-hub-status course-hub-status--{{ $course.Params.status | urlize }}">{{ $course.Params.status }}</span>
         </div>
-        <h1><span class="course-hub-heading-code">{{ $course.Params.course_code }}:</span> {{ $course.Title }}</h1>
+        <h1><a class="course-hub-title-link" href="{{ $base | relURL }}"><span class="course-hub-heading-code">{{ $course.Params.course_code }}:</span> {{ $course.Title }}</a></h1>
         {{ if not $course.Params.hero_meta }}<p class="course-hub-semester">{{ $course.Params.semester }} <span aria-hidden="true">·</span> {{ $course.Params.course_level }}</p>{{ end }}
         <p class="course-hub-lede">{{ $course.Params.lede }}</p>
         {{ with $course.Params.keywords }}
@@ -402,7 +405,7 @@
         <div class="course-hub-section-label">Course logistics</div>
         <div class="course-hub-section-content">
           <h2 id="policies-title">Course principles & policies</h2>
-          <div class="course-hub-policies">{{ range $course.Params.policies }}<article><h3>{{ .title }}</h3><p>{{ .text }}</p></article>{{ end }}</div>
+          <div class="course-hub-policies">{{ range $course.Params.policies }}<article><h3>{{ .title }}</h3><p>{{ .text | safeHTML }}</p></article>{{ end }}</div>
         </div>
       </section>
       <section class="course-hub-section" aria-labelledby="resources-title">
@@ -476,6 +479,87 @@
   document.getElementById('course-status-in').textContent = tasks(current.in_class);
   document.getElementById('course-status-after').textContent = assignments(current.after_class);
   details.hidden = false; link.hidden = false;
+}());
+</script>
+<script>
+(function () {
+  var button = document.querySelector('[data-course-pdf-export]');
+  if (!button || !window.fetch) return;
+
+  // Read the current course's navigation instead of assuming a fixed set of
+  // routes. This keeps PDF export working when a course uses different tabs.
+  var pages = Array.prototype.slice.call(document.querySelectorAll('.course-hub-nav a')).map(function (link) {
+    return { url: link.href, title: link.textContent.trim() };
+  });
+
+  function pageBody(html) {
+    var parsed = new DOMParser().parseFromString(html, 'text/html');
+    var body = parsed.querySelector('.course-hub-body');
+    if (!body) return '';
+    body.querySelectorAll('script').forEach(function (script) { script.remove(); });
+    return body.innerHTML;
+  }
+
+  function prepareSyllabus() {
+    return Promise.all(pages.map(function (page) {
+      return fetch(page.url, { credentials: 'same-origin' }).then(function (response) {
+        if (!response.ok) throw new Error('Could not load ' + page.title);
+        return response.text();
+      });
+    })).then(function (documents) {
+      var overview = new DOMParser().parseFromString(documents[0], 'text/html');
+      var hero = overview.querySelector('.course-hub-hero');
+      var sections = documents.map(function (html, index) {
+        return '<section class="course-pdf-section' + (index === 0 ? ' is-first' : '') + '"><h2>' + pages[index].title + '</h2><div class="container course-hub-body course-hub-body--pdf">' + pageBody(html) + '</div></section>';
+      }).join('');
+      var printRoot = document.createElement('div');
+      printRoot.className = 'course-pdf-print-root';
+      printRoot.innerHTML = '<main class="course-hub">' + (hero ? hero.outerHTML : '') + sections + '</main>';
+      return printRoot;
+    });
+  }
+
+  button.disabled = true;
+  button.textContent = 'Preparing full syllabus…';
+  var preparedPrintRoot = null;
+
+  function prepareExport() {
+    button.disabled = true;
+    button.textContent = 'Preparing full syllabus…';
+    return prepareSyllabus().then(function (printRoot) {
+      preparedPrintRoot = printRoot;
+      button.disabled = false;
+      button.title = '';
+      button.innerHTML = '<span aria-hidden="true">↓</span> Export full syllabus';
+    }).catch(function (error) {
+      preparedPrintRoot = null;
+      button.disabled = false;
+      button.textContent = 'Retry full syllabus export';
+      button.title = error.message + '. Click to retry.';
+      console.error('Course PDF export preparation failed:', error);
+    });
+  }
+
+  prepareExport();
+
+  button.addEventListener('click', function () {
+    if (!preparedPrintRoot) {
+      prepareExport();
+      return;
+    }
+    var printRoot = preparedPrintRoot;
+    document.body.appendChild(printRoot);
+    printRoot.insertAdjacentHTML('afterbegin', '<div class="course-pdf-preview-toolbar" role="dialog" aria-modal="true" aria-labelledby="course-pdf-preview-title"><div class="course-pdf-preview-dialog"><strong id="course-pdf-preview-title">Full syllabus is ready</strong><span>Choose Print / Save PDF, or press ⌘P (Ctrl+P) to save a PDF.</span><div class="course-pdf-preview-actions"><button type="button" data-course-pdf-print>Print / Save PDF</button><button type="button" data-course-pdf-close>Close preview</button></div></div></div>');
+    document.body.classList.add('course-pdf-preview-active');
+    printRoot.querySelector('[data-course-pdf-print]').addEventListener('click', function () {
+      window.print();
+    });
+    printRoot.querySelector('[data-course-pdf-close]').addEventListener('click', function () {
+      document.body.classList.remove('course-pdf-preview-active');
+      if (printRoot.parentNode) printRoot.parentNode.removeChild(printRoot);
+    });
+
+  });
 }());
 </script>
 {{ end }}
