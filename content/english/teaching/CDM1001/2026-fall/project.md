@@ -1,7 +1,7 @@
 ---
 title: "Learning Journey"
 url: "/courses/cdm1001/2026-fall/project/"
-description: "Semester project for CDM1001 Fall 2026."
+description: "Semester project for CDM1001 2026 Fall."
 layout: "course-hub"
 course_tab: "project"
 aliases:

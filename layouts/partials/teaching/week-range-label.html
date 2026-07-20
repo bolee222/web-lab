@@ -1,0 +1,7 @@
+{{- $start := int .start -}}
+{{- $end := int (.end | default .start) -}}
+{{- if eq $start $end -}}
+  {{- printf "Week %v" $start -}}
+{{- else -}}
+  {{- printf "Weeks %v–%v" $start $end -}}
+{{- end -}}

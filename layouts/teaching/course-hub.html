@@ -3,6 +3,17 @@
 {{ $course := . }}
 {{ if ne $tab "overview" }}{{ $course = .Parent }}{{ end }}
 {{ $base := printf "/courses/%s/%s/" (lower $course.Params.course_code) $course.Params.semester_slug }}
+{{ $instructor := replaceRE `^Prof\.[[:space:]]*` `` ($course.Params.teaching_team | default "") }}
+{{ $semesterParts := split $course.Params.semester_slug "-" }}
+{{ $semesterYear := index $semesterParts 0 }}
+{{ $semesterTerm := humanize (index $semesterParts 1) }}
+{{ $semesterDisplay := printf "%s %s" $semesterTerm $semesterYear }}
+{{ $semesterMeta := printf "%s-%s" $semesterYear $semesterTerm }}
+{{ $heroMeta := printf "Yonsei %s" $semesterMeta }}
+{{ with $instructor }}{{ $heroMeta = printf "%s | %s" $heroMeta . }}{{ end }}
+{{ $assessmentTotal := 0 }}
+{{ range $course.Params.assignments }}{{ $assessmentTotal = add $assessmentTotal (int .weight) }}{{ end }}
+{{ range $course.Params.assessment }}{{ $assessmentTotal = add $assessmentTotal (int .weight) }}{{ end }}
 
 <main class="course-hub">
   <header class="course-hub-hero">
@@ -13,11 +24,10 @@
       </div>
       <div class="course-hub-identity">
         <div class="course-hub-code-row">
-          {{ with $course.Params.hero_meta }}<span class="course-hub-code course-hub-code--meta">{{ . }}</span>{{ end }}
+          <span class="course-hub-code course-hub-code--meta">{{ $heroMeta }}</span>
           <span class="course-hub-status course-hub-status--{{ $course.Params.status | urlize }}">{{ $course.Params.status }}</span>
         </div>
         <h1><a class="course-hub-title-link" href="{{ $base | relURL }}"><span class="course-hub-heading-code">{{ $course.Params.course_code }}:</span> {{ $course.Title }}</a></h1>
-        {{ if not $course.Params.hero_meta }}<p class="course-hub-semester">{{ $course.Params.semester }} <span aria-hidden="true">·</span> {{ $course.Params.course_level }}</p>{{ end }}
         <p class="course-hub-lede">{{ $course.Params.lede }}</p>
         {{ with $course.Params.keywords }}
         <div class="course-hub-tags" aria-label="Course keywords">
@@ -39,9 +49,9 @@
         <div><strong>{{ .title }}</strong><p>{{ .text }} {{ .detail }}</p></div>
       </aside>
       {{ end }}
-      {{ with $course.Params.course_facts }}
+      {{ if or $course.Params.class_time $course.Params.classroom $course.Params.teaching_team $course.Params.office_hours $course.Params.language }}
       <dl class="course-hub-facts">
-        {{ range . }}<div><dt>{{ .label }}</dt><dd>{{ .value }}</dd></div>{{ end }}
+        {{ partial "teaching/course-facts.html" $course }}
       </dl>
       {{ end }}
     </div>
@@ -67,12 +77,11 @@
 
   <div class="container course-hub-body course-hub-body--{{ $tab }}">
     {{ if eq $tab "overview" }}
-      {{ with $course.Params.notice }}
       <aside class="course-hub-notice" id="course-status-panel" aria-label="Current course status" aria-live="polite">
-        <span id="course-status-eyebrow">{{ .eyebrow }}</span>
+        <span id="course-status-eyebrow">Course schedule</span>
         <div>
-          <h2 id="course-status-title">{{ .title }}</h2>
-          <p id="course-status-text">{{ .text }}</p>
+          <h2 id="course-status-title">Current course status</h2>
+          <p id="course-status-text">Loading the current week from the course schedule.</p>
           <div class="course-hub-current-details" id="course-status-details" hidden>
             <div><strong>In Class</strong><span id="course-status-in"></span></div>
             <div><strong>After Class</strong><span id="course-status-after"></span></div>
@@ -80,7 +89,6 @@
           <a class="course-hub-current-link" id="course-status-link" href="{{ printf `%sschedule/` $base }}" hidden>View this week in the schedule <span aria-hidden="true">→</span></a>
         </div>
       </aside>
-      {{ end }}
 
       <section class="course-hub-section course-hub-overview-section" aria-labelledby="overview-title">
         <div class="course-hub-section-label course-hub-overview-label" id="overview-title" role="heading" aria-level="2"><span>Course</span><span>description</span></div>
@@ -100,6 +108,21 @@
         <article class="course-hub-overview-card">
           <h2>{{ .title }}</h2>
           <div class="course-hub-overview-card-body">
+            {{ if eq .source "assessment" }}
+            <ul>
+              {{ if eq $course.Params.assessment_project_position "after" }}{{ range $course.Params.assessment }}<li>{{ .label }} · {{ .weight }}%</li>{{ end }}{{ end }}
+              {{ range $projectIndex, $project := $course.Params.project.items }}
+                {{ $projectNumber := add $projectIndex 1 }}{{ $projectWeight := 0 }}{{ range where $course.Params.assignments "project_number" $projectNumber }}{{ $projectWeight = add $projectWeight (int .weight) }}{{ end }}
+                <li>{{ $project.assessment_label | default (printf "Project %v: %s" $projectNumber $project.title) }} · {{ $projectWeight }}%</li>
+              {{ end }}
+              {{ if ne $course.Params.assessment_project_position "after" }}{{ range $course.Params.assessment }}<li>{{ .label }} · {{ .weight }}%</li>{{ end }}{{ end }}
+              {{ if $course.Params.assessment_show_total }}<li>Total · {{ $assessmentTotal }}%</li>{{ end }}
+            </ul>
+            {{ else if eq .source "course_properties" }}
+            <dl class="course-hub-card-facts">
+              {{ partial "teaching/course-facts.html" $course }}
+            </dl>
+            {{ else }}
             {{ with .facts }}
             <dl class="course-hub-card-facts">
               {{ range . }}<div><dt>{{ .label }}</dt><dd>{{ .value }}</dd></div>{{ end }}
@@ -119,6 +142,7 @@
             <ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
             {{ end }}
             {{ with .text }}<p>{{ . }}</p>{{ end }}
+            {{ end }}
           </div>
         </article>
         {{ end }}
@@ -135,13 +159,21 @@
           <div class="course-hub-roadmap">
             <div class="course-hub-roadmap-head" aria-hidden="true"><span>Stage</span><span>Project</span><span>Core learning</span></div>
             {{ $previousSeries := "" }}
-            {{ range $roadmapIndex, $roadmapItem := $course.Params.roadmap }}
-            {{ if ne .series $previousSeries }}<div class="course-hub-roadmap-series"><strong>{{ .series }}</strong><span>{{ .series_stages }}</span></div>{{ end }}
-            {{ $stageNumber := replaceRE `^Stage ([0-9]+):.*$` `$1` .phase }}
-            {{ $stageTitle := replaceRE `^Stage [0-9]+:[[:space:]]*` `` .phase }}
-            <article id="{{ .phase | urlize }}">
-              <div class="course-hub-phase"><div class="course-hub-stage-node"><span class="course-hub-stage-number">{{ $stageNumber }}</span><div><strong>{{ $stageTitle }}</strong><small>{{ .weeks }}</small></div></div></div>
-              <div class="course-hub-roadmap-project"><h3><a href="#project-{{ add $roadmapIndex 1 }}">{{ .title }}</a></h3></div>
+            {{ $roadmapStages := where $course.Params.roadmap "show_in_roadmap" true }}
+            {{ range $roadmapIndex, $roadmapItem := $roadmapStages }}
+            {{ if ne .series $previousSeries }}
+              {{ $seriesStart := 999 }}{{ $seriesEnd := 0 }}
+              {{ range where $roadmapStages "series" .series }}{{ $order := int .journey_order }}{{ if lt $order $seriesStart }}{{ $seriesStart = $order }}{{ end }}{{ if gt $order $seriesEnd }}{{ $seriesEnd = $order }}{{ end }}{{ end }}
+              <div class="course-hub-roadmap-series"><strong>{{ .series }}</strong><span>{{ if eq $seriesStart $seriesEnd }}Stage {{ $seriesStart }}{{ else }}Stages {{ $seriesStart }}–{{ $seriesEnd }}{{ end }}</span></div>
+            {{ end }}
+            {{ $stageNumber := int .journey_order }}
+            {{ $stageTitle := .name }}
+            {{ $roadmapTitle := .name }}
+            {{ if .project_number }}{{ $linkedProject := index $course.Params.project.items (sub (int .project_number) 1) }}{{ $roadmapTitle = printf "Project %v: %s" .project_number $linkedProject.title }}{{ end }}
+            {{ $weekRange := partial "teaching/week-range-label.html" (dict "start" .start_week "end" .end_week) }}
+            <article id="{{ .ref }}">
+              <div class="course-hub-phase"><div class="course-hub-stage-node"><span class="course-hub-stage-number">{{ $stageNumber }}</span><div><strong>{{ $stageTitle }}</strong><small>{{ $weekRange }}</small></div></div></div>
+              <div class="course-hub-roadmap-project"><h3>{{ with .project_number }}<a href="#project-{{ . }}">{{ $roadmapTitle }}</a>{{ else }}{{ $roadmapTitle }}{{ end }}</h3></div>
               <div class="course-hub-roadmap-learning"><p>{{ .description }}</p></div>
             </article>
             {{ $previousSeries = .series }}
@@ -152,12 +184,14 @@
       {{ with $course.Params.project }}
         {{ range $index, $project := .items }}
         {{ $projectNumber := add $index 1 }}
+        {{ $projectAssignments := where $course.Params.assignments "project_number" $projectNumber }}
+        {{ $projectWeight := 0 }}{{ range $projectAssignments }}{{ $projectWeight = add $projectWeight (int .weight) }}{{ end }}
         <section class="course-hub-section course-hub-project-section" id="project-{{ $projectNumber }}" aria-labelledby="project-{{ $projectNumber }}-title">
           <div class="course-hub-section-label course-hub-project-label"><span>Project {{ $projectNumber }}</span></div>
           <div class="course-hub-section-content">
               <div class="course-hub-project-heading">
                 <h2 id="project-{{ $projectNumber }}-title" class="course-hub-project-title"><span>Project {{ $projectNumber }}:</span> {{ .title }}</h2>
-                <div class="course-hub-project-meta">{{ replaceRE `^Project [0-9]+ · ` `` .unit }}</div>
+                <div class="course-hub-project-meta">{{ .unit }}{{ if gt $projectWeight 0 }} · {{ $projectWeight }}%{{ end }}</div>
               </div>
               <p class="course-hub-intro">{{ .description }}</p>
               {{ with .learning_objectives }}
@@ -175,12 +209,13 @@
               {{ with .work_setup }}
               <div class="course-hub-project-subsection"><h3>Project unit</h3><p>{{ . | safeHTML }}</p></div>
               {{ end }}
-              {{ with .grade_breakdown }}
+              {{ with $projectAssignments }}
               <div class="course-hub-project-subsection">
                 <h3>Grade breakdown</h3>
                 <div class="course-hub-grade-table" role="table" aria-label="Project 1 grade breakdown">
                   <div class="course-hub-grade-head" role="row"><span role="columnheader">Deliverable</span><span role="columnheader">Focus</span><span role="columnheader">Weight</span></div>
-                  {{ range . }}{{ $isTotal := eq .deliverable "Total" }}{{ $isLinkedDeliverable := strings.HasPrefix .deliverable "Deliverable #" }}{{ $deliverableNumber := replaceRE `^Deliverable #([0-9]+)$` `$1` .deliverable }}<div role="row"{{ if $isTotal }} class="is-total"{{ end }}><span role="cell">{{ if $isLinkedDeliverable }}<a href="{{ printf `%sassignments/#deliverable-%s` $base $deliverableNumber }}">{{ .deliverable }}</a>{{ else }}{{ .deliverable }}{{ end }}</span><span role="cell">{{ .focus }}</span><strong role="cell">{{ .weight }}</strong></div>{{ end }}
+                  {{ range . }}<div role="row"><span role="cell"><a href="{{ printf `%sassignments/#deliverable-%v` $base .number }}">Deliverable #{{ .number }}</a></span><span role="cell">{{ .grade_focus | default .title }}</span><strong role="cell">{{ .weight }}%</strong></div>{{ end }}
+                  <div role="row" class="is-total"><span role="cell">Total</span><span role="cell"></span><strong role="cell">{{ $projectWeight }}%</strong></div>
                 </div>
               </div>
               {{ end }}
@@ -200,14 +235,12 @@
     {{ end }}
 
     {{ if eq $tab "schedule" }}
-      {{ $deliverableWeights := dict }}
       {{ $lectureStyle := $course.Params.lecture_style | default "style-2" }}
-      {{ range $course.Params.assignments }}{{ $deliverableWeights = merge $deliverableWeights (dict (printf "Deliverable %v" .number) .weight) }}{{ end }}
       {{ $schedule := $course.Params.weekly_schedule }}
       {{ $hasPaper := false }}{{ range $schedule }}{{ with .paper }}{{ $hasPaper = true }}{{ end }}{{ end }}
       <section class="course-hub-section course-hub-schedule-section" aria-label="Weekly schedule">
         <div class="course-hub-section-content">
-          <p class="course-hub-schedule-intro">{{ with $course.Params.schedule_intro }}{{ . }}{{ else }}This course is composed of two parts: (i) CDM's Design Lens Series (w1–w8) and (ii) CDM's Integrated Design Thinking Series (w9–w16). For each part, a series of lectures will be given to provide fundamental knowledge and principles about each topic. Then, students will conduct corresponding case studies or in-class group activities each week to gain an in-depth understanding and finish term projects through integrated comprehension of what they have learned.{{ end }} Week 00 is the pre-semester preparation period, and each week’s After Class items prepare students for the following session.</p>
+          {{ with $course.Params.schedule_intro }}<p class="course-hub-schedule-intro">{{ . }}</p>{{ end }}
           <div class="course-hub-schedule-mode" data-schedule-mode-control>
             <div class="course-hub-schedule-mode-toggle" role="group" aria-label="Weekly schedule display mode">
               <button type="button" data-schedule-mode="abstract" aria-pressed="false">Abstract</button>
@@ -218,44 +251,42 @@
           <div class="course-hub-schedule{{ if $hasPaper }} has-paper-mapping{{ end }}" role="list">
             <div class="course-hub-schedule-head" aria-hidden="true"><span>Date</span><span>Lecture</span><span><strong>In Class:</strong> Activity</span><span><strong>After Class:</strong> Assignment &amp; Preparation</span>{{ if $hasPaper }}<span>Paper</span><span>Learning journey</span>{{ else }}<span class="course-hub-learning-journey-header"><span class="course-hub-extended-label">Stage &amp; Project</span><span class="course-hub-abstract-label">Learning journey</span></span>{{ end }}</div>
             {{ range $index, $week := $schedule }}
-            {{ $phase := .phase }}
-            {{ $stageInfo := dict "stage" .phase "project" .phase }}
-            {{ with $course.Params.schedule_stage_labels }}{{ with index . $phase }}{{ $stageInfo = . }}{{ end }}{{ end }}
-            {{ $isStageStart := or (eq $index 0) (ne (index $schedule (sub $index 1)).phase .phase) }}
-            {{ $isStageEnd := or (eq (add $index 1) (len $schedule)) (ne (index $schedule (mod (add $index 1) (len $schedule))).phase .phase) }}
+            {{ $stageInfo := dict "name" .stage_ref "schedule_project" .stage_ref "ref" .stage_ref }}
+            {{ range where $course.Params.roadmap "ref" .stage_ref }}{{ $stageInfo = . }}{{ end }}
+            {{ $isStageStart := or (eq $index 0) (ne (index $schedule (sub $index 1)).stage_ref .stage_ref) }}
+            {{ $isStageEnd := or (eq (add $index 1) (len $schedule)) (ne (index $schedule (mod (add $index 1) (len $schedule))).stage_ref .stage_ref) }}
             {{ $showStageDivider := $isStageStart }}
-            {{ $stageNumber := 0 }}
-            {{ range $stageIndex, $stageWeek := first (add $index 1) $schedule }}
-              {{ $stageStartsHere := or (eq $stageIndex 0) (ne (index $schedule (sub $stageIndex 1)).phase $stageWeek.phase) }}
-              {{ if and $stageStartsHere (ne $stageWeek.phase "Preparation") }}{{ $stageNumber = add $stageNumber 1 }}{{ end }}
-            {{ end }}
-            {{ $stageDisplay := $stageInfo.stage }}
-            {{ if ne .phase "Preparation" }}{{ $stageName := replaceRE `^Stage[[:space:]]+[0-9]+:[[:space:]]*` `` $stageInfo.stage }}{{ $stageDisplay = printf "Stage %d: %s" $stageNumber $stageName }}{{ end }}
+            {{ $stageDisplay := $stageInfo.weekly_phase_override | default $stageInfo.name }}
+            {{ if $stageInfo.show_in_roadmap }}{{ $stageDisplay = printf "Stage %v: %s" $stageInfo.journey_order $stageDisplay }}{{ end }}
+            {{ $stageProjectLabel := $stageInfo.schedule_project }}
+            {{ if and $stageInfo.project_number (not $stageProjectLabel) }}{{ $linkedProject := index $course.Params.project.items (sub (int $stageInfo.project_number) 1) }}{{ $stageProjectLabel = printf "Project %v: %s" $stageInfo.project_number $linkedProject.title }}{{ end }}
+            {{ $weekRange := partial "teaching/week-range-label.html" (dict "start" $stageInfo.start_week "end" $stageInfo.end_week) }}
+            {{ $dateLabel := partial "teaching/date-label.html" (dict "date" .iso_date "week" .week) }}
             {{ $isPresentationWeek := or (eq .week "08") (eq .week "15") }}
             <article{{ if or $showStageDivider .holiday $isPresentationWeek }} class="{{ if $showStageDivider }}is-project-start{{ end }}{{ if and $showStageDivider (or .holiday $isPresentationWeek) }} {{ end }}{{ with .holiday }}is-public-holiday{{ end }}{{ if eq .week "00" }} is-preparation-week{{ end }}{{ if $isPresentationWeek }} is-presentation-week{{ end }}"{{ end }} role="listitem">
-              <div class="course-hub-week"{{ with .holiday }} aria-label="Week {{ $week.week }}, {{ $week.date }}, public holiday: {{ . }}"{{ end }}><strong>Week {{ .week }}</strong><span>{{ .date }}</span>{{ with .holiday }}<small class="course-hub-holiday">{{ . }}</small>{{ end }}</div>
+              <div class="course-hub-week"{{ with .holiday }} aria-label="Week {{ $week.week }}, {{ $dateLabel }}, public holiday: {{ . }}"{{ end }}><strong>Week {{ .week }}</strong><span>{{ $dateLabel }}</span>{{ with .holiday }}<small class="course-hub-holiday">{{ . }}</small>{{ end }}</div>
               {{ $weekNumber := replaceRE `^0+` `` .week }}{{ if eq $weekNumber "" }}{{ $weekNumber = "0" }}{{ end }}
               {{ $weekPath := printf "w%s" $weekNumber }}
               <div class="course-hub-week-topic course-hub-lecture--{{ $lectureStyle }}"><span class="course-hub-mobile-label">Lecture</span><h3><a href="{{ printf `%s%s/` $base $weekPath }}">{{ if strings.Contains .lecture ":" }}{{ replaceRE `^([^:]+:)[[:space:]]*(.*)$` `$1<br><span>$2</span>` .lecture | safeHTML }}{{ else }}{{ .lecture }}{{ end }}</a></h3></div>
               <div class="course-hub-week-cell"><span class="course-hub-mobile-label">In Class</span><ul>{{ range .in_class }}<li>{{ . }}</li>{{ end }}</ul></div>
-              <div class="course-hub-week-cell course-hub-week-cell--after"><span class="course-hub-mobile-label">After Class</span><ul class="course-hub-task-list">{{ range .after_class }}{{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "weights" $deliverableWeights "showDue" true "projectAnchor" $stageInfo.project_anchor) }}{{ end }}</ul></div>
+              <div class="course-hub-week-cell course-hub-week-cell--after"><span class="course-hub-mobile-label">After Class</span><ul class="course-hub-task-list">{{ range .after_class }}{{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "assignments" $course.Params.assignments "showDue" true "projectAnchor" (cond (isset $stageInfo "project_number") (printf "project-%v" $stageInfo.project_number) "") ) }}{{ end }}</ul></div>
               {{ if $hasPaper }}
               <div class="course-hub-paper"><span class="course-hub-mobile-label">Paper</span>{{ with .paper }}<em>{{ . }}</em>{{ end }}</div>
               <div class="course-hub-stage-project{{ if $isStageStart }} is-stage-start{{ else }} is-stage-continuation{{ end }}{{ if $isStageEnd }} is-stage-end{{ end }}">
                 {{ if $isStageStart }}
                   <span class="course-hub-mobile-label">Learning journey</span>
-                  {{ with $stageInfo.anchor }}<a class="course-hub-stage-link" href="{{ printf `%sproject/#%s` $base . }}"><strong>{{ $stageDisplay }}</strong></a>{{ else }}<strong>{{ $stageDisplay }}</strong>{{ end }}
-                  {{ with $stageInfo.project_anchor }}<a class="course-hub-project-link" href="{{ printf `%sproject/#%s` $base . }}">{{ $stageInfo.project }}</a>{{ else }}<span>{{ $stageInfo.project }}</span>{{ end }}
-                  {{ with $stageInfo.weeks }}<small>{{ . }}</small>{{ end }}
+                  {{ if $stageInfo.show_in_roadmap }}<a class="course-hub-stage-link" href="{{ printf `%sproject/#%s` $base $stageInfo.ref }}"><strong>{{ $stageDisplay }}</strong></a>{{ else }}<strong>{{ $stageDisplay }}</strong>{{ end }}
+                  {{ with $stageInfo.project_number }}<a class="course-hub-project-link" href="{{ printf `%sproject/#project-%v` $base . }}">{{ $stageProjectLabel }}</a>{{ else }}<span>{{ $stageProjectLabel }}</span>{{ end }}
+                  <small>{{ $weekRange }}</small>
                 {{ end }}
               </div>
               {{ else }}
               <div class="course-hub-stage-project{{ if $isStageStart }} is-stage-start{{ else }} is-stage-continuation{{ end }}{{ if $isStageEnd }} is-stage-end{{ end }}">
                 {{ if $isStageStart }}
                   <span class="course-hub-mobile-label">Stage & Project</span>
-                  {{ with $stageInfo.anchor }}<a class="course-hub-stage-link" href="{{ printf `%sproject/#%s` $base . }}"><strong>{{ $stageDisplay }}</strong></a>{{ else }}<strong>{{ $stageDisplay }}</strong>{{ end }}
-                  {{ with $stageInfo.project_anchor }}<a class="course-hub-project-link" href="{{ printf `%sproject/#%s` $base . }}">{{ $stageInfo.project }}</a>{{ else }}<span>{{ $stageInfo.project }}</span>{{ end }}
-                  {{ with $stageInfo.weeks }}<small>{{ . }}</small>{{ end }}
+                  {{ if $stageInfo.show_in_roadmap }}<a class="course-hub-stage-link" href="{{ printf `%sproject/#%s` $base $stageInfo.ref }}"><strong>{{ $stageDisplay }}</strong></a>{{ else }}<strong>{{ $stageDisplay }}</strong>{{ end }}
+                  {{ with $stageInfo.project_number }}<a class="course-hub-project-link" href="{{ printf `%sproject/#project-%v` $base . }}">{{ $stageProjectLabel }}</a>{{ else }}<span>{{ $stageProjectLabel }}</span>{{ end }}
+                  <small>{{ $weekRange }}</small>
                 {{ end }}
               </div>
               {{ end }}
@@ -314,10 +345,11 @@
       {{ end }}
       {{ if ge $selectedIndex 0 }}
         {{ $weekDisplay := replaceRE `^0+` `` $selectedWeek.week }}{{ if eq $weekDisplay "" }}{{ $weekDisplay = "0" }}{{ end }}
-        {{ $deliverableWeights := dict }}
-        {{ range $course.Params.assignments }}{{ $deliverableWeights = merge $deliverableWeights (dict (printf "Deliverable %v" .number) .weight) }}{{ end }}
-        {{ $stageInfo := dict "stage" $selectedWeek.phase "project" $selectedWeek.phase }}
-        {{ with $course.Params.schedule_stage_labels }}{{ with index . $selectedWeek.phase }}{{ $stageInfo = . }}{{ end }}{{ end }}
+        {{ $stageInfo := dict "name" $selectedWeek.stage_ref "schedule_project" $selectedWeek.stage_ref "ref" $selectedWeek.stage_ref }}
+        {{ range where $course.Params.roadmap "ref" $selectedWeek.stage_ref }}{{ $stageInfo = . }}{{ end }}
+        {{ $selectedDateLabel := partial "teaching/date-label.html" (dict "date" $selectedWeek.iso_date "week" $selectedWeek.week) }}
+        {{ $selectedStageLabel := $stageInfo.weekly_phase_override | default $stageInfo.name }}
+        {{ if $stageInfo.show_in_roadmap }}{{ $selectedStageLabel = printf "Stage %v: %s" $stageInfo.journey_order $selectedStageLabel }}{{ end }}
         {{ $activities := .Params.activities }}
         {{ if not $activities }}{{ $activities = $selectedWeek.in_class }}{{ end }}
         {{ $assignments := .Params.assignments }}
@@ -326,8 +358,8 @@
           <div class="course-hub-section-content">
             <a class="course-hub-week-detail-back" href="{{ printf `%sschedule/#week-%s` $base $selectedWeek.week }}"><span aria-hidden="true">←</span> Weekly schedule</a>
             <div class="course-hub-week-detail-meta">
-              <span>{{ $selectedWeek.date }}</span>
-              <span>{{ $stageInfo.stage }}</span>
+              <span>{{ $selectedDateLabel }}</span>
+              <span>{{ $selectedStageLabel }}</span>
             </div>
             <h2 id="week-detail-title"><span>Week {{ $weekDisplay }}:</span> {{ $selectedWeek.lecture }}</h2>
             {{ with $selectedWeek.holiday }}<p class="course-hub-week-detail-holiday">{{ . }} · No regular offline class</p>{{ end }}
@@ -355,7 +387,7 @@
               </section>
               <section>
                 <h3>Assignments</h3>
-                <ul class="course-hub-task-list">{{ range $assignments }}{{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "weights" $deliverableWeights "showDue" true "projectAnchor" $stageInfo.project_anchor) }}{{ end }}</ul>
+                <ul class="course-hub-task-list">{{ range $assignments }}{{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "assignments" $course.Params.assignments "showDue" true "projectAnchor" (cond (isset $stageInfo "project_number") (printf "project-%v" $stageInfo.project_number) "") ) }}{{ end }}</ul>
               </section>
               <section>
                 <h3>Key Takeaways</h3>
@@ -405,34 +437,37 @@
             </div>
             {{ $previousProject := "" }}
             {{ range $course.Params.assignments }}
-            {{ if ne .project $previousProject }}
+            {{ $projectLabel := printf "Project %v" .project_number }}
+            {{ $dueLabel := partial "teaching/due-label.html" .due_iso }}
+            {{ if ne $projectLabel $previousProject }}
             <div class="course-hub-deliverables-project" role="row">
-              <strong role="cell">{{ .project }}</strong>
+              <strong role="cell">{{ $projectLabel }}</strong>
             </div>
             {{ end }}
             <a class="course-hub-deliverables-table-row {{ if or (strings.HasPrefix .title "[Mini-Report]") (strings.HasPrefix .title "[Progress-Report]") }}is-mini-report{{ else }}is-milestone{{ end }}" href="#deliverable-{{ .number }}" role="row" data-deliverable-trigger>
               <strong role="cell">Deliverable #{{ .number }}</strong>
-              <strong role="cell">{{ .weight }}</strong>
+              <strong role="cell">{{ .weight }}%</strong>
               <span role="cell">{{ .title }}</span>
-              <span role="cell">{{ .due }}</span>
-              <small class="course-hub-deliverable-deadline" role="cell" data-deliverable-deadline data-year="{{ replaceRE `^([0-9]{4}).*$` `$1` $course.Params.semester_slug }}" data-due="{{ .due }}" data-deadline="{{ with .due_iso }}{{ . }}{{ end }}"></small>
+              <span role="cell">{{ $dueLabel }}</span>
+              <small class="course-hub-deliverable-deadline" role="cell" data-deliverable-deadline data-deadline="{{ .due_iso }}"></small>
               <span class="course-hub-deliverable-toggle" aria-hidden="true">+</span>
             </a>
-            {{ $previousProject = .project }}
+            {{ $previousProject = $projectLabel }}
             {{ end }}
           </div>
         </div>
         <p class="course-hub-deliverables-hint"><span aria-hidden="true">↓</span> Select a deliverable above to view its full details below.</p>
       </section>
       {{ range $course.Params.assignments }}
+      {{ $dueLabel := partial "teaching/due-label.html" .due_iso }}
       <section class="course-hub-section course-hub-assignment-section" id="deliverable-{{ .number }}" aria-labelledby="deliverable-{{ .number }}-title" data-deliverable-detail>
         <div class="course-hub-section-label">Deliverable #{{ .number }}</div>
         <div class="course-hub-section-content">
           <div class="course-hub-assignment-heading">
             <h2 id="deliverable-{{ .number }}-title"><span>Deliverable #{{ .number }}:</span> {{ .title }}</h2>
-            <span>{{ .weight }}</span>
+            <span>{{ .weight }}%</span>
           </div>
-          <dl class="course-hub-assignment-meta"><div><dt>Project</dt><dd>{{ .project }}</dd></div>{{ with .assignment_type }}<div><dt>Format</dt><dd>{{ . }}</dd></div>{{ end }}<div class="course-hub-assignment-due"><dt>Due</dt><dd>{{ .due }}</dd></div></dl>
+          <dl class="course-hub-assignment-meta"><div><dt>Project</dt><dd>Project {{ .project_number }}</dd></div>{{ with .assignment_type }}<div><dt>Format</dt><dd>{{ . }}</dd></div>{{ end }}<div class="course-hub-assignment-due"><dt>Due</dt><dd>{{ $dueLabel }}</dd></div></dl>
           <p class="course-hub-assignment-summary">{{ .summary }}</p>
           {{ with .objective }}<div class="course-hub-assignment-detail"><h3>Objective</h3><p>{{ . }}</p></div>{{ end }}
           {{ with .contents }}
@@ -456,8 +491,8 @@
           </div>
           {{ end }}
           {{ with .submission_method }}<div class="course-hub-assignment-detail"><h3>Submission method</h3><p>{{ . }}</p></div>{{ end }}
-          {{ with .deadline }}<div class="course-hub-assignment-detail"><h3>Deadline</h3><p><strong>{{ . }}</strong></p></div>{{ end }}
-          {{ with .evaluation_percentage }}<div class="course-hub-assignment-detail"><h3>Evaluation percentage</h3><p><strong>{{ . }}</strong></p></div>{{ end }}
+          {{ if and .show_detailed_deadline .due_iso }}<div class="course-hub-assignment-detail"><h3>Deadline</h3><p><strong>{{ time.Format "Monday, January 2, 2006, 3:04 PM (MST)" .due_iso }}</strong></p></div>{{ end }}
+          {{ if .show_evaluation_percentage }}<div class="course-hub-assignment-detail"><h3>Evaluation percentage</h3><p><strong>{{ .weight }}% of the final course grade</strong></p></div>{{ end }}
           {{ with .evaluation_focus }}<div class="course-hub-assignment-detail"><h3>Evaluation focus</h3><p>{{ . }}</p></div>{{ end }}
           {{ with .purpose }}<div class="course-hub-assignment-detail"><h3>Purpose</h3><p>{{ . }}</p></div>{{ end }}
           {{ with .requirements }}<div class="course-hub-assignment-detail"><h3>Requirements</h3><ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul></div>{{ end }}
@@ -474,20 +509,14 @@
         <div class="course-hub-section-content">
           <h2 id="grading-title">Grading scheme</h2>
           <div class="course-hub-assessment course-hub-assessment--single">
-            {{ range $course.Params.assessment }}
-            <article>
-              <strong>{{ .value }}</strong>
-              <div>
-                <h3>{{ .label }}</h3><p>{{ .note }}</p>
-              {{ with .project }}
-              <div class="course-hub-assessment-breakdown" aria-label="Project {{ . }} deliverable weights">
-                <span class="course-hub-assessment-breakdown-label">Deliverables</span>
-                {{ range where $course.Params.assignments "project" (printf "Project %v" .) }}<a href="{{ printf `%sassignments/#deliverable-%v` $base .number }}">Deliverable #{{ .number }} <strong>{{ .weight }}</strong></a>{{ end }}
-              </div>
-              {{ end }}
-              </div>
-            </article>
+            {{ if eq $course.Params.assessment_project_position "after" }}{{ range $course.Params.assessment }}{{ partial "teaching/course-assessment-row.html" (dict "row" . "base" $base "assignments" $course.Params.assignments) }}{{ end }}{{ end }}
+            {{ range $projectIndex, $project := $course.Params.project.items }}
+              {{ $projectNumber := add $projectIndex 1 }}{{ $projectWeight := 0 }}{{ range where $course.Params.assignments "project_number" $projectNumber }}{{ $projectWeight = add $projectWeight (int .weight) }}{{ end }}
+              {{ $projectRow := dict "project" $projectNumber "label" ($project.assessment_label | default (printf "Project %v: %s" $projectNumber $project.title)) "weight" $projectWeight "note" ($project.assessment_note | default $project.description) }}
+              {{ partial "teaching/course-assessment-row.html" (dict "row" $projectRow "base" $base "assignments" $course.Params.assignments) }}
             {{ end }}
+            {{ if ne $course.Params.assessment_project_position "after" }}{{ range $course.Params.assessment }}{{ partial "teaching/course-assessment-row.html" (dict "row" . "base" $base "assignments" $course.Params.assignments) }}{{ end }}{{ end }}
+            {{ if $course.Params.assessment_show_total }}{{ partial "teaching/course-assessment-row.html" (dict "row" (dict "label" "Total" "weight" $assessmentTotal "note" $course.Params.assessment_total_note) "base" $base "assignments" $course.Params.assignments) }}{{ end }}
           </div>
           <p class="course-hub-footnote">Assessment weights are provisional until the official syllabus is published.</p>
         </div>
@@ -529,21 +558,52 @@
 
 {{ if eq $tab "overview" }}
 <script type="application/json" id="course-schedule-data">{{ jsonify $course.Params.weekly_schedule | safeJS }}</script>
+<script type="application/json" id="course-assignment-data">{{ jsonify $course.Params.assignments | safeJS }}</script>
+<script type="application/json" id="course-stage-data">{{ jsonify $course.Params.roadmap | safeJS }}</script>
 <script>
 (function () {
   var source = document.getElementById('course-schedule-data');
+  var assignmentSource = document.getElementById('course-assignment-data');
+  var stageSource = document.getElementById('course-stage-data');
   var panel = document.getElementById('course-status-panel');
   if (!source || !panel) return;
-  var schedule;
-  try { schedule = JSON.parse(source.textContent); } catch (error) { return; }
+  var schedule, deliverables, stages;
+  try {
+    schedule = JSON.parse(source.textContent);
+    deliverables = assignmentSource ? JSON.parse(assignmentSource.textContent) : [];
+    stages = stageSource ? JSON.parse(stageSource.textContent) : [];
+  } catch (error) { return; }
   if (!schedule || !schedule.length) return;
   var classSchedule = schedule.filter(function (item) { return item.week !== '00'; });
   if (!classSchedule.length) return;
-  var courseSemester = {{ jsonify $course.Params.semester | safeJS }};
+  var courseSemester = {{ jsonify $semesterDisplay | safeJS }};
   function localDate(value) { var parts = value.split('-'); return new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2])); }
+  function dateLabel(value, before) {
+    var date = localDate(value);
+    if (before) date.setDate(date.getDate() + 1);
+    var label = date.toLocaleDateString('en-US', { month: 'short', day: '2-digit' }).replace(' ', '. ');
+    return before ? 'Before ' + label : label;
+  }
+  function dueLabel(value) {
+    if (!value) return 'To be confirmed';
+    var hasTime = value.indexOf('T') !== -1;
+    var date = hasTime ? new Date(value) : localDate(value);
+    var options = { month: 'short', day: '2-digit' };
+    if (hasTime) { options.hour = 'numeric'; options.minute = '2-digit'; }
+    return date.toLocaleString('en-US', options).replace(' ', '. ');
+  }
+  function stageLabel(stage) {
+    if (!stage) return '';
+    var name = stage.weekly_phase_override || stage.name || stage.ref;
+    return stage.show_in_roadmap ? 'Stage ' + stage.journey_order + ': ' + name : name;
+  }
   function tasks(items) { return (items || []).map(function (item) { return item.task || item; }).join(' · '); }
   function assignments(items) {
     return (items || []).map(function (item) {
+      if (item.deliverable) {
+        var deliverable = deliverables.find(function (entry) { return Number(entry.number) === Number(item.deliverable); });
+        if (deliverable) item = { task: deliverable.summary || deliverable.title, due: dueLabel(deliverable.due_iso) };
+      }
       var task = item.task || item;
       var due = item.due || 'To be confirmed';
       return '(DUE: ' + due + ') ' + task;
@@ -559,14 +619,15 @@
   var text = document.getElementById('course-status-text');
   var details = document.getElementById('course-status-details');
   var link = document.getElementById('course-status-link');
-  if (today < firstClass) { eyebrow.textContent = 'Before the semester'; title.textContent = 'The course begins on ' + classSchedule[0].date + '.'; text.textContent = 'Review Week 00 in the weekly schedule and complete the preparation for the first class.'; return; }
-  if (today >= afterFinal) { eyebrow.textContent = 'Course completed'; title.textContent = courseSemester + ' course archive'; text.textContent = 'The semester concluded on ' + classSchedule[classSchedule.length - 1].date + '. Course materials remain available as an archive.'; return; }
+  if (today < firstClass) { eyebrow.textContent = 'Before the semester'; title.textContent = 'The course begins on ' + dateLabel(classSchedule[0].iso_date, false) + '.'; text.textContent = 'Review Week 00 in the weekly schedule and complete the preparation for the first class.'; return; }
+  if (today >= afterFinal) { eyebrow.textContent = 'Course completed'; title.textContent = courseSemester + ' course archive'; text.textContent = 'The semester concluded on ' + dateLabel(classSchedule[classSchedule.length - 1].iso_date, false) + '. Course materials remain available as an archive.'; return; }
   var currentIndex = 0;
   for (var i = 0; i < classSchedule.length; i += 1) { if (localDate(classSchedule[i].iso_date) <= today) currentIndex = i; else break; }
   var current = classSchedule[currentIndex];
-  eyebrow.textContent = 'This week · Week ' + current.week + ' · ' + current.date;
+  eyebrow.textContent = 'This week · Week ' + current.week + ' · ' + dateLabel(current.iso_date, false);
   title.textContent = current.lecture;
-  text.textContent = 'Current phase: ' + current.phase;
+  var currentStage = stages.find(function (stage) { return stage.ref === current.stage_ref; });
+  text.textContent = 'Current phase: ' + (currentStage ? stageLabel(currentStage) : current.stage_ref);
   document.getElementById('course-status-in').textContent = tasks(current.in_class);
   document.getElementById('course-status-after').textContent = assignments(current.after_class);
   details.hidden = false; link.hidden = false;

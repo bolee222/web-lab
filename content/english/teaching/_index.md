@@ -59,15 +59,6 @@ undergraduate_courses:
         alt: "Workflow diagram from a design project"
         caption: "Student workflow and service proposal"
     offerings:
-      - semester: "Fall 2026"
-        status: "Upcoming"
-        project_focus: "Culture and Design Management Project"
-        keywords:
-          - "Culture"
-          - "Design Management"
-          - "Project-based Learning"
-        final_deliverable: "Culture and design management proposal"
-        url: "/courses/cdm1001/2026-fall/"
       - semester: "Spring 2026"
         status: "On-going"
         project_focus: "Local Rebranding Studio"
@@ -159,17 +150,7 @@ undergraduate_courses:
       - "Qualitative Methods"
       - "Research Synthesis"
       - "Evidence-based Design"
-    offerings:
-      - semester: "Fall 2026"
-        status: "Upcoming"
-        project_focus: "Evidence-based Design Research"
-        description: "Students move from research framing to fieldwork, synthesis, and evidence-based design recommendations through a semester-long study."
-        keywords:
-          - "Research Framing"
-          - "Qualitative Methods"
-          - "Research Synthesis"
-        final_deliverable: "Design research report and final presentation"
-        url: "/courses/cdm2008/2026-fall/"
+    offerings: []
 
   - code: "CDM4008"
     title: "Social Innovation in Sustainability"

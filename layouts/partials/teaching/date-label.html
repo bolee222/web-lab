@@ -1,0 +1,7 @@
+{{- $date := time.AsTime .date -}}
+{{- if eq (printf "%v" .week) "00" -}}
+  {{- $date = $date.AddDate 0 0 1 -}}
+  {{- printf "Before %s" ($date.Format "Jan. 02") -}}
+{{- else -}}
+  {{- $date.Format "Jan. 02" -}}
+{{- end -}}

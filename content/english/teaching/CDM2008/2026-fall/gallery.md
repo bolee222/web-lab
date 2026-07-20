@@ -1,7 +1,7 @@
 ---
 title: "Project Gallery"
 url: "/courses/cdm2008/2026-fall/gallery/"
-description: "Student work and project outcomes from CDM2008 Fall 2026."
+description: "Student work and project outcomes from CDM2008 2026 Fall."
 layout: "course-hub"
 course_tab: "gallery"
 aliases:

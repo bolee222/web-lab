@@ -22,6 +22,8 @@
     (dict "id" "undergraduate-courses" "title" "Undergraduate" "overview_title" "Undergraduate Courses" "courses" .Params.undergraduate_courses)
     (dict "id" "graduate-courses" "title" "Graduate" "overview_title" "Graduate Courses" "courses" .Params.graduate_courses)
   }}
+  {{/* Published Course Hubs are the canonical source for current offering metadata. */}}
+  {{ $courseHubs := where site.Pages "Params.layout" "course-hub" }}
 
   <section class="teaching-overview-section" aria-labelledby="course-overview-title">
     <div class="container">
@@ -35,10 +37,12 @@
             <h3>{{ .overview_title }}</h3>
             <div class="teaching-overview-list">
               {{ range .courses }}
+              {{ $managedOfferings := where $courseHubs "Params.course_code" .code }}
+              {{ $offeringCount := add (len (.offerings | default (slice))) (len $managedOfferings) }}
               <a class="teaching-overview-course" href="#course-{{ .code | urlize }}">
                 <span class="teaching-overview-code">{{ .code }}</span>
                 <span class="teaching-overview-title">{{ .title | markdownify }}</span>
-                {{ with .offerings }}<span class="teaching-overview-meta">{{ len . }} offerings</span>{{ end }}
+                {{ if gt $offeringCount 0 }}<span class="teaching-overview-meta">{{ $offeringCount }} offerings</span>{{ end }}
               </a>
               {{ end }}
             </div>
@@ -63,7 +67,25 @@
       {{ range .courses }}
       {{ $courseCode := .code }}
       {{ $courseTitle := .title }}
-      {{ $hasOfferings := gt (len (.offerings | default (slice))) 0 }}
+      {{ $offerings := slice }}
+      {{ $managedOfferings := sort (where $courseHubs "Params.course_code" $courseCode) "Params.semester_slug" "desc" }}
+      {{ range $managedOfferings }}
+        {{ $semesterParts := split .Params.semester_slug "-" }}
+        {{ $semesterLabel := .Params.semester_slug }}
+        {{ if eq (len $semesterParts) 2 }}
+          {{ $semesterLabel = printf "%s %s" (title (index $semesterParts 1)) (index $semesterParts 0) }}
+        {{ end }}
+        {{ $offerings = $offerings | append (dict
+          "semester" $semesterLabel
+          "project_focus" .Params.project_focus
+          "url" .RelPermalink
+          "weekly_schedule" .Params.weekly_schedule
+        ) }}
+      {{ end }}
+      {{ range (.offerings | default (slice)) }}
+        {{ $offerings = $offerings | append . }}
+      {{ end }}
+      {{ $hasOfferings := gt (len $offerings) 0 }}
       <article class="teaching-course-entry" id="course-{{ .code | urlize }}">
         <div class="row">
           <div class="{{ if $hasOfferings }}col-md-7{{ else }}col-md-12{{ end }}">
@@ -83,15 +105,20 @@
             <div class="teaching-semester-index" aria-label="{{ .title }} semester offerings">
               <div class="teaching-semester-index-label">Semester Offerings</div>
               <div class="teaching-semester-grid">
-              {{ range .offerings }}
+              {{ range $offerings }}
               {{ $scheduleStart := .schedule_start }}
               {{ $scheduleEnd := .schedule_end }}
-              {{ if .url }}
-                {{ $contentPath := replace .url "/courses/" "/teaching/" }}
-                {{ with site.GetPage $contentPath }}
-                  {{ with .Params.weekly_schedule }}
-                    {{ $scheduleStart = (index . 0).iso_date }}
-                    {{ $scheduleEnd = (index . (sub (len .) 1)).iso_date }}
+              {{ with .weekly_schedule }}
+                {{ $scheduleStart = (index . 0).iso_date }}
+                {{ $scheduleEnd = (index . (sub (len .) 1)).iso_date }}
+              {{ else }}
+                {{ if .url }}
+                  {{ $contentPath := replace .url "/courses/" "/teaching/" }}
+                  {{ with site.GetPage $contentPath }}
+                    {{ with .Params.weekly_schedule }}
+                      {{ $scheduleStart = (index . 0).iso_date }}
+                      {{ $scheduleEnd = (index . (sub (len .) 1)).iso_date }}
+                    {{ end }}
                   {{ end }}
                 {{ end }}
               {{ end }}

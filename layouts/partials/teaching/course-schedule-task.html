@@ -1,8 +1,17 @@
 {{- $item := .task -}}
 {{- $base := .base -}}
-{{- $weights := .weights -}}
+{{- $assignments := .assignments -}}
 {{- $showDue := .showDue -}}
 {{- $projectAnchor := .projectAnchor -}}
+{{- with $item.deliverable -}}
+  {{- $deliverableNumber := int . -}}
+  {{- range $assignments -}}
+    {{- if eq (int .number) $deliverableNumber -}}
+      {{- $dueLabel := partial "teaching/due-label.html" .due_iso -}}
+      {{- $item = dict "type" (printf "Deliverable %v" .number) "task" (.summary | default .title) "due" $dueLabel -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
 {{- $taskType := $item.type -}}
 {{- $taskLabel := $taskType -}}
 {{- if eq $taskLabel "FC Lecture" -}}
@@ -47,7 +56,7 @@
 {{- end -}}
 <li>
   {{- with $taskHref }}<a class="course-hub-task-link{{ if $isDeliverable }} is-deliverable{{ end }}" href="{{ . }}">{{ end -}}
-  {{- if not $isProject }}<span class="course-hub-task-tag course-hub-task-tag--{{ lower $taskLabel }}"><span class="{{ $taskClass }}">{{ $taskDisplay }}</span></span> {{ end -}}
+  {{- if not $isProject }}<span class="course-hub-task-tag course-hub-task-tag--{{ $taskLabel | urlize }}"><span class="{{ $taskClass }}">{{ $taskDisplay }}</span></span> {{ end -}}
   <span class="course-hub-task-copy">{{ $item.task }}</span>
   {{- with $taskHref }}</a>{{ end -}}
   {{- if and $showDue $item.due }} <small class="course-hub-task-due">Due: {{ $item.due }}</small>{{ end -}}

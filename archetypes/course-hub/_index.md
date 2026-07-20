@@ -8,12 +8,16 @@ course_tab: "overview"
 draft: true
 
 course_code: "COURSE-CODE"
-semester: "Semester Year"
 semester_slug: "SEMESTER-SLUG"
-hero_meta: "Institution Semester | Instructor"
 status: "Upcoming"
 course_level: "Undergraduate"
-course_type: "Undergraduate Course"
+project_focus: "Course project or learning focus"
+class_day: "Day"
+class_time: "To be announced"
+classroom: "To be announced"
+teaching_team: "Prof. Bokyung Lee"
+office_hours: ""
+language: "English"
 lede: "A concise description of this semester's course focus."
 keywords: []
 
@@ -27,16 +31,6 @@ flipped_learning:
   title: "Flipped Learning"
   text: "Describe the flipped-classroom designation."
   detail: "Describe the weekly balance of advance preparation and in-class collaborative learning."
-
-course_facts:
-  - label: "Class time"
-    value: "To be announced"
-  - label: "Location"
-    value: "To be announced"
-  - label: "Instructor"
-    value: "Bokyung Lee"
-  - label: "Language"
-    value: "English"
 
 notice:
   eyebrow: "Before the semester"
@@ -54,8 +48,16 @@ project:
   question: "Guiding question."
   deliverables: []
 
+# Course Stages: use ref, name, start_week, end_week, and optional
+# journey_order/series/project_number. Display labels are derived.
 roadmap: []
+schedule_intro: ""
+# Weekly Notes: use week, iso_date, stage_ref, lecture, in_class, and after_class.
+# The visible date label is derived from iso_date.
 weekly_schedule: []
+# Deliverables: use number, project_number, due_iso, numeric weight, title, and summary.
+assignments: []
+# Non-project categories: use label, numeric weight, and note.
 assessment: []
 policies: []
 resources: []

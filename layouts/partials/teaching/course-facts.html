@@ -1,0 +1,18 @@
+{{- $course := . -}}
+{{- $classTime := $course.Params.class_time -}}
+{{- with $course.Params.class_day -}}
+  {{- if $classTime -}}
+    {{- $displayTime := $classTime -}}
+    {{- if eq (lower $classTime) "to be announced" -}}
+      {{- $displayTime = "time to be announced" -}}
+    {{- end -}}
+    {{- $classTime = printf "%s(s), %s" . $displayTime -}}
+  {{- else -}}
+    {{- $classTime = printf "%s(s)" . -}}
+  {{- end -}}
+{{- end -}}
+{{- with $classTime }}<div><dt>Class time</dt><dd>{{ . }}</dd></div>{{ end -}}
+{{- with $course.Params.classroom }}<div><dt>Location</dt><dd>{{ . }}</dd></div>{{ end -}}
+{{- with $course.Params.teaching_team }}<div><dt>Instructor</dt><dd>{{ . }}</dd></div>{{ end -}}
+{{- with $course.Params.office_hours }}<div><dt>Office hours</dt><dd>{{ . }}</dd></div>{{ end -}}
+{{- with $course.Params.language }}<div><dt>Language</dt><dd>{{ . }}</dd></div>{{ end -}}

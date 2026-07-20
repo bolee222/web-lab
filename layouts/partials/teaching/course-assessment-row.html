@@ -1,0 +1,15 @@
+{{- $row := .row -}}
+{{- $base := .base -}}
+{{- $assignments := .assignments -}}
+<article>
+  <strong>{{ $row.weight }}%</strong>
+  <div>
+    <h3>{{ $row.label }}</h3><p>{{ $row.note }}</p>
+    {{ with $row.project }}
+    <div class="course-hub-assessment-breakdown" aria-label="Project {{ . }} deliverable weights">
+      <span class="course-hub-assessment-breakdown-label">Deliverables</span>
+      {{ range where $assignments "project_number" (int .) }}<a href="{{ printf `%sassignments/#deliverable-%v` $base .number }}">Deliverable #{{ .number }} <strong>{{ .weight }}%</strong></a>{{ end }}
+    </div>
+    {{ end }}
+  </div>
+</article>
