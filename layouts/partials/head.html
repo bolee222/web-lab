@@ -19,6 +19,7 @@
   <meta property="og:url" content="{{ $canonical }}" />
   <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
   <meta property="og:site_name" content="{{ site.Title }}" />
+  <meta property="og:locale" content="en_US" />
   {{ hugo.Generator }}
 
   {{ "<!-- Open Graph image and Twitter Card metadata -->" | safeHTML }}
@@ -26,16 +27,20 @@
   {{ $image_path_local :=  printf "static/%s" $image_path -}}
   {{ $image_ext := trim (path.Ext $image_path | lower) "." -}}
   {{ $image_url := $image_path -}}
+  {{ $image_alt := .Params.image_alt | default site.Params.image_alt | default .Title -}}
   {{ if not (or (hasPrefix $image_path "http://") (hasPrefix $image_path "https://")) -}}
     {{ $image_url = printf "%s%s" (replaceRE "/$" "" $canonicalBase) ($image_path | relURL) -}}
   {{ end -}}
   {{ if fileExists $image_path_local -}}
     <meta property="og:image" content="{{ $image_url }}" />
+    <meta property="og:image:secure_url" content="{{ $image_url }}" />
+    <meta property="og:image:alt" content="{{ $image_alt }}" />
     {{/* If not SVG, read image aspect ratio and define Twitter Card and Open Graph width and height  */ -}}
     {{ if ne $image_ext "svg" -}}
       {{ with (imageConfig $image_path_local) -}}
       {{ if (and (gt .Width 144) (gt .Height 144)) -}}
         <meta name="twitter:image" content="{{ $image_url }}"/>
+        <meta name="twitter:image:alt" content="{{ $image_alt }}"/>
         <meta name="twitter:card" content="summary{{ if (and (gt .Width 300) (gt .Height 157) (not (eq .Width .Height))) }}_large_image{{ end }}">
       {{ end -}}
       <meta property="og:image:width" content="{{ .Width }}">
@@ -94,13 +99,17 @@
 
   {{ if .IsHome }}
   <script type="application/ld+json">
+    {{ $organizationLogo := printf "%s%s" (replaceRE "/$" "" $canonicalBase) (site.Params.image | relURL) }}
     {{ $org := dict
       "@context" "https://schema.org"
       "@type" "ResearchOrganization"
       "name" site.Title
       "url" $canonicalBase
-      "alternateName" (site.Params.keywords | default (slice))
+      "alternateName" (site.Params.alternate_names | default (slice))
       "description" (site.Params.description | default "")
+      "logo" $organizationLogo
+      "founder" (dict "@type" "Person" "name" site.Params.author)
+      "parentOrganization" (dict "@type" "CollegeOrUniversity" "name" "Yonsei University" "url" "https://www.yonsei.ac.kr/")
     }}
     {{ $website := dict
       "@context" "https://schema.org"

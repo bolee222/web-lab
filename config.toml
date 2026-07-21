@@ -1,7 +1,7 @@
 ################################# Basic configuration #########################
 # Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 baseURL = "https://cxdlab.com/"
-title = "Bokyung Lee Lab"
+title = "CXD Lab"
 theme = "airspace-hugo"
 enableEmoji = true
 enableRobotsTXT = true
@@ -42,13 +42,21 @@ ordered = false
 logo = "images/logo/cxd_header-2b-symbol.png"
 logo_width = "150px"
 # OpenGraph / Twitter Card metadata
-description = "CXD Lab at Yonsei University, led by Bokyung Lee (이보경), researches HCI, UX, XR design, XR interaction, and digital-physical convergence."
+description = "CXD Lab (Convergence Experience Design Lab) at Yonsei University, led by Bokyung Lee (이보경), researches HCI, UX, XR, AI, and digital-physical interaction."
 author = "Bokyung Lee"
 site_url = "https://cxdlab.com/"
-image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
+image = "images/logo/cxd_header-2b.png" # fallback social-sharing image when a page has no image of its own
+image_alt = "CXD Lab — Convergence Experience Design Lab at Yonsei University"
+alternate_names = [
+  "Convergence Experience Design Lab",
+  "Bokyung Lee Lab",
+  "연세대학교 CXD 연구실"
+]
 # Search intent keywords
 keywords = [
   "연세대학교 이보경",
+  "연세대학교 HCI 연구실",
+  "연세대학교 UX 연구실",
   "연대 이보경",
   "Yonsei Bokyung Lee",
   "HCI Yonsei",
