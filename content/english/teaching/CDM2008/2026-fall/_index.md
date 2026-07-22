@@ -14,7 +14,7 @@ course_level: "Undergraduate"
 project_focus: "Evidence-based Design Research"
 class_day: "Friday"
 class_time: "To be announced"
-classroom: "To be announced"
+classroom: "VeritasB 206 (DFK Idea shop)"
 teaching_team: "Prof. Bokyung Lee"
 language: "English"
 credits: 3
@@ -207,18 +207,18 @@ weekly_schedule:
     stage_ref: "research-framing"
     lecture: "Course Introduction: Design Research as a Scientific Discipline"
     in_class:
-      - "Course and semester project overview"
-      - "Examine design artifacts used as research instruments"
-      - "Group formation"
-      - "Individual brainstorming: contexts and phenomena of interest"
+      - "Course Description"
+      - "Design project vs. design research"
+      - "Semester process: **RQ → Stimuli → Study → Evidence → Paper**"
+      - "Course expectations, assessment, and Q&A"
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch ‘Research Question Framing: From Idea to Research Questions.’"
+        task: "Watch “*Research Question Framing: From Idea to Research Questions”.*"
         due: "Sep. 11"
       -
         type: "Preparation"
-        task: "Identify one context of interest and bring 2–3 speculative design hypotheses. No submission required."
+        task: "Bring one design context or experience that interests you and 2–3 speculative ideas. · **No submission required**"
   -
     week: "02"
     iso_date: "2026-09-11"
