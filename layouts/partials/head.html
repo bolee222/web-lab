@@ -104,8 +104,8 @@
       "@context" "https://schema.org"
       "@type" "ResearchOrganization"
       "name" site.Title
-      "url" $canonicalBase
       "alternateName" (site.Params.alternate_names | default (slice))
+      "url" $canonicalBase
       "description" (site.Params.description | default "")
       "logo" $organizationLogo
       "founder" (dict "@type" "Person" "name" site.Params.author)
@@ -115,6 +115,7 @@
       "@context" "https://schema.org"
       "@type" "WebSite"
       "name" site.Title
+      "alternateName" (site.Params.alternate_names | default (slice))
       "url" $canonicalBase
       "inLanguage" "en-US"
       "keywords" (site.Params.keywords | default (slice))
