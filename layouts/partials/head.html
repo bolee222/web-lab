@@ -140,7 +140,7 @@
   {{ end }}
 
   {{ "<!-- Main stylesheet -->" | safeHTML }}
-  {{ $styles := slice (resources.Get "scss/style.scss") (resources.Get "scss/custom.scss") | resources.Concat "scss/bundled.scss" | toCSS | minify | fingerprint -}}
+  {{ $styles := resources.Get "scss/style.scss" | toCSS | minify | fingerprint -}}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="all">
 
   {{ if and (eq .Section "teaching") .Params.course_tab }}

@@ -1,11 +1,11 @@
 // Put custom SCSS rules in this file
 // Documentation: https://sass-lang.com/documentation
 
-// Keep the whole site at a comfortable reading width on large displays.
+// Give the whole site a little more room on large displays.
 @media (min-width: 1200px) {
   .container {
     width: calc(100% - 32px) !important;
-    max-width: 1080px !important;
+    max-width: 1200px !important;
   }
 }
 
@@ -13,6 +13,202 @@
 .container {
   padding-left: 1rem !important;   // 기본 1.5rem → 1rem
   padding-right: 1rem !important;
+}
+
+// Home hero statement
+.slider {
+  min-height: 100svh;
+  padding: 108px 0 56px;
+}
+
+.slider > .container,
+.home-hero-row,
+.home-hero-row > [class*="col-"] {
+  min-height: calc(100svh - 164px);
+}
+
+.home-hero-content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  row-gap: clamp(24px, 4vh, 48px);
+  min-height: calc(100svh - 164px);
+  box-sizing: border-box;
+  padding: clamp(24px, 4vh, 52px) 0 clamp(20px, 3vh, 38px);
+  align-items: center;
+  justify-items: center;
+  text-align: center !important;
+}
+
+.home-hero-heading {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  align-self: center;
+}
+
+.home-hero-affiliation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  align-self: start;
+  color: #111;
+  font-family: $primary-font;
+  font-size: clamp(14px, 1.05vw, 18px);
+  font-weight: 500;
+  letter-spacing: .08em;
+  line-height: 1.35;
+}
+
+.home-hero-affiliation span {
+  display: block;
+  white-space: pre-wrap;
+}
+
+.home-hero-affiliation [lang="ko"] {
+  letter-spacing: .04em;
+}
+
+.home-hero-title {
+  width: 100%;
+  margin: 0;
+  padding: 0 !important;
+  color: #080808;
+  font-family: $poppins-font;
+  font-size: clamp(50px, 4.3vw, 104px) !important;
+  font-weight: 600 !important;
+  letter-spacing: -.065em !important;
+  line-height: .94 !important;
+  text-transform: none !important;
+  text-wrap: balance;
+}
+
+.home-hero-title span {
+  display: block;
+}
+
+.home-hero-title .home-hero-through {
+  font-family: $kalam-font;
+  font-size: .72em;
+  font-weight: 300;
+  letter-spacing: -.035em;
+  line-height: .92;
+  margin: .08em 0 .12em;
+}
+
+.home-hero-title .home-hero-convergence {
+  font-size: .95em;
+}
+
+.slider .block .home-hero-tagline {
+  margin: clamp(20px, 2.5vh, 30px) 0 0;
+  padding: 0;
+  color: #111;
+  font-family: $poppins-font;
+  font-size: clamp(12px, .95vw, 16px);
+  font-weight: 600;
+  letter-spacing: .18em;
+  line-height: 1.3;
+}
+
+.slider .block .home-hero-subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: calc(100% - 32px);
+  max-width: 1080px;
+  margin: clamp(130px, 14vh, 152px) auto 0;
+  padding: 0;
+  color: #111;
+  font-family: $poppins-font;
+  font-size: clamp(14px, 1.15vw, 20px);
+  font-weight: 400;
+  letter-spacing: -.025em;
+  line-height: 1.4;
+}
+
+.home-hero-subtitle span {
+  display: block;
+}
+
+.home-hero-subtitle strong {
+  background: none;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 991px) {
+  .slider {
+    padding: 94px 0 42px;
+  }
+
+  .slider > .container,
+  .home-hero-row,
+  .home-hero-row > [class*="col-"],
+  .home-hero-content {
+    min-height: calc(100svh - 136px);
+  }
+
+  .home-hero-title {
+    width: 100%;
+    font-size: clamp(42px, 7vw, 68px) !important;
+    letter-spacing: -.06em !important;
+    line-height: .98 !important;
+  }
+
+  .home-hero-content {
+    row-gap: clamp(20px, 3vh, 34px);
+    padding-top: clamp(22px, 3vh, 34px);
+    padding-bottom: clamp(18px, 2.5vh, 28px);
+  }
+
+  .slider .block .home-hero-subtitle {
+    margin-top: 114px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .slider {
+    min-height: 620px;
+    height: 100svh;
+    padding: 86px 0 32px;
+  }
+
+  .slider > .container,
+  .home-hero-row,
+  .home-hero-row > [class*="col-"],
+  .home-hero-content {
+    min-height: 502px;
+    height: calc(100svh - 118px);
+  }
+
+  .home-hero-title {
+    width: 100%;
+    font-size: clamp(36px, 10.5vw, 52px) !important;
+    letter-spacing: -.055em !important;
+    line-height: 1 !important;
+  }
+
+  .slider .block .home-hero-subtitle {
+    width: 100%;
+    max-width: 340px;
+    margin-top: 96px;
+    font-size: 14px;
+  }
+
+  .home-hero-content {
+    row-gap: 18px;
+    padding-top: 18px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #circle1,
+  #circle2 {
+    animation: none;
+  }
 }
 
 
