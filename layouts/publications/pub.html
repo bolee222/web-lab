@@ -23,6 +23,15 @@
           <a class="nav-link" data-type="top-ranked" href="#">Top-Ranked</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" data-type="journal" href="#">Journal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-type="conference" href="#">Conference</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-type="awarded" href="#">Awarded</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" data-type="international" href="#">International</a>
         </li>
         <li class="nav-item">
@@ -35,7 +44,7 @@
 <div class = "publication-list" id="publication-list">
   {{ range $index, $publication := $publicationPages }}
   {{- $year := printf "%v" .Params.homeYearTag -}}
-  <div class="publication-item col-12 mb-1" id="publication-{{ $year | urlize }}-{{ $index }}" data-type="{{ .Params.type }}" data-year="{{ $year }}">
+  <div class="publication-item col-12 mb-1" id="publication-{{ $year | urlize }}-{{ $index }}" data-type="{{ .Params.type }}" data-year="{{ $year }}" data-awarded="{{ if .Params.award }}true{{ else }}false{{ end }}">
       {{ .Render "publication_all_acm" }}
   </div>
   {{ end }}
@@ -59,6 +68,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const categoryMapping = {
     "top-ranked": [ "Journal_sci", "Conference_sci"],
+    "journal": ["Journal_sci", "Journal_int", "Journal_dom"],
+    "conference": ["Conference_sci", "Conference_int", "Conference_dom"],
     "international": ["Journal_sci", "Conference_sci", "Journal_int", "Conference_int"],
     "domestic": ["Conference_dom", "Journal_dom"]
   };
@@ -119,7 +130,9 @@ document.addEventListener("DOMContentLoaded", function() {
       publications.forEach(pub => {
         const pubType = pub.getAttribute("data-type");
         const isVisible = selectedTypes.length === 0 || selectedTypes.some(type =>
-          (categoryMapping[type] && categoryMapping[type].includes(pubType)) || pubType === type
+          (type === "awarded" && pub.getAttribute("data-awarded") === "true") ||
+          (categoryMapping[type] && categoryMapping[type].includes(pubType)) ||
+          pubType === type
         );
         pub.style.display = isVisible ? "block" : "none";
       });
