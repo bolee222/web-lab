@@ -30,15 +30,15 @@
                     {{ end }}
 
                     <div class="home-hero-heading">
+                      {{ with .title_tagline }}
+                      <p class="home-hero-tagline">{{ . }}</p>
+                      {{ end }}
+
                       <h1 class="home-hero-title">
                         {{ with .title_line1 }}<span>{{ . }}</span>{{ end }}
                         {{ with .title_line2 }}<span class="home-hero-through">{{ . }}</span>{{ end }}
                         {{ with .title_line3 }}<span class="home-hero-convergence">{{ . }}</span>{{ end }}
                       </h1>
-
-                      {{ with .title_tagline }}
-                      <p class="home-hero-tagline">{{ . }}</p>
-                      {{ end }}
 
                       {{ if or .subtitle_line1 .subtitle_line2 }}
                       <p class="home-hero-subtitle">

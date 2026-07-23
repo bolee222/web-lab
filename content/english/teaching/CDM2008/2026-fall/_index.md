@@ -218,7 +218,7 @@ weekly_schedule:
         due: "Sep. 11"
       -
         type: "Preparation"
-        task: "Bring one design context or experience that interests you and 2–3 speculative ideas. · **No submission required**"
+        task: "Bring one design context or experience that interests you and 2–3 speculative ideas. · No submission required"
   -
     week: "02"
     iso_date: "2026-09-11"
@@ -226,18 +226,19 @@ weekly_schedule:
     lecture: "Research Question Framing: From Imagination to Researchable Design Hypothesis"
     paper: "Introduction: Research context, motivation, phenomenon, initial RQ"
     in_class:
-      - "Distinguish topic, design idea, hypothesis, and research question"
-      - "RQ framing worksheet"
-      - "Convert speculative ideas into researchable questions"
-      - "Peer critique and RQ narrowing"
+      - "Share individual contexts and speculative design ideas"
+      - "Form project groups based on shared interests"
+      - "Distinguish topic, design idea, design hypothesis, and research question"
+      - "Develop and narrow provisional research questions"
+      - "Peer critique using the RQ checklist"
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch ‘Research Gap Clarification: Finding a Research Gap.’"
+        task: "Watch *Finding a Research Gap.*"
         due: "Sep. 18"
       -
         type: "Assignment"
-        task: "Revise the working RQ; identify the phenomenon, target context, expected outcome, and implied comparison; find at least three related papers or research-based design cases. No submission required."
+        task: "Revise the working RQ and identify the phenomenon of interest, target context or users, design condition, expected experience or behavior, and implied comparison."
   -
     week: "03"
     iso_date: "2026-09-18"

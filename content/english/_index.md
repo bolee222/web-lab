@@ -34,7 +34,7 @@ banner:
   title_line1: "Empowering People"
   title_line2: "through"
   title_line3: "Digital-Physical Convergence"
-  title_tagline: "DESIGN X TECHNOLOGY X HUMAN"
+  title_tagline: "DESIGN × TECHNOLOGY × HUMAN"
   subtitle_line1: "How can we meaningfully integrate <strong>digital intelligence</strong> into the physical products, bodies, and spaces of everyday life?"
   subtitle_line2: "Yonsei CXD Lab investigates <strong>new interaction designs using emerging technologies</strong>."
   yonseiLogo1: "images/logo/yonsei_logo1.png"

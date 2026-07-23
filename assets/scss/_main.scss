@@ -123,11 +123,11 @@ z-index: 0;
 }
 
 #circle-container-1 {
-transform: perspective(500px) translate3d(-35vh, -35vh, 0px);
+  transform: perspective(500px) translate3d(-35vh, -35vh, 0px);
 }
 
 #circle-container-2 {
-transform: perspective(500px) translate3d(-20vh, -20vh, 0px);
+  transform: perspective(500px) translate3d(-20vh, -20vh, 0px);
 }
 
 #circle1 {
@@ -203,6 +203,7 @@ canvas {
     50%  { transform: rotate(180deg) perspective(500px) translate3d(-72px, 0, 0) scale(.95); }
     100% { transform: rotate(0deg) perspective(500px) translate3d(-52px, 0, 0) scale(1.05); }
   }
+
 }
 //.body {
   //background-color: #eee;
