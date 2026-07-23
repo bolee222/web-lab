@@ -3153,7 +3153,7 @@ a:link-text-publications {
   margin-right: 12px;
   padding: 11px 20px;
   border: 1px solid transparent;
-  border-radius: 2px;
+  border-radius: 6px;
   font-family: $primary-font;
   font-size: 14px;
   font-weight: 600;
@@ -3199,7 +3199,7 @@ a:link-text-publications {
 
 .c-btn--secondary {
   border-color: $mediumGray;
-  background: $light;
+  background: #F8F9FA;
   box-shadow: 0 2px 6px rgba($black, .08);
   color: $darkGray;
 }
@@ -3207,7 +3207,7 @@ a:link-text-publications {
 .c-btn--secondary:hover,
 .c-btn--secondary:focus {
   border-color: $darkGray;
-  background: $brand-color-softgray;
+  background: #F1F2F4;
   box-shadow: 0 4px 11px rgba($black, .12);
   color: $black;
   text-decoration: none;
