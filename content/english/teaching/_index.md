@@ -9,7 +9,7 @@ draft: false
 menu:
   main:
     name: "Courses"
-    weight: 6
+    weight: 7
 
 hero:
   statement: "My courses explore design as a way of researching culture, cities, technology, and human experience. Across lectures, seminars, and project-based studios, students develop the ability to frame questions, conduct research, create design proposals, and communicate ideas critically."

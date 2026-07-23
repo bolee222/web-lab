@@ -26,7 +26,7 @@
         {{ with .content }}<div class="professor-context people-professor-context">{{ . | markdownify }}</div>{{ end }}
         {{ with .button }}
         {{ if .enable }}
-        <a href="{{ .link | relURL }}" class="home-slider-more btn-main btn-learnMore">{{ .label }}</a>
+        <a href="{{ .link | relURL }}" class="c-btn c-btn--secondary">{{ .label | markdownify }}</a>
         {{ end }}
         {{ end }}
       </div>
@@ -127,7 +127,7 @@
             {{ with .content }}<p>{{ . | markdownify }}</p>{{ end }}
 
             {{ with .button }}{{ if .enable }}
-            <a class="home-slider-more btn-main btn-learnMore" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
+            <a class="c-btn c-btn--secondary" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
             {{ end }}{{ end }}
 
             {{ with .button_joinUs }}{{ if .enable }}
@@ -135,7 +135,7 @@
             {{ end }}{{ end }}
 
             {{ with .button_FAQ }}{{ if .enable }}
-            <a class="home-slider-more btn-main btn-learnMore" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
+            <a class="c-btn c-btn--secondary" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
             {{ end }}{{ end }}
           </div>
         </div>

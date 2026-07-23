@@ -10,7 +10,7 @@ aliases:
 menu:
   main:
     name: "Join Us"
-    weight: 7
+    weight: 9
 
 
 ########################### PHD #############################

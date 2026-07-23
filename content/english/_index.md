@@ -111,12 +111,12 @@ about:
 
   button:
     enable: true
-    label: "&rarr; About CXD Lab"
+    label: "About CXD Lab &rarr;"
     link: "/vision/"
 
   button2:
     enable: true
-    label: "&rarr; Research Methods"
+    label: "Research Methods &rarr;"
     link: "about/approach/"
 
   button3:
@@ -150,7 +150,7 @@ cta:
   content: "Explore more about our research vision, interests, research approaches, and application process. We welcome highly motivated students eager to innovate and shape the future through design and technology."
   button:
     enable: true
-    label: "&rarr; About CXD Lab"
+    label: "About CXD Lab &rarr;"
     link: "/vision/"
   button_joinUs:
     enable: true
@@ -158,7 +158,7 @@ cta:
     link: "/join/"
   button_FAQ:
     enable: true
-    label: "&rarr; FAQ"
+    label: "FAQ &rarr;"
     link: "/faq/"
 
 ############################# Funfacts ###############################

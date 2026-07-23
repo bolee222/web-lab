@@ -28,7 +28,7 @@ professor:
   My research lies at the intersection of **Human-Computer Interaction** and **Interactive System Designs**. My vision is to design comfortable and novel experiences for an immersive, interactive, and simulated virtual world at a shared, with a multi-disciplinary approach. I envision the potential **interactions for future technologies (VR/AR/AI)** with a goal of enhancing our convergnece experiences. During my Ph.D., I explored embodied interactions for VR/AR digital design tools. I enjoy creating and applying new user-centered design methods, as well as prototyping interactive systems."
   button:
     enable : true
-    label : "View Full Professor Profile"
+    label : "View Full Professor Profile &rarr;"
     link : "/people/professor/"
     
 

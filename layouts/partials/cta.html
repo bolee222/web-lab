@@ -10,7 +10,7 @@
           {{ with .content }}<p>{{ . | markdownify }}</p>{{ end }}
           
           {{ with .button }}{{ if .enable }}
-          <a class="btn btn-main btn-solid-border" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
+          <a class="c-btn c-btn--secondary" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
           {{ end }}{{ end }}
 
           {{ with .button_joinUs }}{{ if and .enable (ne $currentPage.RelPermalink (.link | relLangURL)) }}
@@ -18,7 +18,7 @@
           {{ end }}{{ end }}
 
           {{ with .button_FAQ }}{{ if .enable }}
-          <a class="btn btn-main btn-solid-border" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
+          <a class="c-btn c-btn--secondary" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
           {{ end }}{{ end }}
         </div>
       </div>

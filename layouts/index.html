@@ -128,10 +128,10 @@
                 </div>
                 {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block")
                 }}{{ end }} {{ with .button }} {{ if .enable }}
-                <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main btn-learnMore">{{ .label | markdownify }}</a>
+                <a href="{{ .link | relLangURL }}" class="c-btn c-btn--secondary">{{ .label | markdownify }}</a>
                 {{ end }}{{ end }}
                 {{ with .button2 }} {{ if .enable }}
-                <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main btn-learnMore">{{ .label | markdownify }}</a>
+                <a href="{{ .link | relLangURL }}" class="c-btn c-btn--secondary">{{ .label | markdownify }}</a>
                 {{ end }}{{ end }}
                 {{ with .button3 }} {{ if .enable }}
                 <a href="{{ .link | relLangURL }}" class="c-btn c-btn--primary">{{ .label | markdownify }}</a>
@@ -355,10 +355,10 @@
             <div class="block">
               <h2>Are you interested in <b>joining</b> our lab?</h2>
               <p>Explore more about our research vision, key interests, frequently used methodologies, and application process. We welcome highly motivated students eager to innovate and shape the future through design and technology. :)</p>
-              <a class="home-slider-more btn-main btn-learnMore" href={{ absURL "/vision/" }}>→ About CXD Lab</a>
-              <a class="home-slider-more btn-main btn-learnMore" href={{ absURL "/about/approach/" }}>→ Research Methods</a>
+              <a class="c-btn c-btn--secondary" href={{ absURL "/vision/" }}>About CXD Lab →</a>
+              <a class="c-btn c-btn--secondary" href={{ absURL "/about/approach/" }}>Research Methods →</a>
               <a class="c-btn c-btn--primary" href={{ absURL "/join/" }}>Join Us →</a>
-              <a class="home-slider-more btn-main btn-learnMore" href={{ absURL "/faq/" }}>→ FAQ</a>
+              <a class="c-btn c-btn--secondary" href={{ absURL "/faq/" }}>FAQ →</a>
             </div>
           </div>
         </div>
