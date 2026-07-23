@@ -1,3 +1,4 @@
+{{ $currentPage := . }}
 {{ with site.GetPage "/" }}
 {{ with .Params.cta }}
 <section class="call-to-action bg-1 section-sm overly" style="background-image: url('{{ .bg_image | relURL }}');">
@@ -12,8 +13,8 @@
           <a class="btn btn-main btn-solid-border" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
           {{ end }}{{ end }}
 
-          {{ with .button_joinUs }}{{ if .enable }}
-          <a class="btn btn-main btn-solid-border" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
+          {{ with .button_joinUs }}{{ if and .enable (ne $currentPage.RelPermalink (.link | relLangURL)) }}
+          <a class="c-btn c-btn--primary" href="{{ .link | relLangURL }}">{{ .label | markdownify }}</a>
           {{ end }}{{ end }}
 
           {{ with .button_FAQ }}{{ if .enable }}

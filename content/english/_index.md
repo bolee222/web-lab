@@ -121,8 +121,8 @@ about:
 
   button3:
     enable: true
-    label: "&rarr; join us"
-    link: "about/approach/"
+    label: "Join Us &rarr;"
+    link: "/join/"
 
 ######################### Portfolio ###############################
 portfolio:
@@ -154,7 +154,7 @@ cta:
     link: "/vision/"
   button_joinUs:
     enable: true
-    label: "&rarr; Join Us"
+    label: "Join Us &rarr;"
     link: "/join/"
   button_FAQ:
     enable: true

@@ -3141,6 +3141,61 @@ a:link-text-publications {
   text-decoration: none;
 }
 
+/* Shared action foundation. Add role variants here as the button system grows. */
+.c-btn {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 44px;
+  margin-top: 25px;
+  padding: 11px 20px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: .01em;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color .18s ease,
+    border-color .18s ease,
+    box-shadow .18s ease,
+    color .18s ease,
+    transform .18s ease;
+}
+
+.c-btn--primary {
+  border-color: $brand-color-grad-primary;
+  background: $brand-color-grad-primary;
+  box-shadow: 0 4px 12px rgba($brand-color-grad-primary, .24);
+  color: $light;
+}
+
+.c-btn--primary:hover,
+.c-btn--primary:focus {
+  border-color: $brand-color-text-primary;
+  background: $brand-color-text-primary;
+  box-shadow: 0 6px 16px rgba($brand-color-text-primary, .28);
+  color: $light;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.c-btn--primary:active {
+  box-shadow: 0 2px 7px rgba($brand-color-text-primary, .22);
+  transform: translateY(0);
+}
+
+.c-btn--primary:focus-visible {
+  outline: 3px solid rgba($brand-color-grad-primary, .34);
+  outline-offset: 3px;
+}
+
 .people-prof-title{
   font-size: 20px;
   font-weight: 600;

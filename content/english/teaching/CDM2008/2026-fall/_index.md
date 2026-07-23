@@ -189,23 +189,23 @@ weekly_schedule:
     week: "00"
     iso_date: "2026-09-03"
     stage_ref: "preparation"
-    lecture: "Preparation"
+    lecture: "**Preparation**"
     in_class:
       - "No class"
     after_class:
       -
-        type: "Preparation"
-        task: "Review the course hub and semester schedule."
+        type: "FC Lecture"
+        task: "Watch <What Is Design Research?>"
         due: "Sep. 04"
       -
-        type: "FC Lecture"
-        task: "Watch ‘What Is Design Research?’ with the TwistLens and Ponify examples."
+        type: "Preparation"
+        task: "Review the course hub."
         due: "Sep. 04"
   -
     week: "01"
     iso_date: "2026-09-04"
     stage_ref: "research-framing"
-    lecture: "Course Introduction: Design Research as a Scientific Discipline"
+    lecture: "**Course Introduction.**\nDesign Research as a Scientific Discipline"
     in_class:
       - "Course Description"
       - "Design project vs. design research"
@@ -214,17 +214,17 @@ weekly_schedule:
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch “*Research Question Framing: From Idea to Research Questions”.*"
+        task: "Watch <*Research Question Framing: From Idea to Research Questions>.*"
         due: "Sep. 11"
       -
         type: "Preparation"
-        task: "Bring one design context or experience that interests you and 2–3 speculative ideas. · No submission required"
+        task: "Bring one “design topic” that interests you. · No submission required"
   -
     week: "02"
     iso_date: "2026-09-11"
     stage_ref: "research-framing"
-    lecture: "Research Question Framing: From Imagination to Researchable Design Hypothesis"
-    paper: "Introduction: Research context, motivation, phenomenon, initial RQ"
+    lecture: "**Research Question Framing. **\nFrom Imagination to Researchable Design Hypothesis"
+    paper: "Introduction"
     in_class:
       - "Share individual contexts and speculative design ideas"
       - "Form project groups based on shared interests"
@@ -234,7 +234,7 @@ weekly_schedule:
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch *Finding a Research Gap.*"
+        task: "Watch <Finding a Research Gap.>"
         due: "Sep. 18"
       -
         type: "Assignment"
@@ -243,8 +243,8 @@ weekly_schedule:
     week: "03"
     iso_date: "2026-09-18"
     stage_ref: "research-framing"
-    lecture: "Research Question Verification: Related Work & Research Gap"
-    paper: "Related Work: Prior approaches, limitations, research gap"
+    lecture: "**Research Question Verification.\n**Related Work & Research Gap"
+    paper: "Related Work"
     in_class:
       - "Related-work mapping workshop"
       - "Compare what previous studies examined, designed, and measured"
@@ -265,7 +265,7 @@ weekly_schedule:
     iso_date: "2026-09-25"
     holiday: "Chuseok Holiday"
     stage_ref: "research-framing"
-    lecture: "Design Variables for Research: Translating RQ into Designable Factors, Dependent, and Controlled Variables"
+    lecture: "**Design Variables for Research\n**Translating RQ into Designable Factors"
     paper: "Introduction + Related Work: Provisional draft"
     in_class:
       - "Async feedback: Research Question Check-up"
@@ -283,7 +283,7 @@ weekly_schedule:
     week: "05"
     iso_date: "2026-10-02"
     stage_ref: "planning-stimuli"
-    lecture: "Experiment Logic: Designing Comparable Conditions"
+    lecture: "**Experiment Logic. \n**Designing Comparable Conditions"
     paper: "Design Rationale: Variables, hypotheses, comparison logic"
     in_class:
       - "Review Deliverable #1 and common framing problems"
@@ -303,7 +303,7 @@ weekly_schedule:
     iso_date: "2026-10-09"
     holiday: "Hangeul Day"
     stage_ref: "planning-stimuli"
-    lecture: "Stimuli Design Workshop: Prototyping Design Options as Research Instruments"
+    lecture: "**Stimuli Design Workshop.** \nPrototyping Design Options as Research Instruments"
     paper: "Design Stimuli: Condition descriptions and prototype rationale"
     in_class:
       - "Async feedback: Stimuli and condition review"
@@ -322,7 +322,7 @@ weekly_schedule:
     week: "07"
     iso_date: "2026-10-16"
     stage_ref: "planning-stimuli"
-    lecture: "Research Proposal Integration: Aligning RQ, Variables, Conditions, Stimuli, and Expected Study Plan"
+    lecture: "**Research Proposal Integration.** \nAligning RQ, Variables, Conditions, Stimuli, and Expected Study Plan"
     paper: "Research Proposal Draft: Introduction, gap, RQ, rationale, stimuli"
     in_class:
       - "Focused feedback on experimental conditions and design stimuli"
@@ -343,7 +343,7 @@ weekly_schedule:
     week: "08"
     iso_date: "2026-10-23"
     stage_ref: "planning-stimuli"
-    lecture: "Mid-term Presentation"
+    lecture: "**Mid-term Presentation**"
     paper: "Proposal Revision"
     in_class:
       - "Offline group presentation"
@@ -362,7 +362,7 @@ weekly_schedule:
     week: "09"
     iso_date: "2026-10-30"
     stage_ref: "user-study"
-    lecture: "Study Protocol Setup #1: Quantitative Measurements"
+    lecture: "**Study Protocol Setup #1. \n**Quantitative Measurements"
     paper: "Method: Study design, tasks, quantitative measures"
     in_class:
       - "Measurement–RQ alignment worksheet"
@@ -381,7 +381,7 @@ weekly_schedule:
     week: "10"
     iso_date: "2026-11-06"
     stage_ref: "user-study"
-    lecture: "Study Protocol Setup #2: Qualitative Research Questionnaires"
+    lecture: "**Study Protocol Setup #2** \nQualitative Research Questionnaires"
     paper: "Method: Procedure and qualitative data collection"
     in_class:
       - "Develop survey items, open-ended questions, and interview prompts"
@@ -400,7 +400,7 @@ weekly_schedule:
     week: "11"
     iso_date: "2026-11-13"
     stage_ref: "user-study"
-    lecture: "Main Study Execution: Pilot Testing & Protocol Revision"
+    lecture: "**Main Study Execution.\n**Pilot Testing & Protocol Revision"
     paper: "Method Finalization: Pilot revisions and final protocol"
     in_class:
       - "Conduct or report the pilot test"
@@ -419,7 +419,7 @@ weekly_schedule:
     week: "12"
     iso_date: "2026-11-20"
     stage_ref: "analysis"
-    lecture: "Data Analysis #1: Qualitative Analysis Method"
+    lecture: "**Data Analysis #1.**\nQualitative Insights"
     paper: "Results: Qualitative findings"
     in_class:
       - "Data-cleaning and organization check"
@@ -438,7 +438,7 @@ weekly_schedule:
     week: "13"
     iso_date: "2026-11-27"
     stage_ref: "analysis"
-    lecture: "Data Analysis #2: Quantitative Statistical Analysis Method: T-test and ANOVA Analysis"
+    lecture: "**Data Analysis #2.**\nQuantitative Insight (T-test and ANOVA Analysis)"
     paper: "Results + Preliminary Findings"
     in_class:
       - "Select an analysis based on conditions and study design"
@@ -458,7 +458,7 @@ weekly_schedule:
     week: "14"
     iso_date: "2026-12-04"
     stage_ref: "integrating"
-    lecture: "Discussion & Design Implication Writing"
+    lecture: "**Insights & Design Implications**"
     paper: "Discussion: RQ answers, interpretation, implications, limitations"
     in_class:
       - "Feedback on provisional results and findings"
@@ -476,7 +476,7 @@ weekly_schedule:
     week: "15"
     iso_date: "2026-12-11"
     stage_ref: "integrating"
-    lecture: "Final Presentation"
+    lecture: "**Final Presentation**"
     paper: "Full Paper Draft"
     in_class:
       - "Final group presentations"
@@ -492,7 +492,7 @@ weekly_schedule:
     week: "16"
     iso_date: "2026-12-18"
     stage_ref: "integrating"
-    lecture: "Final Paper Submission: No Offline Class"
+    lecture: "**Final Paper Submission**"
     paper: "Final Paper"
     in_class:
       - "No offline class"
