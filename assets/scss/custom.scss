@@ -3599,15 +3599,90 @@ body #publicationTabs .nav-link:focus-visible {
   outline-offset: 2px;
 }
 
+/* Projects uses a lighter text-and-underline filter variant. */
+body .portfolio-work .block .portfolio-menu .btn-group {
+  gap: 14px;
+}
+
+body .portfolio-work .block .portfolio-menu .btn-group > .btn,
+body .portfolio-work .block .portfolio-menu .btn-group > label,
+body .portfolio-work .block .portfolio-menu .btn-toggle,
+body .portfolio-work .block .portfolio-menu .portfolio-row-all {
+  min-height: 24px;
+  padding: 3px 1px 4px !important;
+  border: 0 !important;
+  border-bottom: 2px solid transparent !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #555C68 !important;
+  text-decoration: none;
+  transform: none;
+}
+
+body .portfolio-work .block .portfolio-menu .btn-group > .btn:hover,
+body .portfolio-work .block .portfolio-menu .btn-group > .btn:focus,
+body .portfolio-work .block .portfolio-menu .btn-group > label:hover,
+body .portfolio-work .block .portfolio-menu .btn-group > label:focus,
+body .portfolio-work .block .portfolio-menu .btn-toggle:hover,
+body .portfolio-work .block .portfolio-menu .btn-toggle:focus,
+body .portfolio-work .block .portfolio-menu .portfolio-row-all:hover,
+body .portfolio-work .block .portfolio-menu .portfolio-row-all:focus {
+  border-bottom-color: rgba($brand-color-grad-primary, .42) !important;
+  background: transparent !important;
+  color: $brand-color-grad-primary !important;
+  transform: none;
+}
+
+body .portfolio-work .block .portfolio-menu .btn-group > .btn.active,
+body .portfolio-work .block .portfolio-menu .btn-group > label.active,
+body .portfolio-work .block .portfolio-menu .btn-toggle.active,
+body .portfolio-work .block .portfolio-menu .portfolio-row-all.active {
+  border-bottom-color: $brand-color-grad-primary !important;
+  background: transparent !important;
+  color: $brand-color-grad-primary !important;
+  transform: none;
+}
+
 #publicationTabs {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 14px;
 }
 
-#publicationTabs .nav-item {
+body #publicationTabs .nav-item {
   float: none;
-  margin: 0;
+  margin: 0 !important;
+}
+
+body #publicationTabs .nav-link {
+  height: 24px;
+  min-height: 24px;
+  padding: 3px 1px 4px !important;
+  border: 0 !important;
+  border-bottom: 2px solid transparent !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #555C68 !important;
+  line-height: 1.2;
+  text-decoration: none;
+  transform: none;
+}
+
+body #publicationTabs .nav-link:hover,
+body #publicationTabs .nav-link:focus {
+  border-bottom-color: rgba($brand-color-grad-primary, .42) !important;
+  background: transparent !important;
+  color: $brand-color-grad-primary !important;
+  transform: none;
+}
+
+body #publicationTabs .nav-link.active {
+  border-bottom-color: $brand-color-grad-primary !important;
+  background: transparent !important;
+  color: $brand-color-grad-primary !important;
+  transform: none;
 }
 
 .news-list-page .sidebar .widget-category-list,
@@ -4926,39 +5001,41 @@ body #publicationTabs .nav-link:focus-visible {
   background: #f8faff;
 }
 
-.project-ongoing-list{
-  margin-bottom: 0;
+.vision-content.project-ongoing-list{
+  margin-bottom: 0 !important;
   color: #333;
   font-size: 13px;
   line-height: 1.35;
   text-align: left;
 }
 
-.project-ongoing-list ol{
+.vision-content.project-ongoing-list ol{
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 28px;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   list-style: none;
   counter-reset: ongoing-project;
 }
 
-.project-ongoing-list li{
+.vision-content.project-ongoing-list li{
   position: relative;
   display: block;
-  margin: 0;
+  margin: 0 !important;
   padding: 8px 0 8px 34px !important;
   border-bottom: 1px solid rgba(#111, .12);
   counter-increment: ongoing-project;
+  font-size: 13px;
+  line-height: 1.35;
   text-align: left;
 }
 
-.project-ongoing-list li p{
+.vision-content.project-ongoing-list li p{
   margin: 0;
 }
 
-.project-ongoing-list li::before{
+.vision-content.project-ongoing-list li::before{
   position: absolute;
   top: 8px;
   left: 0;
@@ -4972,7 +5049,7 @@ body #publicationTabs .nav-link:focus-visible {
 }
 
 @media(max-width:991px){
-  .project-ongoing-list ol{
+  .vision-content.project-ongoing-list ol{
     grid-template-columns: 1fr;
   }
 }
