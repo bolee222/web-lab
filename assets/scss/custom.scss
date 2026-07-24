@@ -3599,7 +3599,7 @@ body #publicationTabs .nav-link:focus-visible {
   outline-offset: 2px;
 }
 
-/* Projects uses a lighter text-and-underline filter variant. */
+/* Projects and Publications use the compact text-and-underline filter variant. */
 body .portfolio-work .block .portfolio-menu .btn-group {
   gap: 14px;
 }
@@ -3648,6 +3648,12 @@ body .portfolio-work .block .portfolio-menu .portfolio-row-all.active {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
+}
+
+#publicationTabs::before,
+#publicationTabs::after {
+  display: none;
+  content: none;
 }
 
 body #publicationTabs .nav-item {
