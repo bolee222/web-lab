@@ -1,23 +1,32 @@
 {{ define "main" }} {{ partial "page-title.html" . }} {{ $data := index site.Data site.Language.Lang }}
 
-{{ with .Params.ongoing_projects }}
-<section class="project-ongoing-section">
-    <div class="container">
-        <hr class="vision-section-divider" align="left">
-        <div class="row">
-            <div class="col-md-12">
-                {{ with .title }}<div class="area-title">{{ . | markdownify }}</div>{{ end }}
-                {{ with .list }}<div class="vision-content project-ongoing-list">{{ . | markdownify }}</div>{{ end }}
-            </div>
-        </div>
-        <hr class="vision-section-divider vision-section-divider-after" align="left">
-    </div>
-</section>
-{{ end }}
-
 <!-- Portfolio Start -->
 <section class="portfolio-work">
     <div class="container">
+        <div class="project-sections-header">
+            {{ with .Params.published_projects_title }}
+            <h2 class="project-published-title">
+                <span>{{ . | markdownify }}</span>
+                <span class="project-published-arrow" aria-hidden="true">↓</span>
+            </h2>
+            {{ end }}
+            {{ with .Params.ongoing_projects }}
+            <button class="project-ongoing-button" type="button" aria-expanded="false" aria-controls="project-ongoing-panel">
+                {{ with .title }}<span class="project-ongoing-title">{{ . | markdownify }}</span>{{ end }}
+                {{ with .meta }}<span class="project-ongoing-meta">{{ . | markdownify }}</span>{{ end }}
+                <span class="project-ongoing-action">
+                    <span class="project-ongoing-action-open">View list</span>
+                    <span class="project-ongoing-action-close">Close list</span>
+                </span>
+                <span class="project-ongoing-toggle" aria-hidden="true"></span>
+            </button>
+            {{ end }}
+        </div>
+        {{ with .Params.ongoing_projects }}
+        <div class="project-ongoing-panel" id="project-ongoing-panel" hidden>
+            {{ with .list }}<div class="vision-content project-ongoing-list">{{ . | markdownify }}</div>{{ end }}
+        </div>
+        {{ end }}
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
@@ -161,6 +170,18 @@
 </style>
 
 <script>
+  (function () {
+    var button = document.querySelector('.project-ongoing-button');
+    var panel = document.querySelector('#project-ongoing-panel');
+    if (!button || !panel) return;
+
+    button.addEventListener('click', function () {
+      var isOpen = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', String(!isOpen));
+      panel.hidden = isOpen;
+    });
+  })();
+
   (function () {
     var menu = document.querySelector('.portfolio-menu');
     if (!menu) return;

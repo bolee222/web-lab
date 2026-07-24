@@ -2729,6 +2729,58 @@ img.rounded {
   line-height: 1;
 }
 
+/* E. Resource actions — follows the Publications resource-badge language. */
+.resource-link-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 8px;
+  padding-left: 0;
+}
+
+.resource-link-group > li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.resource-link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 9px;
+  border: 0;
+  border-radius: 6px;
+  background: #F6F6F6;
+  color: #333 !important;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-decoration: none !important;
+  transition: background-color .16s ease, color .16s ease, transform .16s ease;
+}
+
+.resource-link-button:hover,
+.resource-link-button:focus {
+  background: #ECECEC;
+  color: #111 !important;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.resource-link-button:focus-visible {
+  outline: 3px solid rgba($brand-color-grad-primary, .25);
+  outline-offset: 2px;
+}
+
+.resource-link-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1em;
+  font-size: 13px;
+  line-height: 1;
+}
+
 .publication-list .publication-publisher-favicon {
   width: 13px;
   height: 13px;
@@ -3901,19 +3953,28 @@ body #publicationTabs .nav-link:focus-visible {
 
 .professor-publication-main .btn-link-group {
   padding-left: 0;
-  margin-top: 0;
-  line-height: 1.05;
+  margin-top: 8px;
+  line-height: 1.2;
 }
 
 .professor-publication-main .link-text-publications {
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 4px;
-  padding-right: 8px;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-decoration: none !important;
 }
 
 .professor-publication-main .link-text-publications + .link-text-publications {
   margin-left: 0;
+}
+
+.professor-publication-main .resource-link-button {
+  color: #333 !important;
+  text-decoration: none !important;
+}
+
+.professor-publication-main .resource-link-button:hover,
+.professor-publication-main .resource-link-button:focus {
+  color: #111 !important;
 }
 
 @media only screen and (max-width: 991px) {
@@ -4737,12 +4798,203 @@ body #publicationTabs .nav-link:focus-visible {
   margin-top: 30px;
 }
 
-.project-ongoing-section{
-  padding-bottom: 6px;
+.project-sections-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(#111, .18);
+}
+
+.project-published-title{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: #111;
+  font-family: $poppins-font;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -.025em;
+  line-height: 1.2;
+}
+
+.project-published-arrow{
+  color: $brand-color-grad-primary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.project-ongoing-button{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #111;
+  cursor: pointer;
+  transition: color .2s ease;
+}
+
+.project-ongoing-button:hover,
+.project-ongoing-button:focus-visible{
+  color: $brand-color-grad-primary;
+  outline: none;
+}
+
+.project-ongoing-title{
+  font-family: $poppins-font;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -.025em;
+  line-height: 1.2;
+}
+
+.project-ongoing-meta{
+  min-width: auto;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #777;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.project-ongoing-meta::before{
+  margin-right: 6px;
+  content: "·";
+}
+
+.project-ongoing-action{
+  color: $brand-color-grad-primary;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.project-ongoing-action-close{
+  display: none;
+}
+
+.project-ongoing-button[aria-expanded="true"] .project-ongoing-action-open{
+  display: none;
+}
+
+.project-ongoing-button[aria-expanded="true"] .project-ongoing-action-close{
+  display: inline;
+}
+
+.project-ongoing-toggle{
+  position: relative;
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+}
+
+.project-ongoing-toggle::before,
+.project-ongoing-toggle::after{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 1px;
+  background: currentColor;
+  content: "";
+  transform: translate(-50%, -50%);
+  transition: transform .2s ease;
+}
+
+.project-ongoing-toggle::after{
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.project-ongoing-button[aria-expanded="true"] .project-ongoing-toggle::after{
+  transform: translate(-50%, -50%) rotate(0);
+}
+
+.project-ongoing-panel{
+  margin: -4px 0 20px;
+  padding: 6px 14px 8px;
+  border: 1px solid rgba($brand-color-grad-primary, .10);
+  border-radius: 8px;
+  background: #f8faff;
 }
 
 .project-ongoing-list{
   margin-bottom: 0;
+  color: #333;
+  font-size: 13px;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.project-ongoing-list ol{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: ongoing-project;
+}
+
+.project-ongoing-list li{
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 8px 0 8px 34px !important;
+  border-bottom: 1px solid rgba(#111, .12);
+  counter-increment: ongoing-project;
+  text-align: left;
+}
+
+.project-ongoing-list li p{
+  margin: 0;
+}
+
+.project-ongoing-list li::before{
+  position: absolute;
+  top: 8px;
+  left: 0;
+  color: $brand-color-grad-primary;
+  content: counter(ongoing-project, decimal-leading-zero);
+  font-family: $poppins-font;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  line-height: 1.85;
+}
+
+@media(max-width:991px){
+  .project-ongoing-list ol{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width:599px){
+  .project-sections-header{
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .project-ongoing-button{
+    gap: 6px;
+  }
+
+  .project-ongoing-action{
+    display: none;
+  }
+
+  .project-ongoing-panel{
+    padding: 6px 12px 8px;
+  }
+
 }
 
 .area-title b{
@@ -5545,8 +5797,8 @@ body #publicationTabs .nav-link:focus-visible {
 
 /* Shared branded hover for ordinary text links. Component buttons and tabs
    keep their own contrast-aware interaction colors. */
-a:not(.btn):not(.nav-link):not([data-news-category]):not([data-news-tag]):hover,
-a:not(.btn):not(.nav-link):not([data-news-category]):not([data-news-tag]):focus {
+a:not(.btn):not(.nav-link):not(.publication-link-button):not(.resource-link-button):not([data-news-category]):not([data-news-tag]):hover,
+a:not(.btn):not(.nav-link):not(.publication-link-button):not(.resource-link-button):not([data-news-category]):not([data-news-tag]):focus {
   color: $brand-color-link-hover !important;
 }
 

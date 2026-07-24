@@ -21,14 +21,20 @@
         
           <!--Link Buttons-->
           {{ if .Params.Links }}
-          <ul class="btn-link-group list-inline">
+          <ul class="btn-link-group resource-link-group list-inline">
             {{ range .Params.Links }}
             <li class="list-inline-item">
               {{ $href := .link }}
               {{ if not (or (hasPrefix $href "http://") (hasPrefix $href "https://")) }}{{ $href = $href | relURL }}{{ end }}
-              <a href="{{ $href }}" target="_blank"><button class="project-link-btn">{{ .label }}</button></a>
-                </li>
-                {{ end }}
+              {{ $icon := "↗" }}
+              {{ $kind := "external" }}
+              {{ if eq .label "PDF" }}{{ $icon = "📄" }}{{ $kind = "pdf" }}{{ else if eq .label "Project Page" }}{{ $icon = "🔗" }}{{ $kind = "project" }}{{ end }}
+              <a class="resource-link-button resource-link-button--{{ $kind }}" href="{{ $href }}" target="_blank" rel="noopener noreferrer">
+                <span class="resource-link-icon" aria-hidden="true">{{ $icon }}</span>
+                <span>{{ .label }}</span>
+              </a>
+            </li>
+            {{ end }}
           </ul>
           {{ end }}
         </div>    

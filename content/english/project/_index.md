@@ -10,7 +10,8 @@ menu:
 
 ########################### ONGOING PROJECTS #############################
 ongoing_projects:
-  title: "ON-GOING PROJECTS"
+  title: "Ongoing Projects"
+  meta: "5"
   list: "
     1. Development of **Creator-enhanced Interactions for Convergence Museums through XR & AI** Technology (NRF)
 
@@ -23,4 +24,6 @@ ongoing_projects:
     5. Posture-based Searching Interface
 
   "
+
+published_projects_title: "Published Projects"
 ---

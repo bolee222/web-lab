@@ -69,10 +69,16 @@
             {{ $cite := .Params.cite_acm }}
             {{ $cite = replaceRE `(ACM CHI(?: EA)? '[0-9]{2}|ACM CHI|ACM DIS '[0-9]{2}|ACM CSCW '[0-9]{2}|ACM NordiCHI '[0-9]{2}|ACM SIGGRAPH '[0-9]{2}|ACM DFHS'[0-9]{2}|ACM UbiComp/ISWC ?'[0-9]{2} Adjunct|IJHCI|IJDE|EiD|AoDR)` `<span class="professor-publication-venue">$1</span>` $cite }}
             <div class="publication-text margin-bottom-0">{{ $cite | emojify | markdownify }}</div>
-            <ul class="btn-link-group list-inline margin-bottom-0">
+            <ul class="btn-link-group resource-link-group list-inline margin-bottom-0">
               {{ range .Params.Links }}
               <li class="list-inline-item link-text-publications">
-                <a href="{{ .link | absURL }}" target="_blank">{{ .label }}</a>
+                {{ $icon := "↗" }}
+                {{ $kind := "external" }}
+                {{ if eq .label "PDF" }}{{ $icon = "📄" }}{{ $kind = "pdf" }}{{ else if eq .label "Project Page" }}{{ $icon = "🔗" }}{{ $kind = "project" }}{{ end }}
+                <a class="resource-link-button resource-link-button--{{ $kind }}" href="{{ .link | absURL }}" target="_blank" rel="noopener noreferrer">
+                  <span class="resource-link-icon" aria-hidden="true">{{ $icon }}</span>
+                  <span>{{ .label }}</span>
+                </a>
               </li>
               {{ end }}
             </ul>
