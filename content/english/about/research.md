@@ -8,24 +8,18 @@ url: "/research/"
 menu:
   main:
     name: "Research"
-    weight: 3
+    weight: 4
 
-
-########################### ONGOING PROJECTS #############################
-projects: 
-  title: "ON-GOING PROJECTS"
-  list: "
-    1. Development of **Creator-enhanced Interactions for Convergence Museums through XR & AI** Technology (NRF)
-
-    2. **Human-centered AI Music Generation** Algorithm for Artwork Appreciation  
-    
-    3. **Interactions for Embodied Knowledge Sharing Platform** through Agent-based Digital Humans (NRF)
-    
-    4. **Spatial Sensory Interactions with Gen AI in XR** for enhanced Learning and Touring (Yonsei)
-    
-    5. Posture-based Searching Interface 
-    
-  "
+########################### RESEARCH INTRO #############################
+research_intro:
+  eyebrow: "DESIGN × TECHNOLOGY × HUMAN"
+  title: "Designing new interactions across digital intelligence and the physical world."
+  button_label: "Vision Statement"
+  button_link: "/vision/"
+  button_secondary_label: "Projects"
+  button_secondary_link: "/project/"
+  intro_eng: "CXD Lab explores how AI, XR, digital humans, spatial computing, and interactive systems can become meaningfully integrated into everyday life. Our work is organized around four research pillars, two complementary convergence directions, and a human-centered approach to designing and evaluating new interactions."
+  intro_kor: "CXD Lab은 AI, XR, 디지털 휴먼, 공간 컴퓨팅, 인터랙티브 시스템이 일상과 물리적 환경에 의미 있게 융합되는 방식을 탐구합니다. 네 가지 연구 축과 두 가지 상호보완적 융합 방향, 그리고 인간 중심의 설계 및 평가 접근을 바탕으로 새로운 인터랙션을 연구합니다."
 
 ########################### CONVERGENCE DIRECTIONS #############################
 convergence_directions:

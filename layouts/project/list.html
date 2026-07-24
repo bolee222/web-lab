@@ -1,5 +1,20 @@
 {{ define "main" }} {{ partial "page-title.html" . }} {{ $data := index site.Data site.Language.Lang }}
 
+{{ with .Params.ongoing_projects }}
+<section class="project-ongoing-section">
+    <div class="container">
+        <hr class="vision-section-divider" align="left">
+        <div class="row">
+            <div class="col-md-12">
+                {{ with .title }}<div class="area-title">{{ . | markdownify }}</div>{{ end }}
+                {{ with .list }}<div class="vision-content project-ongoing-list">{{ . | markdownify }}</div>{{ end }}
+            </div>
+        </div>
+        <hr class="vision-section-divider vision-section-divider-after" align="left">
+    </div>
+</section>
+{{ end }}
+
 <!-- Portfolio Start -->
 <section class="portfolio-work">
     <div class="container">

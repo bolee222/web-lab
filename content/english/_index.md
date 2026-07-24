@@ -82,7 +82,7 @@ ongoing:
 about:
   enable: true
   title: "About Our Lab"
-  content0: "In **CXD Lab**, we envision novel **XR & AI systems**"
+  content0: "In **CXD Lab**, we explore **novel XR/AI interactions**"
   content1: "through **Human-Computer Interaction (HCI) & UX Research**"
   content2: "within the paradigm of **Digital-Physical Convergence** trends."
 
@@ -111,17 +111,22 @@ about:
 
   button:
     enable: true
-    label: "About CXD Lab &rarr;"
+    label: "Vision &rarr;"
     link: "/vision/"
 
   button2:
     enable: true
-    label: "Research Methods &rarr;"
-    link: "about/approach/"
+    label: "Research &rarr;"
+    link: "/research/#research-pillars"
 
   button3:
     enable: true
-    label: "Join Us &rarr;"
+    label: "Projects &rarr;"
+    link: "/project/"
+
+  button4:
+    enable: true
+    label: "Join us &rarr;"
     link: "/join/"
 
 ######################### Portfolio ###############################
@@ -129,10 +134,9 @@ portfolio:
   enable: true
   bg_image: "images/feature-bg.jpg"
   title: "We believe in great ideas"
-  content: "Here you can see our <b>6 most recent <u>published projects</u></b>. Click the <b>'View All Projects'</b> button to discover all the other projects we’ve completed. "
   button:
     enable: true
-    label: "&rarr; View All Projects"
+    label: "View all projects"
     link: "/project/"
 
 

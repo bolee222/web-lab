@@ -321,3 +321,100 @@
     }
   });
 })();
+
+(function () {
+  var researchIntro = document.querySelector(".research-intro");
+  var researchPillars = document.querySelector("#research-pillars");
+
+  if (!researchIntro || !researchPillars) {
+    return;
+  }
+
+  var isTransitioning = false;
+  var wheelDistance = 0;
+  var wheelResetTimer;
+  var touchStartY = null;
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  function getPillarsTargetTop() {
+    var navigation = document.querySelector(".navigation");
+    var navigationHeight = navigation ? navigation.getBoundingClientRect().height : 0;
+
+    return researchPillars.getBoundingClientRect().top + window.scrollY - navigationHeight;
+  }
+
+  function isBeforePillars() {
+    return window.scrollY < getPillarsTargetTop() - 2;
+  }
+
+  function moveToPillars() {
+    isTransitioning = true;
+    wheelDistance = 0;
+
+    window.scrollTo({
+      top: Math.max(0, getPillarsTargetTop()),
+      behavior: reduceMotion.matches ? "auto" : "smooth"
+    });
+
+    window.setTimeout(function () {
+      isTransitioning = false;
+    }, reduceMotion.matches ? 0 : 900);
+  }
+
+  window.addEventListener("wheel", function (event) {
+    if (isTransitioning) {
+      event.preventDefault();
+      return;
+    }
+
+    if (!isBeforePillars() || event.deltaY <= 0) {
+      wheelDistance = 0;
+      return;
+    }
+
+    event.preventDefault();
+    wheelDistance += event.deltaY;
+    window.clearTimeout(wheelResetTimer);
+    wheelResetTimer = window.setTimeout(function () {
+      wheelDistance = 0;
+    }, 180);
+
+    if (wheelDistance >= 36) {
+      moveToPillars();
+    }
+  }, { passive: false });
+
+  window.addEventListener("touchstart", function (event) {
+    touchStartY = isBeforePillars() && event.touches.length === 1
+      ? event.touches[0].clientY
+      : null;
+  }, { passive: true });
+
+  window.addEventListener("touchend", function (event) {
+    if (touchStartY === null || !event.changedTouches.length || isTransitioning) {
+      touchStartY = null;
+      return;
+    }
+
+    var upwardSwipeDistance = touchStartY - event.changedTouches[0].clientY;
+    touchStartY = null;
+
+    if (upwardSwipeDistance >= 48) {
+      moveToPillars();
+    }
+  }, { passive: true });
+
+  window.addEventListener("keydown", function (event) {
+    var activeElement = document.activeElement;
+    var isEditable = activeElement && (
+      activeElement.isContentEditable ||
+      /^(INPUT|TEXTAREA|SELECT)$/.test(activeElement.tagName)
+    );
+    var isForwardKey = event.key === "ArrowDown" || event.key === "PageDown" || event.key === " ";
+
+    if (!isEditable && isForwardKey && isBeforePillars() && !isTransitioning) {
+      event.preventDefault();
+      moveToPillars();
+    }
+  });
+})();

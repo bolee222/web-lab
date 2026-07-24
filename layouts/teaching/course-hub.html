@@ -222,6 +222,7 @@
               {{ with .evaluation_criteria }}
               <div class="course-hub-project-subsection"><h3>Key evaluation criteria</h3><ul class="course-hub-evaluation-list">{{ range . }}<li><strong>{{ .title }}:</strong> {{ .text }}</li>{{ end }}</ul></div>
               {{ end }}
+              {{ range .additional_sections }}<div class="course-hub-project-subsection course-hub-project-subsection--additional"><h3>{{ .title }}</h3><div>{{ .content | markdownify }}</div></div>{{ end }}
               {{ if not .learning_objectives }}
               <div class="course-hub-project-details">
                 <div><h4>Deliverables</h4><ul>{{ range .deliverables }}<li>{{ . }}</li>{{ end }}</ul></div>
@@ -405,6 +406,7 @@
                 <h3>Next Week Preparation</h3>
                 {{ with .Params.next_week_preparation }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ else }}<p class="course-hub-week-placeholder">Add anything students should prepare before the next class.</p>{{ end }}
               </section>
+              {{ range .Params.additional_sections }}<section class="course-hub-week-additional"><h3>{{ .title }}</h3><div>{{ .content | markdownify }}</div></section>{{ end }}
             </div>
             {{ if .Plain }}<article class="course-hub-week-content">{{ .Content }}</article>{{ end }}
             <nav class="course-hub-week-pagination" aria-label="Week navigation">
@@ -498,6 +500,7 @@
           {{ with .requirements }}<div class="course-hub-assignment-detail"><h3>Requirements</h3><ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul></div>{{ end }}
           {{ with .submission }}<div class="course-hub-assignment-detail"><h3>Submission</h3><p>{{ . }}</p></div>{{ end }}
           {{ with .criteria }}<div class="course-hub-assignment-detail"><h3>Evaluation criteria</h3><ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul></div>{{ end }}
+          {{ range .additional_sections }}<div class="course-hub-assignment-detail course-hub-assignment-detail--additional"><h3>{{ .title }}</h3><div>{{ .content | markdownify }}</div></div>{{ end }}
         </div>
       </section>
       {{ end }}

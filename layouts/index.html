@@ -116,9 +116,9 @@
               <div class="section-title">
                 <!-- {{ with .title }} <div class="home-title">{{ . | markdownify }}</div> {{ end }} -->
                 
-                {{ with .content0 }}<div class="slider-vision">{{ . | markdownify  }}</div>{{ end }} 
-                {{ with .content1 }}<div class="slider-vision">{{ . | markdownify  }}</div>{{ end }} 
-                {{ with .content2 }}<div class="slider-vision">{{ . | markdownify  }}</div>{{ end }} 
+                {{ with .content0 }}<div class="slider-vision">{{ . | markdownify  }}</div>{{ end }}
+                {{ with .content1 }}<div class="slider-vision slider-vision--grad-secondary">{{ . | markdownify  }}</div>{{ end }}
+                {{ with .content2 }}<div class="slider-vision slider-vision--grad-primary">{{ . | markdownify  }}</div>{{ end }}
                 {{ with .content3 }}<div class="slider-vision-content3">{{ . | markdownify  }}</div>{{ end }} 
                 {{ with .content4 }}<div class="slider-vision-content4">{{ . | markdownify  }}</div>{{ end }} 
                 
@@ -127,15 +127,21 @@
 
                 </div>
                 {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block")
-                }}{{ end }} {{ with .button }} {{ if .enable }}
+                }}{{ end }}
+                <div class="home-overview-actions">
+                {{ with .button }} {{ if .enable }}
                 <a href="{{ .link | relLangURL }}" class="c-btn c-btn--secondary">{{ .label | markdownify }}</a>
                 {{ end }}{{ end }}
                 {{ with .button2 }} {{ if .enable }}
                 <a href="{{ .link | relLangURL }}" class="c-btn c-btn--secondary">{{ .label | markdownify }}</a>
                 {{ end }}{{ end }}
                 {{ with .button3 }} {{ if .enable }}
+                <a href="{{ .link | relLangURL }}" class="c-btn c-btn--secondary">{{ .label | markdownify }}</a>
+                {{ end }}{{ end }}
+                {{ with .button4 }} {{ if .enable }}
                 <a href="{{ .link | relLangURL }}" class="c-btn c-btn--primary">{{ .label | markdownify }}</a>
                 {{ end }}{{ end }}
+                </div>
             </div>
           </div>
           <div class="col-md-3 col-sm-12">
@@ -218,11 +224,11 @@
                 <div class="block">
                 <div class="section-title">
                     <div class="home-section-header">
-                      <div class="home-title">PUBLISHED PROJECTS</div>
+                      <div class="home-title">RECENTLY PUBLISHED PROJECTS</div>
                       {{ with .button }} {{ if .enable }}
-                      <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main btn-learnMore home-section-more">{{ .label | markdownify }}</a>{{ end }}{{ end }}
+                      <a href="{{ .link | relLangURL }}" class="home-slider-more btn-main btn-learnMore home-section-more"><span>{{ .label | markdownify }}</span><span class="home-section-more-arrow" aria-hidden="true">→</span></a>{{ end }}{{ end }}
                     </div>
-                    <div class="home-title-sub1">{{ .content | markdownify }}</div>
+                    {{ with .content }}<div class="home-title-sub1">{{ . | markdownify }}</div>{{ end }}
                 </div>
                 </div>
             </div>
@@ -303,7 +309,7 @@
               <div class="section-title">
                   <div class="home-section-header">
                     <div class="home-title home-news-section-title">RECENT NEWS</div>
-                    <a href="{{ "/news/" | relLangURL }}" class="home-slider-more btn-main btn-learnMore home-section-more">→ View All News</a>
+                    <a href="{{ "/news/" | relLangURL }}" class="home-slider-more btn-main btn-learnMore home-section-more"><span>View all news</span><span class="home-section-more-arrow" aria-hidden="true">→</span></a>
                   </div>
               </div>
               </div>

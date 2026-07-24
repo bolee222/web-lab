@@ -2,57 +2,46 @@
 
 {{ partial "page-title.html" . }}
 
-<section class="service-about">
+{{ with .Params.research_intro }}
+<section class="research-intro">
+  <div class="container">
+    <div class="research-intro-layout">
+      <div class="research-intro-heading">
+        {{ with .eyebrow }}<div class="research-intro-eyebrow">{{ . | markdownify }}</div>{{ end }}
+        {{ with .title }}<h2 class="research-intro-title">{{ . | markdownify }}</h2>{{ end }}
+        <div class="research-intro-actions">
+          {{ if and .button_label .button_link }}
+          <a class="research-intro-button" href="{{ .button_link | relLangURL }}">
+            <span>{{ .button_label }}</span>
+            <span aria-hidden="true">→</span>
+          </a>
+          {{ end }}
+          {{ if and .button_secondary_label .button_secondary_link }}
+          <a class="research-intro-button" href="{{ .button_secondary_link | relLangURL }}">
+            <span>{{ .button_secondary_label }}</span>
+            <span aria-hidden="true">→</span>
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      <div class="research-intro-copy">
+        {{ with .intro_eng }}<p>{{ . | markdownify }}</p>{{ end }}
+        {{ with .intro_kor }}<p lang="ko">{{ . | markdownify }}</p>{{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<section class="service-about research-section-index-section">
   <div class="container">
     <nav class="vision-section-index" aria-label="Research page sections">
-      <a href="#research-projects">Projects</a>
-      <a href="#research-directions">Directions</a>
       <a href="#research-pillars">Pillars</a>
+      <a href="#research-directions">Directions</a>
       <a href="#research-approach">Approach</a>
     </nav>
   </div>
 </section>
-
-{{ with .Params.projects}}
-<section class="service-about" id="research-projects">
-  <div class="container">
-    <hr class="vision-section-divider" align="left">
-    <div class="row">
-      <div class="col-md-12">
-        {{ with .title }}<div class="area-title">{{ . | markdownify }}</div>{{ end }}
-        {{ with .list }}<div class="vision-content">{{ . | markdownify }}</div>{{ end }}
-      </div>
-    </div>
-    <hr class="vision-section-divider vision-section-divider-after" align="left">
-  </div>
-</section>
-{{ end }}
-
-{{ with .Params.convergence_directions }}
-{{ if .enable }}
-  <section class="vision-main-images-section" id="research-directions">
-    <div class="container">
-      {{ with .title }}<div class="vision-main-images-title">{{ . | markdownify }}</div>{{ end }}
-      {{ with .intro_eng }}<div class="vision-main-images-intro">{{ . | markdownify }}</div>{{ end }}
-      {{ with .intro_kor }}<div class="vision-main-images-intro vision-main-images-intro-kor">{{ . | markdownify }}</div>{{ end }}
-      <div class="row vision-main-images">
-        {{ range .item }}
-        <div class="col-sm-6">
-          <div class="vision-main-image-card">
-            <div class="vision-main-image-subtitle">
-              {{ with .num }}<span class="vision-main-image-subtitle-num">{{ . | markdownify }}</span>{{ end }}
-              <span class="vision-main-image-subtitle-text">{{ with .subtitle_line1 }}{{ . | markdownify }}{{ end }}{{ with .subtitle_line2 }}<br>{{ . | markdownify }}{{ end }}</span>
-            </div>
-            {{ $alt := .alt }}
-            {{ with .image }}<img class="img-responsive vision-main-image" src="{{ . | relURL }}" alt="{{ $alt }}">{{ end }}
-          </div>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </section>
-{{ end }}
-{{ end }}
 
 <!--RESEARCH PILLAR-->
 <div class="container" id="research-pillars">
@@ -62,7 +51,8 @@
   <div class="container-fluid" style="padding:0 !important; margin:0 !important;">
     <div class="row" style="margin:0 !important;">
         <hr class="vision-section-divider" align="left">
-        {{ with .title }}<div class="area-title-pillar">{{ . | markdownify }}</div>{{ end }}
+        <div class="research-section-kicker">01 / CORE AREAS</div>
+        {{ with .title }}<div class="area-title-pillar research-section-title">{{ . | markdownify }}</div>{{ end }}
 
         {{ with .intro }}<div class="pillar-intro-des">{{ . | markdownify }}</div>{{ end }}
 
@@ -192,12 +182,42 @@
     window.addEventListener('resize', schedulePillarCardSync);
   })();
 </script>
+
+{{ with .Params.convergence_directions }}
+{{ if .enable }}
+  <section class="vision-main-images-section research-directions-section" id="research-directions">
+    <div class="container">
+      <hr class="vision-section-divider" align="left">
+      <div class="research-section-kicker">02 / FRAMEWORK</div>
+      {{ with .title }}<div class="vision-main-images-title research-section-title">{{ . | markdownify }}</div>{{ end }}
+      {{ with .intro_eng }}<div class="vision-main-images-intro">{{ . | markdownify }}</div>{{ end }}
+      {{ with .intro_kor }}<div class="vision-main-images-intro vision-main-images-intro-kor">{{ . | markdownify }}</div>{{ end }}
+      <div class="row vision-main-images">
+        {{ range .item }}
+        <div class="col-sm-6">
+          <div class="vision-main-image-card">
+            <div class="vision-main-image-subtitle">
+              {{ with .num }}<span class="vision-main-image-subtitle-num">{{ . | markdownify }}</span>{{ end }}
+              <span class="vision-main-image-subtitle-text">{{ with .subtitle_line1 }}{{ . | markdownify }}{{ end }}{{ with .subtitle_line2 }}<br>{{ . | markdownify }}{{ end }}</span>
+            </div>
+            {{ $alt := .alt }}
+            {{ with .image }}<img class="img-responsive vision-main-image" src="{{ . | relURL }}" alt="{{ $alt }}">{{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}
+{{ end }}
+
 {{ with .Params.research_approach }}
 {{ if .enable }}
 <section class="vision-research-approach-section" id="research-approach">
   <div class="container">
     <hr class="vision-section-divider" align="left">
-    {{ with .title }}<div class="area-title">{{ . | markdownify }}</div>{{ end }}
+    <div class="research-section-kicker">03 / PROCESS</div>
+    {{ with .title }}<div class="area-title research-section-title">{{ . | markdownify }}</div>{{ end }}
     {{ with .intro }}<div class="vision-approach-intro">{{ . | markdownify }}</div>{{ end }}
     {{ with .item }}
     <div class="row vision-approach-grid">
