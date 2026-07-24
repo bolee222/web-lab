@@ -1,4 +1,4 @@
-{{ define "main" }} {{ partial "page-title.html" . }} {{ $data := index site.Data site.Language.Lang }}
+{{ define "main" }} {{ partial "page-title.html" . }} {{ $data := index site.Data site.Language.Lang }} {{ $ongoingProjects := site.Data.ongoing_projects }}
 
 <!-- Portfolio Start -->
 <section class="portfolio-work">
@@ -10,10 +10,10 @@
                 <span class="project-published-arrow" aria-hidden="true">↓</span>
             </h2>
             {{ end }}
-            {{ with .Params.ongoing_projects }}
+            {{ with $ongoingProjects }}
             <button class="project-ongoing-button" type="button" aria-expanded="false" aria-controls="project-ongoing-panel">
-                {{ with .title }}<span class="project-ongoing-title">{{ . | markdownify }}</span>{{ end }}
-                {{ with .meta }}<span class="project-ongoing-meta">{{ . | markdownify }}</span>{{ end }}
+                {{ with .project_title }}<span class="project-ongoing-title">{{ . | markdownify }}</span>{{ end }}
+                <span class="project-ongoing-meta">{{ len .items }}</span>
                 <span class="project-ongoing-action">
                     <span class="project-ongoing-action-open">View list</span>
                     <span class="project-ongoing-action-close">Close list</span>
@@ -22,9 +22,14 @@
             </button>
             {{ end }}
         </div>
-        {{ with .Params.ongoing_projects }}
+        {{ with $ongoingProjects }}
         <div class="project-ongoing-panel" id="project-ongoing-panel" hidden>
-            {{ with .list }}<div class="vision-content project-ongoing-list">{{ . | markdownify }}</div>{{ end }}
+            {{ with .project_title }}<div class="project-ongoing-panel-label">{{ . | markdownify }}</div>{{ end }}
+            <div class="vision-content project-ongoing-list">
+                <ol>
+                    {{ range .items }}<li>{{ . | markdownify }}</li>{{ end }}
+                </ol>
+            </div>
         </div>
         {{ end }}
         <div class="row">

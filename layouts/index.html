@@ -1,6 +1,5 @@
 {{ define "main" }}
-
-  
+{{ $ongoingProjects := site.Data.ongoing_projects }}
 
 
 <!-- banner -->
@@ -159,7 +158,7 @@
 
 
 <!-- ACTIVE ONGOING PROJECTS -->
-{{ with .Params.ongoing }} {{ if .enable }}
+{{ with $ongoingProjects }}{{ if .enable }}
 <section class="about section white-box home-published-section" id="home-active-projects">
     <div class="container">
       <hr align="left" style="margin-top: 20px; margin-bottom: 30px; width:100%; border-style:dashed; background-color:black;">
@@ -167,19 +166,21 @@
           <div class="col-md-12 col-sm-12">
             <div class="block">
               <div class="section-title">
-                {{ with .title }}
+                {{ with .home_title }}
                 <div class="home-title-ongoing">{{ . | markdownify }}</div>
-                {{ end }} {{ with .description }}<div class="ongoing-project">{{ . | $.Page.RenderString (dict
-                "display" "block") }}</div>{{ end }}
+                {{ end }}
+                <div class="ongoing-project">
+                  <ul>
+                    {{ range .items }}<li>{{ . | markdownify }}</li>{{ end }}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>  
-        {{ end }}{{ end }} 
-     {{ with .Params.ongoing }}
+        </div>
     </div>
 </section>
-{{ end }}
+{{ end }}{{ end }}
 <!-- /ACTIVE ONGOING PROJECTS-->
 
 
