@@ -12,7 +12,7 @@
   {{- with sort $newsTags }}
   <ul class="widget-tag-list">
     {{- range . }}
-    <li><a href="{{ "/news/" | relURL }}?tag={{ . | urlquery }}" data-news-tag="{{ . }}">{{ . }}</a></li>
+    <li><a href="{{ "/news/" | relURL }}?tag={{ . | urlquery }}" data-news-tag="{{ . }}" aria-pressed="false">{{ . }}</a></li>
     {{- end }}
   </ul>
   {{- end }}

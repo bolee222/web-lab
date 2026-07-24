@@ -14,7 +14,7 @@
         <h2 class="news-list-heading">All News</h2>
         <div class="news-filter-status" hidden>
           <span></span>
-          <a href="{{ "/news/" | relURL }}">Show all</a>
+          <a href="{{ "/news/" | relURL }}">Clear all</a>
         </div>
         <div class="news-list">
           {{ range $paginator.Pages -}}
@@ -131,12 +131,16 @@
 
       categoryLinks.forEach(function (link) {
         var category = (link.getAttribute("data-news-category") || "").toLowerCase();
-        link.classList.toggle("current", normalizedCategories.indexOf(category) !== -1);
+        var isCurrent = normalizedCategories.indexOf(category) !== -1;
+        link.classList.toggle("current", isCurrent);
+        link.setAttribute("aria-pressed", String(isCurrent));
       });
 
       tagLinks.forEach(function (link) {
         var tag = (link.getAttribute("data-news-tag") || "").toLowerCase();
-        link.classList.toggle("current", normalizedTags.indexOf(tag) !== -1);
+        var isCurrent = normalizedTags.indexOf(tag) !== -1;
+        link.classList.toggle("current", isCurrent);
+        link.setAttribute("aria-pressed", String(isCurrent));
       });
     }
 

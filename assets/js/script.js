@@ -15,12 +15,49 @@ $(document).ready(function () {
       buffer: 1
     });
 
-    jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
-      var input = evt.currentTarget;
-      if (input.checked) {
-        myShuffle.filter(input.value);
+    var filterMenu = document.querySelector('.portfolio-menu');
+
+    function applyProjectFilters() {
+      if (!filterMenu) return;
+
+      var selectedByGroup = Array.prototype.map.call(
+        filterMenu.querySelectorAll('.portfolio-filter-panel'),
+        function (panel) {
+          var selectedValues = Array.prototype.map.call(
+            panel.querySelectorAll('input[name="shuffle-filter"]:checked'),
+            function (input) { return input.value; }
+          );
+          var allButton = panel.querySelector('[data-filter-all]');
+          if (allButton) allButton.classList.toggle('active', selectedValues.length === 0);
+          return selectedValues;
+        }
+      ).filter(function (values) { return values.length > 0; });
+
+      var allInput = filterMenu.querySelector('.portfolio-filter-all-input');
+      if (allInput) allInput.checked = selectedByGroup.length === 0;
+
+      if (selectedByGroup.length === 0) {
+        myShuffle.filter('all');
+        return;
       }
-    });
+
+      myShuffle.filter(function (element) {
+        var groups;
+        try {
+          groups = JSON.parse(element.getAttribute('data-groups') || '[]');
+        } catch (error) {
+          groups = [];
+        }
+
+        return selectedByGroup.every(function (selectedValues) {
+          return selectedValues.some(function (value) {
+            return groups.indexOf(value) !== -1;
+          });
+        });
+      });
+    }
+
+    jQuery('input[name="shuffle-filter"]').on('change', applyProjectFilters);
   }
 
   $('.portfolio-single-slider').slick({

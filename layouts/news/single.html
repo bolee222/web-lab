@@ -2,7 +2,10 @@
 
 <section class="news-story-header">
   <div class="container">
-    <a class="news-story-back" href="{{ "/news/" | relURL }}">Back to News</a>
+    <a class="news-story-back" href="{{ "/news/" | relURL }}">
+      <span class="news-story-back-arrow" aria-hidden="true">←</span>
+      <span class="news-story-back-label">Back to News</span>
+    </a>
     <div class="news-story-kicker">
       {{ with .Params.categories }}
       <span>{{ delimit . ", " }}</span>

@@ -17,25 +17,25 @@
       <!-- Tabs for Filtering -->
       <ul class="nav nav-tabs" id="publicationTabs">
         <li class="nav-item">
-          <a class="nav-link active" data-type="all" href="#">All</a>
+          <a class="nav-link active" data-type="all" href="#" role="button" aria-pressed="true">All</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-type="top-ranked" href="#">Top-Ranked</a>
+          <a class="nav-link" data-type="top-ranked" href="#" role="button" aria-pressed="false">Top-Ranked</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-type="journal" href="#">Journal</a>
+          <a class="nav-link" data-type="journal" href="#" role="button" aria-pressed="false">Journal</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-type="conference" href="#">Conference</a>
+          <a class="nav-link" data-type="conference" href="#" role="button" aria-pressed="false">Conference</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-type="awarded" href="#">Awarded</a>
+          <a class="nav-link" data-type="awarded" href="#" role="button" aria-pressed="false">Awarded</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-type="international" href="#">International</a>
+          <a class="nav-link" data-type="international" href="#" role="button" aria-pressed="false">International</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-type="domestic" href="#">Domestic</a>
+          <a class="nav-link" data-type="domestic" href="#" role="button" aria-pressed="false">Domestic</a>
         </li>
       </ul>
     </div>
@@ -125,6 +125,10 @@ document.addEventListener("DOMContentLoaded", function() {
       const selectedTypes = Array.from(tabs)
         .filter(tab => tab.getAttribute("data-type") !== "all" && tab.classList.contains("active"))
         .map(tab => tab.getAttribute("data-type"));
+
+      tabs.forEach(tab => {
+        tab.setAttribute("aria-pressed", String(tab.classList.contains("active")));
+      });
 
       // Show publications matching any of the selected filters.
       publications.forEach(pub => {

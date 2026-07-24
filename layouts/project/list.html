@@ -59,7 +59,7 @@
                           ))
                         -}}
 
-                        <input class="portfolio-filter-all-input" type="radio" name="shuffle-filter" value="all" checked="checked" />
+                        <input class="portfolio-filter-all-input" type="checkbox" name="shuffle-filter" value="all" checked="checked" />
 
                         <div class="portfolio-filter-keywords" aria-label="Project filters">
                           {{- range $filterGroups }}
@@ -76,7 +76,7 @@
                                 {{- end -}}
                                 {{- if ne $matchedCategory "" }}
                                 <label class="btn btn-toggle btn-sm btn-primary">
-                                  <input type="radio" name="shuffle-filter" value="{{ $matchedCategory | urlize }}" />{{ .label }}
+                                  <input type="checkbox" name="shuffle-filter" value="{{ $matchedCategory | urlize }}" />{{ .label }}
                                 </label>
                                 {{- end }}
                               {{- end }}
@@ -168,26 +168,16 @@
     var allInput = menu.querySelector('.portfolio-filter-all-input');
     var allButtons = menu.querySelectorAll('[data-filter-all]');
 
-    function setAllButtonsActive(isActive) {
-      allButtons.forEach(function (button) {
-        button.classList.toggle('active', isActive);
-      });
-    }
-
     allButtons.forEach(function (button) {
       button.addEventListener('click', function () {
-        allInput.checked = true;
-        menu.querySelectorAll('.portfolio-filter-panel label.active').forEach(function (label) {
+        var panel = button.closest('.portfolio-filter-panel');
+        panel.querySelectorAll('input[name="shuffle-filter"]').forEach(function (input) {
+          input.checked = false;
+        });
+        panel.querySelectorAll('label.active').forEach(function (label) {
           label.classList.remove('active');
         });
         allInput.dispatchEvent(new Event('change', { bubbles: true }));
-        setAllButtonsActive(true);
-      });
-    });
-
-    menu.querySelectorAll('input[name="shuffle-filter"]').forEach(function (input) {
-      input.addEventListener('change', function () {
-        setAllButtonsActive(input.value === 'all' && input.checked);
       });
     });
   })();

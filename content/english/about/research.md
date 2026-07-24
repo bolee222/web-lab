@@ -24,7 +24,7 @@ research_intro:
 ########################### CONVERGENCE DIRECTIONS #############################
 convergence_directions:
   enable: true
-  title: "TWO DIRECTIONS OF DIGITAL-PHYSICAL CONVERGENCE IN HCI RESEARCH"
+  title: "Two Directions of Digital-Physical Convergence in HCI Research"
   intro_eng: "Digital-physical convergence in HCI can be approached from two complementary directions: bringing digital intelligence closer to people's everyday worlds, and designing physical systems that become more interactive through digital intelligence. CXD Lab considers both directions and designs experiences according to the context, users, and needs of each situation."
   intro_kor: "HCI에서 디지털-피지컬 융합 연구는 두 가지 상호보완적 방향으로 생각해볼 수 있습니다. 하나는 디지털 인텔리전스가 사용자의 일상 세계와 더 잘 맞물리도록 설계하는 것이고, 다른 하나는 디지털 인텔리전스를 통해 물리적 시스템을 더 상호작용적으로 만드는 것입니다. CXD Lab은 이 두 방향을 모두 염두에 두고, 상황과 사용자, 니즈에 따라 가장 적합한 경험을 설계합니다."
   item:
@@ -42,7 +42,7 @@ convergence_directions:
 ########################## RESEARCH PILLAR ############################
 research_pillar:
   enable: true
-  title: RESEARCH PILLARS
+  title: "Research Pillars"
   intro: We conduct research grounded in four main pillars, while remaining open to interdisciplinary and exploratory directions beyond these areas.
   intro_kor: 저희는 네 가지 주요 축을 기반으로 연구를 주로 수행하고 있으며, 이 외에 다양한 다학제 HCI 연구 방향도 진행하고 있습니다. 
   pillar_item: 
@@ -168,7 +168,7 @@ vision_4:
 ########################### RESEARCH APPROACH ############################
 research_approach:
   enable: true
-  title: "RESEARCH APPROACH"
+  title: "Research Approach"
   intro: "We are interested in a broad range of design research approaches, from understanding people and contexts to designing, evaluating, and integrating new interactive systems."
   intro_kor: "CXD Lab은 사람과 맥락을 이해하는 연구부터 새로운 인터랙티브 시스템을 설계, 평가, 통합하는 연구까지 폭넓은 디자인 리서치 접근을 활용합니다."
   item:
