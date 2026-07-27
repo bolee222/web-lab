@@ -598,7 +598,6 @@ assignments:
     project_number: 1
     assignment_type: "Individual Assignment"
     due_iso: "2026-09-14T23:59:00+09:00"
-    weight: 3
     grade_focus: "Art as a cultural and expressive lens"
     summary: "Develop an understanding of art as a cultural and expressive practice and apply this perspective to the critical analysis of a real-world design case."
     contents:
@@ -635,7 +634,7 @@ assignments:
       example: "D1_2026123456_JaneKim.pdf"
     submission_method: "Upload the final PDF to the Deliverable #1 submission folder on LearnUs. Submissions through email or other channels will not be accepted."
     show_detailed_deadline: true
-    show_evaluation_percentage: true
+    show_evaluation_percentage: false
     evaluation_focus: "The assignment will be evaluated based on the student’s understanding of the weekly design principle, depth of comparison, consideration of purpose and context, and clarity of critical reasoning."
   -
     number: 2
@@ -643,13 +642,12 @@ assignments:
     project_number: 1
     assignment_type: "Mini-Report"
     due_iso: "2026-09-22"
-    weight: 3
     grade_focus: "Art and business integration"
     summary: "Analyze how artistic and business considerations interact, compare alternative design decisions, and explain their implications."
     contents: []
     submission_method: "See LearnUS and the weekly announcement."
     show_detailed_deadline: false
-    show_evaluation_percentage: true
+    show_evaluation_percentage: false
     evaluation_focus: "See the related project evaluation criteria."
   -
     number: 3
@@ -657,13 +655,12 @@ assignments:
     project_number: 3
     assignment_type: "Progress-Report"
     due_iso: "2026-11-03"
-    weight: 4
     grade_focus: "Company and Korean market understanding, project framing, and user research plan"
     summary: "Frame the project through an initial understanding of the partner company and Korean market, and prepare a focused user research plan."
     contents: []
     submission_method: "See LearnUS and the weekly announcement."
     show_detailed_deadline: false
-    show_evaluation_percentage: true
+    show_evaluation_percentage: false
     evaluation_focus: "See the related project evaluation criteria."
   -
     number: 4
@@ -671,13 +668,12 @@ assignments:
     project_number: 3
     assignment_type: "Progress-Report"
     due_iso: "2026-11-10"
-    weight: 7
     grade_focus: "User research execution and key findings"
     summary: "Conduct user research and document the key evidence and findings that can inform the Korean market launch strategy."
     contents: []
     submission_method: "See LearnUS and the weekly announcement."
     show_detailed_deadline: false
-    show_evaluation_percentage: true
+    show_evaluation_percentage: false
     evaluation_focus: "See the related project evaluation criteria."
   -
     number: 5
@@ -685,13 +681,12 @@ assignments:
     project_number: 3
     assignment_type: "Progress-Report"
     due_iso: "2026-11-17"
-    weight: 9
     grade_focus: "Customer insights, opportunity areas, and initial strategic direction"
     summary: "Synthesize research findings into customer insights, opportunity areas, and an initial strategic direction."
     contents: []
     submission_method: "See LearnUS and the weekly announcement."
     show_detailed_deadline: false
-    show_evaluation_percentage: true
+    show_evaluation_percentage: false
     evaluation_focus: "See the related project evaluation criteria."
 deliverables:
   -
@@ -700,7 +695,7 @@ deliverables:
     project_number: 1
     assignment_type: "Mini-Report"
     due_iso: "2026-09-29"
-    weight: 4
+    weight: 9
     grade_focus: "Graphic design analysis"
     summary: "Use D:Branch to examine graphic-design elements and explain how alternative decisions influence meaning, perception, and communication."
     contents: []
@@ -714,7 +709,7 @@ deliverables:
     project_number: 1
     assignment_type: "Mini-Report"
     due_iso: "2026-10-06"
-    weight: 3
+    weight: 9
     grade_focus: "Product design analysis"
     summary: "Compare product-design alternatives and evaluate their relationship to purpose, usability, users, and context."
     contents: []
@@ -728,7 +723,7 @@ deliverables:
     project_number: 1
     assignment_type: "Mini-Report"
     due_iso: "2026-10-13"
-    weight: 3
+    weight: 9
     grade_focus: "Interaction design analysis"
     summary: "Analyze interaction-design decisions and explain how they shape usability, behavior, feedback, and the overall user experience."
     contents: []
@@ -742,7 +737,7 @@ deliverables:
     project_number: 1
     assignment_type: "Mini-Report"
     due_iso: "2026-10-20"
-    weight: 4
+    weight: 9
     grade_focus: "Service design analysis and cross-disciplinary synthesis"
     summary: "Analyze a service-design case and synthesize insights across the design lenses explored throughout Project 1."
     contents: []
@@ -756,7 +751,7 @@ deliverables:
     project_number: 2
     assignment_type: "Mid-term Report"
     due_iso: "2026-10-20"
-    weight: 15
+    weight: 14
     grade_focus: "Pop-up Store Design Critique (Mid-term Report)"
     summary: "Submit the midterm critical-analysis report based on a pop-up store field visit and the integrated application of multiple CDM design lenses."
     contents: []
@@ -798,8 +793,8 @@ assessment:
     weight: 10
     note: "Attendance and required preparation before class"
   -
-    label: "Participation & Attitude"
-    weight: 5
+    label: "Participation / Attitude / Diligence"
+    weight: 10
     note: "Active, respectful, and constructive engagement"
 assessment_project_position: "before"
 assessment_show_total: true

@@ -598,7 +598,7 @@
               {{ partial "teaching/course-assessment-row.html" (dict "row" $projectRow "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables) }}
             {{ end }}
             {{ if ne $course.Params.assessment_project_position "after" }}{{ range $course.Params.assessment }}{{ partial "teaching/course-assessment-row.html" (dict "row" . "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables) }}{{ end }}{{ end }}
-            {{ if $course.Params.assessment_show_total }}{{ partial "teaching/course-assessment-row.html" (dict "row" (dict "label" "Total" "weight" $assessmentTotal "note" $course.Params.assessment_total_note) "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables) }}{{ end }}
+            {{ if $course.Params.assessment_show_total }}{{ partial "teaching/course-assessment-row.html" (dict "row" (dict "label" "Total" "weight" $assessmentTotal "note" $course.Params.assessment_total_note "total" true) "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables) }}{{ end }}
           </div>
           <p class="course-hub-footnote">Assessment weights are provisional until the official syllabus is published.</p>
         </div>

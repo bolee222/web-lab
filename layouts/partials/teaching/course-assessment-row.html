@@ -2,20 +2,14 @@
 {{- $base := .base -}}
 {{- $assignments := .assignments -}}
 {{- $deliverables := .deliverables -}}
-<article>
+<article{{ if $row.total }} class="course-hub-assessment-total"{{ end }}>
   <strong>{{ $row.weight }}%</strong>
   <div>
     <h3>{{ $row.label }}</h3><p>{{ $row.note }}</p>
     {{ with $row.project }}
     <div class="course-hub-assessment-breakdown" aria-label="Project {{ . }} assignment and deliverable weights">
-      {{ with where $assignments "project_number" (int .) }}
-      <span class="course-hub-assessment-breakdown-label">Assignments</span>
-      {{ range . }}{{ $assignment := . }}{{ with .weight }}<a href="{{ printf `%sassignments/#assignment-%v` $base $assignment.number }}">Assignment #{{ $assignment.number }} <strong>{{ . }}%</strong></a>{{ end }}{{ end }}
-      {{ end }}
-      {{ with where $deliverables "project_number" (int .) }}
-      <span class="course-hub-assessment-breakdown-label">Deliverables</span>
-      {{ range . }}<a href="{{ printf `%sdeliverables/#deliverable-%v` $base .number }}">Deliverable #{{ .number }} <strong>{{ .weight }}%</strong></a>{{ end }}
-      {{ end }}
+      {{ range where $assignments "project_number" (int .) }}{{ $assignment := . }}{{ with .weight }}<a href="{{ printf `%sassignments/#assignment-%v` $base $assignment.number }}">Assignment #{{ $assignment.number }} <strong>{{ . }}%</strong></a>{{ end }}{{ end }}
+      {{ range where $deliverables "project_number" (int .) }}<a href="{{ printf `%sdeliverables/#deliverable-%v` $base .number }}">Deliverable #{{ .number }} <strong>{{ .weight }}%</strong></a>{{ end }}
     </div>
     {{ end }}
   </div>
