@@ -1258,6 +1258,76 @@ img.rounded {
 .course-hub-week-outline .course-hub-task-list { padding-left: 0; list-style: none; }
 .course-hub-week-outline p { margin: 0; color: #444; font-size: 14px; line-height: 1.65; }
 .course-hub-week-outline .course-hub-week-placeholder { color: #999; font-style: italic; }
+.course-hub-key-takeaways-content {
+  position: relative;
+  min-height: 92px;
+}
+.course-hub-key-takeaways-body {
+  min-height: 92px;
+  transition: filter .25s ease, opacity .25s ease;
+}
+.course-hub-key-takeaways.is-locked .course-hub-key-takeaways-body {
+  filter: blur(7px);
+  opacity: .18;
+  pointer-events: none;
+  user-select: none;
+}
+.course-hub-key-takeaways-cover {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  box-sizing: border-box;
+  padding: 18px 20px;
+  border: 1px solid #e0e4ef;
+  border-radius: 8px;
+  background: rgba(248, 249, 252, .97);
+  box-shadow: 0 8px 22px rgba(32, 42, 71, .07);
+  color: #333;
+}
+.course-hub-key-takeaways-cover[hidden] {
+  display: none;
+}
+.course-hub-key-takeaways-cover > span:last-child {
+  display: grid;
+  gap: 4px;
+}
+.course-hub-key-takeaways-cover strong {
+  color: #222;
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.35;
+}
+.course-hub-week-outline .course-hub-key-takeaways-cover small {
+  display: block;
+  margin: 0;
+  color: #777;
+  font-size: 11px;
+  line-height: 1.45;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.course-hub-key-takeaways-lock {
+  display: inline-flex;
+  flex: 0 0 34px;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba($brand-color-grad-primary, .10);
+  color: $brand-color-grad-primary;
+}
+.course-hub-key-takeaways-lock svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 .course-hub-week-outline small { display: block; margin-top: 8px; color: #777; font-size: 10px; letter-spacing: .05em; text-transform: uppercase; }
 .course-hub-week-outline .course-hub-week-resource-link {
   display: inline;

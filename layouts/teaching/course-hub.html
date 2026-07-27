@@ -400,9 +400,37 @@
                 <h3>Assignments</h3>
                 <ul class="course-hub-task-list">{{ range $assignments }}{{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables "showDue" true "projectAnchor" (cond (isset $stageInfo "project_number") (printf "project-%v" $stageInfo.project_number) "") ) }}{{ end }}</ul>
               </section>
-              <section>
+              {{ $takeawayReleaseISO := .Params.key_takeaways_release_at | default "" }}
+              {{ if not $takeawayReleaseISO }}
+                {{ $classTimes := findRE `[0-2]?[0-9]:[0-5][0-9]` ($course.Params.class_time | default "") }}
+                {{ if and $selectedWeek.iso_date (gt (len $classTimes) 0) }}
+                  {{ $classEndTime := index $classTimes (sub (len $classTimes) 1) }}
+                  {{ $takeawayReleaseISO = printf "%sT%s:00+09:00" $selectedWeek.iso_date $classEndTime }}
+                {{ end }}
+              {{ end }}
+              <section class="course-hub-key-takeaways is-locked" data-key-takeaways{{ with $takeawayReleaseISO }} data-key-takeaways-release="{{ . }}"{{ end }}>
                 <h3>Key Takeaways</h3>
-                {{ with .Params.key_takeaways }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ else }}<p class="course-hub-week-placeholder">Add the key messages students should remember.</p>{{ end }}
+                <div class="course-hub-key-takeaways-content">
+                  <div class="course-hub-key-takeaways-body" data-key-takeaways-body aria-hidden="true">
+                    {{ with .Params.key_takeaways }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ else }}<p class="course-hub-week-placeholder">Add the key messages students should remember.</p>{{ end }}
+                  </div>
+                  <div class="course-hub-key-takeaways-cover" data-key-takeaways-cover role="status">
+                    <span class="course-hub-key-takeaways-lock" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" focusable="false">
+                        <rect x="5" y="10" width="14" height="10" rx="2"></rect>
+                        <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+                      </svg>
+                    </span>
+                    <span>
+                      <strong>Available after class</strong>
+                      {{ if $takeawayReleaseISO }}
+                        <small>Unlocks {{ time.Format "Jan. 2, 3:04 PM" $takeawayReleaseISO }} (KST), when this class ends.</small>
+                      {{ else }}
+                        <small>The release time will appear once the class schedule is confirmed.</small>
+                      {{ end }}
+                    </span>
+                  </div>
+                </div>
               </section>
               <section>
                 <h3>Related Readings</h3>
@@ -418,6 +446,42 @@
               </section>
               {{ range .Params.additional_sections }}<section class="course-hub-week-additional"><h3>{{ .title }}</h3><div>{{ .content | markdownify }}</div></section>{{ end }}
             </div>
+            <script>
+              (function () {
+                var blocks = document.querySelectorAll('[data-key-takeaways]');
+
+                function revealKeyTakeaways(block) {
+                  var body = block.querySelector('[data-key-takeaways-body]');
+                  var cover = block.querySelector('[data-key-takeaways-cover]');
+
+                  block.classList.remove('is-locked');
+                  block.classList.add('is-released');
+                  if (body) body.removeAttribute('aria-hidden');
+                  if (cover) cover.hidden = true;
+                }
+
+                function scheduleKeyTakeaways(block, releaseTime) {
+                  var remaining = releaseTime - Date.now();
+                  if (remaining <= 0) {
+                    revealKeyTakeaways(block);
+                    return;
+                  }
+
+                  window.setTimeout(function () {
+                    scheduleKeyTakeaways(block, releaseTime);
+                  }, Math.min(remaining, 2147483647));
+                }
+
+                blocks.forEach(function (block) {
+                  var releaseValue = block.getAttribute('data-key-takeaways-release');
+                  if (!releaseValue) return;
+
+                  var releaseTime = Date.parse(releaseValue);
+                  if (Number.isNaN(releaseTime)) return;
+                  scheduleKeyTakeaways(block, releaseTime);
+                });
+              })();
+            </script>
             {{ if .Plain }}<article class="course-hub-week-content">{{ .Content }}</article>{{ end }}
             <nav class="course-hub-week-pagination" aria-label="Week navigation">
               {{ if gt $selectedIndex 0 }}{{ $previousWeek := index $schedule (sub $selectedIndex 1) }}{{ $previousWeekNumber := replaceRE `^0+` `` $previousWeek.week }}{{ if eq $previousWeekNumber "" }}{{ $previousWeekNumber = "0" }}{{ end }}<a href="{{ printf `%sw%s/` $base $previousWeekNumber }}"><span aria-hidden="true">←</span><small>Previous</small><strong>Week {{ $previousWeek.week }}</strong></a>{{ else }}<span></span>{{ end }}
