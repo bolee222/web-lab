@@ -1,0 +1,15 @@
+{{- $material := . -}}
+<li>
+  {{- with $material.url -}}
+    <a class="course-hub-week-resource-link" href="{{ . }}"{{ if strings.HasPrefix . "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ $material.label | default "Open lecture materials" }}</a>
+  {{- else -}}
+    {{ $material.label | default "Lecture material" }}
+  {{- end -}}
+  {{- with $material.children }}
+    <ul>
+      {{- range . }}
+        {{- partial "teaching/course-week-material-item.html" . -}}
+      {{- end }}
+    </ul>
+  {{- end }}
+</li>

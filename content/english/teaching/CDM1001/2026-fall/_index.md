@@ -358,46 +358,42 @@ weekly_schedule:
     week: "01"
     iso_date: "2026-09-01"
     stage_ref: "foundations"
-    lecture: "Course Introduction"
+    lecture: "Course Introduction: Building a High-Level Map of CDM"
     in_class:
-      - "Course introduction"
-      - "Four-project overview"
-      - "Group formation"
+      - "Course orientation"
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch ‘Art, Not Design.’"
-        due: "Sep. 08"
+        task: "Watch ‘Art! Not Design?’"
+        due: "Sep. 08, before class"
   -
     week: "02"
     iso_date: "2026-09-08"
     stage_ref: "learn-to-see"
     lecture: "CDM Design Lens #1: Art"
     in_class:
-      - "Short lecture"
-      - "Group discussion"
+      - "Art–Design Spectrum discussion"
     after_class:
+      -
+        assignment: 1
       -
         type: "FC Lecture"
         task: "Watch ‘Art + Business.’"
-        due: "Sep. 15"
-      -
-        assignment: 1
+        due: "Sep. 15, before class"
   -
     week: "03"
     iso_date: "2026-09-15"
     stage_ref: "learn-to-see"
     lecture: "CDM Design Lens #2: Art + Business"
     in_class:
-      - "Short lecture"
-      - "Group discussion"
+      - "Week 2 assignment review + Art–Business collaboration deep dive"
     after_class:
+      -
+        assignment: 2
       -
         type: "FC Lecture"
         task: "Watch ‘Graphic Design Elements.’"
-        due: "Sep. 22"
-      -
-        assignment: 2
+        due: "Sep. 22, before class"
   -
     week: "04"
     iso_date: "2026-09-22"
@@ -594,61 +590,94 @@ weekly_schedule:
 assignments:
   -
     number: 1
-    title: "[Mini-Report] Art as a Cultural and Expressive Lens"
+    title: "How Do Art and Design Approach Technology?"
     project_number: 1
-    assignment_type: "Individual Assignment"
+    assignment_type: "Individual Comparative Mini-Report"
     due_iso: "2026-09-14T23:59:00+09:00"
-    grade_focus: "Art as a cultural and expressive lens"
-    summary: "Develop an understanding of art as a cultural and expressive practice and apply this perspective to the critical analysis of a real-world design case."
+    grade_focus: "Applying the Art–Design distinction to Technology"
+    summary: "Select one technology and compare one case from artistic practice with one case from design practice. Examine how each field approaches, uses, interprets, and evaluates the technology, then formulate a hypothesis about how Art and Design may relate to the same technology differently."
     contents:
       -
-        title: "Selected Case"
+        title: "1. Selected Technology"
         items:
-          - "Briefly introduce the selected social innovation or design case."
-          - "Identify the social or cultural issue addressed by the case."
+          - "Introduce one technology, briefly explain what it makes possible, and explain why you selected it."
       -
-        title: "Problem–Solution Analysis"
+        title: "2. Art Case"
         items:
-          - "Define the problem addressed by the case."
-          - "Explain the original solution and its intended purpose."
+          - "Introduce one artwork or artistic project using the selected technology and explain the role the technology plays in its expression, meaning, interpretation, experience, experiment, or question."
       -
-        title: "Alternative Design Exploration"
+        title: "3. Design Case"
         items:
-          - "Present the alternative design decisions considered in the analysis."
-          - "Include relevant images or visual references where appropriate."
+          - "Introduce one product, service, system, or designed experience using the same or a closely related technology, then explain the problem, user need, purpose, or intended outcome."
       -
-        title: "Comparative Analysis"
+        title: "4. Comparative Analysis"
         items:
-          - "Compare the original case and alternative options."
-          - "Explain how different artistic decisions influence meaning, emotional response, cultural interpretation, or overall experience."
+          - "Compare the cases in relation to primary purpose, role of technology, intended audience or user, expected response, interpretive openness, decision-making rationale, and criteria for success."
       -
-        title: "Critical Reflection"
+        title: "5. Student Hypothesis"
         items:
-          - "Identify which option is most appropriate for the intended purpose, audience, and context."
-          - "Explain whether and how the exploration changed or expanded your initial understanding."
-    presentation: "No presentation is required. Findings will be discussed through the in-class group exercise."
+          - "Complete and explain the statement: “Art tends to approach technology as [your interpretation], whereas Design tends to approach technology as [your interpretation].” Support the hypothesis with evidence from both cases."
+      -
+        title: "6. Qualification and Reflection"
+        items:
+          - "Identify one overlap between the two approaches and one situation in which your distinction may not fully apply. Explain what additional evidence or context would strengthen or revise your conclusion."
+    presentation: "No formal presentation is required. Selected hypotheses may be reviewed anonymously at the beginning of Week 3."
     upload_file:
       file_type: "PDF"
-      recommended_length: "2–3 pages, including images"
-      filename_rule: "D1_StudentID_StudentName.pdf"
-      example: "D1_2026123456_JaneKim.pdf"
-    submission_method: "Upload the final PDF to the Deliverable #1 submission folder on LearnUs. Submissions through email or other channels will not be accepted."
+      recommended_length: "2–3 pages, including visual references; include at least one visual reference for each case"
+      filename_rule: "A1_StudentID_StudentName.pdf"
+      example: "A1_2026123456_JaneKim.pdf"
+    submission_method: "Upload the final PDF to the Assignment #1 submission folder on LearnUS. Submissions through email or other channels will not be accepted."
     show_detailed_deadline: true
     show_evaluation_percentage: false
-    evaluation_focus: "The assignment will be evaluated based on the student’s understanding of the weekly design principle, depth of comparison, consideration of purpose and context, and clarity of critical reasoning."
+    evaluation_focus: "The assignment will be evaluated based on case selection and understanding, technology analysis, comparative reasoning, and the clarity and evidence of the hypothesis and reflection."
   -
     number: 2
-    title: "[Mini-Report] Analysis: Art Infusion"
+    title: "Deepening an Art–Business Collaboration through Technology"
     project_number: 1
-    assignment_type: "Mini-Report"
-    due_iso: "2026-09-22"
-    grade_focus: "Art and business integration"
-    summary: "Analyze how artistic and business considerations interact, compare alternative design decisions, and explain their implications."
-    contents: []
-    submission_method: "See LearnUS and the weekly announcement."
-    show_detailed_deadline: false
+    assignment_type: "Individual Concept Development Mini-Report"
+    due_iso: "2026-09-21T23:59:00+09:00"
+    grade_focus: "Expanding an Art–Business collaboration through technology"
+    summary: "Continue with the Art–Business collaboration analyzed during Week 3 and use AI, XR, CG, or another emerging technology to create deeper artistic, business, and audience value beyond a surface-level visual application."
+    contents:
+      -
+        title: "1. Existing Collaboration Summary"
+        items:
+          - "Introduce the artist, business or organization, original collaboration, intended audience, current role of art, and current audience experience."
+      -
+        title: "2. Current Value and Limitation"
+        items:
+          - "Explain what the artist, business, and audience each contribute and gain, then identify one limitation, superficial aspect, or missed opportunity."
+      -
+        title: "3. Technology Opportunity"
+        items:
+          - "Select one primary technology and explain what it makes possible, why it is appropriate, and what it enables that the original collaboration could not."
+      -
+        title: "4. Expanded Collaboration Concept"
+        items:
+          - "Describe what the audience will see, do, or experience; how the artist’s contribution becomes more integral; how the business participates; where the experience occurs; and how the experience behaves."
+      -
+        title: "5. Audience Experience Scenario"
+        items:
+          - "Present a short sequence or storyboard showing the audience encounter, input or action, technological response, artistic transformation, and resulting experience or contribution."
+      -
+        title: "6. Before–After Comparison"
+        items:
+          - "Compare the existing and expanded collaborations in relation to art, technology, artist involvement, audience participation, business value, and cultural or experiential value."
+      -
+        title: "7. Critical Reflection"
+        items:
+          - "Discuss whether the technology deepens the artistic contribution or adds spectacle, who holds creative control, what risks or feasibility issues emerge, and how authorship or intention is preserved."
+    presentation: "No formal presentation is required. Selected concepts may be briefly referenced during the transition to Week 4."
+    upload_file:
+      file_type: "PDF"
+      recommended_length: "3–4 pages, including original collaboration visuals, one concept visualization, and one audience-experience flow or storyboard"
+      filename_rule: "A2_StudentID_StudentName.pdf"
+      example: "A2_2026123456_JaneKim.pdf"
+    submission_method: "Upload the final PDF to the Assignment #2 submission folder on LearnUS. Submissions through email or other channels will not be accepted."
+    show_detailed_deadline: true
     show_evaluation_percentage: false
-    evaluation_focus: "See the related project evaluation criteria."
+    evaluation_focus: "The assignment will be evaluated based on understanding of the existing collaboration, technology relevance, concept development, stakeholder and experience value, and critical reasoning and communication."
   -
     number: 3
     title: "[Progress-Report] User Research Planning"

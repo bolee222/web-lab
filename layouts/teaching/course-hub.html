@@ -210,10 +210,15 @@
               </div>
               {{ end }}
               {{ with .format }}
-              <div class="course-hub-project-subsection">
-                <h3>Format</h3>
-                <ol class="course-hub-project-format">{{ range . }}<li><strong>{{ .title }}</strong><p>{{ .text }}</p></li>{{ end }}</ol>
-              </div>
+              <details class="course-hub-project-format-toggle">
+                <summary>
+                  <span class="course-hub-project-format-toggle-title">Format</span>
+                  <span class="course-hub-project-format-toggle-meta">{{ len . }} steps <span aria-hidden="true"></span></span>
+                </summary>
+                <div class="course-hub-project-format-toggle-body">
+                  <ol class="course-hub-project-format">{{ range . }}<li><strong>{{ .title }}</strong><p>{{ .text }}</p></li>{{ end }}</ol>
+                </div>
+              </details>
               {{ end }}
               {{ with .work_setup }}
               <div class="course-hub-project-subsection"><h3>Project unit</h3><p>{{ . | safeHTML }}</p></div>
@@ -365,6 +370,20 @@
         {{ if not $activities }}{{ $activities = $selectedWeek.in_class }}{{ end }}
         {{ $assignments := .Params.assignments }}
         {{ if not $assignments }}{{ $assignments = $selectedWeek.after_class }}{{ end }}
+        {{ $classTimes := findRE `[0-2]?[0-9]:[0-5][0-9]` ($course.Params.class_time | default "") }}
+        {{ $classEndTime := "" }}
+        {{ if gt (len $classTimes) 0 }}{{ $classEndTime = index $classTimes (sub (len $classTimes) 1) }}{{ end }}
+        {{ $weekContentReleaseISO := .Params.week_content_release_at | default "" }}
+        {{ $previousWeekForRelease := dict }}
+        {{ $previousWeekReleaseDisplay := "" }}
+        {{ if and (not $weekContentReleaseISO) (gt $selectedIndex 0) $classEndTime }}
+          {{ $previousWeekForRelease = index $schedule (sub $selectedIndex 1) }}
+          {{ $previousWeekReleaseDisplay = replaceRE `^0+` `` $previousWeekForRelease.week }}
+          {{ if eq $previousWeekReleaseDisplay "" }}{{ $previousWeekReleaseDisplay = "0" }}{{ end }}
+          {{ with $previousWeekForRelease.iso_date }}
+            {{ $weekContentReleaseISO = printf "%sT%s:00+09:00" . $classEndTime }}
+          {{ end }}
+        {{ end }}
         <section class="course-hub-section course-hub-week-detail" aria-labelledby="week-detail-title">
           <div class="course-hub-section-content">
             <a class="course-hub-week-detail-back" href="{{ printf `%sschedule/#week-%s` $base $selectedWeek.week }}"><span aria-hidden="true">←</span> Weekly schedule</a>
@@ -382,29 +401,78 @@
               </section>
               <section>
                 <h3>Learning Goal</h3>
-                {{ with .Params.learning_goal }}<p>{{ . }}</p>{{ else }}<p class="course-hub-week-placeholder">Add the learning goal for this week.</p>{{ end }}
+                {{ with .Params.learning_goal }}<div class="course-hub-learning-goal">{{ . | markdownify }}</div>{{ else }}<p class="course-hub-week-placeholder">Add the learning goal for this week.</p>{{ end }}
               </section>
-              <section>
+              <section{{ if $weekContentReleaseISO }} class="course-hub-scheduled-section is-locked" data-scheduled-section data-scheduled-release="{{ $weekContentReleaseISO }}"{{ end }}>
                 <h3>Lecture Materials</h3>
-                {{ with .Params.lecture_materials }}
-                <ul class="course-hub-week-links">
-                  {{ range . }}{{ $material := . }}{{ with .url }}<li><a class="course-hub-week-resource-link" href="{{ . }}"{{ if strings.HasPrefix . "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ $material.label | default "Open lecture materials" }}</a></li>{{ end }}{{ end }}
-                </ul>
-                {{ else }}<p class="course-hub-week-placeholder">Add the LearnUS lecture-material link.</p>{{ end }}
+                <div class="course-hub-scheduled-content">
+                  <div class="course-hub-scheduled-body" data-scheduled-body{{ if $weekContentReleaseISO }} aria-hidden="true"{{ end }}>
+                    {{ with .Params.lecture_materials }}
+                    <ul class="course-hub-week-links">
+                      {{ range . }}{{ partial "teaching/course-week-material-item.html" . }}{{ end }}
+                    </ul>
+                    {{ else }}<p class="course-hub-week-placeholder">Add the LearnUS lecture-material link.</p>{{ end }}
+                  </div>
+                  {{ if $weekContentReleaseISO }}
+                  <div class="course-hub-scheduled-cover" data-scheduled-cover role="status">
+                    <span class="course-hub-key-takeaways-lock" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" focusable="false">
+                        <rect x="5" y="10" width="14" height="10" rx="2"></rect>
+                        <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+                      </svg>
+                    </span>
+                    <span>
+                      {{ with $previousWeekReleaseDisplay }}<strong>Unlocks when Week {{ . }} class ends</strong>{{ end }}
+                      <small>{{ time.Format "Jan. 2, 3:04 PM" $weekContentReleaseISO }} (KST)</small>
+                    </span>
+                  </div>
+                  {{ end }}
+                </div>
               </section>
-              <section>
+              <section{{ if $weekContentReleaseISO }} class="course-hub-scheduled-section is-locked" data-scheduled-section data-scheduled-release="{{ $weekContentReleaseISO }}"{{ end }}>
                 <h3>In-class Activity</h3>
-                <ul class="course-hub-activity-list">{{ range $activities }}<li>{{ . }}</li>{{ end }}</ul>
+                <div class="course-hub-scheduled-content">
+                  <div class="course-hub-scheduled-body" data-scheduled-body{{ if $weekContentReleaseISO }} aria-hidden="true"{{ end }}>
+                    {{ with .Params.activity_content }}
+                      <div class="course-hub-activity-content">{{ . | markdownify }}</div>
+                    {{ else }}
+                      <ul class="course-hub-activity-list">{{ range $activities }}<li>{{ . }}</li>{{ end }}</ul>
+                    {{ end }}
+                  </div>
+                  {{ if $weekContentReleaseISO }}
+                  <div class="course-hub-scheduled-cover" data-scheduled-cover role="status">
+                    <span class="course-hub-key-takeaways-lock" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" focusable="false">
+                        <rect x="5" y="10" width="14" height="10" rx="2"></rect>
+                        <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+                      </svg>
+                    </span>
+                    <span>
+                      {{ with $previousWeekReleaseDisplay }}<strong>Unlocks when Week {{ . }} class ends</strong>{{ end }}
+                      <small>{{ time.Format "Jan. 2, 3:04 PM" $weekContentReleaseISO }} (KST)</small>
+                    </span>
+                  </div>
+                  {{ end }}
+                </div>
               </section>
               <section>
                 <h3>Assignments</h3>
-                <ul class="course-hub-task-list">{{ range $assignments }}{{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables "showDue" true "projectAnchor" (cond (isset $stageInfo "project_number") (printf "project-%v" $stageInfo.project_number) "") ) }}{{ end }}</ul>
+                <ul class="course-hub-task-list">
+                  {{ range $assignments }}
+                    {{ if eq (.type | default "") "FC Lecture" }}
+                      {{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables "showDue" true "showAction" true "projectAnchor" (cond (isset $stageInfo "project_number") (printf "project-%v" $stageInfo.project_number) "") ) }}
+                    {{ end }}
+                  {{ end }}
+                  {{ range $assignments }}
+                    {{ if ne (.type | default "") "FC Lecture" }}
+                      {{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables "showDue" true "showAction" true "projectAnchor" (cond (isset $stageInfo "project_number") (printf "project-%v" $stageInfo.project_number) "") ) }}
+                    {{ end }}
+                  {{ end }}
+                </ul>
               </section>
               {{ $takeawayReleaseISO := .Params.key_takeaways_release_at | default "" }}
               {{ if not $takeawayReleaseISO }}
-                {{ $classTimes := findRE `[0-2]?[0-9]:[0-5][0-9]` ($course.Params.class_time | default "") }}
-                {{ if and $selectedWeek.iso_date (gt (len $classTimes) 0) }}
-                  {{ $classEndTime := index $classTimes (sub (len $classTimes) 1) }}
+                {{ if and $selectedWeek.iso_date $classEndTime }}
                   {{ $takeawayReleaseISO = printf "%sT%s:00+09:00" $selectedWeek.iso_date $classEndTime }}
                 {{ end }}
               {{ end }}
@@ -412,7 +480,7 @@
                 <h3>Key Takeaways</h3>
                 <div class="course-hub-key-takeaways-content">
                   <div class="course-hub-key-takeaways-body" data-key-takeaways-body aria-hidden="true">
-                    {{ with .Params.key_takeaways }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ else }}<p class="course-hub-week-placeholder">Add the key messages students should remember.</p>{{ end }}
+                    {{ with .Params.key_takeaways }}<ul class="course-hub-key-takeaways-list">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ else }}<p class="course-hub-week-placeholder">Add the key messages students should remember.</p>{{ end }}
                   </div>
                   <div class="course-hub-key-takeaways-cover" data-key-takeaways-cover role="status">
                     <span class="course-hub-key-takeaways-lock" aria-hidden="true">
@@ -439,10 +507,6 @@
                   {{ range . }}{{ $reading := . }}<li>{{ with .url }}<a class="course-hub-week-resource-link" href="{{ . }}"{{ if strings.HasPrefix . "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ $reading.title | default "Related reading" }}</a>{{ else }}<strong>{{ .title | default "Related reading" }}</strong>{{ end }}{{ with .author }}<span>{{ . }}</span>{{ end }}</li>{{ end }}
                 </ul>
                 {{ else }}<p class="course-hub-week-placeholder">Add papers, books, or reference links.</p>{{ end }}
-              </section>
-              <section>
-                <h3>Next Week Preparation</h3>
-                {{ with .Params.next_week_preparation }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ else }}<p class="course-hub-week-placeholder">Add anything students should prepare before the next class.</p>{{ end }}
               </section>
               {{ range .Params.additional_sections }}<section class="course-hub-week-additional"><h3>{{ .title }}</h3><div>{{ .content | markdownify }}</div></section>{{ end }}
             </div>
@@ -480,6 +544,42 @@
                   if (Number.isNaN(releaseTime)) return;
                   scheduleKeyTakeaways(block, releaseTime);
                 });
+
+                var scheduledBlocks = document.querySelectorAll('[data-scheduled-section]');
+
+                function revealScheduledContent(block) {
+                  var body = block.querySelector('[data-scheduled-body]');
+                  var cover = block.querySelector('[data-scheduled-cover]');
+
+                  block.classList.remove('is-locked');
+                  block.classList.add('is-released');
+                  if (body) body.removeAttribute('aria-hidden');
+                  if (cover) cover.hidden = true;
+                }
+
+                function scheduleContent(block, releaseTime) {
+                  var remaining = releaseTime - Date.now();
+                  if (remaining <= 0) {
+                    revealScheduledContent(block);
+                    return;
+                  }
+
+                  window.setTimeout(function () {
+                    scheduleContent(block, releaseTime);
+                  }, Math.min(remaining, 2147483647));
+                }
+
+                scheduledBlocks.forEach(function (block) {
+                  var releaseValue = block.getAttribute('data-scheduled-release');
+                  if (!releaseValue) {
+                    revealScheduledContent(block);
+                    return;
+                  }
+
+                  var releaseTime = Date.parse(releaseValue);
+                  if (Number.isNaN(releaseTime)) return;
+                  scheduleContent(block, releaseTime);
+                });
               })();
             </script>
             {{ if .Plain }}<article class="course-hub-week-content">{{ .Content }}</article>{{ end }}
@@ -498,6 +598,15 @@
       {{ $workKind := cond (eq $tab "assignments") "Assignment" "Deliverable" }}
       {{ $workKindLower := lower $workKind }}
       {{ $workItems := cond (eq $tab "assignments") $courseAssignments $courseDeliverables }}
+      <div class="course-hub-work-intro">
+        {{ if eq $tab "assignments" }}
+          <strong>Assignments support learning and reflection.</strong>
+          <p>Assignments are not graded as separate work items, but they help students practice, reflect, and develop their thinking throughout the course. Completion, preparation, and engagement contribute to the <em>Participation / Attitude / Diligence</em> assessment.</p>
+        {{ else }}
+          <strong>Deliverables are the course’s primary assessed outputs.</strong>
+          <p>They demonstrate students’ progress and achievement and account for a major proportion of the final course grade.</p>
+        {{ end }}
+      </div>
       <section class="course-hub-deliverables-overview" aria-labelledby="{{ $workKindLower }}s-overview-title">
         <div class="course-hub-deliverables-overview-heading">
           <div>
