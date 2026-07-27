@@ -1,11 +1,21 @@
 {{- $item := .task -}}
 {{- $base := .base -}}
 {{- $assignments := .assignments -}}
+{{- $deliverables := .deliverables -}}
 {{- $showDue := .showDue -}}
 {{- $projectAnchor := .projectAnchor -}}
+{{- with $item.assignment -}}
+  {{- $assignmentNumber := int . -}}
+  {{- range $assignments -}}
+    {{- if eq (int .number) $assignmentNumber -}}
+      {{- $dueLabel := partial "teaching/due-label.html" .due_iso -}}
+      {{- $item = dict "type" (printf "Assignment %v" .number) "task" (.summary | default .title) "due" $dueLabel -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
 {{- with $item.deliverable -}}
   {{- $deliverableNumber := int . -}}
-  {{- range $assignments -}}
+  {{- range $deliverables -}}
     {{- if eq (int .number) $deliverableNumber -}}
       {{- $dueLabel := partial "teaching/due-label.html" .due_iso -}}
       {{- $item = dict "type" (printf "Deliverable %v" .number) "task" (.summary | default .title) "due" $dueLabel -}}
@@ -24,12 +34,14 @@
   {{- $taskClass = "task-label-fc" -}}
 {{- else if strings.HasPrefix $taskLabel "Deliverable" -}}
   {{- $taskClass = "task-label-deliverable" -}}
+{{- else if strings.HasPrefix $taskLabel "Assignment" -}}
+  {{- $taskClass = "task-label-assignment" -}}
 {{- end -}}
 {{- $isBadgeLabel := or (eq $taskLabel "FC") (eq $taskLabel "Prep") -}}
 {{- $taskDisplay := printf "[%s]" $taskLabel -}}
 {{- if eq $taskLabel "FC" -}}
   {{- $taskDisplay = "🎬 FC" -}}
-{{- else if eq $taskLabel "Assignment" -}}
+{{- else if strings.HasPrefix $taskLabel "Assignment" -}}
   {{- $taskDisplay = "✏️ Assignment" -}}
 {{- else if strings.HasPrefix $taskLabel "Deliverable" -}}
   {{- $taskDisplay = printf "📤 %s" $taskLabel -}}
@@ -37,12 +49,18 @@
   {{- $taskDisplay = $taskLabel -}}
 {{- end -}}
 {{- $isDeliverable := strings.HasPrefix $taskType "Deliverable" -}}
+{{- $isAssignment := strings.HasPrefix $taskType "Assignment" -}}
 {{- $isProject := strings.HasPrefix $taskType "Project" -}}
 {{- $taskHref := "" -}}
-{{- if $isDeliverable -}}
+{{- if $isAssignment -}}
+  {{- $assignmentNumber := replaceRE `^Assignment[[:space:]]+([0-9]+).*$` `$1` $taskType -}}
+  {{- if ne $assignmentNumber $taskType -}}
+    {{- $taskHref = printf `%sassignments/#assignment-%s` $base $assignmentNumber -}}
+  {{- end -}}
+{{- else if $isDeliverable -}}
   {{- $deliverableNumber := replaceRE `^Deliverable[[:space:]]+([0-9]+).*$` `$1` $taskType -}}
   {{- if ne $deliverableNumber $taskType -}}
-    {{- $taskHref = printf `%sassignments/#deliverable-%s` $base $deliverableNumber -}}
+    {{- $taskHref = printf `%sdeliverables/#deliverable-%s` $base $deliverableNumber -}}
   {{- end -}}
 {{- else if $isProject -}}
   {{- $projectNumber := replaceRE `^Project[[:space:]]+([0-9]+).*$` `$1` $taskType -}}
@@ -55,7 +73,7 @@
   {{- end -}}
 {{- end -}}
 <li>
-  {{- with $taskHref }}<a class="course-hub-task-link{{ if $isDeliverable }} is-deliverable{{ end }}" href="{{ . }}">{{ end -}}
+  {{- with $taskHref }}<a class="course-hub-task-link{{ if $isDeliverable }} is-deliverable{{ else if $isAssignment }} is-assignment{{ end }}" href="{{ . }}">{{ end -}}
   {{- if not $isProject }}<span class="course-hub-task-tag course-hub-task-tag--{{ $taskLabel | urlize }}"><span class="{{ $taskClass }}">{{ $taskDisplay }}</span></span> {{ end -}}
   <span class="course-hub-task-copy">{{ $item.task }}</span>
   {{- with $taskHref }}</a>{{ end -}}

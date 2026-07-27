@@ -382,7 +382,7 @@ weekly_schedule:
         task: "Watch ‘Art + Business.’"
         due: "Sep. 15"
       -
-        deliverable: 1
+        assignment: 1
   -
     week: "03"
     iso_date: "2026-09-15"
@@ -397,7 +397,7 @@ weekly_schedule:
         task: "Watch ‘Graphic Design Elements.’"
         due: "Sep. 22"
       -
-        deliverable: 2
+        assignment: 2
   -
     week: "04"
     iso_date: "2026-09-22"
@@ -412,7 +412,7 @@ weekly_schedule:
         task: "Watch ‘Product Design Elements.’"
         due: "Sep. 29"
       -
-        deliverable: 3
+        deliverable: 1
   -
     week: "05"
     iso_date: "2026-09-29"
@@ -427,7 +427,7 @@ weekly_schedule:
         task: "Watch ‘Interaction Design Elements.’"
         due: "Oct. 06"
       -
-        deliverable: 4
+        deliverable: 2
   -
     week: "06"
     iso_date: "2026-10-06"
@@ -442,7 +442,7 @@ weekly_schedule:
         task: "Watch ‘Service Design Elements.’"
         due: "Oct. 13"
       -
-        deliverable: 5
+        deliverable: 3
   -
     week: "07"
     iso_date: "2026-10-13"
@@ -458,7 +458,7 @@ weekly_schedule:
         task: "Visit a pop-up store and complete the critical design analysis report for Project 2."
         due: "Oct. 20"
       -
-        deliverable: 6
+        deliverable: 4
   -
     week: "08"
     iso_date: "2026-10-20"
@@ -472,7 +472,7 @@ weekly_schedule:
         task: "Review Studio Mikko Laakkonen and the Korean furniture market."
         due: "Oct. 27"
       -
-        deliverable: 7
+        deliverable: 5
   -
     week: "09"
     iso_date: "2026-10-27"
@@ -488,7 +488,7 @@ weekly_schedule:
         task: "Watch ‘User-centered Design’ and ‘User Research Methods.’"
         due: "Nov. 03"
       -
-        deliverable: 8
+        assignment: 3
   -
     week: "10"
     iso_date: "2026-11-03"
@@ -500,7 +500,7 @@ weekly_schedule:
       - "Feedback"
     after_class:
       -
-        deliverable: 9
+        assignment: 4
   -
     week: "11"
     iso_date: "2026-11-10"
@@ -516,7 +516,7 @@ weekly_schedule:
         task: "Watch ‘Customer-centered Thinking.’"
         due: "Nov. 17"
       -
-        deliverable: 10
+        assignment: 5
   -
     week: "12"
     iso_date: "2026-11-17"
@@ -580,7 +580,7 @@ weekly_schedule:
         task: "Complete the Personal Interdisciplinary Map and final report."
         due: "Dec. 14"
       -
-        deliverable: 11
+        deliverable: 6
   -
     week: "16"
     iso_date: "2026-12-14"
@@ -590,7 +590,7 @@ weekly_schedule:
       - "No offline lecture"
     after_class:
       -
-        deliverable: 12
+        deliverable: 7
 assignments:
   -
     number: 1
@@ -653,76 +653,6 @@ assignments:
     evaluation_focus: "See the related project evaluation criteria."
   -
     number: 3
-    title: "[Mini-Report] Analysis: Graphic Design Elements"
-    project_number: 1
-    assignment_type: "Mini-Report"
-    due_iso: "2026-09-29"
-    weight: 4
-    grade_focus: "Graphic design analysis"
-    summary: "Use D:Branch to examine graphic-design elements and explain how alternative decisions influence meaning, perception, and communication."
-    contents: []
-    submission_method: "See LearnUS and the weekly announcement."
-    show_detailed_deadline: false
-    show_evaluation_percentage: true
-    evaluation_focus: "See the related project evaluation criteria."
-  -
-    number: 4
-    title: "[Mini-Report] Analysis: Product Design Elements"
-    project_number: 1
-    assignment_type: "Mini-Report"
-    due_iso: "2026-10-06"
-    weight: 3
-    grade_focus: "Product design analysis"
-    summary: "Compare product-design alternatives and evaluate their relationship to purpose, usability, users, and context."
-    contents: []
-    submission_method: "See LearnUS and the weekly announcement."
-    show_detailed_deadline: false
-    show_evaluation_percentage: true
-    evaluation_focus: "See the related project evaluation criteria."
-  -
-    number: 5
-    title: "[Mini-Report] Analysis: Interaction Design Elements"
-    project_number: 1
-    assignment_type: "Mini-Report"
-    due_iso: "2026-10-13"
-    weight: 3
-    grade_focus: "Interaction design analysis"
-    summary: "Analyze interaction-design decisions and explain how they shape usability, behavior, feedback, and the overall user experience."
-    contents: []
-    submission_method: "See LearnUS and the weekly announcement."
-    show_detailed_deadline: false
-    show_evaluation_percentage: true
-    evaluation_focus: "See the related project evaluation criteria."
-  -
-    number: 6
-    title: "[Mini-Report] Analysis: Service Design Elements"
-    project_number: 1
-    assignment_type: "Mini-Report"
-    due_iso: "2026-10-20"
-    weight: 4
-    grade_focus: "Service design analysis and cross-disciplinary synthesis"
-    summary: "Analyze a service-design case and synthesize insights across the design lenses explored throughout Project 1."
-    contents: []
-    submission_method: "See LearnUS and the weekly announcement."
-    show_detailed_deadline: false
-    show_evaluation_percentage: true
-    evaluation_focus: "See the related project evaluation criteria."
-  -
-    number: 7
-    title: "[Mid-term Report] Pop-up Store Design Critique"
-    project_number: 2
-    assignment_type: "Mid-term Report"
-    due_iso: "2026-10-20"
-    weight: 15
-    grade_focus: "Pop-up Store Design Critique (Mid-term Report)"
-    summary: "Submit the midterm critical-analysis report based on a pop-up store field visit and the integrated application of multiple CDM design lenses."
-    contents: []
-    submission_method: "See LearnUS and the weekly announcement."
-    show_detailed_deadline: false
-    show_evaluation_percentage: true
-    evaluation_focus: "See the related project evaluation criteria."
-  -
-    number: 8
     title: "[Progress-Report] User Research Planning"
     project_number: 3
     assignment_type: "Progress-Report"
@@ -736,7 +666,7 @@ assignments:
     show_evaluation_percentage: true
     evaluation_focus: "See the related project evaluation criteria."
   -
-    number: 9
+    number: 4
     title: "[Progress-Report] User Research Execution and Key Findings"
     project_number: 3
     assignment_type: "Progress-Report"
@@ -750,7 +680,7 @@ assignments:
     show_evaluation_percentage: true
     evaluation_focus: "See the related project evaluation criteria."
   -
-    number: 10
+    number: 5
     title: "[Progress-Report] Initial Strategic Direction"
     project_number: 3
     assignment_type: "Progress-Report"
@@ -763,8 +693,79 @@ assignments:
     show_detailed_deadline: false
     show_evaluation_percentage: true
     evaluation_focus: "See the related project evaluation criteria."
+deliverables:
   -
-    number: 11
+    number: 1
+    title: "[Mini-Report] Analysis: Graphic Design Elements"
+    project_number: 1
+    assignment_type: "Mini-Report"
+    due_iso: "2026-09-29"
+    weight: 4
+    grade_focus: "Graphic design analysis"
+    summary: "Use D:Branch to examine graphic-design elements and explain how alternative decisions influence meaning, perception, and communication."
+    contents: []
+    submission_method: "See LearnUS and the weekly announcement."
+    show_detailed_deadline: false
+    show_evaluation_percentage: true
+    evaluation_focus: "See the related project evaluation criteria."
+  -
+    number: 2
+    title: "[Mini-Report] Analysis: Product Design Elements"
+    project_number: 1
+    assignment_type: "Mini-Report"
+    due_iso: "2026-10-06"
+    weight: 3
+    grade_focus: "Product design analysis"
+    summary: "Compare product-design alternatives and evaluate their relationship to purpose, usability, users, and context."
+    contents: []
+    submission_method: "See LearnUS and the weekly announcement."
+    show_detailed_deadline: false
+    show_evaluation_percentage: true
+    evaluation_focus: "See the related project evaluation criteria."
+  -
+    number: 3
+    title: "[Mini-Report] Analysis: Interaction Design Elements"
+    project_number: 1
+    assignment_type: "Mini-Report"
+    due_iso: "2026-10-13"
+    weight: 3
+    grade_focus: "Interaction design analysis"
+    summary: "Analyze interaction-design decisions and explain how they shape usability, behavior, feedback, and the overall user experience."
+    contents: []
+    submission_method: "See LearnUS and the weekly announcement."
+    show_detailed_deadline: false
+    show_evaluation_percentage: true
+    evaluation_focus: "See the related project evaluation criteria."
+  -
+    number: 4
+    title: "[Mini-Report] Analysis: Service Design Elements"
+    project_number: 1
+    assignment_type: "Mini-Report"
+    due_iso: "2026-10-20"
+    weight: 4
+    grade_focus: "Service design analysis and cross-disciplinary synthesis"
+    summary: "Analyze a service-design case and synthesize insights across the design lenses explored throughout Project 1."
+    contents: []
+    submission_method: "See LearnUS and the weekly announcement."
+    show_detailed_deadline: false
+    show_evaluation_percentage: true
+    evaluation_focus: "See the related project evaluation criteria."
+  -
+    number: 5
+    title: "[Mid-term Report] Pop-up Store Design Critique"
+    project_number: 2
+    assignment_type: "Mid-term Report"
+    due_iso: "2026-10-20"
+    weight: 15
+    grade_focus: "Pop-up Store Design Critique (Mid-term Report)"
+    summary: "Submit the midterm critical-analysis report based on a pop-up store field visit and the integrated application of multiple CDM design lenses."
+    contents: []
+    submission_method: "See LearnUS and the weekly announcement."
+    show_detailed_deadline: false
+    show_evaluation_percentage: true
+    evaluation_focus: "See the related project evaluation criteria."
+  -
+    number: 6
     title: "[Presentation] Integrated Korean Market Launch Proposal"
     project_number: 3
     assignment_type: "Presentation"
@@ -778,7 +779,7 @@ assignments:
     show_evaluation_percentage: true
     evaluation_focus: "See the related project evaluation criteria."
   -
-    number: 12
+    number: 7
     title: "[Final Report] Personal Interdisciplinary Map"
     project_number: 4
     assignment_type: "Final Report"

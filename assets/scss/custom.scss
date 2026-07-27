@@ -1643,7 +1643,7 @@ img.rounded {
   padding: 9px 12px;
   margin: 3px 14px 3px 0;
   color: rgba(255, 255, 255, .76);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 0;
   text-transform: none;
@@ -5902,8 +5902,8 @@ body #publicationTabs .nav-link.active {
 
 /* Shared branded hover for ordinary text links. Component buttons and tabs
    keep their own contrast-aware interaction colors. */
-a:not(.btn):not(.nav-link):not(.publication-link-button):not(.resource-link-button):not([data-news-category]):not([data-news-tag]):hover,
-a:not(.btn):not(.nav-link):not(.publication-link-button):not(.resource-link-button):not([data-news-category]):not([data-news-tag]):focus {
+a:not(.btn):not(.nav-link):not(.course-hub-nav-link):not(.publication-link-button):not(.resource-link-button):not([data-news-category]):not([data-news-tag]):hover,
+a:not(.btn):not(.nav-link):not(.course-hub-nav-link):not(.publication-link-button):not(.resource-link-button):not([data-news-category]):not([data-news-tag]):focus {
   color: $brand-color-link-hover !important;
 }
 

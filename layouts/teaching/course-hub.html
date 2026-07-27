@@ -2,6 +2,8 @@
 {{ $tab := .Params.course_tab | default "overview" }}
 {{ $course := . }}
 {{ if ne $tab "overview" }}{{ $course = .Parent }}{{ end }}
+{{ $courseAssignments := $course.Params.assignments | default (slice) }}
+{{ $courseDeliverables := $course.Params.deliverables | default (slice) }}
 {{ $base := printf "/courses/%s/%s/" (lower $course.Params.course_code) $course.Params.semester_slug }}
 {{ $instructor := replaceRE `^Prof\.[[:space:]]*` `` ($course.Params.teaching_team | default "") }}
 {{ $semesterParts := split $course.Params.semester_slug "-" }}
@@ -12,7 +14,8 @@
 {{ $heroMeta := printf "Yonsei %s" $semesterMeta }}
 {{ with $instructor }}{{ $heroMeta = printf "%s | %s" $heroMeta . }}{{ end }}
 {{ $assessmentTotal := 0 }}
-{{ range $course.Params.assignments }}{{ $assessmentTotal = add $assessmentTotal (int .weight) }}{{ end }}
+{{ range $courseAssignments }}{{ with .weight }}{{ $assessmentTotal = add $assessmentTotal (int .) }}{{ end }}{{ end }}
+{{ range $courseDeliverables }}{{ $assessmentTotal = add $assessmentTotal (int .weight) }}{{ end }}
 {{ range $course.Params.assessment }}{{ $assessmentTotal = add $assessmentTotal (int .weight) }}{{ end }}
 
 <main class="course-hub">
@@ -60,12 +63,13 @@
   <nav class="course-hub-nav" aria-label="Course pages" data-course-nav>
     <div class="container">
       <div class="course-hub-nav-links">
-        <a href="{{ $base }}"{{ if eq $tab "overview" }} class="active" aria-current="page"{{ end }}>Overview</a>
-        <a href="{{ printf `%sproject/` $base }}"{{ if eq $tab "project" }} class="active" aria-current="page"{{ end }}>Learning Journey</a>
-        <a href="{{ printf `%sschedule/` $base }}"{{ if or (eq $tab "schedule") (eq $tab "week") }} class="active" aria-current="page"{{ end }}>Weekly schedule</a>
-        <a href="{{ printf `%sassignments/` $base }}"{{ if eq $tab "assignments" }} class="active" aria-current="page"{{ end }}>Deliverables</a>
-        <a href="{{ printf `%slogistics/` $base }}"{{ if eq $tab "logistics" }} class="active" aria-current="page"{{ end }}>Course Logistics</a>
-        <a href="{{ printf `%sgallery/` $base }}"{{ if eq $tab "gallery" }} class="active" aria-current="page"{{ end }}>Project Gallery</a>
+        <a class="course-hub-nav-link{{ if eq $tab "overview" }} active{{ end }}" href="{{ $base }}"{{ if eq $tab "overview" }} aria-current="page"{{ end }}>Overview</a>
+        <a class="course-hub-nav-link{{ if eq $tab "project" }} active{{ end }}" href="{{ printf `%sproject/` $base }}"{{ if eq $tab "project" }} aria-current="page"{{ end }}>Learning Journey</a>
+        <a class="course-hub-nav-link{{ if or (eq $tab "schedule") (eq $tab "week") }} active{{ end }}" href="{{ printf `%sschedule/` $base }}"{{ if or (eq $tab "schedule") (eq $tab "week") }} aria-current="page"{{ end }}>Weekly schedule</a>
+        <a class="course-hub-nav-link{{ if eq $tab "assignments" }} active{{ end }}" href="{{ printf `%sassignments/` $base }}"{{ if eq $tab "assignments" }} aria-current="page"{{ end }}>Assignments</a>
+        <a class="course-hub-nav-link{{ if eq $tab "deliverables" }} active{{ end }}" href="{{ printf `%sdeliverables/` $base }}"{{ if eq $tab "deliverables" }} aria-current="page"{{ end }}>Deliverables</a>
+        <a class="course-hub-nav-link{{ if eq $tab "logistics" }} active{{ end }}" href="{{ printf `%slogistics/` $base }}"{{ if eq $tab "logistics" }} aria-current="page"{{ end }}>Course Logistics</a>
+        <a class="course-hub-nav-link{{ if eq $tab "gallery" }} active{{ end }}" href="{{ printf `%sgallery/` $base }}"{{ if eq $tab "gallery" }} aria-current="page"{{ end }}>Project Gallery</a>
       </div>
       <button class="course-hub-nav-fix" type="button" aria-pressed="false" data-course-nav-fix>
         <span data-course-nav-fix-label>Fix</span>
@@ -112,7 +116,9 @@
             <ul>
               {{ if eq $course.Params.assessment_project_position "after" }}{{ range $course.Params.assessment }}<li>{{ .label }} · {{ .weight }}%</li>{{ end }}{{ end }}
               {{ range $projectIndex, $project := $course.Params.project.items }}
-                {{ $projectNumber := add $projectIndex 1 }}{{ $projectWeight := 0 }}{{ range where $course.Params.assignments "project_number" $projectNumber }}{{ $projectWeight = add $projectWeight (int .weight) }}{{ end }}
+                {{ $projectNumber := add $projectIndex 1 }}{{ $projectWeight := 0 }}
+                {{ range where $courseAssignments "project_number" $projectNumber }}{{ with .weight }}{{ $projectWeight = add $projectWeight (int .) }}{{ end }}{{ end }}
+                {{ range where $courseDeliverables "project_number" $projectNumber }}{{ $projectWeight = add $projectWeight (int .weight) }}{{ end }}
                 <li>{{ $project.assessment_label | default (printf "Project %v: %s" $projectNumber $project.title) }} · {{ $projectWeight }}%</li>
               {{ end }}
               {{ if ne $course.Params.assessment_project_position "after" }}{{ range $course.Params.assessment }}<li>{{ .label }} · {{ .weight }}%</li>{{ end }}{{ end }}
@@ -184,8 +190,11 @@
       {{ with $course.Params.project }}
         {{ range $index, $project := .items }}
         {{ $projectNumber := add $index 1 }}
-        {{ $projectAssignments := where $course.Params.assignments "project_number" $projectNumber }}
-        {{ $projectWeight := 0 }}{{ range $projectAssignments }}{{ $projectWeight = add $projectWeight (int .weight) }}{{ end }}
+        {{ $projectAssignments := where $courseAssignments "project_number" $projectNumber }}
+        {{ $projectDeliverables := where $courseDeliverables "project_number" $projectNumber }}
+        {{ $projectWeight := 0 }}
+        {{ range $projectAssignments }}{{ with .weight }}{{ $projectWeight = add $projectWeight (int .) }}{{ end }}{{ end }}
+        {{ range $projectDeliverables }}{{ $projectWeight = add $projectWeight (int .weight) }}{{ end }}
         <section class="course-hub-section course-hub-project-section" id="project-{{ $projectNumber }}" aria-labelledby="project-{{ $projectNumber }}-title">
           <div class="course-hub-section-label course-hub-project-label"><span>Project {{ $projectNumber }}</span></div>
           <div class="course-hub-section-content">
@@ -209,12 +218,13 @@
               {{ with .work_setup }}
               <div class="course-hub-project-subsection"><h3>Project unit</h3><p>{{ . | safeHTML }}</p></div>
               {{ end }}
-              {{ with $projectAssignments }}
+              {{ if or $projectAssignments $projectDeliverables }}
               <div class="course-hub-project-subsection">
                 <h3>Grade breakdown</h3>
                 <div class="course-hub-grade-table" role="table" aria-label="Project 1 grade breakdown">
-                  <div class="course-hub-grade-head" role="row"><span role="columnheader">Deliverable</span><span role="columnheader">Focus</span><span role="columnheader">Weight</span></div>
-                  {{ range . }}<div role="row"><span role="cell"><a href="{{ printf `%sassignments/#deliverable-%v` $base .number }}">Deliverable #{{ .number }}</a></span><span role="cell">{{ .grade_focus | default .title }}</span><strong role="cell">{{ .weight }}%</strong></div>{{ end }}
+                  <div class="course-hub-grade-head" role="row"><span role="columnheader">Work item</span><span role="columnheader">Focus</span><span role="columnheader">Weight</span></div>
+                  {{ range $projectAssignments }}{{ $assignment := . }}{{ with .weight }}<div role="row"><span role="cell"><a href="{{ printf `%sassignments/#assignment-%v` $base $assignment.number }}">Assignment #{{ $assignment.number }}</a></span><span role="cell">{{ $assignment.grade_focus | default $assignment.title }}</span><strong role="cell">{{ . }}%</strong></div>{{ end }}{{ end }}
+                  {{ range $projectDeliverables }}<div role="row"><span role="cell"><a href="{{ printf `%sdeliverables/#deliverable-%v` $base .number }}">Deliverable #{{ .number }}</a></span><span role="cell">{{ .grade_focus | default .title }}</span><strong role="cell">{{ .weight }}%</strong></div>{{ end }}
                   <div role="row" class="is-total"><span role="cell">Total</span><span role="cell"></span><strong role="cell">{{ $projectWeight }}%</strong></div>
                 </div>
               </div>
@@ -270,7 +280,7 @@
               {{ $weekPath := printf "w%s" $weekNumber }}
               <div class="course-hub-week-topic course-hub-lecture--{{ $lectureStyle }}"><span class="course-hub-mobile-label">Lecture</span><h3><a href="{{ printf `%s%s/` $base $weekPath }}">{{ if strings.Contains .lecture ":" }}{{ replaceRE `^([^:]+:)[[:space:]]*(.*)$` `$1<br><span>$2</span>` .lecture | safeHTML }}{{ else }}{{ .lecture }}{{ end }}</a></h3></div>
               <div class="course-hub-week-cell"><span class="course-hub-mobile-label">In Class</span><ul>{{ range .in_class }}<li>{{ . }}</li>{{ end }}</ul></div>
-              <div class="course-hub-week-cell course-hub-week-cell--after"><span class="course-hub-mobile-label">After Class</span><ul class="course-hub-task-list">{{ range .after_class }}{{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "assignments" $course.Params.assignments "showDue" true "projectAnchor" (cond (isset $stageInfo "project_number") (printf "project-%v" $stageInfo.project_number) "") ) }}{{ end }}</ul></div>
+              <div class="course-hub-week-cell course-hub-week-cell--after"><span class="course-hub-mobile-label">After Class</span><ul class="course-hub-task-list">{{ range .after_class }}{{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables "showDue" true "projectAnchor" (cond (isset $stageInfo "project_number") (printf "project-%v" $stageInfo.project_number) "") ) }}{{ end }}</ul></div>
               {{ if $hasPaper }}
               <div class="course-hub-paper"><span class="course-hub-mobile-label">Paper</span>{{ with .paper }}<em>{{ . }}</em>{{ end }}</div>
               <div class="course-hub-stage-project{{ if $isStageStart }} is-stage-start{{ else }} is-stage-continuation{{ end }}{{ if $isStageEnd }} is-stage-end{{ end }}">
@@ -388,7 +398,7 @@
               </section>
               <section>
                 <h3>Assignments</h3>
-                <ul class="course-hub-task-list">{{ range $assignments }}{{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "assignments" $course.Params.assignments "showDue" true "projectAnchor" (cond (isset $stageInfo "project_number") (printf "project-%v" $stageInfo.project_number) "") ) }}{{ end }}</ul>
+                <ul class="course-hub-task-list">{{ range $assignments }}{{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables "showDue" true "projectAnchor" (cond (isset $stageInfo "project_number") (printf "project-%v" $stageInfo.project_number) "") ) }}{{ end }}</ul>
               </section>
               <section>
                 <h3>Key Takeaways</h3>
@@ -420,25 +430,28 @@
       {{ end }}
     {{ end }}
 
-    {{ if eq $tab "assignments" }}
-      <section class="course-hub-deliverables-overview" aria-labelledby="deliverables-overview-title">
+    {{ if or (eq $tab "assignments") (eq $tab "deliverables") }}
+      {{ $workKind := cond (eq $tab "assignments") "Assignment" "Deliverable" }}
+      {{ $workKindLower := lower $workKind }}
+      {{ $workItems := cond (eq $tab "assignments") $courseAssignments $courseDeliverables }}
+      <section class="course-hub-deliverables-overview" aria-labelledby="{{ $workKindLower }}s-overview-title">
         <div class="course-hub-deliverables-overview-heading">
           <div>
             <span>At a glance</span>
-            <h2 id="deliverables-overview-title">Deliverables overview</h2>
+            <h2 id="{{ $workKindLower }}s-overview-title">{{ $workKind }}s overview</h2>
           </div>
         </div>
         <div class="course-hub-deliverables-table-wrap">
-          <div class="course-hub-deliverables-table" role="table" aria-label="Deliverables overview">
+          <div class="course-hub-deliverables-table" role="table" aria-label="{{ $workKind }}s overview">
             <div class="course-hub-deliverables-table-head" role="row">
-              <span role="columnheader">Deliverable</span>
+              <span role="columnheader">{{ $workKind }}</span>
               <span role="columnheader">Weight</span>
               <span role="columnheader">Focus</span>
               <span role="columnheader">Due</span>
               <span role="columnheader">D-Day</span>
             </div>
             {{ $previousProject := "" }}
-            {{ range $course.Params.assignments }}
+            {{ range $workItems }}
             {{ $projectLabel := printf "Project %v" .project_number }}
             {{ $dueLabel := partial "teaching/due-label.html" .due_iso }}
             {{ if ne $projectLabel $previousProject }}
@@ -446,9 +459,9 @@
               <strong role="cell">{{ $projectLabel }}</strong>
             </div>
             {{ end }}
-            <a class="course-hub-deliverables-table-row {{ if or (strings.HasPrefix .title "[Mini-Report]") (strings.HasPrefix .title "[Progress-Report]") }}is-mini-report{{ else }}is-milestone{{ end }}" href="#deliverable-{{ .number }}" role="row" data-deliverable-trigger>
-              <strong role="cell">Deliverable #{{ .number }}</strong>
-              <strong role="cell">{{ .weight }}%</strong>
+            <a class="course-hub-deliverables-table-row {{ if or (strings.HasPrefix .title "[Mini-Report]") (strings.HasPrefix .title "[Progress-Report]") }}is-mini-report{{ else }}is-milestone{{ end }}" href="#{{ $workKindLower }}-{{ .number }}" role="row" data-deliverable-trigger>
+              <strong role="cell">{{ $workKind }} #{{ .number }}</strong>
+              <strong role="cell">{{ with .weight }}{{ . }}%{{ else }}—{{ end }}</strong>
               <span role="cell">{{ .title }}</span>
               <span role="cell">{{ $dueLabel }}</span>
               <small class="course-hub-deliverable-deadline" role="cell" data-deliverable-deadline data-deadline="{{ .due_iso }}"></small>
@@ -458,16 +471,16 @@
             {{ end }}
           </div>
         </div>
-        <p class="course-hub-deliverables-hint"><span aria-hidden="true">↓</span> Select a deliverable above to view its full details below.</p>
+        <p class="course-hub-deliverables-hint"><span aria-hidden="true">↓</span> Select a work item above to view its full details below.</p>
       </section>
-      {{ range $course.Params.assignments }}
+      {{ range $workItems }}
       {{ $dueLabel := partial "teaching/due-label.html" .due_iso }}
-      <section class="course-hub-section course-hub-assignment-section" id="deliverable-{{ .number }}" aria-labelledby="deliverable-{{ .number }}-title" data-deliverable-detail>
-        <div class="course-hub-section-label">Deliverable #{{ .number }}</div>
+      <section class="course-hub-section course-hub-assignment-section" id="{{ $workKindLower }}-{{ .number }}" aria-labelledby="{{ $workKindLower }}-{{ .number }}-title" data-deliverable-detail>
+        <div class="course-hub-section-label">{{ $workKind }} #{{ .number }}</div>
         <div class="course-hub-section-content">
           <div class="course-hub-assignment-heading">
-            <h2 id="deliverable-{{ .number }}-title"><span>Deliverable #{{ .number }}:</span> {{ .title }}</h2>
-            <span>{{ .weight }}%</span>
+            <h2 id="{{ $workKindLower }}-{{ .number }}-title"><span>{{ $workKind }} #{{ .number }}:</span> {{ .title }}</h2>
+            {{ with .weight }}<span>{{ . }}%</span>{{ end }}
           </div>
           <dl class="course-hub-assignment-meta"><div><dt>Project</dt><dd>Project {{ .project_number }}</dd></div>{{ with .assignment_type }}<div><dt>Format</dt><dd>{{ . }}</dd></div>{{ end }}<div class="course-hub-assignment-due"><dt>Due</dt><dd>{{ $dueLabel }}</dd></div></dl>
           <p class="course-hub-assignment-summary">{{ .summary }}</p>
@@ -512,14 +525,16 @@
         <div class="course-hub-section-content">
           <h2 id="grading-title">Grading scheme</h2>
           <div class="course-hub-assessment course-hub-assessment--single">
-            {{ if eq $course.Params.assessment_project_position "after" }}{{ range $course.Params.assessment }}{{ partial "teaching/course-assessment-row.html" (dict "row" . "base" $base "assignments" $course.Params.assignments) }}{{ end }}{{ end }}
+            {{ if eq $course.Params.assessment_project_position "after" }}{{ range $course.Params.assessment }}{{ partial "teaching/course-assessment-row.html" (dict "row" . "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables) }}{{ end }}{{ end }}
             {{ range $projectIndex, $project := $course.Params.project.items }}
-              {{ $projectNumber := add $projectIndex 1 }}{{ $projectWeight := 0 }}{{ range where $course.Params.assignments "project_number" $projectNumber }}{{ $projectWeight = add $projectWeight (int .weight) }}{{ end }}
+              {{ $projectNumber := add $projectIndex 1 }}{{ $projectWeight := 0 }}
+              {{ range where $courseAssignments "project_number" $projectNumber }}{{ with .weight }}{{ $projectWeight = add $projectWeight (int .) }}{{ end }}{{ end }}
+              {{ range where $courseDeliverables "project_number" $projectNumber }}{{ $projectWeight = add $projectWeight (int .weight) }}{{ end }}
               {{ $projectRow := dict "project" $projectNumber "label" ($project.assessment_label | default (printf "Project %v: %s" $projectNumber $project.title)) "weight" $projectWeight "note" ($project.assessment_note | default $project.description) }}
-              {{ partial "teaching/course-assessment-row.html" (dict "row" $projectRow "base" $base "assignments" $course.Params.assignments) }}
+              {{ partial "teaching/course-assessment-row.html" (dict "row" $projectRow "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables) }}
             {{ end }}
-            {{ if ne $course.Params.assessment_project_position "after" }}{{ range $course.Params.assessment }}{{ partial "teaching/course-assessment-row.html" (dict "row" . "base" $base "assignments" $course.Params.assignments) }}{{ end }}{{ end }}
-            {{ if $course.Params.assessment_show_total }}{{ partial "teaching/course-assessment-row.html" (dict "row" (dict "label" "Total" "weight" $assessmentTotal "note" $course.Params.assessment_total_note) "base" $base "assignments" $course.Params.assignments) }}{{ end }}
+            {{ if ne $course.Params.assessment_project_position "after" }}{{ range $course.Params.assessment }}{{ partial "teaching/course-assessment-row.html" (dict "row" . "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables) }}{{ end }}{{ end }}
+            {{ if $course.Params.assessment_show_total }}{{ partial "teaching/course-assessment-row.html" (dict "row" (dict "label" "Total" "weight" $assessmentTotal "note" $course.Params.assessment_total_note) "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables) }}{{ end }}
           </div>
           <p class="course-hub-footnote">Assessment weights are provisional until the official syllabus is published.</p>
         </div>
@@ -561,19 +576,22 @@
 
 {{ if eq $tab "overview" }}
 <script type="application/json" id="course-schedule-data">{{ jsonify $course.Params.weekly_schedule | safeJS }}</script>
-<script type="application/json" id="course-assignment-data">{{ jsonify $course.Params.assignments | safeJS }}</script>
+<script type="application/json" id="course-assignment-data">{{ jsonify $courseAssignments | safeJS }}</script>
+<script type="application/json" id="course-deliverable-data">{{ jsonify $courseDeliverables | safeJS }}</script>
 <script type="application/json" id="course-stage-data">{{ jsonify $course.Params.roadmap | safeJS }}</script>
 <script>
 (function () {
   var source = document.getElementById('course-schedule-data');
   var assignmentSource = document.getElementById('course-assignment-data');
+  var deliverableSource = document.getElementById('course-deliverable-data');
   var stageSource = document.getElementById('course-stage-data');
   var panel = document.getElementById('course-status-panel');
   if (!source || !panel) return;
-  var schedule, deliverables, stages;
+  var schedule, assignmentsData, deliverables, stages;
   try {
     schedule = JSON.parse(source.textContent);
-    deliverables = assignmentSource ? JSON.parse(assignmentSource.textContent) : [];
+    assignmentsData = assignmentSource ? JSON.parse(assignmentSource.textContent) : [];
+    deliverables = deliverableSource ? JSON.parse(deliverableSource.textContent) : [];
     stages = stageSource ? JSON.parse(stageSource.textContent) : [];
   } catch (error) { return; }
   if (!schedule || !schedule.length) return;
@@ -603,6 +621,10 @@
   function tasks(items) { return (items || []).map(function (item) { return item.task || item; }).join(' · '); }
   function assignments(items) {
     return (items || []).map(function (item) {
+      if (item.assignment) {
+        var assignment = assignmentsData.find(function (entry) { return Number(entry.number) === Number(item.assignment); });
+        if (assignment) item = { task: assignment.summary || assignment.title, due: dueLabel(assignment.due_iso) };
+      }
       if (item.deliverable) {
         var deliverable = deliverables.find(function (entry) { return Number(entry.number) === Number(item.deliverable); });
         if (deliverable) item = { task: deliverable.summary || deliverable.title, due: dueLabel(deliverable.due_iso) };
@@ -718,7 +740,7 @@
 }());
 </script>
 {{ end }}
-{{ if eq $tab "assignments" }}
+{{ if or (eq $tab "assignments") (eq $tab "deliverables") }}
 <script>
 (function () {
   var triggers = Array.prototype.slice.call(document.querySelectorAll('[data-deliverable-trigger]'));

@@ -499,7 +499,8 @@ weekly_schedule:
     after_class:
       -
         deliverable: 4
-assignments:
+assignments: []
+deliverables:
   -
     number: 1
     title: "Research Framing & RQ Proposal"
