@@ -258,8 +258,6 @@ weekly_schedule:
       -
         type: "Assignment"
         task: "Prepare a related-work matrix, revise the RQ based on the identified gap, and draft a one-paragraph gap statement and expected contribution."
-      -
-        deliverable: 1
   -
     week: "04"
     iso_date: "2026-09-25"
@@ -337,8 +335,6 @@ weekly_schedule:
       -
         type: "Preparation"
         task: "Finalize the mid-term presentation and all stimuli/prototype links; prepare specific questions for feedback."
-      -
-        deliverable: 2
   -
     week: "08"
     iso_date: "2026-10-23"
@@ -470,8 +466,6 @@ weekly_schedule:
         type: "Preparation"
         task: "No new FC lecture. Develop the final research narrative and finalize the presentation."
         due: "Dec. 11"
-      -
-        deliverable: 3
   -
     week: "15"
     iso_date: "2026-12-11"
@@ -496,9 +490,7 @@ weekly_schedule:
     paper: "Final Paper"
     in_class:
       - "No offline class"
-    after_class:
-      -
-        deliverable: 4
+    after_class: []
 assignments: []
 deliverables:
   -

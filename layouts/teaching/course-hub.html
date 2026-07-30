@@ -635,7 +635,7 @@
             <a class="course-hub-deliverables-table-row {{ if or (strings.HasPrefix .title "[Mini-Report]") (strings.HasPrefix .title "[Progress-Report]") }}is-mini-report{{ else }}is-milestone{{ end }}" href="#{{ $workKindLower }}-{{ .number }}" role="row" data-deliverable-trigger>
               <strong role="cell">{{ $workKind }} #{{ .number }}</strong>
               <strong role="cell">{{ with .weight }}{{ . }}%{{ else }}—{{ end }}</strong>
-              <span role="cell">{{ .title }}</span>
+              <span role="cell">{{ .title | markdownify }}</span>
               <span role="cell">{{ $dueLabel }}</span>
               <small class="course-hub-deliverable-deadline" role="cell" data-deliverable-deadline data-deadline="{{ .due_iso }}"></small>
               <span class="course-hub-deliverable-toggle" aria-hidden="true">+</span>
@@ -652,40 +652,49 @@
         <div class="course-hub-section-label">{{ $workKind }} #{{ .number }}</div>
         <div class="course-hub-section-content">
           <div class="course-hub-assignment-heading">
-            <h2 id="{{ $workKindLower }}-{{ .number }}-title"><span>{{ $workKind }} #{{ .number }}:</span> {{ .title }}</h2>
+            <h2 id="{{ $workKindLower }}-{{ .number }}-title"><span>{{ $workKind }} #{{ .number }}:</span> {{ .title | markdownify }}</h2>
             {{ with .weight }}<span>{{ . }}%</span>{{ end }}
           </div>
           <dl class="course-hub-assignment-meta"><div><dt>Project</dt><dd>Project {{ .project_number }}</dd></div>{{ with .assignment_type }}<div><dt>Format</dt><dd>{{ . }}</dd></div>{{ end }}<div class="course-hub-assignment-due"><dt>Due</dt><dd>{{ $dueLabel }}</dd></div></dl>
-          <p class="course-hub-assignment-summary">{{ .summary }}</p>
-          {{ with .objective }}<div class="course-hub-assignment-detail"><h3>Objective</h3><p>{{ . }}</p></div>{{ end }}
+          <div class="course-hub-assignment-summary">{{ .summary | markdownify }}</div>
+          {{ with .objective }}<div class="course-hub-assignment-detail"><h3>Objective</h3><div class="course-hub-assignment-detail-body">{{ . | markdownify }}</div></div>{{ end }}
           {{ with .contents }}
           <div class="course-hub-assignment-detail">
             <h3>Contents should include</h3>
             <ol class="course-hub-assignment-contents">
-              {{ range . }}<li><h4>{{ .title }}</h4><ul>{{ range .items }}<li>{{ . }}</li>{{ end }}</ul></li>{{ end }}
+              {{ range . }}<li><h4>{{ .title | markdownify }}</h4>{{ with .items }}<ul>{{ range . }}<li>{{ . | markdownify }}</li>{{ end }}</ul>{{ end }}{{ with .body }}<div class="course-hub-assignment-contents-body">{{ . | markdownify }}</div>{{ end }}</li>{{ end }}
             </ol>
           </div>
+          {{ else }}
+          {{ with .contents_markdown }}
+          <div class="course-hub-assignment-detail">
+            <h3>Contents should include</h3>
+            <div class="course-hub-assignment-contents-plain">{{ . | markdownify }}</div>
+          </div>
           {{ end }}
-          {{ with .presentation }}<div class="course-hub-assignment-detail"><h3>Presentation</h3><p>{{ . }}</p></div>{{ end }}
+          {{ end }}
+          {{ with .presentation }}<div class="course-hub-assignment-detail"><h3>Presentation</h3><div class="course-hub-assignment-detail-body">{{ . | markdownify }}</div></div>{{ end }}
           {{ with .upload_file }}
           <div class="course-hub-assignment-detail">
             <h3>Upload file</h3>
             <dl class="course-hub-assignment-file">
-              <div><dt>File type</dt><dd>{{ .file_type }}</dd></div>
-              <div><dt>Recommended length</dt><dd>{{ .recommended_length }}</dd></div>
-              <div><dt>File naming rule</dt><dd><code>{{ .filename_rule }}</code></dd></div>
-              <div><dt>Example</dt><dd><code>{{ .example }}</code></dd></div>
+              {{ with .file_type }}<div><dt>File type</dt><dd>{{ . | markdownify }}</dd></div>{{ end }}
+              {{ with .recommended_length }}<div><dt>Recommended length</dt><dd>{{ . | markdownify }}</dd></div>{{ end }}
+              {{ with .required_visuals }}<div><dt>Required visuals</dt><dd>{{ . | markdownify }}</dd></div>{{ end }}
+              {{ with .filename_rule }}<div><dt>File naming rule</dt><dd><code>{{ . }}</code></dd></div>{{ end }}
+              {{ with .example }}<div><dt>Example</dt><dd><code>{{ . }}</code></dd></div>{{ end }}
+              {{ range .additional_fields }}<div><dt>{{ .label }}</dt><dd>{{ .value | markdownify }}</dd></div>{{ end }}
             </dl>
           </div>
           {{ end }}
-          {{ with .submission_method }}<div class="course-hub-assignment-detail"><h3>Submission method</h3><p>{{ . }}</p></div>{{ end }}
+          {{ with .submission_method }}<div class="course-hub-assignment-detail"><h3>Submission method</h3><div class="course-hub-assignment-detail-body">{{ . | markdownify }}</div></div>{{ end }}
           {{ if and .show_detailed_deadline .due_iso }}<div class="course-hub-assignment-detail"><h3>Deadline</h3><p><strong>{{ time.Format "Monday, January 2, 2006, 3:04 PM (MST)" .due_iso }}</strong></p></div>{{ end }}
           {{ if .show_evaluation_percentage }}<div class="course-hub-assignment-detail"><h3>Evaluation percentage</h3><p><strong>{{ .weight }}% of the final course grade</strong></p></div>{{ end }}
-          {{ with .evaluation_focus }}<div class="course-hub-assignment-detail"><h3>Evaluation focus</h3><p>{{ . }}</p></div>{{ end }}
-          {{ with .purpose }}<div class="course-hub-assignment-detail"><h3>Purpose</h3><p>{{ . }}</p></div>{{ end }}
-          {{ with .requirements }}<div class="course-hub-assignment-detail"><h3>Requirements</h3><ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul></div>{{ end }}
-          {{ with .submission }}<div class="course-hub-assignment-detail"><h3>Submission</h3><p>{{ . }}</p></div>{{ end }}
-          {{ with .criteria }}<div class="course-hub-assignment-detail"><h3>Evaluation criteria</h3><ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul></div>{{ end }}
+          {{ with .evaluation_focus }}<div class="course-hub-assignment-detail"><h3>Learning Focus</h3><div class="course-hub-assignment-detail-body">{{ . | markdownify }}</div></div>{{ end }}
+          {{ with .purpose }}<div class="course-hub-assignment-detail"><h3>Purpose</h3><div class="course-hub-assignment-detail-body">{{ . | markdownify }}</div></div>{{ end }}
+          {{ with .requirements }}<div class="course-hub-assignment-detail"><h3>Requirements</h3><ul>{{ range . }}<li>{{ . | markdownify }}</li>{{ end }}</ul></div>{{ end }}
+          {{ with .submission }}<div class="course-hub-assignment-detail"><h3>Submission</h3><div class="course-hub-assignment-detail-body">{{ . | markdownify }}</div></div>{{ end }}
+          {{ with .criteria }}<div class="course-hub-assignment-detail"><h3>Evaluation criteria</h3><ul>{{ range . }}<li>{{ . | markdownify }}</li>{{ end }}</ul></div>{{ end }}
           {{ range .additional_sections }}<div class="course-hub-assignment-detail course-hub-assignment-detail--additional"><h3>{{ .title }}</h3><div>{{ .content | markdownify }}</div></div>{{ end }}
         </div>
       </section>

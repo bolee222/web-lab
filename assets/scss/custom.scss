@@ -1692,8 +1692,8 @@ img.rounded {
 .course-hub-week-cell .course-hub-task-list { padding-left: 12px; }
 .course-hub-task-list li + li { margin-top: 6px; }
 .course-hub-task-list li span { font-weight: 600; }
-.course-hub-task-list .task-label-fc { color: #2f70df; }
-.course-hub-task-list .task-label-deliverable { color: #2f70df; }
+.course-hub-task-list .task-label-fc { color: #247a9c; }
+.course-hub-task-list .task-label-deliverable { color: #fff; }
 .course-hub-task-list .course-hub-task-tag { display: inline-block; white-space: nowrap; }
 .course-hub-task-list .course-hub-task-tag--fc,
 .course-hub-task-list .course-hub-task-tag--prep {
@@ -1702,35 +1702,54 @@ img.rounded {
   line-height: 1.2;
 }
 .course-hub-task-list .course-hub-task-tag--fc {
-  background: #fff0a8;
+  background: #dff4fb;
+}
+.course-hub-task-list .course-hub-task-tag--fc .task-label-fc {
+  color: #247a9c;
 }
 .course-hub-task-list .course-hub-task-tag--prep,
 .course-hub-task-list .course-hub-task-tag--assignment {
   padding: 2px 6px;
-  background: #e5e5e5;
+  background: #e9edfa;
   border-radius: 5px;
   line-height: 1.2;
 }
+.course-hub-task-list .course-hub-task-tag--assignment .task-label-assignment {
+  color: $brand-color-text-primary;
+}
 .course-hub-task-list .course-hub-task-tag--deliverable {
   padding: 2px 6px;
-  background: #7894ef;
+  background: #cdd8fb;
   border-radius: 5px;
   line-height: 1.2;
 }
 .course-hub-task-list .course-hub-task-tag--deliverable .task-label-deliverable,
-.course-hub-task-list .course-hub-task-tag--deliverable .task-weight-deliverable { color: #fff; }
+.course-hub-task-list .course-hub-task-tag--deliverable .task-weight-deliverable { color: $brand-color-text-primary; }
 .course-hub-task-list .task-weight-deliverable { margin-left: 4px; color: #222; font-weight: 600; }
 .course-hub-task-list .task-label-default { color: #222; }
 .course-hub-task-list li .course-hub-task-copy { font-weight: inherit; }
 .course-hub-task-link { color: inherit; text-decoration: none; }
 .course-hub-task-link:hover, .course-hub-task-link:focus { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.course-hub-task-link.is-assignment { display: inline; }
 .course-hub-task-link.is-deliverable { display: inline; }
+.course-hub-week-cell--after .course-hub-task-link .course-hub-task-copy { display: inline; }
 .course-hub-task-link.is-deliverable .course-hub-task-tag { display: inline-block; }
 .course-hub-task-link.is-deliverable + .course-hub-task-due { display: inline-block; margin-left: 4px; }
 .course-hub-task-due { display: inline-block; margin-left: 6px; color: #555; font-size: 14px; font-weight: 600; line-height: 1.4; white-space: nowrap; }
-.course-hub-week-cell--after .course-hub-task-list li { line-height: 1.32; }
-.course-hub-week-cell--after .course-hub-task-list li + li { margin-top: 3px; }
-.course-hub-week-cell--after .course-hub-task-due { line-height: 1.25; }
+.course-hub-week-cell--after .course-hub-task-list li {
+  margin-bottom: 0;
+  line-height: 1.38;
+}
+.course-hub-week-cell--after .course-hub-task-list li + li { margin-top: 12px; }
+.course-hub-week-cell--after .course-hub-task-copy { font-weight: 400; }
+.course-hub-week-cell--after .course-hub-task-due {
+  font-size: inherit;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.38;
+}
+.course-hub-week-cell--after .course-hub-task-due span { margin-right: 3px; }
+.course-hub-week-cell--after .course-hub-task-due strong { font-weight: 500; }
 .course-hub-mobile-label { display: none; }
 
 .course-hub-assessment { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--course-ink); }
@@ -1901,14 +1920,14 @@ img.rounded {
 .course-hub-semester-focus > span {
   padding-top: 2px;
   color: var(--course-accent);
-  font-size: 10px;
-  font-weight: 500;
+  font-size: 11px;
+  font-weight: 600;
   letter-spacing: .05em;
   text-transform: uppercase;
 }
 
-.course-hub-semester-focus strong { display: block; color: $brand-color-grad-primary; font-size: 14px; font-weight: 600; line-height: 1.4; }
-.course-hub-semester-focus p { max-width: 780px; margin: 4px 0 0; color: #555; font-size: 12px; line-height: 1.55; }
+.course-hub-semester-focus strong { display: block; color: $brand-color-grad-primary; font-size: 16px; font-weight: 600; line-height: 1.4; }
+.course-hub-semester-focus p { max-width: 900px; margin: 5px 0 0; color: #555; font-size: 14px; line-height: 1.55; }
 .course-hub-semester-focus p a {
   display: inline;
   width: auto;
@@ -1929,11 +1948,11 @@ img.rounded {
   background: #eeeeee;
 }
 
-.course-hub-flipped-learning > span { padding-top: 2px; color: #888; font-size: 10px; font-weight: 500; letter-spacing: .05em; text-transform: uppercase; }
-.course-hub-flipped-learning strong { display: block; color: #333; font-size: 14px; font-weight: 600; line-height: 1.4; }
-.course-hub-flipped-learning p { max-width: 900px; margin: 4px 0 0; color: #555; font-size: 12px; line-height: 1.5; }
+.course-hub-flipped-learning > span { padding-top: 2px; color: #777; font-size: 11px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+.course-hub-flipped-learning strong { display: block; color: #333; font-size: 16px; font-weight: 600; line-height: 1.4; }
+.course-hub-flipped-learning p { max-width: 1000px; margin: 5px 0 0; color: #555; font-size: 14px; line-height: 1.55; }
 .course-hub-flipped-learning ul { max-width: 900px; margin: 5px 0 0; padding-left: 15px; list-style: disc; }
-.course-hub-flipped-learning li { color: #555; font-size: 12px; line-height: 1.5; }
+.course-hub-flipped-learning li { color: #555; font-size: 14px; line-height: 1.55; }
 
 .course-hub-facts {
   display: flex;
@@ -2500,12 +2519,21 @@ img.rounded {
 .course-hub-assignment-meta .course-hub-assignment-due dt { color: #444; font-size: 13px; letter-spacing: 0; text-transform: none; }
 .course-hub-assignment-meta .course-hub-assignment-due dd { color: #222; font-size: 15px; font-weight: 700; }
 .course-hub-assignment-summary { max-width: 1050px; margin: 0; color: #555; font-size: 13px; line-height: 1.6; }
+.course-hub-assignment-summary p { margin: 0; }
 .course-hub-assignment-detail { margin-top: 24px; }
 .course-hub-assignment-detail h3 { margin: 0 0 8px; color: #222; font-size: 14px; font-weight: 700; }
 .course-hub-assignment-detail p, .course-hub-assignment-detail li { color: #555; font-size: 13px; line-height: 1.55; }
 .course-hub-assignment-detail p { margin: 0; }
 .course-hub-assignment-detail ul { margin: 0; padding-left: 18px; }
 .course-hub-assignment-detail li { margin-bottom: 4px; }
+.course-hub-assignment-detail-body {
+  color: #555;
+  font-size: 13px;
+  line-height: 1.55;
+}
+.course-hub-assignment-detail-body ul { list-style: disc; }
+.course-hub-assignment-detail-body ol { list-style: decimal; }
+.course-hub-assignment-detail-body ul ul { list-style: circle; }
 .course-hub-assignment-contents {
   display: grid;
   grid-template-columns: 1fr;
@@ -2538,6 +2566,22 @@ img.rounded {
 .course-hub-assignment-contents h4 { margin: 0; color: #222; font-size: 12px; font-weight: 700; }
 .course-hub-assignment-contents ul { padding-left: 15px; list-style: disc; }
 .course-hub-assignment-contents ul li { margin-bottom: 1px; color: #555; font-size: 12px; font-weight: 400; line-height: 1.45; }
+.course-hub-assignment-contents-body > :first-child { margin-top: 0; }
+.course-hub-assignment-contents-body > :last-child { margin-bottom: 0; }
+.course-hub-assignment-contents-body h5 {
+  margin: 12px 0 5px;
+  color: #333;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+.course-hub-assignment-contents-body p { margin: 0 0 7px; }
+.course-hub-assignment-contents-body ul,
+.course-hub-assignment-contents-body ol { margin: 0 0 9px; }
+.course-hub-assignment-contents-plain { max-width: 980px; }
+.course-hub-assignment-contents-plain > ul { margin: 0; padding-left: 20px; }
+.course-hub-assignment-contents-plain li { margin-bottom: 7px; font-weight: 400; }
+.course-hub-assignment-contents-plain li > ul { margin-top: 4px; }
 .course-hub-assignment-file {
   max-width: 720px;
   margin: 0;
@@ -2548,6 +2592,7 @@ img.rounded {
 .course-hub-assignment-file dd { margin: 0; padding: 9px 10px; font-size: 12px; line-height: 1.45; }
 .course-hub-assignment-file dt { color: #666; font-weight: 600; }
 .course-hub-assignment-file dd { color: #333; }
+.course-hub-assignment-file dd p { margin: 0; }
 .course-hub-assignment-file code { padding: 2px 5px; border-radius: 3px; background: #f1f3f8; color: #263b92; font-size: 11px; }
 .course-hub-provisional, .course-hub-footnote { font-size: 12px; }
 
@@ -2650,6 +2695,70 @@ img.rounded {
 .course-hub-task b { font-size: 11px; }
 .course-hub-task p, .course-hub-week-cell li { font-size: 13px; line-height: 1.4; }
 .course-hub-week-cell li { margin-bottom: 2px; }
+
+// Weekly schedule type scale:
+// primary row content 13px, supporting metadata 11–12px.
+.course-hub-schedule .course-hub-week strong {
+  font-size: 13px;
+  font-weight: 700;
+}
+.course-hub-schedule .course-hub-week > span {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+.course-hub-schedule .course-hub-week-topic h3 {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.course-hub-schedule .course-hub-week-cell li {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.45;
+}
+.course-hub-schedule .course-hub-task-tag {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.course-hub-schedule .course-hub-task-tag span {
+  font-weight: 600;
+}
+.course-hub-schedule .course-hub-task-list li .course-hub-task-copy {
+  color: #4f4f4f;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.45;
+}
+.course-hub-schedule .course-hub-task-due {
+  color: #666;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.course-hub-schedule .course-hub-task-due span,
+.course-hub-schedule .course-hub-task-due strong {
+  font-size: inherit;
+  font-weight: 400;
+}
+.course-hub-schedule .course-hub-stage-project strong {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.course-hub-schedule .course-hub-project-link,
+.course-hub-schedule .course-hub-stage-project > span:not(.course-hub-mobile-label) {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+.course-hub-schedule .course-hub-stage-project small {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.35;
+}
 
 .course-hub-assessment article { padding-top: 18px; padding-bottom: 18px; }
 .course-hub-assessment strong { font-size: 20px; }

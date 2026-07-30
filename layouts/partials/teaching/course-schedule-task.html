@@ -54,12 +54,12 @@
 {{- $isProject := strings.HasPrefix $taskType "Project" -}}
 {{- $taskHref := "" -}}
 {{- if $isAssignment -}}
-  {{- $assignmentNumber := replaceRE `^Assignment[[:space:]]+([0-9]+).*$` `$1` $taskType -}}
+  {{- $assignmentNumber := replaceRE `^Assignment[[:space:]]+#?([0-9]+).*$` `$1` $taskType -}}
   {{- if ne $assignmentNumber $taskType -}}
     {{- $taskHref = printf `%sassignments/#assignment-%s` $base $assignmentNumber -}}
   {{- end -}}
 {{- else if $isDeliverable -}}
-  {{- $deliverableNumber := replaceRE `^Deliverable[[:space:]]+([0-9]+).*$` `$1` $taskType -}}
+  {{- $deliverableNumber := replaceRE `^Deliverable[[:space:]]+#?([0-9]+).*$` `$1` $taskType -}}
   {{- if ne $deliverableNumber $taskType -}}
     {{- $taskHref = printf `%sdeliverables/#deliverable-%s` $base $deliverableNumber -}}
   {{- end -}}
@@ -73,7 +73,7 @@
     {{- $taskHref = printf `%sproject/` $base -}}
   {{- end -}}
 {{- end -}}
-<li>
+<li class="course-hub-task-item{{ if $isAssignment }} course-hub-task-item--assignment{{ else if $isDeliverable }} course-hub-task-item--deliverable{{ else if eq $taskLabel "FC" }} course-hub-task-item--fc{{ end }}">
   <span class="course-hub-task-main{{ if $isProject }} is-project{{ end }}">
     {{- if and $taskHref (not $showAction) }}<a class="course-hub-task-link{{ if $isDeliverable }} is-deliverable{{ else if $isAssignment }} is-assignment{{ end }}" href="{{ $taskHref }}">{{ end -}}
     {{- if not $isProject }}<span class="course-hub-task-tag course-hub-task-tag--{{ if $isAssignment }}assignment{{ else if $isDeliverable }}deliverable{{ else }}{{ $taskLabel | urlize }}{{ end }}"><span class="{{ $taskClass }}">{{ $taskDisplay }}</span></span> {{ end -}}
@@ -87,6 +87,11 @@
     {{- if and $showAction $taskHref (or $isAssignment $isDeliverable) }}
       <a class="course-hub-task-action" href="{{ $taskHref }}">View {{ $taskType }} <span aria-hidden="true">→</span></a>
     {{- end }}
+    {{- if not $showAction }}
+      {{- if and $showDue $item.due }} <small class="course-hub-task-due"><span>Due</span><strong>{{ $item.due }}</strong></small>{{ end -}}
+    {{- end }}
   </span>
-  {{- if and $showDue $item.due }} <small class="course-hub-task-due"><span>Due</span><strong>{{ $item.due }}</strong></small>{{ end -}}
+  {{- if $showAction }}
+    {{- if and $showDue $item.due }} <small class="course-hub-task-due"><span>Due</span><strong>{{ $item.due }}</strong></small>{{ end -}}
+  {{- end }}
 </li>
