@@ -2,7 +2,7 @@
 {{- if not $value -}}
   To be confirmed
 {{- else if strings.Contains $value "T" -}}
-  {{- time.Format "Jan. 02, 3:04 PM" $value -}}
+  {{- time.Format "2006.01.02, 3:04PM" $value -}}
 {{- else -}}
-  {{- time.Format "Jan. 02" $value -}}
+  {{- time.Format "2006.01.02" $value -}}
 {{- end -}}

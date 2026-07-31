@@ -1,0 +1,35 @@
+{{- $value := . -}}
+{{- $pattern := `^\s*(?:[0-9]+\.|-)\s+\*\*([^*]+?):\*\*\s*(.*)$` -}}
+{{- $lines := split $value "\n" -}}
+{{- $hasRows := false -}}
+{{- range $lines -}}
+  {{- if findRE $pattern . -}}{{- $hasRows = true -}}{{- end -}}
+{{- end -}}
+{{- if $hasRows -}}
+  {{- $introLines := slice -}}
+  {{- range $lines -}}
+    {{- if and (not (findRE $pattern .)) (ne . "") -}}
+      {{- $introLines = $introLines | append . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- with $introLines -}}
+  <div class="course-hub-learning-focus-intro">{{ delimit . "\n" | markdownify }}</div>
+  {{- end -}}
+  <dl class="course-hub-assignment-file course-hub-learning-focus-table">
+    {{- range $lines -}}
+      {{- if findRE $pattern . -}}
+      <div>
+        <dt>{{ replaceRE $pattern "$1" . | markdownify }}</dt>
+        <dd>{{ replaceRE $pattern "$2" . | markdownify }}</dd>
+      </div>
+      {{- end -}}
+    {{- end -}}
+  </dl>
+{{- else -}}
+  <dl class="course-hub-assignment-file course-hub-learning-focus-table">
+    <div>
+      <dt>Focus</dt>
+      <dd>{{ $value | markdownify }}</dd>
+    </div>
+  </dl>
+{{- end -}}

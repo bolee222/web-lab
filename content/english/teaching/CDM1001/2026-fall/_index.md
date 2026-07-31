@@ -105,39 +105,7 @@ project:
         - "Explain design relationships through elements, effects, users, contexts, conditions, limitations, and exceptions rather than relying on preference or universal rules."
         - "Use D:Branch critically to develop personal learning questions, compare visual variations, identify unintended changes, and determine what requires further evidence."
         - "Connect multiple design domains when examining an integrated experience."
-      format:
-        -
-          title: "Weeks 2–3 · Foundational Assignments"
-          text: "Students examine Art–Design differences and Art–Business collaboration through two individual assignments."
-        -
-          title: "Weeks 4–7 · Classroom Case Learning"
-          text: "Students individually study four principles per domain through instructor-prepared Case Set A or Case Set B materials and complete an unseen new-case analysis. Students do not operate D:Branch during the classroom comparison activity."
-        -
-          title: "Weeks 4–7 · Self-Directed D:Branch Mini-Reports"
-          text: "Each student selects one principle and one personally meaningful case, defines a learning goal, completes an initial and follow-up exploration, analyzes useful and unsuccessful branches, and reflects on D:Branch use."
-        -
-          title: "Week 7 · Cross-disciplinary Synthesis"
-          text: "Deliverable #4 connects the selected Service Design direction to relevant Graphic, Product, and Interaction Design decisions."
-      work_setup: "<strong>Individual.</strong> Assignments #1–2 and Deliverables #1–4 are submitted and assessed individually. Week 2–3 may include temporary group discussion, while Week 4–7 classroom comparisons are completed individually. Group A and Group B identify case-learning material conditions and are not project teams."
-      evaluation_criteria:
-        -
-          title: "Conceptual understanding"
-          text: "Accurately applies the relevant Art, Graphic, Product, Interaction, or Service Design concepts."
-        -
-          title: "Learning goal and case relevance"
-          text: "Defines a focused question and selects a case suitable for investigating it."
-        -
-          title: "Exploration process"
-          text: "Documents complete initial and follow-up explorations and develops questions from observed results."
-        -
-          title: "Conditional reasoning"
-          text: "Explains effects in relation to users, media, tasks, contexts, conditions, boundaries, and trade-offs."
-        -
-          title: "Critical use of D:Branch"
-          text: "Identifies useful, unsuccessful, inaccurate, or unintended outputs and distinguishes visual inference from claims requiring further evidence."
-        -
-          title: "Communication and reflection"
-          text: "Presents the process clearly and reflects specifically on learning and tool limitations."
+      work_setup: "<strong>Individual.</strong> Homework #1–2 and Deliverables #1–4 are submitted and assessed individually. Week 2–3 may include temporary group discussion, while Week 4–7 classroom comparisons are completed individually. Group A and Group B identify case-learning material conditions and are not project teams."
     -
       title: "Pop-up Store Design Critique"
       unit: "Individual"
@@ -148,36 +116,7 @@ project:
         - "Evaluate whether each design decision supports the purpose of the space and its targeted visitors."
         - "Explain why particular design elements are effective or ineffective beyond subjective judgments."
         - "Develop a holistic perspective on how multiple design components work together."
-      format:
-        -
-          title: "Field Visit"
-          text: "Students visit one pop-up store or comparable space and collect their own observations, photographs, and supporting information."
-        -
-          title: "Design Elements Analysis"
-          text: "Students analyze art, graphic design, product design, interaction design, and service design elements within the selected space. For each area, they examine its contribution to the visitor experience, its alignment with the purpose and targeted visitors, and possible directions for improvement. They also identify at least three relationships among different design elements and analyze how these elements support, enhance, or conflict with one another."
-        -
-          title: "Individual Report Writing"
-          text: "Each student submits an individual Mid-term Report using the provided template. The report includes four sections: Pop-up Store Description, Single Design Elements Analysis, Inter-relational Design Reflection, and Personal Reflection."
       work_setup: "<strong>Individual.</strong> Students may visit and discuss the space with classmates. However, the observation, analysis, improvement suggestions, and final report are completed and assessed individually."
-      evaluation_criteria:
-        -
-          title: "Application of learned design principles"
-          text: "Accurately applies the principles introduced in Project 1."
-        -
-          title: "Quality of observation"
-          text: "Supports the analysis with specific examples and visual evidence."
-        -
-          title: "Purpose- and user-centered thinking"
-          text: "Evaluates design decisions in relation to the space’s goals and targeted visitors."
-        -
-          title: "Quality of reasoning"
-          text: "Clearly explains why specific design elements are effective or ineffective."
-        -
-          title: "Inter-relational thinking"
-          text: "Identifies meaningful synergies and tensions among different design elements."
-        -
-          title: "Holistic reflection"
-          text: "Demonstrates an integrated understanding of art, design, experience, and design management."
     -
       title: "Interdisciplinary Industry Project (Studio Mikko Laakkonen)"
       unit: "Team"
@@ -190,54 +129,7 @@ project:
         - "Translate user research findings into meaningful customer insights and opportunity areas."
         - "Develop a coherent marketing strategy connecting target customers, positioning, messaging, channels, and customer experience."
         - "Integrate user-centered, customer-centered, and strategic-centered thinking."
-      format:
-        -
-          title: "Week 9 · Assignment #3 — Individual Desk Research"
-          text: "Each student investigates Studio Mikko Laakkonen, the Korean furniture market, relevant competitors, and cultural or customer factors before team research begins."
-        -
-          title: "Week 10 · Assignment #4 — Team User Research Execution and Evidence Collection"
-          text: "Teams finalize and conduct their study, then submit an organized research package with key quotes, notes, outputs, field memo, and limitations."
-        -
-          title: "Week 11 · Assignment #5 — Team User Insights and Strategic Opportunity Areas"
-          text: "Teams analyze the collected research materials in class and refine three to five user insights and two to three strategic opportunity areas."
-        -
-          title: "Week 12 · Assignment #6 — From Target Customer to Value Ideas"
-          text: "Teams select a priority customer, identify decision factors, and develop two to three value ideas. This is a required working assignment but is not separately weighted."
-        -
-          title: "Week 13 · Strategic Preparation"
-          text: "Teams compare approximately four competitors, evaluate possible strategic positions, and prepare one provisional strategy and consultation questions. No separate submission is required."
-        -
-          title: "Week 14 · Deliverable #6 — Final Proposal Development"
-          text: "Teams use the consultation to develop and finalize one coherent Korean market-entry marketing strategy proposal."
-        -
-          title: "Week 15 · Final Client Presentation"
-          text: "Teams present Deliverable #6 to the class and external collaborators. The submission deadline remains Dec. 8 before class."
-      work_setup: "<strong>Mixed individual and team structure.</strong> Assignment #3 is completed individually so that every student enters the team project with an evidence base. Assignments #4–6 and Deliverable #6 are completed as team work. All members are expected to participate meaningfully in research, analysis, customer framing, strategy development, and presentation. Individual grades may be adjusted when documented contribution differs substantially."
-      evaluation_criteria:
-        -
-          title: "Understanding of the company and context"
-          text: "Accurately reflects the Finnish company’s identity while considering the Korean cultural and market environment."
-        -
-          title: "Quality of user research"
-          text: "Uses appropriate participants, questions, and methods to collect meaningful evidence."
-        -
-          title: "Insight development"
-          text: "Moves beyond summarizing responses and identifies relevant customer needs, patterns, and opportunities."
-        -
-          title: "Research-to-strategy connection"
-          text: "Clearly demonstrates how the proposed strategy was developed from research findings."
-        -
-          title: "Interdisciplinary integration"
-          text: "Meaningfully connects culture, design, customer experience, marketing, and management perspectives."
-        -
-          title: "Strategic coherence"
-          text: "Aligns the target customer, positioning, message, channels, and experience within one consistent proposal."
-        -
-          title: "Cultural relevance and feasibility"
-          text: "Proposes an approach that is appropriate for Korean customers and realistic for the partner company."
-        -
-          title: "Originality and professional communication"
-          text: "Presents a distinctive, well-supported, and clearly communicated strategy."
+      work_setup: "<strong>Mixed individual and team structure.</strong> Homework #3 is completed individually so that every student enters the team project with an evidence base. Homework #4–6 and Deliverable #6 are completed as team work. All members are expected to participate meaningfully in research, analysis, customer framing, strategy development, and presentation. Individual grades may be adjusted when documented contribution differs substantially."
     -
       title: "Personal Interdisciplinary Map"
       unit: "Individual"
@@ -250,39 +142,7 @@ project:
         - "Connect personal interests to user-centered, customer-centered, and company-centered design thinking approaches."
         - "Clarify a possible future learning or career direction through a representative interdisciplinary case."
         - "Develop a more intentional understanding of one’s position within Culture and Design Management."
-      format:
-        -
-          title: "Personal Interdisciplinary Diagram"
-          text: "Students create a visual diagram representing the disciplines they wish to connect. The diagram may begin with design, art, management, and technology, but students may add or subdivide domains such as product design, graphic design, service design, psychology, architecture, culture, or museum studies."
-        -
-          title: "Diagram Description and Reflection"
-          text: "Students explain the selected domains, their intersection areas, and the synergies they hope to create. They should also describe which design thinking perspectives and processes they wish to emphasize, using their course and project experiences—particularly the interdisciplinary collaboration in Project 3—as supporting evidence."
-        -
-          title: "Representative Case Analysis"
-          text: "Students select one design project, business case, organization, or professional example that closely aligns with their interdisciplinary diagram. They explain how the case combines the selected domains and how it may serve as a reference for their future learning or career direction."
-        -
-          title: "Individual Final Report"
-          text: "Each student submits an individual report using the provided format. The report consists of a personal interdisciplinary diagram, a written explanation of the diagram, and a representative case analysis."
       work_setup: "<strong>Individual.</strong> Project 4 is completed and assessed individually. The diagram and written discussion should reflect each student’s own interests, experiences, and future direction rather than presenting a general description of interdisciplinary design."
-      evaluation_criteria:
-        -
-          title: "Clarity of interdisciplinary mapping"
-          text: "Clearly identifies the disciplines and subdomains the student wishes to integrate."
-        -
-          title: "Quality of connections"
-          text: "Explains meaningful relationships and synergies among the selected domains."
-        -
-          title: "Use of course experience"
-          text: "Supports the diagram with specific learning or collaboration experiences from the course."
-        -
-          title: "Understanding of design thinking"
-          text: "Appropriately connects the map to user-, customer-, and company-centered perspectives."
-        -
-          title: "Case alignment"
-          text: "Selects and analyzes a representative case that closely reflects the proposed interdisciplinary approach."
-        -
-          title: "Future direction"
-          text: "Presents a thoughtful and plausible direction for further learning, projects, or career exploration."
 roadmap_intro: "The four projects form a cumulative learning sequence. Students first use D:Branch to practice seeing design cases from multiple perspectives, then apply those perspectives to a critical analysis of a real pop-up store. They extend this ability through a multidisciplinary industry collaboration with Studio Mikko Laakkonen and finally translate their accumulated learning into a personal interdisciplinary map."
 roadmap:
   -
@@ -386,7 +246,7 @@ weekly_schedule:
       - "Art–Design Spectrum discussion"
     after_class:
       -
-        type: "Assignment #1"
+        type: "Homework #1"
         task: "How Do Art and Design Approach Technology?"
         due: "Sep. 14, 11:59 PM"
       -
@@ -401,14 +261,14 @@ weekly_schedule:
     lecture_main: "CDM Design Lens #2"
     lecture_subtitle: "Art + Business"
     in_class:
-      - "Week 2 assignment review + Art–Business collaboration deep dive"
+      - "Week 2 homework review + Art–Business collaboration deep dive"
     after_class:
       -
         type: "FC Lecture"
         task: "Watch ‘Graphic Design Elements.’"
         due: "Sep. 22 before class."
       -
-        type: "Assignment #2"
+        type: "Homework #2"
         task: "Deepening an Art–Business Collaboration through Technology"
         due: "Sep. 21, 11:59 PM"
   -
@@ -507,7 +367,7 @@ weekly_schedule:
         task: "Watch ‘User-centered Design’ and ‘User Research Methods.’"
         due: "Nov. 3 before class"
       -
-        type: "Assignment #3"
+        type: "Homework #3"
         task: "Furniture Company Marketing Desk Research"
         due: "Nov. 3"
   -
@@ -525,7 +385,7 @@ weekly_schedule:
         task: "Watch ‘User-centered Design methods.’"
         due: "Nov. 10 before class"
       -
-        type: "Assignment #4"
+        type: "Homework #4"
         task: "User Research Execution and Evidence Collection"
         due: "Nov. 10"
   -
@@ -539,7 +399,7 @@ weekly_schedule:
       - "Pattern and tension mapping, user-insight development, and strategic opportunity framing"
     after_class:
       -
-        type: "Assignment #5"
+        type: "Homework #5"
         task: "User Insights and Strategic Opportunity Areas"
         due: "Nov. 17"
       -
@@ -561,7 +421,7 @@ weekly_schedule:
         task: "Watch ‘Strategic Design Thinking.’"
         due: "Nov. 24 before class"
       -
-        type: "Assignment #6"
+        type: "Homework #6"
         task: "Customer-Centered Value Ideas"
         due: "Nov. 24"
   -
@@ -644,7 +504,7 @@ assignments:
       required_visuals: "At least one visual reference for each case"
       filename_rule: "A1_StudentID_StudentName.pdf"
       example: "A1_2026123456_JaneKim.pdf"
-    submission_method: "Upload the final PDF to the Assignment #1 submission folder on LearnUS. Submissions through email or other channels will not be accepted."
+    submission_method: "Upload the final PDF to the Homework #1 submission folder on LearnUS. Submissions through email or other channels will not be accepted."
     show_detailed_deadline: true
     show_evaluation_percentage: false
     evaluation_focus: "- **Comparative Reasoning:** Depth of comparison across purpose, audience, interpretation, rationale, and success criteria.\n- **Hypothesis and Reflection:** Clarity, evidence, recognition of overlaps or exceptions, and quality of communication."
@@ -685,7 +545,7 @@ assignments:
       required_visuals: "- one image of the original collaboration\n- one concept image or three-step scenario"
       filename_rule: "A2_StudentID_StudentName.pdf"
       example: "A2_2026123456_JaneKim.pdf"
-    submission_method: "Upload the final PDF to the Assignment #2 submission folder on LearnUS. Submissions through email or other channels will not be accepted."
+    submission_method: "Upload the final PDF to the Homework #2 submission folder on LearnUS. Submissions through email or other channels will not be accepted."
     show_detailed_deadline: true
     show_evaluation_percentage: false
     evaluation_focus: "- **Existing Case Understanding:** Accuracy and depth of the collaboration, stakeholder, value, and limitation analysis.\n- **Technology Relevance:** Appropriateness of the selected technology and clarity about what new possibility it enables.\n- **Concept Development:** Originality, coherence, and degree to which the proposal deepens the role of art rather than simply adding a feature.\n- **Stakeholder and Experience Value:** Improvement in artist, business, and audience roles, participation, and value.\n- **Critical Reasoning and Communication:** Consideration of authorship, control, feasibility, risk, and clarity of visual and written presentation."
@@ -714,7 +574,7 @@ assignments:
         -
           label: "Suggested structure"
           value: "Brief Studio Mikko Laakkonen overview followed by approximately one page or slide per marketing case"
-    submission_method: "Upload one complete PDF containing all three cases to the Assignment #3 submission folder on LearnUS. This is an individual submission."
+    submission_method: "Upload one complete PDF containing all three cases to the Homework #3 submission folder on LearnUS. This is an individual submission."
     show_detailed_deadline: false
     show_evaluation_percentage: false
     evaluation_focus: "- **Company Familiarization:** Basic understanding of Studio Mikko Laakkonen’s furniture and product portfolio.\n- **Cases:** Relevance and diversity of the three selected furniture-marketing cases."
@@ -738,7 +598,7 @@ assignments:
       file_type: "One team PDF"
       filename_rule: "A4_TeamNumber_TeamName.pdf"
       example: "A4_Team03_NordicBridge.pdf"
-    submission_method: "One team representative should upload the complete PDF to the Assignment #4 submission folder on LearnUS. The first page must list all team members."
+    submission_method: "One team representative should upload the complete PDF to the Homework #4 submission folder on LearnUS. The first page must list all team members."
     show_detailed_deadline: false
     show_evaluation_percentage: false
     evaluation_focus: "- **Research Alignment:** The study follows the research focus and questions established during Week 10.\n- **Evidence:** The collected materials are relevant and sufficiently detailed for later analysis."
@@ -765,7 +625,7 @@ assignments:
         -
           label: "Required file"
           value: "One team PDF"
-    submission_method: "One team representative should upload the final PDF to the Assignment #5 submission folder on LearnUS. The first page must list all team members."
+    submission_method: "One team representative should upload the final PDF to the Homework #5 submission folder on LearnUS. The first page must list all team members."
     show_detailed_deadline: false
     show_evaluation_percentage: false
     evaluation_focus: "- **Pattern and Evidence Analysis:** Important patterns, differences, and tensions are identified and supported with representative evidence.\n- **User-centered  Opportunity Framing:** Opportunity areas are relevant to Korean market entry while remaining broader than a finished campaign or solution."
@@ -797,10 +657,10 @@ assignments:
         -
           label: "Suggested structure"
           value: "Target Customer Snapshot → Key Customer Decision Factors → Two to Three Value Ideas"
-    submission_method: "One team representative should upload the PDF to the Assignment #6 submission folder on LearnUS. The first page must list all team members."
+    submission_method: "One team representative should upload the PDF to the Homework #6 submission folder on LearnUS. The first page must list all team members."
     show_detailed_deadline: false
     show_evaluation_percentage: false
-    evaluation_focus: "This is a Project 3 working assignment rather than a separate graded deliverable. Feedback will focus on:\n- clarity and focus of the Target Customer Snapshot;\n- relevance of the selected decision factors;\n- strength of the connection to research insights and evidence; and\n- clarity and distinctiveness of the two to three value ideas."
+    evaluation_focus: "This is a Project 3 working homework rather than a separate graded deliverable. Feedback will focus on:\n- clarity and focus of the Target Customer Snapshot;\n- relevance of the selected decision factors;\n- strength of the connection to research insights and evidence; and\n- clarity and distinctiveness of the two to three value ideas."
 deliverables:
   -
     number: 1
@@ -1105,5 +965,5 @@ resources:
     status: "To be confirmed before Week 1"
   -
     label: "Submission links"
-    status: "Published with each assignment"
+    status: "Published with each homework item"
 ---

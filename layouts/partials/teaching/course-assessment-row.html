@@ -8,7 +8,7 @@
     <h3>{{ $row.label }}</h3><p>{{ $row.note }}</p>
     {{ with $row.project }}
     <div class="course-hub-assessment-breakdown" aria-label="Project {{ . }} assignment and deliverable weights">
-      {{ range where $assignments "project_number" (int .) }}{{ $assignment := . }}{{ with .weight }}<a href="{{ printf `%sassignments/#assignment-%v` $base $assignment.number }}">Assignment #{{ $assignment.number }} <strong>{{ . }}%</strong></a>{{ end }}{{ end }}
+      {{ range where $assignments "project_number" (int .) }}{{ $assignment := . }}{{ with .weight }}<a href="{{ printf `%sassignments/#assignment-%v` $base $assignment.number }}">Homework #{{ $assignment.number }} <strong>{{ . }}%</strong></a>{{ end }}{{ end }}
       {{ range where $deliverables "project_number" (int .) }}<a href="{{ printf `%sdeliverables/#deliverable-%v` $base .number }}">Deliverable #{{ .number }} <strong>{{ .weight }}%</strong></a>{{ end }}
     </div>
     {{ end }}

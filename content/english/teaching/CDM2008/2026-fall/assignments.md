@@ -1,7 +1,7 @@
 ---
-title: "Assignments"
+title: "Homework"
 url: "/courses/cdm2008/2026-fall/assignments/"
-description: "Assignments for CDM2008 2026 Fall."
+description: "Homework for CDM2008 2026 Fall."
 layout: "course-hub"
 course_tab: "assignments"
 aliases:

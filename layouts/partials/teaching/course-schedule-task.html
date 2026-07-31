@@ -10,7 +10,7 @@
   {{- range $assignments -}}
     {{- if eq (int .number) $assignmentNumber -}}
       {{- $dueLabel := partial "teaching/due-label.html" .due_iso -}}
-      {{- $item = dict "type" (printf "Assignment %v" .number) "task" (.summary | default .title) "due" $dueLabel -}}
+      {{- $item = dict "type" (printf "Homework %v" .number) "task" (.summary | default .title) "due" $dueLabel -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
@@ -35,26 +35,26 @@
   {{- $taskClass = "task-label-fc" -}}
 {{- else if strings.HasPrefix $taskLabel "Deliverable" -}}
   {{- $taskClass = "task-label-deliverable" -}}
-{{- else if strings.HasPrefix $taskLabel "Assignment" -}}
+{{- else if or (strings.HasPrefix $taskLabel "Homework") (strings.HasPrefix $taskLabel "Assignment") -}}
   {{- $taskClass = "task-label-assignment" -}}
 {{- end -}}
 {{- $isBadgeLabel := or (eq $taskLabel "FC") (eq $taskLabel "Prep") -}}
 {{- $taskDisplay := printf "[%s]" $taskLabel -}}
 {{- if eq $taskLabel "FC" -}}
   {{- $taskDisplay = "FC" -}}
-{{- else if strings.HasPrefix $taskLabel "Assignment" -}}
-  {{- $taskDisplay = "Assignment" -}}
+{{- else if or (strings.HasPrefix $taskLabel "Homework") (strings.HasPrefix $taskLabel "Assignment") -}}
+  {{- $taskDisplay = "Homework" -}}
 {{- else if strings.HasPrefix $taskLabel "Deliverable" -}}
   {{- $taskDisplay = $taskLabel -}}
 {{- else if $isBadgeLabel -}}
   {{- $taskDisplay = $taskLabel -}}
 {{- end -}}
 {{- $isDeliverable := strings.HasPrefix $taskType "Deliverable" -}}
-{{- $isAssignment := strings.HasPrefix $taskType "Assignment" -}}
+{{- $isAssignment := or (strings.HasPrefix $taskType "Homework") (strings.HasPrefix $taskType "Assignment") -}}
 {{- $isProject := strings.HasPrefix $taskType "Project" -}}
 {{- $taskHref := "" -}}
 {{- if $isAssignment -}}
-  {{- $assignmentNumber := replaceRE `^Assignment[[:space:]]+#?([0-9]+).*$` `$1` $taskType -}}
+  {{- $assignmentNumber := replaceRE `^(Homework|Assignment)[[:space:]]+#?([0-9]+).*$` `$2` $taskType -}}
   {{- if ne $assignmentNumber $taskType -}}
     {{- $taskHref = printf `%sassignments/#assignment-%s` $base $assignmentNumber -}}
   {{- end -}}

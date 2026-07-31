@@ -85,19 +85,6 @@ project:
         - "Select methods that fit the question and context."
         - "Document evidence and analytical decisions transparently."
         - "Develop insights and implications supported by evidence."
-      format:
-        -
-          title: "Frame"
-          text: "Define the research context, question, participants, and plan."
-        -
-          title: "Fieldwork"
-          text: "Collect qualitative evidence using approved research methods."
-        -
-          title: "Synthesize"
-          text: "Organize evidence, identify patterns, and develop insights."
-        -
-          title: "Communicate"
-          text: "Present the process, findings, limitations, and design implications."
       work_setup: "The individual or team format will be announced before the project begins. All research must follow the course's ethical and consent requirements."
       evaluation_criteria:
         -
@@ -242,7 +229,7 @@ weekly_schedule:
         task: "Watch <Finding a Research Gap.>"
         due: "Sep. 18"
       -
-        type: "Assignment"
+        type: "Homework"
         task: "Revise the working RQ and identify the phenomenon of interest, target context or users, design condition, expected experience or behavior, and implied comparison."
   -
     week: "03"
@@ -263,7 +250,7 @@ weekly_schedule:
         task: "Watch ‘Design Variables for Research: Turning Questions into Variables.’"
         due: "Sep. 25"
       -
-        type: "Assignment"
+        type: "Homework"
         task: "Prepare a related-work matrix, revise the RQ based on the identified gap, and draft a one-paragraph gap statement and expected contribution."
   -
     week: "04"
@@ -284,7 +271,7 @@ weekly_schedule:
         task: "Watch ‘Experiment Logic: Building Fair Comparison Conditions.’"
         due: "Oct. 02"
       -
-        type: "Assignment"
+        type: "Homework"
         task: "Complete the variable-mapping worksheet: independent/design variable, dependent outcomes, controlled factors, and possible confounds."
   -
     week: "05"
@@ -305,7 +292,7 @@ weekly_schedule:
         task: "Watch ‘Stimuli Development: Making Testable Design Stimuli.’"
         due: "Oct. 09"
       -
-        type: "Assignment"
+        type: "Homework"
         task: "Create a condition comparison table and initial sketches, storyboards, wireframes, or prototype plans for each condition. No submission required."
   -
     week: "06"
@@ -326,7 +313,7 @@ weekly_schedule:
         task: "Watch ‘Research Logic Check: Aligning the Full Proposal.’"
         due: "Oct. 16"
       -
-        type: "Assignment"
+        type: "Homework"
         task: "Experimental Conditions & Design Stimuli Package: submit the design conditions and stimuli for focused Week 7 feedback."
         due: "Oct. 15"
   -
@@ -368,7 +355,7 @@ weekly_schedule:
         task: "Watch ‘Study Protocol Setup: Choosing What to Measure.’"
         due: "Oct. 30"
       -
-        type: "Assignment"
+        type: "Homework"
         task: "Write a feedback-response memo and revise the RQ, conditions, and stimuli before developing the protocol. No submission required."
   -
     week: "09"
@@ -389,7 +376,7 @@ weekly_schedule:
         task: "Watch ‘Qualitative Study Questions: Capturing User Reasoning and Experience.’"
         due: "Nov. 06"
       -
-        type: "Assignment"
+        type: "Homework"
         task: "Draft the study overview, participant criteria, study design, tasks, and quantitative measurement table. Include the source and purpose of each measure. No submission required."
   -
     week: "10"
@@ -410,7 +397,7 @@ weekly_schedule:
         task: "Watch ‘Running a Pilot Study.’"
         due: "Nov. 13"
       -
-        type: "Assignment"
+        type: "Homework"
         task: "Complete the full protocol and recruit pilot participants. Include briefing, consent, tasks, condition order, questionnaires, interview guide, debriefing, and data-recording plan. No submission required."
   -
     week: "11"
@@ -431,7 +418,7 @@ weekly_schedule:
         task: "Watch ‘Data Analysis #1: Finding Patterns in Qualitative Data.’"
         due: "Nov. 20"
       -
-        type: "Assignment"
+        type: "Homework"
         task: "Finalize the protocol and conduct the main study; organize anonymized consent records, responses, transcripts, observations, and behavioral data. No formal deliverable at this stage."
   -
     week: "12"
@@ -452,7 +439,7 @@ weekly_schedule:
         task: "Watch ‘Data Analysis #2: Comparing Conditions with T-tests and ANOVA.’"
         due: "Nov. 27"
       -
-        type: "Assignment"
+        type: "Homework"
         task: "Complete the qualitative coding worksheet, prepare a preliminary theme table with supporting evidence, and clean quantitative data for analysis. No submission required."
   -
     week: "13"
@@ -473,7 +460,7 @@ weekly_schedule:
         task: "Watch ‘Design Implications: Turning Results into Insights.’"
         due: "Dec. 04"
       -
-        type: "Assignment"
+        type: "Homework"
         task: "Upload the provisional results, findings, and insight report for feedback before discussion writing."
         due: "Dec. 03"
   -
@@ -520,7 +507,209 @@ weekly_schedule:
     in_class:
       - "No offline class"
     after_class: []
-assignments: []
+assignments:
+  -
+    number: 1
+    title: "Research Interest Card"
+    project_number: 1
+    assignment_type: "Individual one-slide preparation"
+    due_iso: "2026-09-11"
+    summary: "Prepare one concise card that introduces a design-related context, experience, or behavior that you may want to explore during the semester. This is an exploratory starting point, not a finalized research proposal."
+    contents_markdown: "- The context, experience, or behavior of interest\n- Who is involved or affected\n- What feels unresolved, uncertain, or worth investigating\n- One possible design idea or relevant example\n- Three keywords"
+    presentation: "Bring the card to Week 2 and be prepared to introduce it briefly during interest sharing and team formation."
+    upload_file:
+      file_type: "One slide or one-page PDF"
+      recommended_length: "One slide"
+      filename_rule: "H1_StudentID_StudentName.pdf"
+      example: "H1_2026123456_JaneKim.pdf"
+    submission_method: "No advance upload is required. Bring the completed card to Week 2."
+    show_detailed_deadline: false
+    show_evaluation_percentage: false
+    evaluation_focus: "- **Research-interest articulation:** Expressing a broad interest clearly enough to discuss with potential teammates.\n- **Question orientation:** Identifying what remains uncertain rather than proposing a finished solution."
+  -
+    number: 2
+    title: "Introduction & Initial RQ Working Draft"
+    project_number: 1
+    assignment_type: "Team working-manuscript update"
+    due_iso: "2026-09-18"
+    summary: "Use the submitted Research Direction Snapshot + Hypothesis Scaffold to begin Sections 1 and 3.1 of the shared master manuscript. This is a working draft rather than a polished final section."
+    contents_markdown: "- **Section 1 · Introduction:** Research context, users, design-relevant phenomenon, unresolved issue, and motivation\n- **Section 3.1 · RQ & Hypothesis:** Provisional RQ, expected relationship or outcome, and the rationale for that expectation\n- Evidence that could support or challenge the expectation\n- Citations or links for at least three related academic papers or research-based design cases; no separate source-analysis report is required"
+    presentation: "No formal presentation is required. Bring the working draft and source links to the Week 3 workshop."
+    upload_file:
+      file_type: "Shared master manuscript update"
+      recommended_length: "2–4 working paragraphs plus the provisional RQ and hypothesis"
+      filename_rule: "No separate file"
+      example: "Update Sections 1 and 3.1 in the team manuscript"
+    submission_method: "Update the designated sections of the shared master manuscript. Do not resubmit the in-class Snapshot as a separate homework file."
+    show_detailed_deadline: false
+    show_evaluation_percentage: false
+    evaluation_focus: "- **Research framing:** Converting a broad interest into a defensible research context and question.\n- **Activity-to-paper translation:** Turning decisions already made in class into manuscript-ready text."
+  -
+    number: 3
+    title: "D1 Revision + Section 3.2 Working Outline"
+    project_number: 1
+    assignment_type: "Team working-manuscript revision"
+    due_iso: "2026-10-02"
+    summary: "Revise the research foundation using the Deliverable #1 feedback and translate the submitted Variables Canvas into an initial Section 3.2 outline."
+    contents_markdown: "- Revisions to Sections 1, 2, and 3.1 based on the feedback received\n- The design factor or independent variable the team may change\n- The expected participant outcome or dependent evidence\n- Controlled factors and possible confounds\n- A short rationale linking the variable choices to the RQ\n- A finalized baseline or comparison condition is not yet required"
+    presentation: "No formal presentation is required. Bring the revised manuscript and Variables Canvas to Week 5."
+    upload_file:
+      file_type: "Shared master manuscript update"
+      recommended_length: "Targeted revisions plus a structured Section 3.2 outline"
+      filename_rule: "No separate file"
+      example: "Revise Sections 1–3.1 and add the Section 3.2 outline"
+    submission_method: "Update the shared master manuscript. The Feedback Action Log and Variables Canvas are already submitted as the working material and should not be duplicated as homework."
+    show_detailed_deadline: false
+    show_evaluation_percentage: false
+    evaluation_focus: "- **Feedback integration:** Converting feedback into specific research decisions.\n- **Operationalization:** Translating an abstract RQ into changeable design factors and observable outcomes."
+  -
+    number: 4
+    title: "Section 3.2 Comparative Conditions"
+    project_number: 1
+    assignment_type: "Team working-manuscript update"
+    due_iso: "2026-10-09"
+    summary: "Translate the submitted Comparison Design Canvas into the Section 3.2 working draft."
+    contents_markdown: "- The target design variable\n- A realistic baseline and one or two comparison conditions\n- What changes across conditions and what remains controlled\n- Why the comparison can answer the RQ\n- Possible confounds or alternative explanations\n- A comparison table or figure with a draft caption"
+    presentation: "No formal presentation is required. The condition logic will be reviewed during the Week 6 stimuli-development process."
+    upload_file:
+      file_type: "Shared master manuscript update"
+      recommended_length: "Condition descriptions, rationale, and one comparison table or figure"
+      filename_rule: "No separate file"
+      example: "Complete the working Section 3.2 in the team manuscript"
+    submission_method: "Update Section 3.2 in the shared master manuscript. Do not submit a second copy of the Comparison Design Canvas."
+    show_detailed_deadline: false
+    show_evaluation_percentage: false
+    evaluation_focus: "- **Comparative reasoning:** Designing conditions that isolate the intended variable.\n- **Research communication:** Explaining why the baseline and alternatives form a valid comparison."
+  -
+    number: 5
+    title: "Section 3.3 Research Stimuli"
+    project_number: 1
+    assignment_type: "Team working-manuscript update with figures and prototype links"
+    due_iso: "2026-10-16"
+    summary: "Use the submitted Research Stimuli Draft + Documentation Sheet to write the Section 3.3 working draft."
+    contents_markdown: "- The participant-facing form of every condition\n- The intended design difference represented by each stimulus\n- Elements controlled across conditions\n- The rationale for the chosen stimulus format and fidelity\n- Relevant screenshots, flows, or figures with draft captions\n- Accessible prototype, media, or backup links"
+    presentation: "No formal presentation is required. Bring the revised stimuli and unresolved questions to the Week 7 integration workshop."
+    upload_file:
+      file_type: "Shared master manuscript update plus accessible links"
+      recommended_length: "One concise subsection with a condition-by-condition description and figures"
+      filename_rule: "No separate manuscript file"
+      example: "Add Section 3.3, figures, captions, and working links"
+    submission_method: "Update Section 3.3 in the shared master manuscript. The prototype and Documentation Sheet together should make the writing possible without recreating the rationale from scratch."
+    show_detailed_deadline: false
+    show_evaluation_percentage: false
+    evaluation_focus: "- **Stimulus documentation:** Making the research instrument understandable and reproducible.\n- **Control and validity:** Showing that non-target differences are minimized across conditions."
+  -
+    number: 6
+    title: "Post-presentation Sections 1–3.3 Revision"
+    project_number: 1
+    assignment_type: "Team targeted manuscript revision"
+    due_iso: "2026-10-30"
+    summary: "Use the submitted Feedback Decision Log to revise the research foundation, RQ, comparison conditions, and stimuli."
+    contents_markdown: "- Major feedback received during the presentation\n- Accept, Adapt, or Decline decisions and a brief rationale for each major point\n- Specific revisions to Sections 1–3.3\n- Priority corrections affecting research logic, condition validity, or stimulus clarity\n- Any unresolved issue that must be addressed before the study protocol is finalized"
+    presentation: "No additional presentation is required."
+    upload_file:
+      file_type: "Shared master manuscript update"
+      recommended_length: "Targeted revisions rather than a new report"
+      filename_rule: "No separate file"
+      example: "Revise Sections 1–3.3 using the Feedback Decision Log"
+    submission_method: "Update the shared master manuscript. The Feedback Decision Log remains the decision record and does not need to be rewritten as a separate memo."
+    show_detailed_deadline: false
+    show_evaluation_percentage: false
+    evaluation_focus: "- **Critical response to feedback:** Making reasoned decisions rather than following every comment mechanically.\n- **Study readiness:** Stabilizing the research logic before beginning the Method section."
+  -
+    number: 7
+    title: "Section 4 Method Draft I"
+    project_number: 1
+    assignment_type: "Team working-manuscript update"
+    due_iso: "2026-11-06"
+    summary: "Use the submitted Study Plan Snapshot + Method Mapping to draft the first version of Section 4."
+    contents_markdown: "- **4.1 Participants:** Target participants, inclusion criteria, and rationale\n- **4.2 Study Design:** Within- or between-subject design, conditions, order, and rationale\n- **4.3 Tasks & Procedure:** Initial step-by-step participant journey\n- **4.4 Measures:** Quantitative measures, behavioral data, or manipulation checks\n- The source, construct, purpose, and data form of each established measure"
+    presentation: "No formal presentation is required. Bring the draft and Study Plan Snapshot to Week 10."
+    upload_file:
+      file_type: "Shared master manuscript update"
+      recommended_length: "A structured working Method draft based on the four mapping fields"
+      filename_rule: "No separate file"
+      example: "Draft Sections 4.1–4.4 in the team manuscript"
+    submission_method: "Update Section 4 in the shared master manuscript. Do not recreate the study-flow diagram as a separate homework submission."
+    show_detailed_deadline: false
+    show_evaluation_percentage: false
+    evaluation_focus: "- **Method alignment:** Connecting participant, task, condition, and measure decisions to the RQ.\n- **Reproducibility:** Describing the study clearly enough for another researcher to understand the plan."
+  -
+    number: 8
+    title: "Finalize the Study Materials Pack & Conduct a Pilot"
+    project_number: 1
+    assignment_type: "Team operational research homework"
+    due_iso: "2026-11-13"
+    summary: "Finalize the Study Materials Pack and conduct at least one pilot session. No full Method prose is due this week."
+    contents_markdown: "- Participant introduction and consent procedure\n- Tasks, condition order, and moderator script\n- Questionnaire, qualitative prompts, and data-recording materials\n- Debriefing and anonymization procedures\n- Completed Protocol-to-Method Mapping with decisions, rationales, and destination subsections\n- Pilot notes covering clarity, timing, technical issues, task flow, and measurement problems"
+    presentation: "No formal presentation is required. Bring the pilot evidence and working protocol to Week 11."
+    upload_file:
+      file_type: "Study Materials Pack, Protocol-to-Method Mapping, and pilot notes"
+      recommended_length: "Complete enough for another team member to run the pilot consistently"
+      filename_rule: "H8_TeamName_StudyMaterialsPack.pdf or a clearly organized shared folder"
+      example: "H8_TeamA_StudyMaterialsPack.pdf"
+    submission_method: "Submit or link the finalized Study Materials Pack and mapping in the designated course folder. Keep all participant-facing materials and pilot notes together."
+    show_detailed_deadline: false
+    show_evaluation_percentage: false
+    evaluation_focus: "- **Protocol readiness:** Turning a study plan into materials that can be used with real participants.\n- **Pilot-based improvement:** Identifying problems before the final Method section and main study."
+  -
+    number: 9
+    title: "Final Method Section"
+    project_number: 1
+    assignment_type: "Team final Method-section update"
+    due_iso: "2026-11-20"
+    summary: "Use the final Protocol-to-Method Mapping to complete Sections 4.1–4.6 after the pilot-driven revisions are finalized."
+    contents_markdown: "- **4.1 Participants:** Final criteria, sample plan, and rationale\n- **4.2 Study Design:** Final conditions, participant structure, and order\n- **4.3 Tasks & Procedure:** Final participant journey and moderator process\n- **4.4 Measures:** Final quantitative and qualitative measures\n- **4.5 Pilot Testing & Revisions:** Meaningful issues discovered and resulting changes\n- **4.6 Data Analysis:** Planned qualitative and quantitative analysis\n- Final methodological decisions rather than copied participant-facing scripts or a pilot diary"
+    presentation: "No formal presentation is required."
+    upload_file:
+      file_type: "Shared master manuscript update"
+      recommended_length: "Complete Sections 4.1–4.6"
+      filename_rule: "No separate manuscript file"
+      example: "Complete Section 4 in the team manuscript"
+    submission_method: "Update Sections 4.1–4.6 in the shared master manuscript."
+    show_detailed_deadline: false
+    show_evaluation_percentage: false
+    evaluation_focus: "- **Methodological transparency:** Explaining the final decisions and meaningful pilot-driven changes.\n- **Non-duplicative workflow:** Writing the Method once from the final mapping rather than rewriting an unstable protocol."
+    additional_sections:
+      -
+        title: "Study execution requirement"
+        content: "Conduct the main study and organize all qualitative and quantitative data in anonymized form before Week 12."
+  -
+    number: 10
+    title: "Sections 5.1 & 5.3 Working Draft"
+    project_number: 1
+    assignment_type: "Team qualitative-results manuscript update"
+    due_iso: "2026-11-27"
+    summary: "Use the submitted Qualitative Pattern Board and shared codebook to draft the Data Overview and Qualitative Results subsections."
+    contents_markdown: "- **5.1 Data Overview:** Final qualitative dataset, participant coverage, and relevant exclusions\n- Coding process and development of the shared codebook\n- **5.3 Qualitative Results:** Categories or themes and how they relate to the RQ or conditions\n- Multiple pieces of supporting evidence for each major theme\n- Contradictory, exceptional, or negative cases\n- Clear separation between observed patterns and broader interpretation"
+    presentation: "No formal presentation is required. Bring the draft and cleaned quantitative dataset to Week 13."
+    upload_file:
+      file_type: "Shared master manuscript update"
+      recommended_length: "Data overview plus 2–4 evidence-supported qualitative findings"
+      filename_rule: "No separate file"
+      example: "Draft Sections 5.1 and 5.3 in the team manuscript"
+    submission_method: "Update Sections 5.1 and 5.3 in the shared master manuscript. Do not submit the Pattern Board again as a separate homework file."
+    show_detailed_deadline: false
+    show_evaluation_percentage: false
+    evaluation_focus: "- **Qualitative rigor:** Showing the path from data to codes, themes, and findings.\n- **Evidence use:** Supporting claims with multiple anonymized excerpts and contradictory cases."
+  -
+    number: 11
+    title: "Complete Section 5 Results Draft"
+    project_number: 1
+    assignment_type: "Team complete Results-section update"
+    due_iso: "2026-12-03"
+    summary: "Use the submitted Results Snapshot to complete Section 5."
+    contents_markdown: "- **5.1 Data Overview:** Final participant count, exclusions, and dataset structure\n- **5.2 Quantitative Results:** Descriptive statistics, appropriate comparisons, and correctly labeled inferential results\n- **5.3 Qualitative Results:** Final themes and supporting evidence\n- Clear figures, tables, labels, and captions\n- Accurate reporting of null, mixed, contradictory, or unexpected results\n- Separation of observed results from interpretation"
+    presentation: "No formal presentation is required. Bring the completed Results draft and interpretation questions to Week 14."
+    upload_file:
+      file_type: "Shared master manuscript update"
+      recommended_length: "Complete Section 5 with figures and tables"
+      filename_rule: "No separate file"
+      example: "Complete Sections 5.1–5.3 in the team manuscript"
+    submission_method: "Update Section 5 in the shared master manuscript. Statistical output files may be linked as supporting materials when needed."
+    show_detailed_deadline: false
+    show_evaluation_percentage: false
+    evaluation_focus: "- **Accurate reporting:** Matching the analysis to the study design and reporting results transparently.\n- **Integrated evidence:** Presenting qualitative and quantitative findings as complementary evidence."
 deliverables:
   -
     number: 1
@@ -584,15 +773,15 @@ assessment:
     weight: 10
     note: "FC lecture completion, class preparedness, workshop participation, peer feedback, and collaboration throughout the semester"
   -
-    label: "Weekly Process Assignments"
+    label: "Weekly Process Homework"
     weight: 10
     note: "Timely completion, effort, and progress demonstrated through weekly worksheets, drafts, research materials, and feedback submissions"
 assessment_project_position: "after"
 assessment_show_total: false
 policies:
   -
-    title: "Assignments and Deliverables"
-    text: "Weekly assignments support the step-by-step development of the semester research project. Depending on the week, an assignment may be prepared for class, completed through a worksheet, presented during a feedback session, or uploaded for review. Assignments are assessed collectively under the <strong>Weekly Process Assignments</strong> category based primarily on timely completion, preparedness, effort, and evidence of continued progress. Not every assignment will receive a separate numerical score or detailed feedback.<br><br>Formal <strong>Deliverables</strong> are the major assessed outcomes of the course. Each Deliverable carries a designated grade weight and is evaluated using specific criteria. Most of the course grade is therefore determined by the quality and coherence of the four formal Deliverables."
+    title: "Homework and Deliverables"
+    text: "Weekly homework supports the step-by-step development of the semester research project. Depending on the week, homework may be prepared for class, completed through a worksheet, presented during a feedback session, or uploaded for review. Homework is assessed collectively under the <strong>Weekly Process Homework</strong> category based primarily on timely completion, preparedness, effort, and evidence of continued progress. Not every homework item will receive a separate numerical score or detailed feedback.<br><br>Formal <strong>Deliverables</strong> are the major assessed outcomes of the course. Each Deliverable carries a designated grade weight and is evaluated using specific criteria. Most of the course grade is therefore determined by the quality and coherence of the four formal Deliverables."
   -
     title: "Research ethics"
     text: "Students must follow the approved consent, privacy, data handling, and participant-respect procedures introduced in class."
