@@ -25,7 +25,7 @@
 {{- end -}}
 {{- $taskType := $item.type -}}
 {{- $taskLabel := $taskType -}}
-{{- if eq $taskLabel "FC Lecture" -}}
+{{- if or (eq $taskLabel "FC Lecture") (eq $taskLabel "FC Lectures") -}}
   {{- $taskLabel = "FC" -}}
 {{- else if eq $taskLabel "Preparation" -}}
   {{- $taskLabel = "Prep" -}}
@@ -41,11 +41,11 @@
 {{- $isBadgeLabel := or (eq $taskLabel "FC") (eq $taskLabel "Prep") -}}
 {{- $taskDisplay := printf "[%s]" $taskLabel -}}
 {{- if eq $taskLabel "FC" -}}
-  {{- $taskDisplay = "🎬 FC" -}}
+  {{- $taskDisplay = "FC" -}}
 {{- else if strings.HasPrefix $taskLabel "Assignment" -}}
-  {{- $taskDisplay = "✏️ Assignment" -}}
+  {{- $taskDisplay = "Assignment" -}}
 {{- else if strings.HasPrefix $taskLabel "Deliverable" -}}
-  {{- $taskDisplay = printf "📤 %s" $taskLabel -}}
+  {{- $taskDisplay = $taskLabel -}}
 {{- else if $isBadgeLabel -}}
   {{- $taskDisplay = $taskLabel -}}
 {{- end -}}

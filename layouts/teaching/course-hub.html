@@ -251,7 +251,7 @@
     {{ end }}
 
     {{ if eq $tab "schedule" }}
-      {{ $lectureStyle := $course.Params.lecture_style | default "style-2" }}
+      {{ $lectureStyle := $course.Params.lecture_style | default "type-a" }}
       {{ $schedule := $course.Params.weekly_schedule }}
       {{ $hasPaper := false }}{{ range $schedule }}{{ with .paper }}{{ $hasPaper = true }}{{ end }}{{ end }}
       <section class="course-hub-section course-hub-schedule-section" aria-label="Weekly schedule">
@@ -283,7 +283,8 @@
               <div class="course-hub-week"{{ with .holiday }} aria-label="Week {{ $week.week }}, {{ $dateLabel }}, public holiday: {{ . }}"{{ end }}><strong>Week {{ .week }}</strong><span>{{ $dateLabel }}</span>{{ with .holiday }}<small class="course-hub-holiday">{{ . }}</small>{{ end }}</div>
               {{ $weekNumber := replaceRE `^0+` `` .week }}{{ if eq $weekNumber "" }}{{ $weekNumber = "0" }}{{ end }}
               {{ $weekPath := printf "w%s" $weekNumber }}
-              <div class="course-hub-week-topic course-hub-lecture--{{ $lectureStyle }}"><span class="course-hub-mobile-label">Lecture</span><h3><a href="{{ printf `%s%s/` $base $weekPath }}">{{ if strings.Contains .lecture ":" }}{{ replaceRE `^([^:]+:)[[:space:]]*(.*)$` `$1<br><span>$2</span>` .lecture | safeHTML }}{{ else }}{{ .lecture }}{{ end }}</a></h3></div>
+              {{ $lectureMain := .lecture_main | default .lecture }}
+              <div class="course-hub-week-topic course-hub-lecture--{{ $lectureStyle }}"><span class="course-hub-mobile-label">Lecture</span><h3><a href="{{ printf `%s%s/` $base $weekPath }}"><span class="course-hub-lecture-main">{{ $lectureMain }}</span>{{ with .lecture_subtitle }}<span class="course-hub-lecture-subtitle">{{ . }}</span>{{ end }}</a></h3></div>
               <div class="course-hub-week-cell"><span class="course-hub-mobile-label">In Class</span><ul>{{ range .in_class }}<li>{{ . }}</li>{{ end }}</ul></div>
               <div class="course-hub-week-cell course-hub-week-cell--after"><span class="course-hub-mobile-label">After Class</span><ul class="course-hub-task-list">{{ range .after_class }}{{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables "showDue" true "projectAnchor" (cond (isset $stageInfo "project_number") (printf "project-%v" $stageInfo.project_number) "") ) }}{{ end }}</ul></div>
               {{ if $hasPaper }}
@@ -376,12 +377,15 @@
         {{ $weekContentReleaseISO := .Params.week_content_release_at | default "" }}
         {{ $previousWeekForRelease := dict }}
         {{ $previousWeekReleaseDisplay := "" }}
-        {{ if and (not $weekContentReleaseISO) (gt $selectedIndex 0) $classEndTime }}
+        {{ $lockWeekContent := gt $selectedIndex 0 }}
+        {{ if gt $selectedIndex 0 }}
           {{ $previousWeekForRelease = index $schedule (sub $selectedIndex 1) }}
           {{ $previousWeekReleaseDisplay = replaceRE `^0+` `` $previousWeekForRelease.week }}
           {{ if eq $previousWeekReleaseDisplay "" }}{{ $previousWeekReleaseDisplay = "0" }}{{ end }}
-          {{ with $previousWeekForRelease.iso_date }}
-            {{ $weekContentReleaseISO = printf "%sT%s:00+09:00" . $classEndTime }}
+          {{ if and (not $weekContentReleaseISO) $classEndTime }}
+            {{ with $previousWeekForRelease.iso_date }}
+              {{ $weekContentReleaseISO = printf "%sT%s:00+09:00" . $classEndTime }}
+            {{ end }}
           {{ end }}
         {{ end }}
         <section class="course-hub-section course-hub-week-detail" aria-labelledby="week-detail-title">
@@ -391,7 +395,9 @@
               <span>{{ $selectedDateLabel }}</span>
               <span>{{ $selectedStageLabel }}</span>
             </div>
-            <h2 id="week-detail-title"><span>Week {{ $weekDisplay }}:</span> {{ $selectedWeek.lecture }}</h2>
+            {{ $detailLectureTitle := $selectedWeek.lecture_main | default (replaceRE `\*\*` `` $selectedWeek.lecture) }}
+            {{ with $selectedWeek.lecture_subtitle }}{{ $detailLectureTitle = printf "%s %s" $detailLectureTitle . }}{{ end }}
+            <h2 id="week-detail-title"><span>Week {{ $weekDisplay }}:</span> {{ $detailLectureTitle }}</h2>
             {{ with $selectedWeek.holiday }}<p class="course-hub-week-detail-holiday">{{ . }} · No regular offline class</p>{{ end }}
             <div class="course-hub-week-outline">
               <section>
@@ -403,17 +409,17 @@
                 <h3>Learning Goal</h3>
                 {{ with .Params.learning_goal }}<div class="course-hub-learning-goal">{{ . | markdownify }}</div>{{ else }}<p class="course-hub-week-placeholder">Add the learning goal for this week.</p>{{ end }}
               </section>
-              <section{{ if $weekContentReleaseISO }} class="course-hub-scheduled-section is-locked" data-scheduled-section data-scheduled-release="{{ $weekContentReleaseISO }}"{{ end }}>
+              <section{{ if $lockWeekContent }} class="course-hub-scheduled-section is-locked" data-scheduled-section{{ with $weekContentReleaseISO }} data-scheduled-release="{{ . }}"{{ end }}{{ end }}>
                 <h3>Lecture Materials</h3>
                 <div class="course-hub-scheduled-content">
-                  <div class="course-hub-scheduled-body" data-scheduled-body{{ if $weekContentReleaseISO }} aria-hidden="true"{{ end }}>
+                  <div class="course-hub-scheduled-body" data-scheduled-body{{ if $lockWeekContent }} aria-hidden="true"{{ end }}>
                     {{ with .Params.lecture_materials }}
                     <ul class="course-hub-week-links">
                       {{ range . }}{{ partial "teaching/course-week-material-item.html" . }}{{ end }}
                     </ul>
                     {{ else }}<p class="course-hub-week-placeholder">Add the LearnUS lecture-material link.</p>{{ end }}
                   </div>
-                  {{ if $weekContentReleaseISO }}
+                  {{ if $lockWeekContent }}
                   <div class="course-hub-scheduled-cover" data-scheduled-cover role="status">
                     <span class="course-hub-key-takeaways-lock" aria-hidden="true">
                       <svg viewBox="0 0 24 24" focusable="false">
@@ -422,24 +428,28 @@
                       </svg>
                     </span>
                     <span>
-                      {{ with $previousWeekReleaseDisplay }}<strong>Unlocks when Week {{ . }} class ends</strong>{{ end }}
-                      <small>{{ time.Format "Jan. 2, 3:04 PM" $weekContentReleaseISO }} (KST)</small>
+                      <strong>Unlocks when Week {{ $previousWeekReleaseDisplay }} class ends</strong>
+                      {{ if $weekContentReleaseISO }}
+                        <small>{{ time.Format "Jan. 2, 3:04 PM" $weekContentReleaseISO }} (KST)</small>
+                      {{ else }}
+                        <small>The release time will appear once the class schedule is confirmed.</small>
+                      {{ end }}
                     </span>
                   </div>
                   {{ end }}
                 </div>
               </section>
-              <section{{ if $weekContentReleaseISO }} class="course-hub-scheduled-section is-locked" data-scheduled-section data-scheduled-release="{{ $weekContentReleaseISO }}"{{ end }}>
+              <section{{ if $lockWeekContent }} class="course-hub-scheduled-section is-locked" data-scheduled-section{{ with $weekContentReleaseISO }} data-scheduled-release="{{ . }}"{{ end }}{{ end }}>
                 <h3>In-class Activity</h3>
                 <div class="course-hub-scheduled-content">
-                  <div class="course-hub-scheduled-body" data-scheduled-body{{ if $weekContentReleaseISO }} aria-hidden="true"{{ end }}>
+                  <div class="course-hub-scheduled-body" data-scheduled-body{{ if $lockWeekContent }} aria-hidden="true"{{ end }}>
                     {{ with .Params.activity_content }}
                       <div class="course-hub-activity-content">{{ . | markdownify }}</div>
                     {{ else }}
                       <ul class="course-hub-activity-list">{{ range $activities }}<li>{{ . }}</li>{{ end }}</ul>
                     {{ end }}
                   </div>
-                  {{ if $weekContentReleaseISO }}
+                  {{ if $lockWeekContent }}
                   <div class="course-hub-scheduled-cover" data-scheduled-cover role="status">
                     <span class="course-hub-key-takeaways-lock" aria-hidden="true">
                       <svg viewBox="0 0 24 24" focusable="false">
@@ -448,8 +458,12 @@
                       </svg>
                     </span>
                     <span>
-                      {{ with $previousWeekReleaseDisplay }}<strong>Unlocks when Week {{ . }} class ends</strong>{{ end }}
-                      <small>{{ time.Format "Jan. 2, 3:04 PM" $weekContentReleaseISO }} (KST)</small>
+                      <strong>Unlocks when Week {{ $previousWeekReleaseDisplay }} class ends</strong>
+                      {{ if $weekContentReleaseISO }}
+                        <small>{{ time.Format "Jan. 2, 3:04 PM" $weekContentReleaseISO }} (KST)</small>
+                      {{ else }}
+                        <small>The release time will appear once the class schedule is confirmed.</small>
+                      {{ end }}
                     </span>
                   </div>
                   {{ end }}
@@ -571,10 +585,7 @@
 
                 scheduledBlocks.forEach(function (block) {
                   var releaseValue = block.getAttribute('data-scheduled-release');
-                  if (!releaseValue) {
-                    revealScheduledContent(block);
-                    return;
-                  }
+                  if (!releaseValue) return;
 
                   var releaseTime = Date.parse(releaseValue);
                   if (Number.isNaN(releaseTime)) return;

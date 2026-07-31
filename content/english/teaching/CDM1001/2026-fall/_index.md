@@ -346,13 +346,14 @@ roadmap:
     project_number: 4
     description: "Use the project experiences to clarify a personal academic and professional direction."
 schedule_intro: "Week 00 is the pre-semester preparation period. Each week’s After Class items prepare students for the following session."
-lecture_style: "style-2"
+lecture_style: "type-a"
 weekly_schedule:
   -
     week: "00"
     iso_date: "2026-08-31"
     stage_ref: "preparation"
     lecture: "Getting Ready for the Course"
+    lecture_main: "Getting Ready for the Course"
     in_class:
       - "No class"
     after_class:
@@ -365,6 +366,8 @@ weekly_schedule:
     iso_date: "2026-09-01"
     stage_ref: "foundations"
     lecture: "Course Introduction: Building a High-Level Map of CDM"
+    lecture_main: "Course Introduction"
+    lecture_subtitle: "Building a High-Level Map of CDM"
     in_class:
       - "Course orientation"
     after_class:
@@ -377,6 +380,8 @@ weekly_schedule:
     iso_date: "2026-09-08"
     stage_ref: "learn-to-see"
     lecture: "CDM Design Lens #1: Art"
+    lecture_main: "CDM Design Lens #1"
+    lecture_subtitle: "Art"
     in_class:
       - "Art–Design Spectrum discussion"
     after_class:
@@ -393,6 +398,8 @@ weekly_schedule:
     iso_date: "2026-09-15"
     stage_ref: "learn-to-see"
     lecture: "CDM Design Lens #2: Art + Business"
+    lecture_main: "CDM Design Lens #2"
+    lecture_subtitle: "Art + Business"
     in_class:
       - "Week 2 assignment review + Art–Business collaboration deep dive"
     after_class:
@@ -409,6 +416,8 @@ weekly_schedule:
     iso_date: "2026-09-22"
     stage_ref: "learn-to-see"
     lecture: "CDM Design Lens #3: Graphic Design"
+    lecture_main: "CDM Design Lens #3"
+    lecture_subtitle: "Graphic Design"
     in_class:
       - "Case-driven Learning through D:Branch Tool"
     after_class:
@@ -425,6 +434,8 @@ weekly_schedule:
     iso_date: "2026-09-29"
     stage_ref: "learn-to-see"
     lecture: "CDM Design Lens #4: Product Design"
+    lecture_main: "CDM Design Lens #4"
+    lecture_subtitle: "Product Design"
     in_class:
       - "Individual case exploration and new-case analysis"
     after_class:
@@ -441,6 +452,8 @@ weekly_schedule:
     iso_date: "2026-10-06"
     stage_ref: "learn-to-see"
     lecture: "CDM Design Lens #5: Interaction Design"
+    lecture_main: "CDM Design Lens #5"
+    lecture_subtitle: "Interaction Design"
     in_class:
       - "Individual interaction-case exploration and new-case analysis"
     after_class:
@@ -457,6 +470,8 @@ weekly_schedule:
     iso_date: "2026-10-13"
     stage_ref: "learn-to-see"
     lecture: "CDM Design Lens #6: Service Design"
+    lecture_main: "CDM Design Lens #6"
+    lecture_subtitle: "Service Design"
     in_class:
       - "Individual service-case exploration and new-case analysis"
     after_class:
@@ -469,6 +484,7 @@ weekly_schedule:
     iso_date: "2026-10-20"
     stage_ref: "apply-the-lenses"
     lecture: "(Mid-term Week) Independent Integration · No Class"
+    lecture_main: "(Mid-term Week) Independent Integration · No Class"
     in_class:
       - "No class · Independent report submission"
     after_class:
@@ -481,6 +497,8 @@ weekly_schedule:
     iso_date: "2026-10-27"
     stage_ref: "integrate-and-create"
     lecture: "Industry Project Launch · Guest Speaker: Studio Mikko Laakkonen · Three Ways of Design Thinking"
+    lecture_main: "Industry Project Launch · Guest Speaker"
+    lecture_subtitle: "Studio Mikko Laakkonen · Three Ways of Design Thinking"
     in_class:
       - "Company briefing, project framing, design-thinking overview, and team formation"
     after_class:
@@ -497,6 +515,8 @@ weekly_schedule:
     iso_date: "2026-11-03"
     stage_ref: "integrate-and-create"
     lecture: "CDM’s Design Thinking Series #1: User-Centered Design Thinking"
+    lecture_main: "CDM’s Design Thinking Series #1"
+    lecture_subtitle: "User-Centered Design Thinking"
     in_class:
       - "Desk-research synthesis, strategic research focus selection, and user-research planning workshop"
     after_class:
@@ -513,6 +533,8 @@ weekly_schedule:
     iso_date: "2026-11-10"
     stage_ref: "integrate-and-create"
     lecture: "CDM’s Design Thinking Series #1: User-Centered Design Thinking"
+    lecture_main: "CDM’s Design Thinking Series #1"
+    lecture_subtitle: "User-Centered Design Thinking"
     in_class:
       - "Pattern and tension mapping, user-insight development, and strategic opportunity framing"
     after_class:
@@ -529,6 +551,8 @@ weekly_schedule:
     iso_date: "2026-11-17"
     stage_ref: "integrate-and-create"
     lecture: "CDM’s Design Thinking Series #2: Customer-Centered Design Thinking"
+    lecture_main: "CDM’s Design Thinking Series #2"
+    lecture_subtitle: "Customer-Centered Design Thinking"
     in_class:
       - "Prospective customer decision mapping, driver and barrier analysis, and customer-centered direction development"
     after_class:
@@ -545,6 +569,8 @@ weekly_schedule:
     iso_date: "2026-11-24"
     stage_ref: "integrate-and-create"
     lecture: "CDM’s Design Thinking Series #3: Design Management — Strategic Thinking Process"
+    lecture_main: "CDM’s Design Thinking Series #3"
+    lecture_subtitle: "Design Management — Strategic Thinking Process"
     in_class:
       - "Competitor research and comparison, strategic evaluation of Value Ideas, and competitive marketing-strategy development"
     after_class:
@@ -557,6 +583,7 @@ weekly_schedule:
     iso_date: "2026-12-01"
     stage_ref: "integrate-and-create"
     lecture: "Project 3 Strategy Consultation"
+    lecture_main: "Project 3 Strategy Consultation"
     in_class:
       - "Team consultation, strategic decision-making, integrated action planning, and Deliverable #6 refinement"
     after_class:
@@ -569,6 +596,7 @@ weekly_schedule:
     iso_date: "2026-12-08"
     stage_ref: "integrate-and-create"
     lecture: "Final Client Presentation Day"
+    lecture_main: "Final Client Presentation Day"
     in_class:
       - "Deliverable #6 final presentations to Studio Mikko Laakkonen, client feedback, and Q&A"
     after_class:
@@ -581,6 +609,7 @@ weekly_schedule:
     iso_date: "2026-12-14"
     stage_ref: "reflect-and-position"
     lecture: "(Final Week) Final Report Submission · No Offline Class"
+    lecture_main: "(Final Week) Final Report Submission · No Offline Class"
     in_class:
       - "No offline class · Course complete"
     after_class: []
