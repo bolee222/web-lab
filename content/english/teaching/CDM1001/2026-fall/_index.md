@@ -98,51 +98,50 @@ project:
       title: "Critical Design Case Analysis with D:Branch"
       unit: "Individual"
       assessment_note: "Progressive analytical practice across six CDM lenses with self-directed D:Branch exploration"
-      description: "This project develops analytical lenses across Art, Art–Business, Graphic, Product, Interaction, and Service Design. Students first examine principles and cases, then use D:Branch in four individual self-directed mini-reports to investigate how design relationships operate across conditions, contexts, limitations, and exceptions."
+      description: "This project develops analytical lenses across Art, Art–Business, Graphic, Product, Interaction, and Service Design. Students examine cases and use D:Branch in four self-directed mini-reports to investigate how design principles operate across conditions, contexts, limitations, and exceptions."
       learning_objectives:
-        - "Distinguish the purposes, audiences, and rationales of Art and Design and examine how Art can create value within business collaborations."
-        - "Apply Graphic, Product, Interaction, and Service Design principles to concrete cases."
-        - "Explain design relationships through elements, effects, users, contexts, conditions, limitations, and exceptions rather than relying on preference or universal rules."
-        - "Use D:Branch critically to develop personal learning questions, compare visual variations, identify unintended changes, and determine what requires further evidence."
-        - "Connect multiple design domains when examining an integrated experience."
-      work_setup: "<strong>Individual.</strong> Homework #1–2 and Deliverables #1–4 are submitted and assessed individually. Week 2–3 may include temporary group discussion, while Week 4–7 classroom comparisons are completed individually. Group A and Group B identify case-learning material conditions and are not project teams."
+        - "Understand the distinct purposes of Art, Art–Business, Graphic, Product, Interaction, and Service Design through concrete cases."
+        - "Analyze design principles as conditional relationships among elements, effects, users, contexts, and limitations."
+        - "Use D:Branch critically to compare variations, identify unintended changes, and connect multiple design domains."
+      format: []
+      work_setup: "<strong>Individual.</strong> Homework #1–2 and Deliverables #1–4 are completed and assessed individually. Classroom discussion may be collaborative, but all submitted analyses and D:Branch explorations must reflect the student’s own work."
+      evaluation_criteria: []
     -
       title: "Pop-up Store Design Critique"
       unit: "Individual"
       assessment_note: "Integrated field-based application of Project 1 learning"
       description: "This project asks students to apply the design perspectives developed in Project 1 to a real-world integrated spatial experience. Students visit a pop-up store—or a comparable space such as a marketing booth or exhibition booth—and analyze how art, graphic design, product design, interaction design, and service design elements shape the overall visitor experience."
       learning_objectives:
-        - "Identify how different art and design elements are incorporated into the space."
-        - "Evaluate whether each design decision supports the purpose of the space and its targeted visitors."
-        - "Explain why particular design elements are effective or ineffective beyond subjective judgments."
-        - "Develop a holistic perspective on how multiple design components work together."
-      work_setup: "<strong>Individual.</strong> Students may visit and discuss the space with classmates. However, the observation, analysis, improvement suggestions, and final report are completed and assessed individually."
+        - "Identify how Art, Graphic, Product, Interaction, and Service Design shape a real spatial experience."
+        - "Evaluate design decisions against the space’s purpose and target visitors using field evidence."
+        - "Explain relationships among design elements and develop focused improvement directions."
+      format: []
+      work_setup: "<strong>Individual.</strong> Students may visit and discuss the space with classmates, but observation records, analysis, improvement suggestions, and the final report are completed and assessed individually."
+      evaluation_criteria: []
     -
       title: "Interdisciplinary Industry Project (Studio Mikko Laakkonen)"
       unit: "Team"
       assessment_note: "Korea-launch strategy developed with Studio Mikko Laakkonen"
       description: "This industry-like project is developed in collaboration with a Finnish company. Student teams propose a culturally relevant marketing strategy that the company could use when launching its brand, product, or service in the Korean market. The project integrates user research, customer insight, design, marketing, culture, and strategic management."
       learning_objectives:
-        - "Understand the Finnish company’s identity, values, products, and existing market position."
-        - "Investigate the needs, perceptions, and behaviors of potential Korean users and customers."
-        - "Identify cultural and market differences that should be considered when entering Korea."
-        - "Translate user research findings into meaningful customer insights and opportunity areas."
-        - "Develop a coherent marketing strategy connecting target customers, positioning, messaging, channels, and customer experience."
-        - "Integrate user-centered, customer-centered, and strategic-centered thinking."
-      work_setup: "<strong>Mixed individual and team structure.</strong> Homework #3 is completed individually so that every student enters the team project with an evidence base. Homework #4–6 and Deliverable #6 are completed as team work. All members are expected to participate meaningfully in research, analysis, customer framing, strategy development, and presentation. Individual grades may be adjusted when documented contribution differs substantially."
+        - "Understand Studio Mikko Laakkonen’s identity and strengths alongside relevant Korean user, customer, cultural, and market evidence."
+        - "Translate research into target-customer understanding, decision factors, and meaningful opportunity areas."
+        - "Develop a coherent Korean market-entry strategy connecting customer value, positioning, communication, channels, and experience."
+      format: []
+      work_setup: "<strong>Mixed individual and team structure.</strong> Homework #3 is completed individually. Homework #4–6 and Deliverable #6 are completed in teams. All members are expected to contribute meaningfully; individual grades may be adjusted when documented contributions differ substantially."
+      evaluation_criteria: []
     -
       title: "Personal Interdisciplinary Map"
       unit: "Individual"
       assessment_note: "Individual interdisciplinary map and final reflection"
       description: "This project asks students to reflect on their learning experiences throughout the course and define the interdisciplinary approach they may wish to pursue in the future. Students create a personal diagram that connects relevant domains—such as design, art, management, technology, culture, or other fields—and explain how these areas may work together in their future study or career."
       learning_objectives:
-        - "Reflect on personal interests, strengths, and learning experiences from Projects 1–3."
-        - "Identify the disciplines and design subdomains that students wish to integrate."
-        - "Explain the relationships, intersection areas, and potential synergies among selected disciplines."
-        - "Connect personal interests to user-centered, customer-centered, and company-centered design thinking approaches."
-        - "Clarify a possible future learning or career direction through a representative interdisciplinary case."
-        - "Develop a more intentional understanding of one’s position within Culture and Design Management."
-      work_setup: "<strong>Individual.</strong> Project 4 is completed and assessed individually. The diagram and written discussion should reflect each student’s own interests, experiences, and future direction rather than presenting a general description of interdisciplinary design."
+        - "Reflect on personal interests, strengths, and learning experiences to identify the disciplines and design subdomains you wish to integrate."
+        - "Explain the intersections and potential synergies among the selected domains and connect them to relevant user-, customer-, or company-centered perspectives."
+        - "Clarify a possible future study or career direction through a personalized interdisciplinary map and one representative case."
+      format: []
+      work_setup: "Project 4 is completed and assessed individually. The diagram and written discussion should reflect each student’s own interests, experiences, and future direction rather than presenting a general description of interdisciplinary design."
+      evaluation_criteria: []
 roadmap_intro: "The four projects form a cumulative learning sequence. Students first use D:Branch to practice seeing design cases from multiple perspectives, then apply those perspectives to a critical analysis of a real pop-up store. They extend this ability through a multidisciplinary industry collaboration with Studio Mikko Laakkonen and finally translate their accumulated learning into a personal interdisciplinary map."
 roadmap:
   -
@@ -225,9 +224,8 @@ weekly_schedule:
     week: "01"
     iso_date: "2026-09-01"
     stage_ref: "foundations"
-    lecture: "Course Introduction: Building a High-Level Map of CDM"
-    lecture_main: "Course Introduction"
-    lecture_subtitle: "Building a High-Level Map of CDM"
+    lecture: "Course Introduction · What Is Culture and Design Management?"
+    lecture_main: "Course Introduction · What Is Culture and Design Management?"
     in_class:
       - "Course orientation"
     after_class:
@@ -240,8 +238,7 @@ weekly_schedule:
     iso_date: "2026-09-08"
     stage_ref: "learn-to-see"
     lecture: "CDM Design Lens #1: Art"
-    lecture_main: "CDM Design Lens #1"
-    lecture_subtitle: "Art"
+    lecture_main: "CDM Design Lens #1: Art"
     in_class:
       - "Art–Design Spectrum discussion"
     after_class:
@@ -258,15 +255,14 @@ weekly_schedule:
     iso_date: "2026-09-15"
     stage_ref: "learn-to-see"
     lecture: "CDM Design Lens #2: Art + Business"
-    lecture_main: "CDM Design Lens #2"
-    lecture_subtitle: "Art + Business"
+    lecture_main: "CDM Design Lens #2: Art + Business"
     in_class:
       - "Week 2 homework review + Art–Business collaboration deep dive"
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch ‘Graphic Design Elements.’"
-        due: "Sep. 22 before class."
+        task: "Graphic Design Elements"
+        due: "Sep. 22 before class"
       -
         type: "Homework #2"
         task: "Deepening an Art–Business Collaboration through Technology"
@@ -276,8 +272,7 @@ weekly_schedule:
     iso_date: "2026-09-22"
     stage_ref: "learn-to-see"
     lecture: "CDM Design Lens #3: Graphic Design"
-    lecture_main: "CDM Design Lens #3"
-    lecture_subtitle: "Graphic Design"
+    lecture_main: "CDM Design Lens #3: Graphic Design"
     in_class:
       - "Case-driven Learning through D:Branch Tool"
     after_class:
@@ -294,8 +289,7 @@ weekly_schedule:
     iso_date: "2026-09-29"
     stage_ref: "learn-to-see"
     lecture: "CDM Design Lens #4: Product Design"
-    lecture_main: "CDM Design Lens #4"
-    lecture_subtitle: "Product Design"
+    lecture_main: "CDM Design Lens #4: Product Design"
     in_class:
       - "Individual case exploration and new-case analysis"
     after_class:
@@ -312,8 +306,7 @@ weekly_schedule:
     iso_date: "2026-10-06"
     stage_ref: "learn-to-see"
     lecture: "CDM Design Lens #5: Interaction Design"
-    lecture_main: "CDM Design Lens #5"
-    lecture_subtitle: "Interaction Design"
+    lecture_main: "CDM Design Lens #5: Interaction Design"
     in_class:
       - "Individual interaction-case exploration and new-case analysis"
     after_class:
@@ -330,8 +323,7 @@ weekly_schedule:
     iso_date: "2026-10-13"
     stage_ref: "learn-to-see"
     lecture: "CDM Design Lens #6: Service Design"
-    lecture_main: "CDM Design Lens #6"
-    lecture_subtitle: "Service Design"
+    lecture_main: "CDM Design Lens #6: Service Design"
     in_class:
       - "Individual service-case exploration and new-case analysis"
     after_class:
@@ -357,14 +349,13 @@ weekly_schedule:
     iso_date: "2026-10-27"
     stage_ref: "integrate-and-create"
     lecture: "Industry Project Launch · Guest Speaker: Studio Mikko Laakkonen · Three Ways of Design Thinking"
-    lecture_main: "Industry Project Launch · Guest Speaker"
-    lecture_subtitle: "Studio Mikko Laakkonen · Three Ways of Design Thinking"
+    lecture_main: "Industry Project Launch · Guest Speaker: Studio Mikko Laakkonen · Three Ways of Design Thinking"
     in_class:
       - "Company briefing, project framing, design-thinking overview, and team formation"
     after_class:
       -
         type: "FC Lectures"
-        task: "Watch ‘User-centered Design’ and ‘User Research Methods.’"
+        task: "User-Centered Design and User Research Methods"
         due: "Nov. 3 before class"
       -
         type: "Homework #3"
@@ -375,14 +366,13 @@ weekly_schedule:
     iso_date: "2026-11-03"
     stage_ref: "integrate-and-create"
     lecture: "CDM’s Design Thinking Series #1: User-Centered Design Thinking"
-    lecture_main: "CDM’s Design Thinking Series #1"
-    lecture_subtitle: "User-Centered Design Thinking"
+    lecture_main: "CDM’s Design Thinking Series #1: User-Centered Design Thinking"
     in_class:
       - "Desk-research synthesis, strategic research focus selection, and user-research planning workshop"
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch ‘User-centered Design methods.’"
+        task: "User Research Methods"
         due: "Nov. 10 before class"
       -
         type: "Homework #4"
@@ -393,8 +383,7 @@ weekly_schedule:
     iso_date: "2026-11-10"
     stage_ref: "integrate-and-create"
     lecture: "CDM’s Design Thinking Series #1: User-Centered Design Thinking"
-    lecture_main: "CDM’s Design Thinking Series #1"
-    lecture_subtitle: "User-Centered Design Thinking"
+    lecture_main: "CDM’s Design Thinking Series #1: User-Centered Design Thinking"
     in_class:
       - "Pattern and tension mapping, user-insight development, and strategic opportunity framing"
     after_class:
@@ -404,21 +393,20 @@ weekly_schedule:
         due: "Nov. 17"
       -
         type: "FC Lecture"
-        task: "Watch ‘Customer-centered Thinking.’"
+        task: "Customer-Centered Thinking"
         due: "Nov. 17 before class"
   -
     week: "12"
     iso_date: "2026-11-17"
     stage_ref: "integrate-and-create"
     lecture: "CDM’s Design Thinking Series #2: Customer-Centered Design Thinking"
-    lecture_main: "CDM’s Design Thinking Series #2"
-    lecture_subtitle: "Customer-Centered Design Thinking"
+    lecture_main: "CDM’s Design Thinking Series #2: Customer-Centered Design Thinking"
     in_class:
       - "Prospective customer decision mapping, driver and barrier analysis, and customer-centered direction development"
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch ‘Strategic Design Thinking.’"
+        task: "Strategic Design Thinking"
         due: "Nov. 24 before class"
       -
         type: "Homework #6"
@@ -429,8 +417,7 @@ weekly_schedule:
     iso_date: "2026-11-24"
     stage_ref: "integrate-and-create"
     lecture: "CDM’s Design Thinking Series #3: Design Management — Strategic Thinking Process"
-    lecture_main: "CDM’s Design Thinking Series #3"
-    lecture_subtitle: "Design Management — Strategic Thinking Process"
+    lecture_main: "CDM’s Design Thinking Series #3: Design Management — Strategic Thinking Process"
     in_class:
       - "Competitor research and comparison, strategic evaluation of Value Ideas, and competitive marketing-strategy development"
     after_class:
@@ -664,7 +651,7 @@ assignments:
 deliverables:
   -
     number: 1
-    title: "[Mini-Report] Graphic Design Self-Directed Exploration with D:Branch"
+    title: "Graphic Design Self-Directed Exploration with D:Branch"
     project_number: 1
     assignment_type: "Individual Mini-Report"
     due_iso: "2026-09-29T23:59:00+09:00"
@@ -673,20 +660,25 @@ deliverables:
     summary: "Select one Graphic Design principle introduced in Week 4 and use D:Branch to independently explore a Graphic Design case that you genuinely want to understand.\nBegin with a specific personal learning goal, generate an initial branch set, examine useful and unsuccessful results, develop a follow-up question, and conduct at least one additional exploration.\nThe purpose is not to create the most visually attractive variation. Demonstrate how you used D:Branch to investigate how a Graphic Design principle operates, how its effects may change across users or contexts, and where generated results require further verification."
     contents:
       -
-        title: "Exploration Focus"
-        body: "- Selected Graphic Design principle, personal learning goal, selected case, audience, medium, context, and initial expectation."
+        title: "Exploration focus"
+        items:
+          - "Selected principle, personal learning goal, case, audience, medium, context, and initial expectation."
       -
-        title: "First D:Branch Exploration and Analysis"
-        body: "- Complete first branch set, prompt and process documentation, comparison of design changes and effects, the most useful branch, and at least one inaccurate or unconvincing branch."
+        title: "First exploration"
+        items:
+          - "Branch set, prompt/process record, comparison of effects, most useful branch, and one inaccurate or unconvincing branch."
       -
-        title: "Follow-up Question and Additional Exploration"
-        body: "- One question arising from the first exploration and at least one additional exploration responding to it."
+        title: "Follow-up exploration"
+        items:
+          - "One question arising from the first exploration and at least one additional branch set."
       -
-        title: "Final Learning Synthesis"
-        body: "- Main learning, conditions, exceptions, trade-offs, evidence needs, and what D:Branch did or did not help you understand."
+        title: "Learning synthesis"
+        items:
+          - "Main learning, conditions, exceptions, trade-offs, and evidence needs."
       -
-        title: "D:Branch Reflection and Self-Rating"
-        body: "- Reflection on the use, limitations, accuracy, control, and possible improvements of D:Branch, plus completion of all self-rating items."
+        title: "D:Branch reflection"
+        items:
+          - "Usefulness, limitations, accuracy, control, improvement ideas, and self-rating."
     presentation: "No formal presentation is required. Selected exploration processes or findings may be briefly discussed during the following class as part of the Graphic Design review activity."
     upload_file:
       file_type: "PDF"
@@ -697,10 +689,10 @@ deliverables:
     submission_method: "Upload the complete PDF to the Deliverable #1 submission folder on LearnUS. The D:Branch use reflection and self-rating must be included within the same report. No separate survey submission is required. Submissions through email or other channels will not be accepted."
     show_detailed_deadline: true
     show_evaluation_percentage: true
-    evaluation_focus: "The deliverable will be evaluated across five areas:\n1. **Learning Goal and Case Selection:** Clarity of the personal learning goal and relevance of the selected Graphic Design case.\n1. **Exploration Process:** Completeness of the first and follow-up explorations, including the quality of the follow-up question.\n1. **Graphic Design Reasoning:** Ability to connect design elements with their effects and consider users, media, tasks, contexts, conditions, and exceptions.\n1. **Critical Use of D:Branch:** Critical examination of useful and unsuccessful outputs, including inaccuracies, unintended changes, limitations, and evidence needs.\n1. **Communication and Reflection:** Clarity of visual and written documentation, evidence-oriented reflection, and specificity of the evaluation of D:Branch."
+    evaluation_focus: "- Learning goal and case selection · 20%\n- Exploration process · 20%\n- Graphic Design reasoning · 20%\n- Critical use of D:Branch · 20%\n- Communication and reflection · 20%"
   -
     number: 2
-    title: "[Mini-Report] Product Design Self-Directed Exploration with D:Branch"
+    title: "Product Design Self-Directed Exploration with D:Branch"
     project_number: 1
     assignment_type: "Individual Mini-Report"
     due_iso: "2026-10-06T23:59:00+09:00"
@@ -709,20 +701,25 @@ deliverables:
     summary: "Select one Product Design principle introduced in Week 5 and use D:Branch to independently explore a product case that you genuinely want to understand.\nBegin with a specific learning goal, generate an initial branch set, examine useful and unsuccessful results, develop a follow-up question, and conduct at least one additional exploration.\nThe goal is not to create the most attractive product variation. Compare product-design variations, identify patterns and limitations, and distinguish visually suggested expectations from claims requiring physical or user testing."
     contents:
       -
-        title: "Exploration Focus"
-        body: "- Selected Product Design principle, personal learning goal, selected product case, users, task, context, and initial expectation."
+        title: "Exploration focus"
+        items:
+          - "Selected principle, learning goal, product case, users, task, context, and initial expectation."
       -
-        title: "First D:Branch Exploration and Analysis"
-        body: "- Complete first branch set, prompt and process documentation, comparison of product changes and perceived effects, the most useful branch, and at least one implausible or unconvincing branch."
+        title: "First exploration"
+        items:
+          - "Branch set, prompt/process record, comparison of perceived effects, most useful branch, and one implausible or unconvincing branch."
       -
-        title: "Follow-up Question and Additional Exploration"
-        body: "- One question arising from the first exploration and at least one additional exploration responding to it."
+        title: "Follow-up exploration"
+        items:
+          - "One question arising from the first exploration and at least one additional branch set."
       -
-        title: "Final Learning Synthesis"
-        body: "- Main learning, users and contexts, boundary cases, trade-offs, verification needs, and what D:Branch did or did not help you understand."
+        title: "Learning synthesis"
+        items:
+          - "Main learning, users and contexts, boundary cases, trade-offs, and verification needs."
       -
-        title: "D:Branch Reflection and Self-Rating"
-        body: "- Reflection on the use, limitations, physical plausibility, control, and possible improvements of D:Branch, plus completion of all self-rating items."
+        title: "D:Branch reflection"
+        items:
+          - "Usefulness, limitations, physical plausibility, control, improvement ideas, and self-rating."
     presentation: "No formal presentation is required. Selected exploration processes or findings may be briefly discussed during the following class as part of the Product Design review activity."
     upload_file:
       file_type: "PDF"
@@ -733,10 +730,10 @@ deliverables:
     submission_method: "Upload the complete PDF to the Deliverable #2 submission folder on LearnUS. The D:Branch use reflection and self-rating must be included within the same report. No separate survey submission is required. Submissions through email or other channels will not be accepted."
     show_detailed_deadline: true
     show_evaluation_percentage: true
-    evaluation_focus: "The deliverable will be evaluated across five areas:\n1. **Learning Goal and Case Selection:** Clarity of the learning goal and relevance of the selected Product Design case.\n1. **Exploration Process:** Completeness of the first and follow-up explorations and quality of the follow-up question.\n1. **Product Design Reasoning:** Ability to connect product elements with action cues, bodily use and independence, sensory and quality expectations, or emotional and symbolic meaning, while considering users, contexts, boundary cases, and verification needs.\n1. **Critical Use of D:Branch:** Critical examination of useful and unsuccessful outputs, including physical implausibility, unintended changes, limitations, and evidence needs.\n1. **Communication and Reflection:** Clarity of visual and written documentation and specificity of reflection."
+    evaluation_focus: "- Learning goal and case selection · 20%\n- Exploration process · 20%\n- Product Design reasoning · 20%\n- Critical use of D:Branch · 20%\n- Communication and reflection · 20%"
   -
     number: 3
-    title: "[Mini-Report] Interaction Design Self-Directed Exploration with D:Branch"
+    title: "Interaction Design Self-Directed Exploration with D:Branch"
     project_number: 1
     assignment_type: "Individual Mini-Report"
     due_iso: "2026-10-13T23:59:00+09:00"
@@ -745,20 +742,25 @@ deliverables:
     summary: "Select one Interaction Design principle introduced in Week 6 and use D:Branch to independently explore an interaction case that you genuinely want to understand."
     contents:
       -
-        title: "Exploration Focus"
-        body: "- Selected Interaction Design principle, personal learning goal, selected interaction case, users, task, input–output sequence, context, and initial expectation."
+        title: "Exploration focus"
+        items:
+          - "Selected principle, learning goal, interaction case, users, task, sequence, context, and initial expectation."
       -
-        title: "First D:Branch Exploration and Analysis"
-        body: "- Complete first branch set or sequences, prompt and process documentation, comparison of interaction changes and expected effects, the most useful branch, and at least one inconsistent or unconvincing branch."
+        title: "First exploration"
+        items:
+          - "Branch set or sequences, prompt/process record, comparison of expected effects, most useful branch, and one inconsistent or unconvincing branch."
       -
-        title: "Follow-up Question and Additional Exploration"
-        body: "- One question arising from the first exploration and at least one additional exploration responding to it."
+        title: "Follow-up exploration"
+        items:
+          - "One question arising from the first exploration and at least one additional branch set."
       -
-        title: "Final Learning Synthesis"
-        body: "- Main learning, user, task, bodily, spatial, accessibility, or social conditions, failure cases, trade-offs, verification needs, and what D:Branch did or did not help you understand."
+        title: "Learning synthesis"
+        items:
+          - "Main learning, user, task, bodily, spatial, accessibility, or social conditions, trade-offs, and verification needs."
       -
-        title: "D:Branch Reflection and Self-Rating"
-        body: "- Reflection on the use, limitations, sequence consistency, control, and possible improvements of D:Branch, plus completion of all self-rating items."
+        title: "D:Branch reflection"
+        items:
+          - "Usefulness, limitations, sequence consistency, control, improvement ideas, and self-rating."
     presentation: "No formal presentation is required. Selected exploration processes or findings may be briefly discussed during the following class as part of the Interaction Design review activity."
     upload_file:
       file_type: "PDF"
@@ -769,10 +771,10 @@ deliverables:
     submission_method: "Upload the complete PDF to the Deliverable #3 submission folder on LearnUS. The D:Branch use reflection and self-rating must be included within the same report. No separate survey submission is required. Submissions through email or other channels will not be accepted."
     show_detailed_deadline: true
     show_evaluation_percentage: true
-    evaluation_focus: "The deliverable will be evaluated across five areas:\n1. **Learning Goal and Case Selection:** Clarity of the learning goal and relevance of the selected Interaction Design case.\n1. **Exploration Process:** Completeness of the first and follow-up explorations and quality of the follow-up question.\n1. **Interaction Design Reasoning:** Ability to identify interaction elements and relationships, explain their expected effects, and consider users, contexts, bodily or spatial conditions, failures, accessibility, and verification needs.\n1. **Critical Use of D:Branch:** Critical examination of useful and unsuccessful outputs, including inconsistent sequences, infeasible actions, unintended system changes, limitations, and evidence needs.\n1. **Communication and Reflection:** Clarity of visual and written documentation and specificity of reflection."
+    evaluation_focus: "- Learning goal and case selection · 20%\n- Exploration process · 20%\n- Interaction Design reasoning · 20%\n- Critical use of D:Branch · 20%\n- Communication and reflection · 20%"
   -
     number: 4
-    title: "[Mini-Report] Service Design Self-Directed Exploration and Cross-disciplinary Synthesis with D:Branch"
+    title: "Service Design Self-Directed Exploration and Cross-disciplinary Synthesis with D:Branch"
     project_number: 1
     assignment_type: "Individual Mini-Report"
     due_iso: "2026-10-19T23:59:00+09:00"
@@ -781,20 +783,25 @@ deliverables:
     summary: "Select one Service Design principle introduced in Week 7 and use D:Branch to independently explore a service case that you genuinely want to understand."
     contents:
       -
-        title: "Exploration Focus"
-        body: "- Selected Service Design principle, personal learning goal, service case, and the service element or relationship to be explored."
+        title: "Exploration focus"
+        items:
+          - "Selected principle, learning goal, service case, and service element or relationship to explore."
       -
-        title: "Initial D:Branch Exploration and Analysis"
-        body: "- Complete first branch set, process documentation, comparison of changes and effects, the most useful branch, and at least one unconvincing branch."
+        title: "First exploration"
+        items:
+          - "Branch set, process record, comparison of changes and effects, most useful branch, and one unconvincing branch."
       -
-        title: "Follow-up Question and Additional Exploration"
-        body: "- One question arising from the first exploration and at least one additional exploration responding to it."
+        title: "Follow-up exploration"
+        items:
+          - "One question arising from the first exploration and at least one additional branch set."
       -
-        title: "Final Learning Synthesis"
-        body: "- Main learning, value and burdens for different actors, conditions, trade-offs, limitations, and remaining evidence needs."
+        title: "Learning synthesis"
+        items:
+          - "Main learning, value and burdens for actors, conditions, trade-offs, limitations, and evidence needs."
       -
-        title: "D:Branch Reflection and Self-Rating"
-        body: "- Reflection on the use and limitations of D:Branch and completion of all self-rating items in the template."
+        title: "D:Branch reflection"
+        items:
+          - "Usefulness, limitations, improvement ideas, and self-rating."
     presentation: "No formal presentation is required. Selected exploration processes, service structures, or cross-disciplinary connections may be briefly discussed during the following class."
     upload_file:
       file_type: "PDF"
@@ -805,10 +812,10 @@ deliverables:
     submission_method: "- Upload the complete PDF to the Deliverable #4 submission folder on LearnUS.\n- The D:Branch use reflection and self-rating must be included within the same report. No separate survey submission is required.\n- Submissions through email or other channels will not be accepted."
     show_detailed_deadline: true
     show_evaluation_percentage: true
-    evaluation_focus: "The deliverable will be evaluated across five areas:\n1. **Learning Goal and Case Selection:** Clarity of the learning goal and relevance of the selected service case\n1. **Exploration Process:** Completeness of the first and follow-up explorations, control of the service variable, and quality of the follow-up question\n1. **Service Design Reasoning:** Ability to explain the service structure, value mechanism, users, providers, actors, resources, conditions, burdens, trade-offs, and evidence needs\n1. **Cross-disciplinary Synthesis:** Ability to explain how the selected service structure requires related Graphic, Product, or Interaction Design decisions\n1. **Critical Use, Communication, and Reflection:** Critical examination of useful and unsuccessful outputs, clarity of visual and written documentation, and specificity of reflection"
+    evaluation_focus: "- Learning goal and case selection · 20%\n- Exploration process · 20%\n- Service Design reasoning · 20%\n- Cross-disciplinary synthesis · 20%\n- Critical use, communication, and reflection · 20%"
   -
     number: 5
-    title: "[Mid-term Report] Pop-up Store Design Critique"
+    title: "Pop-up Store Design Critique"
     project_number: 2
     assignment_type: "Individual Mid-term Report"
     due_iso: "2026-10-26T23:59:00+09:00"
@@ -817,17 +824,25 @@ deliverables:
     summary: "Visit one pop-up store, marketing booth, exhibition booth, or comparable temporary branded space. Analyze how Art, Graphic Design, Product Design, Interaction Design, and Service Design shape the visitor experience, and examine how these elements work together.\nGo beyond description or personal preference. Use specific field observations and visual evidence to explain the design decisions, their effects, their alignment with the purpose and targeted visitors, and possible improvements."
     contents:
       -
-        title: "Case Context"
-        body: "- Introduce the selected space, field-visit context, main purpose, and targeted visitors.\n- Clearly distinguish official information, direct observation, and your own interpretation."
+        title: "Case context"
+        items:
+          - "Selected space, visit context, purpose, targeted visitors, and clear distinction among official information, observation, and interpretation."
       -
-        title: "Design Elements Analysis"
-        body: "- Analyze Art, Graphic Design, Product and Spatial Design, Interaction Design, and Service Design in the space.\n- For each domain, select the most relevant examples and explain the design decision, its effect on visitors, its alignment with the purpose and targeted visitors, and a justified improvement where appropriate."
+        title: "Design-element analysis"
+        items:
+          - "Relevant Art, Graphic, Product/Spatial, Interaction, and Service Design decisions and their effects."
       -
-        title: "Integrated Design Critique"
-        body: "- Examine at least three meaningful relationships among different design domains, such as support, dependency, consistency, tension, trade-off, or gap.\n- Explain how these relationships shape the overall experience and propose integrated improvements."
+        title: "Integrated critique"
+        items:
+          - "At least three meaningful relationships among design domains and their effect on the overall experience."
       -
-        title: "Personal Reflection"
-        body: "- Reflect on what the case reveals about interdisciplinary, purpose-centered, and visitor-centered design, and how this may influence your future design-management practice.\nUse photographs and other field evidence throughout the report. Place visuals near the relevant analysis and refer to them clearly in the text."
+        title: "Improvements"
+        items:
+          - "Focused recommendations grounded in field evidence and the identified relationships."
+      -
+        title: "Reflection"
+        items:
+          - "What the case reveals about interdisciplinary, purpose-centered, and visitor-centered design."
     presentation: "No formal presentation is required."
     upload_file:
       file_type: "Word Document (.docx)"
@@ -843,10 +858,10 @@ deliverables:
     submission_method: "Upload the completed Word document to the Deliverable #5 submission folder on LearnUS."
     show_detailed_deadline: true
     show_evaluation_percentage: true
-    evaluation_focus: "The report will be evaluated in five categories:\n1. **Context and Field Evidence:** Clear understanding of the selected space, its purpose and visitors, supported by relevant observations and visuals.\n1. **Design Elements Analysis:** Appropriate application of course concepts to Art, Graphic, Product and Spatial, Interaction, and Service Design.\n1. **Integrated Design Critique:** Depth of analysis of relationships among design domains and their collective effect on the visitor experience.\n1. **Improvement and Reflection:** Quality of justified improvements and thoughtful reflection on interdisciplinary and visitor-centered design.\n1. **Communication:** Clarity of writing, organization, visual evidence, and source attribution."
+    evaluation_focus: "- Context and field evidence · 20%\n- Design-elements analysis · 20%\n- Integrated design critique · 20%\n- Improvements and reflection · 20%\n- Communication and source attribution · 20%"
   -
     number: 6
-    title: "[Final Presentation] Korean Market Entry Marketing Strategy Proposal"
+    title: "Korean Market Entry Marketing Strategy Proposal"
     project_number: 3
     assignment_type: "Group Presentation"
     due_iso: "2026-12-08T09:00:00+09:00"
@@ -855,20 +870,25 @@ deliverables:
     summary: "Present a clear and persuasive marketing strategy directly to Studio Mikko Laakkonen. Help the company understand the Korean market and consumers, identify the most promising opportunity, and decide how to begin approaching the market.\nDo not organize the presentation as a weekly process report. Use research, customer analysis, competitor comparison, and consultation only as evidence supporting the final recommendation."
     contents:
       -
-        title: "About Studio Mikko Laakkonen"
-        body: "- Introduce the company’s identity, design philosophy, key products, and strengths that are most relevant to your proposal."
+        title: "Company understanding"
+        items:
+          - "Relevant identity, design philosophy, products, and strengths."
       -
-        title: "Proposed Idea and Target Customer Persona"
-        body: "- Present one new design-marketing idea, the target customer persona, and the core value the idea seeks to create."
+        title: "Idea and target"
+        items:
+          - "One focused design-marketing idea, target customer, and core value."
       -
-        title: "Why This Idea Is Strong"
-        body: "- Explain why the proposal is convincing by combining relevant user-centered, customer-centered, and strategic thinking.\n- Use the research, customer, market, company, or competitor evidence that directly supports the idea."
+        title: "Strategic rationale"
+        items:
+          - "User, customer, company, market, and competitor evidence supporting the recommendation."
       -
-        title: "Short-Term and Long-Term Goals"
-        body: "- Show how the idea could begin in the short term and develop over the long term, including the main actions or milestones."
+        title: "Development plan"
+        items:
+          - "Short- and long-term goals, actions, milestones, assumptions, and risks."
       -
-        title: "Expected Value"
-        body: "- Explain the expected value for the target customer, Studio Mikko Laakkonen, and its position in the Korean market.\nInclude references and team contributions in the final slide or appendix."
+        title: "Expected value"
+        items:
+          - "Benefits for the target customer, Studio Mikko Laakkonen, and its Korean-market position."
     presentation: "- **Presentation time:** Maximum 12 minutes per group\n- **Q&A and critique:** Approximately 5 minutes\n- **Recommended main deck:** Approximately 10–12 slides\n- Detailed research methods, full quotes, competitor tables, and intermediate analyses may be placed in the appendix.\n- All team members should participate meaningfully. Present the proposal as a professional recommendation to Studio Mikko Laakkonen."
     upload_file:
       filename_rule: "D6_TeamNumber_TeamName.pdf"
@@ -883,10 +903,10 @@ deliverables:
     submission_method: "One team representative should upload the final PDF to the Deliverable #6 submission folder on LearnUS. The title slide must include the names and student IDs of all team members."
     show_detailed_deadline: true
     show_evaluation_percentage: true
-    evaluation_focus: "The final proposal will be evaluated in five categories:\n1. **Company Understanding:** Accurate and relevant understanding of Studio Mikko Laakkonen’s identity, philosophy, products, and strengths.\n1. **Idea and Target Fit:** Clarity and originality of the proposed idea, and its fit with the selected target customer persona.\n1. **Evidence-Based Reasoning:** Convincing use of user-centered, customer-centered, and strategic thinking to support the proposal.\n1. **Goal and Development Plan:** Clarity and realism of the short-term and long-term goals, actions, and development path.\n1. **Expected Value and Presentation:** Strength of the expected value for the customer, company, and Korean market, together with persuasive storytelling, visual communication, source attribution, and team delivery."
+    evaluation_focus: "- Company understanding · 20%\n- Idea and target fit · 20%\n- Evidence-based strategic reasoning · 20%\n- Goals and development plan · 20%\n- Expected value and presentation · 20%"
   -
     number: 7
-    title: "[Final Report] Personal Interdisciplinary Map"
+    title: "Personal Interdisciplinary Map"
     project_number: 4
     assignment_type: "Individual Final Report"
     due_iso: "2026-12-14T23:59:00+09:00"
@@ -895,14 +915,17 @@ deliverables:
     summary: "Reflect on your current interests and the interdisciplinary design approach you may wish to pursue in future study, projects, or career. A fully fixed career plan is not required. If your direction is still unclear, use the approaches or cases that interested you most during the course to explain your current perspective."
     contents:
       -
-        title: "Personal Interdisciplinary Diagram"
-        body: "- Visualize the domains and intersections that reflect your current interests."
+        title: "Personal interdisciplinary diagram"
+        items:
+          - "Domains and intersections reflecting your current interests."
       -
-        title: "Interdisciplinary Direction"
-        body: "- Explain the important connections and synergies in your diagram, and what they suggest about your current interests or possible future direction."
+        title: "Interdisciplinary direction"
+        items:
+          - "Important connections, synergies, priorities, and possible future direction."
       -
-        title: "Representative Case"
-        body: "- Analyze one relevant project, organization, professional practice, or other case that reflects the interdisciplinary direction shown in your diagram."
+        title: "Representative case"
+        items:
+          - "One project, organization, or professional practice analyzed through your interdisciplinary map."
     presentation: "No formal presentation is required."
     upload_file:
       file_type: "PDF"
@@ -915,7 +938,7 @@ deliverables:
     submission_method: "Upload the completed PDF to the Deliverable #7 submission folder on LearnUS. Delete all instructional text from the provided template before submission."
     show_detailed_deadline: true
     show_evaluation_percentage: true
-    evaluation_focus: "The report will be evaluated in five categories:\n1. **Interdisciplinary Map:** Clarity, coherence, and personalization of the diagram.\n1. **Interdisciplinary Understanding:** Understanding of domains, intersections, synergies, and relevant user-, customer-, or company-centered perspectives.\n1. **Personal Reflection:** Thoughtful explanation of current interests and possible future direction.\n1. **Representative Case:** Relevance of the selected case and quality of analysis through the student’s interdisciplinary map.\n1. **Communication:** Clarity of writing, visual presentation, and source attribution."
+    evaluation_focus: "- Interdisciplinary map · 20%\n- Interdisciplinary understanding · 20%\n- Personal reflection · 20%\n- Representative-case analysis · 20%\n- Communication and source attribution · 20%"
 assessment:
   -
     label: "Attendance & Class Preparation"
@@ -927,26 +950,29 @@ assessment:
     note: "Active, respectful, and constructive engagement"
 assessment_project_position: "before"
 assessment_show_total: true
-assessment_total_note: "Deliverable-level criteria will be announced with each project"
+assessment_total_note: "Total: 100%"
 policies:
   -
-    title: "Attendance"
-    text: "Attendance is required. More than one-third of total class meetings missed results in an F; arriving 30 minutes or more late counts as an absence. Each unexcused absence deducts 2 points."
+    title: "Attendance (Offline)"
+    text: "You are expected to attend every class and be on time. Your commitment and participation in the course contribute to the learning experience of all participants.<br><br>- Avoid absences because you will miss important information that may not be in the readings. If you are absent, it is your responsibility to get information regarding announcements and topics covered from your peers.<br><br>- Not attending more than one-third of the entire course (a total of 5 absences) results in an F, in accordance with school policy.<br><br>- Being 30 minutes or more late to a class or session counts as an absence.<br><br>- Absences for religious holidays, quarantine or isolation, or occasional school events are excused in accordance with university regulations and guidelines. Please communicate with the instructor ahead of time if you know you will be absent.<br><br>- For every unexcused absence, 2 points will be deducted."
   -
-    title: "Flipped classroom"
-    text: "Assigned FC lectures must be completed before class. Each incomplete required video deducts 2 points."
+    title: "Flipped Classroom (Video Lecture)"
+    text: "Watching the pre-recorded lecture videos is not optional; it directly affects your grade.<br><br>- For every assigned pre-recorded video that is not watched, 2 points will be deducted."
   -
     title: "Participation"
-    text: "Contribute respectfully and actively to discussions, workshops, presentations, and peer feedback."
+    text: "Participate respectfully and actively.<br><br>- Listen to and consider other viewpoints.<br><br>- Actively share ideas with group members and classmates.<br><br>- To participate effectively, you need to watch the assigned pre-recorded lecture videos."
   -
-    title: "Teamwork"
-    text: "Team projects normally receive a shared grade; peer evaluation may adjust individual results when contribution differs substantially."
+    title: "Teamwork Policy"
+    text: "Team presentations will be graded as a whole, but peer evaluation may be used to adjust individual grades if there is a significant imbalance in contribution."
   -
-    title: "Late submissions"
-    text: "The working policy is a 10% deduction within 6 hours, 25% within 24 hours, 50% within 48 hours, and 75% within 72 hours. Work over three days late is not evaluated."
+    title: "Deadlines & Late Submissions"
+    text: "All students are expected to complete assignments by the due dates and times announced in the lecture. Please ensure timely submission and effectively plan and balance your academic work and other commitments. The late-submission penalty is as follows:<br><br>- 1 minute–6 hours late: 10% of the maximum allowable marks<br><br>- 6–24 hours late: 25% of the maximum allowable marks<br><br>- 24–48 hours late: 50% of the maximum allowable marks<br><br>- 48–72 hours late: 75% of the maximum allowable marks<br><br>- An assignment submitted more than 3 days late will not be evaluated and will be reported as “not submitted.”"
   -
-    title: "Integrity & course materials"
-    text: "Plagiarism receives zero for the project. Cite all sources and collaborators. Course materials and class recordings may not be copied or distributed without permission."
+    title: "Plagiarism"
+    text: "Copying someone else’s ideas, even if you change the wording, is a serious academic offense. To avoid plagiarism, when referring to others’ work, do not change the intended message, add new information, leave out important details, or alter the level of formality.<br><br>- If a student’s grade is discovered to have been earned through cheating or dishonesty, the grade will become invalid and further disciplinary action will be enforced.<br><br>- Please actively use <a href=\"https://library.yonsei.ac.kr/local/html/turnitin\">Turnitin</a> to self-check and avoid potential plagiarism.<br><br>- If the instructor or peers identify plagiarism in an assignment, project output, report, or other submitted work, the student will receive zero points for that project."
+  -
+    title: "Copyright of Course Materials"
+    text: "Course materials are produced and published for the purpose of teaching Yonsei University students. They may not be used for any other purpose or shared with others. Legal responsibility for any violation lies with the person who committed it.<br><br>- Unauthorized recording is not allowed unless you inform the faculty member and receive approval in advance."
 resources:
   -
     label: "Universal Methods of Design"

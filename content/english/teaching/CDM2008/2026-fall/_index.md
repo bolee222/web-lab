@@ -13,7 +13,7 @@ status: "Upcoming"
 course_level: "Undergraduate"
 project_focus: "Evidence-based Design Research"
 class_day: "Friday"
-class_time: "To be announced"
+class_time: "13:00–16:00"
 classroom: "VeritasB 206 (DFK Idea shop)"
 teaching_team: "Prof. Bokyung Lee"
 language: "English"
@@ -27,7 +27,7 @@ flipped_learning:
   label: "Course Format"
   title: "Flipped Learning"
   text: "This course was designated as a Flipped Classroom (FC) course by the Innovation Center for Teaching & Learning (ICTL)."
-  detail: "Each week, students spend one hour watching lecture videos and completing individual learning tasks provided by the instructor in advance, followed by two hours of cooperative learning with fellow students in the classroom."
+  detail: "Each week, students spend 30 minutes watching lecture videos and completing individual learning tasks provided by the instructor in advance, followed by two hours of cooperative learning with fellow students in the classroom."
 overview: "This course introduces design research as a structured way to understand people, practices, contexts, and opportunities for design. Students learn to frame answerable research questions, select appropriate qualitative methods, conduct ethical fieldwork, organize and interpret evidence, and translate findings into clear design implications. A semester-long project provides repeated practice in planning, conducting, synthesizing, and communicating design research."
 learning_outcomes:
   -
@@ -66,40 +66,31 @@ overview_cards:
       - "Qualitative Analysis & Synthesis"
       - "Evidence-based Design Implications"
   -
-    title: "Assessment"
+    title: "Grading"
     source: "assessment"
 project:
-  label: "Semester research project"
-  title: "A complete design research study"
-  description: "Students will investigate a design-relevant question through a staged research process, building a testable study, collecting evidence, and communicating grounded design implications."
-  question: "How can systematic evidence about people and contexts inform a responsible design direction?"
+  label: "One Semester-long Project"
+  title: "From a Design Question to an Evidence-Based Research Paper"
+  description: "Throughout the semester, each team completes one design research project. Students begin with a focused research question, create comparable design stimuli, conduct a user study, analyze qualitative and quantitative evidence, and communicate what they learned through a final presentation and mini research paper."
+  question: "How can we use designed alternatives and empirical evidence to develop a credible new claim?"
   items:
     -
       title: "Design Research Study"
-      unit: "Format to be announced"
+      unit: "Team"
       assessment_label: "Semester Design Research Project"
       assessment_note: "Four assessed deliverables developed across the semester"
-      description: "Develop a focused research question, plan and conduct ethical qualitative research, synthesize the resulting evidence, and communicate grounded insights and design implications."
+      description: "Each team completes one full design research study throughout the semester. Teams begin with a focused research question, create and compare two or more design conditions, conduct a user study, analyze qualitative and quantitative evidence, and communicate a credible research claim through a final presentation and mini research paper. The designed artifacts function as research stimuli rather than final solutions."
       learning_objectives:
-        - "Define an appropriate research scope and question."
-        - "Select methods that fit the question and context."
-        - "Document evidence and analytical decisions transparently."
-        - "Develop insights and implications supported by evidence."
-      work_setup: "The individual or team format will be announced before the project begins. All research must follow the course's ethical and consent requirements."
-      evaluation_criteria:
-        -
-          title: "Research coherence"
-          text: "The question, method, evidence, and conclusions form a clear and defensible chain."
-        -
-          title: "Evidence quality"
-          text: "Claims are grounded in appropriately collected and documented material."
-        -
-          title: "Ethical practice"
-          text: "The project demonstrates respect for participants, consent, privacy, and limitations."
-        -
-          title: "Clarity of communication"
-          text: "The research process and implications are communicated clearly and transparently."
-roadmap_intro: "The semester follows five connected stages: framing a focused question, planning and creating research stimuli, designing and executing a user study, analysing and interpreting evidence, and integrating the final research narrative."
+        - "Frame a focused and researchable design question."
+        - "Translate the research question into fair and comparable design conditions."
+        - "Design and conduct a systematic comparative user study."
+        - "Analyze qualitative and quantitative evidence in relation to the research question."
+        - "Develop credible findings and evidence-based design implications."
+        - "Communicate the complete study through a presentation and mini research paper."
+      format: []
+      work_setup: "Students form project groups in Week 2 and work with the same team throughout the semester. All members are expected to contribute to research framing, stimulus development, study execution, analysis, presentation, and writing. Team deliverables normally receive a shared grade, but individual grades may be adjusted when documented contributions differ substantially."
+      evaluation_criteria: []
+roadmap_intro: "The project develops through five connected stages. Each stage builds one part of the final research paper, moving from research framing and stimulus creation to study execution, analysis, and research communication."
 roadmap:
   -
     ref: "preparation"
@@ -178,335 +169,300 @@ weekly_schedule:
     stage_ref: "preparation"
     lecture: "**Preparation**"
     lecture_main: "Preparation"
+    paper: "—"
     in_class:
       - "No class"
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch <What Is Design Research?>"
-        due: "Sep. 04"
+        task: "What Is Design Research?"
+        due: "Sep. 4"
       -
         type: "Preparation"
-        task: "Review the course hub."
-        due: "Sep. 04"
+        task: "Review the Course Hub"
+        due: "Sep. 4"
   -
     week: "01"
     iso_date: "2026-09-04"
     stage_ref: "research-framing"
-    lecture: "**Course Introduction.**\nDesign Research as a Scientific Discipline"
-    lecture_main: "Course Introduction."
-    lecture_subtitle: "Design Research as a Scientific Discipline"
+    lecture: "Course Introduction · Design Research as a Scientific Discipline"
+    lecture_main: "Course Introduction · Design Research as a Scientific Discipline"
+    paper: "—"
     in_class:
-      - "Course Description"
-      - "Design project vs. design research"
-      - "Semester process: **RQ → Stimuli → Study → Evidence → Paper**"
-      - "Course expectations, assessment, and Q&A"
+      - "Review TwistLens and PONIFY; identify RQ, stimuli, study, evidence, and claim"
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch <*Research Question Framing: From Idea to Research Questions>.*"
+        task: "Research Question Framing"
         due: "Sep. 11"
       -
-        type: "Preparation"
-        task: "Bring one “design topic” that interests you. · No submission required"
+        type: "Homework #1"
+        task: "Research Interest Card"
+        due: "Sep. 11 before class"
   -
     week: "02"
     iso_date: "2026-09-11"
     stage_ref: "research-framing"
-    lecture: "**Research Question Framing. **\nFrom Imagination to Researchable Design Hypothesis"
-    lecture_main: "Research Question Framing."
-    lecture_subtitle: "From Imagination to Researchable Design Hypothesis"
-    paper: "Introduction"
+    lecture: "Research Question Framing · From Imagination to Researchable Hypothesis"
+    lecture_main: "Research Question Framing · From Imagination to Researchable Hypothesis"
+    paper: "Sections 1 & 3.1 · Introduction, RQ & Hypothesis"
     in_class:
-      - "Share individual contexts and speculative design ideas"
-      - "Form project groups based on shared interests"
-      - "Distinguish topic, design idea, design hypothesis, and research question"
-      - "Develop and narrow provisional research questions"
-      - "Peer critique using the RQ checklist"
+      - "Interest mapping, team formation, and RQ–hypothesis scaffold"
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch <Finding a Research Gap.>"
+        task: "Finding a Research Gap"
         due: "Sep. 18"
       -
-        type: "Homework"
-        task: "Revise the working RQ and identify the phenomenon of interest, target context or users, design condition, expected experience or behavior, and implied comparison."
+        type: "Homework #2"
+        task: "Introduction & Initial RQ Working Draft"
+        due: "Sep. 18"
   -
     week: "03"
     iso_date: "2026-09-18"
     stage_ref: "research-framing"
-    lecture: "**Research Question Verification.\n**Related Work & Research Gap"
-    lecture_main: "Research Question Verification."
-    lecture_subtitle: "Related Work & Research Gap"
-    paper: "Related Work"
+    lecture: "Research Question Verification · Related Work & Research Gap"
+    lecture_main: "Research Question Verification · Related Work & Research Gap"
+    paper: "D1 · Sections 1, 2 & 3.1"
     in_class:
-      - "Related-work mapping workshop"
-      - "Compare what previous studies examined, designed, and measured"
-      - "Identify unresolved questions"
-      - "Research gap and contribution statement critique"
+      - "Related-work mapping, thematic synthesis, gap construction, and RQ revision"
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch ‘Design Variables for Research: Turning Questions into Variables.’"
+        task: "Design Variables for Research"
         due: "Sep. 25"
       -
-        type: "Homework"
-        task: "Prepare a related-work matrix, revise the RQ based on the identified gap, and draft a one-paragraph gap statement and expected contribution."
+        type: "Deliverable #1"
+        task: "Research Foundation & Initial RQ"
+        due: "Sep. 24"
   -
     week: "04"
     iso_date: "2026-09-25"
     holiday: "Chuseok Holiday"
     stage_ref: "research-framing"
-    lecture: "**Design Variables for Research\n**Translating RQ into Designable Factors"
-    lecture_main: "Design Variables for Research"
-    lecture_subtitle: "Translating RQ into Designable Factors"
-    paper: "Introduction + Related Work: Provisional draft"
+    lecture: "Design Variables for Research · Translating RQ into Designable Factors"
+    lecture_main: "Design Variables for Research · Translating RQ into Designable Factors"
+    paper: "Sections 1–3.2 · D1 Revision & Variables Outline"
     in_class:
-      - "Async feedback: Research Question Check-up"
-      - "Instructor feedback on Deliverable #1: RQ, gap, and scope"
-      - "No offline class"
+      - "No offline class · D1 feedback and Variables Canvas"
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch ‘Experiment Logic: Building Fair Comparison Conditions.’"
-        due: "Oct. 02"
+        task: "Experiment Logic"
+        due: "Oct. 2"
       -
-        type: "Homework"
-        task: "Complete the variable-mapping worksheet: independent/design variable, dependent outcomes, controlled factors, and possible confounds."
+        type: "Homework #3"
+        task: "D1 Revision + Section 3.2 Working Outline"
+        due: "Oct. 2"
   -
     week: "05"
     iso_date: "2026-10-02"
     stage_ref: "planning-stimuli"
-    lecture: "**Experiment Logic. \n**Designing Comparable Conditions"
-    lecture_main: "Experiment Logic."
-    lecture_subtitle: "Designing Comparable Conditions"
-    paper: "Design Rationale: Variables, hypotheses, comparison logic"
+    lecture: "Experiment Logic · Designing Comparable Conditions"
+    lecture_main: "Experiment Logic · Designing Comparable Conditions"
+    paper: "Section 3.2 · Comparative Conditions"
     in_class:
-      - "Review Deliverable #1 and common framing problems"
-      - "Develop A/B or A/B/C comparison conditions"
-      - "Identify the baseline condition"
-      - "Fair-comparison and confound-checking worksheet"
+      - "Baseline and comparison-condition design with confound review"
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch ‘Stimuli Development: Making Testable Design Stimuli.’"
-        due: "Oct. 09"
+        task: "Stimuli Development"
+        due: "Oct. 9"
       -
-        type: "Homework"
-        task: "Create a condition comparison table and initial sketches, storyboards, wireframes, or prototype plans for each condition. No submission required."
+        type: "Homework #4"
+        task: "Section 3.2 Comparative Conditions"
+        due: "Oct. 9"
   -
     week: "06"
     iso_date: "2026-10-09"
     holiday: "Hangeul Day"
     stage_ref: "planning-stimuli"
-    lecture: "**Stimuli Design Workshop.** \nPrototyping Design Options as Research Instruments"
-    lecture_main: "Stimuli Design Workshop."
-    lecture_subtitle: "Prototyping Design Options as Research Instruments"
-    paper: "Design Stimuli: Condition descriptions and prototype rationale"
+    lecture: "Stimuli Design Workshop · Prototyping Research Instruments"
+    lecture_main: "Stimuli Design Workshop · Prototyping Research Instruments"
+    paper: "Section 3.3 · Research Stimuli"
     in_class:
-      - "Async feedback: Stimuli and condition review"
-      - "Instructor feedback on whether stimuli isolate the intended design variable"
-      - "No offline class"
+      - "No offline class · Asynchronous stimuli development and documentation"
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch ‘Research Logic Check: Aligning the Full Proposal.’"
+        task: "Research Logic Check"
         due: "Oct. 16"
       -
-        type: "Homework"
-        task: "Experimental Conditions & Design Stimuli Package: submit the design conditions and stimuli for focused Week 7 feedback."
-        due: "Oct. 15"
+        type: "Homework #5"
+        task: "Section 3.3 Research Stimuli"
+        due: "Oct. 16"
   -
     week: "07"
     iso_date: "2026-10-16"
     stage_ref: "planning-stimuli"
-    lecture: "**Research Proposal Integration.** \nAligning RQ, Variables, Conditions, Stimuli, and Expected Study Plan"
-    lecture_main: "Research Proposal Integration."
-    lecture_subtitle: "Aligning RQ, Variables, Conditions, Stimuli, and Expected Study Plan"
-    paper: "Research Proposal Draft: Introduction, gap, RQ, rationale, stimuli"
+    lecture: "Research Proposal Integration · Aligning RQ, Conditions, Stimuli, and Evidence"
+    lecture_main: "Research Proposal Integration · Aligning RQ, Conditions, Stimuli, and Evidence"
+    paper: "Sections 1–3.3 · Integrated Proposal Revision"
     in_class:
-      - "Focused feedback on experimental conditions and design stimuli"
-      - "Full research-logic alignment worksheet"
-      - "Traceability check: RQ → variable → condition → expected evidence"
-      - "Presentation rehearsal and instructor feedback"
+      - "Research-logic alignment, traceability review, and presentation rehearsal"
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch ‘Presenting the Research Proposal.’"
+        task: "Presenting the Research Proposal"
         due: "Oct. 23"
       -
-        type: "Preparation"
-        task: "Finalize the mid-term presentation and all stimuli/prototype links; prepare specific questions for feedback."
+        type: "Deliverable #2"
+        task: "Mid-term Research Proposal & Stimuli"
+        due: "Oct. 23"
   -
     week: "08"
     iso_date: "2026-10-23"
     stage_ref: "planning-stimuli"
-    lecture: "**Mid-term Presentation**"
+    lecture: "Mid-term Presentation"
     lecture_main: "Mid-term Presentation"
-    paper: "Proposal Revision"
+    paper: "Sections 1–3.3 · Post-presentation Revision"
     in_class:
-      - "Offline group presentation"
-      - "Present RQ, research gap, variables, comparison logic, and stimuli"
-      - "Peer and instructor critique"
-      - "Record decisions and required revisions"
+      - "Deliverable #2 presentations, critique, and Feedback Decision Log"
     after_class:
       -
-        type: "FC Lecture"
-        task: "Watch ‘Study Protocol Setup: Choosing What to Measure.’"
-        due: "Oct. 30"
+        type: "Deliverable #2"
+        task: "Mid-term Research Proposal & Stimuli"
+        due: "Oct. 23"
       -
-        type: "Homework"
-        task: "Write a feedback-response memo and revise the RQ, conditions, and stimuli before developing the protocol. No submission required."
+        type: "Homework #6"
+        task: "Post-presentation Sections 1–3.3 Revision"
+        due: "Oct. 30"
   -
     week: "09"
     iso_date: "2026-10-30"
     stage_ref: "user-study"
-    lecture: "**Study Protocol Setup #1. \n**Quantitative Measurements"
-    lecture_main: "Study Protocol Setup #1."
-    lecture_subtitle: "Quantitative Measurements"
-    paper: "Method: Study design, tasks, quantitative measures"
+    lecture: "Study Protocol Setup #1 · Quantitative Measurements"
+    lecture_main: "Study Protocol Setup #1 · Quantitative Measurements"
+    paper: "Section 4 · Method Draft I"
     in_class:
-      - "Measurement–RQ alignment worksheet"
-      - "Select scales, behavioral measures, and manipulation checks"
-      - "Draft participant tasks and study flow"
-      - "Introduce order effects and counterbalancing"
+      - "Participants, study design, tasks, measures, and Method Mapping"
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch ‘Qualitative Study Questions: Capturing User Reasoning and Experience.’"
-        due: "Nov. 06"
+        task: "Qualitative Study Questions"
+        due: "Nov. 6"
       -
-        type: "Homework"
-        task: "Draft the study overview, participant criteria, study design, tasks, and quantitative measurement table. Include the source and purpose of each measure. No submission required."
+        type: "Homework #7"
+        task: "Section 4 Method Draft I"
+        due: "Nov. 6"
   -
     week: "10"
     iso_date: "2026-11-06"
     stage_ref: "user-study"
-    lecture: "**Study Protocol Setup #2** \nQualitative Research Questionnaires"
-    lecture_main: "Study Protocol Setup #2"
-    lecture_subtitle: "Qualitative Research Questionnaires"
-    paper: "Method: Procedure and qualitative data collection"
+    lecture: "Study Protocol Setup #2 · Qualitative Questions"
+    lecture_main: "Study Protocol Setup #2 · Qualitative Questions"
+    paper: "Section 4 · Protocol-to-Method Mapping"
     in_class:
-      - "Develop survey items, open-ended questions, and interview prompts"
-      - "Remove leading, double-barreled, and overly abstract questions"
-      - "Assemble the complete procedure and moderator script"
-      - "Protocol peer review"
+      - "Question audit, Study Materials Pack, and Protocol-to-Method Mapping"
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch ‘Running a Pilot Study.’"
+        task: "Running a Pilot Study"
         due: "Nov. 13"
       -
-        type: "Homework"
-        task: "Complete the full protocol and recruit pilot participants. Include briefing, consent, tasks, condition order, questionnaires, interview guide, debriefing, and data-recording plan. No submission required."
+        type: "Homework #8"
+        task: "Finalize the protocol and conduct one pilot"
+        due: "Nov. 13"
   -
     week: "11"
     iso_date: "2026-11-13"
     stage_ref: "user-study"
-    lecture: "**Main Study Execution.\n**Pilot Testing & Protocol Revision"
-    lecture_main: "Main Study Execution."
-    lecture_subtitle: "Pilot Testing & Protocol Revision"
-    paper: "Method Finalization: Pilot revisions and final protocol"
+    lecture: "Pilot Testing & Protocol Revision"
+    lecture_main: "Pilot Testing & Protocol Revision"
+    paper: "Sections 4.1–4.6 · Final Method"
     in_class:
-      - "Conduct or report the pilot test"
-      - "Evaluate stimulus clarity, timing, technical stability, and measurement validity"
-      - "Identify participant misunderstandings"
-      - "Revise the stimuli and study protocol"
+      - "Pilot diagnosis, protocol revision, and final Method Mapping"
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch ‘Data Analysis #1: Finding Patterns in Qualitative Data.’"
+        task: "Qualitative Data Analysis"
         due: "Nov. 20"
       -
-        type: "Homework"
-        task: "Finalize the protocol and conduct the main study; organize anonymized consent records, responses, transcripts, observations, and behavioral data. No formal deliverable at this stage."
+        type: "Homework #9"
+        task: "Final Method Section + Main Study Execution"
+        due: "Nov. 20"
   -
     week: "12"
     iso_date: "2026-11-20"
     stage_ref: "analysis"
-    lecture: "**Data Analysis #1.**\nQualitative Insights"
-    lecture_main: "Data Analysis #1."
-    lecture_subtitle: "Qualitative Insights"
-    paper: "Results: Qualitative findings"
+    lecture: "Data Analysis #1 · Qualitative Insights"
+    lecture_main: "Data Analysis #1 · Qualitative Insights"
+    paper: "Sections 5.1 & 5.3 · Qualitative Results"
     in_class:
-      - "Data-cleaning and organization check"
-      - "Code qualitative responses and interview excerpts"
-      - "Develop code categories and preliminary themes"
-      - "Map findings to the RQ and comparison conditions"
+      - "First-cycle coding, shared codebook, and Qualitative Pattern Board"
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch ‘Data Analysis #2: Comparing Conditions with T-tests and ANOVA.’"
+        task: "Quantitative Data Analysis"
         due: "Nov. 27"
       -
-        type: "Homework"
-        task: "Complete the qualitative coding worksheet, prepare a preliminary theme table with supporting evidence, and clean quantitative data for analysis. No submission required."
+        type: "Homework #10"
+        task: "Qualitative Results Working Draft"
+        due: "Nov. 27"
   -
     week: "13"
     iso_date: "2026-11-27"
     stage_ref: "analysis"
-    lecture: "**Data Analysis #2.**\nQuantitative Insight (T-test and ANOVA Analysis)"
-    lecture_main: "Data Analysis #2."
-    lecture_subtitle: "Quantitative Insight (T-test and ANOVA Analysis)"
-    paper: "Results + Preliminary Findings"
+    lecture: "Data Analysis #2 · Quantitative Insights"
+    lecture_main: "Data Analysis #2 · Quantitative Insights"
+    paper: "Section 5 · Complete Results Draft"
     in_class:
-      - "Select an analysis based on conditions and study design"
-      - "Calculate descriptive statistics and visualize distributions"
-      - "Conduct basic t-tests or ANOVA"
-      - "Integrate quantitative results with qualitative explanations"
+      - "Data cleaning, statistical comparison, visualization, and Results Snapshot"
     after_class:
       -
         type: "FC Lecture"
-        task: "Watch ‘Design Implications: Turning Results into Insights.’"
-        due: "Dec. 04"
+        task: "Design Implications"
+        due: "Dec. 4"
       -
-        type: "Homework"
-        task: "Upload the provisional results, findings, and insight report for feedback before discussion writing."
-        due: "Dec. 03"
+        type: "Homework #11"
+        task: "Complete Section 5 Results Draft"
+        due: "Dec. 3"
   -
     week: "14"
     iso_date: "2026-12-04"
     stage_ref: "integrating"
-    lecture: "**Insights & Design Implications**"
+    lecture: "Insights & Design Implications"
     lecture_main: "Insights & Design Implications"
-    paper: "Discussion: RQ answers, interpretation, implications, limitations"
+    paper: "Sections 6–7 · Discussion, Implications & Limitations"
     in_class:
-      - "Feedback on provisional results and findings"
-      - "Distinguish results, findings, discussion, contribution, and implications"
-      - "Develop evidence-based design implications"
-      - "Final research narrative and paper-structure workshop"
+      - "Claim–evidence audit, bounded implications, limitations, and final storyline"
     after_class:
       -
-        type: "Preparation"
-        task: "No new FC lecture. Develop the final research narrative and finalize the presentation."
+        type: "Deliverable #3"
+        task: "Final Design Research Study"
         due: "Dec. 11"
   -
     week: "15"
     iso_date: "2026-12-11"
     stage_ref: "integrating"
-    lecture: "**Final Presentation**"
+    lecture: "Final Presentation"
     lecture_main: "Final Presentation"
-    paper: "Full Paper Draft"
+    paper: "Sections 1–10 · Final Manuscript Revision"
     in_class:
-      - "Final group presentations"
-      - "Present research question, design rationale, method, results, findings, and implications"
-      - "Instructor and peer feedback"
-      - "Individual contribution and reflection check"
+      - "Deliverable #3 presentations, Q&A, and Final Paper Revision Plan"
     after_class:
       -
-        type: "Preparation"
-        task: "No new FC lecture. Finalize and revise the report based on presentation feedback; proofread figures, tables, citations, appendices, and contribution statements."
+        type: "Deliverable #3"
+        task: "Final Design Research Study"
+        due: "Dec. 11"
+      -
+        type: "Deliverable #4"
+        task: "Final Research Paper — use the Final Paper Revision Plan"
         due: "Dec. 18"
   -
     week: "16"
     iso_date: "2026-12-18"
     stage_ref: "integrating"
-    lecture: "**Final Paper Submission**"
+    lecture: "Final Paper Submission"
     lecture_main: "Final Paper Submission"
-    paper: "Final Paper"
+    paper: "Sections 1–10 · Final Research Paper"
     in_class:
-      - "No offline class"
-    after_class: []
+      - "No offline class · Final revision, submission, and integrity checks"
+    after_class:
+      -
+        type: "Deliverable #4"
+        task: "Final Research Paper and supporting materials"
+        due: "Dec. 18"
 assignments:
   -
     number: 1
@@ -713,86 +669,234 @@ assignments:
 deliverables:
   -
     number: 1
-    title: "Research Framing & RQ Proposal"
+    title: "[Paper Draft] Research Foundation & Initial RQ"
     project_number: 1
-    assignment_type: "Deliverable"
+    assignment_type: "Team Paper Draft"
     due_iso: "2026-09-24"
     weight: 10
-    grade_focus: "Research framing & RQ proposal"
-    summary: "Research question, related work, research gap, and initial research plan submitted for asynchronous feedback before Week 4."
-    contents: []
-    submission_method: "See LearnUS and the weekly announcement."
+    grade_focus: "Research framing, academic positioning, research gap, and provisional research question"
+    summary: "This deliverable is the first draft of your team’s final research paper. It should establish what your team wants to investigate, why the question matters, and how the proposed study is positioned in relation to prior research.\nDo not write this as a separate project proposal that will later be discarded. Continue working in the shared master manuscript and revise these sections throughout the semester.\nAt this stage, teams are not required to define experimental variables, comparison conditions, research stimuli, measurements, or a study protocol. These elements will be developed after instructor feedback in Weeks 4–7."
+    contents:
+      -
+        title: "Working title & feedback questions"
+        items:
+          - "Working title and 2–3 focused questions for Week 4 feedback"
+      -
+        title: "Introduction"
+        items:
+          - "Research context, target users or boundaries, motivation, and the unresolved design-relevant issue"
+      -
+        title: "Related Work"
+        items:
+          - "Thematic synthesis of at least three relevant sources, their limitations, and the resulting research gap"
+      -
+        title: "3.1 Research Question & Hypothesis"
+        items:
+          - "One provisional RQ, expected relationship or hypothesis, and a clear scope"
+    presentation: "No formal presentation is required."
+    upload_file:
+      file_type: "PDF"
+      recommended_length: "3–5 pages, excluding references"
+      filename_rule: "D1_Team##_ShortTitle.pdf"
+      example: "D1_Team03_SocialMuseumGuide.pdf"
+      additional_fields:
+        -
+          label: "Template"
+          value: "Course research-paper template"
+        -
+          label: "Submission unit"
+          value: "One submission per team"
+    submission_method: "Upload the PDF to the Deliverable #1 submission folder on LearnUS. Submissions through email or other channels will not be accepted."
     show_detailed_deadline: false
     show_evaluation_percentage: true
-    evaluation_focus: "See the related project evaluation criteria."
+    evaluation_focus: "- Research context and significance · 20%\n- Related-work quality and synthesis · 25%\n- Clarity and defensibility of the research gap · 25%\n- Quality and researchability of the provisional RQ · 20%\n- Academic writing, citations, and completeness · 10%\nA finalized experiment is not required at this stage."
   -
     number: 2
-    title: "Mid-term Presentation"
+    title: "[Presentation] Mid-term Research Proposal & Stimuli"
     project_number: 1
-    assignment_type: "Deliverable"
+    assignment_type: "Team Presentation"
     due_iso: "2026-10-23"
     weight: 15
-    grade_focus: "Mid-term presentation"
-    summary: "Present the feedback-informed research proposal and stimuli package in Week 8."
-    contents: []
-    submission_method: "See LearnUS and the weekly announcement."
+    grade_focus: "Research logic, comparable conditions, and testable research stimuli"
+    summary: "Present the research argument developed in the first three sections of the shared master manuscript. The presentation should demonstrate how the research question has been translated into comparable design conditions and testable research stimuli.\nThe presentation is not separate from the research paper. Feedback received during the presentation should be used to revise Sections 1–3 before the team begins writing the Method section.\nThe presentation should reflect feedback received on the Section 3 manuscript draft and research stimuli submitted before Week 7."
+    contents_markdown: "- **Research foundation:** Context, key related work, research gap, refined RQ, and hypothesis or expectation\n- **Comparison design:** Design variable and outcomes, baseline and experimental conditions, controlled factors, confounds, and a comparison table\n- **Research stimuli:** Participant-facing prototype for every condition, key visuals or flows, and working links\n- **Expected evidence & revision:** Planned participant tasks or measures, important revisions, and remaining risks\n- A complete Method section is not required."
+    presentation: "- **Recommended presentation time:** 10 minutes\n- **Feedback and Q&A:** Approximately 5 minutes\n- All team members should participate in the presentation\n- Focus on the research logic rather than visual polish alone\n- The audience should be able to trace the logic from the research gap to the RQ, conditions, and stimuli\n- Final timing may be adjusted according to enrollment and the number of teams"
+    upload_file:
+      filename_rule: "D2_Team##_ShortTitle.pdf"
+      example: "D2_Team03_SocialMuseumGuide.pdf"
+      additional_fields:
+        -
+          label: "Required file"
+          value: "Presentation deck in PDF format"
+        -
+          label: "Required links"
+          value: "Working stimuli or prototype links"
+        -
+          label: "Optional backup"
+          value: "Short MP4 demonstration for interactive prototypes"
+        -
+          label: "Recommended deck length"
+          value: "12–16 slides, excluding backup slides"
+        -
+          label: "Submission unit"
+          value: "One submission per team"
+    submission_method: "Upload the presentation PDF to LearnUS before class. Include all prototype and stimulus links in both the presentation file and the LearnUS submission field."
     show_detailed_deadline: false
     show_evaluation_percentage: true
-    evaluation_focus: "See the related project evaluation criteria."
+    evaluation_focus: "- Alignment of research gap, RQ, and hypothesis · 15%\n- Variables and comparison logic · 25%\n- Testability and completeness of stimuli · 25%\n- Fair comparison and control of confounds · 20%\n- Presentation clarity and response to feedback · 15%"
   -
     number: 3
-    title: "Final Presentation"
+    title: "[Presentation] Final Design Research Study"
     project_number: 1
-    assignment_type: "Deliverable"
+    assignment_type: "Team Presentation"
     due_iso: "2026-12-11"
     weight: 20
-    grade_focus: "Final presentation"
-    summary: "Present the complete research process, findings, and evidence-based design implications in Week 15."
-    contents: []
-    submission_method: "See LearnUS and the weekly announcement."
+    grade_focus: "Complete research narrative, evidence, findings, and design implications"
+    summary: "Present the completed design research study using the full research narrative developed in the shared master manuscript.\nThe presentation should explain what the team investigated, how the study was conducted, what evidence was collected, what the evidence suggests, and how the findings contribute to design knowledge.\nThe presentation should reflect the feedback received on the provisional Results section and during the Week 14 discussion and design-implication workshop. Feedback from this presentation should be incorporated into the Final Research Paper."
+    contents:
+      -
+        title: "Research foundation & design rationale"
+        items:
+          - "Context, gap, RQ or hypothesis, comparison logic, final conditions, and stimuli"
+      -
+        title: "Method"
+        items:
+          - "Participants, study design, tasks and procedure, measures, pilot revisions, and analysis approach"
+      -
+        title: "Results"
+        items:
+          - "Dataset overview, key quantitative comparisons, qualitative themes, and supporting figures or evidence"
+      -
+        title: "Discussion & design implications"
+        items:
+          - "Direct RQ answer, integrated interpretation, contribution, and evidence-based implications"
+      -
+        title: "Limitations & future work"
+        items:
+          - "Main boundaries, alternative explanations, and appropriate next steps"
+    presentation: "- **Recommended presentation time:** 12–15 minutes\n- **Q&A:** Approximately 5 minutes\n- All members should participate meaningfully\n- Use backup slides for detailed statistics, measurement items, and supplementary evidence\n- Clearly distinguish among:\n- results;\n- findings;\n- discussion;\n- design implications\n- The presentation should prioritize the strongest evidence and the clearest research narrative rather than attempting to show every collected data point"
+    upload_file:
+      filename_rule: "D3_Team##_ShortTitle.pdf"
+      example: "D3_Team03_SocialMuseumGuide.pdf"
+      additional_fields:
+        -
+          label: "Required file"
+          value: "Final presentation deck in PDF format"
+        -
+          label: "Required links"
+          value: "Final research stimuli or prototype links"
+        -
+          label: "Optional backup"
+          value: "MP4 prototype demonstration"
+        -
+          label: "Submission unit"
+          value: "One submission per team"
+    submission_method: "Upload the final presentation PDF to LearnUS before class. Prototype links and supporting resources must remain accessible throughout the evaluation period."
     show_detailed_deadline: false
     show_evaluation_percentage: true
-    evaluation_focus: "See the related project evaluation criteria."
+    evaluation_focus: "- Overall research narrative and coherence · 20%\n- Transparency and rigor of the study method · 20%\n- Accuracy and clarity of results · 20%\n- Quality of findings and answer to the RQ · 20%\n- Discussion, contribution, and design implications · 10%\n- Delivery, visual communication, teamwork, and Q&A · 10%"
   -
     number: 4
-    title: "Final Research Paper"
+    title: "[Final Paper] Design Research Study"
     project_number: 1
-    assignment_type: "Deliverable"
+    assignment_type: "Team Research Paper"
     due_iso: "2026-12-18"
     weight: 35
-    grade_focus: "Final research paper"
-    summary: "Submit the complete research document: research logic, method, analysis, discussion, limitations, appendices, and supporting materials."
-    contents: []
-    submission_method: "See LearnUS and the weekly announcement."
+    grade_focus: "Complete, coherent, and evidence-based design research paper"
+    summary: "Submit the complete and revised version of the shared master manuscript developed throughout the semester.\nThe final paper should present one coherent research argument from the research context and question to the design rationale, method, evidence, contribution, and design implications.\nDo not simply combine earlier homework without revision. Update terminology, RQs, hypotheses, condition descriptions, methods, figures, and claims so that every section accurately represents the final study.\nThe paper should be understandable as an independent research document without requiring the reader to have attended the team’s presentations."
+    contents:
+      -
+        title: "Front matter & research foundation"
+        items:
+          - "Title, author contribution, abstract, Introduction, Related Work, and final research gap"
+      -
+        title: "Research Question & Design Rationale"
+        items:
+          - "Final RQ or hypothesis, variables, conditions, controls, comparison rationale, and research stimuli"
+      -
+        title: "Method"
+        items:
+          - "Participants, study design, tasks and procedure, measures, pilot revisions, analysis, and ethical data handling"
+      -
+        title: "Results"
+        items:
+          - "Dataset overview, quantitative comparisons, qualitative themes, and clearly labeled figures or evidence"
+      -
+        title: "6–7. Discussion, implications & limitations"
+        items:
+          - "Direct RQ answer, integrated interpretation, contribution, bounded design implications, limitations, and future work"
+      -
+        title: "8–10. Conclusion, references & appendices"
+        items:
+          - "Concise conclusion, complete references, and supporting materials needed to understand or reproduce the study"
+    presentation: "No formal presentation is required."
+    upload_file:
+      example: "D4_Team03_SocialMuseumGuide_Paper.pdf"
+      additional_fields:
+        -
+          label: "Main file"
+          value: "Final research paper in PDF format"
+        -
+          label: "Supporting materials"
+          value: "One ZIP archive or an instructor-accessible folder link"
+        -
+          label: "Recommended paper length"
+          value: "8–12 pages using the provided course template, excluding references and appendices"
+        -
+          label: "Submission unit"
+          value: "One submission per team"
+        -
+          label: "Paper filename"
+          value: "D4_Team##_ShortTitle_Paper.pdf"
+        -
+          label: "Supplement filename"
+          value: "`D4_Team##_ShortTitle_Supplement.zip`"
+    submission_method: "Upload the final paper and supporting-material package to LearnUS. External links must remain accessible to the instructor throughout the evaluation period. Submissions through email or other channels will not be accepted."
     show_detailed_deadline: false
     show_evaluation_percentage: true
-    evaluation_focus: "See the related project evaluation criteria."
+    evaluation_focus: "- Introduction, related work, research gap, and RQ · 15%\n- Design rationale and quality of comparison · 15%\n- Methodological rigor, ethics, and transparency · 20%\n- Accuracy and appropriateness of analysis · 20%\n- Discussion, contribution, and design implications · 20%\n- Writing, figures, citations, appendices, and completeness · 10%"
 assessment:
   -
     label: "Preparation & In-class Engagement"
-    weight: 10
+    weight: 20
     note: "FC lecture completion, class preparedness, workshop participation, peer feedback, and collaboration throughout the semester"
   -
-    label: "Weekly Process Homework"
-    weight: 10
-    note: "Timely completion, effort, and progress demonstrated through weekly worksheets, drafts, research materials, and feedback submissions"
-assessment_project_position: "after"
-assessment_show_total: false
+    label: "Homework · Required, Not Graded Separately"
+    weight: 0
+    note: "Required build-up work for the next Deliverable; submitted for progress tracking but not graded separately"
+assessment_project_position: "before"
+assessment_show_total: true
+assessment_total_note: "Total: 100%"
 policies:
   -
     title: "Homework and Deliverables"
-    text: "Weekly homework supports the step-by-step development of the semester research project. Depending on the week, homework may be prepared for class, completed through a worksheet, presented during a feedback session, or uploaded for review. Homework is assessed collectively under the <strong>Weekly Process Homework</strong> category based primarily on timely completion, preparedness, effort, and evidence of continued progress. Not every homework item will receive a separate numerical score or detailed feedback.<br><br>Formal <strong>Deliverables</strong> are the major assessed outcomes of the course. Each Deliverable carries a designated grade weight and is evaluated using specific criteria. Most of the course grade is therefore determined by the quality and coherence of the four formal Deliverables."
+    text: "Each regular class produces an <strong>In-class Working Material</strong> such as a canvas, snapshot, board, prototype, analysis output, or feedback log. Teams submit one rough but sufficiently complete working version before class ends. These submissions document participation, research decisions, and project progress.<br><br>- After the in-class submission, students complete <strong>Paper Translation Homework</strong> by translating the working material into the designated section of the shared master manuscript. A short Activity-to-Paper example and writing guide are provided at the end of class. These updates are required working drafts rather than final polished sections.<br><br>- In-class Working Materials contribute to <strong>Preparation & In-class Engagement</strong>. Homework is required for project progress and must be completed on time, but it is not graded separately. Formal <strong>Deliverables</strong> remain the assessed outcomes and evaluate the integrated quality and coherence of the four project stages."
   -
-    title: "Research ethics"
+    title: "Research Ethics"
     text: "Students must follow the approved consent, privacy, data handling, and participant-respect procedures introduced in class."
   -
-    title: "Attendance and participation"
-    text: "Detailed attendance, lateness, and participation policies will follow the official syllabus and Yonsei University regulations."
+    title: "Attendance (Offline)"
+    text: "You are expected to attend every class and be on time. Your commitment and participation in the course contribute to the learning experience of all participants.<br><br>- Avoid absences because you will miss important information that may not be in the readings. If you are absent, it is your responsibility to get information regarding announcements and topics covered from your peers.<br><br>- Not attending more than one-third of the entire course (a total of 5 absences) results in an F, in accordance with school policy.<br><br>- Being 30 minutes or more late to a class or session counts as an absence.<br><br>- Absences for religious holidays, quarantine or isolation, or occasional school events are excused in accordance with university regulations and guidelines. Please communicate with the instructor ahead of time if you know you will be absent.<br><br>- For every unexcused absence, 2 points will be deducted."
   -
-    title: "Academic integrity"
-    text: "Research records, analysis, writing, and attribution must accurately represent the student's work and sources. Any use of AI tools must follow the course policy announced by the instructor."
+    title: "Flipped Classroom (Video Lecture)"
+    text: "Watching the pre-recorded lecture videos is not optional; it directly affects your grade.<br><br>- For every assigned pre-recorded video that is not watched, 2 points will be deducted."
   -
-    title: "Provisional information"
+    title: "Participation"
+    text: "Participate respectfully and actively.<br><br>- Listen to and consider other viewpoints.<br><br>- Actively share ideas with group members and classmates.<br><br>- To participate effectively, you need to watch the assigned pre-recorded lecture videos."
+  -
+    title: "Teamwork Policy"
+    text: "Team presentations will be graded as a whole, but peer evaluation may be used to adjust individual grades if there is a significant imbalance in contribution."
+  -
+    title: "Deadlines & Late Submissions"
+    text: "All students are expected to complete assignments by the due dates and times announced in the lecture. Please ensure timely submission and effectively plan and balance your academic work and other commitments. The late-submission penalty is as follows:<br><br>- 1 minute–6 hours late: 10% of the maximum allowable marks<br><br>- 6–24 hours late: 25% of the maximum allowable marks<br><br>- 24–48 hours late: 50% of the maximum allowable marks<br><br>- 48–72 hours late: 75% of the maximum allowable marks<br><br>- An assignment submitted more than 3 days late will not be evaluated and will be reported as “not submitted.”"
+  -
+    title: "Plagiarism"
+    text: "Copying someone else’s ideas, even if you change the wording, is a serious academic offense. To avoid plagiarism, when referring to others’ work, do not change the intended message, add new information, leave out important details, or alter the level of formality.<br><br>- If a student’s grade is discovered to have been earned through cheating or dishonesty, the grade will become invalid and further disciplinary action will be enforced.<br><br>- Please actively use <a href=\"https://library.yonsei.ac.kr/local/html/turnitin\">Turnitin</a> to self-check and avoid potential plagiarism.<br><br>- If the instructor or peers identify plagiarism in an assignment, project output, report, or other submitted work, the student will receive zero points for that project."
+  -
+    title: "Copyright of Course Materials"
+    text: "Course materials are produced and published for the purpose of teaching Yonsei University students. They may not be used for any other purpose or shared with others. Legal responsibility for any violation lies with the person who committed it.<br><br>- Unauthorized recording is not allowed unless you inform the faculty member and receive approval in advance."
+  -
+    title: "Provisional Information"
     text: "Topics, deliverables, weights, and deadlines on this default page may be revised before the official syllabus is published."
 resources:
   -

@@ -193,6 +193,26 @@
         {{ $projectAssignments := where $courseAssignments "project_number" $projectNumber }}
         {{ $projectDeliverables := where $courseDeliverables "project_number" $projectNumber }}
         {{ $projectWorkCount := add (len $projectAssignments) (len $projectDeliverables) }}
+        {{ $projectWorkItems := slice }}
+        {{ range $projectAssignments }}
+          {{ $projectWorkItems = $projectWorkItems | append (dict
+            "kind" "assignment"
+            "label" (printf "Homework %v" .number)
+            "title" .title
+            "href" (printf `%sassignments/#assignment-%v` $base .number)
+            "sort_key" (printf "%s-1" (.due_iso | default "9999-12-31"))
+          ) }}
+        {{ end }}
+        {{ range $projectDeliverables }}
+          {{ $projectWorkItems = $projectWorkItems | append (dict
+            "kind" "deliverable"
+            "label" (printf "Deliverable %v" .number)
+            "title" .title
+            "href" (printf `%sdeliverables/#deliverable-%v` $base .number)
+            "sort_key" (printf "%s-2" (.due_iso | default "9999-12-31"))
+          ) }}
+        {{ end }}
+        {{ $projectWorkItems = sort $projectWorkItems "sort_key" "asc" }}
         {{ $projectWeight := 0 }}
         {{ range $projectDeliverables }}{{ $projectWeight = add $projectWeight (int .weight) }}{{ end }}
         <section class="course-hub-section course-hub-project-section" id="project-{{ $projectNumber }}" aria-labelledby="project-{{ $projectNumber }}-title">
@@ -212,20 +232,20 @@
               {{ if gt $projectWorkCount 1 }}
               <div class="course-hub-project-flow course-hub-project-part" aria-label="Project work sequence">
                 <h3 class="course-hub-project-part-title">Project Flow</h3>
-                <ol style="--project-flow-count: {{ $projectWorkCount }}">
-                  {{ range $projectAssignments }}
-                  <li class="is-assignment">
-                    <a href="{{ printf `%sassignments/#assignment-%v` $base .number }}">
-                      <span>Homework {{ .number }}</span>
-                      <strong>{{ .title | markdownify | plainify }}</strong>
-                    </a>
-                  </li>
-                  {{ end }}
-                  {{ range $projectDeliverables }}
-                  <li class="is-deliverable">
-                    <a href="{{ printf `%sdeliverables/#deliverable-%v` $base .number }}">
-                      <span>Deliverable {{ .number }}</span>
-                      <strong>{{ .title | markdownify | plainify }}</strong>
+                <ol>
+                  {{ range $flowIndex, $workItem := $projectWorkItems }}
+                  {{ $flowRowZero := div $flowIndex 4 }}
+                  {{ $flowRow := add $flowRowZero 1 }}
+                  {{ $flowOffset := mod $flowIndex 4 }}
+                  {{ $flowReverse := eq (mod $flowRowZero 2) 1 }}
+                  {{ $flowColumn := add $flowOffset 1 }}
+                  {{ if $flowReverse }}{{ $flowColumn = sub 4 $flowOffset }}{{ end }}
+                  {{ $flowLast := eq $flowIndex (sub $projectWorkCount 1) }}
+                  {{ $flowRowEnd := and (eq (mod (add $flowIndex 1) 4) 0) (not $flowLast) }}
+                  <li class="is-{{ $workItem.kind }} {{ if $flowReverse }}is-flow-reverse{{ else }}is-flow-forward{{ end }}{{ if $flowRowEnd }} is-row-end{{ end }}{{ if $flowLast }} is-flow-last{{ end }}" style="--flow-row: {{ $flowRow }}; --flow-column: {{ $flowColumn }};">
+                    <a href="{{ $workItem.href }}">
+                      <span>{{ $workItem.label }}</span>
+                      <strong>{{ $workItem.title | markdownify | plainify }}</strong>
                     </a>
                   </li>
                   {{ end }}
@@ -726,9 +746,8 @@
 
     {{ if eq $tab "logistics" }}
       <section class="course-hub-section" aria-labelledby="grading-title">
-        <div class="course-hub-section-label">Grading</div>
+        <div class="course-hub-section-label" id="grading-title" role="heading" aria-level="2">Grading</div>
         <div class="course-hub-section-content">
-          <h2 id="grading-title">Grading scheme</h2>
           <div class="course-hub-assessment course-hub-assessment--single">
             {{ if eq $course.Params.assessment_project_position "after" }}{{ range $course.Params.assessment }}{{ partial "teaching/course-assessment-row.html" (dict "row" . "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables) }}{{ end }}{{ end }}
             {{ range $projectIndex, $project := $course.Params.project.items }}
@@ -748,7 +767,18 @@
         <div class="course-hub-section-label">Course logistics</div>
         <div class="course-hub-section-content">
           <h2 id="policies-title">Course principles & policies</h2>
-          <div class="course-hub-policies">{{ range $course.Params.policies }}<article><h3>{{ .title }}</h3><p>{{ .text | safeHTML }}</p></article>{{ end }}</div>
+          <div class="course-hub-policies">
+            {{ range $course.Params.policies }}
+            {{ $policyParts := split .text "<br><br>- " }}
+            <article>
+              <h3>{{ .title }}</h3>
+              <div class="course-hub-policy-content">
+                <p>{{ index $policyParts 0 | safeHTML }}</p>
+                {{ if gt (len $policyParts) 1 }}<ul>{{ range after 1 $policyParts }}<li>{{ . | safeHTML }}</li>{{ end }}</ul>{{ end }}
+              </div>
+            </article>
+            {{ end }}
+          </div>
         </div>
       </section>
       <section class="course-hub-section" aria-labelledby="resources-title">
