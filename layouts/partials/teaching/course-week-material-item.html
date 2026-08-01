@@ -1,9 +1,9 @@
 {{- $material := . -}}
 <li>
   {{- with $material.url -}}
-    <a class="course-hub-week-resource-link" href="{{ . }}"{{ if strings.HasPrefix . "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ $material.label | default "Open lecture materials" }}</a>
+    <a class="course-hub-week-resource-link" href="{{ . }}"{{ if strings.HasPrefix . "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ partial "teaching/inline-markdown.html" ($material.label | default "Open lecture materials") }}</a>
   {{- else -}}
-    {{ $material.label | default "Lecture material" }}
+    {{ partial "teaching/inline-markdown.html" ($material.label | default "Lecture material") }}
   {{- end -}}
   {{- with $material.children }}
     <ul>

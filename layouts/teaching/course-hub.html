@@ -99,7 +99,7 @@
         <div><p class="course-hub-intro">{{ $course.Params.overview }}</p></div>
         <div class="course-hub-section-label course-hub-overview-label" role="heading" aria-level="2"><span>Learning</span><span>objectives</span></div>
         <div><ul class="course-hub-outcomes">
-          {{ range $course.Params.learning_outcomes }}<li>{{ .text }}</li>{{ end }}
+          {{ range $course.Params.learning_outcomes }}<li>{{ partial "teaching/inline-markdown.html" .text }}</li>{{ end }}
         </ul></div>
         {{ with $course.Params.prerequisites }}
         <div class="course-hub-section-label" role="heading" aria-level="2">Prerequisites</div>
@@ -180,7 +180,7 @@
             <article id="{{ .ref }}">
               <div class="course-hub-phase"><div class="course-hub-stage-node"><span class="course-hub-stage-number">{{ $stageNumber }}</span><div><strong>{{ $stageTitle }}</strong><small>{{ $weekRange }}</small></div></div></div>
               <div class="course-hub-roadmap-project"><h3>{{ with .project_number }}<a href="#project-{{ . }}">{{ $roadmapTitle }}</a>{{ else }}{{ $roadmapTitle }}{{ end }}</h3></div>
-              <div class="course-hub-roadmap-learning"><p>{{ .description }}</p></div>
+              <div class="course-hub-roadmap-learning"><p>{{ partial "teaching/inline-markdown.html" .description }}</p></div>
             </article>
             {{ $previousSeries = .series }}
             {{ end }}
@@ -219,10 +219,10 @@
           <div class="course-hub-section-label course-hub-project-label"><span>Project {{ $projectNumber }}</span></div>
           <div class="course-hub-section-content">
             <div class="course-hub-project-heading">
-              <h2 id="project-{{ $projectNumber }}-title" class="course-hub-project-title"><span>Project {{ $projectNumber }}:</span> {{ .title }}</h2>
+              <h2 id="project-{{ $projectNumber }}-title" class="course-hub-project-title"><span>Project {{ $projectNumber }}:</span> {{ partial "teaching/inline-markdown.html" .title }}</h2>
               <div class="course-hub-project-meta">{{ .unit }}{{ if gt $projectWeight 0 }} · {{ $projectWeight }}%{{ end }}</div>
             </div>
-            <p class="course-hub-intro">{{ .description }}</p>
+            <p class="course-hub-intro">{{ partial "teaching/inline-markdown.html" .description }}</p>
               {{ with .learning_objectives }}
               <div class="course-hub-project-subsection course-hub-project-learning course-hub-project-part">
                 <h3 class="course-hub-project-part-title">Learning Goals</h3>
@@ -260,13 +260,13 @@
                 <h3 class="course-hub-project-part-title">Related Deliverables</h3>
                 <div class="course-hub-grade-table" role="table" aria-label="Project {{ $projectNumber }} related deliverables">
                   <div class="course-hub-grade-head" role="row"><span role="columnheader">Deliverable</span><span role="columnheader">Focus</span><span role="columnheader">Weight</span></div>
-                  {{ range $projectDeliverables }}<div role="row"><span role="cell"><a href="{{ printf `%sdeliverables/#deliverable-%v` $base .number }}">Deliverable #{{ .number }}</a></span><span role="cell">{{ .grade_focus | default .title }}</span><strong role="cell">{{ .weight }}%</strong></div>{{ end }}
+                  {{ range $projectDeliverables }}<div role="row"><span role="cell"><a href="{{ printf `%sdeliverables/#deliverable-%v` $base .number }}">Deliverable #{{ .number }}</a></span><span role="cell">{{ partial "teaching/inline-markdown.html" (.grade_focus | default .title) }}</span><strong role="cell">{{ .weight }}%</strong></div>{{ end }}
                   <div role="row" class="is-total"><span role="cell">Total</span><span role="cell"></span><strong role="cell">{{ $projectWeight }}%</strong></div>
                 </div>
               </div>
               {{ end }}
               {{ with .evaluation_criteria }}
-              <div class="course-hub-project-subsection course-hub-project-part"><h3 class="course-hub-project-part-title">Key evaluation criteria</h3><ul class="course-hub-evaluation-list">{{ range . }}<li><strong>{{ .title }}:</strong> {{ .text }}</li>{{ end }}</ul></div>
+              <div class="course-hub-project-subsection course-hub-project-part"><h3 class="course-hub-project-part-title">Key evaluation criteria</h3><ul class="course-hub-evaluation-list">{{ range . }}<li><strong>{{ partial "teaching/inline-markdown.html" .title }}:</strong> {{ partial "teaching/inline-markdown.html" .text }}</li>{{ end }}</ul></div>
               {{ end }}
               {{ range .additional_sections }}<div class="course-hub-project-subsection course-hub-project-subsection--additional course-hub-project-part"><h3 class="course-hub-project-part-title">{{ .title }}</h3><div>{{ .content | markdownify }}</div></div>{{ end }}
               {{ if not .learning_objectives }}
@@ -287,7 +287,7 @@
       {{ $hasPaper := false }}{{ range $schedule }}{{ with .paper }}{{ $hasPaper = true }}{{ end }}{{ end }}
       <section class="course-hub-section course-hub-schedule-section" aria-label="Weekly schedule">
         <div class="course-hub-section-content">
-          {{ with $course.Params.schedule_intro }}<p class="course-hub-schedule-intro">{{ . }}</p>{{ end }}
+          {{ with $course.Params.schedule_intro }}<p class="course-hub-schedule-intro">{{ partial "teaching/inline-markdown.html" . }}</p>{{ end }}
           <div class="course-hub-schedule-mode" data-schedule-mode-control>
             <div class="course-hub-schedule-mode-toggle" role="group" aria-label="Weekly schedule display mode">
               <button type="button" data-schedule-mode="abstract" aria-pressed="false">Abstract</button>
@@ -315,11 +315,11 @@
               {{ $weekNumber := replaceRE `^0+` `` .week }}{{ if eq $weekNumber "" }}{{ $weekNumber = "0" }}{{ end }}
               {{ $weekPath := printf "w%s" $weekNumber }}
               {{ $lectureMain := .lecture_main | default .lecture }}
-              <div class="course-hub-week-topic course-hub-lecture--{{ $lectureStyle }}"><span class="course-hub-mobile-label">Lecture</span><h3><a href="{{ printf `%s%s/` $base $weekPath }}"><span class="course-hub-lecture-main">{{ $lectureMain }}</span>{{ with .lecture_subtitle }}<span class="course-hub-lecture-subtitle">{{ . }}</span>{{ end }}</a></h3></div>
-              <div class="course-hub-week-cell"><span class="course-hub-mobile-label">In Class</span><ul>{{ range .in_class }}<li>{{ . }}</li>{{ end }}</ul></div>
+              <div class="course-hub-week-topic course-hub-lecture--{{ $lectureStyle }}"><span class="course-hub-mobile-label">Lecture</span><h3><a href="{{ printf `%s%s/` $base $weekPath }}"><span class="course-hub-lecture-main">{{ partial "teaching/inline-markdown.html" $lectureMain }}</span>{{ with .lecture_subtitle }}<span class="course-hub-lecture-subtitle">{{ partial "teaching/inline-markdown.html" . }}</span>{{ end }}</a></h3></div>
+              <div class="course-hub-week-cell"><span class="course-hub-mobile-label">In Class</span><ul>{{ range .in_class }}<li>{{ partial "teaching/inline-markdown.html" . }}</li>{{ end }}</ul></div>
               <div class="course-hub-week-cell course-hub-week-cell--after"><span class="course-hub-mobile-label">After Class</span><ul class="course-hub-task-list">{{ range .after_class }}{{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables "showDue" true "projectAnchor" (cond (isset $stageInfo "project_number") (printf "project-%v" $stageInfo.project_number) "") ) }}{{ end }}</ul></div>
               {{ if $hasPaper }}
-              <div class="course-hub-paper"><span class="course-hub-mobile-label">Paper</span>{{ with .paper }}<em>{{ . }}</em>{{ end }}</div>
+              <div class="course-hub-paper"><span class="course-hub-mobile-label">Paper</span>{{ with .paper }}<em>{{ partial "teaching/inline-markdown.html" . }}</em>{{ end }}</div>
               <div class="course-hub-stage-project{{ if $isStageStart }} is-stage-start{{ else }} is-stage-continuation{{ end }}{{ if $isStageEnd }} is-stage-end{{ end }}">
                 {{ if $isStageStart }}
                   <span class="course-hub-mobile-label">Learning journey</span>
@@ -434,7 +434,7 @@
               <section>
                 <h3>Opening Questions</h3>
                 {{ $openingQuestionEmphasis := .Params.opening_question_emphasis }}
-                {{ with .Params.opening_questions }}<ul class="course-hub-opening-questions">{{ range $questionIndex, $question := . }}<li>{{ if and $openingQuestionEmphasis (lt $questionIndex (len $openingQuestionEmphasis)) }}{{ $phrase := index $openingQuestionEmphasis $questionIndex }}{{ replace $question $phrase (printf `<strong>%s</strong>` $phrase) | safeHTML }}{{ else }}{{ $question }}{{ end }}</li>{{ end }}</ul>{{ else }}<p class="course-hub-week-placeholder">Add two or three opening questions for this week.</p>{{ end }}
+                {{ with .Params.opening_questions }}<ul class="course-hub-opening-questions">{{ range $questionIndex, $question := . }}{{ $questionMarkdown := $question }}{{ if and $openingQuestionEmphasis (lt $questionIndex (len $openingQuestionEmphasis)) (not (strings.Contains $question "**")) }}{{ $phrase := index $openingQuestionEmphasis $questionIndex }}{{ $questionMarkdown = replace $question $phrase (printf `**%s**` $phrase) }}{{ end }}<li>{{ partial "teaching/inline-markdown.html" $questionMarkdown }}</li>{{ end }}</ul>{{ else }}<p class="course-hub-week-placeholder">Add two or three opening questions for this week.</p>{{ end }}
               </section>
               <section>
                 <h3>Learning Goal</h3>
@@ -477,7 +477,7 @@
                     {{ with .Params.activity_content }}
                       <div class="course-hub-activity-content">{{ . | markdownify }}</div>
                     {{ else }}
-                      <ul class="course-hub-activity-list">{{ range $activities }}<li>{{ . }}</li>{{ end }}</ul>
+                      <ul class="course-hub-activity-list">{{ range $activities }}<li>{{ partial "teaching/inline-markdown.html" . }}</li>{{ end }}</ul>
                     {{ end }}
                   </div>
                   {{ if $lockWeekContent }}
@@ -525,7 +525,7 @@
                 <h3>Key Takeaways</h3>
                 <div class="course-hub-key-takeaways-content">
                   <div class="course-hub-key-takeaways-body" data-key-takeaways-body aria-hidden="true">
-                    {{ with .Params.key_takeaways }}<ul class="course-hub-key-takeaways-list">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ else }}<p class="course-hub-week-placeholder">Add the key messages students should remember.</p>{{ end }}
+                    {{ with .Params.key_takeaways }}<ul class="course-hub-key-takeaways-list">{{ range . }}<li>{{ partial "teaching/inline-markdown.html" . }}</li>{{ end }}</ul>{{ else }}<p class="course-hub-week-placeholder">Add the key messages students should remember.</p>{{ end }}
                   </div>
                   <div class="course-hub-key-takeaways-cover" data-key-takeaways-cover role="status">
                     <span class="course-hub-key-takeaways-lock" aria-hidden="true">
@@ -549,7 +549,7 @@
                 <h3>Related Readings</h3>
                 {{ with .Params.related_readings }}
                 <ul class="course-hub-week-readings">
-                  {{ range . }}{{ $reading := . }}<li>{{ with .url }}<a class="course-hub-week-resource-link" href="{{ . }}"{{ if strings.HasPrefix . "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ $reading.title | default "Related reading" }}</a>{{ else }}<strong>{{ .title | default "Related reading" }}</strong>{{ end }}{{ with .author }}<span>{{ . }}</span>{{ end }}</li>{{ end }}
+                  {{ range . }}{{ $reading := . }}<li>{{ with .url }}<a class="course-hub-week-resource-link" href="{{ . }}"{{ if strings.HasPrefix . "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ partial "teaching/inline-markdown.html" ($reading.title | default "Related reading") }}</a>{{ else }}<strong>{{ partial "teaching/inline-markdown.html" (.title | default "Related reading") }}</strong>{{ end }}{{ with .author }}<span>{{ partial "teaching/inline-markdown.html" . }}</span>{{ end }}</li>{{ end }}
                 </ul>
                 {{ else }}<p class="course-hub-week-placeholder">Add papers, books, or reference links.</p>{{ end }}
               </section>

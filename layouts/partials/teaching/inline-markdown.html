@@ -1,0 +1,4 @@
+{{- $source := printf "%v" . -}}
+{{- $rendered := $source | markdownify -}}
+{{- $rendered = replaceRE `(?s)^<p>(.*)</p>\s*$` `$1` $rendered -}}
+{{- $rendered | safeHTML -}}

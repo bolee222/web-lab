@@ -77,7 +77,7 @@
   <span class="course-hub-task-main{{ if $isProject }} is-project{{ end }}">
     {{- if and $taskHref (not $showAction) }}<a class="course-hub-task-link{{ if $isDeliverable }} is-deliverable{{ else if $isAssignment }} is-assignment{{ end }}" href="{{ $taskHref }}">{{ end -}}
     {{- if not $isProject }}<span class="course-hub-task-tag course-hub-task-tag--{{ if $isAssignment }}assignment{{ else if $isDeliverable }}deliverable{{ else }}{{ $taskLabel | urlize }}{{ end }}"><span class="{{ $taskClass }}">{{ $taskDisplay }}</span></span> {{ end -}}
-    <span class="course-hub-task-copy">{{ $item.task }}</span>
+    <span class="course-hub-task-copy">{{ partial "teaching/inline-markdown.html" $item.task }}</span>
     {{- with $item.details }}
       <ul class="course-hub-task-details">
         {{- range . }}<li>{{ . | markdownify }}</li>{{ end -}}
