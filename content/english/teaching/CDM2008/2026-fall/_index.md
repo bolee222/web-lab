@@ -186,7 +186,8 @@ weekly_schedule:
     iso_date: "2026-09-04"
     stage_ref: "research-framing"
     lecture: "Course Introduction · Design Research as a Scientific Discipline"
-    lecture_main: "Course Introduction · Design Research as a Scientific Discipline"
+    lecture_main: "Course Introduction"
+    lecture_subtitle: "Design Research as a Scientific Discipline"
     paper: "—"
     in_class:
       - "Review TwistLens and PONIFY; identify RQ, stimuli, study, evidence, and claim"
@@ -204,7 +205,8 @@ weekly_schedule:
     iso_date: "2026-09-11"
     stage_ref: "research-framing"
     lecture: "Research Question Framing · From Imagination to Researchable Hypothesis"
-    lecture_main: "Research Question Framing · From Imagination to Researchable Hypothesis"
+    lecture_main: "Research Question Framing"
+    lecture_subtitle: "From Imagination to Researchable Hypothesis"
     paper: "Sections 1 & 3.1 · Introduction, RQ & Hypothesis"
     in_class:
       - "Interest mapping, team formation, and RQ–hypothesis scaffold"
@@ -222,7 +224,8 @@ weekly_schedule:
     iso_date: "2026-09-18"
     stage_ref: "research-framing"
     lecture: "Research Question Verification · Related Work & Research Gap"
-    lecture_main: "Research Question Verification · Related Work & Research Gap"
+    lecture_main: "Research Question Verification"
+    lecture_subtitle: "Related Work & Research Gap"
     paper: "D1 · Sections 1, 2 & 3.1"
     in_class:
       - "Related-work mapping, thematic synthesis, gap construction, and RQ revision"
@@ -241,7 +244,8 @@ weekly_schedule:
     holiday: "Chuseok Holiday"
     stage_ref: "planning-stimuli"
     lecture: "Experiment Logic · Building Clear Comparison Conditions"
-    lecture_main: "Experiment Logic · Building Clear Comparison Conditions"
+    lecture_main: "Experiment Logic"
+    lecture_subtitle: "Building Clear Comparison Conditions"
     paper: "Section 3.2 · Comparative Conditions"
     in_class:
       - "No offline class · FC lecture and asynchronous comparison-condition/stimuli development"
@@ -258,7 +262,8 @@ weekly_schedule:
     iso_date: "2026-10-02"
     stage_ref: "planning-stimuli"
     lecture: "Consultation Session · Checking Comparison Conditions and Stimuli"
-    lecture_main: "Consultation Session · Checking Comparison Conditions and Stimuli"
+    lecture_main: "Consultation Session"
+    lecture_subtitle: "Checking Comparison Conditions and Stimuli"
     paper: "Sections 3.2–3.3 · Conditions and Initial Stimuli"
     in_class:
       - "Team consultation on research ideas, comparison conditions, and initial stimuli"
@@ -277,7 +282,8 @@ weekly_schedule:
     holiday: "Hangeul Day"
     stage_ref: "planning-stimuli"
     lecture: "Stimuli Design Workshop · Prototyping Research Instruments"
-    lecture_main: "Stimuli Design Workshop · Prototyping Research Instruments"
+    lecture_main: "Stimuli Design Workshop"
+    lecture_subtitle: "Prototyping Research Instruments"
     paper: "Section 3.3 · Research Stimuli"
     in_class:
       - "No offline class · Asynchronous stimuli development and documentation"
@@ -295,7 +301,8 @@ weekly_schedule:
     iso_date: "2026-10-16"
     stage_ref: "planning-stimuli"
     lecture: "Research Proposal Integration · Aligning RQ, Conditions, Stimuli, and Evidence"
-    lecture_main: "Research Proposal Integration · Aligning RQ, Conditions, Stimuli, and Evidence"
+    lecture_main: "Research Proposal Integration"
+    lecture_subtitle: "Aligning RQ, Conditions, Stimuli, and Evidence"
     paper: "Sections 1–3.3 · Integrated Proposal Revision"
     in_class:
       - "Research-logic alignment, traceability review, and presentation rehearsal"
@@ -331,7 +338,8 @@ weekly_schedule:
     iso_date: "2026-10-30"
     stage_ref: "user-study"
     lecture: "Study Protocol Setup #1 · Quantitative Measurements"
-    lecture_main: "Study Protocol Setup #1 · Quantitative Measurements"
+    lecture_main: "Study Protocol Setup #1"
+    lecture_subtitle: "Quantitative Measurements"
     paper: "Section 4 · Method Draft I"
     in_class:
       - "Participants, study design, tasks, measures, and Method Mapping"
@@ -349,7 +357,8 @@ weekly_schedule:
     iso_date: "2026-11-06"
     stage_ref: "user-study"
     lecture: "Study Protocol Setup #2 · Qualitative Questions"
-    lecture_main: "Study Protocol Setup #2 · Qualitative Questions"
+    lecture_main: "Study Protocol Setup #2"
+    lecture_subtitle: "Qualitative Questions"
     paper: "Section 4 · Protocol-to-Method Mapping"
     in_class:
       - "Question audit, Study Materials Pack, and Protocol-to-Method Mapping"
@@ -385,7 +394,8 @@ weekly_schedule:
     iso_date: "2026-11-20"
     stage_ref: "analysis"
     lecture: "Data Analysis #1 · Qualitative Insights"
-    lecture_main: "Data Analysis #1 · Qualitative Insights"
+    lecture_main: "Data Analysis #1"
+    lecture_subtitle: "Qualitative Insights"
     paper: "Sections 5.1 & 5.3 · Qualitative Results"
     in_class:
       - "First-cycle coding, shared codebook, and Qualitative Pattern Board"
@@ -403,7 +413,8 @@ weekly_schedule:
     iso_date: "2026-11-27"
     stage_ref: "analysis"
     lecture: "Data Analysis #2 · Quantitative Insights"
-    lecture_main: "Data Analysis #2 · Quantitative Insights"
+    lecture_main: "Data Analysis #2"
+    lecture_subtitle: "Quantitative Insights"
     paper: "Section 5 · Complete Results Draft"
     in_class:
       - "Data cleaning, statistical comparison, visualization, and Results Snapshot"

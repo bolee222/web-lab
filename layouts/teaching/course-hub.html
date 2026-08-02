@@ -315,7 +315,13 @@
               {{ $weekNumber := replaceRE `^0+` `` .week }}{{ if eq $weekNumber "" }}{{ $weekNumber = "0" }}{{ end }}
               {{ $weekPath := printf "w%s" $weekNumber }}
               {{ $lectureMain := .lecture_main | default .lecture }}
-              <div class="course-hub-week-topic course-hub-lecture--{{ $lectureStyle }}"><span class="course-hub-mobile-label">Lecture</span><h3><a href="{{ printf `%s%s/` $base $weekPath }}"><span class="course-hub-lecture-main">{{ partial "teaching/inline-markdown.html" $lectureMain }}</span>{{ with .lecture_subtitle }}<span class="course-hub-lecture-subtitle">{{ partial "teaching/inline-markdown.html" . }}</span>{{ end }}</a></h3></div>
+              {{ $lectureSubtitle := .lecture_subtitle }}
+              {{ if and (eq $lectureStyle "type-b") (not $lectureSubtitle) (in $lectureMain " · ") }}
+                {{ $lectureParts := split $lectureMain " · " }}
+                {{ $lectureMain = index $lectureParts 0 }}
+                {{ $lectureSubtitle = delimit (after 1 $lectureParts) " · " }}
+              {{ end }}
+              <div class="course-hub-week-topic course-hub-lecture--{{ $lectureStyle }}"><span class="course-hub-mobile-label">Lecture</span><h3><a href="{{ printf `%s%s/` $base $weekPath }}"><span class="course-hub-lecture-main">{{ partial "teaching/inline-markdown.html" $lectureMain }}</span>{{ with $lectureSubtitle }}<span class="course-hub-lecture-subtitle">{{ partial "teaching/inline-markdown.html" . }}</span>{{ end }}</a></h3></div>
               <div class="course-hub-week-cell"><span class="course-hub-mobile-label">In Class</span><ul>{{ range .in_class }}<li>{{ partial "teaching/inline-markdown.html" . }}</li>{{ end }}</ul></div>
               <div class="course-hub-week-cell course-hub-week-cell--after"><span class="course-hub-mobile-label">After Class</span><ul class="course-hub-task-list">{{ range .after_class }}{{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables "showDue" true "projectAnchor" (cond (isset $stageInfo "project_number") (printf "project-%v" $stageInfo.project_number) "") ) }}{{ end }}</ul></div>
               {{ if $hasPaper }}
