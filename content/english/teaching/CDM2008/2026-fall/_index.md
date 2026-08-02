@@ -107,23 +107,23 @@ roadmap:
     series: "Design Research Process"
     name: "Research Framing"
     start_week: 1
-    end_week: 4
+    end_week: 3
     weekly_phase_override: "Research Framing"
     project_number: 1
     schedule_project: "Research question, gap, and scope"
-    description: "Define the research context, question, research gap, and evidence needed for the study."
+    description: "Define the research context, question, research gap, and scope through literature review."
   -
     ref: "planning-stimuli"
     show_in_roadmap: true
     journey_order: 2
     series: "Design Research Process"
     name: "Planning and Creating Research Stimuli"
-    start_week: 5
+    start_week: 4
     end_week: 8
     weekly_phase_override: "Planning & Stimuli"
     project_number: 1
     schedule_project: "Conditions, stimuli, and research proposal"
-    description: "Develop fair comparison conditions, research stimuli, and an integrated proposal."
+    description: "Develop fair comparison conditions, review them through consultation, and create research stimuli."
   -
     ref: "user-study"
     show_in_roadmap: true
@@ -239,30 +239,29 @@ weekly_schedule:
     week: "04"
     iso_date: "2026-09-25"
     holiday: "Chuseok Holiday"
-    stage_ref: "research-framing"
-    lecture: "Design Variables for Research · Translating RQ into Designable Factors"
-    lecture_main: "Design Variables for Research · Translating RQ into Designable Factors"
-    paper: "Sections 1–3.2 · D1 Revision & Variables Outline"
+    stage_ref: "planning-stimuli"
+    lecture: "Experiment Logic · Building Clear Comparison Conditions"
+    lecture_main: "Experiment Logic · Building Clear Comparison Conditions"
+    paper: "Section 3.2 · Comparative Conditions"
     in_class:
-      - "No offline class · D1 feedback and Variables Canvas"
+      - "No offline class · FC lecture and asynchronous comparison-condition/stimuli development"
     after_class:
       -
         type: "FC Lecture"
         task: "Experiment Logic"
-        due: "Oct. 2"
       -
         type: "Homework #3"
-        task: "D1 Revision + Section 3.2 Working Outline"
+        task: "Comparison Conditions + Initial Stimuli"
         due: "Oct. 2"
   -
     week: "05"
     iso_date: "2026-10-02"
     stage_ref: "planning-stimuli"
-    lecture: "Experiment Logic · Designing Comparable Conditions"
-    lecture_main: "Experiment Logic · Designing Comparable Conditions"
-    paper: "Section 3.2 · Comparative Conditions"
+    lecture: "Consultation Session · Checking Comparison Conditions and Stimuli"
+    lecture_main: "Consultation Session · Checking Comparison Conditions and Stimuli"
+    paper: "Sections 3.2–3.3 · Conditions and Initial Stimuli"
     in_class:
-      - "Baseline and comparison-condition design with confound review"
+      - "Team consultation on research ideas, comparison conditions, and initial stimuli"
     after_class:
       -
         type: "FC Lecture"
@@ -270,7 +269,7 @@ weekly_schedule:
         due: "Oct. 9"
       -
         type: "Homework #4"
-        task: "Section 3.2 Comparative Conditions"
+        task: "Revised Comparison Conditions + Stimuli"
         due: "Oct. 9"
   -
     week: "06"
@@ -502,40 +501,38 @@ assignments:
     evaluation_focus: "- **Research framing:** Converting a broad interest into a defensible research context and question.\n- **Activity-to-paper translation:** Turning decisions already made in class into manuscript-ready text."
   -
     number: 3
-    title: "D1 Revision + Section 3.2 Working Outline"
+    title: "Comparison Conditions + Initial Stimuli"
     project_number: 1
-    assignment_type: "Team working-manuscript revision"
+    assignment_type: "Team comparison-design and stimuli draft"
     due_iso: "2026-10-02"
-    summary: "Revise the research foundation using the Deliverable #1 feedback and translate the submitted Variables Canvas into an initial Section 3.2 outline."
-    contents_markdown: "- Revisions to Sections 1, 2, and 3.1 based on the feedback received\n- The design factor or independent variable the team may change\n- The expected participant outcome or dependent evidence\n- Controlled factors and possible confounds\n- A short rationale linking the variable choices to the RQ\n- A finalized baseline or comparison condition is not yet required"
-    presentation: "No formal presentation is required. Bring the revised manuscript and Variables Canvas to Week 5."
+    summary: "Use the Week 4 FC lecture and team activity to define the comparison logic and create initial participant-facing stimuli for the Week 5 consultation."
+    contents_markdown: "- Revised RQ and focal design mechanism\n- A realistic baseline and A/B or A/B/C comparison conditions\n- A side-by-side account of what changes and what remains controlled\n- Initial participant-facing sketches, flows, storyboards, or low-fidelity prototypes for every condition\n- Possible confounds or alternative explanations\n- Two or three specific questions or decisions for the consultation"
+    presentation: "No formal presentation is required. Use the materials directly during the Week 5 team consultation."
     upload_file:
-      file_type: "Shared master manuscript update"
-      recommended_length: "Targeted revisions plus a structured Section 3.2 outline"
-      filename_rule: "No separate file"
-      example: "Revise Sections 1–3.1 and add the Section 3.2 outline"
-    submission_method: "Update the shared master manuscript. The Feedback Action Log and Variables Canvas are already submitted as the working material and should not be duplicated as homework."
+      file_type: "Comparison Condition & Stimuli Canvas with linked or embedded stimuli"
+      recommended_length: "One concise canvas plus the minimum representations needed to compare every condition"
+      filename_rule: "One shared submission per team"
+    submission_method: "Submit or link the shared team canvas before the Week 5 consultation. Keep the working manuscript aligned with any revised RQ decisions."
     show_detailed_deadline: false
     show_evaluation_percentage: false
-    evaluation_focus: "- **Feedback integration:** Converting feedback into specific research decisions.\n- **Operationalization:** Translating an abstract RQ into changeable design factors and observable outcomes."
+    evaluation_focus: "- **Comparative reasoning:** Selecting a meaningful baseline and isolating the intended design factor.\n- **Stimuli concretization:** Making each condition visible enough to reveal ambiguity and confounds."
   -
     number: 4
-    title: "Section 3.2 Comparative Conditions"
+    title: "Revised Comparison Conditions + Stimuli"
     project_number: 1
-    assignment_type: "Team working-manuscript update"
+    assignment_type: "Team working-manuscript and stimuli revision"
     due_iso: "2026-10-09"
-    summary: "Translate the submitted Comparison Design Canvas into the Section 3.2 working draft."
-    contents_markdown: "- The target design variable\n- A realistic baseline and one or two comparison conditions\n- What changes across conditions and what remains controlled\n- Why the comparison can answer the RQ\n- Possible confounds or alternative explanations\n- A comparison table or figure with a draft caption"
-    presentation: "No formal presentation is required. The condition logic will be reviewed during the Week 6 stimuli-development process."
+    summary: "Revise the comparison logic and participant-facing stimuli using the decisions made during the Week 5 consultation."
+    contents_markdown: "- Updated baseline and A/B or A/B/C condition descriptions\n- Consultation decisions recorded as Keep / Revise / Test Next\n- Revised stimuli for every condition\n- What changes across conditions and what remains controlled\n- Possible confounds and how they will be reduced\n- Updated Section 3.2 comparison rationale and condition table or figure\n- The scope and next actions for Week 6 stimuli development"
+    presentation: "No formal presentation is required. The revised materials become the starting point for the Week 6 asynchronous stimuli-development session."
     upload_file:
-      file_type: "Shared master manuscript update"
-      recommended_length: "Condition descriptions, rationale, and one comparison table or figure"
-      filename_rule: "No separate file"
-      example: "Complete the working Section 3.2 in the team manuscript"
-    submission_method: "Update Section 3.2 in the shared master manuscript. Do not submit a second copy of the Comparison Design Canvas."
+      file_type: "Shared master manuscript update plus revised stimuli links"
+      recommended_length: "Updated Section 3.2, condition table or figure, and consultation decision log"
+      filename_rule: "No duplicate manuscript file; update the shared team materials"
+    submission_method: "Update the shared master manuscript and linked stimuli. Keep the Consultation Decision Log with the working materials."
     show_detailed_deadline: false
     show_evaluation_percentage: false
-    evaluation_focus: "- **Comparative reasoning:** Designing conditions that isolate the intended variable.\n- **Research communication:** Explaining why the baseline and alternatives form a valid comparison."
+    evaluation_focus: "- **Feedback integration:** Turning consultation into explicit design and research decisions.\n- **Research readiness:** Resolving major comparison problems before increasing prototype fidelity."
   -
     number: 5
     title: "Section 3.3 Research Stimuli"
