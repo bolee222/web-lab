@@ -526,13 +526,22 @@
               <section>
                 <h3>Homework</h3>
                 <ul class="course-hub-task-list">
+                  {{ $explicitHomeworkNumbers := slice }}
+                  {{ range $assignments }}
+                    {{ $taskType := .type | default "" }}
+                    {{ if findRE `^(Homework|Assignment)[[:space:]]+#?[0-9]+` $taskType }}
+                      {{ $explicitHomeworkNumbers = $explicitHomeworkNumbers | append (replaceRE `^(Homework|Assignment)[[:space:]]+#?([0-9]+).*$` `$2` $taskType) }}
+                    {{ end }}
+                  {{ end }}
                   {{ range $assignments }}
                     {{ if eq (.type | default "") "FC Lecture" }}
                       {{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables "showDue" true "showAction" true "projectAnchor" (cond (isset $stageInfo "project_number") (printf "project-%v" $stageInfo.project_number) "") ) }}
                     {{ end }}
                   {{ end }}
                   {{ range $assignments }}
-                    {{ if ne (.type | default "") "FC Lecture" }}
+                    {{ $skipDuplicateHomework := false }}
+                    {{ with .assignment }}{{ if in $explicitHomeworkNumbers (printf "%v" .) }}{{ $skipDuplicateHomework = true }}{{ end }}{{ end }}
+                    {{ if and (ne (.type | default "") "FC Lecture") (not $skipDuplicateHomework) }}
                       {{ partial "teaching/course-schedule-task.html" (dict "task" . "base" $base "assignments" $courseAssignments "deliverables" $courseDeliverables "showDue" true "showAction" true "projectAnchor" (cond (isset $stageInfo "project_number") (printf "project-%v" $stageInfo.project_number) "") ) }}
                     {{ end }}
                   {{ end }}
