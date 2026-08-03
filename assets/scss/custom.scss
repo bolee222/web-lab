@@ -2817,14 +2817,19 @@ img.rounded {
 }
 .course-hub-provisional, .course-hub-footnote { font-size: 12px; }
 
-.course-hub-roadmap { margin-top: 27px; }
+.course-hub-roadmap {
+  display: grid;
+  grid-template-columns: minmax(145px, .85fr) minmax(240px, 1.35fr) minmax(260px, 1.5fr);
+  column-gap: 28px;
+  margin-top: 27px;
+}
 #roadmap-title { font-size: 24px; }
 #roadmap-title + .course-hub-provisional { max-width: 920px; font-size: 14px; line-height: 1.6; }
-.course-hub-roadmap-head,
-.course-hub-roadmap article {
+.course-hub-roadmap-head {
   display: grid;
   grid-template-columns: minmax(145px, .85fr) minmax(240px, 1.35fr) minmax(260px, 1.5fr);
   gap: 28px;
+  grid-column: 1 / -1;
 }
 .course-hub-roadmap-head {
   padding: 6px 0;
@@ -2837,6 +2842,7 @@ img.rounded {
 }
 .course-hub-roadmap-series {
   display: flex;
+  grid-column: 1 / -1;
   align-items: baseline;
   gap: 10px;
   margin-top: 6px;
@@ -2846,8 +2852,23 @@ img.rounded {
 }
 .course-hub-roadmap-series strong { color: #222; font-size: 12px; font-weight: 600; }
 .course-hub-roadmap-series span { color: $brand-color-grad-primary; font-size: 10px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; }
-.course-hub-roadmap article { padding: 9px 0; }
+.course-hub-roadmap article.course-hub-roadmap-stage { display: contents; }
+.course-hub-phase,
+.course-hub-roadmap-project,
+.course-hub-roadmap-learning {
+  padding: 9px 0;
+  border-bottom: 1px solid var(--course-line);
+}
 .course-hub-phase { position: relative; }
+.course-hub-phase { grid-column: 1; }
+.course-hub-roadmap-project {
+  grid-column: 2;
+}
+.course-hub-roadmap-project--merged {
+  display: flex;
+  align-items: center;
+}
+.course-hub-roadmap-learning { grid-column: 3; }
 .course-hub-stage-node { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 12px; align-items: start; }
 .course-hub-stage-node .course-hub-stage-number {
   display: flex;
@@ -3072,7 +3093,18 @@ img.rounded {
   .course-hub-deliverables-overview-heading { align-items: flex-start; }
   .course-hub-assignment-contents > li { grid-template-columns: 1fr; gap: 4px; }
   .course-hub-roadmap-head { display: none; }
-  .course-hub-roadmap article { grid-template-columns: 1fr; gap: 9px; padding: 20px 0; }
+  .course-hub-roadmap { grid-template-columns: minmax(0, 1fr); column-gap: 0; }
+  .course-hub-roadmap-series,
+  .course-hub-phase,
+  .course-hub-roadmap-project,
+  .course-hub-roadmap-learning {
+    grid-column: 1;
+    grid-row: auto !important;
+  }
+  .course-hub-phase { padding-top: 20px; border-bottom: 0; }
+  .course-hub-roadmap-project { padding: 9px 0 0 46px; border-bottom: 0; }
+  .course-hub-roadmap-project--merged { display: block; }
+  .course-hub-roadmap-learning { padding: 7px 0 20px 46px; }
   .course-hub-phase small { display: block; margin-top: 5px; margin-left: 0; }
 }
 

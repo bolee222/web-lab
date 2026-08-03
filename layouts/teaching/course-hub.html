@@ -165,24 +165,41 @@
           <div class="course-hub-roadmap">
             <div class="course-hub-roadmap-head" aria-hidden="true"><span>Stage</span><span>Project</span><span>Core learning</span></div>
             {{ $previousSeries := "" }}
+            {{ $previousProjectKey := "" }}
+            {{ $roadmapGridRow := 2 }}
             {{ $roadmapStages := where $course.Params.roadmap "show_in_roadmap" true }}
             {{ range $roadmapIndex, $roadmapItem := $roadmapStages }}
             {{ if ne .series $previousSeries }}
               {{ $seriesStart := 999 }}{{ $seriesEnd := 0 }}
               {{ range where $roadmapStages "series" .series }}{{ $order := int .journey_order }}{{ if lt $order $seriesStart }}{{ $seriesStart = $order }}{{ end }}{{ if gt $order $seriesEnd }}{{ $seriesEnd = $order }}{{ end }}{{ end }}
-              <div class="course-hub-roadmap-series"><strong>{{ .series }}</strong><span>{{ if eq $seriesStart $seriesEnd }}Stage {{ $seriesStart }}{{ else }}Stages {{ $seriesStart }}–{{ $seriesEnd }}{{ end }}</span></div>
+              <div class="course-hub-roadmap-series" style="grid-row: {{ $roadmapGridRow }};"><strong>{{ .series }}</strong><span>{{ if eq $seriesStart $seriesEnd }}Stage {{ $seriesStart }}{{ else }}Stages {{ $seriesStart }}–{{ $seriesEnd }}{{ end }}</span></div>
+              {{ $roadmapGridRow = add $roadmapGridRow 1 }}
             {{ end }}
             {{ $stageNumber := int .journey_order }}
             {{ $stageTitle := .name }}
             {{ $roadmapTitle := .name }}
             {{ if .project_number }}{{ $linkedProject := index $course.Params.project.items (sub (int .project_number) 1) }}{{ $roadmapTitle = printf "Project %v: %s" .project_number $linkedProject.title }}{{ end }}
+            {{ $projectKey := "" }}
+            {{ $projectSpan := 1 }}
+            {{ if .project_number }}
+              {{ $projectKey = printf "%s|%v" .series .project_number }}
+              {{ $projectSpan = 0 }}
+              {{ $isSameProject := true }}
+              {{ range after $roadmapIndex $roadmapStages }}
+                {{ $candidateKey := printf "%s|%v" .series .project_number }}
+                {{ if and $isSameProject (eq $candidateKey $projectKey) }}{{ $projectSpan = add $projectSpan 1 }}{{ else }}{{ $isSameProject = false }}{{ end }}
+              {{ end }}
+            {{ end }}
+            {{ $isProjectStart := or (not .project_number) (ne $projectKey $previousProjectKey) }}
             {{ $weekRange := partial "teaching/week-range-label.html" (dict "start" .start_week "end" .end_week) }}
-            <article id="{{ .ref }}">
-              <div class="course-hub-phase"><div class="course-hub-stage-node"><span class="course-hub-stage-number">{{ $stageNumber }}</span><div><strong>{{ $stageTitle }}</strong><small>{{ $weekRange }}</small></div></div></div>
-              <div class="course-hub-roadmap-project"><h3>{{ with .project_number }}<a href="#project-{{ . }}">{{ $roadmapTitle }}</a>{{ else }}{{ $roadmapTitle }}{{ end }}</h3></div>
-              <div class="course-hub-roadmap-learning"><p>{{ partial "teaching/inline-markdown.html" .description }}</p></div>
+            <article class="course-hub-roadmap-stage">
+              <div class="course-hub-phase" id="{{ .ref }}" style="grid-row: {{ $roadmapGridRow }};"><div class="course-hub-stage-node"><span class="course-hub-stage-number">{{ $stageNumber }}</span><div><strong>{{ $stageTitle }}</strong><small>{{ $weekRange }}</small></div></div></div>
+              {{ if $isProjectStart }}<div class="course-hub-roadmap-project{{ if gt $projectSpan 1 }} course-hub-roadmap-project--merged{{ end }}" style="grid-row: {{ $roadmapGridRow }} / span {{ $projectSpan }};"><h3>{{ with .project_number }}<a href="#project-{{ . }}">{{ $roadmapTitle }}</a>{{ else }}{{ $roadmapTitle }}{{ end }}</h3></div>{{ end }}
+              <div class="course-hub-roadmap-learning" style="grid-row: {{ $roadmapGridRow }};"><p>{{ partial "teaching/inline-markdown.html" .description }}</p></div>
             </article>
             {{ $previousSeries = .series }}
+            {{ $previousProjectKey = $projectKey }}
+            {{ $roadmapGridRow = add $roadmapGridRow 1 }}
             {{ end }}
           </div>
         </div>
