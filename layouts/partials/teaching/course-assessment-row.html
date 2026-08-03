@@ -2,10 +2,11 @@
 {{- $base := .base -}}
 {{- $assignments := .assignments -}}
 {{- $deliverables := .deliverables -}}
-<article{{ if $row.total }} class="course-hub-assessment-total"{{ end }}>
-  <strong>{{ $row.weight }}%</strong>
+{{- $isInfo := and (not $row.total) (eq (int $row.weight) 0) -}}
+<article{{ if $row.total }} class="course-hub-assessment-total"{{ else if $isInfo }} class="course-hub-assessment-info"{{ end }}>
+  {{ if $isInfo }}<span class="course-hub-assessment-status">Required</span>{{ else }}<strong>{{ $row.weight }}%</strong>{{ end }}
   <div>
-    <h3>{{ $row.label }}</h3><p>{{ $row.note }}</p>
+    <h3>{{ $row.label }}</h3>{{ if not $row.total }}<p>{{ $row.note }}</p>{{ end }}
     {{ with $row.project }}
     <div class="course-hub-assessment-breakdown" aria-label="Project {{ . }} assignment and deliverable weights">
       {{ range where $assignments "project_number" (int .) }}{{ $assignment := . }}{{ with .weight }}<a href="{{ printf `%sassignments/#assignment-%v` $base $assignment.number }}">Homework #{{ $assignment.number }} <strong>{{ . }}%</strong></a>{{ end }}{{ end }}
