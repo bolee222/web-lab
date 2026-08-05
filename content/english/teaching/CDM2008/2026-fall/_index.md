@@ -28,7 +28,7 @@ flipped_learning:
   title: "Flipped Learning"
   text: "This course was designated as a Flipped Classroom (FC) course by the Innovation Center for Teaching & Learning (ICTL)."
   detail: "Each week, students spend 30 minutes watching lecture videos and completing individual learning tasks provided by the instructor in advance, followed by two hours of cooperative learning with fellow students in the classroom."
-overview: "This course introduces design research as a structured way to understand people, practices, contexts, and opportunities for design. Students learn to frame answerable research questions, select appropriate qualitative methods, conduct ethical fieldwork, organize and interpret evidence, and translate findings into clear design implications. A semester-long project provides repeated practice in planning, conducting, synthesizing, and communicating design research."
+overview: "This course introduces design research as a structured and systematic way to identify design opportunities and develop reasonable, persuasive arguments for early creative ideas and assumptions. Students learn how to turn broad interests into researchable questions, create and compare design alternatives, and collect qualitative and quantitative evidence through user studies. Throughout the semester, each team develops one design research project and communicates its process and findings through presentations and a short research paper."
 learning_outcomes:
   -
     title: "Frame research"
