@@ -31,17 +31,17 @@ flipped_learning:
 overview: "This course introduces design research as a structured and systematic way to identify design opportunities and develop reasonable, persuasive arguments for early creative ideas and assumptions. Students learn how to turn broad interests into researchable questions, create and compare design alternatives, and collect qualitative and quantitative evidence through user studies. Throughout the semester, each team develops one design research project and communicates its process and findings through presentations and a short research paper."
 learning_outcomes:
   -
-    title: "Frame research"
-    text: "Turn broad design interests into focused research questions, scopes, and plans."
+    title: "Frame research questions"
+    text: "Frame focused and researchable questions from broad design interests and early creative ideas."
   -
-    title: "Generate evidence"
-    text: "Select and apply appropriate qualitative methods while attending to ethics and research quality."
+    title: "Develop research stimuli"
+    text: "Develop comparable design alternatives and research stimuli that enable fair and meaningful evaluation."
   -
-    title: "Synthesize findings"
-    text: "Identify patterns, insights, and opportunities grounded in collected evidence."
+    title: "Conduct user studies"
+    text: "Plan and conduct user studies using appropriate qualitative and quantitative methods."
   -
-    title: "Communicate implications"
-    text: "Present a transparent research process and connect findings to responsible design decisions."
+    title: "Analyze and communicate evidence"
+    text: "Analyze evidence and communicate persuasive findings, design implications, and limitations through presentations and a short research paper."
 prerequisites: "There are no formal course prerequisites. Students should be prepared to participate in fieldwork, critique, collaborative analysis, and iterative project development."
 overview_cards:
   -
