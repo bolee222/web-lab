@@ -393,31 +393,31 @@ weekly_schedule:
     week: "12"
     iso_date: "2026-11-20"
     stage_ref: "analysis"
-    lecture: "Data Analysis #1 · Qualitative Insights"
-    lecture_main: "Data Analysis #1"
-    lecture_subtitle: "Qualitative Insights"
-    paper: "Sections 5.1 & 5.3 · Qualitative Results"
+    lecture: "Data Analysis #2 · Quantitative Insights"
+    lecture_main: "Data Analysis #2"
+    lecture_subtitle: "Quantitative Insights"
+    paper: "Sections 5.1 & 5.2 · Quantitative Results"
     in_class:
-      - "First-cycle coding, shared codebook, and Qualitative Pattern Board"
+      - "Data cleaning, statistical comparison, visualization, and Results Snapshot"
     after_class:
       -
         type: "FC Lecture"
-        task: "Quantitative Data Analysis"
+        task: "Qualitative Data Analysis"
         due: "Nov. 27"
       -
         type: "Homework #10"
-        task: "Qualitative Results Working Draft"
+        task: "Quantitative Results Working Draft"
         due: "Nov. 27"
   -
     week: "13"
     iso_date: "2026-11-27"
     stage_ref: "analysis"
-    lecture: "Data Analysis #2 · Quantitative Insights"
-    lecture_main: "Data Analysis #2"
-    lecture_subtitle: "Quantitative Insights"
+    lecture: "Data Analysis #1 · Qualitative Insights"
+    lecture_main: "Data Analysis #1"
+    lecture_subtitle: "Qualitative Insights"
     paper: "Section 5 · Complete Results Draft"
     in_class:
-      - "Data cleaning, statistical comparison, visualization, and Results Snapshot"
+      - "First-cycle coding, shared codebook, Qualitative Pattern Board, and integrated Results draft"
     after_class:
       -
         type: "FC Lecture"
@@ -640,40 +640,40 @@ assignments:
         content: "Conduct the main study and organize all qualitative and quantitative data in anonymized form before Week 12."
   -
     number: 10
-    title: "Sections 5.1 & 5.3 Working Draft"
+    title: "Sections 5.1 & 5.2 Quantitative Results Working Draft"
     project_number: 1
-    assignment_type: "Team qualitative-results manuscript update"
+    assignment_type: "Team quantitative-results manuscript update"
     due_iso: "2026-11-27"
-    summary: "Use the submitted Qualitative Pattern Board and shared codebook to draft the Data Overview and Qualitative Results subsections."
-    contents_markdown: "- **5.1 Data Overview:** Final qualitative dataset, participant coverage, and relevant exclusions\n- Coding process and development of the shared codebook\n- **5.3 Qualitative Results:** Categories or themes and how they relate to the RQ or conditions\n- Multiple pieces of supporting evidence for each major theme\n- Contradictory, exceptional, or negative cases\n- Clear separation between observed patterns and broader interpretation"
-    presentation: "No formal presentation is required. Bring the draft and cleaned quantitative dataset to Week 13."
+    summary: "Use the submitted Results Snapshot to draft the Data Overview and Quantitative Results subsections."
+    contents_markdown: "- **5.1 Data Overview:** Final participant count, exclusions, and dataset structure\n- **5.2 Quantitative Results:** Descriptive statistics, appropriate comparisons, and correctly labeled inferential results\n- Clear figures, tables, labels, and captions\n- Accurate reporting of null, mixed, or unexpected results\n- Clear separation between observed results and interpretation"
+    presentation: "No formal presentation is required. Bring the draft and cleaned qualitative dataset to Week 13."
     upload_file:
       file_type: "Shared master manuscript update"
-      recommended_length: "Data overview plus 2–4 evidence-supported qualitative findings"
+      recommended_length: "Data overview plus the quantitative-results working draft"
       filename_rule: "No separate file"
-      example: "Draft Sections 5.1 and 5.3 in the team manuscript"
-    submission_method: "Update Sections 5.1 and 5.3 in the shared master manuscript. Do not submit the Pattern Board again as a separate homework file."
+      example: "Draft Sections 5.1 and 5.2 in the team manuscript"
+    submission_method: "Update Sections 5.1 and 5.2 in the shared master manuscript. Statistical output files may be linked as supporting materials when needed."
     show_detailed_deadline: false
     show_evaluation_percentage: false
-    evaluation_focus: "- **Qualitative rigor:** Showing the path from data to codes, themes, and findings.\n- **Evidence use:** Supporting claims with multiple anonymized excerpts and contradictory cases."
+    evaluation_focus: "- **Accurate reporting:** Matching the analysis to the study design and reporting results transparently.\n- **Evidence clarity:** Presenting descriptive and inferential results with readable figures, tables, and labels."
   -
     number: 11
     title: "Complete Section 5 Results Draft"
     project_number: 1
     assignment_type: "Team complete Results-section update"
     due_iso: "2026-12-03"
-    summary: "Use the submitted Results Snapshot to complete Section 5."
-    contents_markdown: "- **5.1 Data Overview:** Final participant count, exclusions, and dataset structure\n- **5.2 Quantitative Results:** Descriptive statistics, appropriate comparisons, and correctly labeled inferential results\n- **5.3 Qualitative Results:** Final themes and supporting evidence\n- Clear figures, tables, labels, and captions\n- Accurate reporting of null, mixed, contradictory, or unexpected results\n- Separation of observed results from interpretation"
+    summary: "Combine the existing quantitative-results draft with the submitted Qualitative Pattern Board to complete Section 5."
+    contents_markdown: "- **5.1 Data Overview:** Final participant count, exclusions, and dataset structure\n- **5.2 Quantitative Results:** Descriptive statistics, appropriate comparisons, and correctly labeled inferential results\n- **5.3 Qualitative Results:** Final categories or themes with supporting and contradictory evidence\n- Clear figures, tables, labels, and captions\n- Accurate reporting of null, mixed, contradictory, or unexpected results\n- Clear separation between observed results and interpretation"
     presentation: "No formal presentation is required. Bring the completed Results draft and interpretation questions to Week 14."
     upload_file:
       file_type: "Shared master manuscript update"
       recommended_length: "Complete Section 5 with figures and tables"
       filename_rule: "No separate file"
       example: "Complete Sections 5.1–5.3 in the team manuscript"
-    submission_method: "Update Section 5 in the shared master manuscript. Statistical output files may be linked as supporting materials when needed."
+    submission_method: "Update Section 5 in the shared master manuscript. Statistical output files and the Qualitative Pattern Board may be linked as supporting materials when needed."
     show_detailed_deadline: false
     show_evaluation_percentage: false
-    evaluation_focus: "- **Accurate reporting:** Matching the analysis to the study design and reporting results transparently.\n- **Integrated evidence:** Presenting qualitative and quantitative findings as complementary evidence."
+    evaluation_focus: "- **Integrated evidence:** Presenting qualitative and quantitative findings as complementary evidence.\n- **Transparent reporting:** Preserving the path from data and analysis to findings while stating boundaries and limitations."
 deliverables:
   -
     number: 1
