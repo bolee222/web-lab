@@ -243,8 +243,8 @@ weekly_schedule:
     iso_date: "2026-09-25"
     holiday: "Chuseok Holiday"
     stage_ref: "planning-stimuli"
-    lecture: "Experiment Logic · Building Clear Comparison Conditions"
-    lecture_main: "Experiment Logic"
+    lecture: "Design Variables & Experiment Logic · Building Clear Comparison Conditions"
+    lecture_main: "Design Variables & Experiment Logic"
     lecture_subtitle: "Building Clear Comparison Conditions"
     paper: "Section 3.2 · Comparative Conditions"
     in_class:
@@ -311,10 +311,6 @@ weekly_schedule:
         type: "FC Lecture"
         task: "Presenting the Research Proposal"
         due: "Oct. 23"
-      -
-        type: "Deliverable #2"
-        task: "Mid-term Research Proposal & Stimuli"
-        due: "Oct. 23"
   -
     week: "08"
     iso_date: "2026-10-23"
@@ -325,6 +321,10 @@ weekly_schedule:
     in_class:
       - "Deliverable #2 presentations, critique, and Feedback Decision Log"
     after_class:
+      -
+        type: "FC Lecture"
+        task: "Study Protocol Setup: Choosing What to Measure"
+        due: "Oct. 30"
       -
         type: "Deliverable #2"
         task: "Mid-term Research Proposal & Stimuli"
@@ -383,7 +383,7 @@ weekly_schedule:
     after_class:
       -
         type: "FC Lecture"
-        task: "Qualitative Data Analysis"
+        task: "Data Analysis #2: Comparing Conditions with T-tests and ANOVA"
         due: "Nov. 20"
       -
         type: "Homework #9"
@@ -436,11 +436,7 @@ weekly_schedule:
     paper: "Sections 6–7 · Discussion, Implications & Limitations"
     in_class:
       - "Claim–evidence audit, bounded implications, limitations, and final storyline"
-    after_class:
-      -
-        type: "Deliverable #3"
-        task: "Final Design Research Study"
-        due: "Dec. 11"
+    after_class: []
   -
     week: "15"
     iso_date: "2026-12-11"
@@ -455,10 +451,6 @@ weekly_schedule:
         type: "Deliverable #3"
         task: "Final Design Research Study"
         due: "Dec. 11"
-      -
-        type: "Deliverable #4"
-        task: "Final Research Paper — use the Final Paper Revision Plan"
-        due: "Dec. 18"
   -
     week: "16"
     iso_date: "2026-12-18"
