@@ -471,76 +471,70 @@ assignments:
     title: "How Do Art and Design Approach Technology?"
     project_number: 1
     assignment_type: "Individual Comparative Mini-Report"
-    due_iso: "2026-09-14T14:59:00+00:00"
+    due_iso: "2026-09-14T23:59:00+09:00"
     grade_focus: "Applying the Art–Design distinction to Technology"
     summary: "Select one technology and compare one case from artistic practice with one case from design practice. Examine not simply what the technology does, but how each field approaches, uses, interprets, and evaluates it. Based on the comparison, formulate your own hypothesis about how Art and Design may relate to the same technology differently."
     contents:
       -
         title: "Selected Technology"
         items:
-          - "Introduce one technology such as AI, XR, robotics, projection mapping, motion tracking, biometric sensing, 3D printing, data visualization, sound technology, or interactive displays."
+          - "Briefly introduce the technology you selected and why it interests you."
       -
-        title: "Case Study"
+        title: "Two Cases"
         items:
-          - "**Art + Tech:** Introduce one artwork or artistic project using the selected technology. Explain how the technology functions within the work, what expression, or question it enables."
-          - "**Design + Tech:** Introduce one design using the same or a closely related technology. Explain the problem, user need, purpose, or intended outcome and how the technology contributes to its effectiveness."
-          - "**Compare!** Compare the two cases in relation to primary purpose, role of technology, and criteria for success."
+          - "One **Art + Technology** case and one **Design + Technology** case."
+          - "Briefly explain the purpose and use of technology in each case."
       -
-        title: "Student Hypothesis"
+        title: "Comparison & Hypothesis"
         items:
-          - "Complete and explain the statement: “`Art tends to approach technology as [your interpretation], whereas Design tends to approach technology as [your interpretation].`” Support the hypothesis with specific evidence from both cases."
+          - "Identify one important difference between the two cases."
+          - "Write one sentence about how Art and Design may approach technology differently."
+          - "Template: “`Art tends to approach technology as [your interpretation], whereas Design tends to approach technology as [your interpretation].`”"
     presentation: "No formal presentation is required. Selected hypotheses may be reviewed anonymously at the beginning of Week 3."
     upload_file:
       file_type: "PDF"
       recommended_length: "2–3 pages, including visual references"
       required_visuals: "At least one visual reference for each case"
-      filename_rule: "A1_StudentID_StudentName.pdf"
-      example: "A1_2026123456_JaneKim.pdf"
-    submission_method: "Upload the final PDF to the Homework #1 submission folder on LearnUS. Submissions through email or other channels will not be accepted."
+      filename_rule: "HW1_StudentID_StudentName.pdf"
+      example: "HW1_2026123456_JaneKim.pdf"
+    submission_method: "through LearnUS."
     show_detailed_deadline: true
     show_evaluation_percentage: false
-    evaluation_focus: "- **Comparative Reasoning:** Depth of comparison across purpose, audience, interpretation, rationale, and success criteria.\n- **Hypothesis and Reflection:** Clarity, evidence, recognition of overlaps or exceptions, and quality of communication."
+    evaluation_focus: "- **Art vs. Design:** Understanding different purposes and approaches.\n- **Case Comparison:** Supporting your interpretation with concrete cases."
   -
     number: 2
-    title: "**Art–Business Collaboration through Emerging Technology**"
+    title: "Art–Business Collaboration through Emerging Technology"
     project_number: 1
     assignment_type: "Individual Submission"
-    due_iso: "2026-09-21T14:59:00+00:00"
+    due_iso: "2026-09-21T23:59:00+09:00"
     grade_focus: "Expanding an Art–Business collaboration through technology"
     summary: "Continue with the Art–Business collaboration analyzed during the Week 3 in-class activity. Select one emerging technology and propose how it could expand the existing collaboration by changing the roles, relationships, or value created for the artist, business, and audience. Technology should not be added merely as a feature or spectacle. The proposal should show how it changes the role of the artist, the participation of the audience, the role of the business, and the meaning or experience created."
     contents:
       -
-        title: "Starting Point"
+        title: "Existing Collaboration"
         items:
-          - "Identify the Art–Business collaboration analyzed in class. Briefly state how the artist, business, and audience currently participate in the collaboration."
+          - "Briefly introduce the Art–Business collaboration and the roles of the artist, business, and audience."
       -
-        title: "Emerging Technology"
+        title: "Technology Expansion"
         items:
-          - "Select one relevant technology, such as AI, XR, robotics, projection mapping, motion tracking, spatial computing, or interactive media."
-          - "Briefly explain what new possibility the technology enables in this particular collaboration."
+          - "Select one emerging technology and show how it could expand the collaboration."
+          - "Include **one concept image or a three-step scenario**."
       -
-        title: "Expansion Idea"
+        title: "How Technology Could Deepen the Art Infusion"
         items:
-          - "Propose how the technology could extend the existing collaboration."
-          - "Explain what the **audience** could newly see, do, or experience."
-          - "Present the idea through **one concept image (AI-generated image) or a short three-step scenario**."
-      -
-        title: "Why This Deepens the Collaboration"
-        items:
-          - "Complete and explain the statement:"
-          - "By using **[technology]** to **[proposed change]**, the collaboration could create deeper **[artistic, business, or audience value]** because **[your reasoning]**."
-          - "Identify one limitation, risk, or condition that should be considered."
+          - "Explain your idea using: **[technology]** to **[proposed change]**, the collaboration could create deeper **[artistic, business, or audience value]** because **[your reasoning]**."
+          - "Identify one important limitation or risk."
     presentation: "No formal presentation is required. Selected concepts may be briefly referenced during the transition to Week 4."
     upload_file:
       file_type: "PDF"
       recommended_length: "2~3 pages"
-      required_visuals: "- one image of the original collaboration\n- one concept image or three-step scenario"
-      filename_rule: "A2_StudentID_StudentName.pdf"
-      example: "A2_2026123456_JaneKim.pdf"
-    submission_method: "Upload the final PDF to the Homework #2 submission folder on LearnUS. Submissions through email or other channels will not be accepted."
+      required_visuals: "- one image of the original collaboration\n- one concept image of the ‘technology expansion version’"
+      filename_rule: "HW2_StudentID_StudentName.pdf"
+      example: "HW2_2026123456_JaneKim.pdf"
+    submission_method: "through LearnUS."
     show_detailed_deadline: true
     show_evaluation_percentage: false
-    evaluation_focus: "- **Existing Case Understanding:** Accuracy and depth of the collaboration, stakeholder, value, and limitation analysis.\n- **Technology Relevance:** Appropriateness of the selected technology and clarity about what new possibility it enables.\n- **Concept Development:** Originality, coherence, and degree to which the proposal deepens the role of art rather than simply adding a feature.\n- **Stakeholder and Experience Value:** Improvement in artist, business, and audience roles, participation, and value.\n- **Critical Reasoning and Communication:** Consideration of authorship, control, feasibility, risk, and clarity of visual and written presentation."
+    evaluation_focus: "- **Art–Business Collaboration:** Understanding how art can shape a business collaboration.\n- **Technology-Enabled Value:** Exploring how technology can deepen artistic, business, or audience value."
   -
     number: 3
     title: "[Mini-Report] Decomposing Graphic Designs"
@@ -548,40 +542,39 @@ assignments:
     assignment_type: "Individual Mini-Report"
     due_iso: "2026-09-29T23:59:00+09:00"
     weight: 5
-    grade_focus: "Self-directed exploration of a Graphic Design principle"
-    summary: "Select one Graphic Design principle introduced in Week 4 and use D:Branch to independently explore a Graphic Design case that you genuinely want to understand.\nBegin with a specific personal learning goal, generate an initial branch set, examine useful and unsuccessful results, develop a follow-up question, and conduct at least one additional exploration.\nThe purpose is not to create the most visually attractive variation. Demonstrate how you used D:Branch to investigate how a Graphic Design principle operates, how its effects may change across users or contexts, and where generated results require further verification."
+    grade_focus: "Critical exploration of Graphic Design principles with D:Branch"
+    summary: "Select two Graphic Design principles introduced in Week 4. For each principle, choose one case, use D:Branch to generate twist cases, and analyze why each twist is less effective or problematic. Conclude with what you learned from the comparison and reflection."
     contents:
       -
-        title: "Exploration focus"
+        title: "Select Two Graphic Design Principles"
         items:
-          - "Selected principle, personal learning goal, case, audience, medium, context, and initial expectation."
+          - "Choose two principles learned in Week 4."
+          - "Repeat Steps 2–4 for each principle."
       -
-        title: "First exploration"
+        title: "Choose One Example Case"
         items:
-          - "Branch set, prompt/process record, comparison of effects, most useful branch, and one inaccurate or unconvincing branch."
+          - "Select one graphic design case you want to explore."
       -
-        title: "Follow-up exploration"
+        title: "Explore with D:Branch"
         items:
-          - "One question arising from the first exploration and at least one additional branch set."
+          - "Generate twist cases with D:Branch."
+          - "Analyze **why each twist is less effective or problematic** in relation to the selected principle."
       -
-        title: "Learning synthesis"
+        title: "Learning & Reflection"
         items:
-          - "Main learning, conditions, exceptions, trade-offs, and evidence needs."
-      -
-        title: "D:Branch reflection"
-        items:
-          - "Usefulness, limitations, accuracy, control, improvement ideas, and self-rating."
-    presentation: "No formal presentation is required. Selected exploration processes or findings may be briefly discussed during the following class as part of the Graphic Design review activity."
+          - "Summarize what you learned about the principle."
+          - "Reflect on what D:Branch helped you notice or question."
+    presentation: "No formal presentation is required."
     upload_file:
       file_type: "PDF"
-      recommended_length: "4–5 pages, including visual references and reflection"
+      recommended_length: "3–4 pages, including visual references and reflection"
       required_visuals: "Original case; complete first branch set; complete follow-up branch set; most useful branch; and at least one failed, inaccurate, or unconvincing branch"
-      filename_rule: "A3_StudentID_StudentName.pdf"
-      example: "A3_2026123456_JaneKim.pdf"
-    submission_method: "Upload the complete PDF to the Homework #3 submission folder on LearnUS. The D:Branch use reflection and self-rating must be included within the same report. No separate survey submission is required. Submissions through email or other channels will not be accepted."
+      filename_rule: "HW3_StudentID_StudentName.pdf"
+      example: "HW3_2026123456_JaneKim.pdf"
+    submission_method: "Upload the complete PDF to the Homework #3 submission folder on LearnUS."
     show_detailed_deadline: true
     show_evaluation_percentage: true
-    evaluation_focus: "- Learning goal and case selection\n- Exploration process\n- Graphic Design reasoning\n- Critical use of D:Branch\n- Communication and reflection"
+    evaluation_focus: "- **Graphic Design Principles:** Understanding how design principles affect visual communication.\n- **Critical Case Analysis:** Using visual twists to identify when and why a design works—or does not."
   -
     number: 4
     title: "[Mini-Report] Decomposing Product Designs"
@@ -589,40 +582,39 @@ assignments:
     assignment_type: "Individual Mini-Report"
     due_iso: "2026-10-06T23:59:00+09:00"
     weight: 5
-    grade_focus: "Self-directed exploration of a Product Design principle"
-    summary: "Select one Product Design principle introduced in Week 5 and use D:Branch to independently explore a product case that you genuinely want to understand.\nBegin with a specific learning goal, generate an initial branch set, examine useful and unsuccessful results, develop a follow-up question, and conduct at least one additional exploration.\nThe goal is not to create the most attractive product variation. Compare product-design variations, identify patterns and limitations, and distinguish visually suggested expectations from claims requiring physical or user testing."
+    grade_focus: "Critical exploration of Product Design principles with D:Branch"
+    summary: "Select two Product Design principles introduced in Week 5. For each principle, choose one case, use D:Branch to generate twist cases, and analyze why each twist is less effective or problematic. Conclude with what you learned from the comparison and reflection."
     contents:
       -
-        title: "Exploration focus"
+        title: "Select Two Product Design Principles"
         items:
-          - "Selected principle, learning goal, product case, users, task, context, and initial expectation."
+          - "Choose two principles learned in Week 5."
+          - "Repeat Steps 2–4 for each principle."
       -
-        title: "First exploration"
+        title: "Choose One Example Case"
         items:
-          - "Branch set, prompt/process record, comparison of perceived effects, most useful branch, and one implausible or unconvincing branch."
+          - "Select one product design case you want to explore."
       -
-        title: "Follow-up exploration"
+        title: "Explore with D:Branch"
         items:
-          - "One question arising from the first exploration and at least one additional branch set."
+          - "Generate twist cases with D:Branch."
+          - "Analyze **why each twist is less effective or problematic** in relation to the selected principle."
       -
-        title: "Learning synthesis"
+        title: "Learning & Reflection"
         items:
-          - "Main learning, users and contexts, boundary cases, trade-offs, and verification needs."
-      -
-        title: "D:Branch reflection"
-        items:
-          - "Usefulness, limitations, physical plausibility, control, improvement ideas, and self-rating."
+          - "Summarize what you learned about the principle."
+          - "Reflect on what D:Branch helped you notice or question."
     presentation: "No formal presentation is required. Selected exploration processes or findings may be briefly discussed during the following class as part of the Product Design review activity."
     upload_file:
       file_type: "PDF"
-      recommended_length: "4–5 pages, including visual references and reflection"
+      recommended_length: "3–4 pages, including visual references and reflection"
       required_visuals: "Original product case; complete first branch set; complete follow-up branch set; most useful branch; and at least one failed or unconvincing branch"
-      filename_rule: "A4_StudentID_StudentName.pdf"
-      example: "A4_2026123456_JaneKim.pdf"
-    submission_method: "Upload the complete PDF to the Homework #4 submission folder on LearnUS. The D:Branch use reflection and self-rating must be included within the same report. No separate survey submission is required. Submissions through email or other channels will not be accepted."
+      filename_rule: "HW4_StudentID_StudentName.pdf"
+      example: "HW4_2026123456_JaneKim.pdf"
+    submission_method: "Upload the complete PDF to the Homework #4 submission folder on LearnUS. The D:Branch use reflection and self-rating must be included within the same report."
     show_detailed_deadline: true
     show_evaluation_percentage: true
-    evaluation_focus: "- Learning goal and case selection\n- Exploration process\n- Product Design reasoning\n- Critical use of D:Branch\n- Communication and reflection"
+    evaluation_focus: "- **Product Design Principles:** Understanding how design principles affect product form, use, and experience.\n- **Critical Case Analysis:** Using visual twists to identify when and why a product design works—or does not."
   -
     number: 5
     title: "[Mini-Report] Decomposing Interaction Designs"
@@ -630,40 +622,39 @@ assignments:
     assignment_type: "Individual Mini-Report"
     due_iso: "2026-10-13T23:59:00+09:00"
     weight: 5
-    grade_focus: "Self-directed exploration of an Interaction Design principle"
-    summary: "Select one Interaction Design principle introduced in Week 6 and use D:Branch to independently explore an interaction case that you genuinely want to understand."
+    grade_focus: "Critical exploration of Interaction Design principles with D:Branch"
+    summary: "Select two Interaction Design principles introduced in Week 6. For each principle, choose one case, use D:Branch to generate twist cases, and analyze why each twist is less effective or problematic. Conclude with what you learned from the comparison and reflection."
     contents:
       -
-        title: "Exploration focus"
+        title: "Select Two Interaction Design Principles"
         items:
-          - "Selected principle, learning goal, interaction case, users, task, sequence, context, and initial expectation."
+          - "Choose two principles learned in Week 6."
+          - "Repeat Steps 2–4 for each principle."
       -
-        title: "First exploration"
+        title: "Choose One Example Case"
         items:
-          - "Branch set or sequences, prompt/process record, comparison of expected effects, most useful branch, and one inconsistent or unconvincing branch."
+          - "Select one interaction design case you want to explore."
       -
-        title: "Follow-up exploration"
+        title: "Explore with D:Branch"
         items:
-          - "One question arising from the first exploration and at least one additional branch set."
+          - "Generate twist cases with D:Branch."
+          - "Analyze **why each twist is less effective or problematic** in relation to the selected principle."
       -
-        title: "Learning synthesis"
+        title: "Learning & Reflection"
         items:
-          - "Main learning, user, task, bodily, spatial, accessibility, or social conditions, trade-offs, and verification needs."
-      -
-        title: "D:Branch reflection"
-        items:
-          - "Usefulness, limitations, sequence consistency, control, improvement ideas, and self-rating."
+          - "Summarize what you learned about the principle."
+          - "Reflect on what D:Branch helped you notice or question."
     presentation: "No formal presentation is required. Selected exploration processes or findings may be briefly discussed during the following class as part of the Interaction Design review activity."
     upload_file:
       file_type: "PDF"
-      recommended_length: "4–5 pages, including visual references and reflection"
+      recommended_length: "3–4 pages, including visual references and reflection"
       required_visuals: "Original interaction case or sequence; complete first branch set; complete follow-up branch set; most useful branch; and at least one failed, inconsistent, or unconvincing branch"
-      filename_rule: "A5_StudentID_StudentName.pdf"
-      example: "A5_2026123456_JaneKim.pdf"
-    submission_method: "Upload the complete PDF to the Homework #5 submission folder on LearnUS. The D:Branch use reflection and self-rating must be included within the same report. No separate survey submission is required. Submissions through email or other channels will not be accepted."
+      filename_rule: "HW5_StudentID_StudentName.pdf"
+      example: "HW5_2026123456_JaneKim.pdf"
+    submission_method: "Upload the complete PDF to the Homework #5 submission folder on LearnUS."
     show_detailed_deadline: true
     show_evaluation_percentage: true
-    evaluation_focus: "- Learning goal and case selection\n- Exploration process\n- Interaction Design reasoning\n- Critical use of D:Branch\n- Communication and reflection"
+    evaluation_focus: "- **Interaction Design Principles:** Understanding how design principles shape user actions, feedback, and experience.\n- **Critical Case Analysis:** Using interaction twists to identify when and why an interaction works—or does not."
   -
     number: 6
     title: "[Mini-Report] Decomposing Service Designs"
@@ -671,40 +662,39 @@ assignments:
     assignment_type: "Individual Mini-Report"
     due_iso: "2026-10-19T23:59:00+09:00"
     weight: 5
-    grade_focus: "Self-directed exploration of a Service Design principle and cross-disciplinary synthesis"
-    summary: "Select one Service Design principle introduced in Week 7 and use D:Branch to independently explore a service case that you genuinely want to understand."
+    grade_focus: "Critical exploration of Service Design principles with D:Branch"
+    summary: "Select two Service Design principles introduced in Week 7. For each principle, choose one case, use D:Branch to generate twist cases, and analyze why each twist is less effective or problematic. Conclude with what you learned from the comparison and reflection."
     contents:
       -
-        title: "Exploration focus"
+        title: "Select Two Service Design Principles"
         items:
-          - "Selected principle, learning goal, service case, and service element or relationship to explore."
+          - "Choose two principles learned in Week 7."
+          - "Repeat Steps 2–4 for each principle."
       -
-        title: "First exploration"
+        title: "Choose One Example Case"
         items:
-          - "Branch set, process record, comparison of changes and effects, most useful branch, and one unconvincing branch."
+          - "Select one service design case you want to explore."
       -
-        title: "Follow-up exploration"
+        title: "Explore with D:Branch"
         items:
-          - "One question arising from the first exploration and at least one additional branch set."
+          - "Generate twist cases with D:Branch."
+          - "Analyze **why each twist is less effective or problematic** in relation to the selected principle."
       -
-        title: "Learning synthesis"
+        title: "Learning & Reflection"
         items:
-          - "Main learning, value and burdens for actors, conditions, trade-offs, limitations, and evidence needs."
-      -
-        title: "D:Branch reflection"
-        items:
-          - "Usefulness, limitations, improvement ideas, and self-rating."
+          - "Summarize what you learned about the principle."
+          - "Reflect on what D:Branch helped you notice or question, and connect one insight to a previous design domain."
     presentation: "No formal presentation is required. Selected exploration processes, service structures, or cross-disciplinary connections may be briefly discussed during the following class."
     upload_file:
       file_type: "PDF"
-      recommended_length: "5–6 pages, including visual references, synthesis, and reflection"
+      recommended_length: "3–4 pages, including visual references, synthesis, and reflection"
       required_visuals: "Original service case or current service structure; complete first branch set; complete follow-up branch set; most useful branch; at least one failed, incomplete, or unconvincing branch; and one cross-disciplinary synthesis diagram"
-      filename_rule: "A6_StudentID_StudentName.pdf"
-      example: "A6_2026123456_JaneKim.pdf"
-    submission_method: "Upload the complete PDF to the Homework #6 submission folder on LearnUS. The D:Branch use reflection and self-rating must be included within the same report. No separate survey submission is required. Submissions through email or other channels will not be accepted."
+      filename_rule: "HW6_StudentID_StudentName.pdf"
+      example: "HW6_2026123456_JaneKim.pdf"
+    submission_method: "Upload the complete PDF to the Homework #6 submission folder on LearnUS."
     show_detailed_deadline: true
     show_evaluation_percentage: true
-    evaluation_focus: "- Learning goal and case selection\n- Exploration process\n- Service Design reasoning\n- Cross-disciplinary synthesis\n- Critical use, communication, and reflection"
+    evaluation_focus: "- **Service Design Principles:** Understanding how design principles shape service interactions and stakeholder value.\n- **Cross-Disciplinary Case Analysis:** Using service twists to identify when and why a service works—and connect insights across design domains."
   -
     number: 7
     title: "Furniture Company Marketing Case Study"
@@ -716,16 +706,16 @@ assignments:
     contents:
       -
         title: "Studio Mikko Laakkonen"
-        body: "- Review the official website and select one product or product group that interested you.\n- Briefly explain what caught your attention."
+        body: "- Select one product or product group that interests you and briefly explain why."
       -
-        title: "Three Furniture Marketing Cases"
-        body: "- Select three cases that use different marketing approaches.\n- For each case, include:\n  - company and case;\n  - marketing objective and target customer;\n  - central idea and how it was delivered;\n  - connection to the company or product identity; and\n  - one useful lesson for the Studio Mikko Laakkonen project.\n- Include relevant sources and visual references."
+        title: "Three Furniture Marketing Cases in Korea"
+        body: "- Find three existing marketing cases from the **Korean market**, using different approaches.\n- For each, explain the **goal & target customer**, **marketing approach**, and **one useful lesson** for Studio Mikko Laakkonen.\n- Include relevant sources and visual references."
     presentation: "No formal presentation is required. Team members will share and compare their cases before developing the Week 10 user-research plan."
     upload_file:
       file_type: "PDF"
       recommended_length: "3–4 pages or slides, including visual references"
-      filename_rule: "A7_StudentID_StudentName.pdf"
-      example: "A7_2026123456_JaneKim.pdf"
+      filename_rule: "HW7_StudentID_StudentName.pdf"
+      example: "HW7_2026123456_JaneKim.pdf"
       additional_fields:
         -
           label: "Suggested structure"
@@ -733,7 +723,7 @@ assignments:
     submission_method: "Upload one complete PDF containing all three cases to the Homework #7 submission folder on LearnUS. This is an individual submission."
     show_detailed_deadline: false
     show_evaluation_percentage: false
-    evaluation_focus: "- **Company Familiarization:** Basic understanding of Studio Mikko Laakkonen’s furniture and product portfolio.\n- **Cases:** Relevance and diversity of the three selected furniture-marketing cases."
+    evaluation_focus: "- **Company Familiarization:** Understanding Studio Mikko Laakkonen’s products and brand.\n- **Korean Market Cases:** Learning how furniture brands approach customers and marketing in the Korean market."
   -
     number: 8
     title: "User Research Execution"
@@ -744,20 +734,24 @@ assignments:
     summary: "Conduct the user research planned during Week 10 and organize the collected material so that the team can analyze it during Week 11. Bring the key participant quotes and research notes in a clear, readable form. Do not force the data into a final marketing strategy yet."
     contents:
       -
-        title: "Research Execution Summary"
-        body: "- Briefly state the research focus, participants, and method.\n- Note any important changes made from the Week 10 research plan."
+        title: "Research Method Summary"
+        body: "- Briefly state your **research focus, participants, and method**."
       -
-        title: "Organized Research Materials"
-        body: "- Prepare the key quotes, notes, responses, photographs, screenshots, or activity outputs collected through the study.\n- Organize the materials clearly by participant, session, question, or activity so that the team can compare and analyze them during Week 11.\n- Include enough context to understand where each piece of evidence came from."
+        title: "Organized Research Evidence"
+        body: "- Organize the **quotes, notes, responses, photos, or other materials** collected during the study.\n- Clearly label each item by **participant or research session**."
     presentation: "No formal presentation is required. Each team should bring the Organized Research Materials to the Week 11 workshop and be ready to briefly explain how the study was conducted and how the materials were organized."
     upload_file:
       file_type: "One team PDF"
-      filename_rule: "A8_TeamNumber_TeamName.pdf"
-      example: "A8_Team03_NordicBridge.pdf"
+      filename_rule: "HW8_TeamNumber_TeamName.pdf"
+      example: "HW8_Team03_NordicBridge.pdf"
+      additional_fields:
+        -
+          label: "The PDF must include"
+          value: "1. the brief Research Execution Summary; and\n2. the complete organized raw data collected through the study, not only selected quotes or a summary. (**Raw data may include full interview notes or transcripts**, complete survey responses, observation notes, photographs, screenshots, and all sorting, mapping, or activity outputs.)"
     submission_method: "One team representative should upload the complete PDF to the Homework #8 submission folder on LearnUS. The first page must list all team members."
     show_detailed_deadline: false
     show_evaluation_percentage: false
-    evaluation_focus: "- **Research Alignment:** The study follows the research focus and questions established during Week 10.\n- **Evidence:** The collected materials are relevant and sufficiently detailed for later analysis."
+    evaluation_focus: "- **Research Execution:** Conducting user research based on a clear research focus and method.\n- **Evidence Organization:** Preparing research evidence for later analysis."
   -
     number: 9
     title: "User Insights and Opportunity Areas"
@@ -768,15 +762,16 @@ assignments:
     summary: "Refine the analysis developed during the Week 11 workshop. Organize the evidence, user insights, and strategic opportunity areas that will be used during the Week 12 Customer-Centered Thinking workshop. Do not define the final target customer, value proposition, or marketing idea yet."
     contents:
       -
-        title: "Key Insights and Evidence"
-        body: "- Develop three to five insight statements.\n- For each insight, briefly explain what the evidence suggests, why it may matter in the Korean Market Launch context, and which evidence supports the interpretation.\n- Include representative quotes, responses, or other evidence for each."
+        title: "Key Insights & Evidence"
+        body: "- Develop **3–5 key user insights** from your research.\n- Support each insight with representative quotes, responses, or other evidence."
       -
         title: "Strategic Opportunity Areas"
-        body: "- Identify two to three broad areas that should be explored further.\n- Connect each opportunity area to the relevant user insight and evidence.\n- Explain what needs to be addressed or enabled rather than proposing a finished product, campaign, or solution."
+        body: "- Identify **2–3 opportunity areas** relevant to Korean market entry.\n- Connect each area to your user insights and explain what should be addressed or enabled."
     presentation: "No formal presentation is required. Bring the completed User Insight and Strategic Opportunity Map to Week 12 and be ready to use it during the Customer-Centered Thinking workshop."
     upload_file:
-      filename_rule: "A9_TeamNumber_TeamName.pdf"
-      example: "A9_Team03_NordicBridge.pdf"
+      required_visuals: "Use visual evidence, clustering maps, diagrams, or structured tables when they help explain the reasoning."
+      filename_rule: "HW9_TeamNumber_TeamName.pdf"
+      example: "HW9_Team03_NordicBridge.pdf"
       additional_fields:
         -
           label: "Required file"
@@ -784,7 +779,7 @@ assignments:
     submission_method: "One team representative should upload the final PDF to the Homework #9 submission folder on LearnUS. The first page must list all team members."
     show_detailed_deadline: false
     show_evaluation_percentage: false
-    evaluation_focus: "- **Pattern and Evidence Analysis:** Important patterns, differences, and tensions are identified and supported with representative evidence.\n- **User-centered  Opportunity Framing:** Opportunity areas are relevant to Korean market entry while remaining broader than a finished campaign or solution."
+    evaluation_focus: "- **Evidence-Based Insights:** Turning user research evidence into meaningful insights.\n- **Opportunity Framing:** Identifying strategic opportunities without jumping to final solutions."
   -
     number: 10
     title: "Customer-Centered Value Ideas"
@@ -795,17 +790,17 @@ assignments:
     contents:
       -
         title: "Target Customer Snapshot"
-        body: "- Identify the primary potential customer.\n- Briefly clarify whether the user and buyer are the same or different.\n- Describe the relevant lifestyle, context, interest, and possible barrier."
+        body: "- Define one primary potential customer and briefly describe their **context, interests, and barriers**.\n- Note whether the **user and buyer** are the same or different, if relevant."
       -
         title: "Key Customer Decision Factors"
-        body: "- **Select three to five factors** that may influence this customer’s interest or consideration.\n- For each factor, briefly explain why it matters and which research finding or quote supports it."
+        body: "- Select **3–5 factors** that may influence the customer’s consideration, supported by your research evidence."
       -
-        title: "2~3 Value Ideas"
-        body: "- For each idea, include:\n  - **Value to Create:** What should the potential customer understand, feel, imagine, or trust?\n  - **Idea:** How could the product, story, content, space, channel, or experience create that value?\n  - **Supporting Evidence:** Which insight, decision factor, or quote informed the idea?"
+        title: "2–3 Value Ideas"
+        body: "- Develop **2–3 alternative ideas**.\n- For each, show the **value to create**, **how the idea could create it**, and the **research insight or evidence behind it**."
     presentation: "No formal presentation is required. Bring the completed document to Week 13 and be ready to compare the Target Customer Snapshot, key decision factors, and two to three alternative value ideas."
     upload_file:
       recommended_length: "4–6 slides"
-      filename_rule: "A10_TeamNumber_TeamName.pdf"
+      filename_rule: "HW10_TeamNumber_TeamName.pdf"
       additional_fields:
         -
           label: "Required file"
@@ -816,7 +811,7 @@ assignments:
     submission_method: "One team representative should upload the PDF to the Homework #10 submission folder on LearnUS. The first page must list all team members."
     show_detailed_deadline: false
     show_evaluation_percentage: false
-    evaluation_focus: "This is a Project 3 working homework rather than a separate graded deliverable. Feedback will focus on:\n- clarity and focus of the Target Customer Snapshot;\n- relevance of the selected decision factors;\n- strength of the connection to research insights and evidence; and\n- clarity and distinctiveness of the two to three value ideas."
+    evaluation_focus: "- **Customer-Centered Framing:** Connecting customer needs and decision factors to strategic thinking.\n- **Evidence-Based Ideation:** Developing alternative value ideas grounded in research."
 deliverables:
   -
     number: 1
