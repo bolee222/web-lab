@@ -543,7 +543,22 @@ assignments:
     assignment_type: "Team working-manuscript update with figures and prototype links"
     due_iso: "2026-10-16"
     summary: "Use the submitted Research Stimuli Draft + Documentation Sheet to write the Section 3.3 working draft."
-    contents_markdown: "- The participant-facing form of every condition\n- The intended design difference represented by each stimulus\n- Elements controlled across conditions\n- The rationale for the chosen stimulus format and fidelity\n- Relevant screenshots, flows, or figures with draft captions\n- Accessible prototype, media, or backup links"
+    contents:
+      -
+        title: "Condition Overview"
+        items:
+          - "The participant-facing form of every condition"
+          - "The intended design difference represented by each stimulus"
+      -
+        title: "Control & Rationale"
+        items:
+          - "Elements controlled across conditions"
+          - "The rationale for the chosen stimulus format and fidelity"
+      -
+        title: "Documentation & Access"
+        items:
+          - "Relevant screenshots, flows, or figures with draft captions"
+          - "Accessible prototype, media, or backup links"
     presentation: "No formal presentation is required. Bring the revised stimuli and unresolved questions to the Week 7 integration workshop."
     upload_file:
       file_type: "Shared master manuscript update plus accessible links"
