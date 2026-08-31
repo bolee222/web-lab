@@ -4,6 +4,8 @@
 {{ if ne $tab "overview" }}{{ $course = .Parent }}{{ end }}
 {{ $courseAssignments := $course.Params.assignments | default (slice) }}
 {{ $courseDeliverables := $course.Params.deliverables | default (slice) }}
+{{ $learningJourneyItemLabel := "Project" }}
+{{ if eq $course.Params.course_code "CDM1001" }}{{ $learningJourneyItemLabel = "Stage" }}{{ end }}
 {{ $base := printf "/courses/%s/%s/" (lower $course.Params.course_code) $course.Params.semester_slug }}
 {{ $instructor := replaceRE `^Prof\.[[:space:]]*` `` ($course.Params.teaching_team | default "") }}
 {{ $semesterParts := split $course.Params.semester_slug "-" }}
@@ -191,7 +193,7 @@
             {{ $stageNumber := int .journey_order }}
             {{ $stageTitle := .name }}
             {{ $roadmapTitle := .name }}
-            {{ if .project_number }}{{ $linkedProject := index $course.Params.project.items (sub (int .project_number) 1) }}{{ $roadmapTitle = printf "Project %v: %s" .project_number $linkedProject.title }}{{ end }}
+            {{ if .project_number }}{{ $linkedProject := index $course.Params.project.items (sub (int .project_number) 1) }}{{ $roadmapTitle = printf "%s %v: %s" $learningJourneyItemLabel .project_number $linkedProject.title }}{{ end }}
             {{ $projectKey := "" }}
             {{ $projectSpan := 1 }}
             {{ if .project_number }}
@@ -246,10 +248,10 @@
         {{ $projectWeight := 0 }}
         {{ range $projectDeliverables }}{{ $projectWeight = add $projectWeight (int .weight) }}{{ end }}
         <section class="course-hub-section course-hub-project-section" id="project-{{ $projectNumber }}" aria-labelledby="project-{{ $projectNumber }}-title">
-          <div class="course-hub-section-label course-hub-project-label"><span>Project {{ $projectNumber }}</span></div>
+          <div class="course-hub-section-label course-hub-project-label"><span>{{ $learningJourneyItemLabel }} {{ $projectNumber }}</span></div>
           <div class="course-hub-section-content">
             <div class="course-hub-project-heading">
-              <h2 id="project-{{ $projectNumber }}-title" class="course-hub-project-title"><span>Project {{ $projectNumber }}:</span> {{ partial "teaching/inline-markdown.html" .title }}</h2>
+              <h2 id="project-{{ $projectNumber }}-title" class="course-hub-project-title"><span>{{ $learningJourneyItemLabel }} {{ $projectNumber }}:</span> {{ partial "teaching/inline-markdown.html" .title }}</h2>
               <div class="course-hub-project-meta">{{ .unit }}{{ if gt $projectWeight 0 }} · {{ $projectWeight }}%{{ end }}</div>
             </div>
             <p class="course-hub-intro">{{ partial "teaching/inline-markdown.html" .description }}</p>
