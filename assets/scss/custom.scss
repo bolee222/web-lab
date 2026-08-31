@@ -2796,9 +2796,12 @@ img.rounded {
 .course-hub-assignment-contents-body ul,
 .course-hub-assignment-contents-body ol { margin: 0 0 9px; }
 .course-hub-assignment-contents-plain { max-width: 980px; }
-.course-hub-assignment-contents-plain > ul { margin: 0; padding-left: 20px; }
+.course-hub-assignment-contents-plain > ul { margin: 0; padding-left: 20px; list-style: disc; }
+.course-hub-assignment-contents-plain > ul > li { list-style: disc; }
+.course-hub-assignment-contents-plain > ul > li::marker { color: $brand-color-grad-primary; }
 .course-hub-assignment-contents-plain li { margin-bottom: 7px; font-weight: 400; }
-.course-hub-assignment-contents-plain li > ul { margin-top: 4px; }
+.course-hub-assignment-contents-plain li > ul { margin-top: 4px; list-style: circle; }
+.course-hub-assignment-contents-plain li > ul > li { list-style: circle; }
 .course-hub-assignment-file {
   max-width: 720px;
   margin: 0;
