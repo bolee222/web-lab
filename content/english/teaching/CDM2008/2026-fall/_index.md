@@ -21,8 +21,8 @@ credits: 3
 lede: "Design research turns questions about people, contexts, and experiences into evidence that can guide responsible design decisions. This course introduces a systematic process for framing research, selecting qualitative methods, conducting fieldwork, synthesizing findings, and communicating actionable insights."
 semester_focus:
   label: "Semester Focus"
-  title: "Future Literacy Program (Micro-degree) × CDM2008"
-  text: "Connected to the Future Literacy Micro-degree Certificate Program, this course gives students hands-on experience with scientific thinking as a way to identify appropriate directions for the future. Through a semester-long design research study, students will frame questions, examine people and contexts, gather and interpret evidence, and translate their findings into responsible, evidence-based design directions."
+  title: "HUSS Future Design Program X CDM2008"
+  text: "Connected to the HUSS - Future Design Program, this course helps students develop interdisciplinary literacy for understanding emerging cultural, technological, and social change. Students who complete at least two courses within the program may earn the Future Design Micro-degree Certificate and become eligible to apply for scholarship opportunities."
 flipped_learning:
   label: "Course Format"
   title: "Flipped Learning"

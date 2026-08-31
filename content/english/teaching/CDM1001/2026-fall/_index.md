@@ -20,13 +20,18 @@ office_hours: "Monday, 9:00–11:00"
 language: "English"
 credits: 3
 lede: "Interdisciplinary thinking lies at the heart of Culture and Design Management. This course introduces fundamental perspectives, concepts, and methods across culture, design, management, UX, technology, art, branding, and marketing. Through lectures, case discussions, and interdisciplinary projects, students will learn to connect these domains and develop thoughtful strategies for real-world opportunities."
-semester_focus:
-  label: "Industry Collaboration"
-  title: "Studio Mikko Laakkonen × CDM1001"
-  text: "This semester, students will collaborate with Studio Mikko Laakkonen, a Finnish furniture company, to explore its potential entry into the Korean market. Drawing on concepts introduced throughout the course, students will use interdisciplinary thinking to propose culturally informed strategies across design, branding, marketing, and management."
-  link:
-    label: "Studio Mikko Laakkonen"
-    url: "https://www.mikkolaakkonen.com/"
+semester_focuses:
+  -
+    label: "Semester Focus"
+    title: "HUSS Future Design Program X CDM1001"
+    text: "Connected to the HUSS - Future Design Program, this course helps students develop interdisciplinary literacy for understanding emerging cultural, technological, and social change. Students who complete at least two courses within the program may earn the Future Design Micro-degree Certificate and become eligible to apply for scholarship opportunities."
+  -
+    label: "Industry Collaboration"
+    title: "Studio Mikko Laakkonen × CDM1001"
+    text: "This semester, students will collaborate with Studio Mikko Laakkonen, a Finnish furniture company, to explore its potential entry into the Korean market. Drawing on concepts introduced throughout the course, students will use interdisciplinary thinking to propose culturally informed strategies across design, branding, marketing, and management."
+    link:
+      label: "Studio Mikko Laakkonen"
+      url: "https://www.mikkolaakkonen.com/"
 flipped_learning:
   label: "Course Format"
   title: "Flipped Learning"
@@ -104,7 +109,7 @@ project:
         - "Analyze design principles as conditional relationships among elements, effects, users, contexts, and limitations."
         - "Use D:Branch critically to compare variations, identify unintended changes, and connect multiple design domains."
       format: []
-      work_setup: "<strong>Individual.</strong> Homework #1–2 and Deliverables #1–4 are completed and assessed individually. Classroom discussion may be collaborative, but all submitted analyses and D:Branch explorations must reflect the student’s own work."
+      work_setup: "<strong>Individual.</strong> Homework #1–6 are completed individually. Homework #1–2 are preparatory tasks, while Homework #3–6 are graded <strong>[Mini-Report]</strong> Homework worth 5% each. Classroom discussion may be collaborative, but all submitted analyses and D:Branch explorations must reflect the student’s own work."
       evaluation_criteria: []
     -
       title: "Pop-up Store Design Critique"
@@ -128,7 +133,7 @@ project:
         - "Translate research into target-customer understanding, decision factors, and meaningful opportunity areas."
         - "Develop a coherent Korean market-entry strategy connecting customer value, positioning, communication, channels, and experience."
       format: []
-      work_setup: "<strong>Mixed individual and team structure.</strong> Homework #3 is completed individually. Homework #4–6 and Deliverable #6 are completed in teams. All members are expected to contribute meaningfully; individual grades may be adjusted when documented contributions differ substantially."
+      work_setup: "<strong>Mixed individual and team structure.</strong> Homework #7 is completed individually. Homework #8–10 and Deliverable #2 are completed in teams. All members are expected to contribute meaningfully; individual grades may be adjusted when documented contributions differ substantially."
       evaluation_criteria: []
     -
       title: "Personal Interdisciplinary Map"
@@ -281,8 +286,8 @@ weekly_schedule:
         task: "Watch ‘Product Design Elements.’"
         due: "Sep. 29 before class"
       -
-        type: "Deliverable #1"
-        task: "Graphic Design Self-Directed Exploration with D:Branch"
+        type: "Homework #3 [Mini-Report]"
+        task: "Decomposing Graphic Designs"
         due: "Sep. 29, 11:59 PM"
   -
     week: "05"
@@ -298,8 +303,8 @@ weekly_schedule:
         task: "Watch ‘Interaction Design Elements.’"
         due: "Oct. 6 before class"
       -
-        type: "Deliverable #2"
-        task: "Product Design Self-Directed Exploration with D:Branch"
+        type: "Homework #4 [Mini-Report]"
+        task: "Decomposing Product Designs"
         due: "Oct. 6, 11:59 PM"
   -
     week: "06"
@@ -315,8 +320,8 @@ weekly_schedule:
         task: "Watch ‘Service Design Elements.’"
         due: "Oct. 13 before class"
       -
-        type: "Deliverable #3"
-        task: "Interaction Design Self-Directed Exploration with D:Branch"
+        type: "Homework #5 [Mini-Report]"
+        task: "Decomposing Interaction Designs"
         due: "Oct. 13, 11:59 PM"
   -
     week: "07"
@@ -328,8 +333,8 @@ weekly_schedule:
       - "Individual service-case exploration and new-case analysis"
     after_class:
       -
-        type: "Deliverable #4"
-        task: "Service Design Self-Directed Exploration and Cross-disciplinary Synthesis with D:Branch"
+        type: "Homework #6 [Mini-Report]"
+        task: "Decomposing Service Designs"
         due: "Oct. 19, 11:59 PM"
   -
     week: "08"
@@ -341,7 +346,7 @@ weekly_schedule:
       - "No class · Independent report submission"
     after_class:
       -
-        type: "Deliverable #5"
+        type: "Deliverable #1"
         task: "Pop-up Store Design Critique"
         due: "Oct. 26, 11:59 PM"
   -
@@ -358,7 +363,7 @@ weekly_schedule:
         task: "User-Centered Design and User Research Methods"
         due: "Nov. 3 before class"
       -
-        type: "Homework #3"
+        type: "Homework #7"
         task: "Furniture Company Marketing Desk Research"
         due: "Nov. 3"
   -
@@ -375,7 +380,7 @@ weekly_schedule:
         task: "User Research Methods"
         due: "Nov. 10 before class"
       -
-        type: "Homework #4"
+        type: "Homework #8"
         task: "User Research Execution and Evidence Collection"
         due: "Nov. 10"
   -
@@ -388,7 +393,7 @@ weekly_schedule:
       - "Pattern and tension mapping, user-insight development, and strategic opportunity framing"
     after_class:
       -
-        type: "Homework #5"
+        type: "Homework #9"
         task: "User Insights and Strategic Opportunity Areas"
         due: "Nov. 17"
       -
@@ -409,7 +414,7 @@ weekly_schedule:
         task: "Strategic Design Thinking"
         due: "Nov. 24 before class"
       -
-        type: "Homework #6"
+        type: "Homework #10"
         task: "Customer-Centered Value Ideas"
         due: "Nov. 24"
   -
@@ -432,11 +437,11 @@ weekly_schedule:
     lecture: "Project 3 Strategy Consultation"
     lecture_main: "Project 3 Strategy Consultation"
     in_class:
-      - "Team consultation, strategic decision-making, integrated action planning, and Deliverable #6 refinement"
+      - "Team consultation, strategic decision-making, integrated action planning, and Deliverable #2 refinement"
     after_class:
       -
-        type: "Deliverable #6"
-        task: "Integrated Korean Market Launch Proposal and Final Presentation"
+        type: "Deliverable #2"
+        task: "Korean Market Entry Marketing Strategy Proposal"
         due: "Dec. 08 before class"
   -
     week: "15"
@@ -445,10 +450,10 @@ weekly_schedule:
     lecture: "Final Client Presentation Day"
     lecture_main: "Final Client Presentation Day"
     in_class:
-      - "Deliverable #6 final presentations to Studio Mikko Laakkonen, client feedback, and Q&A"
+      - "Deliverable #2 final presentations to Studio Mikko Laakkonen, client feedback, and Q&A"
     after_class:
       -
-        type: "Deliverable #7"
+        type: "Deliverable #3"
         task: "Personal Interdisciplinary Map and Final Report"
         due: "Dec. 14"
   -
@@ -497,7 +502,7 @@ assignments:
     evaluation_focus: "- **Comparative Reasoning:** Depth of comparison across purpose, audience, interpretation, rationale, and success criteria.\n- **Hypothesis and Reflection:** Clarity, evidence, recognition of overlaps or exceptions, and quality of communication."
   -
     number: 2
-    title: "**Extending an Art–Business Collaboration through Emerging Technology**"
+    title: "**Art–Business Collaboration through Emerging Technology**"
     project_number: 1
     assignment_type: "Individual Submission"
     due_iso: "2026-09-21T14:59:00+00:00"
@@ -538,124 +543,11 @@ assignments:
     evaluation_focus: "- **Existing Case Understanding:** Accuracy and depth of the collaboration, stakeholder, value, and limitation analysis.\n- **Technology Relevance:** Appropriateness of the selected technology and clarity about what new possibility it enables.\n- **Concept Development:** Originality, coherence, and degree to which the proposal deepens the role of art rather than simply adding a feature.\n- **Stakeholder and Experience Value:** Improvement in artist, business, and audience roles, participation, and value.\n- **Critical Reasoning and Communication:** Consideration of authorship, control, feasibility, risk, and clarity of visual and written presentation."
   -
     number: 3
-    title: "[Desk Research] Furniture Company Marketing Cases"
-    project_number: 3
-    assignment_type: "Individual Desk Research"
-    due_iso: "2026-11-03"
-    grade_focus: "Company and product familiarization, marketing-case research, and reference expansion"
-    summary: "First, review the Studio Mikko Laakkonen website and become familiar with its furniture and product portfolio. Then investigate three marketing cases from other furniture companies or brands. The purpose is to build a reference library before user research begins. Focus on understanding what each company tried to achieve and how its marketing approach was connected to its products, customers, channels, and brand identity."
-    contents:
-      -
-        title: "Studio Mikko Laakkonen"
-        body: "- Review the official website and select one product or product group that interested you.\n- Briefly explain what caught your attention."
-      -
-        title: "Three Furniture Marketing Cases"
-        body: "- Select three cases that use different marketing approaches.\n- For each case, include:\n  - company and case;\n  - marketing objective and target customer;\n  - central idea and how it was delivered;\n  - connection to the company or product identity; and\n  - one useful lesson for the Studio Mikko Laakkonen project.\n- Include relevant sources and visual references."
-    presentation: "No formal presentation is required. Team members will share and compare their cases before developing the Week 10 user-research plan."
-    upload_file:
-      file_type: "PDF"
-      recommended_length: "3–4 pages or slides, including visual references"
-      filename_rule: "A3_StudentID_StudentName.pdf"
-      example: "A3_2026123456_JaneKim.pdf"
-      additional_fields:
-        -
-          label: "Suggested structure"
-          value: "Brief Studio Mikko Laakkonen overview followed by approximately one page or slide per marketing case"
-    submission_method: "Upload one complete PDF containing all three cases to the Homework #3 submission folder on LearnUS. This is an individual submission."
-    show_detailed_deadline: false
-    show_evaluation_percentage: false
-    evaluation_focus: "- **Company Familiarization:** Basic understanding of Studio Mikko Laakkonen’s furniture and product portfolio.\n- **Cases:** Relevance and diversity of the three selected furniture-marketing cases."
-  -
-    number: 4
-    title: "[Research Package] User Research Execution and Evidence Collection"
-    project_number: 3
-    assignment_type: "Team Research Package"
-    due_iso: "2026-11-10"
-    grade_focus: "Research execution, evidence quality, and clear organization"
-    summary: "Conduct the user research planned during Week 10 and organize the collected material so that the team can analyze it during Week 11. Bring the key participant quotes and research notes in a clear, readable form. Do not force the data into a final marketing strategy yet."
-    contents:
-      -
-        title: "Research Execution Summary"
-        body: "- Briefly state the research focus, participants, and method.\n- Note any important changes made from the Week 10 research plan."
-      -
-        title: "Organized Research Materials"
-        body: "- Prepare the key quotes, notes, responses, photographs, screenshots, or activity outputs collected through the study.\n- Organize the materials clearly by participant, session, question, or activity so that the team can compare and analyze them during Week 11.\n- Include enough context to understand where each piece of evidence came from."
-    presentation: "No formal presentation is required. Each team should bring the Organized Research Materials to the Week 11 workshop and be ready to briefly explain how the study was conducted and how the materials were organized."
-    upload_file:
-      file_type: "One team PDF"
-      filename_rule: "A4_TeamNumber_TeamName.pdf"
-      example: "A4_Team03_NordicBridge.pdf"
-    submission_method: "One team representative should upload the complete PDF to the Homework #4 submission folder on LearnUS. The first page must list all team members."
-    show_detailed_deadline: false
-    show_evaluation_percentage: false
-    evaluation_focus: "- **Research Alignment:** The study follows the research focus and questions established during Week 10.\n- **Evidence:** The collected materials are relevant and sufficiently detailed for later analysis."
-  -
-    number: 5
-    title: "[Analysis Report] User Insights and Strategic Opportunity Areas"
-    project_number: 3
-    assignment_type: "Team Analysis Report"
-    due_iso: "2026-11-17"
-    grade_focus: "Evidence analysis, user-insight quality, and strategic opportunity framing"
-    summary: "Refine the analysis developed during the Week 11 workshop. Organize the evidence, user insights, and strategic opportunity areas that will be used during the Week 12 Customer-Centered Thinking workshop. Do not define the final target customer, value proposition, or marketing idea yet."
-    contents:
-      -
-        title: "Key Insights and Evidence"
-        body: "- Develop three to five insight statements.\n- For each insight, briefly explain what the evidence suggests, why it may matter in the Korean Market Launch context, and which evidence supports the interpretation.\n- Include representative quotes, responses, or other evidence for each."
-      -
-        title: "Strategic Opportunity Areas"
-        body: "- Identify two to three broad areas that should be explored further.\n- Connect each opportunity area to the relevant user insight and evidence.\n- Explain what needs to be addressed or enabled rather than proposing a finished product, campaign, or solution."
-    presentation: "No formal presentation is required. Bring the completed User Insight and Strategic Opportunity Map to Week 12 and be ready to use it during the Customer-Centered Thinking workshop."
-    upload_file:
-      filename_rule: "A5_TeamNumber_TeamName.pdf"
-      example: "A5_Team03_NordicBridge.pdf"
-      additional_fields:
-        -
-          label: "Required file"
-          value: "One team PDF"
-    submission_method: "One team representative should upload the final PDF to the Homework #5 submission folder on LearnUS. The first page must list all team members."
-    show_detailed_deadline: false
-    show_evaluation_percentage: false
-    evaluation_focus: "- **Pattern and Evidence Analysis:** Important patterns, differences, and tensions are identified and supported with representative evidence.\n- **User-centered  Opportunity Framing:** Opportunity areas are relevant to Korean market entry while remaining broader than a finished campaign or solution."
-  -
-    number: 6
-    title: "Customer-Centered Value Ideas"
-    project_number: 3
-    assignment_type: "Team Visual Working Document"
-    due_iso: "2026-11-24"
-    summary: "Refine and organize the work developed during the Week 12 workshop. Keep two to three alternative ideas so that they can be compared during the Week 13 Strategic Thinking workshop. Do not select a final marketing strategy yet."
-    contents:
-      -
-        title: "Target Customer Snapshot"
-        body: "- Identify the primary potential customer.\n- Briefly clarify whether the user and buyer are the same or different.\n- Describe the relevant lifestyle, context, interest, and possible barrier."
-      -
-        title: "Key Customer Decision Factors"
-        body: "- **Select three to five factors** that may influence this customer’s interest or consideration.\n- For each factor, briefly explain why it matters and which research finding or quote supports it."
-      -
-        title: "2~3 Value Ideas"
-        body: "- For each idea, include:\n  - **Value to Create:** What should the potential customer understand, feel, imagine, or trust?\n  - **Idea:** How could the product, story, content, space, channel, or experience create that value?\n  - **Supporting Evidence:** Which insight, decision factor, or quote informed the idea?"
-    presentation: "No formal presentation is required. Bring the completed document to Week 13 and be ready to compare the Target Customer Snapshot, key decision factors, and two to three alternative value ideas."
-    upload_file:
-      recommended_length: "4–6 slides"
-      filename_rule: "A6_TeamNumber_TeamName.pdf"
-      additional_fields:
-        -
-          label: "Required file"
-          value: "One team PDF"
-        -
-          label: "Suggested structure"
-          value: "Target Customer Snapshot → Key Customer Decision Factors → Two to Three Value Ideas"
-    submission_method: "One team representative should upload the PDF to the Homework #6 submission folder on LearnUS. The first page must list all team members."
-    show_detailed_deadline: false
-    show_evaluation_percentage: false
-    evaluation_focus: "This is a Project 3 working homework rather than a separate graded deliverable. Feedback will focus on:\n- clarity and focus of the Target Customer Snapshot;\n- relevance of the selected decision factors;\n- strength of the connection to research insights and evidence; and\n- clarity and distinctiveness of the two to three value ideas."
-deliverables:
-  -
-    number: 1
-    title: "Graphic Design Self-Directed Exploration with D:Branch"
+    title: "[Mini-Report] Decomposing Graphic Designs"
     project_number: 1
     assignment_type: "Individual Mini-Report"
     due_iso: "2026-09-29T23:59:00+09:00"
-    weight: 9
+    weight: 5
     grade_focus: "Self-directed exploration of a Graphic Design principle"
     summary: "Select one Graphic Design principle introduced in Week 4 and use D:Branch to independently explore a Graphic Design case that you genuinely want to understand.\nBegin with a specific personal learning goal, generate an initial branch set, examine useful and unsuccessful results, develop a follow-up question, and conduct at least one additional exploration.\nThe purpose is not to create the most visually attractive variation. Demonstrate how you used D:Branch to investigate how a Graphic Design principle operates, how its effects may change across users or contexts, and where generated results require further verification."
     contents:
@@ -684,19 +576,19 @@ deliverables:
       file_type: "PDF"
       recommended_length: "4–5 pages, including visual references and reflection"
       required_visuals: "Original case; complete first branch set; complete follow-up branch set; most useful branch; and at least one failed, inaccurate, or unconvincing branch"
-      filename_rule: "D1_StudentID_StudentName.pdf"
-      example: "D1_2026123456_JaneKim.pdf"
-    submission_method: "Upload the complete PDF to the Deliverable #1 submission folder on LearnUS. The D:Branch use reflection and self-rating must be included within the same report. No separate survey submission is required. Submissions through email or other channels will not be accepted."
+      filename_rule: "A3_StudentID_StudentName.pdf"
+      example: "A3_2026123456_JaneKim.pdf"
+    submission_method: "Upload the complete PDF to the Homework #3 submission folder on LearnUS. The D:Branch use reflection and self-rating must be included within the same report. No separate survey submission is required. Submissions through email or other channels will not be accepted."
     show_detailed_deadline: true
     show_evaluation_percentage: true
-    evaluation_focus: "- Learning goal and case selection · 20%\n- Exploration process · 20%\n- Graphic Design reasoning · 20%\n- Critical use of D:Branch · 20%\n- Communication and reflection · 20%"
+    evaluation_focus: "- Learning goal and case selection\n- Exploration process\n- Graphic Design reasoning\n- Critical use of D:Branch\n- Communication and reflection"
   -
-    number: 2
-    title: "Product Design Self-Directed Exploration with D:Branch"
+    number: 4
+    title: "[Mini-Report] Decomposing Product Designs"
     project_number: 1
     assignment_type: "Individual Mini-Report"
     due_iso: "2026-10-06T23:59:00+09:00"
-    weight: 9
+    weight: 5
     grade_focus: "Self-directed exploration of a Product Design principle"
     summary: "Select one Product Design principle introduced in Week 5 and use D:Branch to independently explore a product case that you genuinely want to understand.\nBegin with a specific learning goal, generate an initial branch set, examine useful and unsuccessful results, develop a follow-up question, and conduct at least one additional exploration.\nThe goal is not to create the most attractive product variation. Compare product-design variations, identify patterns and limitations, and distinguish visually suggested expectations from claims requiring physical or user testing."
     contents:
@@ -725,19 +617,19 @@ deliverables:
       file_type: "PDF"
       recommended_length: "4–5 pages, including visual references and reflection"
       required_visuals: "Original product case; complete first branch set; complete follow-up branch set; most useful branch; and at least one failed or unconvincing branch"
-      filename_rule: "D2_StudentID_StudentName.pdf"
-      example: "D2_2026123456_JaneKim.pdf"
-    submission_method: "Upload the complete PDF to the Deliverable #2 submission folder on LearnUS. The D:Branch use reflection and self-rating must be included within the same report. No separate survey submission is required. Submissions through email or other channels will not be accepted."
+      filename_rule: "A4_StudentID_StudentName.pdf"
+      example: "A4_2026123456_JaneKim.pdf"
+    submission_method: "Upload the complete PDF to the Homework #4 submission folder on LearnUS. The D:Branch use reflection and self-rating must be included within the same report. No separate survey submission is required. Submissions through email or other channels will not be accepted."
     show_detailed_deadline: true
     show_evaluation_percentage: true
-    evaluation_focus: "- Learning goal and case selection · 20%\n- Exploration process · 20%\n- Product Design reasoning · 20%\n- Critical use of D:Branch · 20%\n- Communication and reflection · 20%"
+    evaluation_focus: "- Learning goal and case selection\n- Exploration process\n- Product Design reasoning\n- Critical use of D:Branch\n- Communication and reflection"
   -
-    number: 3
-    title: "Interaction Design Self-Directed Exploration with D:Branch"
+    number: 5
+    title: "[Mini-Report] Decomposing Interaction Designs"
     project_number: 1
     assignment_type: "Individual Mini-Report"
     due_iso: "2026-10-13T23:59:00+09:00"
-    weight: 9
+    weight: 5
     grade_focus: "Self-directed exploration of an Interaction Design principle"
     summary: "Select one Interaction Design principle introduced in Week 6 and use D:Branch to independently explore an interaction case that you genuinely want to understand."
     contents:
@@ -766,19 +658,19 @@ deliverables:
       file_type: "PDF"
       recommended_length: "4–5 pages, including visual references and reflection"
       required_visuals: "Original interaction case or sequence; complete first branch set; complete follow-up branch set; most useful branch; and at least one failed, inconsistent, or unconvincing branch"
-      filename_rule: "D3_StudentID_StudentName.pdf"
-      example: "D3_2026123456_JaneKim.pdf"
-    submission_method: "Upload the complete PDF to the Deliverable #3 submission folder on LearnUS. The D:Branch use reflection and self-rating must be included within the same report. No separate survey submission is required. Submissions through email or other channels will not be accepted."
+      filename_rule: "A5_StudentID_StudentName.pdf"
+      example: "A5_2026123456_JaneKim.pdf"
+    submission_method: "Upload the complete PDF to the Homework #5 submission folder on LearnUS. The D:Branch use reflection and self-rating must be included within the same report. No separate survey submission is required. Submissions through email or other channels will not be accepted."
     show_detailed_deadline: true
     show_evaluation_percentage: true
-    evaluation_focus: "- Learning goal and case selection · 20%\n- Exploration process · 20%\n- Interaction Design reasoning · 20%\n- Critical use of D:Branch · 20%\n- Communication and reflection · 20%"
+    evaluation_focus: "- Learning goal and case selection\n- Exploration process\n- Interaction Design reasoning\n- Critical use of D:Branch\n- Communication and reflection"
   -
-    number: 4
-    title: "Service Design Self-Directed Exploration and Cross-disciplinary Synthesis with D:Branch"
+    number: 6
+    title: "[Mini-Report] Decomposing Service Designs"
     project_number: 1
     assignment_type: "Individual Mini-Report"
     due_iso: "2026-10-19T23:59:00+09:00"
-    weight: 9
+    weight: 5
     grade_focus: "Self-directed exploration of a Service Design principle and cross-disciplinary synthesis"
     summary: "Select one Service Design principle introduced in Week 7 and use D:Branch to independently explore a service case that you genuinely want to understand."
     contents:
@@ -807,19 +699,132 @@ deliverables:
       file_type: "PDF"
       recommended_length: "5–6 pages, including visual references, synthesis, and reflection"
       required_visuals: "Original service case or current service structure; complete first branch set; complete follow-up branch set; most useful branch; at least one failed, incomplete, or unconvincing branch; and one cross-disciplinary synthesis diagram"
-      filename_rule: "D4_StudentID_StudentName.pdf"
-      example: "D4_2026123456_JaneKim.pdf"
-    submission_method: "- Upload the complete PDF to the Deliverable #4 submission folder on LearnUS.\n- The D:Branch use reflection and self-rating must be included within the same report. No separate survey submission is required.\n- Submissions through email or other channels will not be accepted."
+      filename_rule: "A6_StudentID_StudentName.pdf"
+      example: "A6_2026123456_JaneKim.pdf"
+    submission_method: "Upload the complete PDF to the Homework #6 submission folder on LearnUS. The D:Branch use reflection and self-rating must be included within the same report. No separate survey submission is required. Submissions through email or other channels will not be accepted."
     show_detailed_deadline: true
     show_evaluation_percentage: true
-    evaluation_focus: "- Learning goal and case selection · 20%\n- Exploration process · 20%\n- Service Design reasoning · 20%\n- Cross-disciplinary synthesis · 20%\n- Critical use, communication, and reflection · 20%"
+    evaluation_focus: "- Learning goal and case selection\n- Exploration process\n- Service Design reasoning\n- Cross-disciplinary synthesis\n- Critical use, communication, and reflection"
   -
-    number: 5
+    number: 7
+    title: "Furniture Company Marketing Case Study"
+    project_number: 3
+    assignment_type: "Individual Desk Research"
+    due_iso: "2026-11-03"
+    grade_focus: "Company and product familiarization, marketing-case research, and reference expansion"
+    summary: "First, review the Studio Mikko Laakkonen website and become familiar with its furniture and product portfolio. Then investigate three marketing cases from other furniture companies or brands. The purpose is to build a reference library before user research begins. Focus on understanding what each company tried to achieve and how its marketing approach was connected to its products, customers, channels, and brand identity."
+    contents:
+      -
+        title: "Studio Mikko Laakkonen"
+        body: "- Review the official website and select one product or product group that interested you.\n- Briefly explain what caught your attention."
+      -
+        title: "Three Furniture Marketing Cases"
+        body: "- Select three cases that use different marketing approaches.\n- For each case, include:\n  - company and case;\n  - marketing objective and target customer;\n  - central idea and how it was delivered;\n  - connection to the company or product identity; and\n  - one useful lesson for the Studio Mikko Laakkonen project.\n- Include relevant sources and visual references."
+    presentation: "No formal presentation is required. Team members will share and compare their cases before developing the Week 10 user-research plan."
+    upload_file:
+      file_type: "PDF"
+      recommended_length: "3–4 pages or slides, including visual references"
+      filename_rule: "A7_StudentID_StudentName.pdf"
+      example: "A7_2026123456_JaneKim.pdf"
+      additional_fields:
+        -
+          label: "Suggested structure"
+          value: "Brief Studio Mikko Laakkonen overview followed by approximately one page or slide per marketing case"
+    submission_method: "Upload one complete PDF containing all three cases to the Homework #7 submission folder on LearnUS. This is an individual submission."
+    show_detailed_deadline: false
+    show_evaluation_percentage: false
+    evaluation_focus: "- **Company Familiarization:** Basic understanding of Studio Mikko Laakkonen’s furniture and product portfolio.\n- **Cases:** Relevance and diversity of the three selected furniture-marketing cases."
+  -
+    number: 8
+    title: "User Research Execution"
+    project_number: 3
+    assignment_type: "Team Research Package"
+    due_iso: "2026-11-10"
+    grade_focus: "Research execution, evidence quality, and clear organization"
+    summary: "Conduct the user research planned during Week 10 and organize the collected material so that the team can analyze it during Week 11. Bring the key participant quotes and research notes in a clear, readable form. Do not force the data into a final marketing strategy yet."
+    contents:
+      -
+        title: "Research Execution Summary"
+        body: "- Briefly state the research focus, participants, and method.\n- Note any important changes made from the Week 10 research plan."
+      -
+        title: "Organized Research Materials"
+        body: "- Prepare the key quotes, notes, responses, photographs, screenshots, or activity outputs collected through the study.\n- Organize the materials clearly by participant, session, question, or activity so that the team can compare and analyze them during Week 11.\n- Include enough context to understand where each piece of evidence came from."
+    presentation: "No formal presentation is required. Each team should bring the Organized Research Materials to the Week 11 workshop and be ready to briefly explain how the study was conducted and how the materials were organized."
+    upload_file:
+      file_type: "One team PDF"
+      filename_rule: "A8_TeamNumber_TeamName.pdf"
+      example: "A8_Team03_NordicBridge.pdf"
+    submission_method: "One team representative should upload the complete PDF to the Homework #8 submission folder on LearnUS. The first page must list all team members."
+    show_detailed_deadline: false
+    show_evaluation_percentage: false
+    evaluation_focus: "- **Research Alignment:** The study follows the research focus and questions established during Week 10.\n- **Evidence:** The collected materials are relevant and sufficiently detailed for later analysis."
+  -
+    number: 9
+    title: "User Insights and Opportunity Areas"
+    project_number: 3
+    assignment_type: "Team Analysis Report"
+    due_iso: "2026-11-17"
+    grade_focus: "Evidence analysis, user-insight quality, and strategic opportunity framing"
+    summary: "Refine the analysis developed during the Week 11 workshop. Organize the evidence, user insights, and strategic opportunity areas that will be used during the Week 12 Customer-Centered Thinking workshop. Do not define the final target customer, value proposition, or marketing idea yet."
+    contents:
+      -
+        title: "Key Insights and Evidence"
+        body: "- Develop three to five insight statements.\n- For each insight, briefly explain what the evidence suggests, why it may matter in the Korean Market Launch context, and which evidence supports the interpretation.\n- Include representative quotes, responses, or other evidence for each."
+      -
+        title: "Strategic Opportunity Areas"
+        body: "- Identify two to three broad areas that should be explored further.\n- Connect each opportunity area to the relevant user insight and evidence.\n- Explain what needs to be addressed or enabled rather than proposing a finished product, campaign, or solution."
+    presentation: "No formal presentation is required. Bring the completed User Insight and Strategic Opportunity Map to Week 12 and be ready to use it during the Customer-Centered Thinking workshop."
+    upload_file:
+      filename_rule: "A9_TeamNumber_TeamName.pdf"
+      example: "A9_Team03_NordicBridge.pdf"
+      additional_fields:
+        -
+          label: "Required file"
+          value: "One team PDF"
+    submission_method: "One team representative should upload the final PDF to the Homework #9 submission folder on LearnUS. The first page must list all team members."
+    show_detailed_deadline: false
+    show_evaluation_percentage: false
+    evaluation_focus: "- **Pattern and Evidence Analysis:** Important patterns, differences, and tensions are identified and supported with representative evidence.\n- **User-centered  Opportunity Framing:** Opportunity areas are relevant to Korean market entry while remaining broader than a finished campaign or solution."
+  -
+    number: 10
+    title: "Customer-Centered Value Ideas"
+    project_number: 3
+    assignment_type: "Team Visual Working Document"
+    due_iso: "2026-11-24"
+    summary: "Refine and organize the work developed during the Week 12 workshop. Keep two to three alternative ideas so that they can be compared during the Week 13 Strategic Thinking workshop. Do not select a final marketing strategy yet."
+    contents:
+      -
+        title: "Target Customer Snapshot"
+        body: "- Identify the primary potential customer.\n- Briefly clarify whether the user and buyer are the same or different.\n- Describe the relevant lifestyle, context, interest, and possible barrier."
+      -
+        title: "Key Customer Decision Factors"
+        body: "- **Select three to five factors** that may influence this customer’s interest or consideration.\n- For each factor, briefly explain why it matters and which research finding or quote supports it."
+      -
+        title: "2~3 Value Ideas"
+        body: "- For each idea, include:\n  - **Value to Create:** What should the potential customer understand, feel, imagine, or trust?\n  - **Idea:** How could the product, story, content, space, channel, or experience create that value?\n  - **Supporting Evidence:** Which insight, decision factor, or quote informed the idea?"
+    presentation: "No formal presentation is required. Bring the completed document to Week 13 and be ready to compare the Target Customer Snapshot, key decision factors, and two to three alternative value ideas."
+    upload_file:
+      recommended_length: "4–6 slides"
+      filename_rule: "A10_TeamNumber_TeamName.pdf"
+      additional_fields:
+        -
+          label: "Required file"
+          value: "One team PDF"
+        -
+          label: "Suggested structure"
+          value: "Target Customer Snapshot → Key Customer Decision Factors → Two to Three Value Ideas"
+    submission_method: "One team representative should upload the PDF to the Homework #10 submission folder on LearnUS. The first page must list all team members."
+    show_detailed_deadline: false
+    show_evaluation_percentage: false
+    evaluation_focus: "This is a Project 3 working homework rather than a separate graded deliverable. Feedback will focus on:\n- clarity and focus of the Target Customer Snapshot;\n- relevance of the selected decision factors;\n- strength of the connection to research insights and evidence; and\n- clarity and distinctiveness of the two to three value ideas."
+deliverables:
+  -
+    number: 1
     title: "Pop-up Store Design Critique"
     project_number: 2
     assignment_type: "Individual Mid-term Report"
     due_iso: "2026-10-26T23:59:00+09:00"
-    weight: 14
+    weight: 18
     grade_focus: "Field-based analysis and integrated critique of a pop-up store experience"
     summary: "Visit one pop-up store, marketing booth, exhibition booth, or comparable temporary branded space. Analyze how Art, Graphic Design, Product Design, Interaction Design, and Service Design shape the visitor experience, and examine how these elements work together.\nGo beyond description or personal preference. Use specific field observations and visual evidence to explain the design decisions, their effects, their alignment with the purpose and targeted visitors, and possible improvements."
     contents:
@@ -846,8 +851,8 @@ deliverables:
     presentation: "No formal presentation is required."
     upload_file:
       file_type: "Word Document (.docx)"
-      filename_rule: "D5_StudentID_StudentName.docx"
-      example: "D5_2026123456_JaneKim.docx"
+      filename_rule: "D1_StudentID_StudentName.docx"
+      example: "D1_2026123456_JaneKim.docx"
       additional_fields:
         -
           label: "Template"
@@ -855,17 +860,17 @@ deliverables:
         -
           label: "Before submitting"
           value: "Delete all guideline and instructional text from the template and complete the student-information section."
-    submission_method: "Upload the completed Word document to the Deliverable #5 submission folder on LearnUS."
+    submission_method: "Upload the completed Word document to the Deliverable #1 submission folder on LearnUS."
     show_detailed_deadline: true
     show_evaluation_percentage: true
     evaluation_focus: "- Context and field evidence · 20%\n- Design-elements analysis · 20%\n- Integrated design critique · 20%\n- Improvements and reflection · 20%\n- Communication and source attribution · 20%"
   -
-    number: 6
+    number: 2
     title: "Korean Market Entry Marketing Strategy Proposal"
     project_number: 3
     assignment_type: "Group Presentation"
     due_iso: "2026-12-08T09:00:00+09:00"
-    weight: 20
+    weight: 25
     grade_focus: "Integrated Korean market launch strategy and final presentation"
     summary: "Present a clear and persuasive marketing strategy directly to Studio Mikko Laakkonen. Help the company understand the Korean market and consumers, identify the most promising opportunity, and decide how to begin approaching the market.\nDo not organize the presentation as a weekly process report. Use research, customer analysis, competitor comparison, and consultation only as evidence supporting the final recommendation."
     contents:
@@ -891,8 +896,8 @@ deliverables:
           - "Benefits for the target customer, Studio Mikko Laakkonen, and its Korean-market position."
     presentation: "- **Presentation time:** Maximum 12 minutes per group\n- **Q&A and critique:** Approximately 5 minutes\n- **Recommended main deck:** Approximately 10–12 slides\n- Detailed research methods, full quotes, competitor tables, and intermediate analyses may be placed in the appendix.\n- All team members should participate meaningfully. Present the proposal as a professional recommendation to Studio Mikko Laakkonen."
     upload_file:
-      filename_rule: "D6_TeamNumber_TeamName.pdf"
-      example: "D6_Team03_NordicBridge.pdf"
+      filename_rule: "D2_TeamNumber_TeamName.pdf"
+      example: "D2_Team03_NordicBridge.pdf"
       additional_fields:
         -
           label: "Required grading copy"
@@ -900,17 +905,17 @@ deliverables:
         -
           label: "Appendix"
           value: "May include detailed research methods, additional evidence, full competitor comparisons, and backup materials"
-    submission_method: "One team representative should upload the final PDF to the Deliverable #6 submission folder on LearnUS. The title slide must include the names and student IDs of all team members."
+    submission_method: "One team representative should upload the final PDF to the Deliverable #2 submission folder on LearnUS. The title slide must include the names and student IDs of all team members."
     show_detailed_deadline: true
     show_evaluation_percentage: true
     evaluation_focus: "- Company understanding · 20%\n- Idea and target fit · 20%\n- Evidence-based strategic reasoning · 20%\n- Goals and development plan · 20%\n- Expected value and presentation · 20%"
   -
-    number: 7
+    number: 3
     title: "Personal Interdisciplinary Map"
     project_number: 4
     assignment_type: "Individual Final Report"
     due_iso: "2026-12-14T23:59:00+09:00"
-    weight: 10
+    weight: 17
     grade_focus: "Personal interdisciplinary direction, reflective thinking, and understanding of multi-disciplinary design approaches"
     summary: "Reflect on your current interests and the interdisciplinary design approach you may wish to pursue in future study, projects, or career. A fully fixed career plan is not required. If your direction is still unclear, use the approaches or cases that interested you most during the course to explain your current perspective."
     contents:
@@ -929,13 +934,13 @@ deliverables:
     presentation: "No formal presentation is required."
     upload_file:
       file_type: "PDF"
-      filename_rule: "D7_StudentID_StudentName.pdf"
-      example: "D7_2026123456_JaneKim.pdf"
+      filename_rule: "D3_StudentID_StudentName.pdf"
+      example: "D3_2026123456_JaneKim.pdf"
       additional_fields:
         -
           label: "Template"
           value: "Use the provided Final Report template."
-    submission_method: "Upload the completed PDF to the Deliverable #7 submission folder on LearnUS. Delete all instructional text from the provided template before submission."
+    submission_method: "Upload the completed PDF to the Deliverable #3 submission folder on LearnUS. Delete all instructional text from the provided template before submission."
     show_detailed_deadline: true
     show_evaluation_percentage: true
     evaluation_focus: "- Interdisciplinary map · 20%\n- Interdisciplinary understanding · 20%\n- Personal reflection · 20%\n- Representative-case analysis · 20%\n- Communication and source attribution · 20%"

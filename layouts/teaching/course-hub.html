@@ -38,13 +38,26 @@
         </div>
         {{ end }}
       </div>
-      {{ with $course.Params.semester_focus }}
-      <aside class="course-hub-semester-focus" aria-label="{{ .label }}">
-        <span>{{ .label }}</span>
-        {{ $focusText := .text }}
-        {{ with .link }}{{ $focusText = replace $focusText .label (printf `<a href="%s" target="_blank" rel="noopener noreferrer">%s</a>` .url .label) }}{{ end }}
-        <div><strong>{{ .title }}</strong><p>{{ $focusText | safeHTML }}</p></div>
-      </aside>
+      {{ with $course.Params.semester_focuses }}
+      <div class="course-hub-semester-focuses">
+        {{ range . }}
+        <aside class="course-hub-semester-focus" aria-label="{{ .label }}">
+          <span>{{ .label }}</span>
+          {{ $focusText := .text }}
+          {{ with .link }}{{ $focusText = replace $focusText .label (printf `<a href="%s" target="_blank" rel="noopener noreferrer">%s</a>` .url .label) }}{{ end }}
+          <div><strong>{{ .title }}</strong><p>{{ $focusText | safeHTML }}</p></div>
+        </aside>
+        {{ end }}
+      </div>
+      {{ else }}
+        {{ with $course.Params.semester_focus }}
+        <aside class="course-hub-semester-focus" aria-label="{{ .label }}">
+          <span>{{ .label }}</span>
+          {{ $focusText := .text }}
+          {{ with .link }}{{ $focusText = replace $focusText .label (printf `<a href="%s" target="_blank" rel="noopener noreferrer">%s</a>` .url .label) }}{{ end }}
+          <div><strong>{{ .title }}</strong><p>{{ $focusText | safeHTML }}</p></div>
+        </aside>
+        {{ end }}
       {{ end }}
       {{ with $course.Params.flipped_learning }}
       <aside class="course-hub-flipped-learning" aria-label="{{ .title }}">

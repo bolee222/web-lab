@@ -1945,6 +1945,16 @@ img.rounded {
   background: rgba(94, 125, 235, .08);
 }
 
+.course-hub-semester-focuses {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.course-hub-semester-focuses .course-hub-semester-focus {
+  margin-top: 0;
+}
+
 .course-hub-semester-focus > span {
   padding-top: 2px;
   color: var(--course-accent);
@@ -1962,6 +1972,16 @@ img.rounded {
   height: auto;
   color: var(--course-accent);
   line-height: inherit;
+}
+
+.course-hub-semester-focus[aria-label="Industry Collaboration"] {
+  background: rgba(35, 171, 127, .09);
+}
+
+.course-hub-semester-focus[aria-label="Industry Collaboration"] > span,
+.course-hub-semester-focus[aria-label="Industry Collaboration"] strong,
+.course-hub-semester-focus[aria-label="Industry Collaboration"] p a {
+  color: #238a6b;
 }
 
 .course-hub-flipped-learning {
