@@ -3504,6 +3504,14 @@ img.rounded {
   padding-left: 0;
 }
 
+/* Author profile links belong to the citation sentence. The older global
+   anchor rule uses flex and full width, which otherwise forces a line break. */
+.publication-list .publication-text a {
+  display: inline;
+  width: auto;
+  height: auto;
+}
+
 .publication-list .publication-text strong {
   font-weight: 600;
 }
