@@ -1,6 +1,7 @@
 <head>
   <meta charset="utf-8">
-  <title>{{ with .Title }}{{ . }}{{ else }}{{ site.Title }}{{ end }}</title>
+  {{ $pageTitle := .Params.seo_title | default .Title | default site.Title }}
+  <title>{{ $pageTitle }}</title>
 
   {{ "<!-- Mobile responsive metadata -->" | safeHTML }}
   {{ $canonicalBase := site.Params.site_url | default site.BaseURL }}
@@ -14,7 +15,7 @@
   {{ with .Params.keywords }}<meta name="keywords" content="{{ delimit . ", " }}">{{ else }}{{ with site.Params.keywords }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end }}{{ end }}
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="{{ $canonical }}">
-  <meta property="og:title" content="{{ with .Title }}{{ . }}{{ else }}{{ site.Title }}{{ end }}" />
+  <meta property="og:title" content="{{ $pageTitle }}" />
   <meta property="og:description" content="{{ $metaDescription }}" />
   <meta property="og:url" content="{{ $canonical }}" />
   <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
@@ -49,7 +50,7 @@
     {{ end -}}
     <meta property="og:image:type" content="image/{{ if eq $image_ext "svg" }}svg+xml{{ else }}{{ replaceRE "^jpg$" "jpeg" $image_ext }}{{ end }}">
   {{ end -}}
-  <meta name="twitter:title" content="{{ with .Title }}{{ . }}{{ else }}{{ site.Title }}{{ end }}"/>
+  <meta name="twitter:title" content="{{ $pageTitle }}"/>
   <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"/>
   {{ with site.Params.twitter -}}<meta name="twitter:site" content="@{{ . }}"/>{{ end -}}
   {{ with site.Params.authors -}}
@@ -92,6 +93,44 @@
       {{ $projectSchema = merge $projectSchema (dict "identifier" $doi) }}
     {{ end }}
     {{ $projectSchema | jsonify | safeJS }}
+  </script>
+  {{ end }}
+
+  {{ if and .IsPage .Params.person_schema }}
+  <script type="application/ld+json">
+    {{ $personImage := .Params.image | default site.Params.image }}
+    {{ $personImageURL := $personImage }}
+    {{ if not (or (hasPrefix $personImage "http://") (hasPrefix $personImage "https://")) }}
+      {{ $personImageURL = printf "%s%s" (replaceRE "/$" "" $canonicalBase) ($personImage | relURL) }}
+    {{ end }}
+    {{ $person := dict
+      "@type" "Person"
+      "@id" (printf "%s#person" $canonical)
+      "name" .Title
+      "alternateName" (.Params.person_alternate_names | default (slice))
+      "description" $metaDescription
+      "url" $canonical
+      "image" $personImageURL
+      "jobTitle" (.Params.person_job_title | default "Associate Professor")
+      "email" (.Params.professor.emailAcademic | default "")
+      "sameAs" (.Params.person_same_as | default (slice))
+      "knowsAbout" (.Params.person_knows_about | default (slice))
+      "affiliation" (dict "@type" "CollegeOrUniversity" "name" (.Params.person_affiliation | default "Yonsei University") "url" "https://www.yonsei.ac.kr/")
+      "worksFor" (dict "@type" "CollegeOrUniversity" "name" (.Params.person_affiliation | default "Yonsei University") "url" "https://www.yonsei.ac.kr/")
+      "memberOf" (dict "@type" "ResearchOrganization" "name" site.Title "url" $canonicalBase)
+    }}
+    {{ $profilePage := dict
+      "@context" "https://schema.org"
+      "@type" "ProfilePage"
+      "@id" (printf "%s#profile-page" $canonical)
+      "url" $canonical
+      "name" $pageTitle
+      "description" $metaDescription
+      "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+      "mainEntity" $person
+      "isPartOf" (dict "@type" "WebSite" "name" site.Title "url" $canonicalBase)
+    }}
+    {{ $profilePage | jsonify | safeJS }}
   </script>
   {{ end }}
 

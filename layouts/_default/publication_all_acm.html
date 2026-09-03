@@ -1,6 +1,9 @@
 <article class="publication-entry">
   <div class="publication-entry-main">
-    <div class="publication-text margin-bottom-0">{{ .Params.cite_acm | emojify | markdownify }}</div>
+    {{ $profileURL := "/people/bokyung-lee/" | relLangURL }}
+    {{ $citation := .Params.cite_acm | emojify | markdownify }}
+    {{ $citation = replace $citation "Bokyung Lee" (printf `<a href="%s">Bokyung Lee</a>` $profileURL) }}
+    <div class="publication-text margin-bottom-0">{{ $citation | safeHTML }}</div>
 
     <ul class="btn-link-group list-inline margin-bottom-0">
       {{ range $targetLabel := slice "Source URL" "Project Page" "PDF" }}

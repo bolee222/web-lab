@@ -11,11 +11,11 @@ top_keywords:
   eng:
     line1: "Yonsei University"
     line2: "Convergence Experience Design (CXD) Lab"
-    line3: "Director: Prof. Bokyung Lee"
+    line3: "Director: [Prof. Bokyung Lee](/people/bokyung-lee/)"
   kor:
     line1: "연세대학교"
     line2: "컨버전스 경험 디자인 연구실"
-    line3: "디렉터: 이보경 교수"
+    line3: "디렉터: [이보경 교수](/people/bokyung-lee/)"
 
 overview:
   motto: "<span class=\"vision-motto-primary\">Empowering People</span><br><span class=\"vision-motto-secondary\">through Digital-Physical Convergence</span>"

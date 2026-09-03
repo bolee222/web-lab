@@ -54,7 +54,10 @@
       <div class="col-md-4">
         <div class="project-details">
           <div class="project-subtitle">Project Team</div>
-          <div class="project-single-meta">{{ .Params.researcher | markdownify }}</div>
+          {{ $profileURL := "/people/bokyung-lee/" | relLangURL }}
+          {{ $researcher := .Params.researcher | markdownify }}
+          {{ $researcher = replace $researcher "Bokyung Lee" (printf `<a href="%s">Bokyung Lee</a>` $profileURL) }}
+          <div class="project-single-meta">{{ $researcher | safeHTML }}</div>
 
           {{ $projectKeywords := .Params.keywords | default .Params.category }}
           {{ with $projectKeywords }}

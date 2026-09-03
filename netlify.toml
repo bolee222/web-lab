@@ -2,6 +2,12 @@
   HUGO_VERSION = "0.153.0"
 
 [[redirects]]
+  from = "/people/professor/"
+  to = "/people/bokyung-lee/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/courses/CDM1001/*"
   to = "/courses/cdm1001/:splat"
   status = 301
