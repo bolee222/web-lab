@@ -505,7 +505,20 @@ assignments:
     assignment_type: "Team working-manuscript update"
     due_iso: "2026-09-18"
     summary: "Use the submitted Research Direction Snapshot + Hypothesis Scaffold to begin Sections 1 and 3.1 of the shared master manuscript. This is a working draft rather than a polished final section."
-    contents_markdown: "- **Section 1 · Introduction:** Research context, users, design-relevant phenomenon, unresolved issue, and motivation\n- **Section 3.1 · RQ & Hypothesis:** Provisional RQ, expected relationship or outcome, and the rationale for that expectation\n- Evidence that could support or challenge the expectation\n- Citations or links for at least three related academic papers or research-based design cases; no separate source-analysis report is required"
+    contents:
+      -
+        title: "Introduction"
+        items:
+          - "**Section 1 · Introduction:** Research context, users, design-relevant phenomenon, unresolved issue, and motivation"
+      -
+        title: "Research Question & Hypothesis"
+        items:
+          - "**Section 3.1 · RQ & Hypothesis:** Provisional RQ, expected relationship or outcome, and the rationale for that expectation"
+          - "Evidence that could support or challenge the expectation"
+      -
+        title: "Related Work"
+        items:
+          - "Citations or links for at least three related academic papers or research-based design cases; no separate source-analysis report is required"
     presentation: "No formal presentation is required. Bring the working draft and source links to the Week 3 workshop."
     upload_file:
       file_type: "Shared master manuscript update"
@@ -523,7 +536,22 @@ assignments:
     assignment_type: "Team comparison-design and stimuli draft"
     due_iso: "2026-10-02"
     summary: "Use the Week 4 FC lecture and team activity to define the comparison logic and create initial participant-facing stimuli for the Week 5 consultation."
-    contents_markdown: "- Revised RQ and focal design mechanism\n- A realistic baseline and A/B or A/B/C comparison conditions\n- A side-by-side account of what changes and what remains controlled\n- Initial participant-facing sketches, flows, storyboards, or low-fidelity prototypes for every condition\n- Possible confounds or alternative explanations\n- Two or three specific questions or decisions for the consultation"
+    contents:
+      -
+        title: "Research Focus"
+        items:
+          - "Revised RQ and focal design mechanism"
+      -
+        title: "Comparison Conditions"
+        items:
+          - "A realistic baseline and A/B or A/B/C comparison conditions"
+          - "A side-by-side account of what changes and what remains controlled"
+          - "Possible confounds or alternative explanations"
+      -
+        title: "Initial Stimuli & Consultation"
+        items:
+          - "Initial participant-facing sketches, flows, storyboards, or low-fidelity prototypes for every condition"
+          - "Two or three specific questions or decisions for the consultation"
     presentation: "No formal presentation is required. Use the materials directly during the Week 5 team consultation."
     upload_file:
       file_type: "Comparison Condition & Stimuli Canvas with linked or embedded stimuli"
@@ -540,7 +568,23 @@ assignments:
     assignment_type: "Team working-manuscript and stimuli revision"
     due_iso: "2026-10-09"
     summary: "Revise the comparison logic and participant-facing stimuli using the decisions made during the Week 5 consultation."
-    contents_markdown: "- Updated baseline and A/B or A/B/C condition descriptions\n- Consultation decisions recorded as Keep / Revise / Test Next\n- Revised stimuli for every condition\n- What changes across conditions and what remains controlled\n- Possible confounds and how they will be reduced\n- Updated Section 3.2 comparison rationale and condition table or figure\n- The scope and next actions for Week 6 stimuli development"
+    contents:
+      -
+        title: "Revised Conditions"
+        items:
+          - "Updated baseline and A/B or A/B/C condition descriptions"
+          - "Consultation decisions recorded as Keep / Revise / Test Next"
+      -
+        title: "Revised Stimuli & Controls"
+        items:
+          - "Revised stimuli for every condition"
+          - "What changes across conditions and what remains controlled"
+          - "Possible confounds and how they will be reduced"
+      -
+        title: "Manuscript & Next Steps"
+        items:
+          - "Updated Section 3.2 comparison rationale and condition table or figure"
+          - "The scope and next actions for Week 6 stimuli development"
     presentation: "No formal presentation is required. The revised materials become the starting point for the Week 6 asynchronous stimuli-development session."
     upload_file:
       file_type: "Shared master manuscript update plus revised stimuli links"
@@ -590,7 +634,21 @@ assignments:
     assignment_type: "Team targeted manuscript revision"
     due_iso: "2026-10-30"
     summary: "Use the submitted Feedback Decision Log to revise the research foundation, RQ, comparison conditions, and stimuli."
-    contents_markdown: "- Major feedback received during the presentation\n- Accept, Adapt, or Decline decisions and a brief rationale for each major point\n- Specific revisions to Sections 1–3.3\n- Priority corrections affecting research logic, condition validity, or stimulus clarity\n- Any unresolved issue that must be addressed before the study protocol is finalized"
+    contents:
+      -
+        title: "Feedback Decisions"
+        items:
+          - "Major feedback received during the presentation"
+          - "Accept, Adapt, or Decline decisions and a brief rationale for each major point"
+      -
+        title: "Manuscript Revisions"
+        items:
+          - "Specific revisions to Sections 1–3.3"
+          - "Priority corrections affecting research logic, condition validity, or stimulus clarity"
+      -
+        title: "Unresolved Issues"
+        items:
+          - "Any unresolved issue that must be addressed before the study protocol is finalized"
     presentation: "No additional presentation is required."
     upload_file:
       file_type: "Shared master manuscript update"
@@ -608,7 +666,21 @@ assignments:
     assignment_type: "Team working-manuscript update"
     due_iso: "2026-11-06"
     summary: "Use the submitted Study Plan Snapshot + Method Mapping to draft the first version of Section 4."
-    contents_markdown: "- **4.1 Participants:** Target participants, inclusion criteria, and rationale\n- **4.2 Study Design:** Within- or between-subject design, conditions, order, and rationale\n- **4.3 Tasks & Procedure:** Initial step-by-step participant journey\n- **4.4 Measures:** Quantitative measures, behavioral data, or manipulation checks\n- The source, construct, purpose, and data form of each established measure"
+    contents:
+      -
+        title: "Participants & Study Design"
+        items:
+          - "**4.1 Participants:** Target participants, inclusion criteria, and rationale"
+          - "**4.2 Study Design:** Within- or between-subject design, conditions, order, and rationale"
+      -
+        title: "Tasks & Procedure"
+        items:
+          - "**4.3 Tasks & Procedure:** Initial step-by-step participant journey"
+      -
+        title: "Measures"
+        items:
+          - "**4.4 Measures:** Quantitative measures, behavioral data, or manipulation checks"
+          - "The source, construct, purpose, and data form of each established measure"
     presentation: "No formal presentation is required. Bring the draft and Study Plan Snapshot to Week 10."
     upload_file:
       file_type: "Shared master manuscript update"
@@ -626,7 +698,22 @@ assignments:
     assignment_type: "Team operational research homework"
     due_iso: "2026-11-13"
     summary: "Finalize the Study Materials Pack and conduct at least one pilot session. No full Method prose is due this week."
-    contents_markdown: "- Participant introduction and consent procedure\n- Tasks, condition order, and moderator script\n- Questionnaire, qualitative prompts, and data-recording materials\n- Debriefing and anonymization procedures\n- Completed Protocol-to-Method Mapping with decisions, rationales, and destination subsections\n- Pilot notes covering clarity, timing, technical issues, task flow, and measurement problems"
+    contents:
+      -
+        title: "Participant-facing Protocol"
+        items:
+          - "Participant introduction and consent procedure"
+          - "Tasks, condition order, and moderator script"
+          - "Questionnaire, qualitative prompts, and data-recording materials"
+          - "Debriefing and anonymization procedures"
+      -
+        title: "Protocol-to-Method Mapping"
+        items:
+          - "Completed Protocol-to-Method Mapping with decisions, rationales, and destination subsections"
+      -
+        title: "Pilot Findings"
+        items:
+          - "Pilot notes covering clarity, timing, technical issues, task flow, and measurement problems"
     presentation: "No formal presentation is required. Bring the pilot evidence and working protocol to Week 11."
     upload_file:
       file_type: "Study Materials Pack, Protocol-to-Method Mapping, and pilot notes"
@@ -644,7 +731,23 @@ assignments:
     assignment_type: "Team final Method-section update"
     due_iso: "2026-11-20"
     summary: "Use the final Protocol-to-Method Mapping to complete Sections 4.1–4.6 after the pilot-driven revisions are finalized."
-    contents_markdown: "- **4.1 Participants:** Final criteria, sample plan, and rationale\n- **4.2 Study Design:** Final conditions, participant structure, and order\n- **4.3 Tasks & Procedure:** Final participant journey and moderator process\n- **4.4 Measures:** Final quantitative and qualitative measures\n- **4.5 Pilot Testing & Revisions:** Meaningful issues discovered and resulting changes\n- **4.6 Data Analysis:** Planned qualitative and quantitative analysis\n- Final methodological decisions rather than copied participant-facing scripts or a pilot diary"
+    contents:
+      -
+        title: "Participants & Study Design"
+        items:
+          - "**4.1 Participants:** Final criteria, sample plan, and rationale"
+          - "**4.2 Study Design:** Final conditions, participant structure, and order"
+      -
+        title: "Procedure & Measures"
+        items:
+          - "**4.3 Tasks & Procedure:** Final participant journey and moderator process"
+          - "**4.4 Measures:** Final quantitative and qualitative measures"
+      -
+        title: "Pilot Revisions & Analysis"
+        items:
+          - "**4.5 Pilot Testing & Revisions:** Meaningful issues discovered and resulting changes"
+          - "**4.6 Data Analysis:** Planned qualitative and quantitative analysis"
+          - "Final methodological decisions rather than copied participant-facing scripts or a pilot diary"
     presentation: "No formal presentation is required."
     upload_file:
       file_type: "Shared master manuscript update"
@@ -666,7 +769,21 @@ assignments:
     assignment_type: "Team quantitative-results manuscript update"
     due_iso: "2026-11-27"
     summary: "Use the submitted Results Snapshot to draft the Data Overview and Quantitative Results subsections."
-    contents_markdown: "- **5.1 Data Overview:** Final participant count, exclusions, and dataset structure\n- **5.2 Quantitative Results:** Descriptive statistics, appropriate comparisons, and correctly labeled inferential results\n- Clear figures, tables, labels, and captions\n- Accurate reporting of null, mixed, or unexpected results\n- Clear separation between observed results and interpretation"
+    contents:
+      -
+        title: "Data Overview"
+        items:
+          - "**5.1 Data Overview:** Final participant count, exclusions, and dataset structure"
+      -
+        title: "Quantitative Results"
+        items:
+          - "**5.2 Quantitative Results:** Descriptive statistics, appropriate comparisons, and correctly labeled inferential results"
+      -
+        title: "Figures & Reporting Quality"
+        items:
+          - "Clear figures, tables, labels, and captions"
+          - "Accurate reporting of null, mixed, or unexpected results"
+          - "Clear separation between observed results and interpretation"
     presentation: "No formal presentation is required. Bring the draft and cleaned qualitative dataset to Week 13."
     upload_file:
       file_type: "Shared master manuscript update"
@@ -684,7 +801,22 @@ assignments:
     assignment_type: "Team complete Results-section update"
     due_iso: "2026-12-03"
     summary: "Combine the existing quantitative-results draft with the submitted Qualitative Pattern Board to complete Section 5."
-    contents_markdown: "- **5.1 Data Overview:** Final participant count, exclusions, and dataset structure\n- **5.2 Quantitative Results:** Descriptive statistics, appropriate comparisons, and correctly labeled inferential results\n- **5.3 Qualitative Results:** Final categories or themes with supporting and contradictory evidence\n- Clear figures, tables, labels, and captions\n- Accurate reporting of null, mixed, contradictory, or unexpected results\n- Clear separation between observed results and interpretation"
+    contents:
+      -
+        title: "Data Overview"
+        items:
+          - "**5.1 Data Overview:** Final participant count, exclusions, and dataset structure"
+      -
+        title: "Quantitative & Qualitative Results"
+        items:
+          - "**5.2 Quantitative Results:** Descriptive statistics, appropriate comparisons, and correctly labeled inferential results"
+          - "**5.3 Qualitative Results:** Final categories or themes with supporting and contradictory evidence"
+      -
+        title: "Figures & Reporting Quality"
+        items:
+          - "Clear figures, tables, labels, and captions"
+          - "Accurate reporting of null, mixed, contradictory, or unexpected results"
+          - "Clear separation between observed results and interpretation"
     presentation: "No formal presentation is required. Bring the completed Results draft and interpretation questions to Week 14."
     upload_file:
       file_type: "Shared master manuscript update"
