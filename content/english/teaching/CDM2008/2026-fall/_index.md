@@ -473,7 +473,21 @@ assignments:
     assignment_type: "Individual one-slide preparation"
     due_iso: "2026-09-11"
     summary: "Prepare one concise card that introduces a design-related context, experience, or behavior that you may want to explore during the semester. This is an exploratory starting point, not a finalized research proposal."
-    contents_markdown: "- The context, experience, or behavior of interest\n- Who is involved or affected\n- What feels unresolved, uncertain, or worth investigating\n- One possible design idea or relevant example\n- Three keywords"
+    contents:
+      -
+        title: "Your Interest"
+        items:
+          - "Choose one **context, experience, or behavior** that interests you, and briefly explain why."
+      -
+        title: "Current Experience & Unresolved Point"
+        items:
+          - "Briefly describe **what people currently do or experience** in this context."
+          - "Identify **one part that feels inconvenient, limited, confusing, or worth changing**."
+      -
+        title: "Early Design Possibility"
+        items:
+          - "Add **one possible design idea or relevant example**."
+          - "Add **three keywords** for your interest."
     presentation: "Bring the card to Week 2 and be prepared to introduce it briefly during interest sharing and team formation."
     upload_file:
       file_type: "One slide or one-page PDF"
