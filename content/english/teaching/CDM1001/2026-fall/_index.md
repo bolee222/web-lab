@@ -493,7 +493,7 @@ assignments:
     presentation: "No formal presentation is required. Selected hypotheses may be reviewed anonymously at the beginning of Week 3."
     upload_file:
       file_type: "PDF"
-      recommended_length: "2–3 pages, including visual references"
+      recommended_length: "1 page"
       required_visuals: "At least one visual reference for each case"
       filename_rule: "HW1_StudentID_StudentName.pdf"
       example: "HW1_2026123456_JaneKim.pdf"
