@@ -504,17 +504,16 @@ assignments:
     project_number: 1
     assignment_type: "Team working-manuscript update"
     due_iso: "2026-09-18"
-    summary: "Use the submitted Research Direction Snapshot + Hypothesis Scaffold to begin Sections 1 and 3.1 of the shared master manuscript. This is a working draft rather than a polished final section."
+    summary: "Use the submitted Research Direction Snapshot to begin Sections 1 and 3.1 of the shared master manuscript. This is a working draft rather than a polished final section."
     contents:
       -
         title: "Introduction"
         items:
           - "**Section 1 · Introduction:** Research context, users, design-relevant phenomenon, unresolved issue, and motivation"
       -
-        title: "Research Question & Hypothesis"
+        title: "Research Question"
         items:
-          - "**Section 3.1 · RQ & Hypothesis:** Provisional RQ, expected relationship or outcome, and the rationale for that expectation"
-          - "Evidence that could support or challenge the expectation"
+          - "**Section 3.1 · RQ:** Provisional RQ and the rationale for why the question matters"
       -
         title: "Related Work"
         items:
@@ -522,7 +521,7 @@ assignments:
     presentation: "No formal presentation is required. Bring the working draft and source links to the Week 3 workshop."
     upload_file:
       file_type: "Shared master manuscript update"
-      recommended_length: "2–4 working paragraphs plus the provisional RQ and hypothesis"
+      recommended_length: "2–4 working paragraphs plus the provisional RQ"
       filename_rule: "No separate file"
       example: "Update Sections 1 and 3.1 in the team manuscript"
     submission_method: "Update the designated sections of the shared master manuscript. Do not resubmit the in-class Snapshot as a separate homework file."
