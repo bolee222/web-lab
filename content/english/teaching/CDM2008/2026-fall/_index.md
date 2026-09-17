@@ -838,9 +838,9 @@ deliverables:
     summary: "This deliverable is the first draft of your team’s final research paper. It should establish what your team wants to investigate, why the question matters, and how the proposed study is positioned in relation to prior research.\nDo not write this as a separate project proposal that will later be discarded. Continue working in the shared master manuscript and revise these sections throughout the semester.\nAt this stage, teams are not required to define experimental variables, comparison conditions, research stimuli, measurements, or a study protocol. These elements will be developed after instructor feedback in Weeks 4–7."
     contents:
       -
-        title: "Working title & feedback questions"
+        title: "Working title"
         items:
-          - "Working title and 2–3 focused questions for Week 4 feedback"
+          - "Working title"
       -
         title: "Introduction"
         items:
@@ -850,7 +850,7 @@ deliverables:
         items:
           - "Thematic synthesis of at least three relevant sources, their limitations, and the resulting research gap"
       -
-        title: "3.1 Research Question & Hypothesis"
+        title: "4.1 Research Question & Hypothesis"
         items:
           - "One provisional RQ, expected relationship or hypothesis, and a clear scope"
     presentation: "No formal presentation is required."
