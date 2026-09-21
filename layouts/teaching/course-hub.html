@@ -721,7 +721,8 @@
             {{ $previousProject := "" }}
             {{ range $workItems }}
             {{ $projectLabel := printf "Project %v" .project_number }}
-            {{ $dueLabel := partial "teaching/due-label.html" .due_iso }}
+            {{ $noDeadline := .no_deadline | default false }}
+            {{ $dueLabel := cond $noDeadline "—" (partial "teaching/due-label.html" .due_iso) }}
             {{ if ne $projectLabel $previousProject }}
             <div class="course-hub-deliverables-project" role="row">
               <strong role="cell">{{ $projectLabel }}</strong>
@@ -732,7 +733,7 @@
               <strong role="cell">{{ with .weight }}{{ . }}%{{ else }}—{{ end }}</strong>
               <span role="cell">{{ .title | markdownify }}</span>
               <span role="cell">{{ $dueLabel }}</span>
-              <small class="course-hub-deliverable-deadline" role="cell" data-deliverable-deadline data-deadline="{{ .due_iso }}"></small>
+              {{ if .due_iso }}<small class="course-hub-deliverable-deadline" role="cell" data-deliverable-deadline data-deadline="{{ .due_iso }}"></small>{{ else }}<small role="cell">—</small>{{ end }}
               <span class="course-hub-deliverable-toggle" aria-hidden="true">+</span>
             </a>
             {{ $previousProject = $projectLabel }}
@@ -741,7 +742,8 @@
         </div>
       </section>
       {{ range $workItems }}
-      {{ $dueLabel := partial "teaching/due-label.html" .due_iso }}
+      {{ $noDeadline := .no_deadline | default false }}
+      {{ $dueLabel := cond $noDeadline "—" (partial "teaching/due-label.html" .due_iso) }}
       <section class="course-hub-section course-hub-assignment-section course-hub-work-section{{ if eq $workKind "Deliverable" }} course-hub-deliverable-section{{ end }}" id="{{ $workKindLower }}-{{ .number }}" aria-labelledby="{{ $workKindLower }}-{{ .number }}-title" data-deliverable-detail>
         <div class="course-hub-section-label">{{ $workKind }} #{{ .number }}</div>
         <div class="course-hub-section-content">
@@ -749,8 +751,9 @@
             <h2 id="{{ $workKindLower }}-{{ .number }}-title"><span>{{ $workKind }} #{{ .number }}:</span> {{ .title | markdownify }}</h2>
             {{ with .weight }}<span>{{ . }}%</span>{{ end }}
           </div>
-          <dl class="course-hub-assignment-meta"><div><dt>Project</dt><dd>Project {{ .project_number }}</dd></div>{{ with .assignment_type }}<div><dt>Format</dt><dd>{{ . }}</dd></div>{{ end }}<div class="course-hub-assignment-due"><dt>Due</dt><dd>{{ $dueLabel }}</dd></div></dl>
+          <dl class="course-hub-assignment-meta"><div><dt>Project</dt><dd>Project {{ .project_number }}</dd></div>{{ with .assignment_type }}<div><dt>Format</dt><dd>{{ . }}</dd></div>{{ end }}{{ with .due_iso }}<div class="course-hub-assignment-due"><dt>Due</dt><dd>{{ $dueLabel }}</dd></div>{{ end }}</dl>
           <div class="course-hub-assignment-summary">{{ .summary | markdownify }}</div>
+          {{ with .image }}<figure class="course-hub-assignment-image"><img src="{{ .src | relURL }}" alt="{{ .alt }}" loading="lazy"></figure>{{ end }}
           {{ with .objective }}<div class="course-hub-assignment-detail"><h3>Objective</h3><div class="course-hub-assignment-detail-body">{{ . | markdownify }}</div></div>{{ end }}
           {{ with .contents }}
           <div class="course-hub-assignment-detail">

@@ -303,9 +303,8 @@ weekly_schedule:
         task: "Watch ‘Interaction Design Elements.’"
         due: "Oct. 6 before class"
       -
-        type: "Homework #4 [Mini-Report]"
-        task: "Decomposing Product Designs"
-        due: "Oct. 6, 11:59 PM"
+        type: "Homework #4"
+        task: "Enjoy Chuseok. We will skip Homework #4."
   -
     week: "06"
     iso_date: "2026-10-06"
@@ -575,44 +574,17 @@ assignments:
     evaluation_focus: "- **Readability Diagnosis:** Identifying which graphic design choices make information difficult to read.\n- **Principle Application:** Applying typography, hierarchy, information density, and grid principles to improve readability.\n- **Reasoned Redesign:** Explaining how specific visual changes make information easier to notice, read, and understand."
   -
     number: 4
-    title: "[Mini-Report] Decomposing Product Designs"
+    title: "Enjoy Chuseok"
     project_number: 1
-    assignment_type: "Individual Mini-Report"
-    due_iso: "2026-10-06T23:59:00+09:00"
+    no_deadline: true
     weight: 5
-    grade_focus: "Critical exploration of Product Design principles with D:Branch"
-    summary: "Select two Product Design principles introduced in Week 5. For each principle, choose one case, use D:Branch to generate twist cases, and analyze why each twist is less effective or problematic. Conclude with what you learned from the comparison and reflection."
-    contents:
-      -
-        title: "Select Two Product Design Principles"
-        items:
-          - "Choose two principles learned in Week 5."
-          - "Repeat Steps 2–4 for each principle."
-      -
-        title: "Choose One Example Case"
-        items:
-          - "Select one product design case you want to explore."
-      -
-        title: "Explore with D:Branch"
-        items:
-          - "Generate twist cases with D:Branch."
-          - "Analyze **why each twist is less effective or problematic** in relation to the selected principle."
-      -
-        title: "Learning & Reflection"
-        items:
-          - "Summarize what you learned about the principle."
-          - "Reflect on what D:Branch helped you notice or question."
-    presentation: "No formal presentation is required. Selected exploration processes or findings may be briefly discussed during the following class as part of the Product Design review activity."
-    upload_file:
-      file_type: "PDF"
-      recommended_length: "3–4 pages, including visual references and reflection"
-      required_visuals: "Original product case; complete first branch set; complete follow-up branch set; most useful branch; and at least one failed or unconvincing branch"
-      filename_rule: "HW4_StudentID_StudentName.pdf"
-      example: "HW4_2026123456_JaneKim.pdf"
-    submission_method: "Upload the complete PDF to the Homework #4 submission folder on LearnUS. The D:Branch use reflection and self-rating must be included within the same report."
-    show_detailed_deadline: true
+    grade_focus: "Homework skipped for Chuseok · full credit awarded to all students"
+    summary: "Enjoy Chuseok. We will skip Homework #4."
+    image:
+      src: "/images/courses/cdm1001/homework-4-chuseok.png"
+      alt: "Chuseok illustration with people carrying harvest gifts"
+    show_detailed_deadline: false
     show_evaluation_percentage: true
-    evaluation_focus: "- **Product Design Principles:** Understanding how design principles affect product form, use, and experience.\n- **Critical Case Analysis:** Using visual twists to identify when and why a product design works—or does not."
   -
     number: 5
     title: "[Mini-Report] Decomposing Interaction Designs"

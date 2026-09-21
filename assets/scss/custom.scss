@@ -2666,6 +2666,8 @@ img.rounded {
 .course-hub-assignment-meta .course-hub-assignment-due dd { color: #222; font-size: 15px; font-weight: 700; }
 .course-hub-assignment-summary { max-width: 1050px; margin: 0; color: #555; font-size: 13px; line-height: 1.6; }
 .course-hub-assignment-summary p { margin: 0; }
+.course-hub-assignment-image { max-width: 960px; margin: 18px 0 0; }
+.course-hub-assignment-image img { display: block; width: 100%; height: auto; border-radius: 8px; }
 .course-hub-assignment-detail { margin-top: 24px; }
 .course-hub-assignment-detail h3 { margin: 0 0 8px; color: #222; font-size: 14px; font-weight: 700; }
 .course-hub-assignment-detail p, .course-hub-assignment-detail li { color: #555; font-size: 13px; line-height: 1.55; }
