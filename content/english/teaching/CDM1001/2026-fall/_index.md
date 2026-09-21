@@ -831,6 +831,7 @@ deliverables:
         title: "Design-element analysis"
         items:
           - "Relevant Art, Graphic, Product/Spatial, Interaction, and Service Design decisions and their effects."
+          - "Use field photographs and other evidence near the relevant analysis."
       -
         title: "Integrated critique"
         items:
