@@ -537,44 +537,42 @@ assignments:
     evaluation_focus: "- **Art–Business Collaboration:** Understanding how art can shape a business collaboration.\n- **Technology-Enabled Value:** Exploring how technology can deepen artistic, business, or audience value."
   -
     number: 3
-    title: "[Mini-Report] Decomposing Graphic Designs"
+    title: "[Mini-Report] Decomposing Graphic Designs: Redesigning Poster for Readability"
     project_number: 1
     assignment_type: "Individual Mini-Report"
     due_iso: "2026-09-29T23:59:00+09:00"
     weight: 5
-    grade_focus: "Critical exploration of Graphic Design principles with D:Branch"
-    summary: "Select two Graphic Design principles introduced in Week 4. For each principle, choose one case, use D:Branch to generate twist cases, and analyze why each twist is less effective or problematic. Conclude with what you learned from the comparison and reflection."
+    grade_focus: "Applying Graphic Design principles through diagnosis and reasoned redesign"
+    summary: "Find one existing poster with **poor readability**. Identify which graphic design choices make the poster difficult to read, then redesign it with the specific goal of **improving readability**. The goal is not simply to make the poster look more attractive, but to make its information easier to notice, read, and understand."
     contents:
       -
-        title: "Select Two Graphic Design Principles"
+        title: "Original Poster"
         items:
-          - "Choose two principles learned in Week 4."
-          - "Repeat Steps 2–4 for each principle."
+          - "Select one existing poster with poor readability."
+          - "Provide the original image and its source."
       -
-        title: "Choose One Example Case"
+        title: "Redesigned Poster"
         items:
-          - "Select one graphic design case you want to explore."
+          - "Redesign the same poster with the goal of improving readability."
+          - "Keep the poster’s core content, but revise relevant elements such as typography, visual hierarchy, information density, grid, alignment, or spacing."
       -
-        title: "Explore with D:Branch"
+        title: "1-Page Description"
         items:
-          - "Generate twist cases with D:Branch."
-          - "Analyze **why each twist is less effective or problematic** in relation to the selected principle."
-      -
-        title: "Learning & Reflection"
-        items:
-          - "Summarize what you learned about the principle."
-          - "Reflect on what D:Branch helped you notice or question."
-    presentation: "No formal presentation is required."
+          - "Briefly identify the main readability problems in the original poster."
+          - "Explain the most important changes you made."
+          - "Explain **why** those changes should make the redesigned poster easier to read and understand."
+          - "Refer to relevant Week 4 Graphic Design principles when useful."
+    presentation: "No formal presentation is required. Selected redesigns may be briefly referenced during the Week 5 opening review."
     upload_file:
       file_type: "PDF"
-      recommended_length: "3–4 pages, including visual references and reflection"
-      required_visuals: "Original case; complete first branch set; complete follow-up branch set; most useful branch; and at least one failed, inaccurate, or unconvincing branch"
+      submission_components: "Original poster + redesigned poster + 1-page description"
+      required_visuals: "One original poster and one redesigned poster"
       filename_rule: "HW3_StudentID_StudentName.pdf"
       example: "HW3_2026123456_JaneKim.pdf"
     submission_method: "Upload the complete PDF to the Homework #3 submission folder on LearnUS."
     show_detailed_deadline: true
     show_evaluation_percentage: true
-    evaluation_focus: "- **Graphic Design Principles:** Understanding how design principles affect visual communication.\n- **Critical Case Analysis:** Using visual twists to identify when and why a design works—or does not."
+    evaluation_focus: "- **Readability Diagnosis:** Identifying which graphic design choices make information difficult to read.\n- **Principle Application:** Applying typography, hierarchy, information density, and grid principles to improve readability.\n- **Reasoned Redesign:** Explaining how specific visual changes make information easier to notice, read, and understand."
   -
     number: 4
     title: "[Mini-Report] Decomposing Product Designs"

@@ -773,6 +773,7 @@
             <h3>Upload file</h3>
             <dl class="course-hub-assignment-file">
               {{ with .file_type }}<div><dt>File type</dt><dd>{{ . | markdownify }}</dd></div>{{ end }}
+              {{ with .submission_components }}<div><dt>Submission components</dt><dd>{{ . | markdownify }}</dd></div>{{ end }}
               {{ with .recommended_length }}<div><dt>Recommended length</dt><dd>{{ . | markdownify }}</dd></div>{{ end }}
               {{ with .required_visuals }}<div><dt>Required visuals</dt><dd>{{ . | markdownify }}</dd></div>{{ end }}
               {{ with .filename_rule }}<div><dt>File naming rule</dt><dd><code>{{ . }}</code></dd></div>{{ end }}
