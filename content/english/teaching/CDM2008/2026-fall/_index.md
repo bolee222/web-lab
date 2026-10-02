@@ -269,10 +269,6 @@ weekly_schedule:
       - "Team consultation on research ideas, comparison conditions, and initial stimuli"
     after_class:
       -
-        type: "FC Lecture"
-        task: "Stimuli Development"
-        due: "Oct. 9"
-      -
         type: "Homework #4"
         task: "Revised Comparison Conditions + Stimuli"
         due: "Oct. 9"
@@ -289,10 +285,6 @@ weekly_schedule:
       - "No offline class · Asynchronous stimuli development and documentation"
     after_class:
       -
-        type: "FC Lecture"
-        task: "Preparing Design Research Proposal Presentation"
-        due: "Oct. 16"
-      -
         type: "Homework #5"
         task: "Section 3.3 Research Stimuli"
         due: "Oct. 16"
@@ -300,17 +292,17 @@ weekly_schedule:
     week: "07"
     iso_date: "2026-10-16"
     stage_ref: "planning-stimuli"
-    lecture: "Research Proposal Integration · Aligning RQ, Conditions, Stimuli, and Evidence"
-    lecture_main: "Research Proposal Integration"
-    lecture_subtitle: "Aligning RQ, Conditions, Stimuli, and Evidence"
+    lecture: "Consultation Session · Stimuli + Logic Checkup"
+    lecture_main: "Consultation Session"
+    lecture_subtitle: "Stimuli + Logic Checkup"
     paper: "Sections 1–3.3 · Integrated Proposal Revision"
     in_class:
       - "Research-logic alignment, traceability review, and presentation rehearsal"
     after_class:
       -
         type: "FC Lecture"
-        task: "Preparing Design Research Writing #1"
-        due: "Oct. 23"
+        task: "Preparing Design Research Proposal Presentation"
+        due: "Oct. 16 before class"
   -
     week: "08"
     iso_date: "2026-10-23"
@@ -323,8 +315,8 @@ weekly_schedule:
     after_class:
       -
         type: "FC Lecture"
-        task: "Quantitative Study Measure"
-        due: "Oct. 30"
+        task: "Preparing Design Research Writing #1"
+        due: "Oct. 23 before class"
       -
         type: "Deliverable #2"
         task: "Mid-term Research Proposal & Stimuli"
@@ -346,8 +338,8 @@ weekly_schedule:
     after_class:
       -
         type: "FC Lecture"
-        task: "Qualitative Study Questions"
-        due: "Nov. 6"
+        task: "Quantitative Study Measure"
+        due: "Oct. 30 before class"
       -
         type: "Homework #7"
         task: "Section 4 Method Draft I"
