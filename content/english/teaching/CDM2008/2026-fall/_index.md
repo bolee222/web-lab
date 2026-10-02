@@ -297,7 +297,7 @@ weekly_schedule:
     lecture_subtitle: "Stimuli + Logic Checkup"
     paper: "Sections 1–3.3 · Integrated Proposal Revision"
     in_class:
-      - "Research-logic alignment, traceability review, and presentation rehearsal"
+      - "Team consultation"
     after_class:
       -
         type: "FC Lecture"
