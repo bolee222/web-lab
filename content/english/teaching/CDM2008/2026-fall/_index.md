@@ -267,11 +267,7 @@ weekly_schedule:
     paper: "Sections 3.2–3.3 · Conditions and Initial Stimuli"
     in_class:
       - "Team consultation on research ideas, comparison conditions, and initial stimuli"
-    after_class:
-      -
-        type: "Homework #4"
-        task: "Revised Comparison Conditions + Stimuli"
-        due: "Oct. 9"
+    after_class: []
   -
     week: "06"
     iso_date: "2026-10-09"
@@ -552,39 +548,6 @@ assignments:
     show_detailed_deadline: false
     show_evaluation_percentage: false
     evaluation_focus: "- **Comparative reasoning:** Selecting a meaningful baseline and isolating the intended design factor.\n- **Stimuli concretization:** Making each condition visible enough to reveal ambiguity and confounds."
-  -
-    number: 4
-    title: "Revised Comparison Conditions + Stimuli"
-    project_number: 1
-    assignment_type: "Team working-manuscript and stimuli revision"
-    due_iso: "2026-10-09"
-    summary: "Revise the comparison logic and participant-facing stimuli using the decisions made during the Week 5 consultation."
-    contents:
-      -
-        title: "Revised Conditions"
-        items:
-          - "Updated baseline and A/B or A/B/C condition descriptions"
-          - "Consultation decisions recorded as Keep / Revise / Test Next"
-      -
-        title: "Revised Stimuli & Controls"
-        items:
-          - "Revised stimuli for every condition"
-          - "What changes across conditions and what remains controlled"
-          - "Possible confounds and how they will be reduced"
-      -
-        title: "Manuscript & Next Steps"
-        items:
-          - "Updated Section 3.2 comparison rationale and condition table or figure"
-          - "The scope and next actions for Week 6 stimuli development"
-    presentation: "No formal presentation is required. The revised materials become the starting point for the Week 6 asynchronous stimuli-development session."
-    upload_file:
-      file_type: "Shared master manuscript update plus revised stimuli links"
-      recommended_length: "Updated Section 3.2, condition table or figure, and consultation decision log"
-      filename_rule: "No duplicate manuscript file; update the shared team materials"
-    submission_method: "Update the shared master manuscript and linked stimuli. Keep the Consultation Decision Log with the working materials."
-    show_detailed_deadline: false
-    show_evaluation_percentage: false
-    evaluation_focus: "- **Feedback integration:** Turning consultation into explicit design and research decisions.\n- **Research readiness:** Resolving major comparison problems before increasing prototype fidelity."
   -
     number: 5
     title: "Section 3.3 Research Stimuli"
