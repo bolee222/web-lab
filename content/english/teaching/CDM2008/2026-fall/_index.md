@@ -267,7 +267,9 @@ weekly_schedule:
     paper: "Sections 3.2–3.3 · Conditions and Initial Stimuli"
     in_class:
       - "Team consultation on research ideas, comparison conditions, and initial stimuli"
-    after_class: []
+    after_class:
+      -
+        task: "Start creating your design stimuli for experiments. (Bring it to Week 7 class.)"
   -
     week: "06"
     iso_date: "2026-10-09"
