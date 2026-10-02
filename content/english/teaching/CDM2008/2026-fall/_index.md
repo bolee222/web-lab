@@ -290,7 +290,7 @@ weekly_schedule:
     after_class:
       -
         type: "FC Lecture"
-        task: "Research Logic Check"
+        task: "Preparing Design Research Proposal Presentation"
         due: "Oct. 16"
       -
         type: "Homework #5"
@@ -309,7 +309,7 @@ weekly_schedule:
     after_class:
       -
         type: "FC Lecture"
-        task: "Presenting the Research Proposal"
+        task: "Preparing Design Research Writing #1"
         due: "Oct. 23"
   -
     week: "08"
