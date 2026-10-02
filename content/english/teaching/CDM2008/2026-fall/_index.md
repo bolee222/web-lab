@@ -323,7 +323,7 @@ weekly_schedule:
     after_class:
       -
         type: "FC Lecture"
-        task: "Study Protocol Setup: Choosing What to Measure"
+        task: "Quantitative Study Measure"
         due: "Oct. 30"
       -
         type: "Deliverable #2"
