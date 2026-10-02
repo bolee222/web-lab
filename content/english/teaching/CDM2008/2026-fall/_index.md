@@ -269,7 +269,7 @@ weekly_schedule:
       - "Team consultation on research ideas, comparison conditions, and initial stimuli"
     after_class:
       -
-        task: "Start creating your design stimuli for experiments. (Bring it to Week 7 class.)"
+        task: "Start creating your design stimuli for experiments. (Bring it to Week 7 class.; see W6's homework for details)"
   -
     week: "06"
     iso_date: "2026-10-09"
