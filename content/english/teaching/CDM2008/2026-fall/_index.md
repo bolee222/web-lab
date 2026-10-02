@@ -281,6 +281,10 @@ weekly_schedule:
       - "No offline class · Asynchronous stimuli development and documentation"
     after_class:
       -
+        type: "FC Lecture"
+        task: "Design Research Proposal Presentation"
+        due: "Oct. 16 before class"
+      -
         type: "Homework #5"
         task: "Section 3.3 Research Stimuli"
         due: "Oct. 16"
@@ -297,8 +301,8 @@ weekly_schedule:
     after_class:
       -
         type: "FC Lecture"
-        task: "Preparing Design Research Proposal Presentation"
-        due: "Oct. 16 before class"
+        task: "Design Research Writing"
+        due: "Oct. 23 before class"
   -
     week: "08"
     iso_date: "2026-10-23"
@@ -311,8 +315,8 @@ weekly_schedule:
     after_class:
       -
         type: "FC Lecture"
-        task: "Preparing Design Research Writing #1"
-        due: "Oct. 23 before class"
+        task: "Quantitative Study Measure"
+        due: "Oct. 30 before class"
       -
         type: "Deliverable #2"
         task: "Mid-term Research Proposal & Stimuli"
@@ -334,8 +338,8 @@ weekly_schedule:
     after_class:
       -
         type: "FC Lecture"
-        task: "Quantitative Study Measure"
-        due: "Oct. 30 before class"
+        task: "Qualitative Study Questions"
+        due: "Nov. 6 before class"
       -
         type: "Homework #7"
         task: "Section 4 Method Draft I"
