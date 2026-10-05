@@ -791,34 +791,46 @@ deliverables:
     due_iso: "2026-10-26T23:59:00+09:00"
     weight: 18
     grade_focus: "Field-based analysis and integrated critique of a pop-up store experience"
-    summary: "Visit one pop-up store, marketing booth, exhibition booth, or comparable temporary branded space. Analyze how Art, Graphic Design, Product Design, Interaction Design, and Service Design shape the visitor experience, and examine how these elements work together.\nGo beyond description or personal preference. Use specific field observations and visual evidence to explain the design decisions, their effects, their alignment with the purpose and targeted visitors, and possible improvements."
+    summary: "Visit one pop-up store, marketing booth, exhibition booth, or comparable temporary branded space. Analyze how **Art, Graphic Design, Product Design, Interaction Design, and Service Design** are reflected in the space and shape the visitor experience.\nUse specific field observations and visual references rather than personal preference. In the final reflection, examine the **inter-relationships among these design elements**—how they support, reinforce, or conflict with one another—and discuss possible improvements where relevant."
     contents:
       -
-        title: "Case context"
+        title: "Pop-Up Store Description"
         items:
-          - "Selected space, visit context, purpose, targeted visitors, and clear distinction among official information, observation, and interpretation."
+          - "Briefly introduce the selected space, visit context, purpose, and target visitors."
       -
-        title: "Design-element analysis"
+        title: "Art-related Aspects"
         items:
-          - "Relevant Art, Graphic, Product/Spatial, Interaction, and Service Design decisions and their effects."
+          - "Identify and analyze relevant artistic, expressive, cultural, or conceptual elements."
       -
-        title: "Integrated critique"
+        title: "Graphic Design Aspects"
         items:
-          - "At least three meaningful relationships among design domains and their effect on the overall experience."
+          - "Analyze relevant visual communication decisions such as typography, hierarchy, layout, visual identity, or information design."
       -
-        title: "Improvements"
+        title: "Product Design Aspects"
         items:
-          - "Focused recommendations grounded in field evidence and the identified relationships."
+          - "Analyze relevant physical objects, fixtures, furniture, materials, forms, or other product-related elements."
+      -
+        title: "Interaction Design Aspects"
+        items:
+          - "Analyze how visitors act, respond, navigate, or interact with interfaces and touchpoints."
+      -
+        title: "Service Aspects"
+        items:
+          - "Analyze the visitor journey, service touchpoints, staff interactions, or service flow where relevant."
       -
         title: "Reflection"
         items:
-          - "What the case reveals about interdisciplinary, purpose-centered, and visitor-centered design."
+          - "Reflect on the **inter-relationships among the five design elements** and how they collectively shape the overall experience."
+          - "Where relevant, suggest focused improvements grounded in your observations."
     presentation: "No formal presentation is required."
     upload_file:
       file_type: "Word Document (.docx)"
       filename_rule: "D1_StudentID_StudentName.docx"
       example: "D1_2026123456_JaneKim.docx"
       additional_fields:
+        -
+          label: "Page limit"
+          value: "Maximum 10 pages, excluding additional image-reference pages. Visual references are encouraged."
         -
           label: "Template"
           value: "Use the provided Mid-term Report template."
