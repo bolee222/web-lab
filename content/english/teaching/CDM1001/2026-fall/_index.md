@@ -587,44 +587,45 @@ assignments:
     show_evaluation_percentage: true
   -
     number: 5
-    title: "[Mini-Report] Decomposing Interaction Designs"
+    title: "[Mini-Report] Interactive Marketing Campaign Analysis"
     project_number: 1
     assignment_type: "Individual Mini-Report"
     due_iso: "2026-10-13T23:59:00+09:00"
     weight: 5
-    grade_focus: "Critical exploration of Interaction Design principles with D:Branch"
-    summary: "Select two Interaction Design principles introduced in Week 6. For each principle, choose one case, use D:Branch to generate twist cases, and analyze why each twist is less effective or problematic. Conclude with what you learned from the comparison and reflection."
+    grade_focus: "Critical analysis of interaction design and proposed improvements"
+    summary: "Choose **one existing interactive marketing campaign**. Analyze how its interaction design supports the campaign’s goal, and explain what you would change."
     contents:
       -
-        title: "Select Two Interaction Design Principles"
+        title: "Campaign & Interaction Type"
         items:
-          - "Choose two principles learned in Week 6."
-          - "Repeat Steps 2–4 for each principle."
+          - "Briefly introduce the campaign and identify its interaction type(s): **Visual, Auditory, Voice, Embodied, and/or Phygital**. Explain how each selected type appears."
       -
-        title: "Choose One Example Case"
+        title: "Goal & Input/Output"
         items:
-          - "Select one interaction design case you want to explore."
+          - "Explain the campaign’s goal. Use a simple **Input → System → Output/Response diagram** to show how it works and how the interaction supports that goal."
       -
-        title: "Explore with D:Branch"
+        title: "Strengths & Weaknesses"
         items:
-          - "Generate twist cases with D:Branch."
-          - "Analyze **why each twist is less effective or problematic** in relation to the selected principle."
+          - "Evaluate what works well and what could be improved, using **specific design choices and relevant interaction design principles** from class."
       -
-        title: "Learning & Reflection"
+        title: "Your Proposed Changes"
         items:
-          - "Summarize what you learned about the principle."
-          - "Reflect on what D:Branch helped you notice or question."
-    presentation: "No formal presentation is required. Selected exploration processes or findings may be briefly discussed during the following class as part of the Interaction Design review activity."
+          - "If you planned the campaign again, what would you change—and why? Explain how your changes could improve the interaction while supporting the original goal. **A written explanation is sufficient; sketches are optional.**"
+    presentation: "No formal presentation is required. Selected analyses may be discussed during the following class."
     upload_file:
       file_type: "PDF"
-      recommended_length: "3–4 pages, including visual references and reflection"
-      required_visuals: "Original interaction case or sequence; complete first branch set; complete follow-up branch set; most useful branch; and at least one failed, inconsistent, or unconvincing branch"
+      recommended_length: "3–4 pages, including campaign visuals, analysis, and proposed changes"
+      required_visuals: "Campaign images or screenshots and an **Input/Output diagram**"
       filename_rule: "HW5_StudentID_StudentName.pdf"
       example: "HW5_2026123456_JaneKim.pdf"
+      additional_fields:
+        -
+          label: "Sources"
+          value: "Include source links."
     submission_method: "Upload the complete PDF to the Homework #5 submission folder on LearnUS."
     show_detailed_deadline: true
     show_evaluation_percentage: true
-    evaluation_focus: "- **Interaction Design Principles:** Understanding how design principles shape user actions, feedback, and experience.\n- **Critical Case Analysis:** Using interaction twists to identify when and why an interaction works—or does not."
+    evaluation_focus: "Understand how interaction design supports campaign goals, evaluate its strengths and weaknesses, and justify possible improvements."
   -
     number: 6
     title: "[Mini-Report] Decomposing Service Designs"
