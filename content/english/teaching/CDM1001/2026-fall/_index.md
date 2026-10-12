@@ -333,7 +333,7 @@ weekly_schedule:
     after_class:
       -
         type: "Homework #6 [Mini-Report]"
-        task: "Decomposing Service Designs"
+        task: "Decomposing a Service Design Case"
         due: "Oct. 19, 11:59 PM"
   -
     week: "08"
@@ -628,44 +628,38 @@ assignments:
     evaluation_focus: "Understand how interaction design supports campaign goals, evaluate its strengths and weaknesses, and justify possible improvements."
   -
     number: 6
-    title: "[Mini-Report] Decomposing Service Designs"
+    title: "[Mini-Report] Decomposing a Service Design Case"
     project_number: 1
-    assignment_type: "Individual Mini-Report"
+    assignment_type: "Individual Canvas Submission"
     due_iso: "2026-10-19T23:59:00+09:00"
     weight: 5
-    grade_focus: "Critical exploration of Service Design principles with D:Branch"
-    summary: "Select two Service Design principles introduced in Week 7. For each principle, choose one case, use D:Branch to generate twist cases, and analyze why each twist is less effective or problematic. Conclude with what you learned from the comparison and reflection."
+    grade_focus: "Detailed decomposition of a service design case using the Service Design Canvas"
+    summary: "Choose **one service design case that you find particularly interesting, inventive, or clever**. Analyze and decompose the case using the **Service Design Canvas** introduced in class.\n\nThe canvas shown during class was completed quickly for demonstration purposes. For your submission, try to make your analysis **as specific and detailed as possible**, using concrete information from the selected case.\n\nSince you will also begin working on your **Mid-term Report**, this week’s homework is intentionally kept lighter: **you only need to submit one completed canvas page.**"
     contents:
       -
-        title: "Select Two Service Design Principles"
+        title: "Selected Service Design Case"
         items:
-          - "Choose two principles learned in Week 7."
-          - "Repeat Steps 2–4 for each principle."
+          - "Choose one service design case you find interesting or creative."
+          - "Include the case name and source/reference."
       -
-        title: "Choose One Example Case"
+        title: "Completed Service Design Canvas"
         items:
-          - "Select one service design case you want to explore."
-      -
-        title: "Explore with D:Branch"
-        items:
-          - "Generate twist cases with D:Branch."
-          - "Analyze **why each twist is less effective or problematic** in relation to the selected principle."
-      -
-        title: "Learning & Reflection"
-        items:
-          - "Summarize what you learned about the principle."
-          - "Reflect on what D:Branch helped you notice or question, and connect one insight to a previous design domain."
-    presentation: "No formal presentation is required. Selected exploration processes, service structures, or cross-disciplinary connections may be briefly discussed during the following class."
+          - "Complete the canvas as thoroughly as possible."
+          - "Go beyond short keywords where possible and clearly explain your analysis."
+    presentation: "No formal presentation is required."
     upload_file:
       file_type: "PDF"
-      recommended_length: "3–4 pages, including visual references, synthesis, and reflection"
-      required_visuals: "Original service case or current service structure; complete first branch set; complete follow-up branch set; most useful branch; at least one failed, incomplete, or unconvincing branch; and one cross-disciplinary synthesis diagram"
+      submission_components: "One completed Service Design Canvas only"
       filename_rule: "HW6_StudentID_StudentName.pdf"
       example: "HW6_2026123456_JaneKim.pdf"
-    submission_method: "Upload the complete PDF to the Homework #6 submission folder on LearnUS."
+      additional_fields:
+        -
+          label: "Length"
+          value: "1 page"
+    submission_method: "Upload the **1-page canvas PDF** to the Homework #6 submission folder on LearnUS."
     show_detailed_deadline: true
     show_evaluation_percentage: true
-    evaluation_focus: "- **Service Design Principles:** Understanding how design principles shape service interactions and stakeholder value.\n- **Cross-Disciplinary Case Analysis:** Using service twists to identify when and why a service works—and connect insights across design domains."
+    evaluation_focus: "**Service Decomposition:** Understanding how the components of a service work together by systematically analyzing one real-world case."
   -
     number: 7
     title: "Furniture Company Marketing Case Study"
