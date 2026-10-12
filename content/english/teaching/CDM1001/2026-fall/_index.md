@@ -348,6 +348,10 @@ weekly_schedule:
         type: "Deliverable #1"
         task: "Pop-up Store Design Critique"
         due: "Oct. 26, 11:59 PM"
+      -
+        type: "FC Lecture"
+        task: "Three types of design thinking"
+        due: "Oct. 27 before class"
   -
     week: "09"
     iso_date: "2026-10-27"
