@@ -321,7 +321,7 @@ weekly_schedule:
     after_class:
       -
         type: "FC Lecture"
-        task: "Quantitative Study Measures (Choosing What to Measure)"
+        task: "Quantitative Study Measures"
         due: "Oct. 30 before class"
   -
     week: "09"
@@ -336,7 +336,7 @@ weekly_schedule:
     after_class:
       -
         type: "FC Lecture"
-        task: "Qualitative Study Questions (Capturing User Reasoning and Experience)"
+        task: "Qualitative Study Questions"
         due: "Nov. 6 before class"
       -
         type: "Homework #7"
