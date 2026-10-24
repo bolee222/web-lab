@@ -305,6 +305,10 @@ weekly_schedule:
         type: "FC Lecture"
         task: "Design Research Writing"
         due: "Oct. 23 before class"
+      -
+        type: "Deliverable #2"
+        task: "Mid-term Research Proposal & Stimuli"
+        due: "Oct. 23 before class"
   -
     week: "08"
     iso_date: "2026-10-23"
@@ -319,14 +323,6 @@ weekly_schedule:
         type: "FC Lecture"
         task: "Quantitative Study Measures (Choosing What to Measure)"
         due: "Oct. 30 before class"
-      -
-        type: "Deliverable #2"
-        task: "Mid-term Research Proposal & Stimuli"
-        due: "Oct. 23"
-      -
-        type: "Homework #6"
-        task: "Post-presentation Sections 1–3.3 Revision"
-        due: "Oct. 30"
   -
     week: "09"
     iso_date: "2026-10-30"
