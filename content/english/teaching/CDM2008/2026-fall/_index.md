@@ -330,7 +330,7 @@ weekly_schedule:
     lecture: "Study Measures #1 · Quantitative Measures"
     lecture_main: "Study Measures #1"
     lecture_subtitle: "Quantitative Measures"
-    paper: "Section 4 · Method Draft I"
+    paper: "Sections 4.1–4.6 · Study Plan & Quantitative Measures"
     in_class:
       - "Participants, study design, tasks, measures, and Method Mapping"
     after_class:
@@ -349,7 +349,7 @@ weekly_schedule:
     lecture: "Study Measures #2 · Qualitative Questions"
     lecture_main: "Study Measures #2"
     lecture_subtitle: "Qualitative Questions"
-    paper: "Section 4 · Protocol-to-Method Mapping"
+    paper: "Sections 4.5–4.6 · Procedure, Qualitative Questions & Data Collection"
     in_class:
       - "Question audit, Study Materials Pack, and Protocol-to-Method Mapping"
     after_class:
@@ -368,7 +368,7 @@ weekly_schedule:
     lecture: "Study Protocol Setup + Pilot Testing"
     lecture_main: "Study Protocol Setup"
     lecture_subtitle: "+ Pilot Testing"
-    paper: "Sections 4.1–4.6 · Final Method"
+    paper: "Sections 4.1–4.7 · Pilot-Revised Final Method"
     in_class:
       - "Pilot diagnosis, protocol revision, and final Method Mapping"
     after_class:
@@ -387,7 +387,7 @@ weekly_schedule:
     lecture: "Data Analysis #1 · Quantitative Insights"
     lecture_main: "Data Analysis #1"
     lecture_subtitle: "Quantitative Insights"
-    paper: "Sections 5.1 & 5.2 · Quantitative Results"
+    paper: "Section 5 · Quantitative Evidence Draft"
     in_class:
       - "Data cleaning, statistical comparison, visualization, and Results Snapshot"
     after_class:
@@ -406,7 +406,7 @@ weekly_schedule:
     lecture: "Data Analysis #2 · Qualitative Insights"
     lecture_main: "Data Analysis #2"
     lecture_subtitle: "Qualitative Insights"
-    paper: "Section 5 · Complete Results Draft"
+    paper: "Section 5 · Integrated Results & Findings Draft"
     in_class:
       - "First-cycle coding, shared codebook, Qualitative Pattern Board, and integrated Results draft"
     after_class:
@@ -424,7 +424,7 @@ weekly_schedule:
     stage_ref: "integrating"
     lecture: "Insights & Design Implications"
     lecture_main: "Insights & Design Implications"
-    paper: "Sections 6–7 · Discussion, Implications & Limitations"
+    paper: "Section 6 · Discussion, Design Implications & Limitations"
     in_class:
       - "Claim–evidence audit, bounded implications, limitations, and final storyline"
     after_class: []
@@ -434,7 +434,7 @@ weekly_schedule:
     stage_ref: "integrating"
     lecture: "Final Presentation"
     lecture_main: "Final Presentation"
-    paper: "Sections 1–10 · Final Manuscript Revision"
+    paper: "Sections 1–7 · Post-presentation Full Manuscript Revision"
     in_class:
       - "Deliverable #3 presentations, Q&A, and Final Paper Revision Plan"
     after_class:
@@ -448,7 +448,7 @@ weekly_schedule:
     stage_ref: "integrating"
     lecture: "Final Paper Submission"
     lecture_main: "Final Paper Submission"
-    paper: "Sections 1–10 · Final Research Paper"
+    paper: "Full Paper · Sections 1–7, References & Appendices"
     in_class:
       - "No offline class · Final revision, submission, and integrity checks"
     after_class:
@@ -622,32 +622,34 @@ assignments:
     project_number: 1
     assignment_type: "Team working-manuscript update"
     due_iso: "2026-11-06"
-    summary: "Use the submitted Study Plan Snapshot + Method Mapping to draft the first version of Section 4."
+    summary: "Use the submitted Study Plan Snapshot + Method Mapping to draft Sections 4.1–4.6 of the first Method working draft."
     contents:
       -
-        title: "Participants & Study Design"
+        title: "Research Questions & Study Design"
         items:
-          - "**4.1 Participants:** Target participants, inclusion criteria, and rationale"
-          - "**4.2 Study Design:** Within- or between-subject design, conditions, order, and rationale"
+          - "**4.1 Research Questions and Hypotheses:** State the finalized RQ(s) and any evidence-supported hypotheses"
+          - "**4.2 Study Design & Comparative Conditions:** Explain the design, conditions, assignment, order, and controlled elements"
       -
-        title: "Tasks & Procedure"
+        title: "Participants, Stimuli & Procedure"
         items:
-          - "**4.3 Tasks & Procedure:** Initial step-by-step participant journey"
+          - "**4.3 Participants:** Target participants, inclusion criteria, recruitment plan, and rationale"
+          - "**4.4 Stimuli and Apparatus:** Describe the participant-facing stimuli, shared assets, and study apparatus"
+          - "**4.5 Tasks and Procedure:** Draft the step-by-step participant journey"
       -
-        title: "Measures"
+        title: "Quantitative Measures"
         items:
-          - "**4.4 Measures:** Quantitative measures, behavioral data, or manipulation checks"
-          - "The source, construct, purpose, and data form of each established measure"
+          - "**4.6 Measures and Data Collection:** Define the quantitative measures, behavioral data, and manipulation checks"
+          - "For each measure, state the construct, source or rationale, data form, response scale, and timing"
     presentation: "No formal presentation is required. Bring the draft and Study Plan Snapshot to Week 10."
     upload_file:
       file_type: "Shared master manuscript update"
-      recommended_length: "A structured working Method draft based on the four mapping fields"
+      recommended_length: "A structured working draft of Sections 4.1–4.6"
       filename_rule: "No separate file"
-      example: "Draft Sections 4.1–4.4 in the team manuscript"
+      example: "Draft Sections 4.1–4.6 in the team manuscript"
     submission_method: "Update Section 4 in the shared master manuscript. Do not recreate the study-flow diagram as a separate homework submission."
     show_detailed_deadline: false
     show_evaluation_percentage: false
-    evaluation_focus: "- **Method alignment:** Connecting participant, task, condition, and measure decisions to the RQ.\n- **Reproducibility:** Describing the study clearly enough for another researcher to understand the plan."
+    evaluation_focus: "- **Method alignment:** Connecting the RQ, comparison design, participants, stimuli, procedure, and measures.\n- **Reproducibility:** Describing the study clearly enough for another researcher to understand the plan."
   -
     number: 8
     title: "Finalize the Study Materials Pack & Conduct a Pilot"
@@ -687,31 +689,32 @@ assignments:
     project_number: 1
     assignment_type: "Team final Method-section update"
     due_iso: "2026-11-20"
-    summary: "Use the final Protocol-to-Method Mapping to complete Sections 4.1–4.6 after the pilot-driven revisions are finalized."
+    summary: "Use the final Protocol-to-Method Mapping to complete Sections 4.1–4.7 after the pilot-driven revisions are finalized."
     contents:
       -
-        title: "Participants & Study Design"
+        title: "Research Questions & Study Design"
         items:
-          - "**4.1 Participants:** Final criteria, sample plan, and rationale"
-          - "**4.2 Study Design:** Final conditions, participant structure, and order"
+          - "**4.1 Research Questions and Hypotheses:** Present the final RQ(s) and any evidence-supported hypotheses"
+          - "**4.2 Study Design & Comparative Conditions:** Explain the final conditions, assignment, order, controls, and comparison logic"
       -
-        title: "Procedure & Measures"
+        title: "Participants, Stimuli & Procedure"
         items:
-          - "**4.3 Tasks & Procedure:** Final participant journey and moderator process"
-          - "**4.4 Measures:** Final quantitative and qualitative measures"
+          - "**4.3 Participants:** Report the final criteria, sample plan, recruitment, compensation, consent, and anonymization"
+          - "**4.4 Stimuli and Apparatus:** Document the final participant-facing stimuli, shared assets, and apparatus"
+          - "**4.5 Tasks and Procedure:** Describe the final participant journey and moderator process in participant order"
       -
-        title: "Pilot Revisions & Analysis"
+        title: "Measures & Data Analysis"
         items:
-          - "**4.5 Pilot Testing & Revisions:** Meaningful issues discovered and resulting changes"
-          - "**4.6 Data Analysis:** Planned qualitative and quantitative analysis"
-          - "Final methodological decisions rather than copied participant-facing scripts or a pilot diary"
+          - "**4.6 Measures and Data Collection:** Document the final quantitative and qualitative measures and collection timing"
+          - "**4.7 Data Analysis:** Explain the planned quantitative and qualitative analysis procedures"
+          - "Integrate meaningful pilot-driven revisions into the relevant Method subsections; place the detailed revision log in Appendix F"
     presentation: "No formal presentation is required."
     upload_file:
       file_type: "Shared master manuscript update"
-      recommended_length: "Complete Sections 4.1–4.6"
+      recommended_length: "Complete Sections 4.1–4.7"
       filename_rule: "No separate manuscript file"
       example: "Complete Section 4 in the team manuscript"
-    submission_method: "Update Sections 4.1–4.6 in the shared master manuscript."
+    submission_method: "Update Sections 4.1–4.7 in the shared master manuscript."
     show_detailed_deadline: false
     show_evaluation_percentage: false
     evaluation_focus: "- **Methodological transparency:** Explaining the final decisions and meaningful pilot-driven changes.\n- **Non-duplicative workflow:** Writing the Method once from the final mapping rather than rewriting an unstable protocol."
@@ -721,20 +724,22 @@ assignments:
         content: "Conduct the main study and organize all qualitative and quantitative data in anonymized form before Week 12."
   -
     number: 10
-    title: "Sections 5.1 & 5.2 Quantitative Results Working Draft"
+    title: "Section 5 Quantitative Evidence Working Draft"
     project_number: 1
     assignment_type: "Team quantitative-results manuscript update"
     due_iso: "2026-11-27"
-    summary: "Use the submitted Results Snapshot to draft the Data Overview and Quantitative Results subsections."
+    summary: "Use the submitted Results Snapshot to begin Section 5 by organizing quantitative evidence under provisional analytical themes."
     contents:
       -
-        title: "Data Overview"
+        title: "Provisional Analytical Themes"
         items:
-          - "**5.1 Data Overview:** Final participant count, exclusions, and dataset structure"
+          - "Create two or three provisional Section 5 subsection titles based on the main findings or claims"
+          - "Do not use fixed headings such as Data Overview, Quantitative Results, or Qualitative Results"
       -
-        title: "Quantitative Results"
+        title: "Quantitative Evidence"
         items:
-          - "**5.2 Quantitative Results:** Descriptive statistics, appropriate comparisons, and correctly labeled inferential results"
+          - "Place descriptive statistics, appropriate comparisons, and correctly labeled inferential results under the relevant analytical theme"
+          - "Report the final participant count, exclusions, and dataset structure where they help the reader understand the evidence"
       -
         title: "Figures & Reporting Quality"
         items:
@@ -744,46 +749,47 @@ assignments:
     presentation: "No formal presentation is required. Bring the draft and cleaned qualitative dataset to Week 13."
     upload_file:
       file_type: "Shared master manuscript update"
-      recommended_length: "Data overview plus the quantitative-results working draft"
+      recommended_length: "A Section 5 working draft containing the quantitative evidence"
       filename_rule: "No separate file"
-      example: "Draft Sections 5.1 and 5.2 in the team manuscript"
-    submission_method: "Update Sections 5.1 and 5.2 in the shared master manuscript. Statistical output files may be linked as supporting materials when needed."
+      example: "Begin Section 5 with provisional analytical themes and quantitative evidence"
+    submission_method: "Update Section 5 in the shared master manuscript. Statistical output files may be linked as supporting materials when needed."
     show_detailed_deadline: false
     show_evaluation_percentage: false
-    evaluation_focus: "- **Accurate reporting:** Matching the analysis to the study design and reporting results transparently.\n- **Evidence clarity:** Presenting descriptive and inferential results with readable figures, tables, and labels."
+    evaluation_focus: "- **Accurate reporting:** Matching the analysis to the study design and reporting results transparently.\n- **Evidence clarity:** Organizing quantitative evidence around meaningful findings with readable figures, tables, and labels."
   -
     number: 11
-    title: "Complete Section 5 Results Draft"
+    title: "Complete Section 5 Results & Findings Draft"
     project_number: 1
     assignment_type: "Team complete Results-section update"
     due_iso: "2026-12-03"
-    summary: "Combine the existing quantitative-results draft with the submitted Qualitative Pattern Board to complete Section 5."
+    summary: "Combine the existing quantitative evidence with the submitted Qualitative Pattern Board to complete Section 5 as a thematic Results and Findings narrative."
     contents:
       -
-        title: "Data Overview"
+        title: "Thematic Results Structure"
         items:
-          - "**5.1 Data Overview:** Final participant count, exclusions, and dataset structure"
+          - "**Sections 5.1–5.3:** Organize the section around two or three analytical themes rather than separating the results by data type"
+          - "Write each subsection title as a clear finding or analytical statement"
       -
-        title: "Quantitative & Qualitative Results"
+        title: "Integrated Evidence"
         items:
-          - "**5.2 Quantitative Results:** Descriptive statistics, appropriate comparisons, and correctly labeled inferential results"
-          - "**5.3 Qualitative Results:** Final categories or themes with supporting and contradictory evidence"
+          - "Combine relevant quantitative and qualitative evidence within each theme"
+          - "Include supporting, contradictory, null, mixed, or unexpected evidence where relevant"
+          - "Report the evidence before interpretation; save broader explanations of meaning for Section 6"
       -
         title: "Figures & Reporting Quality"
         items:
-          - "Clear figures, tables, labels, and captions"
-          - "Accurate reporting of null, mixed, contradictory, or unexpected results"
+          - "Clear figures, tables, labels, captions, and representative quotations"
           - "Clear separation between observed results and interpretation"
     presentation: "No formal presentation is required. Bring the completed Results draft and interpretation questions to Week 14."
     upload_file:
       file_type: "Shared master manuscript update"
-      recommended_length: "Complete Section 5 with figures and tables"
+      recommended_length: "Complete Section 5 with integrated evidence, figures, and tables"
       filename_rule: "No separate file"
-      example: "Complete Sections 5.1–5.3 in the team manuscript"
+      example: "Complete thematic Sections 5.1–5.3 in the team manuscript"
     submission_method: "Update Section 5 in the shared master manuscript. Statistical output files and the Qualitative Pattern Board may be linked as supporting materials when needed."
     show_detailed_deadline: false
     show_evaluation_percentage: false
-    evaluation_focus: "- **Integrated evidence:** Presenting qualitative and quantitative findings as complementary evidence.\n- **Transparent reporting:** Preserving the path from data and analysis to findings while stating boundaries and limitations."
+    evaluation_focus: "- **Integrated evidence:** Presenting qualitative and quantitative findings as complementary evidence within analytical themes.\n- **Transparent reporting:** Preserving the path from data and analysis to findings while stating boundaries and limitations."
 deliverables:
   -
     number: 1
@@ -940,11 +946,11 @@ deliverables:
         items:
           - "Dataset overview, quantitative comparisons, qualitative themes, and clearly labeled figures or evidence"
       -
-        title: "6–7. Discussion, implications & limitations"
+        title: "6. Discussion"
         items:
           - "Direct RQ answer, integrated interpretation, contribution, bounded design implications, limitations, and future work"
       -
-        title: "8–10. Conclusion, references & appendices"
+        title: "7. Conclusion, References & Appendices"
         items:
           - "Concise conclusion, complete references, and supporting materials needed to understand or reproduce the study"
     presentation: "No formal presentation is required."
