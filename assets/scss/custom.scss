@@ -2941,6 +2941,27 @@ img.rounded {
 .course-hub-activities { margin-top: 9px; font-size: 12px; letter-spacing: 0; }
 
 .course-hub-schedule { margin-top: 22px; }
+
+/* Keep the current and upcoming weeks visually prominent while preserving past weeks as an accessible archive. */
+.course-hub-schedule article.is-past-week {
+  position: relative;
+}
+.course-hub-schedule article.is-past-week::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  background: rgba(255, 255, 255, .46);
+  pointer-events: none;
+  transition: background-color .14s ease;
+}
+.course-hub-schedule article.is-past-week:hover::after,
+.course-hub-schedule article.is-past-week:focus-within::after {
+  background: rgba(255, 255, 255, .16);
+}
+@media print {
+  .course-hub-schedule article.is-past-week::after { display: none; }
+}
 .course-hub-schedule-intro {
   max-width: 1100px;
   margin: 0;
