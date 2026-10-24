@@ -343,7 +343,7 @@
             {{ $dateLabel := partial "teaching/date-label.html" (dict "date" .iso_date "week" .week) }}
             {{ $isPresentationWeek := or (eq .week "08") (eq .week "15") }}
             <article{{ if or $showStageDivider .holiday $isPresentationWeek }} class="{{ if $showStageDivider }}is-project-start{{ end }}{{ if and $showStageDivider (or .holiday $isPresentationWeek) }} {{ end }}{{ with .holiday }}is-public-holiday{{ end }}{{ if eq .week "00" }} is-preparation-week{{ end }}{{ if $isPresentationWeek }} is-presentation-week{{ end }}"{{ end }} data-class-date="{{ .iso_date }}" role="listitem">
-              <div class="course-hub-week"{{ with .holiday }} aria-label="Week {{ $week.week }}, {{ $dateLabel }}, public holiday: {{ . }}"{{ end }}><strong>Week {{ .week }}</strong><span>{{ $dateLabel }}</span>{{ with .holiday }}<small class="course-hub-holiday">{{ . }}</small>{{ end }}</div>
+              <div class="course-hub-week"{{ with .holiday }} aria-label="Week {{ $week.week }}, {{ $dateLabel }}, public holiday: {{ . }}"{{ end }}><strong>Week {{ .week }}</strong><span>{{ $dateLabel }}</span><span class="course-hub-this-week" hidden>This week</span>{{ with .holiday }}<small class="course-hub-holiday">{{ . }}</small>{{ end }}</div>
               {{ $weekNumber := replaceRE `^0+` `` .week }}{{ if eq $weekNumber "" }}{{ $weekNumber = "0" }}{{ end }}
               {{ $weekPath := printf "w%s" $weekNumber }}
               {{ $lectureMain := .lecture_main | default .lecture }}
@@ -437,7 +437,11 @@
           var courseCompleted = weeks.length && weeks[weeks.length - 1].date < today;
           weeks.forEach(function (week) {
             var isPast = courseCompleted ? week.date < today : currentDate && week.date < currentDate;
+            var isCurrent = !courseCompleted && currentDate && week.date.getTime() === currentDate.getTime();
+            var currentLabel = week.element.querySelector('.course-hub-this-week');
             week.element.classList.toggle('is-past-week', Boolean(isPast));
+            week.element.classList.toggle('is-current-week', Boolean(isCurrent));
+            if (currentLabel) currentLabel.hidden = !isCurrent;
           });
         }
 
