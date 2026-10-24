@@ -359,7 +359,7 @@ weekly_schedule:
     after_class:
       -
         type: "FC Lecture"
-        task: "Study Setup & Procedure"
+        task: "Study Protocol Setup"
         due: "Nov. 13"
       -
         type: "Homework #8"
@@ -369,8 +369,9 @@ weekly_schedule:
     week: "11"
     iso_date: "2026-11-13"
     stage_ref: "user-study"
-    lecture: "Pilot Testing & Protocol Revision"
-    lecture_main: "Pilot Testing & Protocol Revision"
+    lecture: "Study Protocol Setup + Pilot Testing"
+    lecture_main: "Study Protocol Setup"
+    lecture_subtitle: "+ Pilot Testing"
     paper: "Sections 4.1–4.6 · Final Method"
     in_class:
       - "Pilot diagnosis, protocol revision, and final Method Mapping"
