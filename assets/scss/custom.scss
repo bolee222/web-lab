@@ -2943,6 +2943,34 @@ img.rounded {
 .course-hub-schedule { margin-top: 22px; }
 
 /* Keep the current and upcoming weeks visually prominent while preserving past weeks as an accessible archive. */
+.course-hub-schedule article.is-current-week {
+  position: relative;
+}
+.course-hub-schedule article.is-current-week > div {
+  background: rgba(52, 88, 212, .075);
+}
+.course-hub-schedule article.is-current-week::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  border: 2px solid #3458d4;
+  pointer-events: none;
+}
+.course-hub-schedule .course-hub-this-week {
+  display: inline-flex;
+  width: max-content;
+  margin-top: 10px;
+  padding: 4px 7px;
+  border-radius: 999px;
+  background: #3458d4;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
 .course-hub-schedule article.is-past-week {
   position: relative;
 }
@@ -2960,7 +2988,8 @@ img.rounded {
   background: rgba(255, 255, 255, .16);
 }
 @media print {
-  .course-hub-schedule article.is-past-week::after { display: none; }
+  .course-hub-schedule article.is-past-week::after,
+  .course-hub-schedule article.is-current-week::before { display: none; }
 }
 .course-hub-schedule-intro {
   max-width: 1100px;
