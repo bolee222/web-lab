@@ -2945,7 +2945,7 @@ img.rounded {
 /* Keep the current and upcoming weeks visually prominent while preserving past weeks as an accessible archive. */
 .course-hub-schedule article.is-current-week {
   position: relative;
-  z-index: 1;
+  z-index: 5;
 }
 .course-hub-schedule article.is-current-week > div {
   background: rgba(52, 88, 212, .075);
