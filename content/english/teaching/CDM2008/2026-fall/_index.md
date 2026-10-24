@@ -331,9 +331,9 @@ weekly_schedule:
     week: "09"
     iso_date: "2026-10-30"
     stage_ref: "user-study"
-    lecture: "Study Protocol Setup #1 · Quantitative Measurements"
-    lecture_main: "Study Protocol Setup #1"
-    lecture_subtitle: "Quantitative Measurements"
+    lecture: "Study Measures #1 · Quantitative Measures"
+    lecture_main: "Study Measures #1"
+    lecture_subtitle: "Quantitative Measures"
     paper: "Section 4 · Method Draft I"
     in_class:
       - "Participants, study design, tasks, measures, and Method Mapping"
@@ -350,8 +350,8 @@ weekly_schedule:
     week: "10"
     iso_date: "2026-11-06"
     stage_ref: "user-study"
-    lecture: "Study Protocol Setup #2 · Qualitative Questions"
-    lecture_main: "Study Protocol Setup #2"
+    lecture: "Study Measures #2 · Qualitative Questions"
+    lecture_main: "Study Measures #2"
     lecture_subtitle: "Qualitative Questions"
     paper: "Section 4 · Protocol-to-Method Mapping"
     in_class:
