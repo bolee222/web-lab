@@ -342,7 +342,7 @@
             {{ $weekRange := partial "teaching/week-range-label.html" (dict "start" $stageInfo.start_week "end" $stageInfo.end_week) }}
             {{ $dateLabel := partial "teaching/date-label.html" (dict "date" .iso_date "week" .week) }}
             {{ $isPresentationWeek := or (eq .week "08") (eq .week "15") }}
-            <article{{ if or $showStageDivider .holiday $isPresentationWeek }} class="{{ if $showStageDivider }}is-project-start{{ end }}{{ if and $showStageDivider (or .holiday $isPresentationWeek) }} {{ end }}{{ with .holiday }}is-public-holiday{{ end }}{{ if eq .week "00" }} is-preparation-week{{ end }}{{ if $isPresentationWeek }} is-presentation-week{{ end }}"{{ end }} role="listitem">
+            <article{{ if or $showStageDivider .holiday $isPresentationWeek }} class="{{ if $showStageDivider }}is-project-start{{ end }}{{ if and $showStageDivider (or .holiday $isPresentationWeek) }} {{ end }}{{ with .holiday }}is-public-holiday{{ end }}{{ if eq .week "00" }} is-preparation-week{{ end }}{{ if $isPresentationWeek }} is-presentation-week{{ end }}"{{ end }} data-class-date="{{ .iso_date }}" role="listitem">
               <div class="course-hub-week"{{ with .holiday }} aria-label="Week {{ $week.week }}, {{ $dateLabel }}, public holiday: {{ . }}"{{ end }}><strong>Week {{ .week }}</strong><span>{{ $dateLabel }}</span>{{ with .holiday }}<small class="course-hub-holiday">{{ . }}</small>{{ end }}</div>
               {{ $weekNumber := replaceRE `^0+` `` .week }}{{ if eq $weekNumber "" }}{{ $weekNumber = "0" }}{{ end }}
               {{ $weekPath := printf "w%s" $weekNumber }}
@@ -417,6 +417,20 @@
           if (savedMode === 'abstract' || savedMode === 'extended') initialMode = savedMode;
         } catch (error) {}
         setMode(initialMode, false);
+
+        function markPastWeeks() {
+          var now = new Date();
+          var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+          Array.prototype.slice.call(schedule.querySelectorAll('article[data-class-date]')).forEach(function (week) {
+            var value = week.getAttribute('data-class-date');
+            var parts = value ? value.split('-') : [];
+            if (parts.length !== 3) return;
+            var classDate = new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]));
+            week.classList.toggle('is-past-week', classDate < today);
+          });
+        }
+
+        markPastWeeks();
 
         buttons.forEach(function (button) {
           button.addEventListener('click', function () { setMode(button.getAttribute('data-schedule-mode'), true); });
