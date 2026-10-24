@@ -2957,6 +2957,9 @@ img.rounded {
   border: 2px solid #3458d4;
   pointer-events: none;
 }
+.course-hub-schedule .course-hub-this-week[hidden] {
+  display: none;
+}
 .course-hub-schedule .course-hub-this-week {
   display: inline-flex;
   width: max-content;
