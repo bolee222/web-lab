@@ -2951,6 +2951,9 @@ img.rounded {
   background: rgba(52, 88, 212, .075);
   border-bottom-color: transparent;
 }
+.course-hub-schedule article.is-current-week .course-hub-week {
+  position: relative;
+}
 .course-hub-schedule article.is-current-week::before {
   content: "";
   position: absolute;
@@ -2966,9 +2969,13 @@ img.rounded {
   display: none;
 }
 .course-hub-schedule .course-hub-this-week {
+  position: absolute;
+  z-index: 4;
+  top: 3px;
+  left: 12px;
   display: inline-flex;
   width: max-content;
-  margin: 0 0 8px;
+  margin: 0;
   padding: 3px 5px;
   border-radius: 999px;
   background: #3458d4;
@@ -2978,9 +2985,10 @@ img.rounded {
   line-height: 1;
   letter-spacing: .04em;
   text-transform: uppercase;
+  pointer-events: none;
 }
 @media (max-width: 767px) {
-  .course-hub-schedule .course-hub-this-week { margin: 0; }
+  .course-hub-schedule .course-hub-this-week { left: 0; }
 }
 .course-hub-schedule article.is-past-week {
   position: relative;
