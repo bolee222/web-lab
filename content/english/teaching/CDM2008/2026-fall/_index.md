@@ -317,7 +317,7 @@ weekly_schedule:
     after_class:
       -
         type: "FC Lecture"
-        task: "Quantitative Study Measure"
+        task: "Quantitative Study Measures (Choosing What to Measure)"
         due: "Oct. 30 before class"
       -
         type: "Deliverable #2"
@@ -340,7 +340,7 @@ weekly_schedule:
     after_class:
       -
         type: "FC Lecture"
-        task: "Qualitative Study Questions"
+        task: "Qualitative Study Questions (Capturing User Reasoning and Experience)"
         due: "Nov. 6 before class"
       -
         type: "Homework #7"
@@ -359,7 +359,7 @@ weekly_schedule:
     after_class:
       -
         type: "FC Lecture"
-        task: "Running a Pilot Study"
+        task: "Study Setup & Procedure"
         due: "Nov. 13"
       -
         type: "Homework #8"
@@ -377,7 +377,7 @@ weekly_schedule:
     after_class:
       -
         type: "FC Lecture"
-        task: "Data Analysis #2: Comparing Conditions with T-tests and ANOVA"
+        task: "Data Analysis #1: Quantitative Analysis (T-tests and ANOVA)"
         due: "Nov. 20"
       -
         type: "Homework #9"
@@ -396,7 +396,7 @@ weekly_schedule:
     after_class:
       -
         type: "FC Lecture"
-        task: "Qualitative Data Analysis"
+        task: "Data Analysis #2: Finding Patterns in Qualitative Data"
         due: "Nov. 27"
       -
         type: "Homework #10"
