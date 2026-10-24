@@ -421,12 +421,23 @@
         function markPastWeeks() {
           var now = new Date();
           var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-          Array.prototype.slice.call(schedule.querySelectorAll('article[data-class-date]')).forEach(function (week) {
+          var weeks = Array.prototype.slice.call(schedule.querySelectorAll('article[data-class-date]')).map(function (week) {
             var value = week.getAttribute('data-class-date');
             var parts = value ? value.split('-') : [];
-            if (parts.length !== 3) return;
-            var classDate = new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]));
-            week.classList.toggle('is-past-week', classDate < today);
+            if (parts.length !== 3) return null;
+            return {
+              element: week,
+              date: new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]))
+            };
+          }).filter(Boolean);
+          var currentDate = null;
+          weeks.forEach(function (week) {
+            if (week.date <= today) currentDate = week.date;
+          });
+          var courseCompleted = weeks.length && weeks[weeks.length - 1].date < today;
+          weeks.forEach(function (week) {
+            var isPast = courseCompleted ? week.date < today : currentDate && week.date < currentDate;
+            week.element.classList.toggle('is-past-week', Boolean(isPast));
           });
         }
 
