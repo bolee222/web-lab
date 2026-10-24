@@ -2948,6 +2948,7 @@ img.rounded {
 }
 .course-hub-schedule article.is-current-week > div {
   background: rgba(52, 88, 212, .075);
+  border-bottom-color: transparent;
 }
 .course-hub-schedule article.is-current-week::before {
   content: "";
@@ -2963,15 +2964,15 @@ img.rounded {
 .course-hub-schedule .course-hub-this-week {
   display: inline-flex;
   width: max-content;
-  margin-top: 10px;
-  padding: 4px 7px;
+  margin-top: 7px;
+  padding: 3px 5px;
   border-radius: 999px;
   background: #3458d4;
   color: #fff;
-  font-size: 9px;
+  font-size: 8px;
   font-weight: 700;
   line-height: 1;
-  letter-spacing: .06em;
+  letter-spacing: .04em;
   text-transform: uppercase;
 }
 .course-hub-schedule article.is-past-week {
