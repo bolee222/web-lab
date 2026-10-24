@@ -387,8 +387,8 @@ weekly_schedule:
     week: "12"
     iso_date: "2026-11-20"
     stage_ref: "analysis"
-    lecture: "Data Analysis #2 · Quantitative Insights"
-    lecture_main: "Data Analysis #2"
+    lecture: "Data Analysis #1 · Quantitative Insights"
+    lecture_main: "Data Analysis #1"
     lecture_subtitle: "Quantitative Insights"
     paper: "Sections 5.1 & 5.2 · Quantitative Results"
     in_class:
@@ -406,8 +406,8 @@ weekly_schedule:
     week: "13"
     iso_date: "2026-11-27"
     stage_ref: "analysis"
-    lecture: "Data Analysis #1 · Qualitative Insights"
-    lecture_main: "Data Analysis #1"
+    lecture: "Data Analysis #2 · Qualitative Insights"
+    lecture_main: "Data Analysis #2"
     lecture_subtitle: "Qualitative Insights"
     paper: "Section 5 · Complete Results Draft"
     in_class:
