@@ -2968,7 +2968,7 @@ img.rounded {
 .course-hub-schedule .course-hub-this-week {
   display: inline-flex;
   width: max-content;
-  margin-top: 7px;
+  margin: 0 0 8px;
   padding: 3px 5px;
   border-radius: 999px;
   background: #3458d4;
@@ -2978,6 +2978,9 @@ img.rounded {
   line-height: 1;
   letter-spacing: .04em;
   text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .course-hub-schedule .course-hub-this-week { margin: 0; }
 }
 .course-hub-schedule article.is-past-week {
   position: relative;
